@@ -1,0 +1,29 @@
+{
+  "document_type": "Approved freeze publication",
+  "files": [
+    {
+      "path": "increments/020-A/08-final-specification/INCREMENT_020_A_FINAL_SPECIFICATION.md",
+      "size_bytes": 71904,
+      "lines": 586,
+      "sha256": "cfbc6ea4bbb58f987deb3f73e45fc39d5b79d0cfaa2de8e0a7870a9937386e9c"
+    },
+    {
+      "path": "increments/020-A/08-final-specification/OWNER_FREEZE_AND_CP1_AUTHORIZATION.md",
+      "size_bytes": 4326,
+      "lines": 54,
+      "sha256": "a9928b4bb56ee1475f6c911612dbc30cd729ac4adddb10bdbe220adb8f0e8875"
+    },
+    {
+      "path": "increments/020-A/08-final-specification/candidate1-to-final1-administrative.diff",
+      "size_bytes": 8213,
+      "lines": 65,
+      "sha256": "67151b221c811502e48225cf985b6d20857d0fc2d3a4a34e7af082edea2f6376"
+    },
+    {
+      "path": "increments/020-A/08-final-specification/freeze-validation.json",
+      "size_bytes": 5639,
+      "lines": 154,
+      "sha256": "21c0f3b17d1ddee3f824bf9c6eb20d3777da4da401509782d859267327b830cf"
+    }
+  ]
+}
