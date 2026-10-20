@@ -1,17 +1,23 @@
 {
   "schema_version": "1.0",
   "task_id": "020-A-CHECKPOINT1",
-  "status": "PREPARED_NOT_AUTHORIZED",
+  "status": "AUTHORIZED",
   "assigned_role": "claude-implementer-separate-session",
   "decision_request": {
     "path": "increments/020-A/07-owner-decision/INCREMENT_020_A_FREEZE_AND_CP1_DECISION_REQUEST.md",
     "sha256": "fdaed67a4dbdae946d0c92f41f2be9ab71c36555addfc2e3aacf9a6d3841ca09"
   },
-  "blocked_by": [
-    "Explicit owner approval to freeze the identified candidate and authorize only Checkpoint 1",
-    "Final specification creation, administrative-only diff validation, SHA-256 and immutable governance snapshot published"
-  ],
-  "owner_approval": null,
+  "blocked_by": [],
+  "owner_approval": {
+    "date": "2026-10-20",
+    "quote": "aprovado",
+    "source": "Direct owner message to architect in response to the exact prepared freeze and Checkpoint 1 request",
+    "request_snapshot": "11e571a856c2e0dc6b169160a79f9f5eeb4805e3",
+    "record_path": "increments/020-A/08-final-specification/OWNER_FREEZE_AND_CP1_AUTHORIZATION.md",
+    "record_sha256": "a9928b4bb56ee1475f6c911612dbc30cd729ac4adddb10bdbe220adb8f0e8875",
+    "record_governance_commit": "665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed",
+    "scope": "Freeze approved candidate without scientific changes; implement/test/commit/push only Checkpoint 1 and own governance report; no PR or merge"
+  },
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "source_snapshot": "99b181e22663ed53341f131abe26222c41c43795",
   "candidate": {
@@ -30,8 +36,10 @@
   },
   "final_specification": {
     "path": "increments/020-A/08-final-specification/INCREMENT_020_A_FINAL_SPECIFICATION.md",
-    "sha256": null,
-    "governance_commit": null
+    "sha256": "cfbc6ea4bbb58f987deb3f73e45fc39d5b79d0cfaa2de8e0a7870a9937386e9c",
+    "size_bytes": 71904,
+    "lines": 586,
+    "governance_commit": "665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed"
   },
   "code_repository": "sysoutemanuelhenrique/molecular-platform",
   "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
@@ -76,8 +84,11 @@
     "Output file identities, published commits and refs verified"
   ],
   "next_gate": "Independent review of Checkpoint 1; no automatic release of Checkpoint 2",
-  "ready_for_implementation": false,
-  "final_specification_frozen": false,
-  "implementation_authorized": false,
-  "automated_relay_active": false
+  "ready_for_implementation": true,
+  "final_specification_frozen": true,
+  "implementation_authorized": true,
+  "automated_relay_active": false,
+  "governance_task_snapshot": "Exact release commit supplied in architect launch message; confirm this task from that immutable commit, not main",
+  "authorization_scope": "CHECKPOINT_1_ONLY",
+  "execution_started": false
 }

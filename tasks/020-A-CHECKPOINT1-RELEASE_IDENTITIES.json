@@ -1,0 +1,20 @@
+{
+  "document_type": "Owner-authorized Checkpoint 1 task release",
+  "frozen_specification_commit": "665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed",
+  "frozen_specification_sha256": "cfbc6ea4bbb58f987deb3f73e45fc39d5b79d0cfaa2de8e0a7870a9937386e9c",
+  "scope": "CHECKPOINT_1_ONLY",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "size_bytes": 3153,
+      "lines": 39,
+      "sha256": "bc1eaabb9540dafd33de4542fffd41b0afff0e4e4fefd7c2f0175deb40978971"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1.json",
+      "size_bytes": 5080,
+      "lines": 94,
+      "sha256": "4c5e8b0af04e612ecfa024a3461f15e35d976c9f4886ca1e581a6cec3b40be57"
+    }
+  ]
+}
