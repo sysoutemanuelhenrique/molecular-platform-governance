@@ -1,0 +1,31 @@
+{
+  "document_type": "Owner decision request and prepared Checkpoint 1; not an approval record",
+  "source_snapshot": "99b181e22663ed53341f131abe26222c41c43795",
+  "line_count_convention": "Unicode splitlines logical lines; bytes and SHA-256 authoritative",
+  "files": [
+    {
+      "path": "increments/020-A/07-owner-decision/INCREMENT_020_A_FREEZE_AND_CP1_DECISION_REQUEST.md",
+      "size_bytes": 8816,
+      "lines": 87,
+      "sha256": "fdaed67a4dbdae946d0c92f41f2be9ab71c36555addfc2e3aacf9a6d3841ca09"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1.json",
+      "size_bytes": 4298,
+      "lines": 83,
+      "sha256": "87b5d7da1365132e5d15e8a11341c7b8ef55c120e7036bb6af92f7208c505ea6"
+    },
+    {
+      "path": "tasks/020-A-CANDIDATE1-CLOSURE.json",
+      "size_bytes": 3515,
+      "lines": 77,
+      "sha256": "f7c419b496183be40d25d785bf1a40d69184b4992db2d4b5eb9d33c91b6706a3"
+    },
+    {
+      "path": "STATUS.md",
+      "size_bytes": 2493,
+      "lines": 35,
+      "sha256": "b5a9bea0881e7785a71b5401fa55b58e51c729727994fb4fff044938062ca82b"
+    }
+  ]
+}

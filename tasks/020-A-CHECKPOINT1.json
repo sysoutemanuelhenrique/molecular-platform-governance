@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "task_id": "020-A-CHECKPOINT1",
+  "status": "PREPARED_NOT_AUTHORIZED",
+  "assigned_role": "claude-implementer-separate-session",
+  "decision_request": {
+    "path": "increments/020-A/07-owner-decision/INCREMENT_020_A_FREEZE_AND_CP1_DECISION_REQUEST.md",
+    "sha256": "fdaed67a4dbdae946d0c92f41f2be9ab71c36555addfc2e3aacf9a6d3841ca09"
+  },
+  "blocked_by": [
+    "Explicit owner approval to freeze the identified candidate and authorize only Checkpoint 1",
+    "Final specification creation, administrative-only diff validation, SHA-256 and immutable governance snapshot published"
+  ],
+  "owner_approval": null,
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "source_snapshot": "99b181e22663ed53341f131abe26222c41c43795",
+  "candidate": {
+    "path": "increments/020-A/05-final-candidate/INCREMENT_020_A_FINAL_SPECIFICATION_CANDIDATE.md",
+    "sha256": "123596d03947f89321e6e623e3f0e7a2b88f38de42cd510a59f31cfd16d67ad4",
+    "size_bytes": 70346,
+    "lines": 575
+  },
+  "independent_closure": {
+    "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+    "commit": "7f1f75219203eb1a691e454db170900ca81536e8",
+    "path": "increments/020-A/06-candidate-closure/CLAUDE_CANDIDATE1_CLOSURE_REVIEW.md",
+    "sha256": "9064866b6b3f0c2c54d9efc859a964ad314dbf25675ba4c112c97f22044363bd",
+    "size_bytes": 18902,
+    "lines": 190
+  },
+  "final_specification": {
+    "path": "increments/020-A/08-final-specification/INCREMENT_020_A_FINAL_SPECIFICATION.md",
+    "sha256": null,
+    "governance_commit": null
+  },
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_branch": "feature/increment-020-a-molecular-characterization",
+  "checkpoint": 1,
+  "allowed_code_paths": [
+    "src/molecular/characterization.py",
+    "src/molecular/rdkit_tautomer.py",
+    "tests/test_characterization.py",
+    "tests/test_rdkit_tautomer.py"
+  ],
+  "scope": [
+    "Strict frozen neutral DTOs, closed profiles, typed errors without RDKit or I/O",
+    "Pinned RDKit adapter: bytes parsing, graph eligibility, ten values, optional 2D SVG and closed validator",
+    "Optional dependency boundaries and legacy compatibility",
+    "Meaningful real-production tests and independent execution evidence; reconcile actual collected items"
+  ],
+  "forbidden": [
+    "Implementing before task status AUTHORIZED and final identity published",
+    "Checkpoint 2 readers/service, Checkpoint 3 CLI, 020-B/020-C or 021",
+    "Changing scientific contracts, persisted schemas, attempts, registry, dependencies or legacy behavior",
+    "Touching increment-009-review.txt or _figura_curcumina/",
+    "Editing other actors reviews or central governance STATUS/tasks",
+    "PR, merge, force push, reset, rebase, amend, main/configuration/visibility changes"
+  ],
+  "tests": {
+    "required_focus": [
+      "tests/test_characterization.py",
+      "tests/test_rdkit_tautomer.py"
+    ],
+    "regressions": "Existing dependent promotion/application/CLI behavior; complete suite if environment permits, with limits declared",
+    "mapping": "Relevant T-020A-001..080 -> production/test function -> parameter set -> collected item -> result; unimplemented checkpoint cases identified explicitly",
+    "windows_reader_gate": "Checkpoint 2 only; pure adapter tests can run Linux without asserting reader validation"
+  },
+  "output_path": "increments/020-A/09-checkpoint-1/CLAUDE_CHECKPOINT1_IMPLEMENTATION_REPORT.md",
+  "code_commit_and_push_permitted_after_authorization": true,
+  "governance_output_policy": "Own authorized branch; report and evidence under increments/020-A/09-checkpoint-1/ only; no central status/task edits",
+  "required_completion": [
+    "Code baseline/head and allowed diff, preserved originals/untracked",
+    "Actual commands, versions, collection/pass/skip outcomes and limitations",
+    "git diff --check and initial/final working-tree state",
+    "Output file identities, published commits and refs verified"
+  ],
+  "next_gate": "Independent review of Checkpoint 1; no automatic release of Checkpoint 2",
+  "ready_for_implementation": false,
+  "final_specification_frozen": false,
+  "implementation_authorized": false,
+  "automated_relay_active": false
+}
