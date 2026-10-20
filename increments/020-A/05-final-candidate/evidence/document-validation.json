@@ -1,0 +1,30 @@
+{
+  "baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "remote_main_confirmed_by": [
+    "git ls-remote",
+    "GitHub connected commit/main"
+  ],
+  "local_clone_working_tree_clean": true,
+  "local_clone_git_diff_check_exit": 0,
+  "unchanged_sections": [
+    3,
+    4,
+    5,
+    7,
+    12,
+    13,
+    14,
+    15,
+    18,
+    20
+  ],
+  "allowlist_section_18_byte_identical": true,
+  "unique_normative_scenarios": 80,
+  "changed_scenario_rows": [
+    "T-020A-051"
+  ],
+  "original_draft_preserved": true,
+  "original_review_preserved": true,
+  "pytest_executed": false,
+  "windows_production_readers_validated": false
+}

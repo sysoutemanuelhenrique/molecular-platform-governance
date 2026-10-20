@@ -1,0 +1,220 @@
+--- draft1/INCREMENT_020_A_DRAFT_SPECIFICATION.md
++++ candidate1/INCREMENT_020_A_FINAL_SPECIFICATION_CANDIDATE.md
+@@ -1,16 +1,18 @@
+-# DRAFT SPECIFICATION — INCREMENTO 020-A
++# FINAL SPECIFICATION CANDIDATE — INCREMENTO 020-A
+ 
+ ## Molecular characterization and static 2D depiction
+ 
+-Autor: Codex, arquiteto. Data: 20/10/2026. Versão documental: draft1. Natureza: rascunho para revisão independente pelo Claude.
+-
+-**Este texto propõe requisitos normativos. NÃO é contrato final congelado e NÃO autoriza implementação.** “DEVE”/“NÃO DEVE” descrevem o contrato candidato que está sendo submetido à revisão.
++Autor: Codex, arquiteto. Data: 20/10/2026. Versão documental: candidate1. Natureza: candidata final, após resposta ao parecer do rascunho, para fechamento independente pelo Claude e posterior decisão explícita do responsável.
++
++**Este texto propõe requisitos normativos. NÃO é contrato final congelado e NÃO autoriza implementação.** “DEVE”/“NÃO DEVE” descrevem o contrato candidato que está sendo submetido ao fechamento da revisão; o título de candidata não equivale a aprovação ou congelamento.
+ 
+ ## 1. Decisão de processo e histórico preservado
+ 
+ O responsável decidiu em 20/10/2026 continuar **somente com a revisão independente do Claude nesta etapa**. Essa decisão substitui, para a passagem deste gate do020-A, a espera anteriormente prevista por um segundo revisor. Não reescreve pareceres ou regras históricas de outros incrementos.
+ 
+ O adendo do Claude fecha a arquitetura V2: 0 BLOCKERS, 0 MAJORS, 0 MINORS, 1 NOTE documental não bloqueante e READY FOR DRAFT SPECIFICATION:YES quanto à sua linha de revisão. O presente rascunho incorpora A-01–A-14 e os complementos C-01/C-02/C-03 aceitos. O revisor não aprovou a implementação nem a especificação final.
++
++A revisão independente do draft1 recebida em 20/10/2026 registrou 0 BLOCKERS, 0 MAJORS, 3 MINORS e 6 NOTES, com avanço condicionado às correções textuais. Esta candidata responde aos três MINORs e às notas na resposta acompanhante. O arquiteto endereçou os itens; o fechamento independente das correções ainda está pendente. O draft1 e o parecer recebido permanecem preservados byte a byte.
+ 
+ Gate atual: **arquitetura → rascunho → revisão adversarial do rascunho → candidata final → aprovação/congelamento explícitos → implementação autorizada → checkpoints e evidência Windows → revisão cumulativa**. Os leitores de produção não serão implementados para poder aprovar a redação do contrato que os autorizará. Um spike anterior só será solicitado se houver dúvida concreta de viabilidade que impeça especificar esse contrato.
+ 
+@@ -31,6 +33,8 @@
+ | Validação CP4 do020 | SHA-256 69ece589ca25ddaa1e3286b33dd1a0e76e5245043cf8f633559383389e918785; 365 linhas; 25.318 bytes |
+ | Adendo de fechamento Claude | Texto integral fornecido pelo responsável nesta conversa; sem atribuição fictícia de hash de arquivo original |
+ | Decisão de revisor único | Mensagem expressa do responsável nesta conversa, 20/10/2026 |
++| Draft1 preservado | SHA-256 b0c8532282ac90cf41c9958b8af06ef3aea142777794af6b058e3ba558c6397d; 542 linhas; 62.532 bytes |
++| Revisão independente do draft1 | Anexo original `Texto colado(20261020-160803).txt`; identidade e cópia integral no pacote desta candidata |
+ 
+ O pacote de resposta contém os originais pertinentes dos contratos016–020, fontes de governance, pareceres e ensaios. Estes materiais continuam sendo a base de rastreabilidade; o rascunho não os substitui. Código primário: `https://github.com/sysoutemanuelhenrique/molecular-platform/tree/08b797e0985e123ffd4d7ca7e5a5e8f040e63851`.
+ 
+@@ -92,6 +96,8 @@
+ 
+ Perfil candidato de serviço: **Windows11, volume local fixo NTFS**, como escolha expressa do020-A. Deve haver detecção efetiva da versão Windows e do volume/drive; os.name==nt sozinho não basta. A detecção deve usar informação do SO e falhar se não puder confirmar esse perfil. Reaproveitar primitivas adequadas existentes sem alterar seus contratos; a identificação específica de Windows11 deverá ser demonstrada por source/API e testes do checkpoint, incluindo recusa de Windows10/Server/versão indeterminada. Não inferir suporte de um mock que retorna sucesso.
+ 
++Pergunta de implementação registrada pela NOTE-1 do parecer: o checkpoint2 deve identificar a fonte/API efetivamente usada para distinguir Windows11 cliente de Windows10/Server, justificar eventual critério de build e apresentar seus testes positivos/negativos. Esta candidata não aprova um limiar de build como contrato universal/futuro da Microsoft. O ponto não exige implementar ou executar os leitores antes do congelamento; a prova do detector permanece condicionante da aprovação do checkpoint2.
++
+ Outros SOs, FAT/exFAT, share de rede e plataforma/volume indeterminados falham antes da abertura do registro/representação. Reparse points de pastas de sincronização também são recusados. Não se promete identificar toda solução de sincronização externa que se apresente como arquivo regular sem reparse; esse não é um mecanismo de imutabilidade do disco.
+ 
+ Limites fechados candidatos, em bytes e contagens inclusivos:
+@@ -148,35 +154,44 @@
+ 
+ Identificador: `molecular-characterization-v1`. Engine name rdkit; versão efetivamente observada obrigatória **2026.03.6**; declaração de dependência continua rdkit==2026.3.6. Versão ausente/incompatível recusa configuração, sem usar outro motor. Não instanciar TautomerEnumerator ou reutilizar seus parâmetros para resolver caracterização.
+ 
+-| Campo de Values | Método explícito | Tipo/unidade |
++| Campo de Values | Método explícito | Tipo/unidade | Default Python do pin versus escolha |
++|---|---|---|---|
++| formula | rdMolDescriptors.CalcMolFormula(mol, separateIsotopes=True, abbreviateHIsotopes=False) | str não vazia | Defaults False/True; ambos desvios deliberados para explicitar isótopos, sem abreviar D/T |
++| molar_mass_g_mol | Descriptors.MolWt(mol) | float finito positivo; g/mol | Nenhum kwarg fornecido; wrapper público conserva o default interno onlyHeavy=False do pin |
++| exact_mass_da | rdMolDescriptors.CalcExactMolWt(mol, onlyHeavy=False) | float finito positivo; Da | onlyHeavy=False coincide com default |
++| formal_charge_e | Chem.GetFormalCharge(mol) | int estrito, com sinal; carga elementar | Nenhum parâmetro opcional fornecido |
++| heavy_atom_count | mol.GetNumHeavyAtoms() | int estrito não negativo | Nenhum parâmetro opcional fornecido |
++| hbd_count | rdMolDescriptors.CalcNumHBD(mol) | int estrito não negativo | Nenhum parâmetro opcional fornecido |
++| hba_count | rdMolDescriptors.CalcNumHBA(mol) | int estrito não negativo | Nenhum parâmetro opcional fornecido |
++| rotatable_bond_count | rdMolDescriptors.CalcNumRotatableBonds(mol, strict=rdMolDescriptors.NumRotatableBondsOptions.Strict) | int estrito não negativo | Overload enum tem default Default; Strict é seleção explícita, sem afirmar resultado diferente de Default no pin |
++| tpsa_a2 | rdMolDescriptors.CalcTPSA(mol, force=True, includeSandP=False) | float finito não negativo; Å² | force=True desvia de False para recalcular; includeSandP=False coincide com default |
++| clogp_wildman_crippen | rdMolDescriptors.CalcCrippenDescriptors(mol, includeHs=True, force=True)[0] | float finito com sinal; adimensional | includeHs=True coincide com default; force=True desvia de False para recalcular |
++
++A tabela documenta todos os parâmetros opcionais efetivamente selecionados neste perfil e os métodos sem kwargs fornecidos. Não implica que toda a configuração interna da biblioteca foi transformada em parâmetros públicos. Defaults são do binding Python2026.03.6, não de C++ puro ou de documentação de outra versão. Os desvios de force controlam recálculo/cache; não são uma preparação química.
++
++`Descriptors.MolWt` é a API pública escolhida para massa molar média; no pin, seu source Python encaminha a `_rdMolDescriptors._CalcMolWt`. O nome com underscore é evidência de implementação, não API privada autorizada ao novo adaptador. Não exigir namespace único artificial: carga formal pertence a Chem e contagem de átomos ao Mol, como já consta da tabela. Conservar a API pública MolWt; não substituir por CalcExactMolWt, que calcula outra grandeza.
++
++Namespace Crippen.CalcCrippenDescriptors não será usado. HBD/HBA são os métodos também chamados por Lipinski.NumHDonors/NumHAcceptors no pin; não rotular como contagem de ligações N–H/O–H nem substituir por NHOHCount/NOCount. Fórmula distingue isótopos de H sem abreviação D/T.
++Não arredondar dados de máquina antes do DTO/JSON. Valores não finitos, tipos incoerentes ou falha em qualquer descritor encerram a operação; não substituir por zero/null nem retornar ficha parcial. Caches internos do RDKit podem ser preenchidos; conectividade, isótopos, cargas e estereoquímica do grafo de entrada não podem ser modificados por pré-processamento oculto.
++
++Condições experimentais **não são carregadas nem consumidas**. Informar experimental_conditions_consumption="not-consumed". Não inferir pH, pKa, logD, solubilidade, atividade/toxicidade ou adequação para docking. MolWt respeita a política do RDKit para isótopos marcados; massa média/molar e massa exata não são m/z experimental ou de aduto. Carga formal não é carga parcial. Os valores pertencem ao estado analisado, podendo mudar entre estados.
++
++## 9. Perfil de desenho
++
++Somente quando include_svg=True. Perfil `molecular-depiction-v1`, canvas600×400. Mol de desenho é cópia de trabalho; coordenadas de apresentação não são novo Conformer nem geometria experimental. Não escrever SDF com essas coordenadas.
++
++| Etapa/superfície real | Parâmetros/atributos fixos | Default Python do pin versus escolha |
+ |---|---|---|
+-| formula | rdMolDescriptors.CalcMolFormula(separateIsotopes=True, abbreviateHIsotopes=False) | str não vazia |
+-| molar_mass_g_mol | Descriptors.MolWt | float finito positivo; g/mol |
+-| exact_mass_da | rdMolDescriptors.CalcExactMolWt(onlyHeavy=False) | float finito positivo; Da |
+-| formal_charge_e | Chem.GetFormalCharge | int estrito, com sinal; carga elementar |
+-| heavy_atom_count | Mol.GetNumHeavyAtoms | int estrito não negativo |
+-| hbd_count | rdMolDescriptors.CalcNumHBD | int estrito não negativo |
+-| hba_count | rdMolDescriptors.CalcNumHBA | int estrito não negativo |
+-| rotatable_bond_count | rdMolDescriptors.CalcNumRotatableBonds(NumRotatableBondsOptions.Strict) | int estrito não negativo |
+-| tpsa_a2 | rdMolDescriptors.CalcTPSA(force=True, includeSandP=False) | float finito não negativo; Å² |
+-| clogp_wildman_crippen | rdMolDescriptors.CalcCrippenDescriptors(includeHs=True, force=True)[0] | float finito com sinal; adimensional |
+-
+-A chamada recebe mol explicitamente em todos os métodos pertinentes. Namespace Crippen.CalcCrippenDescriptors não será usado. HBD/HBA são os métodos também chamados por Lipinski.NumHDonors/NumHAcceptors no pin; não rotular como contagem de ligações N–H/O–H nem substituir por NHOHCount/NOCount. TPSA mantém S/P=False explicitamente, coincidente com default; Strict é explícito, sem inferir diferença contra Default. Fórmula distingue isótopos de H sem abreviação D/T.
+-
+-Não arredondar dados de máquina antes do DTO/JSON. Valores não finitos, tipos incoerentes ou falha em qualquer descritor encerram a operação; não substituir por zero/null nem retornar ficha parcial. Caches internos do RDKit podem ser preenchidos; conectividade, isótopos, cargas e estereoquímica do grafo de entrada não podem ser modificados por pré-processamento oculto.
+-
+-Condições experimentais **não são carregadas nem consumidas**. Informar experimental_conditions_consumption="not-consumed". Não inferir pH, pKa, logD, solubilidade, atividade/toxicidade ou adequação para docking. MolWt respeita a política do RDKit para isótopos marcados; massa média/molar e massa exata não são m/z experimental ou de aduto. Carga formal não é carga parcial. Os valores pertencem ao estado analisado, podendo mudar entre estados.
+-
+-## 9. Perfil de desenho
+-
+-Somente quando include_svg=True. Perfil `molecular-depiction-v1`, canvas600×400. Mol de desenho é cópia de trabalho; coordenadas de apresentação não são novo Conformer nem geometria experimental. Não escrever SDF com essas coordenadas.
+-
+-| Etapa | Parâmetros fixos |
+-|---|---|
+-| Compute2DCoords | canonOrient=True, clearConfs=True, nFlipsPerSample=0, **nSample=0**, sampleSeed=0, permuteDeg4Nodes=False, forceRDKit=True, useRingTemplates=False |
+-| PrepareMolForDrawing, na cópia com coordenadas | kekulize=False, addChiralHs=False, wedgeBonds=True, forceCoords=False, wavyBonds=False |
+-| MolDraw2DSVG | 600,400; prepareMolsBeforeDrawing=False; includeMetadata=False; includeAtomTags=False; addAtomIndices=False; addBondIndices=False; legend vazio |
+-
++| rdDepictor.Compute2DCoords(mol, ...) | canonOrient=True, clearConfs=True, coordMap={}, nFlipsPerSample=0, **nSample=0**, sampleSeed=0, permuteDeg4Nodes=False, bondLength=-1.0, forceRDKit=True, useRingTemplates=False | Todos coincidem com defaults, exceto forceRDKit=True, que desvia de False para usar RDKit mesmo se CoordGen estiver preferido |
++| rdMolDraw2D.PrepareMolForDrawing(mol, ...), cópia com coordenadas | kekulize=False, addChiralHs=False, wedgeBonds=True, forceCoords=False, wavyBonds=False | kekulize/addChiralHs desviam de True/True para evitar essas preparações; os outros três coincidem com defaults |
++| Construtor rdMolDraw2D.MolDraw2DSVG | width=600, height=400, panelWidth=-1, panelHeight=-1, noFreetype=False | width/height são obrigatórios, sem default; os três opcionais coincidem com defaults |
++| drawer.drawOptions(), atribuições após construir drawer | prepareMolsBeforeDrawing=False, includeMetadata=False, includeAtomTags=False, addAtomIndices=False, addBondIndices=False | Os dois primeiros desviam de True/True; os três últimos coincidem com defaults False |
++| drawer.drawOptions().fontFile | Caminho interno fixado pela política Telex descrita abaixo | Default observado é string vazia; desvio explícito para asset da instalação, sem entrada de usuário |
++| drawer.DrawMolecule(mol, legend="") | Mol preparado, legend=""; nenhum highlight fornecido | legend vazio coincide com default; não é parâmetro do construtor nem de MolDrawOptions |
++
++As superfícies não são intercambiáveis: não passar atributos de MolDrawOptions ou legend como kwargs de MolDraw2DSVG. Construir drawer, configurar options/fontFile, chamar DrawMolecule, finalizar desenho e obter o SVG. Demais opções gráficas não selecionadas ficam nos defaults do pin, sem modificação de configuração global; não se promete reprodutibilidade entre versões/builds/SOs por enumerar estes parâmetros.
++
++`coordMap={}` deve ser mapa vazio novo por chamada, sem ancoragem recebida do cientista; bondLength=-1.0 seleciona a política padrão de comprimento do backend pinado, não fixa uma distância física experimental. Ambos coincidem com defaults reais, agora explícitos. **usePathAngleExpansion não pertence ao binding Python2026.03.6 observado e não deve ser passado nem declarado como parâmetro efetivo.** A documentação atual2026.09.1 expõe esse nome; não importar sua assinatura para o pin nem fazer fallback por tentativa/erro.
+ Preservar H explícitos/isotópicos. Não usar AddHs/RemoveHs ou kekulização como preparação escondida; permitir wedges como apresentação da estereoquímica já definida. Omitir na cópia apenas propriedades de anotação atomLabel, _displayLabel, _displayLabelW, molFileAlias, atomNote, bondNote e _MolFileRLabel. Não alterar campos químicos ou apagar estereogrupo para aceitar entrada inelegível. Não inserir nome/título/SD data como texto, legenda ou markup.
+ 
+ Comparar assinatura do grafo antes/depois da preparação: átomos por índice, números atômicos, isótopos, cargas formais, contagens de H explícitos/implícitos e conectividade/ordens aromáticas; preservar estereoquímica semântica por checagem canônica isomérica nos casos aplicáveis. Direções gráficas de wedge e conformer interno de desenho podem mudar; os elementos químicos não. Inconsistência implica erro de desenho, sem resultado parcial. O Mol de cálculo permanece cientificamente inalterado.
+@@ -207,7 +222,7 @@
+ 
+ Exigir raiz version=1.1, width=600px, height=400px e viewBox numérico0 0 600 400. baseProfile, se presente, full; xml:space, se presente, preserve. Campos geométricos do rect são números finitos, width/height não negativos, sem unidades inesperadas. fill deve ser none ou cor hexadecimal de seis dígitos. class, se presente, é sequência de tokens `atom-N`/`bond-N`, separados por espaços ASCII, N inteiro não negativo; não aceitar classes arbitrárias.
+ 
+-`d` usa o perfil reduzido observado deste produtor/fonte: comandos absolutos **M, L, Q**, com números finitos e separadores ASCII de whitespace/vírgula. Número: sinal opcional, decimal com pelo menos um dígito e expoente e/E opcional. M/L recebem pares de coordenadas; Q recebe grupos de quatro; o primeiro comando deve ser M, com pelo menos um par. Permitir grupos repetidos segundo essas aridades, sem tokens residuais, comandos relativos ou outros comandos. Não avaliar expressões. Este recorte foi confrontado com os cinco desenhos disponíveis; saída que exija comando não coberto falha explicitamente, sem ampliar o perfil silenciosamente. O checkpoint Windows deverá verificar sua compatibilidade real.
++`d` usa o perfil reduzido observado deste produtor/fonte: comandos absolutos **M, L, Q**, com números finitos e separadores ASCII de whitespace/vírgula. Número: sinal opcional, decimal com pelo menos um dígito e expoente e/E opcional. M/L recebem pares de coordenadas; Q recebe grupos de quatro; o primeiro comando deve ser M, com pelo menos um par. Permitir grupos repetidos segundo essas aridades, sem tokens residuais, comandos relativos ou outros comandos. Não avaliar expressões. Este recorte foi confrontado com os cinco desenhos disponíveis; saída que exija comando não coberto falha explicitamente, sem ampliar o perfil silenciosamente. O checkpoint Windows deverá verificar sua compatibilidade real. Em T-020A-051, incluir pelo menos um canário policíclico aromático fundido fora dos cinco exemplos originais: antraceno, SMILES `c1ccc2cc3ccccc3cc2c1`. O ensaio Linux desta resposta observou apenas M/L nesse caso; ele não comprova o backend/validador de produção Windows. Qualquer incompatibilidade deve ser relatada, sem ampliar silenciosamente a gramática.
+ 
+ style é lista de declarações nome:valor separadas por `;`, com whitespace ASCII opcional e um terminador vazio final permitido. Recusar duplicação de propriedade, declaração vazia interna, escapes, comentários, variáveis, funções, @import, url(...) e propriedade desconhecida. Vocabulário fechado:
+ 
+@@ -274,7 +289,18 @@
+ 
+ effective_parameters contém, em blocos tipados: parser(format/sanitize/removeHs/strictParsing para sdf OU format/sanitize/removeHs/parseName/allowCXSMILES para smiles); formula(separateIsotopes/abbreviateHIsotopes); exact_mass(onlyHeavy); rotatable_bonds(option="Strict"); tpsa(force/includeSandP); crippen(includeHs/force). Demais métodos têm seu nome de método fixo no perfil; não inventar parâmetros de requested/resolved de tautomerização. O discriminante de formato determina o bloco parser, sem campos não operantes do outro formato.
+ 
+-drawing, quando presente, contém: profile_id=molecular-depiction-v1; width_px=600; height_px=400; font_name=Telex-Regular.ttf; font_sha256_observed; svg_sha256; svg_size_bytes; xml_parser="xml.parsers.expat"; xml_parser_version_observed; effective_parameters com todos os parâmetros da§9 e a identificação do perfil de validação svg-static-v1. Identificadores/hashs são estritos; bool não é aceito como inteiro de contagem.
++drawing, quando presente, contém: profile_id=molecular-depiction-v1; width_px=600; height_px=400; font_name=Telex-Regular.ttf; font_sha256_observed; svg_sha256; svg_size_bytes; xml_parser="xml.parsers.expat"; xml_parser_version_observed. Seu effective_parameters contém exatamente os blocos fechados abaixo, separando as superfícies da§9:
++
++| Bloco | Campos e valores |
++|---|---|
++| compute2d | canonOrient=True, clearConfs=True, coordMap={}, nFlipsPerSample=0, nSample=0, sampleSeed=0, permuteDeg4Nodes=False, bondLength=-1.0, forceRDKit=True, useRingTemplates=False |
++| prepare | kekulize=False, addChiralHs=False, wedgeBonds=True, forceCoords=False, wavyBonds=False |
++| drawer | width=600, height=400, panelWidth=-1, panelHeight=-1, noFreetype=False |
++| draw_options | prepareMolsBeforeDrawing=False, includeMetadata=False, includeAtomTags=False, addAtomIndices=False, addBondIndices=False, font_policy="rdkit-data-fonts-telex" |
++| draw_molecule | legend="" |
++| svg_validation_profile | Literal svg-static-v1 |
++
++Cada bloco é DTO frozen/extra=forbid; coordMap é objeto vazio fechado, também frozen/extra=forbid e sem campos, serializado como `{}` — não dict arbitrário ou mapa mutável compartilhado. As constantes usam tipos estritos. font_policy identifica a resolução interna da§9; a identificação efetiva da fonte usa font_name/font_sha256_observed de drawing. Não serializar o caminho absoluto efetivamente atribuído a fontFile. Nenhum campo usePathAngleExpansion é aceito. Identificadores/hashs são estritos; bool não é aceito como inteiro de contagem.
+ 
+ Warnings, na ordem: derived-computational-values; conditions-not-consumed; no-durable-query-record; tpsa-no-additional-s-p; acrescentar generated-2d-not-conformer somente se houver SVG. O renderer text explica esses códigos em linguagem clara. Não copiar warnings nativos arbitrários do motor como mensagem pública.
+ 
+@@ -422,7 +448,7 @@
+ | T-020A-048 | Método de descritor falha ou retorna não finito | Operação falha, sem zeros/null/resultado parcial |
+ | T-020A-049 | Centros definidos/indefinidos e E/Z | Preservação; não enumerar/atribuir estado novo |
+ | T-020A-050 | Arquivo/Mol antes e depois dos cálculos | Bytes/grafo preservados; cache interno não confundido com mutação científica |
+-| T-020A-051 | Desenho solicitado nos cinco exemplos e sondas de carga/isótopo/estereo | SVG válido no perfil e inspeção visual registrada |
++| T-020A-051 | Desenho nos cinco exemplos, sondas de carga/isótopo/estereo e canário antraceno fora do conjunto original | SVG válido no perfil, parâmetros das superfícies corretas e inspeção visual Windows registrada |
+ | T-020A-052 | Preparação gráfica com H explícito/isotópico e centro quiral | Sem H novo/removido; invariantes do grafo e estereo preservados |
+ | T-020A-053 | Preferência global CoordGen diferente | forceRDKit=True continua efetivo; sem toggle global do processo |
+ | T-020A-054 | Fonte real localizada, hash e configuração fontFile | Evidência Windows do arquivo usado; sem hash inventado/fallback |
+@@ -461,6 +487,8 @@
+ 
+ As sondas arquiteturais usaram RDKit2026.03.6/Python3.12.14/Linux, fora do clone: cinco RAWs identificados por hash, descritores, SVGs, 17 casos SMILES, oito casos SDF sintéticos e sondas adicionais. A reconciliação confirmou nSample, arquivo Telex,21 entradas do validador real e sete casos de política XML. Isso fundamenta chamadas e escolhas; não executou o serviço, leitor ou CLI futuros nem pytest desta funcionalidade.
+ 
++A sonda adicional `verify_draft_review.py` desta resposta executou o binding2026.03.6, registrou docstrings/defaults/source de MolWt, comprovou recusa do kwarg usePathAngleExpansion e confirmou que os cinco SVGs continuam byte-idênticos no mesmo ambiente ao explicitar coordMap/bondLength e os defaults do construtor/legend. Também recalculou os dez valores de cafeína e inspecionou comandos do desenho de antraceno. Evidência em `draft-review-verification.json`; não equivale a teste do serviço/validador Windows nem a execução de pytest de produção.
++
+ Vetor de referência do estudo para a fixture de cafeína, condicionado aos bytes/sha do RAW registrado na evidência: fórmulaC8H10N4O2, molar_mass194.194, exact_mass194.08037556, formal_charge0, heavy_atoms14, HBD0, HBA3, rotatable0, TPSA61.82, cLogP−1.0293. Nos floats, usar tolerância absoluta documentada de1e−8 para comparação do vetor, mantendo o valor de máquina no resultado; inteiros/fórmula exatos. Isso é referência computacional do perfil, não dado experimental. As fixtures S/P e de isótopos estão no pacote de evidência, com métodos/valores explícitos.
+ 
+ A implementação deve exercitar também um **MolecularState SDF realmente registrado** e um **MolecularState SMILES realmente publicado pela enumeração**; chamar o adaptador sobre RAW não é substituto dessa integração. Para Windows, registrar OS/build, Python, FS/drive, versões RDKit/Expat, fonte e checksums. Não reutilizar resultados de teste do020 como execução independente do020-A.
+@@ -489,7 +517,7 @@
+ 
+ ## 19. Critérios de aceite da especificação candidata
+ 
+-Para aprovar o rascunho e passar a candidata final, o revisor deve confrontar especialmente:
++Os critérios cumulativos abaixo permanecem para avaliar a candidata. A rodada focal atual deve verificar as correções do draft1 e eventual regressão concreta, sem repetir por preferência os pontos já encerrados:
+ 
+ - coerência entre APIs candidatas, contexto de vínculo gráfico e DTOs/JSON, sem objetos RDKit atravessando fronteira;
+ - detecção efetiva do perfil Windows11/NTFS, cobertura de nomes reservados e limites honestos de concorrência por path;
+@@ -500,7 +528,7 @@
+ 
+ São detalhamentos novos de um rascunho: nomes/campos de DTO, códigos reason, limites e gramática formal de atributos/path, regras de saída e lista de caminhos. Não alegar que o fechamento arquitetural do Claude já aprovou cada um desses detalhes. Eventual mudança científica do perfil ou expansão de garantia deve voltar explicitamente à revisão.
+ 
+-Antes de congelar: resolver BLOCKERS/MAJORS e outros itens que o próprio parecer marcar como condicionantes; conferir identidade do texto candidato; obter aprovação explícita do responsável para congelamento. Não substituir nome draft por final nem alterar READY FOR IMPLEMENTATION nesta etapa.
++Antes de congelar: resolver BLOCKERS/MAJORS e outros itens que o próprio parecer marcar como condicionantes; conferir identidade do texto candidato; obter aprovação explícita do responsável para congelamento. O nome FINAL SPECIFICATION CANDIDATE identifica a etapa documental; não remover CANDIDATE, não afirmar FINAL SPECIFICATION FROZEN:YES e não alterar READY FOR IMPLEMENTATION:NO antes dos gates próprios.
+ 
+ ## 20. Fontes primárias e rastreabilidade do contrato
+ 
+@@ -519,24 +547,29 @@
+ 
+ XML: https://docs.python.org/3.12/library/pyexpat.html e https://docs.python.org/3.12/library/xml.html#xml-vulnerabilities . Não tratar defaults como proteção universal. Nomes Windows: https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file . As recusas adicionais do perfil são candidatas explícitas, não declaração de que a biblioteca atual já as implementa.
+ 
+-## 21. Pedido de revisão ao Claude
+-
+-Atue como revisor adversarial independente e read-only deste rascunho do020-A, no SHA de referência da§2, confrontando-o com a arquitetura V2 e C-01/C-02/C-03 já fechados. Avalie precisão, completude, contradições, viabilidade, garantias de filesystem, semântica científica, imports opcionais, parsing/desenho, DTOs, erros, CLI e testes. Separe nova falha contratual de preferência; não reabra decisão arquitetural encerrada sem regressão/violação concreta. Se não puder acessar o código ou executar prova, declare o limite. Não exija implementar leitores de produção para aprovar a redação do contrato; justifique eventual spike de viabilidade com pergunta concreta. Entregue parecer integral em Markdown com BLOCKERS/MAJORS/MINORS/NOTES e prontidão para candidata final. Mantenha READY FOR IMPLEMENTATION:NO e FINAL SPECIFICATION FROZEN:NO. Não criar branch, commit, push, PR ou código de implementação.
++## 21. Pedido de fechamento ao Claude
++
++Atue como revisor independente e read-only da candidate1 e da resposta acompanhante ao parecer do draft1. Não repetir A-01–A-14/C-01–C-03 ou a revisão integral dos 80 cenários sem regressão concreta. Confirme MINOR-1 (superfícies de desenho e DTO), MINOR-2 (rotulagem default/desvio) e MINOR-3 (coordMap/bondLength explícitos; usePathAngleExpansion ausente do binding pinado e proibido). Compare a docstring completa e a recusa real registradas na evidência com a documentação posterior2026.09.1; não aceitar ou rejeitar a correção por autoridade do arquiteto. Confira disposição das NOTES, preservação dos originais, allowlist e ausência de mudança científica. Declare limites de acesso/execução. Não exija leitores Windows antes do contrato; a prova continua no checkpoint2. Entregue fechamento focal com contagens e prontidão para apresentar a candidata ao responsável para aprovação/congelamento explícitos. Não autorizar implementação, alterar original, criar branch/commit/push/PR ou implementar código nesta rodada.
+ 
+ ## 22. Estado documental
+ 
+-DRAFT SPECIFICATION COMPLETE: YES
+-DOCUMENT STATUS: DRAFT FOR INDEPENDENT REVIEW
++DRAFT SPECIFICATION COMPLETE: YES — original draft1 preserved
++DOCUMENT STATUS: FINAL CANDIDATE FOR INDEPENDENT CLOSURE REVIEW
++DOCUMENT VERSION: candidate1
+ BASELINE REFERENCED: 08b797e0985e123ffd4d7ca7e5a5e8f040e63851
+ REVIEWER FOR THIS STAGE: CLAUDE
+ SECOND REVIEWER REQUIRED FOR THIS STAGE: NO — explicit project-owner decision
+ ARCHITECTURAL REVIEW CLOSED: YES
+-DRAFT SPECIFICATION INDEPENDENTLY APPROVED: NO
+-READY FOR DRAFT REVIEW: YES
+-READY FOR FINAL CANDIDATE: NO
++DRAFT REVIEW COMPLETE: YES
++DRAFT SPECIFICATION INDEPENDENTLY APPROVED: NO — original verdict conditional
++REVIEW MINORS ADDRESSED BY ARCHITECT: YES — independent closure pending
++FINAL CANDIDATE INDEPENDENTLY APPROVED: NO
++READY FOR FINAL CANDIDATE REVIEW: YES
++READY FOR EXPLICIT FREEZE: NO — pending independent closure and owner decision
+ READY FOR IMPLEMENTATION: NO
+ FINAL SPECIFICATION FROZEN: NO
+ WINDOWS PRODUCTION READERS VALIDATED: NO — required at implementation checkpoint
+-CODE OR TESTS IMPLEMENTED: NO
++CODE OR TESTS IMPLEMENTED: NO — research probes only
++ORIGINAL DRAFT AND REVIEW MODIFIED: NO
+ EXISTING GOVERNANCE MODIFIED: NO
+ CODE REPOSITORY MODIFIED: NO

@@ -1,0 +1,110 @@
+{
+  "nature": "research probe; not production readers/service/CLI or pytest",
+  "python_version": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "rdkit_version": "2026.03.6",
+  "docstrings": {
+    "Compute2DCoords": "\nCompute2DCoords( (Mol)mol [, (bool)canonOrient=True [, (bool)clearConfs=True [, (dict)coordMap={} [, (int)nFlipsPerSample=0 [, (int)nSample=0 [, (int)sampleSeed=0 [, (bool)permuteDeg4Nodes=False [, (float)bondLength=-1.0 [, (bool)forceRDKit=False [, (bool)useRingTemplates=False]]]]]]]]]]) -> int :\n    Compute 2D coordinates for a molecule. \n      The resulting coordinates are stored on each atom of the molecule \n    \n      ARGUMENTS: \n    \n         mol - the molecule of interest\n         canonOrient - orient the molecule in a canonical way\n         clearConfs - if true, all existing conformations on the molecule\n                 will be cleared\n         coordMap - a dictionary mapping atom Ids -> Point2D objects \n                    with starting coordinates for atoms that should\n                    have their positions locked.\n         nFlipsPerSample - number of rotatable bonds that are\n                    flipped at random at a time.\n         nSample - Number of random samplings of rotatable bonds.\n         sampleSeed - seed for the random sampling process.\n         permuteDeg4Nodes - allow permutation of bonds at a degree 4\n                     node during the sampling process \n         bondLength - change the default bond length for depiction \n         forceRDKit - use RDKit to generate coordinates even if \n                      preferCoordGen is set to true\n         useRingTemplates - use templates to generate coordinates of complex\n                      ring systems\n    \n      RETURNS: \n    \n         ID of the conformation added to the molecule\n    \n\n    C++ signature :\n        unsigned int Compute2DCoords(RDKit::ROMol {lvalue} [,bool=True [,bool=True [,boost::python::dict {lvalue}={} [,unsigned int=0 [,unsigned int=0 [,int=0 [,bool=False [,double=-1.0 [,bool=False [,bool=False]]]]]]]]]])",
+    "MolDraw2DSVG_constructor": "\n__init__( (object)self, (int)width, (int)height [, (int)panelWidth=-1 [, (int)panelHeight=-1 [, (bool)noFreetype=False]]]) -> None :\n\n    C++ signature :\n        void __init__(_object*,int,int [,int=-1 [,int=-1 [,bool=False]]])",
+    "PrepareMolForDrawing": "\nPrepareMolForDrawing( (Mol)mol [, (bool)kekulize=True [, (bool)addChiralHs=True [, (bool)wedgeBonds=True [, (bool)forceCoords=False [, (bool)wavyBonds=False]]]]]) -> Mol :\n    Does some cleanup operations on the molecule to prepare it to draw nicely.\n    The operations include: kekulization, addition of chiral Hs (so that we can draw\n    wedges to them), wedging of bonds at chiral centers, and generation of a 2D\n    conformation if the molecule does not already have a conformation\n    \n    Returns a modified copy of the molecule.\n    \n\n    C++ signature :\n        RDKit::ROMol* PrepareMolForDrawing(RDKit::ROMol const* [,bool=True [,bool=True [,bool=True [,bool=False [,bool=False]]]]])",
+    "DrawMolecule": "\nDrawMolecule( (MolDraw2D)self, (Mol)mol [, (AtomPairsParameters)highlightAtoms=None [, (AtomPairsParameters)highlightAtomColors=None [, (AtomPairsParameters)highlightAtomRadii=None [, (int)confId=-1 [, (str)legend='']]]]]) -> None :\n    renders a molecule\n    \n\n    C++ signature :\n        void DrawMolecule(RDKit::MolDraw2D {lvalue},RDKit::ROMol [,boost::python::api::object=None [,boost::python::api::object=None [,boost::python::api::object=None [,int=-1 [,std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >='']]]]])\n\nDrawMolecule( (MolDraw2D)self, (Mol)mol, (AtomPairsParameters)highlightAtoms, (AtomPairsParameters)highlightBonds [, (AtomPairsParameters)highlightAtomColors=None [, (AtomPairsParameters)highlightBondColors=None [, (AtomPairsParameters)highlightAtomRadii=None [, (int)confId=-1 [, (str)legend='']]]]]) -> None :\n    renders a molecule\n    \n\n    C++ signature :\n        void DrawMolecule(RDKit::MolDraw2D {lvalue},RDKit::ROMol,boost::python::api::object,boost::python::api::object [,boost::python::api::object=None [,boost::python::api::object=None [,boost::python::api::object=None [,int=-1 [,std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >='']]]]])",
+    "CalcMolFormula": "\nCalcMolFormula( (Mol)mol [, (bool)separateIsotopes=False [, (bool)abbreviateHIsotopes=True]]) -> str :\n    returns the molecule's formula\n\n    C++ signature :\n        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > CalcMolFormula(RDKit::ROMol [,bool=False [,bool=True]])",
+    "CalcExactMolWt": "\nCalcExactMolWt( (Mol)mol [, (bool)onlyHeavy=False]) -> float :\n    returns the molecule's exact molecular weight\n\n    C++ signature :\n        double CalcExactMolWt(RDKit::ROMol [,bool=False])",
+    "CalcNumRotatableBonds": "\nCalcNumRotatableBonds( (Mol)mol, (bool)strict) -> int :\n    returns the number of rotatable bonds for a molecule.\n       strict = NumRotatableBondsOptions.NonStrict - Simple rotatable bond definition.\n       strict = NumRotatableBondsOptions.Strict - (default) does not count things like\n                amide or ester bonds\n       strict = NumRotatableBondsOptions.StrictLinkages - handles linkages between ring\n          systems.\n          - Single bonds between aliphatic ring Cs are always rotatable. This\n            means that the central bond in CC1CCCC(C)C1-C1C(C)CCCC1C is now \n            considered rotatable; it was not before\n          - Heteroatoms in the linked rings no longer affect whether or not\n            the linking bond is rotatable\n          - the linking bond in systems like Cc1cccc(C)c1-c1c(C)cccc1 is now\n             considered non-rotatable\n\n    C++ signature :\n        unsigned int CalcNumRotatableBonds(RDKit::ROMol,bool)\n\nCalcNumRotatableBonds( (Mol)mol [, (NumRotatableBondsOptions)strict=rdkit.Chem.rdMolDescriptors.NumRotatableBondsOptions.Default]) -> int :\n    returns the number of rotatable bonds for a molecule.\n       strict = NumRotatableBondsOptions.NonStrict - Simple rotatable bond definition.\n       strict = NumRotatableBondsOptions.Strict - (default) does not count things like\n                amide or ester bonds\n       strict = NumRotatableBondsOptions.StrictLinkages - handles linkages between ring\n          systems.\n          - Single bonds between aliphatic ring Cs are always rotatable. This\n            means that the central bond in CC1CCCC(C)C1-C1C(C)CCCC1C is now \n            considered rotatable; it was not before\n          - Heteroatoms in the linked rings no longer affect whether or not\n            the linking bond is rotatable\n          - the linking bond in systems like Cc1cccc(C)c1-c1c(C)cccc1 is now\n             considered non-rotatable\n\n    C++ signature :\n        unsigned int CalcNumRotatableBonds(RDKit::ROMol [,RDKit::Descriptors::NumRotatableBondsOptions=rdkit.Chem.rdMolDescriptors.NumRotatableBondsOptions.Default])",
+    "CalcTPSA": "\nCalcTPSA( (Mol)mol [, (bool)force=False [, (bool)includeSandP=False]]) -> float :\n    returns the TPSA value for a molecule\n\n    C++ signature :\n        double CalcTPSA(RDKit::ROMol [,bool=False [,bool=False]])",
+    "CalcCrippenDescriptors": "\nCalcCrippenDescriptors( (Mol)mol [, (bool)includeHs=True [, (bool)force=False]]) -> tuple :\n    returns a 2-tuple with the Wildman-Crippen logp,mr values\n\n    C++ signature :\n        boost::python::tuple CalcCrippenDescriptors(RDKit::ROMol [,bool=True [,bool=False]])",
+    "MolWt": "The average molecular weight of the molecule\n\n  >>> MolWt(Chem.MolFromSmiles('CC'))\n  30.07\n  >>> MolWt(Chem.MolFromSmiles('[NH4+].[Cl-]'))\n  53.49...\n\n",
+    "private_CalcMolWt_for_source_evidence_only": "\n_CalcMolWt( (Mol)mol [, (bool)onlyHeavy=False]) -> float :\n    returns the molecule's molecular weight\n\n    C++ signature :\n        double _CalcMolWt(RDKit::ROMol [,bool=False])"
+  },
+  "draw_option_defaults": {
+    "prepareMolsBeforeDrawing": true,
+    "includeMetadata": true,
+    "includeAtomTags": false,
+    "addAtomIndices": false,
+    "addBondIndices": false,
+    "fontFile": ""
+  },
+  "molwt_python_source": "MolWt = lambda *x, **y: _rdMolDescriptors._CalcMolWt(*x, **y)\n",
+  "font": {
+    "name": "Telex-Regular.ttf",
+    "size_bytes": 38940,
+    "sha256": "eeaa2d17d105b6b46e5368ecd990f5b19c50131ff922dbf79bfb9bb45c249871"
+  },
+  "unsupported_kwarg_probe": {
+    "kwarg": "usePathAngleExpansion",
+    "exception_type": "ArgumentError",
+    "message": "Python argument types in\n    rdkit.Chem.rdDepictor.Compute2DCoords(Mol)\ndid not match C++ signature:\n    Compute2DCoords(RDKit::ROMol {lvalue} mol, bool canonOrient=True, bool clearConfs=True, boost::python::dict {lvalue} coordMap={}, unsigned int nFlipsPerSample=0, unsigned int nSample=0, int sampleSeed=0, bool permuteDeg4Nodes=False, double bondLength=-1.0, bool forceRDKit=False, bool useRingTemplates=False)",
+    "rejected": true
+  },
+  "caffeine_reference": {
+    "raw_sha256": "d86df8dc90f65208c4c4be2794f41984705a0f8cae75bc7be02ed901d48f60d8",
+    "values": {
+      "formula": "C8H10N4O2",
+      "molar_mass_g_mol": 194.19400000000007,
+      "exact_mass_da": 194.08037556,
+      "formal_charge_e": 0,
+      "heavy_atom_count": 14,
+      "hbd_count": 0,
+      "hba_count": 3,
+      "rotatable_bond_count": 0,
+      "tpsa_a2": 61.82,
+      "clogp_wildman_crippen": -1.0293
+    },
+    "comparison_abs_tol": 1e-08,
+    "reference_matches": true
+  },
+  "five_raw_cases": [
+    {
+      "name": "caffeine",
+      "cid": 2519,
+      "raw_path": "caffeine-pubchem/pubchem_cid_2519_2d.sdf",
+      "raw_sha256": "d86df8dc90f65208c4c4be2794f41984705a0f8cae75bc7be02ed901d48f60d8",
+      "svg_sha256": "415d96b55f2497323772f45b5da74875a42b2fae8ebd163c4a75483f4867b504",
+      "old_and_explicit_parameters_svg_identical": true
+    },
+    {
+      "name": "rosmarinic-acid",
+      "cid": 5281792,
+      "raw_path": "rosmarinic-acid-pubchem/pubchem_cid_5281792_2d.sdf",
+      "raw_sha256": "4f792103aeb813d5b0687dbe5efe91ce79788b4f491dd57cc08ec3f47ba50962",
+      "svg_sha256": "58b2f9c79e2ecbe11bb7a6af12067b91e45fb02b78edc4ba667d905c65713afd",
+      "old_and_explicit_parameters_svg_identical": true
+    },
+    {
+      "name": "imidacloprid",
+      "cid": 86287518,
+      "raw_path": "imidacloprid-pubchem/pubchem_cid_86287518_2d.sdf",
+      "raw_sha256": "60d723ff4a574fc1f67093a199c5fbc1a48348865076c5e1246e019d9e688fef",
+      "svg_sha256": "a9fa5916baf9a45dc4e0f260fd6964fac93c3a3d8533e9ea1dc6234dde19d74a",
+      "old_and_explicit_parameters_svg_identical": true
+    },
+    {
+      "name": "diclofenac",
+      "cid": 3033,
+      "raw_path": "diclofenac-pubchem/pubchem_cid_3033_2d.sdf",
+      "raw_sha256": "6b768c28fe0a1cfc131ebad01bbb19842182f701ffa48cb3245b6fb24c711443",
+      "svg_sha256": "718117a0a340e6d0dffc38998e4932c810e236db20c14a4506c7bdfe3d7b8ec8",
+      "old_and_explicit_parameters_svg_identical": true
+    },
+    {
+      "name": "atrazine",
+      "cid": 2256,
+      "raw_path": "atrazine-pubchem/pubchem_cid_2256_2d.sdf",
+      "raw_sha256": "0d13b1f8b2d227af284f4ca9d0829b77e5da5d731debbf14ff523c51004a4943",
+      "svg_sha256": "1cf9eebe6f4cb07f6a0c44b8acb2b3601ed088347e70d2eaa7d2659ecfea6497",
+      "old_and_explicit_parameters_svg_identical": true
+    }
+  ],
+  "fused_aromatic_canary": {
+    "molecule": "anthracene",
+    "smiles": "c1ccc2cc3ccccc3cc2c1",
+    "formula": "C14H10",
+    "path_commands": [
+      "L",
+      "M"
+    ],
+    "svg_sha256": "b30ebd7e4712be797d993ca9b2afdcc4e7934728763574bc99bf2cd108138bfe",
+    "commands_within_proposed_subset": true,
+    "windows_production_validator_test": false
+  }
+}

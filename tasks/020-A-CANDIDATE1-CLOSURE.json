@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "task_id": "020-A-CANDIDATE1-CLOSURE",
+  "status": "READY_FOR_REVIEW",
+  "assigned_role": "claude-independent-reviewer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "governance_base_commit": null,
+  "blocked_by": [],
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_access_mode": "read-only if needed; declare limitations",
+  "inputs": [
+    {
+      "path": "increments/020-A/05-final-candidate/INCREMENT_020_A_FINAL_SPECIFICATION_CANDIDATE.md",
+      "sha256": "123596d03947f89321e6e623e3f0e7a2b88f38de42cd510a59f31cfd16d67ad4"
+    },
+    {
+      "path": "increments/020-A/05-final-candidate/INCREMENT_020_A_DRAFT_REVIEW_RESPONSE.md",
+      "sha256": "b545b965552e858f080285dc22148c38f4728a160ca061808593a5dc34229d9a"
+    }
+  ],
+  "review_original": {
+    "path": "increments/020-A/04-draft-review/CLAUDE_DRAFT_REVIEW_ORIGINAL.txt",
+    "sha256": "f2215080d4dc091db31cf4c7583ab915918da382388058700e1a0b17e2e56a8b"
+  },
+  "focus": [
+    "MINOR-1: constructor/options/DrawMolecule and DTO surfaces",
+    "MINOR-2: explicit defaults/deviations of pinned Python API",
+    "MINOR-3: coordMap/bondLength explicit; usePathAngleExpansion absent/rejected in2026.03.6",
+    "Six NOTES dispositions and concrete regressions only"
+  ],
+  "output_path": "increments/020-A/06-candidate-closure/CLAUDE_CANDIDATE1_CLOSURE_REVIEW.md",
+  "allowed_output_paths": [
+    "increments/020-A/06-candidate-closure/CLAUDE_CANDIDATE1_CLOSURE_REVIEW.md"
+  ],
+  "branch_policy": "review/020-a-candidate1-closure; Claude Cloud may use claude/020-a-candidate1-closure",
+  "requested_result": "Focal independent closure; READY FOR OWNER FREEZE DECISION YES/NO",
+  "prohibited": [
+    "implementation",
+    "editing originals",
+    "freezing specification",
+    "editing central STATUS/tasks",
+    "merge",
+    "configuration changes",
+    "automation activation"
+  ],
+  "ready_for_implementation": false,
+  "final_specification_frozen": false,
+  "implementation_authorized": false,
+  "automated_relay_active": false,
+  "next_gate": "Owner explicit freeze decision only after independent closure",
+  "publication_prerequisites": [
+    "Use own authorized branch; do not alter documentary main or other actor branch"
+  ],
+  "governance_ref": "docs/020-a-candidate1-review-20261020",
+  "governance_commit_pin_source": "Exact commit SHA supplied in the launch command; reviewer records observed SHA and verifies input SHA-256",
+  "public_visibility_authorization": {
+    "date": "2026-10-20",
+    "source": "direct owner message in architect conversation",
+    "quote": "decidi deixar aberto o repositorio"
+  },
+  "if_write_blocked": "Complete read-only review if inputs accessible; return review in conversation and state no commit/push. Do not bypass session restrictions.",
+  "communication_test_verified_commit": "befdc444fe015286b1508b60c107c7e9f5c23dd3"
+}

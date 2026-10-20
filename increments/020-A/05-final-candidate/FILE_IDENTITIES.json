@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "00_START_HERE.md",
+      "size_bytes": 2779,
+      "sha256": "c80c0ae6620c8d614ee63747906a6cdb35b7a576d6962e4cd25ce0d6255fe444",
+      "lines": 45
+    },
+    {
+      "path": "INCREMENT_020_A_DRAFT_REVIEW_RESPONSE.md",
+      "size_bytes": 11494,
+      "sha256": "b545b965552e858f080285dc22148c38f4728a160ca061808593a5dc34229d9a",
+      "lines": 126
+    },
+    {
+      "path": "INCREMENT_020_A_FINAL_SPECIFICATION_CANDIDATE.md",
+      "size_bytes": 70346,
+      "sha256": "123596d03947f89321e6e623e3f0e7a2b88f38de42cd510a59f31cfd16d67ad4",
+      "lines": 575
+    },
+    {
+      "path": "changes/draft1-to-candidate1.diff",
+      "size_bytes": 30816,
+      "sha256": "75ef41f02a4db1913a4a18bc7984b3f82ba89e85db20662987e4a7ac9fe7789a",
+      "lines": 220
+    },
+    {
+      "path": "context/INCREMENT_020_A_V2_REVIEW_RESPONSE_PACKAGE.zip",
+      "size_bytes": 372328,
+      "sha256": "58234663a93e36c8c84c7fc90c2eaa7f3c56daf0ea2a612a6565dc34267fcbfd"
+    },
+    {
+      "path": "evidence/document-validation.json",
+      "size_bytes": 626,
+      "sha256": "d8e18e0228e8739656152f2aaa5d0c4a3b44190bfa308ed4796b37521c9162b2",
+      "lines": 30
+    },
+    {
+      "path": "evidence/draft-review-verification.json",
+      "size_bytes": 11776,
+      "sha256": "205706cca5f77b800a38beefc79e69caee466b7bd2b031f31715043b0f8fb154",
+      "lines": 110
+    },
+    {
+      "path": "evidence/verify_draft_review.py",
+      "size_bytes": 8355,
+      "sha256": "7e77856d444670f7db59324a338bcb69d1831d67e7b5cd3652889f4b2d1f26ac",
+      "lines": 176
+    },
+    {
+      "path": "prior/CLAUDE_DRAFT_REVIEW_ORIGINAL.txt",
+      "size_bytes": 20981,
+      "sha256": "f2215080d4dc091db31cf4c7583ab915918da382388058700e1a0b17e2e56a8b",
+      "lines": 126
+    },
+    {
+      "path": "prior/INCREMENT_020_A_DRAFT_SPECIFICATION.md",
+      "size_bytes": 62532,
+      "sha256": "b0c8532282ac90cf41c9958b8af06ef3aea142777794af6b058e3ba558c6397d",
+      "lines": 542
+    }
+  ]
+}

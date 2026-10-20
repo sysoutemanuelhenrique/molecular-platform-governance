@@ -1,0 +1,126 @@
+# Revisão adversarial — Rascunho de especificação, Incremento 020-A
+
+Revisor: Claude, no papel de revisor independente, read-only, único revisor designado para esta etapa por decisão expressa do responsável (registrada em `INCREMENT_020_A_DRAFT_SPECIFICATION.md`, §1, 20/10/2026). Documento confrontado: `INCREMENT_020_A_DRAFT_SPECIFICATION.md` (draft1, autor Codex, 20/10/2026), seções 1–22, no SHA de baseline declarado `08b797e0985e123ffd4d7ca7e5a5e8f040e63851`.
+
+**Natureza:** parecer sobre prontidão para **candidata final**, não sobre implementação. Nenhum arquivo do repositório foi lido, clonado ou alterado nesta rodada — este revisor não tem, nesta sessão, acesso de rede autenticado ao repositório (`gh api` retorna 403 para este repositório privado; `git fetch` contra o remoto real falha por autenticação; `pip install rdkit` falha por ausência de resolução DNS para pypi.org mesmo pelo proxy configurado). Toda verificação técnica desta rodada foi feita por fonte primária externa (documentação oficial RDKit em rdkit.org/docs/source e documentação oficial do Python para `xml.parsers.expat`), não por execução do código do incremento nem por leitura do SHA informado. Isso é declarado como limite, não como lacuna do rascunho.
+
+## 1. Escopo desta rodada
+
+Por instrução do próprio documento (§21) e pela decisão de processo registrada em §1 (revisor único nesta etapa, substituindo a espera por um segundo revisor), esta rodada:
+
+- não reabre A-01–A-14 nem C-01/C-02/C-03, já fechados pelo adendo deste revisor (`fechamento-resposta-v2-incremento-020-a-2026-10-20.md`) sem regressão concreta identificada;
+- avalia precisão, completude, contradições, viabilidade, garantias de filesystem, semântica científica, fronteira de imports, parsing/desenho, DTOs, erros, CLI e a matriz de 80 cenários **como detalhamentos novos deste rascunho**, que é exatamente o que §19 do próprio documento já antecipa como objeto de confronto nesta etapa;
+- não exige execução dos leitores de produção em Windows nem implementação de código para aprovar a redação do contrato, conforme pedido explícito de §21.
+
+## 2. Verificação independente da superfície RDKit/stdlib citada pelo rascunho
+
+Verificação feita contra a documentação oficial instalada em rdkit.org/docs/source (gerada a partir da versão RDKit atualmente indexada — não foi possível confirmar nela o banner específico da versão 2026.3.6 pinada pelo projeto; isso é declarado como limite de correspondência de versão exata, igual ao já disclaimed pelo próprio rascunho em §20: "o site consultado é versão posterior ao pin") e contra docs.python.org para `pyexpat`. Classificação conforme o próprio vocabulário do rascunho (§2): isto é evidência DOCUMENTED por fonte primária externa, não SOURCE_VERIFIED contra o binário pinado 2026.3.6 nem EXPERIMENTALLY_VERIFIED por execução.
+
+| Item do rascunho | Verificação | Resultado |
+|---|---|---|
+| `CalcMolFormula(separateIsotopes, abbreviateHIsotopes)` | Assinatura real confirmada: `separateIsotopes` default `False`, `abbreviateHIsotopes` default `True`. O rascunho usa `separateIsotopes=True, abbreviateHIsotopes=False` — **ambos divergem do default**. | Nomes corretos; **ver MINOR-2** sobre rotulagem de divergência não declarada |
+| `CalcExactMolWt(onlyHeavy)` | Confirmado: kwarg real, default `False`, igual ao usado pelo rascunho. | Correto, sem divergência |
+| `CalcNumRotatableBonds` / `NumRotatableBondsOptions` | Enum confirmado em `rdMolDescriptors` (não em `Lipinski`), membros `Default`/`NonStrict`/`Strict`/`StrictLinkages`; kwarg real chamado `strict=`, com default ligado a `NumRotatableBondsOptions.Default`, não a `.Strict`. A prosa do rascunho ("Strict é explícito, sem inferir diferença contra Default") está tecnicamente cautelosa e correta — não afirma que Strict é o default. | Correto |
+| `CalcTPSA(force, includeSandP)` | Confirmado: ambos default `False`. Rascunho usa `force=True` (diverge, não rotulado) e `includeSandP=False` (coincide com default, rotulado corretamente no texto). | Nomes corretos; **ver MINOR-2** |
+| `CalcCrippenDescriptors(includeHs, force)[0]` | Confirmado: `includeHs` default `True` (coincide), `force` default `False` (rascunho usa `True`, diverge, não rotulado). Docstring oficial confirma retorno como tupla `(logp, mr)` — **índice [0] é LogP**, exatamente o que o rascunho assume para `clogp_wildman_crippen`. | Correto na ordem do retorno; **ver MINOR-2** sobre `force` |
+| `Compute2DCoords` — 8 kwargs citados (`canonOrient`, `clearConfs`, `nFlipsPerSample`, `nSample`, `sampleSeed`, `permuteDeg4Nodes`, `forceRDKit`, `useRingTemplates`) | Todos os 8 nomes confirmados como kwargs reais da função Python de conveniência (não do struct C++). A função expõe também `coordMap={}`, `bondLength=-1.0` e `usePathAngleExpansion=True`, não citados pelo rascunho. | Os 8 citados estão corretos; **ver MINOR-3** sobre os 3 não citados |
+| `PrepareMolForDrawing` — 5 kwargs (`kekulize`, `addChiralHs`, `wedgeBonds`, `forceCoords`, `wavyBonds`) | Todos confirmados reais. Defaults: `kekulize=True`, `addChiralHs=True`, `wedgeBonds=True`, `forceCoords=False`, `wavyBonds=False`. Rascunho usa `kekulize=False` e `addChiralHs=False` (ambos divergem, não rotulados), `wedgeBonds=True`/`forceCoords=False`/`wavyBonds=False` (coincidem). | Nomes e defaults corretos; **ver MINOR-2** |
+| `MolDraw2DSVG(600,400; prepareMolsBeforeDrawing=False; includeMetadata=False; includeAtomTags=False; addAtomIndices=False; addBondIndices=False; legend vazio)` como um único passo/linha de parâmetros | **Construtor real** aceita apenas `width, height[, panelWidth=-1[, panelHeight=-1[, noFreetype=False]]]`. `prepareMolsBeforeDrawing`, `includeMetadata`, `includeAtomTags`, `addAtomIndices`, `addBondIndices` são **atributos do objeto `MolDrawOptions`** obtido via `drawer.drawOptions()`, setados depois da construção — não argumentos do construtor. `legend` é parâmetro do método `DrawMolecule(mol, legend=...)`, não do construtor nem de `drawOptions()`. `includeMetadata` tem default real `True` (rascunho usa `False`, divergência não rotulada). | **Ver MINOR-1** — defeito de precisão de contrato, não de química |
+| `xml.parsers.expat.UseForeignDTD` | Confirmado método real; usado pelo rascunho para garantir que nenhum DTD externo seja carregado via esse mecanismo alternativo. Uso descrito é consistente com a intenção de hardening. | Correto |
+
+Nenhum erro factual novo de API foi encontrado nesta rodada — todas as nove assinaturas citadas pelo rascunho usam nomes reais de kwargs do RDKit/stdlib. Os achados abaixo são de **precisão de contrato e de disciplina de rotulagem**, não de química incorreta nem de API inventada.
+
+## 3. BLOCKERS
+
+Nenhum.
+
+## 4. MAJORS
+
+Nenhum.
+
+## 5. MINORS
+
+**MINOR-1 — §9/§11: a tabela de `MolDraw2DSVG` funde três superfícies de API distintas numa única linha de parâmetros.**
+
+A tabela do §9 lista `MolDraw2DSVG | 600,400; prepareMolsBeforeDrawing=False; includeMetadata=False; includeAtomTags=False; addAtomIndices=False; addBondIndices=False; legend vazio` como se fossem todos parâmetros do mesmo passo. Na API real, são três momentos distintos: (a) o construtor `MolDraw2DSVG(width, height[, panelWidth, panelHeight, noFreetype])`, que aceita apenas largura/altura/opções de painel/freetype; (b) os cinco campos `prepareMolsBeforeDrawing`/`includeMetadata`/`includeAtomTags`/`addAtomIndices`/`addBondIndices`, que são atributos do objeto `MolDrawOptions` retornado por `drawer.drawOptions()`, setados após a construção; (c) `legend`, que é argumento de `DrawMolecule(mol, legend=...)`, não do construtor nem do objeto de opções. Uma implementação literal que tentasse `MolDraw2DSVG(600, 400, prepareMolsBeforeDrawing=False, ...)` levantaria `TypeError`. Isso não altera nenhum valor científico nem decisão arquitetural fechada — é puramente uma imprecisão de como o contrato está tabulado — mas, como §11 declara que `drawing.effective_parameters` deve conter "todos os parâmetros da§9", essa imprecisão se propagaria para o contrato JSON público se não for corrigida antes da candidata final. Correção sugerida: reestruturar a tabela do §9 em três linhas (construtor / drawOptions / DrawMolecule) antes de congelar.
+
+**MINOR-2 — §8/§9: disciplina de rotulagem "default vs. desvio explícito" aplicada de forma inconsistente.**
+
+O próprio rascunho estabelece, em pontos específicos, o hábito valioso de dizer explicitamente quando um parâmetro diverge do default upstream (§7.1: "removeHs=False diverge do default True"; §8: "TPSA mantém S/P=False explicitamente, coincidente com default"). Essa prática é exatamente o que permite a um revisor ou auditor futuro distinguir "parâmetro presente só por determinismo" de "parâmetro que muda deliberadamente o comportamento padrão". Mas ela não é aplicada a todas as divergências reais presentes no próprio documento, confirmadas na tabela da Seção 2 acima:
+
+- `CalcMolFormula(separateIsotopes=True, abbreviateHIsotopes=False)` — duas divergências (default `False`/`True` respectivamente) não rotuladas como tal;
+- `CalcTPSA(force=True)` — diverge do default `False`, não rotulado (só o `includeSandP` recebeu o rótulo "coincidente com default");
+- `CalcCrippenDescriptors(force=True)` — diverge do default `False`, não rotulado;
+- `PrepareMolForDrawing(kekulize=False, addChiralHs=False)` — ambos divergem dos defaults `True`/`True`, não rotulados (a prosa do §9 explica a *intenção* — "preservar H explícitos" — mas não declara que são desvios do default da função);
+- `MolDraw2DSVG`/`MolDrawOptions.includeMetadata=False` — diverge do default real `True`, não rotulado.
+
+Nenhuma dessas divergências parece errada tecnicamente; o ponto é de completude editorial, não de correção química. Recomendo, antes da candidata final, aplicar a mesma disciplina de rotulagem de forma exaustiva a toda a tabela do §8 e do §9, não apenas aos itens já escolhidos como exemplo.
+
+**MINOR-3 — §9: três parâmetros reais de `Compute2DCoords` não são mencionados nem fixados pelo rascunho, apesar do objetivo declarado de determinismo total.**
+
+A função Python expõe, além dos oito parâmetros citados pelo rascunho, mais três: `coordMap={}`, `bondLength=-1.0` e `usePathAngleExpansion=True`. O rascunho não os cita, nem para fixá-los explicitamente nem para declarar que ficam deliberadamente no default upstream. Isso é relevante porque §9 e §11 (`effective_parameters`) existem precisamente para que a reprodutibilidade entre execuções/versões não dependa de defaults não documentados do RDKit — se uma versão futura do RDKit mudar o default de `usePathAngleExpansion`, por exemplo, o layout gerado mudaria silenciosamente sem que `effective_parameters` o registrasse. Recomendo decidir explicitamente, antes da candidata final, se esses três parâmetros devem ser fixados com um valor e registrados em `effective_parameters`, ou se a omissão é deliberada — e, nesse caso, documentá-la como tal.
+
+## 6. NOTES
+
+**NOTE-1 — §6: pergunta concreta de viabilidade sobre a detecção de Windows11 versus Windows10, conforme pedido por §21.**
+
+O rascunho exige detecção efetiva de Windows11 especificamente, recusando Windows10/Server/indeterminado, e corretamente não afirma prematuramente como isso será feito, deferindo a prova ao checkpoint ("deverá ser demonstrada por source/API e testes do checkpoint... Não inferir suporte de um mock que retorna sucesso"). Isso é desenhado com cautela. Mas Windows11 e Windows10 compartilham a mesma major/minor version (10.0) nas APIs tradicionais do SO; a distinção pública usual é por número de build (≥22000), um limiar que a própria Microsoft não trata como contrato público congelado e que pode mudar em atualizações futuras de feature do Windows11. Como §21 pede explicitamente que qualquer dúvida de viabilidade bloqueadora venha acompanhada da pergunta concreta e do menor spike necessário, registro a pergunta, sem tratá-la como bloqueadora do rascunho: **qual será a fonte única de verdade (por exemplo `sys.getwindowsversion().build`, `platform.win32_ver()`, ou uma chave de registro específica) para a determinação de Windows11, e o projeto aceita um piso de build number como contrato de longo prazo mesmo sabendo que a Microsoft pode deslocar esse número em versões futuras?** Isso não bloqueia a candidata final; recomendo que a resposta conste do primeiro relatório de checkpoint (checkpoint 2, que já exige evidência Windows11/NTFS para os dois leitores).
+
+**NOTE-2 — §8: `molar_mass_g_mol` é o único dos dez campos descrito via `Descriptors.MolWt` em vez de `rdMolDescriptors.*`, sem justificativa declarada.**
+
+Todos os outros nove campos citam explicitamente um método de `rdMolDescriptors`, reforçando um namespace canônico único e auditável. `molar_mass_g_mol` aponta para `Descriptors.MolWt`, de um módulo diferente, sem nota explicando se é porque `rdMolDescriptors` não tem equivalente direto ou por outro motivo. Não é um erro — é plausível que não exista equivalente direto em `rdMolDescriptors` — mas, dado o cuidado do resto da tabela em fixar namespace exato por campo, recomendo que a candidata final inclua uma frase explicando essa exceção, para que um leitor futuro não a confunda com uma inconsistência não intencional.
+
+**NOTE-3 — §10.1: o perfil reduzido de comandos de path (M, L, Q) foi validado empiricamente contra apenas cinco desenhos; desenho fail-closed é a mitigação correta, mas vale um canário adicional no checkpoint.**
+
+O rascunho já reconhece essa limitação e escolhe corretamente falhar explicitamente em vez de ampliar o perfil silenciosamente caso surja um comando fora do conjunto observado (por exemplo, um arco para sistemas aromáticos fundidos fora das cinco amostras do estudo). Isso é desenho cauteloso e correto; não é um achado contra o rascunho. Sugiro apenas que o checkpoint Windows inclua deliberadamente ao menos uma estrutura policíclica aromática fundida fora do conjunto original de cinco, como canário específico para esse risco — caso contrário, a primeira vez que o perfil for exercitado contra uma molécula fora do conjunto de estudo pode ser em produção, manifestando-se como `depiction-failure` em vez de ser pego antes.
+
+**NOTE-4 — confirmação: o NOTE de formatação cosmética de versão (V1) parece resolvido.**
+
+`engine_version` observado em runtime ("2026.03.6", com zero à esquerda) e a declaração de dependência em `pyproject.toml` ("rdkit==2026.3.6", sem zero à esquerda) agora aparecem rotulados separadamente e por contexto ("versão efetivamente observada" vs. "declaração de dependência"), o que resolve a ambiguidade cosmética levantada na primeira rodada desta linha de revisão. Nenhuma ação adicional necessária.
+
+**NOTE-5 — limite de verificação declarado: vetor de referência de cafeína (§17) não pôde ser executado nesta sessão.**
+
+Esta sessão não tem RDKit instalável (sem resolução DNS para pypi.org mesmo pelo proxy configurado) nem acesso de execução ao código do incremento. Os valores de fórmula (C8H10N4O2), heavy_atoms (14), HBD (0) e molar_mass (≈194.19) são independentemente conhecidos e plausíveis por química básica da cafeína. Não pude verificar de forma independente, nesta sessão, os valores decimais de `tpsa_a2` (61.82), `clogp_wildman_crippen` (−1.0293) nem `hba_count` (3, sob a definição estrita de `CalcNumHBA`, distinta da contagem Lipinski NOCount-like de N/O que costuma ser citada como 6 para cafeína) contra uma instalação real do RDKit2026.3.6. Isso é exatamente o que o próprio T-020A-041 já prevê resolver no checkpoint de implementação; não é um motivo para reter a candidata final, apenas uma declaração de limite deste revisor nesta rodada, conforme exigido por §21.
+
+**NOTE-6 — confirmações positivas desta rodada.**
+
+Toda a superfície de API nova citada neste rascunho (`CalcMolFormula`, `CalcExactMolWt`, `CalcNumRotatableBonds`/`NumRotatableBondsOptions`, `CalcTPSA`, `CalcCrippenDescriptors` e a ordem do seu retorno, os oito kwargs citados de `Compute2DCoords`, os cinco kwargs de `PrepareMolForDrawing` e `xml.parsers.expat.UseForeignDTD`) corresponde a métodos/kwargs reais, verificados por fonte primária externa nesta rodada. A distinção entre validade lexical de `state_id` e elegibilidade de filename Windows (§5) preserva corretamente a disciplina já fechada em C-01. A taxonomia de erros do §13 é consistente com a taxonomia já estabelecida no projeto (INPUT/CONFIGURATION/STORAGE/EXECUTION ERROR, omitindo corretamente ACQUISITION ERROR por não haver aquisição neste incremento), inclusive a convenção de não capturar `KeyboardInterrupt`/`SystemExit` como falha de negócio. A matriz de 80 cenários cobre de forma reconhecível cada seção normativa do documento, incluindo casos de regressão cumulativa (T-020A-079/080) e os limites exatos N/N+1 (§6).
+
+## 7. Tabela de decisão
+
+| Item | Classificação | Bloqueia candidata final? |
+|---|---|---|
+| MINOR-1 — tabela MolDraw2DSVG funde 3 superfícies de API | MINOR | Deve ser corrigido antes de congelar, mas não exige spike nem reabertura arquitetural |
+| MINOR-2 — rotulagem default/desvio incompleta | MINOR | Deve ser aplicado de forma exaustiva antes de congelar |
+| MINOR-3 — 3 kwargs de Compute2DCoords não fixados/declarados | MINOR | Deve ser decidido (fixar ou declarar omissão) antes de congelar |
+| NOTE-1 — pergunta de viabilidade Windows11 | NOTE | Não bloqueia; resposta esperada no checkpoint2 |
+| NOTE-2 — Descriptors.MolWt sem justificativa | NOTE | Não bloqueia; clarificação textual |
+| NOTE-3 — canário de path command fora das 5 amostras | NOTE | Não bloqueia; recomendação para o checkpoint |
+| NOTE-4 — versão cosmética resolvida | NOTE | Encerrada, sem ação |
+| NOTE-5 — limite de verificação do vetor de cafeína | NOTE | Não bloqueia; já coberto por T-020A-041 |
+| NOTE-6 — confirmações positivas | NOTE | Não bloqueia |
+
+## 8. Parecer
+
+**BLOCKER: 0 / MAJOR: 0 / MINOR: 3 / NOTE: 6**
+
+Nenhum erro factual novo de API RDKit/stdlib foi encontrado nesta rodada — a superfície técnica citada pelo rascunho é real em todos os nove itens reverificados. Os três MINORs são de precisão de contrato (como os parâmetros de desenho estão tabulados) e de completude/disciplina editorial (rotulagem de desvios, parâmetros de determinismo não fixados), não de arquitetura, segurança ou semântica científica incorreta. Nenhum deles exige spike de viabilidade, execução dos leitores de produção ou reabertura de A-01–A-14/C-01–C-03. A pergunta de viabilidade registrada em NOTE-1 é concreta e não bloqueadora, conforme o próprio §21 permite deixá-la registrada sem impedir o avanço do rascunho.
+
+**Este rascunho pode avançar para candidata final condicionado à correção textual dos três MINORs listados**, que não requerem código, spike ou nova decisão arquitetural — apenas reescrita de tabelas/texto nas seções §8/§9/§11. Recomendo que a próxima versão traga evidência de que os três foram endereçados (mesma disciplina de resposta ponto-a-ponto já usada nas rodadas anteriores desta linha), antes de ser apresentada como candidata final para aprovação/congelamento explícitos do responsável.
+
+Este parecer é deste revisor apenas, operando como revisor único desta etapa por decisão expressa do responsável registrada em §1 do próprio rascunho — não há segundo revisor pendente para esta rodada especificamente, diferentemente das rodadas arquiteturais anteriores.
+
+READY FOR DRAFT REVIEW: YES (concluída nesta rodada)
+DRAFT SPECIFICATION INDEPENDENTLY APPROVED: NO
+READY FOR FINAL CANDIDATE: CONDITIONAL — pendente correção textual dos 3 MINORs (§8/§9/§11), sem necessidade de spike, código ou nova decisão arquitetural
+READY FOR IMPLEMENTATION: NO
+FINAL SPECIFICATION FROZEN: NO
+WINDOWS PRODUCTION READERS VALIDATED: NO — não exigido nesta etapa; exigido no checkpoint2 de implementação
+ARCHITECTURAL REVIEW CLOSED: YES (preservado do fechamento anterior; não reaberto nesta rodada)
+NEW RDKIT/STDLIB API ERROR FOUND THIS ROUND: NO
+INDEPENDENT CLOSURE BY THIS REVIEWER: YES
+SECOND REVIEWER REQUIRED FOR THIS STAGE: NO — decisão expressa do responsável, registrada em §1 do rascunho
+CODE OR TESTS IMPLEMENTED: NO
+EXISTING GOVERNANCE MODIFIED: NO
+REPOSITORY READ OR MODIFIED THIS ROUND: NO — sem acesso de rede autenticado ao repositório nesta sessão
+IMPLEMENTATION AUTHORIZED: NO
