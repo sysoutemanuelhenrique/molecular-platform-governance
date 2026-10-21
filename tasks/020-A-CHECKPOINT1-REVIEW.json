@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "020-A-CHECKPOINT1-REVIEW",
-  "status": "READY_FOR_REVIEW",
+  "status": "RESULT_REPORTED_AWAITING_FULL_REVIEW_ARTIFACTS",
   "assigned_role": "claude-independent-reviewer-separate-from-implementer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "governance_ref": "docs/020-a-candidate1-review-20261020",
@@ -106,5 +106,33 @@
   "checkpoint2_authorized": false,
   "checkpoint3_authorized": false,
   "automated_relay_active": false,
-  "next_gate": "Architect reconciles independent review and owner permits next checkpoint only after contractual findings resolved"
+  "next_gate": "Receive original full review and evidence, verify bytes/full SHA-256, preserve originals and reconcile all findings before releasing corrective task; do not repeat completed review solely because push failed",
+  "reported_result": {
+    "source": "Direct owner message relaying Claude reviewer summary; full review/evidence files not yet accessible to architect",
+    "verdict": "REQUEST CHANGES",
+    "blockers": 0,
+    "majors": 2,
+    "minors": 2,
+    "notes": 5,
+    "ready_for_checkpoint2_review_gate": false,
+    "publication_reported": "failed; session git proxy authorization denied",
+    "local_unpublished_commit_reported": "f6587d43569393bcab01e5e74924c5cd3645371a",
+    "review_file_reported": {
+      "path": "increments/020-A/10-checkpoint-1-review/CLAUDE_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+      "lines": 153,
+      "size_bytes": 24918,
+      "sha256": null,
+      "sha256_prefix": "72d658ad",
+      "sha256_suffix": "4399"
+    },
+    "evidence_file_reported": {
+      "path": "increments/020-A/10-checkpoint-1-review/evidence/claude-dto-coercion-reproduction.json",
+      "sha256": null,
+      "sha256_prefix": "8d24af59",
+      "sha256_suffix": "40cea"
+    },
+    "full_review_read_by_architect": false,
+    "identities_verified_by_architect": false,
+    "minors_and_notes_not_in_summary": "Do not infer them from architect triage or another review"
+  }
 }

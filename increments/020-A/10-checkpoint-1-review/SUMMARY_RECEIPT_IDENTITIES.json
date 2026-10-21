@@ -1,0 +1,30 @@
+{
+  "document_type": "Reported review result awaiting original artifacts; no independent approval",
+  "source_snapshot": "6bd9a5fdb30f8d75dd6dde05d4eafab9e86382e1",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "size_bytes": 3500,
+      "lines": 41,
+      "sha256": "d0624a995a68f35a9606393dc4083299a0def9ec166a7712bf69669183248fab"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1.json",
+      "size_bytes": 5786,
+      "lines": 106,
+      "sha256": "788a6cccf4c34f24f1135fd687767cb8d2f66f22b6e32eb19f367c3804488216"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1-REVIEW.json",
+      "size_bytes": 8321,
+      "lines": 138,
+      "sha256": "ed940148d667c4fbcdf17ccf7994bd5cac6360c40c039e7d0c7db9653ec7e171"
+    },
+    {
+      "path": "increments/020-A/10-checkpoint-1-review/ARCHITECT_REVIEW_SUMMARY_RECEIPT.md",
+      "size_bytes": 2817,
+      "lines": 27,
+      "sha256": "d7ef3b4be1a15123a604c24f394caa03c7d88d36306bdde888dc0e0e06dcad75"
+    }
+  ]
+}
