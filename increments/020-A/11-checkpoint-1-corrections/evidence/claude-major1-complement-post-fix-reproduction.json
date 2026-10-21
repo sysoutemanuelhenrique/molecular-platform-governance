@@ -1,0 +1,21 @@
+{
+  "method": "Claude implementer direct constructor reproduction on the new HEAD after the mode=\"before\" strict-str fix, no pytest",
+  "code_head_new": "36682074b55596d5632800bea98aff778eee885f",
+  "code_head_parent": "9ccdb9817a78f8de34c085c16443293b1ab99fd9",
+  "python": "3.11.9",
+  "pydantic": "2.14.1",
+  "rdkit": "2026.03.6",
+  "results": [
+    {"model": "CharacterizationValues", "field": "formula", "supplied_type": "bytes", "accepted": false, "exception_type": "ValidationError"},
+    {"model": "CharacterizationValues", "field": "formula", "supplied_type": "str", "supplied_repr": "'C2H6O'", "accepted": true, "result_repr": "'C2H6O'", "json_round_trip_preserved": true},
+    {"model": "CharacterizationProvenance", "field": "input_state_id", "supplied_type": "bytes", "accepted": false, "exception_type": "ValidationError"},
+    {"model": "CharacterizationProvenance", "field": "entity_id", "supplied_type": "bytes", "accepted": false, "exception_type": "ValidationError"},
+    {"model": "CharacterizationProvenance", "field": "state_record_sha256_observed", "supplied_type": "bytes", "accepted": false, "exception_type": "ValidationError"},
+    {"model": "CharacterizationProvenance", "field": "representation_checksum_expected", "supplied_type": "bytes", "accepted": false, "exception_type": "ValidationError"},
+    {"model": "CharacterizationProvenance", "field": "representation_checksum_observed", "supplied_type": "bytes", "accepted": false, "exception_type": "ValidationError"},
+    {"model": "CharacterizationProvenance", "field": "input_state_id", "supplied_type": "bytearray", "accepted": false, "exception_type": "ValidationError"},
+    {"model": "CharacterizationProvenance", "field": "input_state_id", "supplied_type": "str", "supplied_repr": "'caffeine-1'", "accepted": true, "result_repr": "'caffeine-1'"},
+    {"model": "CharacterizationProvenance", "field": "representation_checksum_expected", "supplied_type": "str", "supplied_repr": "'AB'*32 (uppercase)", "accepted": true, "preserved_spelling": true, "json_round_trip_preserved": true}
+  ],
+  "conclusion": "All six fields now raise pydantic.ValidationError for bytes and for bytearray, while every native str control (including the ID's original case and the expected checksum's original uppercase spelling) continues to construct, and JSON round-trip (model_dump_json -> model_validate_json) is unaffected."
+}

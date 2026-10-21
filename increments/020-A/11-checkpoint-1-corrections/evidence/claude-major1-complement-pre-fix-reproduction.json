@@ -1,0 +1,79 @@
+{
+  "method": "Claude implementer direct constructor reproduction on the exact unmodified HEAD this complement starts from, no project-source modification, no pytest",
+  "code_head": "9ccdb9817a78f8de34c085c16443293b1ab99fd9",
+  "python": "3.11.9",
+  "pydantic": "2.14.1",
+  "rdkit": "2026.03.6",
+  "purpose": "Reproduce the architect's isolated probe (evidence/architect-post-correction-dto-probe.json, Python 3.12.14/Pydantic 2.14.0) in the implementer's own target environment before changing any code, as required by tasks/020-A-CHECKPOINT1-MAJOR1-COMPLEMENT.json.",
+  "results": [
+    {
+      "model": "CharacterizationValues",
+      "field": "formula",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'C2H6O'",
+      "accepted": true,
+      "result_type": "str",
+      "result_repr": "'C2H6O'"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "input_state_id",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'caffeine-1'",
+      "accepted": true,
+      "result_type": "str",
+      "result_repr": "'caffeine-1'"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "entity_id",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'caffeine'",
+      "accepted": true,
+      "result_type": "str",
+      "result_repr": "'caffeine'"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "state_record_sha256_observed",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'",
+      "accepted": true,
+      "result_type": "str"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "representation_checksum_expected",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
+      "accepted": true,
+      "result_type": "str"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "representation_checksum_observed",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'",
+      "accepted": true,
+      "result_type": "str"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "input_state_id",
+      "supplied_type": "bytearray",
+      "supplied_repr": "bytearray(b'caffeine-1')",
+      "accepted": true,
+      "result_type": "str",
+      "result_repr": "'caffeine-1'"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "state_record_sha256_observed",
+      "supplied_type": "bytearray",
+      "supplied_repr": "bytearray(b'a'*64)",
+      "accepted": true,
+      "result_type": "str"
+    }
+  ],
+  "conclusion": "All six fields identified by the architect's probe, plus bytearray (not covered by the architect's probe, added here because the task requires bytearray negative controls too), accept the wrong-typed input and coerce it to str on this exact HEAD. This also disproves increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_CORRECTIONS_REPORT.md Section 5.1's statement that plain str fields already reject bytes natively on the installed pydantic: this reproduction ran on Python 3.11.9/Pydantic 2.14.1, the exact same interpreter/pydantic pair that report's own Section 5.1.1 sonda used against f8416b8, and still observed silent bytes-to-str coercion for all six fields above - the prior claim was never true for these particular fields, in this same environment, not merely a difference between pydantic patch versions."
+}
