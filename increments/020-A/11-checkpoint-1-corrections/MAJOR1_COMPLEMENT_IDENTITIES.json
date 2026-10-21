@@ -1,0 +1,42 @@
+{
+  "document_type": "Remaining MAJOR-1 strict ordinary-string DTO types; no scope or contract expansion",
+  "previous_governance_snapshot": "0db9b5af2b3f7cd00a8de70b6685114cbe604450",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 35,
+      "sha256": "766ad9adfe1f110d2f943d711c1007e053efcd7a60fb443d8d4eb66003dc53fa",
+      "size_bytes": 3079
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1.json",
+      "lines": 115,
+      "sha256": "db7cf67d0d7b194d090f36629eaea4276c039609e7de3fd65a3597469f1fa368",
+      "size_bytes": 6083
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1-CORRECTIONS.json",
+      "lines": 156,
+      "sha256": "79ed28bd6658aa2c52b432d816991addf9f1f8c55e731df279fdf6998ad15cc2",
+      "size_bytes": 9271
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1-MAJOR1-COMPLEMENT.json",
+      "lines": 93,
+      "sha256": "ad30dac905e95b41d8ca11b585bbba51e4c393b2462c04d84104743a70568eb5",
+      "size_bytes": 6169
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/ARCHITECT_CORRECTIONS_RECEIPT_AND_MAJOR1_COMPLEMENT.md",
+      "lines": 54,
+      "sha256": "202cd825ac0b6bb98532dcc47107a4c2c4987c0614006d06e8f8c6bbe585cd45",
+      "size_bytes": 6380
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-post-correction-dto-probe.json",
+      "lines": 103,
+      "sha256": "21ed216cbaf7236de9aadac16af7c93b007bc83c66667d979874d98419614510",
+      "size_bytes": 3221
+    }
+  ]
+}

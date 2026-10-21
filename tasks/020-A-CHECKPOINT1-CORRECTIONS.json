@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "020-A-CHECKPOINT1-CORRECTIONS",
-  "status": "AUTHORIZED",
+  "status": "CORRECTION_REPORTED_MAJOR1_COMPLEMENT_REQUIRED",
   "assigned_role": "claude-implementer-separate-from-reviewer",
   "authorization_scope": "CHECKPOINT_1_CORRECTIONS_ONLY",
   "authorization_basis": {
@@ -138,5 +138,19 @@
   "checkpoint2_authorized": false,
   "checkpoint3_authorized": false,
   "automated_relay_active": false,
-  "next_gate": "Independent focal reverification of MAJOR-1/2, MINOR-1/2 and concrete regressions on corrected pinned HEAD; no automatic CP2 release"
+  "next_gate": "Complete already-required strict ordinary-string DTO types before independent focal reverification of all four findings",
+  "reported_code_head": "9ccdb9817a78f8de34c085c16443293b1ab99fd9",
+  "corrections_report": {
+    "path": "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_CORRECTIONS_REPORT.md",
+    "governance_commit": "a2c463f9bd4fd331c0338ed9b4d993e23a6bafa5",
+    "sha256": "31bd9bc0d727d53475f024ffa1a61c276b21b4d0efb5f26e7bdd0e91eab649c5",
+    "size_bytes": 31129,
+    "lines": 514
+  },
+  "architect_remaining_issue": {
+    "finding": "MAJOR-1",
+    "receipt": "increments/020-A/11-checkpoint-1-corrections/ARCHITECT_CORRECTIONS_RECEIPT_AND_MAJOR1_COMPLEMENT.md",
+    "evidence": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-post-correction-dto-probe.json",
+    "next_task": "tasks/020-A-CHECKPOINT1-MAJOR1-COMPLEMENT.json"
+  }
 }

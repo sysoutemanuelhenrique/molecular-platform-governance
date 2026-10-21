@@ -1,0 +1,103 @@
+{
+  "method": "Architect focal direct constructor probe on exact corrected HEAD, no pytest and no project-source modifications",
+  "code_head": "9ccdb9817a78f8de34c085c16443293b1ab99fd9",
+  "python": "3.12.14",
+  "pydantic": "2.14.0",
+  "original_five_exhibits_rejected": true,
+  "results": [
+    {
+      "model": "CharacterizationValues",
+      "field": "heavy_atom_count",
+      "supplied_type": "str",
+      "supplied_repr": "'3'",
+      "accepted": false,
+      "exception_type": "ValidationError"
+    },
+    {
+      "model": "CharacterizationValues",
+      "field": "heavy_atom_count",
+      "supplied_type": "float",
+      "supplied_repr": "3.0",
+      "accepted": false,
+      "exception_type": "ValidationError"
+    },
+    {
+      "model": "CharacterizationValues",
+      "field": "formal_charge_e",
+      "supplied_type": "str",
+      "supplied_repr": "'0'",
+      "accepted": false,
+      "exception_type": "ValidationError"
+    },
+    {
+      "model": "CharacterizationValues",
+      "field": "molar_mass_g_mol",
+      "supplied_type": "str",
+      "supplied_repr": "'46.069'",
+      "accepted": false,
+      "exception_type": "ValidationError"
+    },
+    {
+      "model": "SdfParserParameters",
+      "field": "sanitize",
+      "supplied_type": "int",
+      "supplied_repr": "1",
+      "accepted": false,
+      "exception_type": "ValidationError"
+    },
+    {
+      "model": "CharacterizationValues",
+      "field": "formula",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'C2H6O'",
+      "accepted": true,
+      "result_type": "str",
+      "result_repr": "'C2H6O'"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "input_state_id",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'caffeine-1'",
+      "accepted": true,
+      "result_type": "str",
+      "result_repr": "'caffeine-1'"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "entity_id",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'caffeine'",
+      "accepted": true,
+      "result_type": "str",
+      "result_repr": "'caffeine'"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "state_record_sha256_observed",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'",
+      "accepted": true,
+      "result_type": "str",
+      "result_repr": "'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "representation_checksum_expected",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
+      "accepted": true,
+      "result_type": "str",
+      "result_repr": "'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "representation_checksum_observed",
+      "supplied_type": "bytes",
+      "supplied_repr": "b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'",
+      "accepted": true,
+      "result_type": "str",
+      "result_repr": "'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'"
+    }
+  ]
+}

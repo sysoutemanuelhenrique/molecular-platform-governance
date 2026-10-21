@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "task_id": "020-A-CHECKPOINT1-MAJOR1-COMPLEMENT",
+  "status": "AUTHORIZED",
+  "assigned_role": "claude-implementer-separate-from-reviewer",
+  "authorization_scope": "EXISTING_CHECKPOINT_1_MAJOR1_COMPLETION_ONLY",
+  "authorization_basis": {
+    "owner_authorization_snapshot": "85ce45ce5cc635d75035664dd612ca6c0a839dac",
+    "correction_authorization_snapshot": "0db9b5af2b3f7cd00a8de70b6685114cbe604450",
+    "reason": "Strict IDs/hashes were already explicit in frozen section 11 and prior correction acceptance; no new scientific/API requirement"
+  },
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "governance_ref": "docs/020-a-candidate1-review-20261020",
+  "governance_task_snapshot": "Exact immutable release SHA provided in architect launch message; do not use governance main for inputs",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-020-a-molecular-characterization",
+  "expected_initial_code_head": "9ccdb9817a78f8de34c085c16443293b1ab99fd9",
+  "expected_code_main": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "frozen_specification": {
+    "path": "increments/020-A/08-final-specification/INCREMENT_020_A_FINAL_SPECIFICATION.md",
+    "governance_commit": "665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed",
+    "sha256": "cfbc6ea4bbb58f987deb3f73e45fc39d5b79d0cfaa2de8e0a7870a9937386e9c"
+  },
+  "original_review": {
+    "path": "increments/020-A/10-checkpoint-1-review/CLAUDE_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+    "governance_commit": "5583734475103991fb12ed8b26689cf4ad8a0eba",
+    "sha256": "72d658ad6184a2411d9cb56dbbb3b49861ccd64621126cdb5d62aa7b048f4399"
+  },
+  "corrections_report": {
+    "path": "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_CORRECTIONS_REPORT.md",
+    "governance_commit": "a2c463f9bd4fd331c0338ed9b4d993e23a6bafa5",
+    "sha256": "31bd9bc0d727d53475f024ffa1a61c276b21b4d0efb5f26e7bdd0e91eab649c5",
+    "size_bytes": 31129,
+    "lines": 514
+  },
+  "architect_receipt": {
+    "path": "increments/020-A/11-checkpoint-1-corrections/ARCHITECT_CORRECTIONS_RECEIPT_AND_MAJOR1_COMPLEMENT.md",
+    "sha256": "202cd825ac0b6bb98532dcc47107a4c2c4987c0614006d06e8f8c6bbe585cd45"
+  },
+  "architect_reproduction": {
+    "path": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-post-correction-dto-probe.json",
+    "sha256": "21ed216cbaf7236de9aadac16af7c93b007bc83c66667d979874d98419614510",
+    "environment": "Python 3.12.14/Pydantic 2.14.0; exact corrected source; isolated constructor calls, no pytest"
+  },
+  "finding": "The original five numeric/literal examples now reject, but CharacterizationProvenance still accepts bytes for IDs and hashes, coercing them to str; CharacterizationValues.formula likewise accepts bytes. This is the same MAJOR-1, not a new finding or scope expansion.",
+  "required_correction": [
+    "Reproduce the reported byte-to-str coercions in the target environment before changing code; declare versions",
+    "Enforce real strict type checks for applicable ordinary-str fields in the new DTOs, particularly IDs and all hashes, before decoding/coercion",
+    "Keep valid native str, nullable fields where contracted, ID case, expected checksum spelling, JSON shape and scientific rules unchanged",
+    "Do not alter already-correct literal/numeric handling or introduce generic external-input hardening",
+    "Keep MAJOR-2/MINOR-1/MINOR-2 tests and their current implementation intact"
+  ],
+  "allowed_code_paths": [
+    "src/molecular/characterization.py",
+    "tests/test_characterization.py"
+  ],
+  "cumulative_increment_allowlist": [
+    "src/molecular/characterization.py",
+    "src/molecular/rdkit_tautomer.py",
+    "tests/test_characterization.py",
+    "tests/test_rdkit_tautomer.py"
+  ],
+  "tests": [
+    "Negative bytes and bytearray with content otherwise valid as str for new IDs/hashes and other applicable ordinary-string DTO fields; positive native-string controls",
+    "Demonstrate constructor and applicable public Python-object validation rejection, preserving valid JSON serialization/round-trip",
+    "Existing numeric/literal strictness and all prior characterization/adapter tests remain passing",
+    "Full suite if environment permits; report actual collected/pass/fail/skip counts and no predetermined delta"
+  ],
+  "output_path": "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_MAJOR1_COMPLEMENT_REPORT.md",
+  "allowed_governance_output_paths": [
+    "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_MAJOR1_COMPLEMENT_REPORT.md",
+    "increments/020-A/11-checkpoint-1-corrections/evidence/claude-major1-complement-*"
+  ],
+  "report_requirements": [
+    "Initial/final code SHA and full input identities; fields/types covered and actual tests/versions/results",
+    "Correct the earlier report statement that ordinary str fields already reject bytes if target reproduction disproves it; new addendum only, leave previous report intact",
+    "Diff against 9ccdb98 and cumulative baseline allowlist, git diff --check, working-tree state",
+    "New commit direct child of 9ccdb9817a78f8de34c085c16443293b1ab99fd9; code push and own governance report/evidence push permitted; verify remote refs",
+    "Output path/lines/bytes/SHA-256 and declare no independent finding closure"
+  ],
+  "prohibited": [
+    "Any code change outside the two paths of this complement",
+    "Changing frozen contract, science, JSON/API, dependencies, SVG grammar to include Z, legacy models, readers/service/CLI or future increments",
+    "Touching increment-009-review.txt, _figura_curcumina/ or other user untracked items",
+    "Editing previous report/review/evidence, architect documents, central tasks or STATUS",
+    "PR/merge/formal approval/comments, main/configuration/visibility changes, force/amend/reset/rebase"
+  ],
+  "checkpoint1_approved": false,
+  "checkpoint2_authorized": false,
+  "checkpoint3_authorized": false,
+  "automated_relay_active": false,
+  "next_gate": "After complement delivery, independent focal reverification of all four original findings and concrete regressions; no automatic CP2 release"
+}
