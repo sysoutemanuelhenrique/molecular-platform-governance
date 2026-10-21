@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "task_id": "020-A-CHECKPOINT1-MAJOR1-STRING-CLOSURE",
+  "status": "AUTHORIZED",
+  "assigned_role": "claude-implementer-separate-from-reviewer",
+  "authorization_scope": "EXISTING_CHECKPOINT_1_MAJOR1_COMPLETION_ONLY",
+  "authorization_basis": {
+    "owner_authorization_snapshot": "85ce45ce5cc635d75035664dd612ca6c0a839dac",
+    "correction_authorization_snapshot": "0db9b5af2b3f7cd00a8de70b6685114cbe604450",
+    "reason": "Strict IDs/hashes were already explicit in frozen section 11 and prior correction acceptance; no new scientific/API requirement"
+  },
+  "supersedes_active_task": "020-A-CHECKPOINT1-MAJOR1-COMPLEMENT; previous delivery preserved, partial for same finding",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "governance_ref": "docs/020-a-candidate1-review-20261020",
+  "governance_task_snapshot": "Exact immutable release SHA supplied in architect launch message; do not read main as current task",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-020-a-molecular-characterization",
+  "expected_initial_code_head": "36682074b55596d5632800bea98aff778eee885f",
+  "expected_initial_code_parent": "9ccdb9817a78f8de34c085c16443293b1ab99fd9",
+  "expected_code_main": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "frozen_specification": {
+    "path": "increments/020-A/08-final-specification/INCREMENT_020_A_FINAL_SPECIFICATION.md",
+    "governance_commit": "665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed",
+    "sha256": "cfbc6ea4bbb58f987deb3f73e45fc39d5b79d0cfaa2de8e0a7870a9937386e9c"
+  },
+  "original_review": {
+    "path": "increments/020-A/10-checkpoint-1-review/CLAUDE_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+    "governance_commit": "5583734475103991fb12ed8b26689cf4ad8a0eba",
+    "sha256": "72d658ad6184a2411d9cb56dbbb3b49861ccd64621126cdb5d62aa7b048f4399"
+  },
+  "received_complement_report": {
+    "path": "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_MAJOR1_COMPLEMENT_REPORT.md",
+    "governance_commit": "07185ab3738f279a4536419fde37a079988e8ed4",
+    "lines": 332,
+    "size_bytes": 17224,
+    "sha256": "cc9d9ada7c4df4a230c5940cd0a6e66e7b83949efda3fe16d1c9ed6c6d2ce1fb"
+  },
+  "architect_receipt": {
+    "path": "increments/020-A/11-checkpoint-1-corrections/ARCHITECT_MAJOR1_COMPLEMENT_RECEIPT_AND_COMPLETE_STRING_MATRIX.md",
+    "lines": 66,
+    "size_bytes": 7842,
+    "sha256": "6f8534349160230c7edcafe2ea4fe096f38006dde49085a5f34246f0fdc0436c"
+  },
+  "architect_reproduction": {
+    "path": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-complete-string-matrix.json",
+    "lines": 658,
+    "size_bytes": 17218,
+    "sha256": "2b8ea026f56f98eda11da234d1ab33d17ef21629ce0dfc14bf9c43bfeda5b3fb"
+  },
+  "finding": "Same original MAJOR-1: six example fields fixed; 11 ordinary-string DTO fields still coerce bytes/bytearray, including two drawing hashes explicitly in prior task",
+  "finite_string_field_inventory": [
+    "CharacterizationValues.formula",
+    "DrawingResult.font_name",
+    "DrawingResult.font_sha256_observed",
+    "DrawingResult.svg_sha256",
+    "DrawingResult.xml_parser_version_observed",
+    "CharacterizationProvenance.input_state_id",
+    "CharacterizationProvenance.entity_id",
+    "CharacterizationProvenance.state_record_sha256_observed",
+    "CharacterizationProvenance.representation_path",
+    "CharacterizationProvenance.representation_format_declared",
+    "CharacterizationProvenance.representation_checksum_expected",
+    "CharacterizationProvenance.representation_checksum_observed",
+    "CharacterizationProvenance.engine_version",
+    "CharacterizationProvenance.application_version",
+    "MolecularCharacterizationResult.svg",
+    "RDKitCharacterizationOutcome.engine_version",
+    "RDKitCharacterizationOutcome.svg"
+  ],
+  "remaining_fields_observed_coercing": [
+    "DrawingResult.font_name",
+    "DrawingResult.font_sha256_observed",
+    "DrawingResult.svg_sha256",
+    "DrawingResult.xml_parser_version_observed",
+    "CharacterizationProvenance.representation_path",
+    "CharacterizationProvenance.representation_format_declared",
+    "CharacterizationProvenance.engine_version",
+    "CharacterizationProvenance.application_version",
+    "MolecularCharacterizationResult.svg",
+    "RDKitCharacterizationOutcome.engine_version",
+    "RDKitCharacterizationOutcome.svg"
+  ],
+  "required_correction": [
+    "Read the receipt and evidence; reproduce all 17 fields against the actual target checkout, not a copied validator",
+    "Make the 11 remaining fields reject bytes/bytearray before coercion; preserve all six fixed fields and all existing numeric/literal validators",
+    "Both normal constructor and model_validate(dict) must reject at the target field, using otherwise valid payloads",
+    "Keep native str, JSON round-trips, ID case, checksum spelling and nullable application_version/svg contracts unchanged",
+    "Cover the whole 17-field matrix in regression tests with valid surrounding objects, native-string controls and contracted null controls",
+    "Retain all prior tests/corrections for MAJOR-2/MINOR-1/MINOR-2; do not broaden to content semantics or other modules"
+  ],
+  "allowed_code_paths": [
+    "src/molecular/characterization.py",
+    "tests/test_characterization.py"
+  ],
+  "cumulative_increment_allowlist": [
+    "src/molecular/characterization.py",
+    "src/molecular/rdkit_tautomer.py",
+    "tests/test_characterization.py",
+    "tests/test_rdkit_tautomer.py"
+  ],
+  "tests": [
+    "Run tests/test_characterization.py with and without RDKit if both existing environments are available",
+    "Run combined characterization/adapter tests and full suite if environment permits; actual commands/versions/pass/fail/skip/collection delta required",
+    "No fixed expected delta; no deletion/weakening of existing assertions, no tautological mocks of production validation"
+  ],
+  "output_path": "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_MAJOR1_STRING_CLOSURE_REPORT.md",
+  "allowed_governance_output_paths": [
+    "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_MAJOR1_STRING_CLOSURE_REPORT.md",
+    "increments/020-A/11-checkpoint-1-corrections/evidence/claude-major1-string-closure-*"
+  ],
+  "report_requirements": [
+    "Input identities and initial/final code SHA; exact 17-field before/after matrix and nullable/JSON controls",
+    "Clarify separately the prior report interpretation that DrawingResult hashes were outside authorization; preserve every previous report",
+    "Diff against 3668207 and cumulative allowlist, whitespace check, working-tree status without touching user untracked files",
+    "New code commit must be direct child of 36682074b55596d5632800bea98aff778eee885f; code push and own governance report/evidence push allowed; verify remote refs",
+    "Own report branch based on supplied governance release (or compatible session branch with that snapshot accessible); no central-file writes",
+    "Report path/lines/bytes/SHA-256; no independent finding closure or CP2 authorization"
+  ],
+  "prohibited": [
+    "Any code change outside the two paths of this complement",
+    "Changing frozen contract, science, JSON/API, dependencies, SVG grammar to include Z, legacy models, readers/service/CLI or future increments",
+    "Touching increment-009-review.txt, _figura_curcumina/ or other user untracked items",
+    "Editing previous report/review/evidence, architect documents, central tasks or STATUS",
+    "PR/merge/formal approval/comments, main/configuration/visibility changes, force/amend/reset/rebase",
+    "Changing this finite matrix into a general validation/hardening project or changing JSON shape"
+  ],
+  "checkpoint1_approved": false,
+  "checkpoint2_authorized": false,
+  "checkpoint3_authorized": false,
+  "automated_relay_active": false,
+  "next_gate": "Independent focal reverification of four original findings and concrete regressions after corrected delivery; no automatic CP2 release"
+}

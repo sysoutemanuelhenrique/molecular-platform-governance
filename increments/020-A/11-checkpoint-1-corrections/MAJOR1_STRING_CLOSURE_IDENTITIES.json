@@ -1,0 +1,37 @@
+{
+  "document_type": "Finite ordinary-string matrix for existing MAJOR-1; no contract/scientific expansion",
+  "previous_governance_snapshot": "2d0cd56378b76e9c64ce88afa8a78544e5d322cc",
+  "code_head": "36682074b55596d5632800bea98aff778eee885f",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 35,
+      "size_bytes": 2865,
+      "sha256": "3582cfebee7f65ad08ba6e4fe22004efa69a9e911520cc4d9a16def6467fbb9a"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1-MAJOR1-STRING-CLOSURE.json",
+      "lines": 132,
+      "size_bytes": 8015,
+      "sha256": "7d66136f4c6e0442133628e9105a3fa5277a5293eae426c5ad0f15c9e7372eb1"
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/ARCHITECT_MAJOR1_COMPLEMENT_RECEIPT_AND_COMPLETE_STRING_MATRIX.md",
+      "lines": 66,
+      "size_bytes": 7842,
+      "sha256": "6f8534349160230c7edcafe2ea4fe096f38006dde49085a5f34246f0fdc0436c"
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-complete-string-matrix.json",
+      "lines": 658,
+      "size_bytes": 17218,
+      "sha256": "2b8ea026f56f98eda11da234d1ab33d17ef21629ce0dfc14bf9c43bfeda5b3fb"
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-complete-string-matrix-probe.py",
+      "lines": 116,
+      "size_bytes": 6473,
+      "sha256": "2d4dff1a02101386e7d455d0f5bc673a91272fb6ef1c7b15830e16a6cdfb4cbc"
+    }
+  ]
+}

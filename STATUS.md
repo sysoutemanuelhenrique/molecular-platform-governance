@@ -1,32 +1,32 @@
-# Coordenação — complemento focal do MAJOR-1, CP1 do 020-A
+# Coordenação — matriz completa do MAJOR-1, CP1 do 020-A
 
-Atualizado em 21/10/2026. Correções recebidas e relatório lido integralmente; a triagem reproduziu remanescência do mesmo MAJOR-1 (bytes convertidos para str em IDs/hashs). Não iniciar reverificação como se os quatro achados estivessem atendidos; completar esse ponto primeiro, dentro da autorização existente.
+Atualizado em 21/10/2026. Complemento recebido e lido integralmente. Os seis campos demonstrados foram corrigidos, mas a mesma coerção permanece em 11 dos 17 campos str/str|None dos DTOs novos, incluindo os dois hashes do desenho. Não iniciar CP2 ou reverificação como se MAJOR-1 estivesse atendido.
 
 | Campo | Estado |
 |---|---|
 | Branch documental | docs/020-a-candidate1-review-20261020 |
 | Main governance preservada | a47183dfec8213c765ed43ae482c8c227760a3d5 |
-| Main/baseline do código preservada | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851 |
-| Novo HEAD recebido | 9ccdb9817a78f8de34c085c16443293b1ab99fd9 |
-| Parent direto | f8416b845efe93f9e47deca97f01a355e4e679ba |
+| Main/baseline código preservada | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851 |
+| HEAD de código recebido | 36682074b55596d5632800bea98aff778eee885f |
+| Parent direto | 9ccdb9817a78f8de34c085c16443293b1ab99fd9 |
 | Branch de código | feature/increment-020-a-molecular-characterization |
-| Relatório corretivo preservado | a2c463f9bd4fd331c0338ed9b4d993e23a6bafa5 |
+| Relatório do complemento | 07185ab3738f279a4536419fde37a079988e8ed4 |
 | Contrato final preservado | 665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed |
-| Tarefa ativa | tasks/020-A-CHECKPOINT1-MAJOR1-COMPLEMENT.json — AUTHORIZED |
-| Escopo do complemento | characterization.py e test_characterization.py apenas |
-| Próximo ator | Claude implementador; completar tipos str já contratados no MAJOR-1 |
-| Próximo gate | Reverificação independente focal de MAJOR-1/2 e MINOR-1/2 após novo HEAD |
-| Relay automático | Não configurado; entregar comando manual |
+| Tarefa ativa | tasks/020-A-CHECKPOINT1-MAJOR1-STRING-CLOSURE.json — AUTHORIZED |
+| Escopo | Mesmos dois arquivos; matriz fechada de 17 campos, 11 remanescentes |
+| Próximo ator | Claude implementador, separado do revisor |
+| Próximo gate | Reverificação independente focal dos quatro achados, após entrega |
+| Relay automático | Não configurado; comando manual |
 
-Relatório: increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_CORRECTIONS_REPORT.md, 514 linhas/31.129 bytes, SHA-256 31bd9bc0d727d53475f024ffa1a61c276b21b4d0efb5f26e7bdd0e91eab649c5. Fornecido: 155 e 170 testes focais, 1739 passed/5 skipped na suíte completa, +72 itens. Esses resultados não foram reexecutados pelo arquiteto. Diff corretivo observado: três arquivos +711/−16; cumulativo quatro arquivos +3789/−1; adaptador RDKit inalterado nesta correção.
+Recibo: increments/020-A/11-checkpoint-1-corrections/ARCHITECT_MAJOR1_COMPLEMENT_RECEIPT_AND_COMPLETE_STRING_MATRIX.md. Evidência própria: increments/020-A/11-checkpoint-1-corrections/evidence/architect-complete-string-matrix.json. Python 3.12.14/Pydantic 2.14.0, módulo exato do HEAD com blob Git conferido; não pytest/RDKit/Windows. 17 controles str+JSON e três null passaram; seis campos recusam bytes/bytearray por construtor/model_validate, 11 ainda os convertem.
 
-Sonda isolada do arquiteto: os cinco exemplos numéricos/literais agora são recusados, mas input_state_id, entity_id e hashes da proveniência ainda aceitam bytes e os convertem para str. A seção 11 e a tarefa anterior já exigiam IDs/hashs estritos. Detalhes em increments/020-A/11-checkpoint-1-corrections/ARCHITECT_CORRECTIONS_RECEIPT_AND_MAJOR1_COMPLEMENT.md e evidence/architect-post-correction-dto-probe.json. Python 3.12.14/Pydantic 2.14.0; não pytest ou prova Windows.
+O relatório do implementador tem 332 linhas/17.224 bytes, SHA-256 cc9d9ada7c4df4a230c5940cd0a6e66e7b83949efda3fe16d1c9ed6c6d2ce1fb. Informa 1757 passed/5 skipped, +18 itens; pytest não reexecutado pelo arquiteto. Diff recebido: dois arquivos +141/−0; cumulativo quatro arquivos +3930/−1. Documentos e tarefas anteriores preservados como histórico; este STATUS aponta a única tarefa ativa.
 
-Não editar os relatórios anteriores. Parecer original e contrato final preservados. A evidência dos outros três achados continua destinada à reverificação; o arquiteto não os declarou fechados. Mantenha SVG M/L/Q com recusa de Z e nenhuma mudança em leitores/serviço/CLI. O manifesto MAJOR1_COMPLEMENT_IDENTITIES.json nesta pasta identifica a atualização atual; os manifestos anteriores são históricos.
+O mesmo MAJOR-1 continua aberto, sem multiplicar achados por campo. Os outros três achados aguardam reverificação independente. Não alterar contrato, ciência, gramática SVG, leitores, serviço, CLI, dependências ou modelos legados. O manifesto MAJOR1_STRING_CLOSURE_IDENTITIES.json identifica esta atualização; manifestos anteriores são históricos.
 
 FINAL SPECIFICATION FROZEN: YES
-CORRECTIVE DELIVERY RECEIVED: YES
-MAJOR-1 COMPLEMENT AUTHORIZED: YES
+MAJOR-1 STATUS: OPEN
+MAJOR-1 STRING COMPLETION AUTHORIZED: YES
 FOCAL INDEPENDENT REVERIFICATION READY: NO
 CHECKPOINT 1 APPROVED: NO
 CHECKPOINT 2 AUTHORIZED: NO

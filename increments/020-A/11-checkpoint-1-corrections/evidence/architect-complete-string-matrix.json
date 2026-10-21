@@ -1,0 +1,658 @@
+{
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_head": "36682074b55596d5632800bea98aff778eee885f",
+  "source_path": "src/molecular/characterization.py",
+  "source_sha256": "135f4a34a0a4fa775f191ca1c9fc5180e38239298d38df6fad01da625eed62f8",
+  "python": "3.12.14",
+  "pydantic": "2.14.0",
+  "method": "Exact fetched production module with unchanged baseline inputs dependency; isolated calls, no pytest",
+  "limitations": [
+    "No RDKit execution",
+    "No Windows execution",
+    "No scientific or SVG profile validation claimed",
+    "17 fields are ordinary str or str|None in newly defined BaseModel DTOs; Literal/enum excluded"
+  ],
+  "ordinary_string_fields": 17,
+  "fields_rejecting_all_four_trials": 6,
+  "fields_accepting_all_four_trials": 11,
+  "positive_str_and_json_controls": 17,
+  "nullable_controls": 3,
+  "results": [
+    {
+      "model": "CharacterizationValues",
+      "field": "formula",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        }
+      ]
+    },
+    {
+      "model": "DrawingResult",
+      "field": "font_name",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    },
+    {
+      "model": "DrawingResult",
+      "field": "font_sha256_observed",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    },
+    {
+      "model": "DrawingResult",
+      "field": "svg_sha256",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    },
+    {
+      "model": "DrawingResult",
+      "field": "xml_parser_version_observed",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "input_state_id",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        }
+      ]
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "entity_id",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        }
+      ]
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "state_record_sha256_observed",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        }
+      ]
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "representation_path",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "representation_format_declared",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "representation_checksum_expected",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        }
+      ]
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "representation_checksum_observed",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": true,
+          "errors": [
+            "value_error"
+          ]
+        }
+      ]
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "engine_version",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    },
+    {
+      "model": "CharacterizationProvenance",
+      "field": "application_version",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    },
+    {
+      "model": "MolecularCharacterizationResult",
+      "field": "svg",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    },
+    {
+      "model": "RDKitCharacterizationOutcome",
+      "field": "engine_version",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    },
+    {
+      "model": "RDKitCharacterizationOutcome",
+      "field": "svg",
+      "native_str_accepted": true,
+      "valid_json_roundtrip": true,
+      "trials": [
+        {
+          "input_type": "bytes",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytes",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "constructor",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        },
+        {
+          "input_type": "bytearray",
+          "entry": "model_validate",
+          "rejected_at_field": false,
+          "output_type": "str",
+          "silently_coerced": true
+        }
+      ]
+    }
+  ]
+}
