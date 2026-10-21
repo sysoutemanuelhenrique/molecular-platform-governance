@@ -1,0 +1,26 @@
+{
+  "method": "Claude implementer direct reproduction (constructor AND model_validate(dict), bytes and bytearray) on the new HEAD after the mode=\"before\" strict-str/strict-str-or-none fix, no pytest",
+  "code_head_new": "cc903d8ebbfe1916c3fce195d20fc97b206a5f54",
+  "code_head_parent": "36682074b55596d5632800bea98aff778eee885f",
+  "python": "3.11.9",
+  "pydantic": "2.14.1",
+  "rdkit": "2026.03.6",
+  "fields_tested": 11,
+  "trials_total": 44,
+  "trials_still_accepted": 0,
+  "trials_rejected_at_field": 44,
+  "native_str_controls_passed": 11,
+  "json_round_trip_controls_passed": 11,
+  "nullable_controls_passed": 3,
+  "nullable_controls": [
+    "CharacterizationProvenance.application_version=None",
+    "MolecularCharacterizationResult.svg=None/drawing=None",
+    "RDKitCharacterizationOutcome.svg=None/drawing=None"
+  ],
+  "preserved_invariants_spot_checked": [
+    "CharacterizationProvenance.representation_checksum_expected keeps its original uppercase spelling",
+    "CharacterizationProvenance.input_state_id/entity_id case preserved",
+    "CharacterizationValues scientific values unchanged"
+  ],
+  "conclusion": "All 44 trials now raise pydantic.ValidationError with the error localized to the target field (error['loc'] == (field,)), for both the constructor and model_validate(dict), for both bytes and bytearray. Every native-str control continues to construct and round-trip through model_dump_json/model_validate_json; the three contracted null controls are unaffected. Combined with the six fields fixed in 3668207, the full 17-field matrix from evidence/architect-complete-string-matrix.json now rejects bytes/bytearray everywhere."
+}

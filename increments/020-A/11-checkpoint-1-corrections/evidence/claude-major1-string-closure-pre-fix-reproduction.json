@@ -1,0 +1,26 @@
+{
+  "method": "Claude implementer direct reproduction (constructor AND model_validate(dict), bytes and bytearray) on the exact unmodified HEAD this closure starts from, no project-source modification, no pytest",
+  "code_head": "36682074b55596d5632800bea98aff778eee885f",
+  "python": "3.11.9",
+  "pydantic": "2.14.1",
+  "rdkit": "2026.03.6",
+  "purpose": "Reproduce the architect's isolated 17-field probe (evidence/architect-complete-string-matrix.json, Python 3.12.14/Pydantic 2.14.0) in the implementer's own target environment, for the 11 fields it found still coercing, before changing any code, as required by tasks/020-A-CHECKPOINT1-MAJOR1-STRING-CLOSURE.json.",
+  "fields_tested": 11,
+  "trials_per_field": 4,
+  "trials_total": 44,
+  "trials_accepted_bytes_or_bytearray": 44,
+  "results": [
+    {"model": "DrawingResult", "field": "font_name", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"},
+    {"model": "DrawingResult", "field": "font_sha256_observed", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"},
+    {"model": "DrawingResult", "field": "svg_sha256", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"},
+    {"model": "DrawingResult", "field": "xml_parser_version_observed", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"},
+    {"model": "CharacterizationProvenance", "field": "representation_path", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"},
+    {"model": "CharacterizationProvenance", "field": "representation_format_declared", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"},
+    {"model": "CharacterizationProvenance", "field": "engine_version", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"},
+    {"model": "CharacterizationProvenance", "field": "application_version", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"},
+    {"model": "MolecularCharacterizationResult", "field": "svg", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"},
+    {"model": "RDKitCharacterizationOutcome", "field": "engine_version", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"},
+    {"model": "RDKitCharacterizationOutcome", "field": "svg", "constructor_bytes": "accepted", "model_validate_bytes": "accepted", "constructor_bytearray": "accepted", "model_validate_bytearray": "accepted"}
+  ],
+  "conclusion": "All 44 trials (11 fields x {bytes, bytearray} x {constructor, model_validate}) accepted the wrong-typed input and returned a plain str, confirming the architect's probe (evidence/architect-complete-string-matrix.json) exactly: 'fields_accepting_all_four_trials': 11, 'fields_rejecting_all_four_trials': 6, on this same HEAD."
+}
