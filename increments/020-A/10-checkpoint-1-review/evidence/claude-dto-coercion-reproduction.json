@@ -1,0 +1,54 @@
+{
+  "method": "Direct import of molecular.characterization from the exact pinned HEAD source (f8416b845efe93f9e47deca97f01a355e4e679ba), no pytest, no code repository changes, independent of the architect's probe and the implementer's own tests",
+  "python": "3.13.16",
+  "pydantic": "2.13.5",
+  "note": "Third independent pydantic patch version besides the architect's 2.14.0 and the implementer's reported 2.14.1 - reproduces identically across all three, which weakens any explanation resting on a pydantic version quirk",
+  "results": [
+    {
+      "dto": "CharacterizationValues",
+      "field": "heavy_atom_count",
+      "supplied_repr": "'3'",
+      "supplied_type": "str",
+      "accepted": true,
+      "result_type": "int",
+      "result_repr": "3"
+    },
+    {
+      "dto": "CharacterizationValues",
+      "field": "heavy_atom_count",
+      "supplied_repr": "3.0",
+      "supplied_type": "float",
+      "accepted": true,
+      "result_type": "int",
+      "result_repr": "3"
+    },
+    {
+      "dto": "CharacterizationValues",
+      "field": "formal_charge_e",
+      "supplied_repr": "'0'",
+      "supplied_type": "str",
+      "accepted": true,
+      "result_type": "int",
+      "result_repr": "0"
+    },
+    {
+      "dto": "CharacterizationValues",
+      "field": "molar_mass_g_mol",
+      "supplied_repr": "'46.069'",
+      "supplied_type": "str",
+      "accepted": true,
+      "result_type": "float",
+      "result_repr": "46.069"
+    },
+    {
+      "dto": "SdfParserParameters",
+      "field": "sanitize",
+      "supplied_repr": "1",
+      "supplied_type": "int",
+      "accepted": true,
+      "result_type": "bool",
+      "result_repr": "True"
+    }
+  ],
+  "conclusion": "Confirms, independently of the architect's architect-dto-strictness-probe.json, that CharacterizationValues and SdfParserParameters accept coercible non-native-type input (numeric strings into int/float fields; non-bool int into a Literal[True] field) despite frozen=True/extra=\"forbid\" and the existing bool-rejection/non-finite/positivity field_validators. This is pydantic's default lax/coercive validation mode; model_config does not set strict=True and no field uses Field(strict=True)."
+}

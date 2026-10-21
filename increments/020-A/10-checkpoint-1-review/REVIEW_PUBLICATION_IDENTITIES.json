@@ -1,0 +1,24 @@
+{
+  "document_type": "Unmodified Claude review originals and architect publication provenance",
+  "source_snapshot_before_publication": "b1deb8a282c29b51fe45ab873b07d524f30228c6",
+  "files": [
+    {
+      "path": "increments/020-A/10-checkpoint-1-review/CLAUDE_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+      "size_bytes": 24918,
+      "lines": 153,
+      "sha256": "72d658ad6184a2411d9cb56dbbb3b49861ccd64621126cdb5d62aa7b048f4399"
+    },
+    {
+      "path": "increments/020-A/10-checkpoint-1-review/evidence/claude-dto-coercion-reproduction.json",
+      "size_bytes": 2183,
+      "lines": 54,
+      "sha256": "8d24af595759154d6c798c11a2afcc44a5c5469faf80abe4bff14f6434540cea"
+    },
+    {
+      "path": "increments/020-A/10-checkpoint-1-review/CLAUDE_REVIEW_PUBLICATION_PROVENANCE.md",
+      "size_bytes": 2120,
+      "lines": 22,
+      "sha256": "e8e0035040fa839e7ae423cdea345ab229093cf6eae6856dba98510e4f91e4a8"
+    }
+  ]
+}
