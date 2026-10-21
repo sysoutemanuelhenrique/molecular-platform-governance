@@ -1,0 +1,48 @@
+{
+  "method": "Independent architect research of real RDKit writer/supplier; not project tests or Windows evidence; no project source modified",
+  "python": "3.12.14",
+  "rdkit_runtime": "2026.03.6",
+  "cases": [
+    {
+      "case": "sgroup",
+      "synthetic_smiles": "CCO",
+      "v3000": true,
+      "bytes": 428,
+      "sha256": "1ec45e31c09fc6b6ed6e0b248e839e49b4c43f897e0aca9ab2ac5d6d1c2a5671",
+      "supplier_record_count": 1,
+      "sgroup_count_after_parsing": 1,
+      "stereo_groups_after_parsing": [],
+      "adapter_rejected_as_unsupported_structure": true,
+      "adapter_error_reason": "unsupported-structure"
+    },
+    {
+      "case": "and",
+      "synthetic_smiles": "C[C@H](F)Cl",
+      "v3000": true,
+      "bytes": 496,
+      "sha256": "74040ab45b9889d7aa6ab548ed85e020b261d49891ab715b47a24a7a59a8ce16",
+      "supplier_record_count": 1,
+      "sgroup_count_after_parsing": 0,
+      "stereo_groups_after_parsing": [
+        "STEREO_AND"
+      ],
+      "adapter_rejected_as_unsupported_structure": true,
+      "adapter_error_reason": "unsupported-structure"
+    },
+    {
+      "case": "or",
+      "synthetic_smiles": "C[C@H](F)Cl",
+      "v3000": true,
+      "bytes": 496,
+      "sha256": "8a5f0741c4f63516c4f4b787500113a8321d0e7374de15eb332cb0ab69bfabe0",
+      "supplier_record_count": 1,
+      "sgroup_count_after_parsing": 0,
+      "stereo_groups_after_parsing": [
+        "STEREO_OR"
+      ],
+      "adapter_rejected_as_unsupported_structure": true,
+      "adapter_error_reason": "unsupported-structure"
+    }
+  ],
+  "production_adapter_probe": "Exact published CP1 source f8416b845efe93f9e47deca97f01a355e4e679ba; direct bytes -> parse -> eligibility rejection; not pytest, no project tests added"
+}

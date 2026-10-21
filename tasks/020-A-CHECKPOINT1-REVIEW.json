@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "020-A-CHECKPOINT1-REVIEW",
-  "status": "RESULT_REPORTED_AWAITING_FULL_REVIEW_ARTIFACTS",
+  "status": "COMPLETED_REQUEST_CHANGES",
   "assigned_role": "claude-independent-reviewer-separate-from-implementer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "governance_ref": "docs/020-a-candidate1-review-20261020",
@@ -106,9 +106,9 @@
   "checkpoint2_authorized": false,
   "checkpoint3_authorized": false,
   "automated_relay_active": false,
-  "next_gate": "Receive original full review and evidence, verify bytes/full SHA-256, preserve originals and reconcile all findings before releasing corrective task; do not repeat completed review solely because push failed",
+  "next_gate": "Correct four accepted findings under tasks/020-A-CHECKPOINT1-CORRECTIONS.json, then independent focal reverification; do not repeat original review",
   "reported_result": {
-    "source": "Direct owner message relaying Claude reviewer summary; full review/evidence files not yet accessible to architect",
+    "source": "Earlier direct owner summary, now supplemented by original attached review/evidence read and verified by architect",
     "verdict": "REQUEST CHANGES",
     "blockers": 0,
     "majors": 2,
@@ -121,18 +121,20 @@
       "path": "increments/020-A/10-checkpoint-1-review/CLAUDE_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
       "lines": 153,
       "size_bytes": 24918,
-      "sha256": null,
+      "sha256": "72d658ad6184a2411d9cb56dbbb3b49861ccd64621126cdb5d62aa7b048f4399",
       "sha256_prefix": "72d658ad",
       "sha256_suffix": "4399"
     },
     "evidence_file_reported": {
       "path": "increments/020-A/10-checkpoint-1-review/evidence/claude-dto-coercion-reproduction.json",
-      "sha256": null,
+      "sha256": "8d24af595759154d6c798c11a2afcc44a5c5469faf80abe4bff14f6434540cea",
       "sha256_prefix": "8d24af59",
       "sha256_suffix": "40cea"
     },
-    "full_review_read_by_architect": false,
-    "identities_verified_by_architect": false,
+    "full_review_read_by_architect": true,
+    "identities_verified_by_architect": true,
     "minors_and_notes_not_in_summary": "Do not infer them from architect triage or another review"
-  }
+  },
+  "verified_originals_commit": "5583734475103991fb12ed8b26689cf4ad8a0eba",
+  "verified_publication_provenance": "Architect published original attachment bytes in commit 5583734475103991fb12ed8b26689cf4ad8a0eba; reviewer local commit remains unpublished"
 }

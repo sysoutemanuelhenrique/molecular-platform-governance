@@ -1,0 +1,40 @@
+{
+  "python_probe": "architect research outside project; not a production fix or pytest",
+  "pydantic": "2.14.0",
+  "strict_model_literals": [
+    {
+      "input": {
+        "flag": 1
+      },
+      "accepted": true,
+      "output": {
+        "flag": true,
+        "zero": 0,
+        "width": 600
+      }
+    },
+    {
+      "input": {
+        "zero": false
+      },
+      "accepted": true,
+      "output": {
+        "flag": true,
+        "zero": 0,
+        "width": 600
+      }
+    },
+    {
+      "input": {
+        "width": 600.0
+      },
+      "accepted": true,
+      "output": {
+        "flag": true,
+        "zero": 0,
+        "width": 600
+      }
+    }
+  ],
+  "field_strict_literal": "RuntimeError: Unable to apply constraint 'strict' to schema of type 'literal'"
+}

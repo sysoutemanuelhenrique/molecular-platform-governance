@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "020-A-CHECKPOINT1",
-  "status": "CHANGES_REQUESTED_REPORTED_AWAITING_RECONCILIATION",
+  "status": "CORRECTIONS_AUTHORIZED",
   "assigned_role": "claude-implementer-separate-session",
   "decision_request": {
     "path": "increments/020-A/07-owner-decision/INCREMENT_020_A_FREEZE_AND_CP1_DECISION_REQUEST.md",
@@ -83,7 +83,7 @@
     "git diff --check and initial/final working-tree state",
     "Output file identities, published commits and refs verified"
   ],
-  "next_gate": "Independent review of Checkpoint 1; no automatic release of Checkpoint 2",
+  "next_gate": "Execute only corrective task then independent focal review; CP2/3 remain unauthorized",
   "ready_for_implementation": false,
   "final_specification_frozen": true,
   "implementation_authorized": true,
@@ -102,5 +102,14 @@
   },
   "independent_review_task": "tasks/020-A-CHECKPOINT1-REVIEW.json",
   "checkpoint_approved": false,
-  "reported_independent_review_result": "REQUEST CHANGES: 0 blockers / 2 majors / 2 minors / 5 notes; full artifacts not yet read by architect"
+  "reported_independent_review_result": "REQUEST CHANGES: 0 blockers / 2 majors / 2 minors / 5 notes; full original artifacts now read and verified by architect",
+  "corrective_task": "tasks/020-A-CHECKPOINT1-CORRECTIONS.json",
+  "independent_review_result": {
+    "verdict": "REQUEST CHANGES",
+    "blockers": 0,
+    "majors": 2,
+    "minors": 2,
+    "notes": 5,
+    "verified_originals_commit": "5583734475103991fb12ed8b26689cf4ad8a0eba"
+  }
 }

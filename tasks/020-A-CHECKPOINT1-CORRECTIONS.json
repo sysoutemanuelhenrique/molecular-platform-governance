@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "task_id": "020-A-CHECKPOINT1-CORRECTIONS",
+  "status": "AUTHORIZED",
+  "assigned_role": "claude-implementer-separate-from-reviewer",
+  "authorization_scope": "CHECKPOINT_1_CORRECTIONS_ONLY",
+  "authorization_basis": {
+    "kind": "Within existing explicit owner-approved CP1 implementation/test/commit/push scope; no new architecture or contractual expansion",
+    "owner_authorization_snapshot": "85ce45ce5cc635d75035664dd612ca6c0a839dac",
+    "record_path": "increments/020-A/08-final-specification/OWNER_FREEZE_AND_CP1_AUTHORIZATION.md",
+    "record_sha256": "a9928b4bb56ee1475f6c911612dbc30cd729ac4adddb10bdbe220adb8f0e8875"
+  },
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "governance_ref": "docs/020-a-candidate1-review-20261020",
+  "governance_task_snapshot": "Exact release SHA provided in architect launch message; use immutable commit, not main",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-020-a-molecular-characterization",
+  "expected_code_head_before_correction": "f8416b845efe93f9e47deca97f01a355e4e679ba",
+  "expected_code_main_and_increment_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "frozen_specification": {
+    "path": "increments/020-A/08-final-specification/INCREMENT_020_A_FINAL_SPECIFICATION.md",
+    "governance_commit": "665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed",
+    "sha256": "cfbc6ea4bbb58f987deb3f73e45fc39d5b79d0cfaa2de8e0a7870a9937386e9c",
+    "size_bytes": 71904,
+    "lines": 586
+  },
+  "independent_review": {
+    "path": "increments/020-A/10-checkpoint-1-review/CLAUDE_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+    "governance_commit": "5583734475103991fb12ed8b26689cf4ad8a0eba",
+    "sha256": "72d658ad6184a2411d9cb56dbbb3b49861ccd64621126cdb5d62aa7b048f4399",
+    "size_bytes": 24918,
+    "lines": 153,
+    "verdict": "REQUEST CHANGES",
+    "blockers": 0,
+    "majors": 2,
+    "minors": 2,
+    "notes": 5
+  },
+  "review_evidence": {
+    "path": "increments/020-A/10-checkpoint-1-review/evidence/claude-dto-coercion-reproduction.json",
+    "governance_commit": "5583734475103991fb12ed8b26689cf4ad8a0eba",
+    "sha256": "8d24af595759154d6c798c11a2afcc44a5c5469faf80abe4bff14f6434540cea"
+  },
+  "architect_reconciliation": {
+    "path": "increments/020-A/11-checkpoint-1-corrections/INCREMENT_020_A_CP1_REVIEW_RECONCILIATION.md",
+    "sha256": "20f1705e92e7d60d24ac61b699dcd0c91fbdfd555c01ff04506f1b628009392c",
+    "required_read": true
+  },
+  "allowed_code_paths": [
+    "src/molecular/characterization.py",
+    "src/molecular/rdkit_tautomer.py",
+    "tests/test_characterization.py",
+    "tests/test_rdkit_tautomer.py"
+  ],
+  "correction_items": [
+    {
+      "id": "MAJOR-1",
+      "action": "Enforce actual strict types throughout applicable new DTO/profile fields without changing JSON or scientific parameters",
+      "acceptance": [
+        "Reject numeric strings and integral floats in int fields, bool in numeric fields, numeric strings/bool in float fields, nonfinite values",
+        "Reject int 0/1 for boolean literals and bool/integral floats for integer literals; IDs/hashes remain strict",
+        "Do not assume ConfigDict(strict=True) suffices for Literal or use Field(strict=True) on Literal without proving support",
+        "Positive native values and valid JSON serialization/round-trip remain compatible"
+      ]
+    },
+    {
+      "id": "MAJOR-2",
+      "action": "Add meaningful independent KeyboardInterrupt and SystemExit injection tests by adapter phase",
+      "acceptance": [
+        "Separate real parametrizations for the two interruption classes, preserved instance/code and no partial return",
+        "Injection traverses production flow and real BlockLogs when applicable; no mock replacing entire adapter",
+        "Map actual CP1 phases and explain coverage; do not defer adapter tests to CP2"
+      ]
+    },
+    {
+      "id": "MINOR-1",
+      "action": "Prove real native log restoration after characterization success/failure/interruption",
+      "acceptance": [
+        "LogWarningMsg marker after return/exception captured by capfd/subprocess",
+        "Exercise both KeyboardInterrupt and SystemExit and relevant BlockLogs scopes",
+        "No unconditional EnableLog after operation to mask a leak; legacy enumeration tests are not substitute"
+      ]
+    },
+    {
+      "id": "MINOR-2",
+      "action": "Add end-to-end real SDF V3000 integration fixtures for SGroup, enhanced stereo AND and OR",
+      "acceptance": [
+        "Real bytes parsed by real supplier with group retained, then real public adapter raises unsupported-structure",
+        "No monkeypatch of parser/eligibility to fabricate rejection; preserve existing direct-unit tests",
+        "Can use RDKit writer/API synthetic fixtures; keep all code/test changes within four allowed files"
+      ]
+    }
+  ],
+  "notes_disposition": {
+    "NOTE-1": "Keep SVG M/L/Q and explicit Z rejection; no profile expansion",
+    "NOTE-2": "Keep neutral helper organization; no relocation by preference",
+    "NOTE-3": "New report addendum corrects original +680 to +679/−1 (original total +3094/−1); do not modify original report",
+    "NOTE-4": "Accurately separate own tests from provided/research/Windows evidence; no claim of independent pytest from architect or reviewer",
+    "NOTE-5": "Preserve accepted scientific methods/JSON/invariants/optional boundaries/legacy"
+  },
+  "research_support": {
+    "directory": "increments/020-A/11-checkpoint-1-corrections/evidence/",
+    "meaning": "Architect API/fixture research, not pytest or Windows approval; reproduce production tests independently",
+    "pythonic_literal_probe": "architect-strict-literal-api-probe.json",
+    "rdkit_probe": "architect-synthetic-v3000-roundtrip-probe.json",
+    "synthetic_inputs": "SGroup SUP, AND and OR SDF V3000 examples; not PubChem or persisted domain objects; no requirement of byte-identical serialization across OS"
+  },
+  "execution": {
+    "start": "Confirm code head/main/remotes and clean isolated CP1 worktree; stop on divergence; preserve original user checkout and untracked",
+    "commit": "New corrective commit descended from reviewed f8416b8; no amend/reset/rebase/force",
+    "tests": "Focused characterization/adapter, required legacy checks, full suite if environment permits; record commands/versions and actual collected/pass/fail/skip counts",
+    "counts": "Reconcile before/after actual items without predetermining expected passed increment",
+    "optional_environment": "Report all outcomes including failed if run; distinguish known baseline CLI failures without RDKit; no out-of-scope fix",
+    "code_commit_and_push_authorized": true,
+    "governance_report_commit_and_push_authorized": true
+  },
+  "output_path": "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_CORRECTIONS_REPORT.md",
+  "allowed_governance_output_paths": [
+    "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_CORRECTIONS_REPORT.md",
+    "increments/020-A/11-checkpoint-1-corrections/evidence/claude-*"
+  ],
+  "governance_output_policy": "Own authorized branch; preserve architect/reviewer/original implementer files and central STATUS/tasks",
+  "required_report": [
+    "All four findings mapped to production change/test function/parametrized item/result",
+    "Updated code SHAs and corrective/cumulative allowlist diffs; original report errata",
+    "Exact tests and environment, counts and limitations; no false success or skips hiding required behavior",
+    "git diff --check, working-tree state, output identities and published refs verified"
+  ],
+  "prohibited": [
+    "Changing frozen contract/science/JSON/profile/SVG grammar to include Z",
+    "Checkpoint 2 readers/service, Checkpoint 3 CLI, 020-B/020-C/021",
+    "New dependencies, persisted schema/registry/attempt/log or extra code paths",
+    "Touching increment-009-review.txt or _figura_curcumina/",
+    "Editing original review/evidence, original implementation report, central STATUS/tasks or architect reconciliation",
+    "PR/merge/formal GitHub approval/comments, main/configuration/visibility changes, force/amend/reset/rebase"
+  ],
+  "checkpoint1_approved": false,
+  "checkpoint2_authorized": false,
+  "checkpoint3_authorized": false,
+  "automated_relay_active": false,
+  "next_gate": "Independent focal reverification of MAJOR-1/2, MINOR-1/2 and concrete regressions on corrected pinned HEAD; no automatic CP2 release"
+}

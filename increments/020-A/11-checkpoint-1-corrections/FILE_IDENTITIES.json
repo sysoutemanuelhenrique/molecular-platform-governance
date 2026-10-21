@@ -1,0 +1,66 @@
+{
+  "document_type": "CP1 focused corrections task release and architect reconciliation/research; not independent approval",
+  "source_review_commit": "5583734475103991fb12ed8b26689cf4ad8a0eba",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "size_bytes": 3313,
+      "lines": 36,
+      "sha256": "e1c7d211d6ea2d0f6e7713382e7250df51bd89adfb130197f6e18c84e84e0ec2"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1.json",
+      "size_bytes": 6071,
+      "lines": 115,
+      "sha256": "5e594931178ee6dc3601335200bd37221d75409564a480fd0c3f6fe39733bfbc"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1-REVIEW.json",
+      "size_bytes": 8618,
+      "lines": 140,
+      "sha256": "122a5190367fba6b5ffb3c037764ef30f0ea6d8fa499e7e4498c1fe0356404ef"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1-CORRECTIONS.json",
+      "size_bytes": 8493,
+      "lines": 142,
+      "sha256": "91587569fd3ed11f1fb113868e866b50022938b0bbedfd859eb45bc3f5eb3a26"
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/INCREMENT_020_A_CP1_REVIEW_RECONCILIATION.md",
+      "size_bytes": 11426,
+      "lines": 85,
+      "sha256": "20f1705e92e7d60d24ac61b699dcd0c91fbdfd555c01ff04506f1b628009392c"
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-and-synthetic-v3000.sdf",
+      "size_bytes": 496,
+      "lines": 23,
+      "sha256": "74040ab45b9889d7aa6ab548ed85e020b261d49891ab715b47a24a7a59a8ce16"
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-or-synthetic-v3000.sdf",
+      "size_bytes": 496,
+      "lines": 23,
+      "sha256": "8a5f0741c4f63516c4f4b787500113a8321d0e7374de15eb332cb0ab69bfabe0"
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-sgroup-synthetic-v3000.sdf",
+      "size_bytes": 428,
+      "lines": 21,
+      "sha256": "1ec45e31c09fc6b6ed6e0b248e839e49b4c43f897e0aca9ab2ac5d6d1c2a5671"
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-strict-literal-api-probe.json",
+      "size_bytes": 771,
+      "lines": 40,
+      "sha256": "b534fbe285cd1262ad2101d22e91f80b13b148c1869a84ad25b85440d9f34329"
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/evidence/architect-synthetic-v3000-roundtrip-probe.json",
+      "size_bytes": 1727,
+      "lines": 48,
+      "sha256": "93c928a565894c7e66ede92cdba7e75dcd2b1c492c75ac8c4db79ff7952a9234"
+    }
+  ]
+}
