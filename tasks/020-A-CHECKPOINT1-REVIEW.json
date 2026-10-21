@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "task_id": "020-A-CHECKPOINT1-REVIEW",
+  "status": "READY_FOR_REVIEW",
+  "assigned_role": "claude-independent-reviewer-separate-from-implementer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "governance_ref": "docs/020-a-candidate1-review-20261020",
+  "governance_task_snapshot": "Exact published task commit supplied in architect launch message; do not use governance main as document source",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-020-a-molecular-characterization",
+  "expected_code_head": "f8416b845efe93f9e47deca97f01a355e4e679ba",
+  "expected_direct_parent": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "expected_code_main": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_access": "STRICTLY READ-ONLY; stop if target branch head or baseline main differs",
+  "authorized_checkpoint": 1,
+  "frozen_specification": {
+    "path": "increments/020-A/08-final-specification/INCREMENT_020_A_FINAL_SPECIFICATION.md",
+    "governance_commit": "665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed",
+    "sha256": "cfbc6ea4bbb58f987deb3f73e45fc39d5b79d0cfaa2de8e0a7870a9937386e9c",
+    "size_bytes": 71904,
+    "lines": 586
+  },
+  "implementation_authorization_snapshot": "85ce45ce5cc635d75035664dd612ca6c0a839dac",
+  "implementation_report": {
+    "path": "increments/020-A/09-checkpoint-1/CLAUDE_CHECKPOINT1_IMPLEMENTATION_REPORT.md",
+    "governance_commit": "0dac01f2f51efe1ed1600eafac88eb8f750d41b1",
+    "sha256": "76f7403c22e2f0462841de43f53f752791d670ad9e290d56fda755bb23e4dc82",
+    "size_bytes": 26859,
+    "lines": 343,
+    "independent_review": false
+  },
+  "architect_triage": {
+    "path": "increments/020-A/09-checkpoint-1/ARCHITECT_CHECKPOINT1_RECEPTION_AND_REVIEW_HANDOFF.md",
+    "sha256": "11f4ffed199d20f125ef995637351a5d98b8691c043dfa27bd9ff8b55ee37f80",
+    "independent_review": false
+  },
+  "architect_probe": {
+    "path": "increments/020-A/09-checkpoint-1/evidence/architect-dto-strictness-probe.json",
+    "sha256": "651ee70e2f04c300af6fc599d5545c2d2ba470b492b5c974514d65bdf0536ad0",
+    "environment": "Python 3.12.14 / Pydantic 2.14.0, no pytest",
+    "classification": "Supplied evidence to reproduce independently, not authority or independent review verdict"
+  },
+  "allowed_cumulative_code_paths": [
+    "src/molecular/characterization.py",
+    "src/molecular/rdkit_tautomer.py",
+    "tests/test_characterization.py",
+    "tests/test_rdkit_tautomer.py"
+  ],
+  "review_scope": [
+    "Read frozen specification fully; apply only the CP1 obligations and required legacy compatibility",
+    "Read entire cumulative four-file diff and all relevant production/tests at pinned HEAD; verify code sources, not implementer claims alone",
+    "Strictness, frozen/extra-forbid DTOs and constants, cross-field/hash/binding invariants and scientific profiles",
+    "Exact SDF/SMILES grammar, graph eligibility, ten methods, copy/stereochemistry invariants, optional depiction, SVG XML/attribute/style/path grammar",
+    "Correct error taxonomy and chaining; no broad BaseException swallowing, native log suppression and restoration, separate KeyboardInterrupt and SystemExit",
+    "Optional imports and legacy behavior unchanged; genuine production assertions rather than tautological mocks",
+    "Reconcile +191 collected items with function/parameter/item mapping and distinguish reported Windows evidence from own execution",
+    "Classify contract violations separately from implementation preferences; missing CP1 tests cannot be postponed to future checkpoints without basis"
+  ],
+  "specific_evidence_to_confront": [
+    "CharacterizationValues accepts string/integral-float counts and numeric strings; SdfParserParameters accepts sanitize=1 despite strict contract: independently reproduce",
+    "Implementer report section 6.4(3) explicitly omits interruption injection tests; approved CP1 verification and T-020A-076/077 require them",
+    "New test_native_rdkit_logs_are_suppressed_and_restored does not call LogWarningMsg after return or verify marker; confront T-020A-078",
+    "Filled wedge SVG Z: frozen profile explicitly requires refusal of uncovered commands; separate supported contract limitation from new defect, no profile expansion",
+    "Report mapping/count precision, SGroup/stereo path coverage, bond ceilings, missing drawing/font cases and no-extra result consistency"
+  ],
+  "tests_policy": {
+    "execute_if_environment_allows": true,
+    "windows_checkout_required_for_cp1_review": false,
+    "do_not_require_unimplemented_cp2_readers": true,
+    "state_commands_results_limitations_and_provenance": true,
+    "architect_ran_pytest": false,
+    "provided_implementer_results": {
+      "dto": "111 passed",
+      "adapter": "142 passed (62 existing + 80 added)",
+      "full": "1667 passed, 5 skipped",
+      "baseline_full": "1476 passed, 5 skipped"
+    },
+    "do_not_claim": "Executing probes or reading reports is not independent pytest/Windows evidence"
+  },
+  "blocking_material_policy": "If full frozen specification or actual pinned production/tests cannot be read, stop and report blocker; do not infer contents",
+  "output_path": "increments/020-A/10-checkpoint-1-review/CLAUDE_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+  "allowed_governance_output_paths": [
+    "increments/020-A/10-checkpoint-1-review/CLAUDE_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+    "increments/020-A/10-checkpoint-1-review/evidence/claude-*"
+  ],
+  "output_branch_policy": "Own authorized claude/ branch, preferably claude/020-a-checkpoint1-review; preserve other branches, main and existing documents",
+  "governance_commit_push_authorized": true,
+  "required_report": [
+    "Reviewed snapshots and document identities",
+    "BLOCKERS/MAJORS/MINORS/NOTES with normative and file/line evidence, without exposing sensitive data",
+    "Conformity and regressions within CP1; no speculative future requirements",
+    "Collected count reconciliation and tests actually executed versus supplied",
+    "Z limitation disposition without altering contract",
+    "Verdict APPROVE / APPROVE WITH NOTES / REQUEST CHANGES; READY FOR CHECKPOINT 2 REVIEW GATE YES/NO (not implementation authorization)",
+    "Output path/lines/bytes/SHA-256, published commit/ref; code repository modified NO"
+  ],
+  "prohibited": [
+    "Code/test/specification changes",
+    "Editing implementer report or architect central STATUS/tasks",
+    "Declaring CP2/3 implementation authorized",
+    "Reopening closed documentary choices by preference",
+    "Amending frozen SVG grammar or including Z",
+    "PR, merge, formal GitHub approval, comments, force push, amend/reset/rebase, configuration/visibility changes",
+    "Touching increment-009-review.txt or _figura_curcumina/"
+  ],
+  "checkpoint2_authorized": false,
+  "checkpoint3_authorized": false,
+  "automated_relay_active": false,
+  "next_gate": "Architect reconciles independent review and owner permits next checkpoint only after contractual findings resolved"
+}

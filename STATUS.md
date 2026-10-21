@@ -1,39 +1,37 @@
-# Coordenação — Checkpoint 1 autorizado do Incremento 020-A
+# Coordenação — revisão independente do Checkpoint 1 do 020-A
 
-Atualizado em 20/10/2026 pelo arquiteto após a mensagem direta “aprovado” de Emanuel à solicitação delimitada. Governance público por decisão do responsável. Somente o Checkpoint 1 está autorizado; nenhuma implementação foi executada pelo arquiteto.
+Atualizado em 20/10/2026, data local do responsável. Entrega do implementador recebida e conferida quanto a refs, parent e allowlist; Checkpoint 1 ainda não aprovado.
 
 | Campo | Estado |
 |---|---|
 | Branch documental | docs/020-a-candidate1-review-20261020 |
 | Main do governance preservada | a47183dfec8213c765ed43ae482c8c227760a3d5 |
-| Baseline main do código reconfirmada | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851 |
-| Snapshot da candidata revisada | 99b181e22663ed53341f131abe26222c41c43795 |
-| Fechamento Claude preservado | 7f1f75219203eb1a691e454db170900ca81536e8 |
-| Solicitação aprovada | snapshot 11e571a856c2e0dc6b169160a79f9f5eeb4805e3, increments/020-A/07-owner-decision/INCREMENT_020_A_FREEZE_AND_CP1_DECISION_REQUEST.md |
-| Publicação da especificação final e aprovação | 665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed |
-| Especificação final | increments/020-A/08-final-specification/INCREMENT_020_A_FINAL_SPECIFICATION.md |
-| Tarefa ativa | tasks/020-A-CHECKPOINT1.json — AUTHORIZED |
-| Escopo autorizado | Somente DTOs/perfis/adaptador e testes; quatro caminhos da tarefa |
-| Próximo ator | Claude implementador, sessão separada do revisor |
-| Branch de código | feature/increment-020-a-molecular-characterization, a criar da baseline exata após preflight |
-| Próximo gate | Relatório e revisão independente do Checkpoint 1; sem liberação automática do Checkpoint 2 |
-| Relay automático | Não configurado nem testado; comando deve ser entregue à sessão implementadora |
+| Main/baseline do código preservada | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851 |
+| Código CP1 / parent único | f8416b845efe93f9e47deca97f01a355e4e679ba / baseline acima |
+| Branch de código | feature/increment-020-a-molecular-characterization |
+| Relatório do implementador | 0dac01f2f51efe1ed1600eafac88eb8f750d41b1, branch claude/020-a-checkpoint1-report-20261020 |
+| Final congelado | 665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed, increments/020-A/08-final-specification/INCREMENT_020_A_FINAL_SPECIFICATION.md |
+| Autorização original CP1 | 85ce45ce5cc635d75035664dd612ca6c0a839dac |
+| Tarefa de implementação | tasks/020-A-CHECKPOINT1.json — IMPLEMENTATION_REPORTED_AWAITING_REVIEW |
+| Tarefa ativa | tasks/020-A-CHECKPOINT1-REVIEW.json — READY_FOR_REVIEW |
+| Próximo ator | Claude revisor em sessão separada da implementação |
+| Próximo gate | Parecer independente e reconciliação; não iniciar CP2/3 |
+| Relay automático | Não configurado; entregar comando manual à sessão revisora |
 
-Final SHA-256: cfbc6ea4bbb58f987deb3f73e45fc39d5b79d0cfaa2de8e0a7870a9937386e9c; 71.904 bytes; 586 linhas. Arquivo remoto relido byte a byte no snapshot final antes desta liberação.
+Final SHA-256: cfbc6ea4bbb58f987deb3f73e45fc39d5b79d0cfaa2de8e0a7870a9937386e9c; 586 linhas; 71.904 bytes. Contrato e originais preservados.
 
-O diff é administrativo: título/apresentação e seções 1, 19, 21 e 22. As seções 2–18 e 20, os 80 cenários e a allowlist estão preservados byte a byte. Candidate1, draft1 e pareceres originais permanecem intactos. Validação em increments/020-A/08-final-specification/freeze-validation.json.
+Relatório do implementador: 343 linhas; 26.859 bytes; SHA-256 76f7403c22e2f0462841de43f53f752791d670ad9e290d56fda755bb23e4dc82. Fornecido: 1667 passed, 5 skipped, delta 191. Pytest não foi executado pelo arquiteto, pois não está disponível neste ambiente; não se atribui execução independente desses resultados.
 
-O manifesto FILE_IDENTITIES.json raiz identifica a carga inicial de 99b181e; o manifesto de 07-owner-decision identifica a proposta anterior; nenhum deles pretende descrever revisões posteriores dos arquivos de coordenação. O manifesto de 08-final-specification identifica os documentos congelados e tasks/020-A-CHECKPOINT1-RELEASE_IDENTITIES.json identifica esta liberação.
+Triagem: increments/020-A/09-checkpoint-1/ARCHITECT_CHECKPOINT1_RECEPTION_AND_REVIEW_HANDOFF.md. Pontos concretos a julgar: coerções em DTOs que exigem validação estrita, interrupções não testadas e teste de logs sem marcador posterior. Sonda isolada do arquiteto anexada; não é pytest nem parecer independente. A incompatibilidade SVG Z deve respeitar a recusa explícita do contrato, sem expansão silenciosa.
 
-O parecer independente teve 0 BLOCKERS, 0 MAJORS, 0 MINORS e 2 NOTES não bloqueantes aceitas sem mudança científica. Não se atribui execução de pytest a esta etapa documental. Checkpoint 1 não entrega isoladamente o novo comando público; leitores Windows11/NTFS continuam gate do Checkpoint 2.
+O manifesto raiz descreve a carga inicial; os manifestos das decisões/liberações anteriores são históricos. FILE_IDENTITIES.json em 10-checkpoint-1-review identifica a atualização atual. Não sobrescrever o relatório do implementador ou os pareceres anteriores.
 
-OWNER FREEZE APPROVAL RECORDED: YES
 FINAL SPECIFICATION FROZEN: YES
-READY FOR IMPLEMENTATION: YES
-IMPLEMENTATION AUTHORIZED: YES
-AUTHORIZED CHECKPOINT: 1
+CHECKPOINT 1 IMPLEMENTATION RECEIVED: YES
+CHECKPOINT 1 APPROVED: NO
+READY FOR INDEPENDENT CHECKPOINT 1 REVIEW: YES
+INDEPENDENT CHECKPOINT 1 REVIEW COMPLETE: NO
 CHECKPOINT 2 AUTHORIZED: NO
 CHECKPOINT 3 AUTHORIZED: NO
-IMPLEMENTATION STARTED: NO
 AUTOMATED RELAY ACTIVE: NO
 CODE REPOSITORY MODIFIED BY ARCHITECT: NO

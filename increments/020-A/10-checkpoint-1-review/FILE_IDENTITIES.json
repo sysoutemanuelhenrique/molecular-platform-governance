@@ -1,0 +1,36 @@
+{
+  "document_type": "Checkpoint 1 reception and independent-review task; not an approval",
+  "source_snapshot": "85ce45ce5cc635d75035664dd612ca6c0a839dac",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "size_bytes": 2891,
+      "lines": 37,
+      "sha256": "d0873dd648d1229de071192aa763acc4b20e29090e746949cff1729eff07f034"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1.json",
+      "size_bytes": 5630,
+      "lines": 105,
+      "sha256": "608cb9dc6640dc54b9200fce98bd51e5c8b02f91b7f133080c8841778a0ff1e6"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1-REVIEW.json",
+      "size_bytes": 7035,
+      "lines": 110,
+      "sha256": "2ab2a1557be1c36548b66489875563a64ebc90d52686a2bc49cc4d2dcd257161"
+    },
+    {
+      "path": "increments/020-A/09-checkpoint-1/ARCHITECT_CHECKPOINT1_RECEPTION_AND_REVIEW_HANDOFF.md",
+      "size_bytes": 8027,
+      "lines": 60,
+      "sha256": "11f4ffed199d20f125ef995637351a5d98b8691c043dfa27bd9ff8b55ee37f80"
+    },
+    {
+      "path": "increments/020-A/09-checkpoint-1/evidence/architect-dto-strictness-probe.json",
+      "size_bytes": 1055,
+      "lines": 45,
+      "sha256": "651ee70e2f04c300af6fc599d5545c2d2ba470b492b5c974514d65bdf0536ad0"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "method": "Isolated import of exact downloaded HEAD source; no pytest, no code repository changes",
+  "python": "3.12.14",
+  "pydantic": "2.14.0",
+  "results": [
+    {
+      "field": "heavy_atom_count",
+      "supplied_repr": "'3'",
+      "supplied_type": "str",
+      "accepted": true,
+      "result_repr": "3",
+      "result_type": "int"
+    },
+    {
+      "field": "heavy_atom_count",
+      "supplied_repr": "3.0",
+      "supplied_type": "float",
+      "accepted": true,
+      "result_repr": "3",
+      "result_type": "int"
+    },
+    {
+      "field": "formal_charge_e",
+      "supplied_repr": "'0'",
+      "supplied_type": "str",
+      "accepted": true,
+      "result_repr": "0",
+      "result_type": "int"
+    },
+    {
+      "field": "molar_mass_g_mol",
+      "supplied_repr": "'46.069'",
+      "supplied_type": "str",
+      "accepted": true,
+      "result_repr": "46.069",
+      "result_type": "float"
+    },
+    {
+      "dto": "SdfParserParameters",
+      "supplied_sanitize": 1,
+      "accepted": true,
+      "result_type": "bool"
+    }
+  ]
+}
