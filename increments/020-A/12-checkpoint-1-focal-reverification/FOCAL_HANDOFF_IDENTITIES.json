@@ -1,0 +1,37 @@
+{
+  "document_type": "Focal independent reverification handoff; no CP1 approval or CP2 implementation authorization",
+  "previous_governance_snapshot": "0b499f8aee9273ea4df6825cf760d8ca5c665e56",
+  "code_head": "cc903d8ebbfe1916c3fce195d20fc97b206a5f54",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 37,
+      "size_bytes": 3114,
+      "sha256": "91ca018cad9ffe4d1600ce1c1fd0caab9427174d381f5df6495886c4ae690fa3"
+    },
+    {
+      "path": "tasks/020-A-CHECKPOINT1-FOCAL-REVERIFICATION.json",
+      "lines": 209,
+      "size_bytes": 11750,
+      "sha256": "a9fef4b8017f5ff0fea5b40dfcd7ba739cfe2cd0dbc63f859532d9dff5e00936"
+    },
+    {
+      "path": "increments/020-A/12-checkpoint-1-focal-reverification/ARCHITECT_CORRECTIVE_DELIVERY_RECEPTION_AND_FOCAL_HANDOFF.md",
+      "lines": 69,
+      "size_bytes": 7262,
+      "sha256": "d720ac011ebe529d2cc138ca70b6c0d3733b259b64d2635f9ee2bd5191095ce7"
+    },
+    {
+      "path": "increments/020-A/12-checkpoint-1-focal-reverification/evidence/architect-final-string-matrix.json",
+      "lines": 702,
+      "size_bytes": 16866,
+      "sha256": "66245cb96dc764aee7cf80c5b7338e826ea9c24881304b76273b0ce3a75c1cb2"
+    },
+    {
+      "path": "increments/020-A/12-checkpoint-1-focal-reverification/evidence/architect-final-string-matrix-probe.py",
+      "lines": 116,
+      "size_bytes": 6473,
+      "sha256": "bd08c8159f238627dcce415adc0399e0455c2eb2645b8eadf9385dcae0045922"
+    }
+  ]
+}

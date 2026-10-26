@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "task_id": "020-A-CHECKPOINT1-FOCAL-REVERIFICATION",
+  "status": "AUTHORIZED",
+  "assigned_role": "claude-independent-reviewer-separate-from-implementer",
+  "authorization_scope": "FOCAL_REVIEW_OF_FOUR_ACCEPTED_CP1_FINDINGS_AND_CONCRETE_CORRECTIVE_REGRESSIONS",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "governance_ref": "docs/020-a-candidate1-review-20261020",
+  "governance_task_snapshot": "Exact immutable publication SHA supplied in architect launch message; do not use main or a historical task as current",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-020-a-molecular-characterization",
+  "expected_code_head": "cc903d8ebbfe1916c3fce195d20fc97b206a5f54",
+  "expected_direct_parent": "36682074b55596d5632800bea98aff778eee885f",
+  "expected_code_main": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "initial_reviewed_code_head": "f8416b845efe93f9e47deca97f01a355e4e679ba",
+  "correction_chain": [
+    "f8416b845efe93f9e47deca97f01a355e4e679ba",
+    "9ccdb9817a78f8de34c085c16443293b1ab99fd9",
+    "36682074b55596d5632800bea98aff778eee885f",
+    "cc903d8ebbfe1916c3fce195d20fc97b206a5f54"
+  ],
+  "preflight": "Confirm remote branch HEAD, direct parent, main and document identities; stop/report a changed target or inaccessible essential material; do not review a moving target",
+  "code_access": "STRICTLY READ-ONLY; no production/test/spec changes; execute tests only without writing into code tree",
+  "frozen_specification": {
+    "path": "increments/020-A/08-final-specification/INCREMENT_020_A_FINAL_SPECIFICATION.md",
+    "governance_commit": "665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed",
+    "sha256": "cfbc6ea4bbb58f987deb3f73e45fc39d5b79d0cfaa2de8e0a7870a9937386e9c",
+    "size_bytes": 71904,
+    "lines": 586
+  },
+  "original_independent_review": {
+    "path": "increments/020-A/10-checkpoint-1-review/CLAUDE_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+    "governance_commit": "5583734475103991fb12ed8b26689cf4ad8a0eba",
+    "sha256": "72d658ad6184a2411d9cb56dbbb3b49861ccd64621126cdb5d62aa7b048f4399",
+    "size_bytes": 24918,
+    "lines": 153,
+    "verdict": "REQUEST CHANGES",
+    "blockers": 0,
+    "majors": 2,
+    "minors": 2,
+    "notes": 5
+  },
+  "original_review_evidence": {
+    "path": "increments/020-A/10-checkpoint-1-review/evidence/claude-dto-coercion-reproduction.json",
+    "governance_commit": "5583734475103991fb12ed8b26689cf4ad8a0eba",
+    "sha256": "8d24af595759154d6c798c11a2afcc44a5c5469faf80abe4bff14f6434540cea"
+  },
+  "architect_reconciliation": {
+    "path": "increments/020-A/11-checkpoint-1-corrections/INCREMENT_020_A_CP1_REVIEW_RECONCILIATION.md",
+    "governance_commit": "0db9b5af2b3f7cd00a8de70b6685114cbe604450",
+    "lines": 85,
+    "size_bytes": 11426,
+    "sha256": "20f1705e92e7d60d24ac61b699dcd0c91fbdfd555c01ff04506f1b628009392c"
+  },
+  "corrective_reports": [
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_CORRECTIONS_REPORT.md",
+      "governance_commit": "a2c463f9bd4fd331c0338ed9b4d993e23a6bafa5",
+      "sha256": "31bd9bc0d727d53475f024ffa1a61c276b21b4d0efb5f26e7bdd0e91eab649c5",
+      "size_bytes": 31129,
+      "lines": 514
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_MAJOR1_COMPLEMENT_REPORT.md",
+      "governance_commit": "07185ab3738f279a4536419fde37a079988e8ed4",
+      "lines": 332,
+      "size_bytes": 17224,
+      "sha256": "cc9d9ada7c4df4a230c5940cd0a6e66e7b83949efda3fe16d1c9ed6c6d2ce1fb"
+    },
+    {
+      "path": "increments/020-A/11-checkpoint-1-corrections/CLAUDE_CHECKPOINT1_MAJOR1_STRING_CLOSURE_REPORT.md",
+      "governance_commit": "e9f511b0968449af4d07a5b90a3c1aeabfdf1a71",
+      "lines": 305,
+      "size_bytes": 15430,
+      "sha256": "1f9bf1984abe6e070f502aa15944313a99a5adcdaabe9df55492e6336c354b07"
+    }
+  ],
+  "architect_receipt": {
+    "path": "increments/020-A/12-checkpoint-1-focal-reverification/ARCHITECT_CORRECTIVE_DELIVERY_RECEPTION_AND_FOCAL_HANDOFF.md",
+    "lines": 69,
+    "size_bytes": 7262,
+    "sha256": "d720ac011ebe529d2cc138ca70b6c0d3733b259b64d2635f9ee2bd5191095ce7"
+  },
+  "architect_probe": {
+    "path": "increments/020-A/12-checkpoint-1-focal-reverification/evidence/architect-final-string-matrix.json",
+    "lines": 702,
+    "size_bytes": 16866,
+    "sha256": "66245cb96dc764aee7cf80c5b7338e826ea9c24881304b76273b0ce3a75c1cb2",
+    "classification": "Architect triage, not independent reviewer closure or pytest"
+  },
+  "allowed_cumulative_code_paths": [
+    "src/molecular/characterization.py",
+    "src/molecular/rdkit_tautomer.py",
+    "tests/test_characterization.py",
+    "tests/test_rdkit_tautomer.py"
+  ],
+  "last_commit_allowed_paths": [
+    "src/molecular/characterization.py",
+    "tests/test_characterization.py"
+  ],
+  "reading_scope": [
+    "Read the original four findings and their normative clauses; preserve original review and accepted notes",
+    "Read the architect reconciliation and current receipt; read corrective report sections relevant to each finding and their own evidence",
+    "Read the actual production paths and changed tests at the pinned final HEAD, using f8416b8..cc903d8 as primary corrective diff; baseline cumulative diff only for allowlist and concrete regressions",
+    "Verify full frozen-spec file identity; consult its relevant CP1 clauses/scenarios; do not repeat entire draft/architecture reviews",
+    "Read AGENTS/CLAUDE/protocol and current task/STATUS; task role is independent reviewer, not implementer"
+  ],
+  "findings_to_reverify": [
+    {
+      "id": "MAJOR-1",
+      "scope": "Section 11 strict new DTO/profile types",
+      "acceptance": [
+        "Reproduce numeric-string/integral-float/bool cases and numeric Literal equality cases through real production types",
+        "Reproduce all 17 ordinary-string fields: bytes/bytearray by constructor/model_validate, native str controls, three nullable fields and JSON round-trips",
+        "Verify field-localized rejection and unchanged valid public JSON/ID/checksum spelling/scientific values; no demand that native int in float field be prohibited without contract basis"
+      ]
+    },
+    {
+      "id": "MAJOR-2",
+      "scope": "T-020A-076/077, interruptions in CP1 adapter phases",
+      "acceptance": [
+        "Read actual phase-injection tests and production calls; KeyboardInterrupt and SystemExit separately, same instance and original exit code",
+        "Assess actual phase mapping against the frozen CP1 obligation, real BlockLogs/resource unwinding where applicable and no partial result/later execution",
+        "No whole-adapter mock or fake scientific result as proof; do not demand future readers/service tests in CP1"
+      ]
+    },
+    {
+      "id": "MINOR-1",
+      "scope": "T-020A-078 native logs restored",
+      "acceptance": [
+        "LogWarningMsg marker after real return, failure and both interruption types, captured through capfd/subprocess",
+        "No EnableLog after operation masking suppression; legacy enumeration tests alone or a second successful calculation are insufficient"
+      ]
+    },
+    {
+      "id": "MINOR-2",
+      "scope": "T-020A-038/039 SGroup and stereo integration",
+      "acceptance": [
+        "Real single-record V3000 bytes, real supplier confirms SGroup/AND/OR retention, real public adapter rejects unsupported-structure",
+        "No parser/eligibility monkeypatch faking rejection; preserve scientifically valid positive controls and distinguish parse failure",
+        "Synthetic RDKit writer fixtures allowed; do not impose platform-independent byte-identical serialization as a new scientific contract"
+      ]
+    }
+  ],
+  "regression_limits": [
+    "Only concrete regressions/violations caused or exposed by corrections; do not reopen accepted choices by preference",
+    "Preserve M/L/Q SVG grammar and explicit Z rejection, accepted neutral helper placement, scientific APIs/pins/optional boundaries/legacy behavior",
+    "Only four cumulative files; only two files in latest commit; adapter production unchanged since original CP1"
+  ],
+  "tests_policy": {
+    "execute_focused_if_environment_allows": true,
+    "windows_checkout_required_for_cp1_review": false,
+    "future_cp2_windows_readers_required_now": false,
+    "instruction": "Use existing environment where possible, no global installation; do not modify code tree with bytecode/cache. If dependencies unavailable, declare actual limits, do static source review and independent probes where feasible; do not turn supplied results into own execution. Full suite optional if warranted/available, not required to repeat original study.",
+    "supplied_full_results": [
+      {
+        "head": "f8416b8",
+        "passed": 1667,
+        "skipped": 5
+      },
+      {
+        "head": "9ccdb98",
+        "passed": 1739,
+        "skipped": 5
+      },
+      {
+        "head": "3668207",
+        "passed": 1757,
+        "skipped": 5
+      },
+      {
+        "head": "cc903d8",
+        "passed": 1775,
+        "skipped": 5
+      }
+    ],
+    "supplied_latest_dto": "191 passed with and without RDKit",
+    "count_reconciliation": "Since first review +108 = 72+18+18; last +18 = 17 parametrized items plus one null test. Confirm mechanically; mark collect-only versus structural count. Original weak log test may be intentionally replaced by stronger proof, not treated as arbitrary deletion."
+  },
+  "output_path": "increments/020-A/12-checkpoint-1-focal-reverification/CLAUDE_CHECKPOINT1_FOCAL_REVERIFICATION.md",
+  "allowed_governance_output_paths": [
+    "increments/020-A/12-checkpoint-1-focal-reverification/CLAUDE_CHECKPOINT1_FOCAL_REVERIFICATION.md",
+    "increments/020-A/12-checkpoint-1-focal-reverification/evidence/claude-*"
+  ],
+  "output_branch_policy": "Own authorized claude/ branch, preferably claude/020-a-checkpoint1-focal-reverification-20261026, based on supplied governance release; compatible session branch acceptable if required by environment, identify it explicitly",
+  "governance_commit_push_authorized": true,
+  "required_report": [
+    "Input identities and pinned final HEAD; four-finding disposition CLOSED/OPEN/NOT VERIFIED with normative and file/function/line evidence",
+    "Concrete remaining/new BLOCKERS/MAJORS/MINORS/NOTES, separate contract failures from preferences; do not count historical closed findings as remaining",
+    "Reconciled counts, source/test/assertion evidence; exact own commands/versions/results versus supplied Windows/full-suite data",
+    "Limits of verification; verdict APPROVE / APPROVE WITH NOTES / REQUEST CHANGES and READY FOR OWNER CP2 AUTHORIZATION DECISION YES/NO; no implementation authorization",
+    "Output path/lines/bytes/SHA-256, commit/branch and remotely verified publication; report access failure without bypass or false publication claim"
+  ],
+  "prohibited": [
+    "Code/test/specification changes",
+    "Editing implementer report or architect central STATUS/tasks",
+    "Declaring CP2/3 implementation authorized",
+    "Reopening closed documentary choices by preference",
+    "Amending frozen SVG grammar or including Z",
+    "PR, merge, formal GitHub approval, comments, force push, amend/reset/rebase, configuration/visibility changes",
+    "Touching increment-009-review.txt or _figura_curcumina/",
+    "Updating central STATUS/tasks or editing old reports/evidence; only new review/evidence in allowed outputs"
+  ],
+  "checkpoint1_approved": false,
+  "checkpoint2_authorized": false,
+  "checkpoint3_authorized": false,
+  "automated_relay_active": false,
+  "next_gate": "Architect reconciles independent result; responsible owner decides any new checkpoint implementation authorization separately"
+}
