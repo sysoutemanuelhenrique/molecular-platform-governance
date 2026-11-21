@@ -1,0 +1,75 @@
+{
+  "description": "New continuation files only, excluding this self-manifest. Study-v1 material remains at its existing paths and hashes.",
+  "governance_input_parent": "599a6873b2a55d09c3497780d99794fe337a08e8",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 42,
+      "size_bytes": 3582,
+      "sha256": "c733981ac0936f7c83b7a9d665025b01ca755bec37e64f2648da0d933981ff81"
+    },
+    {
+      "path": "increments/021/00-owner-decision/OWNER_STUDY_CONTINUATION.md",
+      "lines": 22,
+      "size_bytes": 1642,
+      "sha256": "918e12a8e9b6b570800d0c649ecd6184660ecdb34683a7fbd1f9fccad5be61c1"
+    },
+    {
+      "path": "increments/021/01-study/continuation/INCREMENT_021_MINIMAL_CORE_STUDY.md",
+      "lines": 157,
+      "size_bytes": 20979,
+      "sha256": "f5e407704e9b104e7ba224f750c3bbcebd8b109ab26016b48442087d897e9b5f"
+    },
+    {
+      "path": "increments/021/01-study/continuation/evidence/continuation-verification.json",
+      "lines": 146,
+      "size_bytes": 4064,
+      "sha256": "e99ddacfefe7b8cef63ba309cdba80a0befd284fa82a618c20129eaaab32f428"
+    },
+    {
+      "path": "tasks/021-RECEPTOR-MATERIALIZATION-STUDY-REVIEW-V2.json",
+      "lines": 140,
+      "size_bytes": 8183,
+      "sha256": "73a8c0751375c201a359bc7d9bf40941a6002b5ec755301ef3b50b7898ae386b"
+    }
+  ],
+  "preserved_reference_inputs": [
+    {
+      "path": "increments/021/01-study/INCREMENT_021_RECEPTOR_MATERIALIZATION_STUDY.md",
+      "lines": 365,
+      "size_bytes": 55594,
+      "sha256": "5048c5012548ee1169f58e6bb644ecf8b5d76a59c6569400d67db0987f7dfa56"
+    },
+    {
+      "path": "increments/021/01-study/references/INCREMENT_020_FINAL_SPECIFICATION.md",
+      "lines": 1975,
+      "size_bytes": 210880,
+      "sha256": "cf6cb534f9267d51e718052c7b36a2293c522bc566c99cf3bb2ef5909385a0a6"
+    },
+    {
+      "path": "increments/021/01-study/evidence/source-identities.json",
+      "lines": 401,
+      "size_bytes": 15525,
+      "sha256": "29b345921a477edb1cb1bd36da4aaf8b46d56899b9390c45257e1386c27389ab"
+    },
+    {
+      "path": "increments/021/01-study/evidence/gemmi-source-identities.json",
+      "lines": 77,
+      "size_bytes": 2759,
+      "sha256": "aabd1fcc53b3729dab719786ee7bc92bdaf9f7b961cab4c0ec7bf76c2b9f9dcf"
+    },
+    {
+      "path": "increments/021/01-study/evidence/receptor-test-index.json",
+      "lines": 944,
+      "size_bytes": 25278,
+      "sha256": "a3f4dc7351e3ed0e1de664dee135ffa7aab60a52296963f95295281d429ead6c"
+    },
+    {
+      "path": "increments/021/01-study/evidence/study-verification.json",
+      "lines": 107,
+      "size_bytes": 2320,
+      "sha256": "fa3abf2a57d7fbd4bc49851804d422715c866006b7b922464c52031811fad19d"
+    }
+  ]
+}

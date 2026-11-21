@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-21",
+  "timezone": "America/Sao_Paulo",
+  "governance_input_sha": "599a6873b2a55d09c3497780d99794fe337a08e8",
+  "code_main_expected_and_observed": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "governance_main_expected_and_preserved": "a47183dfec8213c765ed43ae482c8c227760a3d5",
+  "study_v1_preserved": {
+    "path": "increments/021/01-study/INCREMENT_021_RECEPTOR_MATERIALIZATION_STUDY.md",
+    "lines": 365,
+    "size_bytes": 55594,
+    "sha256": "5048c5012548ee1169f58e6bb644ecf8b5d76a59c6569400d67db0987f7dfa56"
+  },
+  "normative_020_preserved": {
+    "path": "increments/021/01-study/references/INCREMENT_020_FINAL_SPECIFICATION.md",
+    "lines": 1975,
+    "size_bytes": 210880,
+    "sha256": "cf6cb534f9267d51e718052c7b36a2293c522bc566c99cf3bb2ef5909385a0a6"
+  },
+  "source_blobs_rehashed": 66,
+  "source_python_ast_validated": true,
+  "gemmi_blobs_rehashed": 12,
+  "source_segments_revisited": [
+    {
+      "path": "src/molecular/atomic.py",
+      "git_blob_sha": "1cf82ff8f639a98af371aaf8cb8519d4ede5efe0",
+      "size_bytes": 45543,
+      "sha256": "5aa6ebd17c8508bd64488fbf061d19a35bf99a19cf5b178d21df6910e8bf7d95",
+      "line_ranges": [
+        [
+          61,
+          94
+        ],
+        [
+          159,
+          194
+        ],
+        [
+          245,
+          245
+        ],
+        [
+          693,
+          824
+        ]
+      ]
+    },
+    {
+      "path": "src/molecular/receptor_parsing.py",
+      "git_blob_sha": "4898e46c87a43a5aa7266f332262f5996ad42c45",
+      "size_bytes": 34622,
+      "sha256": "160a0a8f1932fbb9f65564cf68cbabb387b2cc400893b842a396efec221d295a",
+      "line_ranges": [
+        [
+          124,
+          211
+        ],
+        [
+          613,
+          647
+        ]
+      ]
+    },
+    {
+      "path": "src/molecular/receptor_resolution.py",
+      "git_blob_sha": "53a822a177fa378ed9ca70aebf84af16fd287a1d",
+      "size_bytes": 6401,
+      "sha256": "45d3f1cb85c83d91d36d9904f1eb108de42ceb372da4c37fdd263fee476a9000",
+      "line_ranges": [
+        [
+          82,
+          137
+        ]
+      ]
+    },
+    {
+      "path": "src/molecular/receptor_service.py",
+      "git_blob_sha": "a9a762f39bb618353607fad74ee526a8cfa557d0",
+      "size_bytes": 31516,
+      "sha256": "b555c9833c6a996826657fafdad6f7360eee8a4371fff4e46d66601f419b9584",
+      "line_ranges": [
+        [
+          503,
+          629
+        ]
+      ]
+    }
+  ],
+  "gemmi_segments_revisited": [
+    {
+      "path": "python/cif.cpp",
+      "git_blob_sha": "57e75472ddf9526aa65b047f41adee4d1e6c455c",
+      "sha256": "3e8e3bbd1a132b0c58bc15cdd329a165e548389212fab26f294451a3fe7f0611",
+      "size_bytes": 20539,
+      "line_ranges": [
+        [
+          240,
+          251
+        ],
+        [
+          345,
+          356
+        ]
+      ]
+    },
+    {
+      "path": "python/read.cpp",
+      "git_blob_sha": "74204f1bb71cdf1344ca9f7fdc47657cb1b24982",
+      "sha256": "ce8c4c8f2cbae4a30afe0e2606bc6b43808c57214f1325c89d2f20475050001a",
+      "size_bytes": 6623,
+      "line_ranges": [
+        [
+          25,
+          32
+        ]
+      ]
+    },
+    {
+      "path": "docs/cif.rst",
+      "git_blob_sha": "9943a7d69e39ea52d68162729a4fce92a70a4e36",
+      "sha256": "4f55da8227e66d3e2f8c1cc3a52324ccf6b5eb335c80159e330023894f1ebdd2",
+      "size_bytes": 84699,
+      "line_ranges": [
+        [
+          250,
+          268
+        ],
+        [
+          949,
+          965
+        ]
+      ]
+    }
+  ],
+  "verification_method": "Remote refs and pinned Git blobs checked; local source bytes rehashed; static source/document review only",
+  "python_version": "3.12.14",
+  "pytest_executed": false,
+  "gemmi_executed": false,
+  "dependencies_installed": false,
+  "windows_tests_executed": false,
+  "concurrency_tests_executed": false,
+  "scientific_output_generated": false,
+  "independent_review_performed": false,
+  "reviewer_dispatched": false,
+  "code_repository_modified": false,
+  "scenario_mapping": "Original grouped 48-scenario proposal is not a pytest count; individual final scenario allocation remains drafting work"
+}
