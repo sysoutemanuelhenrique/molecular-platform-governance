@@ -1,0 +1,77 @@
+{
+  "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "git_blob_sha": "14e2f777f6c395e7e04ab4aa306bbcc4b0c1120e",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
+      "size_bytes": 16726
+    },
+    {
+      "path": "src/to_mmcif.cpp",
+      "git_blob_sha": "e97fe3ed79f235852a9ab98367ece37b157a03d7",
+      "sha256": "d747726769c5941a026575e929ca690aaa9049187b534c6681a5bc5fa969aade",
+      "size_bytes": 60287
+    },
+    {
+      "path": "src/assembly.cpp",
+      "git_blob_sha": "343686838bf364d76a65937c866ab34fcba81f3d",
+      "sha256": "405a53589d1c3281efb23acb37c00877c81e71e7d1919f65a79e79cfa1e93e96",
+      "size_bytes": 17992
+    },
+    {
+      "path": "python/cif.cpp",
+      "git_blob_sha": "57e75472ddf9526aa65b047f41adee4d1e6c455c",
+      "sha256": "3e8e3bbd1a132b0c58bc15cdd329a165e548389212fab26f294451a3fe7f0611",
+      "size_bytes": 20539
+    },
+    {
+      "path": "python/read.cpp",
+      "git_blob_sha": "74204f1bb71cdf1344ca9f7fdc47657cb1b24982",
+      "sha256": "ce8c4c8f2cbae4a30afe0e2606bc6b43808c57214f1325c89d2f20475050001a",
+      "size_bytes": 6623
+    },
+    {
+      "path": "python/mol.cpp",
+      "git_blob_sha": "f1ca78bea82b6ef9a5fa2fc993b77a96f7ad9f53",
+      "sha256": "79b3060ecc961ae6ff4867e1d71f6db1f7e625819ea7daf373eca857e53cdc48",
+      "size_bytes": 28756
+    },
+    {
+      "path": "python/write.cpp",
+      "git_blob_sha": "f3aa5ab5b00fda4ded760c90b6a3058c4c41cf74",
+      "sha256": "2b967fb2f1f2ce092b56d1aeadc979e6e2566887d655e88a496ecd847ca48987",
+      "size_bytes": 4985
+    },
+    {
+      "path": "docs/cif.rst",
+      "git_blob_sha": "9943a7d69e39ea52d68162729a4fce92a70a4e36",
+      "sha256": "4f55da8227e66d3e2f8c1cc3a52324ccf6b5eb335c80159e330023894f1ebdd2",
+      "size_bytes": 84699
+    },
+    {
+      "path": "docs/mol.rst",
+      "git_blob_sha": "e112d7658f97232512b8b9b561cc7215db4913da",
+      "sha256": "17068370c40acffbaa7c68fc4c5793c0fb98d2686042f4cdf546fdb387991f0a",
+      "size_bytes": 108434
+    },
+    {
+      "path": "include/gemmi/cifdoc.hpp",
+      "git_blob_sha": "029dfd52fcd3be14b5af16ddcfb283236c626e05",
+      "sha256": "2622215dbbd7e093285877fec7e36a1986326e5f1da3a33f2116a3fed2cd9b34",
+      "size_bytes": 38399
+    },
+    {
+      "path": "include/gemmi/to_mmcif.hpp",
+      "git_blob_sha": "9beecfef84a66967a885efd63d8a5d52744a182b",
+      "sha256": "d2388a87f3b05ff6477955fc28e13c27dc191a92039c2ffb62fa2741480b7e7b",
+      "size_bytes": 2432
+    },
+    {
+      "path": "include/gemmi/assembly.hpp",
+      "git_blob_sha": "9d1ab2ebfbdd1c57c927d3cf4c1d3ecd129ce437",
+      "sha256": "0123d787777625137bce4956be71c627a17c15e99820e41750b87b165138f38f",
+      "size_bytes": 4469
+    }
+  ]
+}

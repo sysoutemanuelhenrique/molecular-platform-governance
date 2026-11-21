@@ -1,37 +1,41 @@
-# Coordenação — reverificação independente focal do CP1, Incremento 020-A
+# Coordenação — Incremento 021: estudo e revisão independente
 
-Atualizado em 26/10/2026. Recebida e conferida a última entrega corretiva. A sonda do arquiteto sobre o código exato recusou 68/68 ensaios da matriz de 17 strings, preservando controles str/JSON/null. Encaminhar agora os quatro achados ao Claude revisor independente, em sessão separada do implementador.
+Atualizado em 21/11/2026, por Codex arquiteto, conforme instrução direta de Emanuel Henrique da Silva. Esta é a entrada operacional atual da branch documental; os apontamentos iniciais de README/CLAUDE.md para tarefas do 020-A são históricos, não tarefas vigentes desta rodada.
 
-| Campo | Estado |
+| Campo | Estado atual |
 |---|---|
-| Branch documental | docs/020-a-candidate1-review-20261020 |
-| Main governance preservada | a47183dfec8213c765ed43ae482c8c227760a3d5 |
-| Main/baseline código preservada | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851 |
-| HEAD final de código | cc903d8ebbfe1916c3fce195d20fc97b206a5f54 |
-| Parent direto | 36682074b55596d5632800bea98aff778eee885f |
-| Branch de código | feature/increment-020-a-molecular-characterization |
-| Relatório final do implementador | e9f511b0968449af4d07a5b90a3c1aeabfdf1a71 |
-| Contrato final preservado | 665fb8b9cb4e1c7e0d0b9f1db98ec2adaa63bfed |
-| Tarefa ativa | tasks/020-A-CHECKPOINT1-FOCAL-REVERIFICATION.json — AUTHORIZED |
+| Branch de coordenação | docs/020-a-candidate1-review-20261020 (nome histórico preservado) |
+| Snapshot anterior preservado no histórico | 6a85b79a33bce419c0ebd2bde6793732ef4f0388 |
+| Main do governance | a47183dfec8213c765ed43ae482c8c227760a3d5 — não alterar |
+| Código de referência | molecular-platform, main @ 08b797e0985e123ffd4d7ca7e5a5e8f040e63851 |
+| Incremento 020 | Concluído e integrado pelo PR #7; inspeção/seleção/resolução lógica, sem materialização por contrato |
+| Incremento ativo | 021 — Materialização da Seleção de Receptor, somente estudo |
+| Tarefa ativa | tasks/021-RECEPTOR-MATERIALIZATION-STUDY-REVIEW.json — AUTHORIZED |
 | Próximo ator | Claude revisor independente, separado do implementador |
-| Escopo | MAJOR-1, MAJOR-2, MINOR-1, MINOR-2 e regressões concretas das correções |
-| Escrita permitida ao revisor | Apenas novo parecer/evidências próprios nos caminhos da tarefa |
-| Relay automático | Não configurado; comando manual |
+| Estudo | increments/021/01-study/INCREMENT_021_RECEPTOR_MATERIALIZATION_STUDY.md |
+| Evidências/identidades | increments/021/01-study/FILE_IDENTITIES.json |
+| Registro da instrução do responsável | increments/021/00-owner-decision/OWNER_STUDY_AUTHORIZATION.md |
+| Recomendação provisória | Opção B: mmCIF, referencial do modelo original, decisões explícitas; assembly não nulo recusado |
+| Próximo gate após parecer | Reconciliação pelo arquiteto e decisão do responsável sobre rascunho |
+| Implementador | Aguarda: nenhuma tarefa nova de código autorizada |
+| Relay automático | Não configurado; encaminhamento manual com SHA publicado |
 
-Recibo: increments/020-A/12-checkpoint-1-focal-reverification/ARCHITECT_CORRECTIVE_DELIVERY_RECEPTION_AND_FOCAL_HANDOFF.md. A última tarefa de implementação foi entregue; seus arquivos/tarefas anteriores permanecem como histórico. Nenhum comando histórico deve ser reexecutado como tarefa ativa.
+## Stand-by explícito do Incremento 020-A
 
-Observado pelo arquiteto: refs/parent, identidades, última allowlist de dois arquivos +219/−0, cumulativo CP1 de quatro arquivos +4149/−1, sonda isolada 17/17 campos, controles positivos, teste anterior preservado por AST no último complemento e whitespace limpo entre os dois snapshots de blobs. Python 3.12.14/Pydantic 2.14.1; não pytest, RDKit ou Windows.
+Por decisão direta do responsável, o 020-A fica suspenso. Não alterar, integrar ou retomar seu código, worktree, documentos históricos ou tarefas antigas. Seus arquivos, autorizações e pareceres anteriores são preservados como histórico; não devem ser executados como tarefa ativa enquanto durar esta suspensão. Esta decisão não aprova o CP1, não cancela o incremento e não autoriza CP2/CP3.
 
-Fornecido pelo implementador: 191 testes DTO com e sem RDKit; suíte completa 1775 passed/5 skipped, +18 desde 1757/5. +108 desde o primeiro CP1 e +299 desde a baseline. Identidade do relatório: 305 linhas/15.430 bytes, SHA-256 1f9bf1984abe6e070f502aa15944313a99a5adcdaabe9df55492e6336c354b07. Não apresentar esses números como execução independente do arquiteto.
+Último HEAD conhecido/preservado do 020-A: cc903d8ebbfe1916c3fce195d20fc97b206a5f54. Seu parecer focal recebido por anexo e a questão de cobertura de interrupções permanecem pendências históricas, sem disposição nova por este estudo. Nenhum arquivo de increments/020-A ou de tasks/020-A-* foi alterado nesta publicação.
 
-O parecer original REQUEST CHANGES permanece histórico. Sua disposição atual será dada no novo parecer, sem zerar achados por autoridade da triagem. Não repetir estudo/revisão integral, expandir SVG para Z ou iniciar leitores/serviço/CLI. Parecer favorável permite decisão do responsável sobre o próximo checkpoint; não constitui autorização automática.
+## Limites da rodada do 021
 
-FINAL SPECIFICATION FROZEN: YES
-CORRECTIVE DELIVERY IDENTITIES VERIFIED: YES
-17-FIELD ARCHITECT TRIAGE: PASSED
-FOCAL INDEPENDENT REVERIFICATION READY: YES
-CHECKPOINT 1 APPROVED: NO
-CHECKPOINT 2 AUTHORIZED: NO
-CHECKPOINT 3 AUTHORIZED: NO
+A especificação final do 020 foi conferida e lida integralmente: 1.975 linhas, 210.880 bytes, SHA-256 cf6cb534f9267d51e718052c7b36a2293c522bc566c99cf3bb2ef5909385a0a6. A referência byte-idêntica acompanha o estudo. Conferidos 66 blobs da baseline e fontes oficiais do Gemmi 0.7.5. A evidência é documental/estática; não houve pytest, execução Gemmi, instalação, teste Windows ou implementação do 021. Os 48 cenários propostos não são testes executados.
+
+O revisor publica apenas seu novo parecer/evidências nos caminhos da tarefa, em branch própria, e informa commit/caminho. Não altera STATUS nem se concede a etapa seguinte. O arquiteto lerá a entrega no GitHub quando acionado; publicação de tarefa não inicia um agente em segundo plano.
+
+STUDY COMPLETE: YES
+READY FOR INDEPENDENT STUDY REVIEW: YES
+READY FOR IMPLEMENTATION: NO
+FINAL SPECIFICATION FROZEN: NO
+INCREMENT 020-A: STAND-BY
 AUTOMATED RELAY ACTIVE: NO
-CODE REPOSITORY MODIFIED BY ARCHITECT: NO
+CODE REPOSITORY MODIFIED: NO

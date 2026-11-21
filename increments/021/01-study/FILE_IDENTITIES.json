@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-21",
+  "governance_input_parent": "6a85b79a33bce419c0ebd2bde6793732ef4f0388",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "scope": "Only this publication; not a replacement for historical manifests",
+  "self_hash_excluded": true,
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 41,
+      "size_bytes": 3581,
+      "sha256": "12fcb69ffeba7cc3d9acf6ae913867839493c18113a96f2f0efd092dd1214f90"
+    },
+    {
+      "path": "increments/021/00-owner-decision/OWNER_STUDY_AUTHORIZATION.md",
+      "lines": 25,
+      "size_bytes": 1896,
+      "sha256": "ff1ab188202025e7b18ea957bc45614bc8822aa60268b2e056a0266dfda7e270"
+    },
+    {
+      "path": "increments/021/01-study/INCREMENT_021_RECEPTOR_MATERIALIZATION_STUDY.md",
+      "lines": 365,
+      "size_bytes": 55594,
+      "sha256": "5048c5012548ee1169f58e6bb644ecf8b5d76a59c6569400d67db0987f7dfa56"
+    },
+    {
+      "path": "increments/021/01-study/evidence/gemmi-source-identities.json",
+      "lines": 77,
+      "size_bytes": 2759,
+      "sha256": "aabd1fcc53b3729dab719786ee7bc92bdaf9f7b961cab4c0ec7bf76c2b9f9dcf"
+    },
+    {
+      "path": "increments/021/01-study/evidence/receptor-test-index.json",
+      "lines": 944,
+      "size_bytes": 25278,
+      "sha256": "a3f4dc7351e3ed0e1de664dee135ffa7aab60a52296963f95295281d429ead6c"
+    },
+    {
+      "path": "increments/021/01-study/evidence/source-identities.json",
+      "lines": 401,
+      "size_bytes": 15525,
+      "sha256": "29b345921a477edb1cb1bd36da4aaf8b46d56899b9390c45257e1386c27389ab"
+    },
+    {
+      "path": "increments/021/01-study/evidence/study-verification.json",
+      "lines": 107,
+      "size_bytes": 2320,
+      "sha256": "fa3abf2a57d7fbd4bc49851804d422715c866006b7b922464c52031811fad19d"
+    },
+    {
+      "path": "increments/021/01-study/references/INCREMENT_020_FINAL_SPECIFICATION.md",
+      "lines": 1975,
+      "size_bytes": 210880,
+      "sha256": "cf6cb534f9267d51e718052c7b36a2293c522bc566c99cf3bb2ef5909385a0a6"
+    },
+    {
+      "path": "tasks/021-RECEPTOR-MATERIALIZATION-STUDY-REVIEW.json",
+      "lines": 116,
+      "size_bytes": 6490,
+      "sha256": "99bee574f61964108d27709d3df7a1219c8253276acd58238b3eebe528ec5135"
+    }
+  ]
+}

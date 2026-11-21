@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-21",
+  "timezone": "America/Sao_Paulo",
+  "code_head_expected_and_observed": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "governance_input_head_expected_and_observed": "6a85b79a33bce419c0ebd2bde6793732ef4f0388",
+  "governance_main_preserved": "a47183dfec8213c765ed43ae482c8c227760a3d5",
+  "increment_020_pr7_confirmed": {
+    "merged": true,
+    "head": "1e68a1ef9482b5f480b06d286bc4512ef3a438cc",
+    "merge_commit": "d25974d90540c955dd8b95440d8b218689cf74a3"
+  },
+  "specification_020": {
+    "path": "increments/021/01-study/references/INCREMENT_020_FINAL_SPECIFICATION.md",
+    "lines": 1975,
+    "size_bytes": 210880,
+    "sha256": "cf6cb534f9267d51e718052c7b36a2293c522bc566c99cf3bb2ef5909385a0a6"
+  },
+  "specification_full_read_line_ranges": [
+    [
+      1,
+      220
+    ],
+    [
+      221,
+      560
+    ],
+    [
+      561,
+      904
+    ],
+    [
+      905,
+      1277
+    ],
+    [
+      1278,
+      1536
+    ],
+    [
+      1537,
+      1804
+    ],
+    [
+      1805,
+      1975
+    ]
+  ],
+  "github_source_blobs_verified": 66,
+  "python_syntax_validation": "all tracked Python files parsed with ast.parse; this is not pytest",
+  "gemmi_official_tag": "v0.7.5",
+  "gemmi_commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+  "gemmi_official_blobs_verified": 12,
+  "static_receptor_test_functions": 152,
+  "pytest_collected_items": null,
+  "proposed_scenarios": {
+    "count": 48,
+    "ranges": [
+      [
+        1,
+        6
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        13,
+        19
+      ],
+      [
+        20,
+        25
+      ],
+      [
+        26,
+        33
+      ],
+      [
+        34,
+        41
+      ],
+      [
+        42,
+        48
+      ]
+    ],
+    "unique_and_contiguous": true,
+    "executed": false
+  },
+  "environment": {
+    "python": "3.12.14",
+    "gemmi_available": true,
+    "pytest_available": false
+  },
+  "pytest_executed": false,
+  "gemmi_execution_performed": false,
+  "windows_tests_performed": false,
+  "dependencies_installed": false,
+  "scientific_probe_performed": false,
+  "limits": [
+    "Source verification is not binary/binding execution",
+    "No performance/concurrency/crash experiment",
+    "No 021 implementation",
+    "No historical suite result presented as a current execution"
+  ],
+  "code_repository_modified": false
+}

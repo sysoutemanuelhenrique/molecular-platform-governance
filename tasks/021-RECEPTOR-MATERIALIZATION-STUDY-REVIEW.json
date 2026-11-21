@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-RECEPTOR-MATERIALIZATION-STUDY-REVIEW",
+  "status": "AUTHORIZED",
+  "assigned_role": "claude-independent-reviewer-separate-from-implementer",
+  "authorization_scope": "INDEPENDENT_REVIEW_OF_021_ARCHITECTURAL_STUDY_ONLY",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "governance_input_parent": "6a85b79a33bce419c0ebd2bde6793732ef4f0388",
+  "review_snapshot": "Use the exact immutable release SHA supplied in the architect launch message; do not substitute main or the historical 020-A tasks",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "main",
+  "expected_code_head": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_access": "STRICTLY READ-ONLY",
+  "study": {
+    "path": "increments/021/01-study/INCREMENT_021_RECEPTOR_MATERIALIZATION_STUDY.md",
+    "lines": 365,
+    "size_bytes": 55594,
+    "sha256": "5048c5012548ee1169f58e6bb644ecf8b5d76a59c6569400d67db0987f7dfa56"
+  },
+  "normative_reference_020": {
+    "path": "increments/021/01-study/references/INCREMENT_020_FINAL_SPECIFICATION.md",
+    "lines": 1975,
+    "size_bytes": 210880,
+    "sha256": "cf6cb534f9267d51e718052c7b36a2293c522bc566c99cf3bb2ef5909385a0a6"
+  },
+  "owner_authorization_record": "increments/021/00-owner-decision/OWNER_STUDY_AUTHORIZATION.md",
+  "inputs": [
+    {
+      "path": "increments/021/01-study/evidence/source-identities.json",
+      "lines": 401,
+      "size_bytes": 15525,
+      "sha256": "29b345921a477edb1cb1bd36da4aaf8b46d56899b9390c45257e1386c27389ab"
+    },
+    {
+      "path": "increments/021/01-study/evidence/gemmi-source-identities.json",
+      "lines": 77,
+      "size_bytes": 2759,
+      "sha256": "aabd1fcc53b3729dab719786ee7bc92bdaf9f7b961cab4c0ec7bf76c2b9f9dcf"
+    },
+    {
+      "path": "increments/021/01-study/evidence/receptor-test-index.json",
+      "lines": 944,
+      "size_bytes": 25278,
+      "sha256": "a3f4dc7351e3ed0e1de664dee135ffa7aab60a52296963f95295281d429ead6c"
+    },
+    {
+      "path": "increments/021/01-study/evidence/study-verification.json",
+      "lines": 107,
+      "size_bytes": 2320,
+      "sha256": "fa3abf2a57d7fbd4bc49851804d422715c866006b7b922464c52031811fad19d"
+    }
+  ],
+  "input_manifest": "increments/021/01-study/FILE_IDENTITIES.json",
+  "preflight": [
+    "Confirm remote code main HEAD before reviewing; stop if changed",
+    "Confirm governance release supplied in launch message; stop/report if coordination branch advanced",
+    "Verify study/reference/evidence bytes and SHA-256 before use",
+    "Read AGENTS.md, protocol/AGENT_WORKFLOW.md, current STATUS.md and this task; CLAUDE.md bootstrap task pointer is historical"
+  ],
+  "scope": [
+    "Read the study integrally and the exact frozen 020 normative reference, especially sections 7/14/20-28/32-35/38",
+    "Confront claims with actual pinned code/tests and Gemmi 0.7.5 official source/binding; do not rely on architect authority",
+    "Decide whether option B restricted to source-model-frame, rejecting non-null assembly, is defensible; compare A/B/C without silently widening scope",
+    "Evaluate model/label/auth identities, component precedence/occurrence scope, modified polymers, absent dispositions, altlocs/microheterogeneity/occupancy",
+    "Evaluate connection endpoint integrity, symmetry/cuts and category retention/loss audit; verify the proposed format does not claim full experimental preservation",
+    "Evaluate policy/artifact/attempt boundaries, lineage and absence of automatic ScientificEntity/MolecularState/Conformer promotion",
+    "Evaluate snapshot binding, checksums, request equivalence, concurrent publication, crash/cleanup ownership and post-commit failure",
+    "Give an explicit disposition for Q-01 through Q-09; separate open drafting decisions from blockers to using the study",
+    "Evaluate proposed scenarios/checkpoints/allowlist and source-only evidence limits; no CP1/020-A re-review"
+  ],
+  "tests_policy": {
+    "execution_optional_if_available": true,
+    "global_installation_authorized": false,
+    "code_tree_cache_or_bytecode_writes_allowed": false,
+    "windows_execution_required_to_review_study": false,
+    "future_windows_gate": "Required in implementation checkpoint validating snapshot/storage/concurrency",
+    "instruction": "Use external scratch for any needed probe; distinguish own execution, static evidence and supplied evidence; do not turn unavailable pytest/Gemmi into fictional results"
+  },
+  "output_path": "increments/021/02-study-review/CLAUDE_INCREMENT_021_STUDY_ADVERSARIAL_REVIEW.md",
+  "allowed_governance_output_paths": [
+    "increments/021/02-study-review/CLAUDE_INCREMENT_021_STUDY_ADVERSARIAL_REVIEW.md",
+    "increments/021/02-study-review/evidence/claude-*"
+  ],
+  "output_branch_policy": "Own claude/ branch based on supplied study release; preferred claude/021-study-review-20261121; compatible session branch allowed if identified",
+  "governance_commit_push_authorized": true,
+  "required_report": [
+    "Input identities and exact code/Gemmi version",
+    "Sources/method and own execution limits",
+    "BLOCKERS/MAJORS/MINORS/NOTES with normative/source evidence",
+    "Corrections to factual/scientific claims",
+    "Option A/B/C assessment and Q-01-Q-09 dispositions",
+    "Draft readiness verdict and remaining questions",
+    "Output path/lines/bytes/SHA-256, branch/commit and remotely verified publication; report blocked publication truthfully"
+  ],
+  "permitted_verdicts": [
+    "REJECT",
+    "REQUEST CHANGES",
+    "APPROVE FOR DRAFT SPECIFICATION"
+  ],
+  "prohibited": [
+    "Code/test/specification changes or implementation",
+    "020-A code/worktree/history changes or resumption",
+    "Editing architect study/central STATUS/tasks/old evidence",
+    "Main changes, PR/merge/tag/release/formal GitHub approval/comments",
+    "Force push/reset/rebase/amend",
+    "Configuration/visibility/automation changes",
+    "Reading or modifying user untracked items: Claude outputs/, _figura_curcumina/, increment-009-review.txt",
+    "Publishing full ZIP, checkout, credentials or personal documents"
+  ],
+  "next_gate": "Architect reconciliation; responsible owner decides draft specification stage; no automatic implementation authorization",
+  "increment_020_a_status": "STAND-BY",
+  "automated_relay_active": false,
+  "implementation_authorized": false,
+  "final_specification_frozen": false
+}

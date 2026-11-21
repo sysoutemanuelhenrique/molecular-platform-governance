@@ -1,0 +1,401 @@
+{
+  "code_sha": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "files": [
+    {
+      "path": ".gitignore",
+      "git_blob_sha": "10dcde9df1df31118c8045ab5aa8e39f4382a747",
+      "size_bytes": 210,
+      "sha256": "532a9b1da58dd2b55bd66bf4899fd011304f3bdc260137e6a899614eff658066"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "9f1acf43b49a9e2661c10ba4fbb1209c5e2db5aa",
+      "size_bytes": 11266,
+      "sha256": "f85c5be5fafc4e1c8566758b0ae6899c3b5406b6bae9ad57435a85ea8bb7aaf1"
+    },
+    {
+      "path": "docs/apresentacao-academica.md",
+      "git_blob_sha": "1d2f6b95737d7c551d393caaa80ed62fbcc0c86c",
+      "size_bytes": 5557,
+      "sha256": "9b24c5fa6f529ec3e53cbd625dd4d22e7701867f9c51f738f5fc58ded3f91591"
+    },
+    {
+      "path": "docs/tutorial-pubchem-caffeine.md",
+      "git_blob_sha": "53651acf98eb796a81faa2a91a0a8fe836055b18",
+      "size_bytes": 20213,
+      "sha256": "f5dd7136dd2af93cb704d5faa316dd835078f729acc46766c71385ed752eed47"
+    },
+    {
+      "path": "exp001/experiment.yaml",
+      "git_blob_sha": "66006f7fff9cac92d64687a53e9787dbd8968069",
+      "size_bytes": 46,
+      "sha256": "568d7f404d3e9129428eab071cb68c8ac1ec25fec0a4076643f9c16f3cfb61e6"
+    },
+    {
+      "path": "pyproject.toml",
+      "git_blob_sha": "b8317bdfa6cd3e09b3eeb3e55356fe46c235ab78",
+      "size_bytes": 559,
+      "sha256": "879ba13abe5c4b6dd75022e9cd0779606efba5a3eb9cad670751b8c04a7cf77a"
+    },
+    {
+      "path": "src/molecular/__init__.py",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/molecular/activity.py",
+      "git_blob_sha": "3aadf46ff8f741bd0c4620bce4ad086af677dd4b",
+      "size_bytes": 2001,
+      "sha256": "6d0bf6b21517b0a8e95cd2523bfd9a409b5179af4e6c1a891f9184b81e0e5cf0"
+    },
+    {
+      "path": "src/molecular/application.py",
+      "git_blob_sha": "4a574174650510f3703e32dc0b38d881e61b89a1",
+      "size_bytes": 35995,
+      "sha256": "84a22b6a487076de4e1c3cd2e13eef7b761f418b0959f14bc445aa5ad574b35d"
+    },
+    {
+      "path": "src/molecular/atomic.py",
+      "git_blob_sha": "1cf82ff8f639a98af371aaf8cb8519d4ede5efe0",
+      "size_bytes": 45543,
+      "sha256": "5aa6ebd17c8508bd64488fbf061d19a35bf99a19cf5b178d21df6910e8bf7d95"
+    },
+    {
+      "path": "src/molecular/cli.py",
+      "git_blob_sha": "33b78896eca640607a0ffcb8a843c2b5ab44ed3b",
+      "size_bytes": 93462,
+      "sha256": "db86a1f040ace006a1a3b9e705f0b23a4a16c063980f97138e5fbad7b8da554e"
+    },
+    {
+      "path": "src/molecular/conditions.py",
+      "git_blob_sha": "2e720f4eb20feed631e47f8c404518e3b9c53a32",
+      "size_bytes": 6609,
+      "sha256": "12e07e325bf23fcdf06670e23b7c50e0f2b0093e4d4a5f401d1693b9c78ebd46"
+    },
+    {
+      "path": "src/molecular/conditions_registry.py",
+      "git_blob_sha": "a87b72e174a252c415f4e72ae325cc2241f44112",
+      "size_bytes": 6372,
+      "sha256": "1aa6babe13a3bf784b50e1eb839e7f3752af538419b1b24fc11bb07e487b9113"
+    },
+    {
+      "path": "src/molecular/conditions_service.py",
+      "git_blob_sha": "26b9ea636e5782cab0e8275b167ea3c570d97ad3",
+      "size_bytes": 20096,
+      "sha256": "ba6e3b42b1bb4169d5f53dee5309cf353c37cd7ae34b1bbb090b0845a53e8602"
+    },
+    {
+      "path": "src/molecular/config.py",
+      "git_blob_sha": "40fca86137a24159d7c8a53737711dbf2b55286e",
+      "size_bytes": 330,
+      "sha256": "d604f5b488b3b97517e2910081c98675d5a36b7c38e26369f913144ad8b2788c"
+    },
+    {
+      "path": "src/molecular/context.py",
+      "git_blob_sha": "42b36a66f75380ca19b567239f24474524683d6e",
+      "size_bytes": 9032,
+      "sha256": "b813a64705f7e0ded1628ea2e2ed21db7bcd256aaa92ae82ede8ff12e16684b8"
+    },
+    {
+      "path": "src/molecular/execution.py",
+      "git_blob_sha": "37c67f6b58e7c25394596d6bbd93eccb56ca62a6",
+      "size_bytes": 20008,
+      "sha256": "608bebbb54317b3d54bee8ee4898b122b78833eecee25fa1e0b4b8128cfae469"
+    },
+    {
+      "path": "src/molecular/execution_registry.py",
+      "git_blob_sha": "43a1854fcab68da35d1fee10925e68df156f7486",
+      "size_bytes": 16830,
+      "sha256": "a8f4dc72d4aec6c16cf7ec31b6abffeb6a1da4d954c75751e7a549cbce211890"
+    },
+    {
+      "path": "src/molecular/inputs.py",
+      "git_blob_sha": "f9283b8fd6d950a7122fd77fd72a9bced2cab564",
+      "size_bytes": 2986,
+      "sha256": "79776bea49e7f99f2873f70dc0de4a6467ba94a841c333f42c8d5e91f942a41b"
+    },
+    {
+      "path": "src/molecular/models.py",
+      "git_blob_sha": "6ffe1d771028abde2d656bf4d60dab1b59bb58d2",
+      "size_bytes": 500,
+      "sha256": "a5a6b0c416cb29c409966aacb9bab53b74ab0c1cbaa6946287e134134ec7e1d4"
+    },
+    {
+      "path": "src/molecular/promotion.py",
+      "git_blob_sha": "e2c9039fb9fc318bfb2b604489880880d9c6d3d3",
+      "size_bytes": 27038,
+      "sha256": "399fbac4aa5d262337a1891f155aaaeaba6b6472554a030e9dda91b4b325581f"
+    },
+    {
+      "path": "src/molecular/promotion_registry.py",
+      "git_blob_sha": "db1f3d775e9064e44eb3588188fb86c43e610202",
+      "size_bytes": 40129,
+      "sha256": "fe4656ba4a2deda19dfea7af131865144d14dac294d37f20a48a3d9fd3b8c5d1"
+    },
+    {
+      "path": "src/molecular/promotion_service.py",
+      "git_blob_sha": "05385debc99460698b3f320a3825e123de8e319a",
+      "size_bytes": 44177,
+      "sha256": "052b6ec970956859940d641ee9c12f15e002e157c6e2c8f720bfad7d7cb8f455"
+    },
+    {
+      "path": "src/molecular/pubchem.py",
+      "git_blob_sha": "fafac297cd2bc30208436610ea121695c340fa47",
+      "size_bytes": 2863,
+      "sha256": "1ad3f5c680b6c1e578b7d6ec158b95f1485746d8c01fb13c981adea1a44b4c59"
+    },
+    {
+      "path": "src/molecular/rdkit_tautomer.py",
+      "git_blob_sha": "3a8acdb43ae71e7dd2e6f17731c290a3b5f34bde",
+      "size_bytes": 27527,
+      "sha256": "4b8a36fece2b65cff7758d396c36b3bccd937a3387405c8452829973b9da596c"
+    },
+    {
+      "path": "src/molecular/receptor_inspection.py",
+      "git_blob_sha": "347bd917ce0d75f0f3cac10e39c2141325cd491c",
+      "size_bytes": 38813,
+      "sha256": "e824684a8b0703c3468ee61fbe666331ca8ae9e9c6106cd3b3a766929a16ae0d"
+    },
+    {
+      "path": "src/molecular/receptor_parsing.py",
+      "git_blob_sha": "4898e46c87a43a5aa7266f332262f5996ad42c45",
+      "size_bytes": 34622,
+      "sha256": "160a0a8f1932fbb9f65564cf68cbabb387b2cc400893b842a396efec221d295a"
+    },
+    {
+      "path": "src/molecular/receptor_registry.py",
+      "git_blob_sha": "c7582403c23b360bf60eedce6a32f2a5de0a7be9",
+      "size_bytes": 14164,
+      "sha256": "9bd397ffa5510651055946d9f5132c36f47f2459b72b764aa6ef6fff81b2fb47"
+    },
+    {
+      "path": "src/molecular/receptor_resolution.py",
+      "git_blob_sha": "53a822a177fa378ed9ca70aebf84af16fd287a1d",
+      "size_bytes": 6401,
+      "sha256": "45d3f1cb85c83d91d36d9904f1eb108de42ceb372da4c37fdd263fee476a9000"
+    },
+    {
+      "path": "src/molecular/receptor_selection.py",
+      "git_blob_sha": "e9b15d460896994f62a193784103d2d38368a908",
+      "size_bytes": 6628,
+      "sha256": "dab531dd799ac48d86aa851b9cb1df179336146f81004fcb49d9619afe793da8"
+    },
+    {
+      "path": "src/molecular/receptor_service.py",
+      "git_blob_sha": "a9a762f39bb618353607fad74ee526a8cfa557d0",
+      "size_bytes": 31516,
+      "sha256": "b555c9833c6a996826657fafdad6f7360eee8a4371fff4e46d66601f419b9584"
+    },
+    {
+      "path": "src/molecular/registry.py",
+      "git_blob_sha": "e23e73fcde620a9d2c3cfd18762ba9e63b97c31b",
+      "size_bytes": 9901,
+      "sha256": "3278cbf1e2106f02bfcc1ddf4e75dbc37c378229b3ad7c116259394eadff6b9e"
+    },
+    {
+      "path": "src/molecular/scientific.py",
+      "git_blob_sha": "44af2faa7780ef039a02ae3ccbcdc8388aaa5167",
+      "size_bytes": 7775,
+      "sha256": "fd4a164c3f0053a8ae803f9cb2096ec6aa4324a87814658d4716c20d483e4e48"
+    },
+    {
+      "path": "src/molecular/scientific_registry.py",
+      "git_blob_sha": "12c456f332f90dc8e878e0d3d403214a51b644f4",
+      "size_bytes": 23456,
+      "sha256": "f738530e525fc23b2283a02408ed138c0c644c7bcc07db2ed1ef2f6cd4fa9576"
+    },
+    {
+      "path": "src/molecular/transformation.py",
+      "git_blob_sha": "bea2e1c1b4c05409dc01f5e51a423641ecde70f7",
+      "size_bytes": 6009,
+      "sha256": "8018ddee489f968ffe7e381c7e0a8d991b66e694f282c7202bb75f24542caf66"
+    },
+    {
+      "path": "src/molecular/transformation_registry.py",
+      "git_blob_sha": "2351f0be6b50790f0a8849751ec2a34a88b3cf16",
+      "size_bytes": 7544,
+      "sha256": "80757fb3e3683f5afcb8c068702c8b8a244b4781138614d55934497b7e065c77"
+    },
+    {
+      "path": "tests/test_activity.py",
+      "git_blob_sha": "4633516205a2edc6aadd3842ee2dde6307d02c49",
+      "size_bytes": 5053,
+      "sha256": "cab03f3e9d31524181800f2be6ec01a01f5ede8c916c9c31d193dcf8322258d6"
+    },
+    {
+      "path": "tests/test_application.py",
+      "git_blob_sha": "79fe85a1045f4000040a945be589fad6f6662ae4",
+      "size_bytes": 67918,
+      "sha256": "11433e54155d9ea8410926324c2eb50db28fd0cd83b32bb8878aa282f902303d"
+    },
+    {
+      "path": "tests/test_application_derived_state.py",
+      "git_blob_sha": "95bfc6167582743353522f877edc038fe355d638",
+      "size_bytes": 24728,
+      "sha256": "134f5560ac094223f86396c31d30b05fa173bedbf10e8d5bbbcecd905efde1e9"
+    },
+    {
+      "path": "tests/test_atomic.py",
+      "git_blob_sha": "fc0f59cc08f6b02ed1c064fed27673052e7240d2",
+      "size_bytes": 74780,
+      "sha256": "f8b0b9b2b8d0d00da8898096d70aa619fcf71595c3fafcfe0fdbb20ae7411424"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "git_blob_sha": "f8d8ff06a7a01dcb19f78c020e40d2d6a94ff7d3",
+      "size_bytes": 258160,
+      "sha256": "08f0ff1506451f454353fc7efd1720b341a9fa93ff4f91db4b96782d1cceb490"
+    },
+    {
+      "path": "tests/test_conditions.py",
+      "git_blob_sha": "8014212502452ce9f163b0837238681a9e201737",
+      "size_bytes": 9577,
+      "sha256": "4fae78d850e1d188c04e82e5fabf2452db61ddde4aaeb6cde92b71d219d29089"
+    },
+    {
+      "path": "tests/test_conditions_registry.py",
+      "git_blob_sha": "835b285b9d3a60a9d91adc662ffa7624b1398f3f",
+      "size_bytes": 5803,
+      "sha256": "070e143faafa300213ae9d802f3a20ea19ef714b80f15e7cf7611ab76c1472a2"
+    },
+    {
+      "path": "tests/test_conditions_service.py",
+      "git_blob_sha": "b0db221e1c10f5bb1d6a1ba8dac33fa7e94145ae",
+      "size_bytes": 37116,
+      "sha256": "9fead7097f29d69050929e61c3527c94c7ddedf880e77de7a76e16e8c9a7002d"
+    },
+    {
+      "path": "tests/test_config.py",
+      "git_blob_sha": "6dce69072efed78548558e5a2539d07e365753ff",
+      "size_bytes": 2008,
+      "sha256": "a5e8640353ff6ab51072a201d0a04d861af449a6a0edef9842c736eaab57edd9"
+    },
+    {
+      "path": "tests/test_context.py",
+      "git_blob_sha": "e3fb150d10f2050ad68e2551e1cce0c76b4d7fa5",
+      "size_bytes": 12925,
+      "sha256": "67668a847e5a481bde24563c36c745144f08b50542a01367423f2d7a2f05052c"
+    },
+    {
+      "path": "tests/test_execution.py",
+      "git_blob_sha": "f95a38b7d1e6016fbb2a80764ce0adbbfeb40b08",
+      "size_bytes": 29785,
+      "sha256": "9a2cf02d2c4d42059d58a64f69bd64b8219e72d8c39144f2512578c5e0312574"
+    },
+    {
+      "path": "tests/test_execution_registry.py",
+      "git_blob_sha": "bc95ceabb130a48f5e774f90bda565718d768e61",
+      "size_bytes": 25460,
+      "sha256": "3cca8e1ca8daa8d0f6d1f01852c27b378aee64202baf7ca091514fc1b9221b49"
+    },
+    {
+      "path": "tests/test_inputs.py",
+      "git_blob_sha": "f6f6d84e5da33d6dce1f241807d1997eae7eec3e",
+      "size_bytes": 5766,
+      "sha256": "ef73b9c274cf957295d9e8ffc4a257e0b2cdfb46ce3af551601a5bc7fd734e5b"
+    },
+    {
+      "path": "tests/test_models.py",
+      "git_blob_sha": "1329c069abfda3b420e432b7e112ef2541b7a166",
+      "size_bytes": 2546,
+      "sha256": "655f8a8c6382fd468e2c8d15a7bd8f60e2227f9fb7955483bc167b788f462ee5"
+    },
+    {
+      "path": "tests/test_promotion.py",
+      "git_blob_sha": "018dc6a6a6ac14fd46adaec4d67fe8a961306f0e",
+      "size_bytes": 20817,
+      "sha256": "faf849ad99d2d085b2f0d1e429eff2d51d6ba01f654d6f0ece9ba8f298d64b7e"
+    },
+    {
+      "path": "tests/test_promotion_registry.py",
+      "git_blob_sha": "ce378017d10922aea5ed18785c00afadfff997f6",
+      "size_bytes": 64849,
+      "sha256": "dfa4f3a92b705e9a3dc3acf14dcf4593270447065db317d4c85e8ea6ceb8d5f0"
+    },
+    {
+      "path": "tests/test_promotion_service.py",
+      "git_blob_sha": "48100be561f200e0e15c31012decd14587c9050b",
+      "size_bytes": 33380,
+      "sha256": "23e37799a7b6ed92a641fb3c6b5a72d388622b703b7f714e77393bd4f05cb335"
+    },
+    {
+      "path": "tests/test_pubchem.py",
+      "git_blob_sha": "e60ff154a11c473a1a72dc996b479a56f38fd2a8",
+      "size_bytes": 5480,
+      "sha256": "a40111d1271a98e81b97504790fd0a1c186bf3796d50529eced9b2246e25c852"
+    },
+    {
+      "path": "tests/test_rdkit_tautomer.py",
+      "git_blob_sha": "8d7e1ac254439f968ed2b3904183ca6a1cad72c6",
+      "size_bytes": 35611,
+      "sha256": "ebc4277a67a48e5d5e4cbe90323195a6b08ecf15b8587a9b1eb58dc766d73570"
+    },
+    {
+      "path": "tests/test_receptor_inspection.py",
+      "git_blob_sha": "bbede57cdf3e2aa51b844fb2fb3157f0a6269631",
+      "size_bytes": 36457,
+      "sha256": "6d7e36302ed5bca05c104ded7db572e395c30072a1e861cb8f30c495ac6b4b85"
+    },
+    {
+      "path": "tests/test_receptor_parsing.py",
+      "git_blob_sha": "0c7ac35fa42d664d660b2c08b882118ba2c168dc",
+      "size_bytes": 16399,
+      "sha256": "625747de75774353894f6068e70430bac9480a57260b65d506bcec85a9bc21b3"
+    },
+    {
+      "path": "tests/test_receptor_registry.py",
+      "git_blob_sha": "03933680fcc80d7c099f6cde9a994e19d7ecae78",
+      "size_bytes": 17594,
+      "sha256": "96cc6afd448e6f8bdab777fd0743fbb4a30cf616b25812f7ce40bae792e68571"
+    },
+    {
+      "path": "tests/test_receptor_resolution.py",
+      "git_blob_sha": "f8bb2b9a2c6149258d070c2d9bb41dcee874041a",
+      "size_bytes": 7796,
+      "sha256": "be9e8efc008f92be956aae3a0788d0ba07da31b635a6e8b94dd29a27817c4761"
+    },
+    {
+      "path": "tests/test_receptor_selection.py",
+      "git_blob_sha": "f62f38256d0baa199866d859098a5b411dec2959",
+      "size_bytes": 4971,
+      "sha256": "f32ecd38274725cb3d3732e071f6fee5e83e8cb71c7ec8f3decab1232c36ad2e"
+    },
+    {
+      "path": "tests/test_receptor_service.py",
+      "git_blob_sha": "17b554befcc3912c3e65e5f0ec1e4c680894f0b2",
+      "size_bytes": 18833,
+      "sha256": "105e7020b32366c43fc65d166475c3390ae36624ecf5a9e03936e71e117e99b1"
+    },
+    {
+      "path": "tests/test_registry.py",
+      "git_blob_sha": "6ee21028e9f334df798efc68c0f7e4be58970748",
+      "size_bytes": 22819,
+      "sha256": "b7b28b287cbd136e74a55f2b4651c9a9abef9052f99ca4b32516f358258001d1"
+    },
+    {
+      "path": "tests/test_scientific.py",
+      "git_blob_sha": "4d86b204e6cc506bc8c473697143038409326755",
+      "size_bytes": 9684,
+      "sha256": "2f7714680084efed15eddecd319e1a4fda9fa6058683b687250bd70a5579922e"
+    },
+    {
+      "path": "tests/test_scientific_registry.py",
+      "git_blob_sha": "3c70c6492f94b93ce0778871e1f2d953899c2a94",
+      "size_bytes": 38572,
+      "sha256": "62a78f78e66e44bb0fdf8b98dae2fe4d9713c06d70fbd249e757c44f07859583"
+    },
+    {
+      "path": "tests/test_transformation.py",
+      "git_blob_sha": "dc8bdfea1750d1b5e6cebe0b43a405a074d73f61",
+      "size_bytes": 8197,
+      "sha256": "818f20098c39813a9f88fb6167ec54fe23b6dd11ea131c0432a4ff6254f3e6d3"
+    },
+    {
+      "path": "tests/test_transformation_registry.py",
+      "git_blob_sha": "4665055c30b933664628fe6a54ccb5bf6ef323f6",
+      "size_bytes": 12393,
+      "sha256": "31ca903c9a5e46f11f615649ce6e70c26d9c5490f5f7750269c36fc379e26f9c"
+    }
+  ]
+}

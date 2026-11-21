@@ -1,0 +1,944 @@
+[
+  {
+    "path": "tests/test_receptor_inspection.py",
+    "functions": [
+      {
+        "name": "test_multiple_models_warning",
+        "line": 150,
+        "end_line": 157,
+        "parametrize": []
+      },
+      {
+        "name": "test_multiple_assemblies_warning",
+        "line": 160,
+        "end_line": 172,
+        "parametrize": []
+      },
+      {
+        "name": "test_altloc_observation_and_warning",
+        "line": 175,
+        "end_line": 184,
+        "parametrize": []
+      },
+      {
+        "name": "test_partial_occupancy_observation_and_warning",
+        "line": 187,
+        "end_line": 193,
+        "parametrize": []
+      },
+      {
+        "name": "test_full_occupancy_no_observation_no_warning",
+        "line": 196,
+        "end_line": 204,
+        "parametrize": []
+      },
+      {
+        "name": "test_missing_residues_observation_and_warning",
+        "line": 207,
+        "end_line": 224,
+        "parametrize": []
+      },
+      {
+        "name": "test_missing_atoms_observation_and_warning",
+        "line": 227,
+        "end_line": 245,
+        "parametrize": []
+      },
+      {
+        "name": "test_ambiguous_author_chain_id_warning",
+        "line": 248,
+        "end_line": 258,
+        "parametrize": []
+      },
+      {
+        "name": "test_residue_and_atom_counts_match_raw_file",
+        "line": 261,
+        "end_line": 271,
+        "parametrize": []
+      },
+      {
+        "name": "test_shared_label_entity_id_across_chains_no_duplicate_entity",
+        "line": 274,
+        "end_line": 282,
+        "parametrize": []
+      },
+      {
+        "name": "test_legacy_pdb_unavailable_categories_but_legacy_connectivity_preserved",
+        "line": 285,
+        "end_line": 304,
+        "parametrize": []
+      },
+      {
+        "name": "test_no_missing_declared_empty_no_warning",
+        "line": 307,
+        "end_line": 313,
+        "parametrize": []
+      },
+      {
+        "name": "test_mmcif_question_mark_token_becomes_none",
+        "line": 316,
+        "end_line": 326,
+        "parametrize": []
+      },
+      {
+        "name": "test_mmcif_dot_token_becomes_none",
+        "line": 329,
+        "end_line": 335,
+        "parametrize": []
+      },
+      {
+        "name": "test_water_hoh_classification",
+        "line": 338,
+        "end_line": 345,
+        "parametrize": []
+      },
+      {
+        "name": "test_water_dod_classification",
+        "line": 348,
+        "end_line": 353,
+        "parametrize": []
+      },
+      {
+        "name": "test_zn_monatomic_metal_ion_classification",
+        "line": 356,
+        "end_line": 363,
+        "parametrize": []
+      },
+      {
+        "name": "test_polyatomic_unknown_non_polymer_classification",
+        "line": 366,
+        "end_line": 376,
+        "parametrize": []
+      },
+      {
+        "name": "test_modified_polymer_residue_classification",
+        "line": 379,
+        "end_line": 385,
+        "parametrize": []
+      },
+      {
+        "name": "test_undetermined_entity_type_classification",
+        "line": 388,
+        "end_line": 395,
+        "parametrize": []
+      },
+      {
+        "name": "test_struct_conn_disulf_partitioned",
+        "line": 423,
+        "end_line": 427,
+        "parametrize": []
+      },
+      {
+        "name": "test_struct_conn_metalc_partitioned",
+        "line": 430,
+        "end_line": 434,
+        "parametrize": []
+      },
+      {
+        "name": "test_struct_conn_covale_partitioned",
+        "line": 437,
+        "end_line": 441,
+        "parametrize": []
+      },
+      {
+        "name": "test_explicit_hydrogens_present",
+        "line": 444,
+        "end_line": 452,
+        "parametrize": []
+      },
+      {
+        "name": "test_explicit_hydrogens_absent_warning",
+        "line": 455,
+        "end_line": 460,
+        "parametrize": []
+      },
+      {
+        "name": "test_unknown_component_never_omitted",
+        "line": 463,
+        "end_line": 468,
+        "parametrize": []
+      },
+      {
+        "name": "test_duplicate_struct_conn_rows_deduplicated",
+        "line": 471,
+        "end_line": 496,
+        "parametrize": []
+      },
+      {
+        "name": "test_multi_atom_metal_code_never_metal_ion",
+        "line": 499,
+        "end_line": 508,
+        "parametrize": []
+      },
+      {
+        "name": "test_classification_never_carries_role_or_disposition_fields",
+        "line": 511,
+        "end_line": 513,
+        "parametrize": []
+      },
+      {
+        "name": "test_extended_ccd_code_five_characters_accepted",
+        "line": 516,
+        "end_line": 521,
+        "parametrize": []
+      },
+      {
+        "name": "test_monatomic_unlisted_component_is_unknown_never_other_non_polymer",
+        "line": 527,
+        "end_line": 534,
+        "parametrize": []
+      },
+      {
+        "name": "test_legacy_pdb_selection_capability_inspection_only",
+        "line": 537,
+        "end_line": 541,
+        "parametrize": []
+      },
+      {
+        "name": "test_degenerate_mmcif_missing_label_identity_for_one_chain",
+        "line": 544,
+        "end_line": 555,
+        "parametrize": []
+      },
+      {
+        "name": "test_legacy_pdb_chain_label_asym_unavailable_auth_populated",
+        "line": 558,
+        "end_line": 565,
+        "parametrize": []
+      },
+      {
+        "name": "test_legacy_pdb_entity_label_entity_id_unavailable",
+        "line": 568,
+        "end_line": 575,
+        "parametrize": []
+      },
+      {
+        "name": "test_identity_origin_rejects_invalid_literal",
+        "line": 578,
+        "end_line": 594,
+        "parametrize": []
+      },
+      {
+        "name": "test_struct_conn_label_alt_id_preserved_both_partners",
+        "line": 597,
+        "end_line": 623,
+        "parametrize": []
+      },
+      {
+        "name": "test_struct_conn_symmetry_preserved_both_partners",
+        "line": 626,
+        "end_line": 652,
+        "parametrize": []
+      },
+      {
+        "name": "test_struct_conn_distance_value_order_role_details_preserved_or_none",
+        "line": 655,
+        "end_line": 693,
+        "parametrize": []
+      },
+      {
+        "name": "test_struct_conn_absent_conn_type_raises_malformed",
+        "line": 696,
+        "end_line": 715,
+        "parametrize": []
+      },
+      {
+        "name": "test_legacy_ssbond_mapped_to_disulfide_bonds",
+        "line": 718,
+        "end_line": 733,
+        "parametrize": []
+      },
+      {
+        "name": "test_legacy_link_no_metal_partner_covalent",
+        "line": 736,
+        "end_line": 747,
+        "parametrize": []
+      },
+      {
+        "name": "test_legacy_link_with_metal_partner_metal_coordination",
+        "line": 750,
+        "end_line": 761,
+        "parametrize": []
+      },
+      {
+        "name": "test_legacy_conect_mapped_by_metal_partner_rule",
+        "line": 764,
+        "end_line": 775,
+        "parametrize": []
+      },
+      {
+        "name": "test_legacy_pdb_remark_465_470_not_structurally_exposed_stays_unavailable",
+        "line": 778,
+        "end_line": 789,
+        "parametrize": []
+      },
+      {
+        "name": "test_remark_465_470_when_structurally_exposed_populates_missing",
+        "line": 792,
+        "end_line": 845,
+        "parametrize": []
+      },
+      {
+        "name": "test_inspection_id_golden_vector",
+        "line": 848,
+        "end_line": 858,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major01_hoh_mmcif_without_label_entity_id_classified_water",
+        "line": 869,
+        "end_line": 875,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major01_dod_mmcif_without_label_entity_id_classified_water",
+        "line": 878,
+        "end_line": 883,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major01_water_takes_priority_over_polymer_entity_association",
+        "line": 886,
+        "end_line": 897,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major01_non_aqueous_component_without_label_entity_id_not_misclassified_water",
+        "line": 900,
+        "end_line": 906,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major01_legacy_pdb_water_classification_unaffected",
+        "line": 909,
+        "end_line": 914,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major01_metal_coordination_classification_unaffected",
+        "line": 917,
+        "end_line": 928,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major02_entity_description_propagates_nfc_into_report",
+        "line": 931,
+        "end_line": 941,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major02_warning_detail_embedding_structural_value_remains_nfc",
+        "line": 944,
+        "end_line": 960,
+        "parametrize": []
+      }
+    ]
+  },
+  {
+    "path": "tests/test_receptor_parsing.py",
+    "functions": [
+      {
+        "name": "test_mmcif_single_model_no_assembly_parses_successfully",
+        "line": 84,
+        "end_line": 90,
+        "parametrize": []
+      },
+      {
+        "name": "test_mmcif_multiple_models_all_listed",
+        "line": 93,
+        "end_line": 106,
+        "parametrize": []
+      },
+      {
+        "name": "test_mmcif_assembly_declared_preserves_raw_text_never_evaluated",
+        "line": 109,
+        "end_line": 133,
+        "parametrize": []
+      },
+      {
+        "name": "test_legacy_pdb_valid_identity_is_honest",
+        "line": 136,
+        "end_line": 156,
+        "parametrize": []
+      },
+      {
+        "name": "test_unrecognized_format_raises",
+        "line": 159,
+        "end_line": 163,
+        "parametrize": []
+      },
+      {
+        "name": "test_malformed_cif_syntax_raises_with_cause",
+        "line": 166,
+        "end_line": 171,
+        "parametrize": []
+      },
+      {
+        "name": "test_truncated_mid_category_raises",
+        "line": 174,
+        "end_line": 179,
+        "parametrize": []
+      },
+      {
+        "name": "test_missing_assembly_category_reported_unavailable",
+        "line": 182,
+        "end_line": 188,
+        "parametrize": []
+      },
+      {
+        "name": "test_missing_struct_conn_category_all_connection_tuples_empty",
+        "line": 191,
+        "end_line": 202,
+        "parametrize": []
+      },
+      {
+        "name": "test_parser_version_is_runtime_observed",
+        "line": 205,
+        "end_line": 212,
+        "parametrize": []
+      },
+      {
+        "name": "test_no_gemmi_type_escapes_parse_receptor_raw",
+        "line": 215,
+        "end_line": 237,
+        "parametrize": []
+      },
+      {
+        "name": "test_declared_vs_detected_format_divergence_is_content_authoritative",
+        "line": 240,
+        "end_line": 249,
+        "parametrize": []
+      },
+      {
+        "name": "test_setup_entities_and_mutating_methods_never_invoked",
+        "line": 255,
+        "end_line": 277,
+        "parametrize": []
+      },
+      {
+        "name": "test_gz_extension_rejected_before_open",
+        "line": 280,
+        "end_line": 284,
+        "parametrize": []
+      },
+      {
+        "name": "test_gzip_magic_bytes_rejected",
+        "line": 287,
+        "end_line": 292,
+        "parametrize": []
+      },
+      {
+        "name": "test_bzip2_magic_bytes_rejected",
+        "line": 295,
+        "end_line": 300,
+        "parametrize": []
+      },
+      {
+        "name": "test_xz_magic_bytes_rejected",
+        "line": 303,
+        "end_line": 308,
+        "parametrize": []
+      },
+      {
+        "name": "test_zip_magic_bytes_rejected",
+        "line": 311,
+        "end_line": 316,
+        "parametrize": []
+      },
+      {
+        "name": "test_cif_named_file_with_gzip_content_rejected",
+        "line": 319,
+        "end_line": 324,
+        "parametrize": []
+      },
+      {
+        "name": "test_originally_gz_file_renamed_to_cif_rejected",
+        "line": 327,
+        "end_line": 333,
+        "parametrize": []
+      },
+      {
+        "name": "test_gz_extension_rejected_even_when_content_not_compressed",
+        "line": 336,
+        "end_line": 341,
+        "parametrize": []
+      },
+      {
+        "name": "test_oversized_raw_artifact_rejected",
+        "line": 344,
+        "end_line": 352,
+        "parametrize": []
+      },
+      {
+        "name": "test_altered_raw_artifact_checksum_mismatch_rejected",
+        "line": 355,
+        "end_line": 362,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major02_entity_description_simple_field_normalized_to_nfc",
+        "line": 375,
+        "end_line": 395,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major02_assembly_details_optional_field_normalized_to_nfc",
+        "line": 398,
+        "end_line": 411,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major02_struct_conn_details_nested_field_normalized_to_nfc",
+        "line": 414,
+        "end_line": 444,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major02_atom_name_in_nested_atoms_tuple_normalized_to_nfc",
+        "line": 447,
+        "end_line": 462,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major02_ascii_only_content_unaffected",
+        "line": 465,
+        "end_line": 470,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major02_none_preserved_not_converted_to_empty_string",
+        "line": 473,
+        "end_line": 485,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major02_raw_checksum_and_file_bytes_unaffected_by_normalization",
+        "line": 488,
+        "end_line": 510,
+        "parametrize": []
+      },
+      {
+        "name": "test_cp1_major02_nfc_and_nfd_equivalent_inputs_produce_identical_parsed_domain_value",
+        "line": 513,
+        "end_line": 536,
+        "parametrize": []
+      }
+    ]
+  },
+  {
+    "path": "tests/test_receptor_registry.py",
+    "functions": [
+      {
+        "name": "test_register_receptor_selection_creates_metadata_file",
+        "line": 172,
+        "end_line": 176,
+        "parametrize": []
+      },
+      {
+        "name": "test_casefold_collision_raises_selection_identity_conflict",
+        "line": 179,
+        "end_line": 185,
+        "parametrize": []
+      },
+      {
+        "name": "test_load_receptor_selection_missing_raises_not_found",
+        "line": 188,
+        "end_line": 190,
+        "parametrize": []
+      },
+      {
+        "name": "test_load_receptor_selection_malformed_yaml_raises_record_invalid",
+        "line": 193,
+        "end_line": 203,
+        "parametrize": []
+      },
+      {
+        "name": "test_load_receptor_selection_schema_invalid_raises_record_invalid",
+        "line": 206,
+        "end_line": 216,
+        "parametrize": []
+      },
+      {
+        "name": "test_list_receptor_selections_empty_project_returns_empty_tuple",
+        "line": 219,
+        "end_line": 220,
+        "parametrize": []
+      },
+      {
+        "name": "test_list_receptor_selections_orders_by_declared_at_then_id",
+        "line": 223,
+        "end_line": 235,
+        "parametrize": []
+      },
+      {
+        "name": "test_register_resolved_receptor_selection_creates_metadata_file",
+        "line": 241,
+        "end_line": 247,
+        "parametrize": []
+      },
+      {
+        "name": "test_casefold_collision_raises_resolution_identity_conflict",
+        "line": 250,
+        "end_line": 264,
+        "parametrize": []
+      },
+      {
+        "name": "test_load_resolved_receptor_selection_missing_raises_not_found",
+        "line": 267,
+        "end_line": 269,
+        "parametrize": []
+      },
+      {
+        "name": "test_load_resolved_receptor_selection_malformed_yaml_raises_record_invalid",
+        "line": 272,
+        "end_line": 282,
+        "parametrize": []
+      },
+      {
+        "name": "test_second_identical_inspection_registration_is_a_create_once_hit_no_rewrite",
+        "line": 288,
+        "end_line": 302,
+        "parametrize": []
+      },
+      {
+        "name": "test_different_inspection_key_produces_a_separate_file_prior_intact",
+        "line": 305,
+        "end_line": 314,
+        "parametrize": []
+      },
+      {
+        "name": "test_no_staging_directory_created_under_any_of_the_three_paths",
+        "line": 320,
+        "end_line": 331,
+        "parametrize": []
+      },
+      {
+        "name": "test_atomic_write_leaves_no_stray_temp_file_for_any_of_the_three_paths",
+        "line": 334,
+        "end_line": 346,
+        "parametrize": []
+      },
+      {
+        "name": "test_first_inspection_registration_for_unseen_key_creates",
+        "line": 352,
+        "end_line": 360,
+        "parametrize": []
+      },
+      {
+        "name": "test_second_identical_call_reports_reused_never_a_timestamp_inference",
+        "line": 363,
+        "end_line": 373,
+        "parametrize": []
+      },
+      {
+        "name": "test_different_raw_checksum_yields_a_different_inspection_id_prior_intact",
+        "line": 376,
+        "end_line": 385,
+        "parametrize": []
+      },
+      {
+        "name": "test_different_parser_version_yields_a_different_inspection_id_no_conflict",
+        "line": 388,
+        "end_line": 398,
+        "parametrize": []
+      },
+      {
+        "name": "test_different_inspection_profile_version_yields_a_different_inspection_id",
+        "line": 401,
+        "end_line": 426,
+        "parametrize": []
+      },
+      {
+        "name": "test_two_distinct_resolutions_sharing_one_inspection_id_write_it_once",
+        "line": 432,
+        "end_line": 457,
+        "parametrize": []
+      }
+    ]
+  },
+  {
+    "path": "tests/test_receptor_resolution.py",
+    "functions": [
+      {
+        "name": "test_minimal_valid_construction_succeeds_and_has_well_formed_inspection_id",
+        "line": 62,
+        "end_line": 67,
+        "parametrize": []
+      },
+      {
+        "name": "test_resolved_selection_id_mismatch_with_policy_selection_id_raises",
+        "line": 70,
+        "end_line": 72,
+        "parametrize": []
+      },
+      {
+        "name": "test_malformed_inspection_id_raises_at_field_boundary",
+        "line": 75,
+        "end_line": 77,
+        "parametrize": []
+      },
+      {
+        "name": "test_empty_or_malformed_parser_version_raises",
+        "line": 80,
+        "end_line": 82,
+        "parametrize": []
+      },
+      {
+        "name": "test_model_itself_never_validates_a_chain_against_any_inspection_report",
+        "line": 85,
+        "end_line": 108,
+        "parametrize": []
+      },
+      {
+        "name": "test_duplicate_label_asym_id_in_resolved_chains_raises",
+        "line": 111,
+        "end_line": 118,
+        "parametrize": []
+      },
+      {
+        "name": "test_no_field_names_an_output_structure_file",
+        "line": 121,
+        "end_line": 133,
+        "parametrize": []
+      },
+      {
+        "name": "test_resolved_assembly_none_is_valid",
+        "line": 136,
+        "end_line": 139,
+        "parametrize": []
+      },
+      {
+        "name": "test_only_model_present_basis_is_an_accepted_closed_value",
+        "line": 142,
+        "end_line": 145,
+        "parametrize": []
+      },
+      {
+        "name": "test_water_disposition_source_implies_water_classification",
+        "line": 148,
+        "end_line": 158,
+        "parametrize": []
+      },
+      {
+        "name": "test_json_round_trip_reproduces_an_equal_model",
+        "line": 161,
+        "end_line": 166,
+        "parametrize": []
+      },
+      {
+        "name": "test_no_semantic_key_field_exists_in_schema",
+        "line": 169,
+        "end_line": 170,
+        "parametrize": []
+      },
+      {
+        "name": "test_no_field_is_or_contains_a_receptor_inspection_report",
+        "line": 176,
+        "end_line": 207,
+        "parametrize": []
+      }
+    ]
+  },
+  {
+    "path": "tests/test_receptor_selection.py",
+    "functions": [
+      {
+        "name": "test_minimal_valid_construction_requires_inspection_id_and_raw_checksum",
+        "line": 49,
+        "end_line": 65,
+        "parametrize": []
+      },
+      {
+        "name": "test_malformed_selection_id_raises_value_error",
+        "line": 71,
+        "end_line": 73,
+        "parametrize": []
+      },
+      {
+        "name": "test_duplicate_label_asym_id_in_selected_chains_raises",
+        "line": 76,
+        "end_line": 83,
+        "parametrize": []
+      },
+      {
+        "name": "test_duplicate_component_disposition_pair_raises",
+        "line": 86,
+        "end_line": 91,
+        "parametrize": []
+      },
+      {
+        "name": "test_blank_declared_by_raises",
+        "line": 94,
+        "end_line": 96,
+        "parametrize": []
+      },
+      {
+        "name": "test_blank_label_or_rationale_when_present_raises",
+        "line": 99,
+        "end_line": 103,
+        "parametrize": []
+      },
+      {
+        "name": "test_declared_at_without_timezone_raises",
+        "line": 106,
+        "end_line": 108,
+        "parametrize": []
+      },
+      {
+        "name": "test_selected_model_zero_or_negative_raises",
+        "line": 111,
+        "end_line": 115,
+        "parametrize": []
+      },
+      {
+        "name": "test_unknown_field_is_rejected",
+        "line": 118,
+        "end_line": 120,
+        "parametrize": []
+      },
+      {
+        "name": "test_model_is_frozen",
+        "line": 123,
+        "end_line": 126,
+        "parametrize": []
+      },
+      {
+        "name": "test_chain_selector_with_only_label_asym_id_is_valid",
+        "line": 129,
+        "end_line": 133,
+        "parametrize": []
+      },
+      {
+        "name": "test_chain_selector_with_empty_label_asym_id_raises",
+        "line": 136,
+        "end_line": 138,
+        "parametrize": []
+      },
+      {
+        "name": "test_component_disposition_role_outside_closed_vocabulary_raises",
+        "line": 141,
+        "end_line": 145,
+        "parametrize": []
+      },
+      {
+        "name": "test_no_altloc_or_bucket_policy_fields_exist_in_schema",
+        "line": 151,
+        "end_line": 156,
+        "parametrize": []
+      },
+      {
+        "name": "test_chain_selector_never_accepts_auth_asym_id_alone",
+        "line": 162,
+        "end_line": 164,
+        "parametrize": []
+      }
+    ]
+  },
+  {
+    "path": "tests/test_receptor_service.py",
+    "functions": [
+      {
+        "name": "test_inspect_receptor_missing_protein_input_raises_not_found",
+        "line": 155,
+        "end_line": 157,
+        "parametrize": []
+      },
+      {
+        "name": "test_inspect_receptor_mutated_raw_raises_checksum_mismatch_no_persistence",
+        "line": 160,
+        "end_line": 170,
+        "parametrize": []
+      },
+      {
+        "name": "test_declare_receptor_selection_identical_retry_is_reused",
+        "line": 176,
+        "end_line": 184,
+        "parametrize": []
+      },
+      {
+        "name": "test_declare_receptor_selection_divergent_retry_raises_conflict",
+        "line": 187,
+        "end_line": 193,
+        "parametrize": []
+      },
+      {
+        "name": "test_resolve_receptor_selection_ambiguous_model_raises",
+        "line": 199,
+        "end_line": 206,
+        "parametrize": []
+      },
+      {
+        "name": "test_resolve_receptor_selection_missing_chain_raises_chain_not_found",
+        "line": 209,
+        "end_line": 218,
+        "parametrize": []
+      },
+      {
+        "name": "test_resolve_receptor_selection_identical_retry_is_reused_no_rewrite",
+        "line": 224,
+        "end_line": 238,
+        "parametrize": []
+      },
+      {
+        "name": "test_resolve_receptor_selection_raw_altered_since_inspection_raises_checksum_mismatch",
+        "line": 241,
+        "end_line": 259,
+        "parametrize": []
+      },
+      {
+        "name": "test_inspect_receptor_different_parser_version_yields_new_id_no_conflict_class",
+        "line": 265,
+        "end_line": 291,
+        "parametrize": []
+      },
+      {
+        "name": "test_each_service_call_logs_exactly_one_started_and_one_terminal_entry",
+        "line": 297,
+        "end_line": 329,
+        "parametrize": []
+      },
+      {
+        "name": "test_inspect_receptor_collision_then_invalid_reload_logs_one_error_preserves_cause",
+        "line": 343,
+        "end_line": 380,
+        "parametrize": []
+      },
+      {
+        "name": "test_resolve_receptor_selection_collision_then_invalid_reload_logs_one_error_preserves_cause",
+        "line": 383,
+        "end_line": 417,
+        "parametrize": []
+      },
+      {
+        "name": "test_declare_receptor_selection_against_inspection_only_raises_unsupported",
+        "line": 423,
+        "end_line": 430,
+        "parametrize": []
+      },
+      {
+        "name": "test_declare_receptor_selection_copies_inspection_id_and_checksum_from_inspect",
+        "line": 433,
+        "end_line": 440,
+        "parametrize": []
+      },
+      {
+        "name": "test_resolve_receptor_selection_missing_pinned_inspection_raises_not_found",
+        "line": 443,
+        "end_line": 454,
+        "parametrize": []
+      },
+      {
+        "name": "test_resolve_receptor_selection_corrupted_pinned_inspection_raises_record_invalid",
+        "line": 457,
+        "end_line": 471,
+        "parametrize": []
+      },
+      {
+        "name": "test_resolve_receptor_selection_revalidates_raw_checksum_against_pinned_report",
+        "line": 474,
+        "end_line": 491,
+        "parametrize": []
+      }
+    ]
+  }
+]
