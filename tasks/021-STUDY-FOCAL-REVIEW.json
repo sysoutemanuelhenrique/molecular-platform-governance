@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
   "task_id": "021-STUDY-FOCAL-REVIEW",
-  "status": "READY_FOR_DISPATCH",
-  "dispatch_status": "NOT_DISPATCHED",
+  "status": "COMPLETED_READY_FOR_DRAFT_WITH_MANDATORY_ITEMS",
+  "dispatch_status": "DELIVERED_BY_REVIEWER",
   "assigned_role": "claude-independent-reviewer-separate-from-implementer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
   "governance_input_parent": "d5580b162e0fe5ebec8bedd0b986f767f4f3194a",
-  "review_snapshot": "Use the exact immutable publication SHA supplied in the handoff command that contains this updated task and owner approval record; stop/report if the remote coordination branch has advanced.",
+  "review_snapshot": "Completed review input was 771d1aa2e6218188113aad4e54849c103219a25c; do not reexecute this task from an updated coordination HEAD",
   "code_repository": "sysoutemanuelhenrique/molecular-platform",
   "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
   "original_review_commit": "debeba6f4370c6f5dd77d2273420abf8a828e9f8",
@@ -115,5 +115,63 @@
     "instruction": "Historical reconciliation manifest must be checked against this exact prior commit, including its old STATUS/tasks. Do not compare those historical task/status hashes to updated files."
   },
   "handoff_prepared_date": "2026-11-23",
-  "next_gate": "Architect reads the remotely published focal report; then responsible owner decides the draft stage according to actual finding dispositions. No implementation authorized."
+  "next_gate": "Owner decides authorization to write the draft; task 021-DRAFT-SPECIFICATION is prepared. Mandatory P-1 to P-5 are not closed by readiness.",
+  "input_manifest_snapshot": "771d1aa2e6218188113aad4e54849c103219a25c",
+  "received_date": "2026-11-23",
+  "review_output_commit": "8778b83844fe9bff9b61862743277d5ee3172ac5",
+  "review_output_branch": "claude/021-study-focal-review-20261123",
+  "review_output": {
+    "lines": 121,
+    "size_bytes": 11638,
+    "sha256": "231cbbf892a990f2ca4617719e7c468b2ac5d1ce3d97d47cbaae2b90a2f2d463",
+    "path": "increments/021/04-study-focal-review/CLAUDE_INCREMENT_021_STUDY_FOCAL_REVIEW.md"
+  },
+  "review_output_evidence": [
+    {
+      "lines": 74,
+      "size_bytes": 4762,
+      "sha256": "19b8e6d0121cda0dd0294dae8fc841f051fe18b898a85de1fd30cf8197514568",
+      "path": "increments/021/04-study-focal-review/evidence/claude-021-focal-review-verification.json"
+    },
+    {
+      "lines": 13,
+      "size_bytes": 380,
+      "sha256": "1cefea88a4db8c91e7c1e4f05b4e22d2ea84d07fc4f97316399df169bf2e43dc",
+      "path": "increments/021/04-study-focal-review/evidence/claude-namespace-probe-reproduction.output.json"
+    }
+  ],
+  "architect_receipt": {
+    "path": "increments/021/04-study-focal-review-receipt/CODEX_FOCAL_REVIEW_RECEIPT_20261123.md",
+    "lines": 76,
+    "size_bytes": 6731,
+    "sha256": "50d7b792b20f2019a366a5ba7e4be9113ed286221b5ffce50a1650d3cc5568cd"
+  },
+  "independent_closed_items": [
+    "MAJOR-4",
+    "MINOR-1",
+    "MINOR-2",
+    "MINOR-4",
+    "MINOR-5",
+    "NOTE-1",
+    "NOTE-2",
+    "NOTE-3",
+    "C-1",
+    "C-2",
+    "C-3"
+  ],
+  "independent_partially_resolved_items": [
+    "MAJOR-1",
+    "MAJOR-2",
+    "MAJOR-3",
+    "MINOR-3"
+  ],
+  "mandatory_draft_items": {
+    "P-1": "Define explicit-decision status of complement exclusion for entire polymer chains and its audit, including nucleic-acid hydrog cases",
+    "P-2": "Define declaration acknowledgement bound to enumerated retained components outside S; missing or stale acknowledgement refuses execution",
+    "P-3": "Define non-polymeric physical unit and uniformity per selected-model asym in microheterogeneity",
+    "P-4": "Correct geometric rationale; fill all 15 retained-endpoint/symmetry cells and source identity-operator rule",
+    "P-5": "Define category/tag/key/filter/reference/loss/test catalogue"
+  },
+  "all_findings_independently_closed": false,
+  "independent_ready_for_draft_specification": true
 }

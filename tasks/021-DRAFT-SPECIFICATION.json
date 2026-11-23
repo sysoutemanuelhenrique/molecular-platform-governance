@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-DRAFT-SPECIFICATION",
+  "status": "PREPARED_AWAITING_OWNER_AUTHORIZATION",
+  "assigned_role": "codex-architect",
+  "authorization_scope": "DRAFT_DOCUMENTATION_ONLY_WHEN_EXPLICITLY_AUTHORIZED",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "governance_input_parent": "771d1aa2e6218188113aad4e54849c103219a25c",
+  "execution_snapshot": "When owner authorizes draft writing, verify exact current publication commit supplied with that authorization; stop/report unaccounted change",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "focal_review_commit": "8778b83844fe9bff9b61862743277d5ee3172ac5",
+  "focal_review": {
+    "lines": 121,
+    "size_bytes": 11638,
+    "sha256": "231cbbf892a990f2ca4617719e7c468b2ac5d1ce3d97d47cbaae2b90a2f2d463",
+    "path": "increments/021/04-study-focal-review/CLAUDE_INCREMENT_021_STUDY_FOCAL_REVIEW.md"
+  },
+  "reconciliation_commit": "d5580b162e0fe5ebec8bedd0b986f767f4f3194a",
+  "reconciliation": {
+    "path": "increments/021/03-study-reconciliation/CODEX_INCREMENT_021_STUDY_RECONCILIATION.md",
+    "lines": 266,
+    "size_bytes": 37217,
+    "sha256": "77b677fb440ba41ac85c33508ce1076c6cd90423f85b1bfd21f5b19ff32fefc5"
+  },
+  "owner_scope_approval_commit": "771d1aa2e6218188113aad4e54849c103219a25c",
+  "owner_scope_approval": {
+    "path": "increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md",
+    "lines": 47,
+    "size_bytes": 3446,
+    "sha256": "8b5cc01109be88586d6b32b165dfca72e6d3141e66c59106e16ca6f257c777b4"
+  },
+  "approved_scope_decisions": {
+    "D-01": {
+      "approved": true,
+      "choice": "b",
+      "record": "increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md"
+    },
+    "D-02": {
+      "approved": true,
+      "choice": "broad_explicit_and_audited_selected_source_model",
+      "record": "increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md"
+    }
+  },
+  "scope_approval_is_not_draft_writing_or_implementation_authorization": true,
+  "requirements": {
+    "path": "increments/021/05-draft-preparation/INCREMENT_021_DRAFT_REQUIREMENTS.md",
+    "lines": 69,
+    "size_bytes": 7203,
+    "sha256": "f8a316f14b0590df7074c54f93d3f5b98098f440004225815e2bc4f035aa0c5d"
+  },
+  "preparation_manifest": "increments/021/05-draft-preparation/FILE_IDENTITIES.json",
+  "historical_manifest_rule": "Use each historical manifest at its pinned commit. Completed focal input manifest belongs to 771d1aa, not this preparation publication.",
+  "mandatory_items": {
+    "P-1": "Define explicit-decision status of complement exclusion for entire polymer chains and its audit, including nucleic-acid hydrog cases",
+    "P-2": "Define declaration acknowledgement bound to enumerated retained components outside S; missing or stale acknowledgement refuses execution",
+    "P-3": "Define non-polymeric physical unit and uniformity per selected-model asym in microheterogeneity",
+    "P-4": "Correct geometric rationale; fill all 15 retained-endpoint/symmetry cells and source identity-operator rule",
+    "P-5": "Define category/tag/key/filter/reference/loss/test catalogue"
+  },
+  "new_note_to_incorporate": "NOTE-F1 UTF-8/YAML decoding, raw byte hash, exact internal ids and actual directory derivation",
+  "required_work_when_authorized": [
+    "Read current instructions, study, continuation, reconciliation, scope approval and focal review at exact snapshots",
+    "Write complete draft, explicitly resolving P-1 to P-5 and remaining Q-03/Q-05/Q-06/Q-07/Q-09 details",
+    "Do not treat reviewer partial closure as finalized requirements; justify choices and test scenarios",
+    "Preserve D-01(b), D-02 broad explicit audited scope and all closed findings; reopen only for concrete violation/regression",
+    "Specify domain/reader/adapter/storage/service/CLI, publication/failure/compensation and supported platform boundaries",
+    "Enumerate individual normative scenarios and preliminary checkpoint allowlist; no arithmetic reuse of 48 grouped study scenarios",
+    "Publish draft and its exact identity; prepare independent draft review task, not implementation"
+  ],
+  "allowed_governance_outputs_when_authorized": [
+    "increments/021/06-draft-specification/INCREMENT_021_DRAFT_SPECIFICATION.md",
+    "increments/021/06-draft-specification/evidence/",
+    "STATUS.md",
+    "tasks/021-DRAFT-SPECIFICATION.json",
+    "tasks/021-DRAFT-REVIEW.json"
+  ],
+  "restrictions": [
+    "Code/tests read-only; no implementation or scaffolding",
+    "No final specification, contract freeze or implementation authorization",
+    "No historical study/review/approval changes",
+    "No main/PR/merge/tag/release/force/automation",
+    "020-A remains stand-by; preserved local items untouched"
+  ],
+  "owner_draft_writing_authorization_recorded": false,
+  "implementation_authorized": false,
+  "final_specification_frozen": false,
+  "automated_relay_active": false
+}

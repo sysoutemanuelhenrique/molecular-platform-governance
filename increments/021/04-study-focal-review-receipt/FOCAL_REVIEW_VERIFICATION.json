@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-23",
+  "timezone": "America/Sao_Paulo",
+  "coordination_head_expected_and_observed": "771d1aa2e6218188113aad4e54849c103219a25c",
+  "focal_review_head_expected_and_observed": "8778b83844fe9bff9b61862743277d5ee3172ac5",
+  "focal_review_parent_confirmed": "771d1aa2e6218188113aad4e54849c103219a25c",
+  "code_main_observed": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "governance_main_observed": "a47183dfec8213c765ed43ae482c8c227760a3d5",
+  "review": {
+    "lines": 121,
+    "size_bytes": 11638,
+    "sha256": "231cbbf892a990f2ca4617719e7c468b2ac5d1ce3d97d47cbaae2b90a2f2d463",
+    "path": "increments/021/04-study-focal-review/CLAUDE_INCREMENT_021_STUDY_FOCAL_REVIEW.md"
+  },
+  "review_evidence": [
+    {
+      "lines": 74,
+      "size_bytes": 4762,
+      "sha256": "19b8e6d0121cda0dd0294dae8fc841f051fe18b898a85de1fd30cf8197514568",
+      "path": "increments/021/04-study-focal-review/evidence/claude-021-focal-review-verification.json"
+    },
+    {
+      "lines": 13,
+      "size_bytes": 380,
+      "sha256": "1cefea88a4db8c91e7c1e4f05b4e22d2ea84d07fc4f97316399df169bf2e43dc",
+      "path": "increments/021/04-study-focal-review/evidence/claude-namespace-probe-reproduction.output.json"
+    }
+  ],
+  "focal_diff": {
+    "added_files": 3,
+    "modified_files": 0,
+    "removed_files": 0,
+    "all_new_paths_inside": "increments/021/04-study-focal-review/"
+  },
+  "full_review_and_two_evidence_files_read": true,
+  "reviewer_probe_output_sha_matches_previous_architect_output": true,
+  "closed_original_items": [
+    "MAJOR-4",
+    "MINOR-1",
+    "MINOR-2",
+    "MINOR-4",
+    "MINOR-5",
+    "NOTE-1",
+    "NOTE-2",
+    "NOTE-3",
+    "C-1",
+    "C-2",
+    "C-3"
+  ],
+  "partially_resolved_original_items": [
+    "MAJOR-1",
+    "MAJOR-2",
+    "MAJOR-3",
+    "MINOR-3"
+  ],
+  "mandatory_draft_items": {
+    "P-1": "Define explicit-decision status of complement exclusion for entire polymer chains and its audit, including nucleic-acid hydrog cases",
+    "P-2": "Define declaration acknowledgement bound to enumerated retained components outside S; missing or stale acknowledgement refuses execution",
+    "P-3": "Define non-polymeric physical unit and uniformity per selected-model asym in microheterogeneity",
+    "P-4": "Correct geometric rationale; fill all 15 retained-endpoint/symmetry cells and source identity-operator rule",
+    "P-5": "Define category/tag/key/filter/reference/loss/test catalogue"
+  },
+  "new_nonblocking_note": "NOTE-F1: UTF-8/YAML reader equivalence and actual registry paths; not a sixteenth original item",
+  "architect_execution_this_receipt": {
+    "hashes_and_git_metadata": true,
+    "pytest": false,
+    "namespace_probe_reexecuted": false,
+    "gemmi": false,
+    "cxx": false,
+    "windows": false,
+    "concurrency": false,
+    "dependencies_installed": false
+  },
+  "independent_readiness_for_draft": true,
+  "owner_draft_writing_authorization_recorded": false,
+  "implementation_authorized": false,
+  "code_repository_modified": false
+}

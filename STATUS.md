@@ -1,45 +1,46 @@
-# Coordenação — Incremento 021: escopo aprovado; revisão focal pronta
+# Coordenação — Incremento 021: estudo pronto para rascunho; autorização de redação pendente
 
-Atualizado em 23/11/2026 por Codex arquiteto, após mensagem direta de Emanuel aprovando D-01(b) e D-02 com alcance amplo explícito e auditado e solicitando registro e preparação do encaminhamento focal.
+Atualizado em 23/11/2026 por Codex arquiteto após leitura integral e verificação do parecer focal. O responsável entregou o recibo remoto da revisão; esta atualização registra o resultado e prepara o próximo gate, sem produzir rascunho ou código.
 
 | Campo | Estado |
 |---|---|
 | Branch de coordenação | docs/020-a-candidate1-review-20261020 — nome histórico preservado |
-| Entrada desta atualização | d5580b162e0fe5ebec8bedd0b986f767f4f3194a |
-| Código de referência, read-only | main @ 08b797e0985e123ffd4d7ca7e5a5e8f040e63851 |
+| Entrada desta atualização | 771d1aa2e6218188113aad4e54849c103219a25c |
+| Código de referência | main @ 08b797e0985e123ffd4d7ca7e5a5e8f040e63851 — read-only |
 | Main do governance preservada | a47183dfec8213c765ed43ae482c8c227760a3d5 |
-| Incremento 020 | Concluído e integrado no escopo de inspeção/seleção/resolução lógica |
-| Incremento 020-A | STAND-BY; não retomar, aprovar, cancelar ou integrar por esta tarefa |
-| Estudo original preservado | increments/021/01-study/INCREMENT_021_RECEPTOR_MATERIALIZATION_STUDY.md |
-| Complemento preservado | increments/021/01-study/continuation/INCREMENT_021_MINIMAL_CORE_STUDY.md |
-| Parecer independente | claude/021-study-review-v2-20261123 @ debeba6f4370c6f5dd77d2273420abf8a828e9f8 |
-| Resposta arquitetural preservada | increments/021/03-study-reconciliation/CODEX_INCREMENT_021_STUDY_RECONCILIATION.md @ d5580b162e0fe5ebec8bedd0b986f767f4f3194a |
-| Registro da aprovação | increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md |
-| D-01 | Opção (b) aprovada; exceção metalc/hydrog condicionada e auditada, com cortes covalentes recusados |
-| D-02 | Alcance no modelo fonte inteiro aprovado, explícito e auditado; sem inferir pertencimento biológico por auth_asym_id |
-| Tarefa do arquiteto | tasks/021-STUDY-RECONCILIATION.json — COMPLETED_ARCHITECT_RESPONSE_OWNER_DECISIONS_RECORDED |
-| Próxima tarefa | tasks/021-STUDY-FOCAL-REVIEW.json — READY_FOR_DISPATCH, NOT_DISPATCHED |
-| Achados | 4 MAJORS / 5 MINORS / 3 NOTES respondidos; fechamento independente ainda pendente |
-| Implementador | Aguarda; nenhum código ou checkpoint novo autorizado |
+| Incremento 020 | Concluído no escopo integrado |
+| Incremento 020-A | STAND-BY; sem retomada ou integração |
+| D-01(b)/D-02 | Aprovadas no registro de escopo; sem ampliação de autorização |
+| Revisão focal | claude/021-study-focal-review-20261123 @ 8778b83844fe9bff9b61862743277d5ee3172ac5 |
+| Resultado independente | Pronto para fase de rascunho; 11 itens fechados e 4 parcialmente resolvidos |
+| Itens parciais | MAJOR-1, MAJOR-2, MAJOR-3, MINOR-3 |
+| Obrigações do rascunho | P-1 a P-5; NOTE-F1 incorporada separadamente |
+| Recibo do arquiteto | increments/021/04-study-focal-review-receipt/CODEX_FOCAL_REVIEW_RECEIPT_20261123.md |
+| Checklist | increments/021/05-draft-preparation/INCREMENT_021_DRAFT_REQUIREMENTS.md |
+| Tarefa focal | tasks/021-STUDY-FOCAL-REVIEW.json — COMPLETED_READY_FOR_DRAFT_WITH_MANDATORY_ITEMS |
+| Próxima tarefa preparada | tasks/021-DRAFT-SPECIFICATION.json — PREPARED_AWAITING_OWNER_AUTHORIZATION |
+| Próximo ator | Responsável decide autorizar redação do rascunho; arquiteto executa depois da autorização |
+| Implementador | Sem tarefa nova de código autorizada |
 | Canal documental | communications/GOVERNANCE_DELIVERY_INSTRUCTIONS_20261123.md |
-| Próximo gate | Revisão focal pelo revisor separado do implementador; depois leitura/reconciliação do resultado e decisão sobre rascunho |
-| Relay automático | Não configurado; o comando de encaminhamento inicia a revisão quando enviado à sessão do revisor |
+| Relay automático | Não configurado |
 
-## Autoridade e preservação
+## Prontidão e pendências
 
-A aprovação é de duas escolhas de escopo, referidas à reconciliação exata e à mensagem literal do responsável. Não é aprovação geral da arquitetura, do fechamento dos achados, da especificação final ou da implementação. O revisor deve confrontar as soluções técnicas sob o escopo aprovado e apontar inconsistências concretas se existirem.
+A prontidão foi declarada pelo revisor independente e não implica que todos os achados foram fechados. P-1 explicita a exclusão de cadeias; P-2 define reconhecimento vinculado das retenções fora de S; P-3 define uniformidade não polimérica; P-4 corrige a justificativa e fecha a matriz de simetria; P-5 fecha o catálogo de saída. O checklist é preparação, não especificação.
 
-A reconciliação histórica ainda contém D-01/D-02 como pendentes porque foi publicada antes da decisão; o novo registro de aprovação e este STATUS atualizam o estado operacional sem alterar aquele documento. O mesmo vale para pareceres e tarefas históricas. A aprovação não autoriza reescrever o passado.
+A correção geométrica de P-4 foi aceita pelo arquiteto em documento novo: a mesma isometria conhecida nos dois endpoints preserva sua relação geométrica. Eventual recusa conservadora de iguais não identidade deve ser justificada por cobertura/fixtures. A reconciliação histórica permanece intacta.
 
-O manifesto histórico da reconciliação deve ser verificado no commit d5580b162e0fe5ebec8bedd0b986f767f4f3194a. Os hashes antigos de STATUS/tarefas não devem ser comparados às versões atualizadas. O novo manifesto de encaminhamento é increments/021/00-owner-decision/dispatch-20261123/FILE_IDENTITIES.json.
+## Preservação e evidência
 
-Não houve execução de testes, instalação, implementação, novo estudo científico ou acionamento automático de agentes nesta atualização. As duas mains, a branch do parecer, os documentos históricos e o 020-A permanecem preservados.
+O parecer focal e suas duas evidências foram lidos pelo commit do revisor, sem merge. O manifesto de entrada da focal deve ser verificado no commit 771d1aa2e6218188113aad4e54849c103219a25c, incluindo versões antigas de STATUS/tarefas. O novo manifesto de preparação é increments/021/05-draft-preparation/FILE_IDENTITIES.json. Não comparar hashes históricos às versões atualizadas.
 
-OWNER D-01(b) APPROVED: YES
-OWNER D-02 BROAD EXPLICIT AUDITED SCOPE APPROVED: YES
-FOCAL REVIEW READY FOR DISPATCH: YES
-FOCAL REVIEWER DISPATCHED: NO
-INDEPENDENT FINDING CLOSURE COMPLETE: NO
+A reprodução da sonda de namespace é evidência executada pelo revisor, não reexecutada pelo arquiteto neste recebimento. Não houve pytest, Gemmi, C++, Windows, concorrência, instalação ou implementação nesta atualização. Estudos, pareceres, reconciliação, aprovações e demais documentos históricos permanecem intactos.
+
+READY FOR DRAFT SPECIFICATION: YES
+OWNER DRAFT WRITING AUTHORIZATION RECORDED: NO
+INDEPENDENT ORIGINAL ITEMS CLOSED: 11
+INDEPENDENT ORIGINAL ITEMS PARTIALLY RESOLVED: 4
+ALL ORIGINAL FINDINGS CLOSED: NO
 READY FOR IMPLEMENTATION: NO
 FINAL SPECIFICATION FROZEN: NO
 CODE REPOSITORY MODIFIED: NO

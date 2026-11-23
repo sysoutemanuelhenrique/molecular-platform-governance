@@ -1,0 +1,43 @@
+{
+  "governance_input_parent": "771d1aa2e6218188113aad4e54849c103219a25c",
+  "focal_review_commit": "8778b83844fe9bff9b61862743277d5ee3172ac5",
+  "description": "Current receipt/preparation files, excluding this manifest; historical input manifests remain pinned to their own commits.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 47,
+      "size_bytes": 3785,
+      "sha256": "21ad7d8695176dde0d9a31c1b2e121202913d332d8c4694ceb607285e6859392"
+    },
+    {
+      "path": "increments/021/04-study-focal-review-receipt/CODEX_FOCAL_REVIEW_RECEIPT_20261123.md",
+      "lines": 76,
+      "size_bytes": 6731,
+      "sha256": "50d7b792b20f2019a366a5ba7e4be9113ed286221b5ffce50a1650d3cc5568cd"
+    },
+    {
+      "path": "increments/021/04-study-focal-review-receipt/FOCAL_REVIEW_VERIFICATION.json",
+      "lines": 78,
+      "size_bytes": 2997,
+      "sha256": "9038b4fb20cf55ed354ab9017c1579bacb0f793cf5263eb71ce9b18aa428be09"
+    },
+    {
+      "path": "increments/021/05-draft-preparation/INCREMENT_021_DRAFT_REQUIREMENTS.md",
+      "lines": 69,
+      "size_bytes": 7203,
+      "sha256": "f8a316f14b0590df7074c54f93d3f5b98098f440004225815e2bc4f035aa0c5d"
+    },
+    {
+      "path": "tasks/021-DRAFT-SPECIFICATION.json",
+      "lines": 90,
+      "size_bytes": 5098,
+      "sha256": "6648b1a2c1f4f4e0091f4621767989cd5adb722b637acd11b40a83fa1ac6fbcb"
+    },
+    {
+      "path": "tasks/021-STUDY-FOCAL-REVIEW.json",
+      "lines": 177,
+      "size_bytes": 9034,
+      "sha256": "3db8b57afc6fbc15b91f52b00c7721452284dc0b44a1d330423193f1fe598b57"
+    }
+  ]
+}
