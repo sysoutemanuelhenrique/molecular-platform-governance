@@ -1,0 +1,74 @@
+{
+  "task_id": "021-STUDY-FOCAL-REVIEW",
+  "role": "claude-independent-reviewer-separate-from-implementer",
+  "date": "2026-11-23",
+  "timezone": "America/Sao_Paulo",
+  "dispatch": "Direct owner message naming snapshot 771d1aa2e6218188113aad4e54849c103219a25c; task file not edited",
+  "gates": {
+    "coordination_branch": "docs/020-a-candidate1-review-20261020",
+    "dispatched_snapshot": "771d1aa2e6218188113aad4e54849c103219a25c",
+    "remote_head_observed_before_work": "771d1aa2e6218188113aad4e54849c103219a25c",
+    "governance_input_parent_in_history": "d5580b162e0fe5ebec8bedd0b986f767f4f3194a",
+    "code_main_expected": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "code_main_remote_observed": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "original_review_branch_remote_observed": "debeba6f4370c6f5dd77d2273420abf8a828e9f8",
+    "all_gates_match": true
+  },
+  "current_dispatch_manifest": {
+    "path": "increments/021/00-owner-decision/dispatch-20261123/FILE_IDENTITIES.json",
+    "entries_verified_at_771d1aa": {
+      "STATUS.md": [46, 3980, "30d13cbbce94b7c63fe60b568d533905f81c95357cce3e857e6c850b6175851b"],
+      "increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md": [47, 3446, "8b5cc01109be88586d6b32b165dfca72e6d3141e66c59106e16ca6f257c777b4"],
+      "tasks/021-STUDY-FOCAL-REVIEW.json": [119, 6790, "7bf41072d8866939ba10d5a50c2e79f66a6d0a25952aea65901288c6d629033e"],
+      "tasks/021-STUDY-RECONCILIATION.json": [115, 6127, "d8e5036c71d3e1112d3d4843a4cebd8ad7d853a3167138fec9d38ab81ad81b1c"]
+    },
+    "all_match": true
+  },
+  "historical_reconciliation_manifest": {
+    "path": "increments/021/03-study-reconciliation/FILE_IDENTITIES.json",
+    "checked_at_commit": "d5580b162e0fe5ebec8bedd0b986f767f4f3194a",
+    "entries_checked": 9,
+    "all_match_at_that_commit": true,
+    "note": "Historical STATUS/task hashes compared only against d5580b1 blobs, not current files, as the task requires"
+  },
+  "reconciliation_inputs_verified_at_771d1aa": {
+    "CODEX_INCREMENT_021_STUDY_RECONCILIATION.md": [266, 37217, "77b677fb440ba41ac85c33508ce1076c6cd90423f85b1bfd21f5b19ff32fefc5"],
+    "evidence/ENVIRONMENT_EVIDENCE_CORRECTION.md": [36, 2749, "4b584fd12c6f3510362aab3579ebc2f54d41715bed2e19f21bbd4d61a7595f02"],
+    "evidence/INPUT_IDENTITIES.json": [130, 5022, "c87c7746c03dce31452815ce4c68ca0d8e90067d738b276dbdd1858348f4eb2d"],
+    "evidence/RECONCILIATION_VERIFICATION.json": [95, 4290, "5d025fec95f78f92638a023626a234754e278d8272ece1305f97d1a67d6287a0"],
+    "evidence/probe_namespace_discovery.py": [43, 1450, "9f9884a9d669ce0dd0d95315002370bb011006f74d5a350497131e90e596710f"],
+    "evidence/probe_namespace_discovery.output.json": [13, 380, "1cefea88a4db8c91e7c1e4f05b4e22d2ea84d07fc4f97316399df169bf2e43dc"]
+  },
+  "gemmi_blobs_rechecked": {
+    "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+    "src/mmcif.cpp": "1da0854ced3deaa2f72b45ed3817639efaea7f28",
+    "tests/5i55.cif": {"git_blob": "c75212eaf020ae1aaba4bb9806e392b4e27bd43a", "sha256": "cae937745acc22d1c3bdd21cc6fa3c36a3d9f271494c22e3e3a3ce512c72fb1d"},
+    "match_supplied_evidence": true
+  },
+  "code_facts_rechecked_at_08b797e": {
+    "ProteinInput.id": "inputs.py ScientificInput.id; validate_input_id ^[A-Za-z0-9][A-Za-z0-9_-]*$ (mixed case allowed)",
+    "ResolvedReceptorSelection": "resolved_selection_id, policy_selection_id (validator enforces equality), protein_input_id, inspection_id, resolved_model, resolved_chains",
+    "ReceptorSelectionPolicy": "selection_id, protein_input_id, inspection_id",
+    "inspection_connection_category": "only disulf/metalc mapped specifically; every other mmCIF conn_type (including hydrog) -> 'covalent'",
+    "protein_loader": "registry._load_input: inputs/<kind>/<id>.yaml, yaml.safe_load(read_text(utf-8))",
+    "atomic_exclusive_primitives": "open(..., 'xb') line 868 and os.link line 966 inside ligand snapshot helper"
+  },
+  "own_execution": {
+    "namespace_probe_reproduction": {
+      "script": "supplied increments/021/03-study-reconciliation/evidence/probe_namespace_discovery.py, copied to external scratch, run with python3 -I from /tmp",
+      "python": "3.13 (reviewer sandbox)",
+      "output": "increments/021/04-study-focal-review/evidence/claude-namespace-probe-reproduction.output.json",
+      "output_sha256": "1cefea88a4db8c91e7c1e4f05b4e22d2ea84d07fc4f97316399df169bf2e43dc",
+      "byte_identical_to_supplied_output": true
+    },
+    "pytest_executed": false,
+    "gemmi_python_imported_or_executed": false,
+    "cxx_probe_reexecuted": false,
+    "windows_tests": false,
+    "web_access": false,
+    "packages_installed": false
+  },
+  "code_repository_modified": false,
+  "architect_documents_modified": false,
+  "increment_020_a": "STAND-BY, untouched"
+}

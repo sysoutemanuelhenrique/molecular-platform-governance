@@ -1,0 +1,13 @@
+{
+  "probe": "module_discovery_not_engine_execution",
+  "empty_source_directory_spec": {
+    "origin_present": false,
+    "loader_type": "NoneType",
+    "namespace_locations_count": 1
+  },
+  "current_context_spec": null,
+  "current_distribution_version": null,
+  "historical_distribution_version_proved": false,
+  "gemmi_imported_or_executed": false,
+  "pytest_executed": false
+}
