@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-DRAFT-REVIEW",
+  "status": "READY_FOR_DISPATCH",
+  "dispatch_status": "NOT_DISPATCHED",
+  "assigned_role": "claude-independent-reviewer-separate-from-implementer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "governance_input_parent": "3f0f13427ff347acc53e56951f077cf0b29e4925",
+  "review_snapshot": "Use immutable publication SHA supplied in handoff; stop/report if remote coordination branch advanced. Do not use main or a prior preparation snapshot.",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_access": "STRICTLY_READ_ONLY",
+  "draft": {
+    "path": "increments/021/06-draft-specification/INCREMENT_021_DRAFT_SPECIFICATION.md",
+    "lines": 344,
+    "size_bytes": 50807,
+    "sha256": "f914d56eab971ac4c8bb889038490b02c2ff01a21c2d2f141dc33cc8ad17acef"
+  },
+  "annexes": [
+    {
+      "path": "increments/021/06-draft-specification/evidence/SCHEMAS_021.md",
+      "lines": 102,
+      "size_bytes": 15093,
+      "sha256": "6ae0bcc0e3c0f80fccf558e767d85e4ecf887bd5630dc688b2f0ca6a30060fa8"
+    },
+    {
+      "path": "increments/021/06-draft-specification/evidence/CATALOG_021.json",
+      "lines": 1713,
+      "size_bytes": 41866,
+      "sha256": "d35f12c3c90b9c55a7204b8d5003030b5ec84148e5e149b1050eb1cd952110f7"
+    },
+    {
+      "path": "increments/021/06-draft-specification/evidence/SCENARIOS_021.csv",
+      "lines": 141,
+      "size_bytes": 17712,
+      "sha256": "fb907fbe223b2b5cc4337c4482f611dec189a1e4096cfaa3147d967cf351b4a5"
+    }
+  ],
+  "input_manifest": "increments/021/06-draft-specification/evidence/FILE_IDENTITIES.json",
+  "owner_draft_authorization": {
+    "path": "increments/021/06-draft-specification/evidence/OWNER_DRAFT_AUTHORIZATION.md",
+    "lines": 22,
+    "size_bytes": 1592,
+    "sha256": "0091f4d87c4178ac7906606a176d4346411bc2e0193cca2fdfaa1dacb90e33b6"
+  },
+  "owner_scope_approval_commit": "771d1aa2e6218188113aad4e54849c103219a25c",
+  "owner_scope_approval": {
+    "path": "increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md",
+    "lines": 47,
+    "size_bytes": 3446,
+    "sha256": "8b5cc01109be88586d6b32b165dfca72e6d3141e66c59106e16ca6f257c777b4"
+  },
+  "prior_focal_review_commit": "8778b83844fe9bff9b61862743277d5ee3172ac5",
+  "prior_focal_review": {
+    "lines": 121,
+    "size_bytes": 11638,
+    "sha256": "231cbbf892a990f2ca4617719e7c468b2ac5d1ce3d97d47cbaae2b90a2f2d463",
+    "path": "increments/021/04-study-focal-review/CLAUDE_INCREMENT_021_STUDY_FOCAL_REVIEW.md"
+  },
+  "historical_manifest_rule": "Check each old manifest at its own pinned commit; the preparation manifest belongs to 3f0f134. New current manifest belongs to this draft release.",
+  "preflight": [
+    "Read AGENTS, workflow, STATUS, delivery instructions and this task at exact release",
+    "Verify full draft/annex/authorization byte identities before reviewing",
+    "Confirm remote code main and expected coordination snapshot; stop on unexplained changes"
+  ],
+  "required_scope": [
+    "Read entire draft, SCHEMAS, CATALOG and all 140 scenario rows; do not rely on the architect summary",
+    "Confront P-1 to P-5 and NOTE-F1 with the focal report; distinguish proposed resolutions from independent closure",
+    "Check acknowledgement flow for circularity: preview proposes, declare receives explicit hashes, run recaptures exact sources",
+    "Check policy/plan/request hashing envelopes, ordering, optional/null invariants and no self-hash cycles",
+    "Check all S/D/U cases and whole-asym uniformity including polymer, branched, microheterogeneous nonpolymer, water and metal",
+    "Check all 15 symmetry cells, unsupported/absent operator preconditions and truthful conservative rationale",
+    "Assess actual utility/coverage of requiring source operator tables and rejecting unknown categories/tags; do not silently broaden D-01/D-02",
+    "Audit all catalogue tags, keys, reference/filter/generation/omission rules against official primary dictionary/code; do not accept names on authority",
+    "Check source tokens, coordinates, null/quoted null, insertion codes, ptnr3 and model context; no scientific promotion",
+    "Check metadata reader UTF-8/newline/YAML equivalence, actual paths/ids, secure RAW bytes and checksums",
+    "Check publication, reservation, idempotency, corruption, orphan handling and compensation ownership; no false concurrency guarantee from os.replace/precheck",
+    "Check schema strictness, CLI one-call/error banners/post-commit handling, interruptions and activity ownership",
+    "Check allowlist/checkpoint boundaries and scenario coverage versus functions/collected items; no fictitious test results",
+    "Do not reopen independently closed study items merely by preference; report concrete regressions or contract conflicts",
+    "Do not implement or require production Windows evidence before reviewing an unimplemented draft; future gates remain real"
+  ],
+  "tests_policy": {
+    "execution_optional": true,
+    "global_installation_authorized": false,
+    "code_tree_cache_or_bytecode_writes_allowed": false,
+    "external_scratch_only": true,
+    "windows_validation_required_in_future_CP3": true,
+    "distinguish_source_evidence_from_own_execution": true
+  },
+  "allowed_governance_output_paths": [
+    "increments/021/07-draft-review/CLAUDE_INCREMENT_021_DRAFT_REVIEW.md",
+    "increments/021/07-draft-review/evidence/claude-*"
+  ],
+  "output_branch_policy": "Own claude/ branch based on exact dispatched draft release",
+  "governance_commit_push_authorized_when_dispatched": true,
+  "delivery_instruction": "communications/GOVERNANCE_DELIVERY_INSTRUCTIONS_20261123.md",
+  "required_output": [
+    "Snapshot/material identities",
+    "BLOCKERS/MAJORS/MINORS/NOTES with exact evidence",
+    "Individual P-1/P-2/P-3/P-4/P-5/NOTE-F1 dispositions",
+    "Scientific/factual corrections and implementability",
+    "Format/catalogue/profile coverage assessment",
+    "Tests actually run and limitations",
+    "Verdict on revised-draft readiness, not implementation",
+    "Remote branch/commit/path/lines/bytes/full SHA-256 receipt"
+  ],
+  "permitted_verdicts": [
+    "REQUEST CHANGES",
+    "APPROVE FOR REVISED DRAFT PREPARATION",
+    "APPROVE WITH NON-BLOCKING NOTES"
+  ],
+  "restrictions": [
+    "No code/test/spec edits or scaffolding",
+    "Do not edit architect drafts/annexes/STATUS/tasks/historical documents",
+    "No main, PR, merge, tag, release, formal approval/comments, force push or automation",
+    "020-A remains stand-by; preserved local items untouched"
+  ],
+  "implementation_authorized": false,
+  "final_specification_frozen": false,
+  "automated_relay_active": false
+}

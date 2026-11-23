@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-DRAFT-SPECIFICATION",
-  "status": "PREPARED_AWAITING_OWNER_AUTHORIZATION",
+  "status": "COMPLETED_DRAFT_PUBLISHED_FOR_REVIEW",
   "assigned_role": "codex-architect",
   "authorization_scope": "DRAFT_DOCUMENTATION_ONLY_WHEN_EXPLICITLY_AUTHORIZED",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
@@ -83,8 +83,48 @@
     "No main/PR/merge/tag/release/force/automation",
     "020-A remains stand-by; preserved local items untouched"
   ],
-  "owner_draft_writing_authorization_recorded": false,
+  "owner_draft_writing_authorization_recorded": true,
   "implementation_authorized": false,
   "final_specification_frozen": false,
-  "automated_relay_active": false
+  "automated_relay_active": false,
+  "execution_input_commit": "3f0f13427ff347acc53e56951f077cf0b29e4925",
+  "owner_draft_authorization": {
+    "path": "increments/021/06-draft-specification/evidence/OWNER_DRAFT_AUTHORIZATION.md",
+    "lines": 22,
+    "size_bytes": 1592,
+    "sha256": "0091f4d87c4178ac7906606a176d4346411bc2e0193cca2fdfaa1dacb90e33b6"
+  },
+  "output": {
+    "path": "increments/021/06-draft-specification/INCREMENT_021_DRAFT_SPECIFICATION.md",
+    "lines": 344,
+    "size_bytes": 50807,
+    "sha256": "f914d56eab971ac4c8bb889038490b02c2ff01a21c2d2f141dc33cc8ad17acef"
+  },
+  "annexes": [
+    {
+      "path": "increments/021/06-draft-specification/evidence/SCHEMAS_021.md",
+      "lines": 102,
+      "size_bytes": 15093,
+      "sha256": "6ae0bcc0e3c0f80fccf558e767d85e4ecf887bd5630dc688b2f0ca6a30060fa8"
+    },
+    {
+      "path": "increments/021/06-draft-specification/evidence/CATALOG_021.json",
+      "lines": 1713,
+      "size_bytes": 41866,
+      "sha256": "d35f12c3c90b9c55a7204b8d5003030b5ec84148e5e149b1050eb1cd952110f7"
+    },
+    {
+      "path": "increments/021/06-draft-specification/evidence/SCENARIOS_021.csv",
+      "lines": 141,
+      "size_bytes": 17712,
+      "sha256": "fb907fbe223b2b5cc4337c4482f611dec189a1e4096cfaa3147d967cf351b4a5"
+    }
+  ],
+  "output_manifest": "increments/021/06-draft-specification/evidence/FILE_IDENTITIES.json",
+  "preparation_manifest_snapshot": "3f0f13427ff347acc53e56951f077cf0b29e4925",
+  "draft_complete": true,
+  "P1_to_P5_proposed_in_draft": true,
+  "independent_draft_review_complete": false,
+  "next_task": "tasks/021-DRAFT-REVIEW.json",
+  "next_gate": "Independent review of exact draft and annexes, then architect reconciliation and responsible owner decisions; no freeze or implementation"
 }

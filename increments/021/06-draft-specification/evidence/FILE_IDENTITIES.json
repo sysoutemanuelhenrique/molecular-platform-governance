@@ -1,0 +1,67 @@
+{
+  "governance_input_parent": "3f0f13427ff347acc53e56951f077cf0b29e4925",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "description": "Exact UTF-8 publication files except this self-manifest; normative draft annexes identified individually.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 46,
+      "size_bytes": 3975,
+      "sha256": "8f1ecc14e24dae9837f26d5a7dc00c42931bdd3f5935238abb82cb369cf5f643"
+    },
+    {
+      "path": "increments/021/06-draft-specification/INCREMENT_021_DRAFT_SPECIFICATION.md",
+      "lines": 344,
+      "size_bytes": 50807,
+      "sha256": "f914d56eab971ac4c8bb889038490b02c2ff01a21c2d2f141dc33cc8ad17acef"
+    },
+    {
+      "path": "increments/021/06-draft-specification/evidence/CATALOG_021.json",
+      "lines": 1713,
+      "size_bytes": 41866,
+      "sha256": "d35f12c3c90b9c55a7204b8d5003030b5ec84148e5e149b1050eb1cd952110f7"
+    },
+    {
+      "path": "increments/021/06-draft-specification/evidence/DRAFT_DOCUMENT_VERIFICATION.json",
+      "lines": 33,
+      "size_bytes": 1214,
+      "sha256": "1ae11c59aee2e336a32dc7f129a30d979f1d60b62807de40e249349f8c546515"
+    },
+    {
+      "path": "increments/021/06-draft-specification/evidence/OWNER_DRAFT_AUTHORIZATION.md",
+      "lines": 22,
+      "size_bytes": 1592,
+      "sha256": "0091f4d87c4178ac7906606a176d4346411bc2e0193cca2fdfaa1dacb90e33b6"
+    },
+    {
+      "path": "increments/021/06-draft-specification/evidence/SCENARIOS_021.csv",
+      "lines": 141,
+      "size_bytes": 17712,
+      "sha256": "fb907fbe223b2b5cc4337c4482f611dec189a1e4096cfaa3147d967cf351b4a5"
+    },
+    {
+      "path": "increments/021/06-draft-specification/evidence/SCHEMAS_021.md",
+      "lines": 102,
+      "size_bytes": 15093,
+      "sha256": "6ae0bcc0e3c0f80fccf558e767d85e4ecf887bd5630dc688b2f0ca6a30060fa8"
+    },
+    {
+      "path": "increments/021/06-draft-specification/evidence/SOURCE_AND_INPUT_IDENTITIES.json",
+      "lines": 177,
+      "size_bytes": 7853,
+      "sha256": "182df7ba2167d5c2e903460575e2aae69f2cee3f4cf16e01df1a2fdbe47734b1"
+    },
+    {
+      "path": "tasks/021-DRAFT-REVIEW.json",
+      "lines": 123,
+      "size_bytes": 6830,
+      "sha256": "e4030c2a6a2f84891e52a211ca4259def845e336f5a866dbcbce711fbf45b96a"
+    },
+    {
+      "path": "tasks/021-DRAFT-SPECIFICATION.json",
+      "lines": 130,
+      "size_bytes": 6826,
+      "sha256": "7368ba07439b93a840da50c6f8d5369c7651d8cc71b6e0511556ad2c9c240cf5"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-23",
+  "input_snapshots_verified": true,
+  "input_identity_count": 7,
+  "code_blobs_reverified": 66,
+  "baseline_python_ast_validation": true,
+  "catalogue_categories": 77,
+  "catalogue_filtered": 24,
+  "catalogue_generated": 1,
+  "catalogue_omitted": 52,
+  "catalogue_tag_sets_keys_and_scenario_references_checked": true,
+  "individual_scenarios": 140,
+  "by_checkpoint": {
+    "CP1": 40,
+    "CP2": 50,
+    "CP3": 30,
+    "CP4": 20
+  },
+  "symmetry_matrix_scenarios": 15,
+  "scenario_ids_unique_contiguous": true,
+  "scenario_execution_performed": false,
+  "pytest_executed": false,
+  "gemmi_import_or_execution": false,
+  "packages_installed": false,
+  "windows_tests": false,
+  "concurrency_tests": false,
+  "scientific_materialization": false,
+  "own_checks": "Git refs/blob hashes, source AST and documentary table/JSON/CSV/whitespace consistency only",
+  "P1_to_P5_solutions_proposed_not_independently_closed": true,
+  "notable_restriction": "Surviving connections require source-proven supported symmetry; valid general mmCIF can be refused, including unmodified 5i55 without required operator context",
+  "code_repository_modified": false,
+  "python_for_document_checks": "3.12.14"
+}

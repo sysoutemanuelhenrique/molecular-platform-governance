@@ -1,0 +1,177 @@
+{
+  "date": "2026-11-23",
+  "timezone": "America/Sao_Paulo",
+  "governance_input_commit": "3f0f13427ff347acc53e56951f077cf0b29e4925",
+  "code_commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "focal_review_commit": "8778b83844fe9bff9b61862743277d5ee3172ac5",
+  "documents": [
+    {
+      "path": "increments/021/01-study/INCREMENT_021_RECEPTOR_MATERIALIZATION_STUDY.md",
+      "lines": 365,
+      "size_bytes": 55594,
+      "sha256": "5048c5012548ee1169f58e6bb644ecf8b5d76a59c6569400d67db0987f7dfa56"
+    },
+    {
+      "path": "increments/021/01-study/references/INCREMENT_020_FINAL_SPECIFICATION.md",
+      "lines": 1975,
+      "size_bytes": 210880,
+      "sha256": "cf6cb534f9267d51e718052c7b36a2293c522bc566c99cf3bb2ef5909385a0a6"
+    },
+    {
+      "path": "increments/021/01-study/continuation/INCREMENT_021_MINIMAL_CORE_STUDY.md",
+      "lines": 157,
+      "size_bytes": 20979,
+      "sha256": "f5e407704e9b104e7ba224f750c3bbcebd8b109ab26016b48442087d897e9b5f"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/CODEX_INCREMENT_021_STUDY_RECONCILIATION.md",
+      "lines": 266,
+      "size_bytes": 37217,
+      "sha256": "77b677fb440ba41ac85c33508ce1076c6cd90423f85b1bfd21f5b19ff32fefc5"
+    },
+    {
+      "path": "increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md",
+      "lines": 47,
+      "size_bytes": 3446,
+      "sha256": "8b5cc01109be88586d6b32b165dfca72e6d3141e66c59106e16ca6f257c777b4"
+    },
+    {
+      "lines": 121,
+      "size_bytes": 11638,
+      "sha256": "231cbbf892a990f2ca4617719e7c468b2ac5d1ce3d97d47cbaae2b90a2f2d463",
+      "path": "increments/021/04-study-focal-review/CLAUDE_INCREMENT_021_STUDY_FOCAL_REVIEW.md",
+      "commit": "8778b83844fe9bff9b61862743277d5ee3172ac5"
+    },
+    {
+      "path": "increments/021/05-draft-preparation/INCREMENT_021_DRAFT_REQUIREMENTS.md",
+      "lines": 69,
+      "size_bytes": 7203,
+      "sha256": "f8a316f14b0590df7074c54f93d3f5b98098f440004225815e2bc4f035aa0c5d",
+      "commit": "3f0f13427ff347acc53e56951f077cf0b29e4925"
+    }
+  ],
+  "selected_code_sources": [
+    {
+      "path": "pyproject.toml",
+      "lines": 31,
+      "size_bytes": 559,
+      "sha256": "879ba13abe5c4b6dd75022e9cd0779606efba5a3eb9cad670751b8c04a7cf77a",
+      "git_blob_sha": "b8317bdfa6cd3e09b3eeb3e55356fe46c235ab78",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/inputs.py",
+      "lines": 93,
+      "size_bytes": 2986,
+      "sha256": "79776bea49e7f99f2873f70dc0de4a6467ba94a841c333f42c8d5e91f942a41b",
+      "git_blob_sha": "f9283b8fd6d950a7122fd77fd72a9bced2cab564",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_inspection.py",
+      "lines": 1012,
+      "size_bytes": 38813,
+      "sha256": "e824684a8b0703c3468ee61fbe666331ca8ae9e9c6106cd3b3a766929a16ae0d",
+      "git_blob_sha": "347bd917ce0d75f0f3cac10e39c2141325cd491c",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_parsing.py",
+      "lines": 952,
+      "size_bytes": 34622,
+      "sha256": "160a0a8f1932fbb9f65564cf68cbabb387b2cc400893b842a396efec221d295a",
+      "git_blob_sha": "4898e46c87a43a5aa7266f332262f5996ad42c45",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_resolution.py",
+      "lines": 135,
+      "size_bytes": 6401,
+      "sha256": "45d3f1cb85c83d91d36d9904f1eb108de42ceb372da4c37fdd263fee476a9000",
+      "git_blob_sha": "53a822a177fa378ed9ca70aebf84af16fd287a1d",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_selection.py",
+      "lines": 150,
+      "size_bytes": 6628,
+      "sha256": "dab531dd799ac48d86aa851b9cb1df179336146f81004fcb49d9619afe793da8",
+      "git_blob_sha": "e9b15d460896994f62a193784103d2d38368a908",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_registry.py",
+      "lines": 323,
+      "size_bytes": 14164,
+      "sha256": "9bd397ffa5510651055946d9f5132c36f47f2459b72b764aa6ef6fff81b2fb47",
+      "git_blob_sha": "c7582403c23b360bf60eedce6a32f2a5de0a7be9",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_service.py",
+      "lines": 767,
+      "size_bytes": 31516,
+      "sha256": "b555c9833c6a996826657fafdad6f7360eee8a4371fff4e46d66601f419b9584",
+      "git_blob_sha": "a9a762f39bb618353607fad74ee526a8cfa557d0",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/registry.py",
+      "lines": 284,
+      "size_bytes": 9901,
+      "sha256": "3278cbf1e2106f02bfcc1ddf4e75dbc37c378229b3ad7c116259394eadff6b9e",
+      "git_blob_sha": "e23e73fcde620a9d2c3cfd18762ba9e63b97c31b",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/atomic.py",
+      "lines": 997,
+      "size_bytes": 45543,
+      "sha256": "5aa6ebd17c8508bd64488fbf061d19a35bf99a19cf5b178d21df6910e8bf7d95",
+      "git_blob_sha": "1cf82ff8f639a98af371aaf8cb8519d4ede5efe0",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/activity.py",
+      "lines": 52,
+      "size_bytes": 2001,
+      "sha256": "6d0bf6b21517b0a8e95cd2523bfd9a409b5179af4e6c1a891f9184b81e0e5cf0",
+      "git_blob_sha": "3aadf46ff8f741bd0c4620bce4ad086af677dd4b",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/cli.py",
+      "lines": 2571,
+      "size_bytes": 93462,
+      "sha256": "db86a1f040ace006a1a3b9e705f0b23a4a16c063980f97138e5fbad7b8da554e",
+      "git_blob_sha": "33b78896eca640607a0ffcb8a843c2b5ab44ed3b",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    }
+  ],
+  "all_66_code_blobs_matched_live_pinned_tree": true,
+  "task_input_sha256": "6648b1a2c1f4f4e0091f4621767989cd5adb722b637acd11b40a83fa1ac6fbcb",
+  "gemmi_commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+  "gemmi_sources_consulted": [
+    "python/read.cpp",
+    "python/cif.cpp",
+    "docs/cif.rst",
+    "src/mmcif.cpp",
+    "tests/5i55.cif"
+  ],
+  "gemmi_binding_execution_performed": false,
+  "official_dictionary_reference_urls": [
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_conn.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_conn_type.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/entity.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/atom_site_anisotrop.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/symmetry_equiv.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/space_group_symop.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_branch_scheme.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_entity_branch.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_entity_branch_list.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_entity_branch_link.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_struct_mod_residue.html"
+  ],
+  "dictionary_note": "Official mutable category pages consulted for profile design; not a frozen full dictionary snapshot. No prevalence inference used. The 24 filtered category tag sets were compared to official category pages; atom_site tags and entity.src_method also checked at item pages. No claim that arbitrary dictionary tags are supported.",
+  "historical_environment_note": "Namespace spec does not prove a functional Gemmi wheel; no historical installation state inferred."
+}
