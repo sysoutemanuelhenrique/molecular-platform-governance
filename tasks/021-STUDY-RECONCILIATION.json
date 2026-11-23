@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-STUDY-RECONCILIATION",
+  "status": "READY",
+  "assigned_role": "codex-architect",
+  "authorization_scope": "ARCHITECTURAL_STUDY_RECONCILIATION_AND_GOVERNANCE_COORDINATION_ONLY",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "governance_input_parent": "e6848903b1d0b342470fed59e43d39e4482a471a",
+  "review_repository_commit": "debeba6f4370c6f5dd77d2273420abf8a828e9f8",
+  "review_branch": "claude/021-study-review-v2-20261123",
+  "review": {
+    "path": "increments/021/02-study-review/CLAUDE_INCREMENT_021_STUDY_WITH_CONTINUATION_REVIEW.md",
+    "lines": 198,
+    "size_bytes": 20580,
+    "sha256": "649c67b0f72186504a083d6041b53d7f5becf8d4f27ac89c1885c5a32843708e"
+  },
+  "review_evidence": [
+    {
+      "path": "increments/021/02-study-review/evidence/claude-021-study-review-verification.json",
+      "lines": 86,
+      "size_bytes": 5221,
+      "sha256": "36380b1582199aecf1d91fa7d80e3be1208a04b859ec5ee4ffd4f8ac563c3036"
+    },
+    {
+      "path": "increments/021/02-study-review/evidence/claude-gemmi-cif-token-probe.cpp",
+      "lines": 32,
+      "size_bytes": 1593,
+      "sha256": "08fbe986b5b3b9ec9bff79814868e05ab4a5f4b0a2aea410c56cb1d4ca834949"
+    },
+    {
+      "path": "increments/021/02-study-review/evidence/claude-gemmi-cif-token-probe.output.txt",
+      "lines": 35,
+      "size_bytes": 743,
+      "sha256": "5fc27870af5ad3b0030fcdff07d5efff80e55fe29fc1100cf1eb73108402e1a9"
+    }
+  ],
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_access": "STRICTLY_READ_ONLY",
+  "inputs_in_coordination_snapshot": [
+    "AGENTS.md",
+    "protocol/AGENT_WORKFLOW.md",
+    "increments/021/01-study/INCREMENT_021_RECEPTOR_MATERIALIZATION_STUDY.md",
+    "increments/021/01-study/continuation/INCREMENT_021_MINIMAL_CORE_STUDY.md",
+    "increments/021/01-study/references/INCREMENT_020_FINAL_SPECIFICATION.md",
+    "increments/021/01-study/evidence/study-verification.json",
+    "increments/021/01-study/continuation/FILE_IDENTITIES.json"
+  ],
+  "required_scope": [
+    "Verify immutable input identities and current remote refs before any action; stop/report unaccounted changes",
+    "Confront 4 MAJORs, 5 MINORs, 3 NOTES and factual corrections C-1/C-2/C-3 with pinned actual code and official source",
+    "Record disposition and evidence for every finding; architect acceptance is not independent reviewer closure",
+    "Recommend with concrete tradeoffs between a/b of MAJOR-1; do not record owner decision without an explicit response",
+    "Propose a closed occurrence precedence table for MAJOR-2 without changing 020 resolution semantics or treating author-chain association as guaranteed biological ownership",
+    "Resolve endpoint token source/columns, insertion codes, ptnr3, symmetry context and models for MAJOR-3",
+    "Resolve read-once metadata loading and exact internal-id matching without silently changing 020 public loaders",
+    "Correct environment/evidence contradiction in a new record based on what can actually be proved; preserve historical bytes",
+    "Maintain study-stage boundaries; no implementation, final specification or owner freeze authorization",
+    "Prepare focal reviewer task only when a concrete reviewable response exists; do not invent automatic dispatch"
+  ],
+  "output_path": "increments/021/03-study-reconciliation/CODEX_INCREMENT_021_STUDY_RECONCILIATION.md",
+  "allowed_governance_outputs": [
+    "increments/021/03-study-reconciliation/",
+    "STATUS.md",
+    "tasks/021-STUDY-RECONCILIATION.json",
+    "tasks/021-STUDY-FOCAL-REVIEW.json"
+  ],
+  "delivery_instruction": "communications/GOVERNANCE_DELIVERY_INSTRUCTIONS_20261123.md",
+  "restrictions": [
+    "Do not modify code/tests/frozen contracts or historical study/reviewer documents",
+    "Do not resume 020-A or touch preserved local untracked items",
+    "No main changes, PR, merge, release, tag, force push or automated relay",
+    "Do not claim reviewer evidence as independently reproduced execution"
+  ],
+  "next_gate": "Architect reconciliation; explicit owner decisions where necessary; focal review and draft decision according to recorded approvals",
+  "reconciliation_complete": false,
+  "implementation_authorized": false,
+  "final_specification_frozen": false,
+  "automated_relay_active": false
+}
