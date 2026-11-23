@@ -1,0 +1,37 @@
+{
+  "governance_input_parent": "d5580b162e0fe5ebec8bedd0b986f767f4f3194a",
+  "description": "Current owner-decision/coordination files, excluding this self-manifest. Historical reconciliation manifest is pinned separately.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 46,
+      "size_bytes": 3980,
+      "sha256": "30d13cbbce94b7c63fe60b568d533905f81c95357cce3e857e6c850b6175851b"
+    },
+    {
+      "path": "increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md",
+      "lines": 47,
+      "size_bytes": 3446,
+      "sha256": "8b5cc01109be88586d6b32b165dfca72e6d3141e66c59106e16ca6f257c777b4"
+    },
+    {
+      "path": "tasks/021-STUDY-FOCAL-REVIEW.json",
+      "lines": 119,
+      "size_bytes": 6790,
+      "sha256": "7bf41072d8866939ba10d5a50c2e79f66a6d0a25952aea65901288c6d629033e"
+    },
+    {
+      "path": "tasks/021-STUDY-RECONCILIATION.json",
+      "lines": 115,
+      "size_bytes": 6127,
+      "sha256": "d8e5036c71d3e1112d3d4843a4cebd8ad7d853a3167138fec9d38ab81ad81b1c"
+    }
+  ],
+  "unchanged_reconciliation_reference": {
+    "path": "increments/021/03-study-reconciliation/CODEX_INCREMENT_021_STUDY_RECONCILIATION.md",
+    "lines": 266,
+    "size_bytes": 37217,
+    "sha256": "77b677fb440ba41ac85c33508ce1076c6cd90423f85b1bfd21f5b19ff32fefc5",
+    "commit": "d5580b162e0fe5ebec8bedd0b986f767f4f3194a"
+  }
+}

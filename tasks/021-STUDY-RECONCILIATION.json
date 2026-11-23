@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-STUDY-RECONCILIATION",
-  "status": "COMPLETED_ARCHITECT_RESPONSE_OWNER_DECISIONS_PENDING",
+  "status": "COMPLETED_ARCHITECT_RESPONSE_OWNER_DECISIONS_RECORDED",
   "assigned_role": "codex-architect",
   "authorization_scope": "ARCHITECTURAL_STUDY_RECONCILIATION_AND_GOVERNANCE_COORDINATION_ONLY",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
@@ -73,7 +73,7 @@
     "No main changes, PR, merge, release, tag, force push or automated relay",
     "Do not claim reviewer evidence as independently reproduced execution"
   ],
-  "next_gate": "Owner D-01/D-02 decisions; focal review of concrete response when dispatched; draft-stage decision according to actual approvals",
+  "next_gate": "Independent focal review of the concrete response with D-01(b) and broad explicit audited D-02 scope now approved; no automatic dispatch or implementation authorization",
   "reconciliation_complete": true,
   "implementation_authorized": false,
   "final_specification_frozen": false,
@@ -92,13 +92,24 @@
     "D-01": {
       "subject": "All declared cuts refused versus audited metalc/hydrog exception",
       "recommended": "b",
-      "approved": false
+      "approved": true,
+      "approval_record": "increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md"
     },
     "D-02": {
       "subject": "Explicit whole-source-model component scope versus additional explicit-label restriction",
       "recommended": "broad_scope_acknowledged_and_audited",
-      "approved": false
+      "approved": true,
+      "approval_record": "increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md"
     }
   },
-  "prepared_focal_task": "tasks/021-STUDY-FOCAL-REVIEW.json"
+  "prepared_focal_task": "tasks/021-STUDY-FOCAL-REVIEW.json",
+  "owner_approval_record": {
+    "path": "increments/021/00-owner-decision/OWNER_SCOPE_DECISIONS_D01_D02_20261123.md",
+    "lines": 47,
+    "size_bytes": 3446,
+    "sha256": "8b5cc01109be88586d6b32b165dfca72e6d3141e66c59106e16ca6f257c777b4"
+  },
+  "owner_approval_date": "2026-11-23",
+  "owner_approval_input_commit": "d5580b162e0fe5ebec8bedd0b986f767f4f3194a",
+  "output_manifest_snapshot": "d5580b162e0fe5ebec8bedd0b986f767f4f3194a"
 }
