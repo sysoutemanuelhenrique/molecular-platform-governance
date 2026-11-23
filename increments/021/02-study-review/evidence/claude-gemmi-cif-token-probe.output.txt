@@ -1,0 +1,35 @@
+1 raw=[?] is_null=1 as_string=[] quote(raw)=['?']
+2 raw=[.] is_null=1 as_string=[] quote(raw)=['.']
+3 raw=['?'] is_null=0 as_string=[?] quote(raw)=["'?'"]
+4 raw=['.'] is_null=0 as_string=[.] quote(raw)=["'.'"]
+5 raw=['two words'] is_null=0 as_string=[two words] quote(raw)=["'two words'"]
+6 raw=[0.000] is_null=0 as_string=[0.000] quote(raw)=[0.000]
+7 raw=[1.20(3)] is_null=0 as_string=[1.20(3)] quote(raw)=[1.20(3)]
+8 raw=["it's"] is_null=0 as_string=[it's] quote(raw)=[;"it's"
+;]
+9 raw=[;multi
+line
+;] is_null=0 as_string=[multi
+line] quote(raw)=[;;multi
+line
+;
+;]
+---serialized---
+data_derived
+loop_
+_x.id
+_x.v
+1 ?
+2 .
+3 '?'
+4 '.'
+5 'two words'
+6 0.000
+7 1.20(3)
+8 "it's"
+9
+;multi
+line
+;
+---reread---
+raw_tokens_identical_after_roundtrip=1
