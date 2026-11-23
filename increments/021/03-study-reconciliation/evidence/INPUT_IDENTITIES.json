@@ -1,0 +1,130 @@
+{
+  "governance_input_commit": "f1656badb35a67942b8318b6f6744b0c71f01de6",
+  "review_commit": "debeba6f4370c6f5dd77d2273420abf8a828e9f8",
+  "code_commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "documents": [
+    {
+      "path": "increments/021/01-study/INCREMENT_021_RECEPTOR_MATERIALIZATION_STUDY.md",
+      "lines": 365,
+      "size_bytes": 55594,
+      "sha256": "5048c5012548ee1169f58e6bb644ecf8b5d76a59c6569400d67db0987f7dfa56"
+    },
+    {
+      "path": "increments/021/01-study/references/INCREMENT_020_FINAL_SPECIFICATION.md",
+      "lines": 1975,
+      "size_bytes": 210880,
+      "sha256": "cf6cb534f9267d51e718052c7b36a2293c522bc566c99cf3bb2ef5909385a0a6"
+    },
+    {
+      "path": "increments/021/01-study/continuation/INCREMENT_021_MINIMAL_CORE_STUDY.md",
+      "lines": 157,
+      "size_bytes": 20979,
+      "sha256": "f5e407704e9b104e7ba224f750c3bbcebd8b109ab26016b48442087d897e9b5f"
+    },
+    {
+      "path": "increments/021/02-study-review/CLAUDE_INCREMENT_021_STUDY_WITH_CONTINUATION_REVIEW.md",
+      "lines": 198,
+      "size_bytes": 20580,
+      "sha256": "649c67b0f72186504a083d6041b53d7f5becf8d4f27ac89c1885c5a32843708e"
+    }
+  ],
+  "historical_environment_json": {
+    "path": "increments/021/01-study/evidence/study-verification.json",
+    "lines": 107,
+    "size_bytes": 2320,
+    "sha256": "fa3abf2a57d7fbd4bc49851804d422715c866006b7b922464c52031811fad19d"
+  },
+  "code_sources": [
+    {
+      "path": "src/molecular/inputs.py",
+      "lines": 93,
+      "size_bytes": 2986,
+      "sha256": "79776bea49e7f99f2873f70dc0de4a6467ba94a841c333f42c8d5e91f942a41b",
+      "git_blob_sha": "f9283b8fd6d950a7122fd77fd72a9bced2cab564",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_parsing.py",
+      "lines": 952,
+      "size_bytes": 34622,
+      "sha256": "160a0a8f1932fbb9f65564cf68cbabb387b2cc400893b842a396efec221d295a",
+      "git_blob_sha": "4898e46c87a43a5aa7266f332262f5996ad42c45",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_inspection.py",
+      "lines": 1012,
+      "size_bytes": 38813,
+      "sha256": "e824684a8b0703c3468ee61fbe666331ca8ae9e9c6106cd3b3a766929a16ae0d",
+      "git_blob_sha": "347bd917ce0d75f0f3cac10e39c2141325cd491c",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_selection.py",
+      "lines": 150,
+      "size_bytes": 6628,
+      "sha256": "dab531dd799ac48d86aa851b9cb1df179336146f81004fcb49d9619afe793da8",
+      "git_blob_sha": "e9b15d460896994f62a193784103d2d38368a908",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_resolution.py",
+      "lines": 135,
+      "size_bytes": 6401,
+      "sha256": "45d3f1cb85c83d91d36d9904f1eb108de42ceb372da4c37fdd263fee476a9000",
+      "git_blob_sha": "53a822a177fa378ed9ca70aebf84af16fd287a1d",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_service.py",
+      "lines": 767,
+      "size_bytes": 31516,
+      "sha256": "b555c9833c6a996826657fafdad6f7360eee8a4371fff4e46d66601f419b9584",
+      "git_blob_sha": "a9a762f39bb618353607fad74ee526a8cfa557d0",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/receptor_registry.py",
+      "lines": 323,
+      "size_bytes": 14164,
+      "sha256": "9bd397ffa5510651055946d9f5132c36f47f2459b72b764aa6ef6fff81b2fb47",
+      "git_blob_sha": "c7582403c23b360bf60eedce6a32f2a5de0a7be9",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/registry.py",
+      "lines": 284,
+      "size_bytes": 9901,
+      "sha256": "3278cbf1e2106f02bfcc1ddf4e75dbc37c378229b3ad7c116259394eadff6b9e",
+      "git_blob_sha": "e23e73fcde620a9d2c3cfd18762ba9e63b97c31b",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    },
+    {
+      "path": "src/molecular/atomic.py",
+      "lines": 997,
+      "size_bytes": 45543,
+      "sha256": "5aa6ebd17c8508bd64488fbf061d19a35bf99a19cf5b178d21df6910e8bf7d95",
+      "git_blob_sha": "1cf82ff8f639a98af371aaf8cb8519d4ede5efe0",
+      "commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+    }
+  ],
+  "additional_official_gemmi_sources": [
+    {
+      "repository": "project-gemmi/gemmi",
+      "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+      "path": "src/mmcif.cpp",
+      "git_blob_sha": "1da0854ced3deaa2f72b45ed3817639efaea7f28",
+      "sha256": "676d3b6fbed822bbe6084cfa255aba828f1ad8b54e4a8019cd9b67c24dc30a5a",
+      "size_bytes": 49051
+    },
+    {
+      "repository": "project-gemmi/gemmi",
+      "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+      "path": "tests/5i55.cif",
+      "git_blob_sha": "c75212eaf020ae1aaba4bb9806e392b4e27bd43a",
+      "sha256": "cae937745acc22d1c3bdd21cc6fa3c36a3d9f271494c22e3e3a3ce512c72fb1d",
+      "size_bytes": 63576
+    }
+  ],
+  "source_tree_complete_and_untruncated": true
+}

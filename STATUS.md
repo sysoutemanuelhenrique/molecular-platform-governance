@@ -1,6 +1,6 @@
-# Coordenação — Incremento 021: parecer recebido; reconciliação pendente
+# Coordenação — Incremento 021: resposta arquitetural publicada; decisões pendentes
 
-Atualizado em 23/11/2026 por Codex arquiteto. O parecer de Claude foi recebido, lido integralmente e conferido no remoto. A comunicação documental passa pelas entregas no governance; o chat pode conter apenas um recibo de branch/commit/caminho. Não há execução automática de agentes.
+Atualizado em 23/11/2026 por Codex arquiteto. O parecer de Claude foi confrontado com código e fontes primárias; a resposta arquitetural foi concluída, sem fechamento independente dos achados. A comunicação documental passa pelas entregas no governance; o chat pode conter apenas um recibo de branch/commit/caminho. Não há execução automática de agentes.
 
 | Campo | Estado |
 |---|---|
@@ -11,19 +11,21 @@ Atualizado em 23/11/2026 por Codex arquiteto. O parecer de Claude foi recebido, 
 | Main do governance preservada | a47183dfec8213c765ed43ae482c8c227760a3d5 |
 | Incremento 020 | Concluído no escopo de inspeção/seleção/resolução lógica; integrado pelo PR #7 |
 | Incremento 020-A | STAND-BY; sem aprovação, cancelamento ou retomada |
-| Fase do 021 | Revisão independente entregue; reconciliação arquitetural pendente; sem especificação final |
+| Fase do 021 | Resposta arquitetural concluída; D-01/D-02 pendentes; revisão focal preparada; sem especificação final |
 | Estudo original | increments/021/01-study/INCREMENT_021_RECEPTOR_MATERIALIZATION_STUDY.md — preservado |
 | Complemento vigente | increments/021/01-study/continuation/INCREMENT_021_MINIMAL_CORE_STUDY.md |
 | Manifesto do complemento | increments/021/01-study/continuation/FILE_IDENTITIES.json |
 | Tarefa de revisão V2 | Entrega recebida por mensagem do responsável; arquivo histórico da tarefa preservado |
 | Parecer recebido | claude/021-study-review-v2-20261123 @ debeba6f4370c6f5dd77d2273420abf8a828e9f8 |
 | Recibo de leitura | increments/021/02-study-review-receipt/CODEX_REVIEW_RECEIPT_20261123.md |
-| Achados do parecer | 0 BLOCKERS / 4 MAJORS / 5 MINORS / 3 NOTES — recebidos, ainda não reconciliados |
-| Tarefa ativa do arquiteto | tasks/021-STUDY-RECONCILIATION.json — READY |
+| Achados do parecer | 0 BLOCKERS / 4 MAJORS / 5 MINORS / 3 NOTES — todos respondidos pelo arquiteto, sem fechamento independente |
+| Tarefa do arquiteto | tasks/021-STUDY-RECONCILIATION.json — COMPLETED_ARCHITECT_RESPONSE_OWNER_DECISIONS_PENDING |
+| Resposta concreta | increments/021/03-study-reconciliation/CODEX_INCREMENT_021_STUDY_RECONCILIATION.md |
+| Focal preparada | tasks/021-STUDY-FOCAL-REVIEW.json — PREPARED_AWAITING_OWNER_DECISIONS, NOT_DISPATCHED |
 | Orientação ao revisor/implementador | communications/GOVERNANCE_DELIVERY_INSTRUCTIONS_20261123.md |
 | Tarefa v1 | Preservada; substituída operacionalmente pela V2, não executar isoladamente |
-| Recomendação mais recente | Perfil mínimo de B: mmCIF no modelo fonte; keep/remove efetivos; todos os altlocs retidos; recusa de assemblies e cortes de conexão declarada |
-| Próximo gate | Reconciliação dos achados pelo arquiteto; decisões explícitas de escopo quando necessárias; eventual revisão focal e decisão sobre rascunho |
+| Recomendação mais recente | Perfil mínimo B; recomendar exceção auditada metalc/hydrog para parceiros removidos inteiros, recusa covalente e alcance amplo explicitamente reconhecido; D-01/D-02 ainda não aprovadas |
+| Próximo gate | Decisões D-01/D-02 do responsável; confronto focal da resposta quando acionado; depois decisão sobre rascunho |
 | Implementador | Sem nova tarefa de código autorizada |
 | Relay automático | Não configurado; publicar uma tarefa não executa um agente |
 
@@ -43,7 +45,9 @@ READY FOR IMPLEMENTATION: NO
 FINAL SPECIFICATION FROZEN: NO
 INCREMENT 020-A: STAND-BY
 REVIEW RECEIVED AND IDENTITY VERIFIED: YES
-RECONCILIATION COMPLETE: NO
+ARCHITECTURAL RESPONSE COMPLETE: YES
+INDEPENDENT FINDING CLOSURE COMPLETE: NO
+OWNER D-01/D-02 APPROVED: NO
 AUTOMATED RELAY ACTIVE: NO
 CODE REPOSITORY MODIFIED: NO
 
@@ -52,3 +56,11 @@ CODE REPOSITORY MODIFIED: NO
 O revisor registrou APPROVE FOR DRAFT SPECIFICATION condicionado a resolver os quatro MAJORs antes ou dentro do rascunho. O recebimento não fecha achados nem substitui decisão do responsável. As opções a/b do MAJOR-1 e a política de abrangência do MAJOR-2 ainda não foram escolhidas pelo responsável. O arquiteto deverá apresentar recomendação concreta na reconciliação antes de solicitar essas decisões.
 
 A branch do revisor não foi mesclada; parecer e evidências são lidos pelo commit exato. Nenhuma tarefa histórica foi editada para fabricar um despacho automático. Não houve implementação ou reprodução dos ensaios C++/Windows/pytest por este recibo.
+
+## Resposta arquitetural de 23/11/2026
+
+A resposta está no novo documento de reconciliação. As disposições respondem a todos os itens sem editar estudo, complemento, parecer ou evidências históricos. Recomendações de escopo ainda não constituem escolhas de Emanuel.
+
+D-01: recomendo (b), distinguir cortes covalentes de metalc/hydrog com omissão condicionada e auditada quando um parceiro sai inteiro por decisão explícita. D-02: recomendo manter alcance de componentes no modelo fonte inteiro, com reconhecimento explícito e inventário das retenções fora das cadeias escolhidas; não inferir pertencimento biológico por auth_asym_id. As alternativas e exemplos estão na reconciliação.
+
+A inconsistência de disponibilidade Gemmi recebeu errata nova e uma sonda stdlib de namespace, executada fora do repositório de código. Não houve Gemmi, pytest, C++ recompilado, Windows, concorrência ou transformação científica. A versão funcional histórica não foi reconstruída por inferência. A focal não foi acionada automaticamente.

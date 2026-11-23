@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-STUDY-RECONCILIATION",
-  "status": "READY",
+  "status": "COMPLETED_ARCHITECT_RESPONSE_OWNER_DECISIONS_PENDING",
   "assigned_role": "codex-architect",
   "authorization_scope": "ARCHITECTURAL_STUDY_RECONCILIATION_AND_GOVERNANCE_COORDINATION_ONLY",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
@@ -73,9 +73,32 @@
     "No main changes, PR, merge, release, tag, force push or automated relay",
     "Do not claim reviewer evidence as independently reproduced execution"
   ],
-  "next_gate": "Architect reconciliation; explicit owner decisions where necessary; focal review and draft decision according to recorded approvals",
-  "reconciliation_complete": false,
+  "next_gate": "Owner D-01/D-02 decisions; focal review of concrete response when dispatched; draft-stage decision according to actual approvals",
+  "reconciliation_complete": true,
   "implementation_authorized": false,
   "final_specification_frozen": false,
-  "automated_relay_active": false
+  "automated_relay_active": false,
+  "execution_input_commit": "f1656badb35a67942b8318b6f6744b0c71f01de6",
+  "completed_date": "2026-11-23",
+  "output": {
+    "path": "increments/021/03-study-reconciliation/CODEX_INCREMENT_021_STUDY_RECONCILIATION.md",
+    "lines": 266,
+    "size_bytes": 37217,
+    "sha256": "77b677fb440ba41ac85c33508ce1076c6cd90423f85b1bfd21f5b19ff32fefc5"
+  },
+  "output_manifest": "increments/021/03-study-reconciliation/FILE_IDENTITIES.json",
+  "independent_finding_closure_complete": false,
+  "owner_decisions": {
+    "D-01": {
+      "subject": "All declared cuts refused versus audited metalc/hydrog exception",
+      "recommended": "b",
+      "approved": false
+    },
+    "D-02": {
+      "subject": "Explicit whole-source-model component scope versus additional explicit-label restriction",
+      "recommended": "broad_scope_acknowledged_and_audited",
+      "approved": false
+    }
+  },
+  "prepared_focal_task": "tasks/021-STUDY-FOCAL-REVIEW.json"
 }

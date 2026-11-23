@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-23",
+  "timezone": "America/Sao_Paulo",
+  "governance_input_expected_and_observed": "f1656badb35a67942b8318b6f6744b0c71f01de6",
+  "review_head_expected_and_observed": "debeba6f4370c6f5dd77d2273420abf8a828e9f8",
+  "code_main_expected_and_observed": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "governance_main_preserved": "a47183dfec8213c765ed43ae482c8c227760a3d5",
+  "code_blobs_verified_against_live_pinned_tree": 66,
+  "python_ast_all_baseline_files_validated": true,
+  "review_identity_verified": {
+    "path": "increments/021/02-study-review/CLAUDE_INCREMENT_021_STUDY_WITH_CONTINUATION_REVIEW.md",
+    "lines": 198,
+    "size_bytes": 20580,
+    "sha256": "649c67b0f72186504a083d6041b53d7f5becf8d4f27ac89c1885c5a32843708e"
+  },
+  "new_primary_gemmi_blobs_verified": [
+    {
+      "repository": "project-gemmi/gemmi",
+      "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+      "path": "src/mmcif.cpp",
+      "git_blob_sha": "1da0854ced3deaa2f72b45ed3817639efaea7f28",
+      "sha256": "676d3b6fbed822bbe6084cfa255aba828f1ad8b54e4a8019cd9b67c24dc30a5a",
+      "size_bytes": 49051
+    },
+    {
+      "repository": "project-gemmi/gemmi",
+      "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+      "path": "tests/5i55.cif",
+      "git_blob_sha": "c75212eaf020ae1aaba4bb9806e392b4e27bd43a",
+      "sha256": "cae937745acc22d1c3bdd21cc6fa3c36a3d9f271494c22e3e3a3ce512c72fb1d",
+      "size_bytes": 63576
+    }
+  ],
+  "wwpdb_pages_opened": {
+    "connection_types": "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_struct_conn_type.id.html",
+    "insertion_code": "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_struct_conn.pdbx_ptnr1_PDB_ins_code.html",
+    "partner_symmetry": "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_struct_conn.ptnr1_symmetry.html",
+    "entity_type": "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_entity.type.html",
+    "author_asym": "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_atom_site.auth_asym_id.html",
+    "model_number": "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_atom_site.pdbx_PDB_model_num.html",
+    "third_partner": "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_struct_conn.pdbx_ptnr3_PDB_ins_code.html",
+    "connection_category": "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_conn.html"
+  },
+  "wwpdb_evidence_limit": "Mutable dictionary pages read on this date; no population-frequency estimate inferred. Unavailable per-model struct_conn item URLs were not used as proof of absence; the category item list was examined.",
+  "insertion_code_field_mismatch": {
+    "baseline": [
+      "ptnr1_PDB_ins_code",
+      "ptnr2_PDB_ins_code"
+    ],
+    "official": [
+      "pdbx_ptnr1_PDB_ins_code",
+      "pdbx_ptnr2_PDB_ins_code"
+    ],
+    "baseline_canonical_fixture_found_in_receptor_tests": false,
+    "verification": "static source and tagged official fixture; baseline parser was not executed"
+  },
+  "environment_probe": {
+    "probe": "module_discovery_not_engine_execution",
+    "empty_source_directory_spec": {
+      "origin_present": false,
+      "loader_type": "NoneType",
+      "namespace_locations_count": 1
+    },
+    "current_context_spec": null,
+    "current_distribution_version": null,
+    "historical_distribution_version_proved": false,
+    "gemmi_imported_or_executed": false,
+    "pytest_executed": false
+  },
+  "historical_source_directory_namespace_probe": {
+    "spec_found": true,
+    "origin": null,
+    "loader_type": "NoneType",
+    "location_description": "gemmi source subdirectory adjacent to original external package_study.py script",
+    "historical_wheel_presence_proved": false
+  },
+  "own_execution": {
+    "python": "3.12.14",
+    "hashes": true,
+    "ast": true,
+    "stdlib_namespace_discovery_probe": true,
+    "pytest": false,
+    "gemmi_import_or_execution": false,
+    "cxx_probe_reproduced": false,
+    "windows": false,
+    "concurrency": false,
+    "scientific_materialization": false,
+    "dependencies_installed": false
+  },
+  "architecture_dispositions_not_independent_closure": true,
+  "owner_D01_approved": false,
+  "owner_D02_approved": false,
+  "reviewer_dispatched": false,
+  "code_repository_modified": false
+}

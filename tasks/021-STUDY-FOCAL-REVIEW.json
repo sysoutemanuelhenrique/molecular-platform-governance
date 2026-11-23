@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-STUDY-FOCAL-REVIEW",
+  "status": "PREPARED_AWAITING_OWNER_DECISIONS",
+  "dispatch_status": "NOT_DISPATCHED",
+  "assigned_role": "claude-independent-reviewer-separate-from-implementer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "governance_input_parent": "f1656badb35a67942b8318b6f6744b0c71f01de6",
+  "review_snapshot": "Use exact publication commit containing this task when dispatched; do not assume main or latest",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "original_review_commit": "debeba6f4370c6f5dd77d2273420abf8a828e9f8",
+  "reconciliation": {
+    "path": "increments/021/03-study-reconciliation/CODEX_INCREMENT_021_STUDY_RECONCILIATION.md",
+    "lines": 266,
+    "size_bytes": 37217,
+    "sha256": "77b677fb440ba41ac85c33508ce1076c6cd90423f85b1bfd21f5b19ff32fefc5"
+  },
+  "input_manifest": "increments/021/03-study-reconciliation/FILE_IDENTITIES.json",
+  "additional_inputs": [
+    {
+      "path": "increments/021/03-study-reconciliation/evidence/ENVIRONMENT_EVIDENCE_CORRECTION.md",
+      "lines": 36,
+      "size_bytes": 2749,
+      "sha256": "4b584fd12c6f3510362aab3579ebc2f54d41715bed2e19f21bbd4d61a7595f02"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/evidence/INPUT_IDENTITIES.json",
+      "lines": 130,
+      "size_bytes": 5022,
+      "sha256": "c87c7746c03dce31452815ce4c68ca0d8e90067d738b276dbdd1858348f4eb2d"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/evidence/RECONCILIATION_VERIFICATION.json",
+      "lines": 95,
+      "size_bytes": 4290,
+      "sha256": "5d025fec95f78f92638a023626a234754e278d8272ece1305f97d1a67d6287a0"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/evidence/probe_namespace_discovery.py",
+      "lines": 43,
+      "size_bytes": 1450,
+      "sha256": "9f9884a9d669ce0dd0d95315002370bb011006f74d5a350497131e90e596710f"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/evidence/probe_namespace_discovery.output.json",
+      "lines": 13,
+      "size_bytes": 380,
+      "sha256": "1cefea88a4db8c91e7c1e4f05b4e22d2ea84d07fc4f97316399df169bf2e43dc"
+    }
+  ],
+  "owner_decision_gate": "D-01/D-02 are pending, not approved by this task. Do not close scope choices independently. Any early technical assessment must be explicitly conditional; full focal closure requires the recorded owner choices.",
+  "preflight": [
+    "Read AGENTS.md, workflow, STATUS and this task at dispatched immutable commit",
+    "Verify hashes and exact remote code main; stop/report divergence",
+    "Verify original review at its pinned peer commit; no merge required"
+  ],
+  "scope": [
+    "Assess architect dispositions for MAJOR-1 to 4, MINOR-1 to 5, NOTE-1 to 3 and C-1/C-2/C-3; no repeated full 020-A review",
+    "Confront decision tables and concrete examples, including removal of complete non-polymeric or polymeric partners in the proposed exception",
+    "Assess distinction between author identifiers and biological ownership, all-model inventory and selected-model projection",
+    "Check actual fields ProteinInput.id and ResolvedReceptorSelection.resolved_selection_id; ensure read-once/hashing mechanism matches scope",
+    "Confront partial acceptance on symmetry: Same ASU classification versus actual source-frame support; verify both equal nonidentity and null cases",
+    "Verify environment correction is limited to namespace false positive and does not fabricate historical wheel state or engine execution",
+    "State clearly which original findings are independently closed, which remain conditional on owner decision and what remains for drafting",
+    "No final specification or implementation approval"
+  ],
+  "allowed_governance_output_paths": [
+    "increments/021/04-study-focal-review/CLAUDE_INCREMENT_021_STUDY_FOCAL_REVIEW.md",
+    "increments/021/04-study-focal-review/evidence/claude-*"
+  ],
+  "output_branch_policy": "Own claude/ branch based on immutable dispatched response commit",
+  "governance_commit_push_authorized_when_dispatched": true,
+  "delivery_instruction": "communications/GOVERNANCE_DELIVERY_INSTRUCTIONS_20261123.md",
+  "report_required": [
+    "Input identities",
+    "Disposition per original finding and partial disagreement",
+    "Scope decisions approved versus still conditional",
+    "Own execution and supplied evidence distinguished",
+    "Draft-stage readiness only; output identity and remotely verified commit"
+  ],
+  "restrictions": [
+    "Code read-only; no code/test/frozen-spec changes",
+    "No architect-document, STATUS or central-task edits",
+    "No 020-A resumption",
+    "No main, PR, merge, tag, release, formal GitHub approval/comments, force push or automation"
+  ],
+  "implementation_authorized": false,
+  "final_specification_frozen": false,
+  "automated_relay_active": false
+}

@@ -1,0 +1,62 @@
+{
+  "governance_input_parent": "f1656badb35a67942b8318b6f6744b0c71f01de6",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "original_review_commit": "debeba6f4370c6f5dd77d2273420abf8a828e9f8",
+  "description": "Publication files excluding this self-manifest. SHA-256 over exact UTF-8 bytes.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 66,
+      "size_bytes": 6405,
+      "sha256": "bd8240fef78dedd4602b8a97568d5eb16b6efc139461d6402dc84eb1570a0c8f"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/CODEX_INCREMENT_021_STUDY_RECONCILIATION.md",
+      "lines": 266,
+      "size_bytes": 37217,
+      "sha256": "77b677fb440ba41ac85c33508ce1076c6cd90423f85b1bfd21f5b19ff32fefc5"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/evidence/ENVIRONMENT_EVIDENCE_CORRECTION.md",
+      "lines": 36,
+      "size_bytes": 2749,
+      "sha256": "4b584fd12c6f3510362aab3579ebc2f54d41715bed2e19f21bbd4d61a7595f02"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/evidence/INPUT_IDENTITIES.json",
+      "lines": 130,
+      "size_bytes": 5022,
+      "sha256": "c87c7746c03dce31452815ce4c68ca0d8e90067d738b276dbdd1858348f4eb2d"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/evidence/RECONCILIATION_VERIFICATION.json",
+      "lines": 95,
+      "size_bytes": 4290,
+      "sha256": "5d025fec95f78f92638a023626a234754e278d8272ece1305f97d1a67d6287a0"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/evidence/probe_namespace_discovery.output.json",
+      "lines": 13,
+      "size_bytes": 380,
+      "sha256": "1cefea88a4db8c91e7c1e4f05b4e22d2ea84d07fc4f97316399df169bf2e43dc"
+    },
+    {
+      "path": "increments/021/03-study-reconciliation/evidence/probe_namespace_discovery.py",
+      "lines": 43,
+      "size_bytes": 1450,
+      "sha256": "9f9884a9d669ce0dd0d95315002370bb011006f74d5a350497131e90e596710f"
+    },
+    {
+      "path": "tasks/021-STUDY-FOCAL-REVIEW.json",
+      "lines": 92,
+      "size_bytes": 4999,
+      "sha256": "eb60fc0ca4cd6a8a3dc0d705dca28d71465cd02fc26dcbf7f1bc55b0179851d0"
+    },
+    {
+      "path": "tasks/021-STUDY-RECONCILIATION.json",
+      "lines": 104,
+      "size_bytes": 5446,
+      "sha256": "13a31caf83d0bd7e639052df9d336c9d8bc319376180c3a4c35c4289c4fe9750"
+    }
+  ]
+}
