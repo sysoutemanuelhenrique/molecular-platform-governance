@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-IMPLEMENTATION",
-  "status": "RESIDUAL_CORRECTIONS_RECEIVED_FINAL_REVIEW_PENDING",
+  "status": "CP1_SINGLE_TEST_REGRESSION_R1_PENDING",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -193,7 +193,7 @@
   },
   "checkpoint1_approved": false,
   "independent_review_complete": true,
-  "next_task": "tasks/021-CHECKPOINT1-FINAL-FOCAL-REVIEW.json",
+  "next_task": "tasks/021-CHECKPOINT1-R1-TEST-CORRECTION.json",
   "independent_review_commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801",
   "independent_review_verdict": "REQUEST CHANGES",
   "architect_reconciliation": {
@@ -237,5 +237,21 @@
     "size_bytes": 6084,
     "sha256": "428b1b6492cc993da2fc3ab6d9c2b9566771a562a1c2dd9922889e3600dad835",
     "git_blob_sha": "bec4108ec0941257b2673c3c7e04d87c369bdbad"
-  }
+  },
+  "latest_independent_review_commit": "edb8764b4d4ee56e49ff849b65b950e5e430fae0",
+  "independently_closed_functional_findings": [
+    "ARCH-01",
+    "ARCH-02",
+    "ARCH-03",
+    "MAJOR-B",
+    "MINOR-1",
+    "MINOR-2",
+    "MINOR-4",
+    "MINOR-5",
+    "MINOR-6",
+    "MAJOR-A",
+    "MINOR-3",
+    "MINOR-7"
+  ],
+  "only_open_finding": "R-1"
 }

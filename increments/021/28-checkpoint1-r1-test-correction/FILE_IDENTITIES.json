@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-24",
+  "timezone": "America/Sao_Paulo",
+  "coordination_input": "fcad8561b53b924ad2d04844c460fabd8489f866",
+  "excludes_self": true,
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 34,
+      "size_bytes": 2353,
+      "sha256": "03abf03cff138248e9f76cfcfcaf5dac8b690a22a7747a55050f0762b53bf362",
+      "git_blob_sha": "d9b1e189cd9e228cccc1d60e716354b98326bb4e"
+    },
+    {
+      "path": "increments/021/28-checkpoint1-r1-test-correction/CODEX_INCREMENT_021_CHECKPOINT1_R1_TEST_CORRECTION.md",
+      "lines": 54,
+      "size_bytes": 6033,
+      "sha256": "c079d09a506cbca7cea1bb674f1d8725d1a8f736ebf5c8b11b380f4e1b28608b",
+      "git_blob_sha": "cc34f1842a05a1da2b6178d0d42f1a246fe33b9b"
+    },
+    {
+      "path": "increments/021/28-checkpoint1-r1-test-correction/evidence/ARCHITECT_R1_VERIFICATION.json",
+      "lines": 119,
+      "size_bytes": 4405,
+      "sha256": "47bfeba2c51b1710dcca14da6d5494a4594f3806ae313e2d9fb614134a0f79a8",
+      "git_blob_sha": "f7b27d428a81c86704da07551db6d9d323df7f6c"
+    },
+    {
+      "path": "increments/021/28-checkpoint1-r1-test-correction/evidence/R1_ORDER_GOLDEN_VECTOR.json",
+      "lines": 24,
+      "size_bytes": 1141,
+      "sha256": "19f14197dd6cec0a989a9a2e3c4169c79050e13ad0db686b52fd59c2a8ca6774",
+      "git_blob_sha": "03875e795081156ef02595663ccc5e85c88f1325"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-FINAL-FOCAL-REVIEW.json",
+      "lines": 307,
+      "size_bytes": 15267,
+      "sha256": "bcb7dc477b88e33da1d5c3281b8f5983c2139d3b918905d3cd534624d5a2fea3",
+      "git_blob_sha": "e87697a48c5d837d34db1cbd4ea988ee14f26998"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-IMPLEMENTATION.json",
+      "lines": 257,
+      "size_bytes": 11407,
+      "sha256": "a6be149e1e7e574f1f72e1b16b1ce1f89c3e11c873b274db137c85d1a81afef6",
+      "git_blob_sha": "b288c53eb563b84d4d8287455b20a259b23ecbd9"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-R1-TEST-CORRECTION.json",
+      "lines": 187,
+      "size_bytes": 9858,
+      "sha256": "c96a36ec13dcb0ee63e068398dee3b18eaf1296f6712e85d5dad1a44835dcdf9",
+      "git_blob_sha": "a6bc1fd73faee981ed78c7b823a754ff9d6ab050"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-RESIDUAL-CORRECTIONS.json",
+      "lines": 284,
+      "size_bytes": 16109,
+      "sha256": "e005ef6dfa1d2c3d4a0d533c1b2fcf77b60bbca1073f7cf135a09d4e9fce219b",
+      "git_blob_sha": "19a0c60263621f04ff58174f21240e9b30cf86a4"
+    }
+  ]
+}

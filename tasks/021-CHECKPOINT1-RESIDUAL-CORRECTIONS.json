@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-RESIDUAL-CORRECTIONS",
-  "status": "RESIDUAL_DELIVERY_RECEIVED_FINAL_FOCAL_REVIEW_PENDING",
+  "status": "RESIDUALS_INDEPENDENTLY_CLOSED_R1_TEST_REGRESSION_PENDING",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -254,7 +254,7 @@
     "Do not remove or weaken valid tests; replace tautological assertion transparently, preserve scenario IDs; no passing by blanket mocks"
   ],
   "checkpoint1_approved": false,
-  "independent_final_focal_review_complete": false,
+  "independent_final_focal_review_complete": true,
   "cp2_implementation_authorized": false,
   "final_specification_frozen": true,
   "automated_dispatch": false,
@@ -277,5 +277,8 @@
     "sha256": "428b1b6492cc993da2fc3ab6d9c2b9566771a562a1c2dd9922889e3600dad835",
     "git_blob_sha": "bec4108ec0941257b2673c3c7e04d87c369bdbad"
   },
-  "next_task": "tasks/021-CHECKPOINT1-FINAL-FOCAL-REVIEW.json"
+  "next_task": "tasks/021-CHECKPOINT1-R1-TEST-CORRECTION.json",
+  "independent_final_focal_review_commit": "edb8764b4d4ee56e49ff849b65b950e5e430fae0",
+  "three_residuals_independently_closed": true,
+  "new_test_regression": "R-1"
 }

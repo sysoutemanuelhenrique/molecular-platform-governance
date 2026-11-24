@@ -1,0 +1,24 @@
+{
+  "status": "NON_NORMATIVE_DOCUMENTARY_GOLDEN_FOR_TEST_R1",
+  "basis": "SCHEMAS atom_ids_key envelope; preserves supplied vector order",
+  "atoms": [
+    {
+      "ordinal": 3,
+      "atom_id": "a"
+    },
+    {
+      "ordinal": 1,
+      "atom_id": "Z"
+    }
+  ],
+  "canonical_utf8": "{\"atoms\":[{\"id\":\"a\",\"ordinal\":3},{\"id\":\"Z\",\"ordinal\":1}],\"kind\":\"receptor-materialization-atom-ids\",\"version\":\"1.0\"}",
+  "expected_sha256_literal": "96fd3eacd89d16753dbdc5ec22bb79db0740e9f355e6322cb0c4641bc0f3106a",
+  "reversed_canonical_utf8": "{\"atoms\":[{\"id\":\"Z\",\"ordinal\":1},{\"id\":\"a\",\"ordinal\":3}],\"kind\":\"receptor-materialization-atom-ids\",\"version\":\"1.0\"}",
+  "reversed_sha256_literal": "bf820fe14730b4b8ede9d8e007e4c3d32f71def5d8a4747c657d6d76dac562d1",
+  "notes": [
+    "Order differs from both ordinal and ASCII-id sorting.",
+    "Keep existing thirteen goldens unchanged; add one test to allowed test file.",
+    "Expected literal was computed with hashlib over hand-written bytes before importing production.",
+    "No scientific RAW, native parsing, pytest or persistent artifact is claimed."
+  ]
+}

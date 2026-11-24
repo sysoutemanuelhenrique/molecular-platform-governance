@@ -1,0 +1,119 @@
+{
+  "code_head": "bbd491e1a0b3fcb913c3549b004120693212df62",
+  "source_sha256": "d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d",
+  "review_manifest_entries": [
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_FINAL_FOCAL_REVIEW.md",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 175,
+      "lf_count": 175,
+      "splitlines_count": 175,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-atom-ids-order-mutation.output.txt",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 4,
+      "lf_count": 4,
+      "splitlines_count": 4,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-atom-ids-order-mutation.sh",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 17,
+      "lf_count": 17,
+      "splitlines_count": 17,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-blocked-native-golden-and-format.output.txt",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 68,
+      "lf_count": 68,
+      "splitlines_count": 68,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-blocked-native-golden-and-format.py",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 70,
+      "lf_count": 70,
+      "splitlines_count": 70,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-independent-vectors.output.json",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 90,
+      "lf_count": 90,
+      "splitlines_count": 90,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-independent-vectors.py",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 60,
+      "lf_count": 60,
+      "splitlines_count": 60,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-inert-gemmi-sentinel.py",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 4,
+      "lf_count": 4,
+      "splitlines_count": 4,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-previous59-probes.py",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 146,
+      "lf_count": 146,
+      "splitlines_count": 146,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-previous59-regression-diff.json",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 100,
+      "lf_count": 100,
+      "splitlines_count": 101,
+      "ends_with_lf": false
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-pytest-91-with-sentinel.txt",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 100,
+      "lf_count": 100,
+      "splitlines_count": 100,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-residual-probes.output.json",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 365,
+      "lf_count": 365,
+      "splitlines_count": 365,
+      "ends_with_lf": true
+    },
+    {
+      "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-residual-probes.py",
+      "bytes_and_sha256_match": true,
+      "line_count_declared": 107,
+      "lf_count": 107,
+      "splitlines_count": 107,
+      "ends_with_lf": true
+    }
+  ],
+  "expected_generated_without_production": true,
+  "actual_original_order": "96fd3eacd89d16753dbdc5ec22bb79db0740e9f355e6322cb0c4641bc0f3106a",
+  "ordinal_sorted_control": "bf820fe14730b4b8ede9d8e007e4c3d32f71def5d8a4747c657d6d76dac562d1",
+  "atom_id_sorted_control": "bf820fe14730b4b8ede9d8e007e4c3d32f71def5d8a4747c657d6d76dac562d1",
+  "both_sorts_change_expected": true,
+  "native_modules_blocked_without_stub": true,
+  "pytest_executed": false,
+  "mutated_production_source": false,
+  "scope": "Output discriminator only; not execution of a future corrected pytest under mutants. Reviewer full mutant runs are supplied evidence."
+}
