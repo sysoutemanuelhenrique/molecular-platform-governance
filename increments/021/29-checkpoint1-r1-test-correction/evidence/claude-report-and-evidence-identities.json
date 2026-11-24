@@ -1,0 +1,98 @@
+{
+  "note": "All sha256/lines/size_bytes values below are the real committed Git blob bytes (git show <commit>:<path> | sha256sum), never local disk bytes - both repositories have core.autocrlf=true. Published after the files it identifies, in a separate commit, for the same reason as the prior CP1 reports: a file cannot state its own post-commit hash before that commit exists.",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "governance_branch": "claude/021-cp1-r1-test-correction-20261124",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-021-receptor-materialization",
+  "code_head_before_r1_correction": "bbd491e1a0b3fcb913c3549b004120693212df62",
+  "code_head_after_r1_correction": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "code_commit_parent": "bbd491e1a0b3fcb913c3549b004120693212df62",
+  "code_files": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+      "note": "unchanged by this round; identity verified equal to bbd491e",
+      "lines": 1724,
+      "size_bytes": 78807,
+      "sha256": "d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+      "lines": 1676,
+      "size_bytes": 83570,
+      "sha256": "9f72301ece6e55ef11d78d589f20822673887af10eeee1365d209099c3658ada"
+    }
+  ],
+  "governance_files": [
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/CLAUDE_INCREMENT_021_CHECKPOINT1_R1_TEST_CORRECTION_REPORT.md",
+      "commit": "066af3325c0c866183495c3f08f1e8bd9f3a0d07",
+      "lines": 133,
+      "size_bytes": 10445,
+      "sha256": "a275e1634808c4c0386d52ff90f8bf733e39894d140ccd7c262bf3bdca7c17e6"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-collect-after-r1-correction.txt",
+      "commit": "066af3325c0c866183495c3f08f1e8bd9f3a0d07",
+      "lines": 1575,
+      "size_bytes": 138102,
+      "sha256": "fd516ed893b30702684a5f563dec847f26c9efd133c02446c59470b3bd2940ff"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-collect-before-r1-correction.txt",
+      "commit": "066af3325c0c866183495c3f08f1e8bd9f3a0d07",
+      "lines": 1574,
+      "size_bytes": 137991,
+      "sha256": "2e5f7e2671e42eded791247c198cc2fb589d1b2f48692a5695a6e97deffded27"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-environment.txt",
+      "commit": "066af3325c0c866183495c3f08f1e8bd9f3a0d07",
+      "lines": 11,
+      "size_bytes": 305,
+      "sha256": "b06bfffc5941909b1bbad9911318fc4ace483b74ca0f2a2ac17f783cd8be0d54"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-full-suite-after-r1-correction.txt",
+      "commit": "066af3325c0c866183495c3f08f1e8bd9f3a0d07",
+      "lines": 29,
+      "size_bytes": 3003,
+      "sha256": "d7f62c147cbde457b5a08e51698d8dd53e5b8e537dfe6fa5e4f9904739510cb1"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-git-log.txt",
+      "commit": "066af3325c0c866183495c3f08f1e8bd9f3a0d07",
+      "lines": 59,
+      "size_bytes": 3236,
+      "sha256": "eddef2b7c0bc480c4726c4f760584cb76802acdb4a8532ef9d99bf95444755cc"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-new-tests-verbose.txt",
+      "commit": "066af3325c0c866183495c3f08f1e8bd9f3a0d07",
+      "lines": 101,
+      "size_bytes": 11012,
+      "sha256": "fba9889ac6d7d4e3fee2619b364f9ee9cf4b1213de579e971b1c35bac21ebcd5"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-r1-mutation-check.output.txt",
+      "commit": "066af3325c0c866183495c3f08f1e8bd9f3a0d07",
+      "lines": 6,
+      "size_bytes": 307,
+      "sha256": "03942ad714af3186f8e202fc795d3030ccb0c4ee625683db9091ab597338a753"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-r1-mutation-check.py",
+      "commit": "066af3325c0c866183495c3f08f1e8bd9f3a0d07",
+      "lines": 43,
+      "size_bytes": 2638,
+      "sha256": "11d3c5c7a94ec53954a5fddb98d1d01dd9acbb741d941a7509d4ad564ec00ad8"
+    }
+  ],
+  "verification_commands": [
+    "git show <code_commit>:<code path> | wc -lc",
+    "git show <code_commit>:<code path> | sha256sum",
+    "git show <governance commit>:<governance path> | wc -lc",
+    "git show <governance commit>:<governance path> | sha256sum"
+  ]
+}
