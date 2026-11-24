@@ -1,0 +1,138 @@
+{
+ "pyyaml": "6.0.3",
+ "cases": {
+  "lf": {
+   "sha256": "f34a28f244035066e59dc93b149bee932019916cde2d740aed7e2d96fbaa3770",
+   "loader020": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "draft": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "equivalent": true
+  },
+  "crlf": {
+   "sha256": "7b544fef90a4b5d07465f0e0dccbbe5233d6b60c7bd951e3791baa4d698755d8",
+   "loader020": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "draft": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "equivalent": true
+  },
+  "cr": {
+   "sha256": "a02c9e61180601dbd59a61a8c6211fa0e65598f39ade6d564db8317bf6e302dc",
+   "loader020": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "draft": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "equivalent": true
+  },
+  "mixed": {
+   "sha256": "1429cf6f37a563b9d9719bcbc008b3e18ccbf3eb3e83061f64274dfb317dbf41",
+   "loader020": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "draft": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "equivalent": true
+  },
+  "bom_lf": {
+   "sha256": "02ae6c3598294cbf8a99aad6c248da0c5bb48d2c7399b71ac13ab6fab6f8cb3f",
+   "loader020": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "draft": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "equivalent": true
+  },
+  "bom_crlf": {
+   "sha256": "9ffeeb6a555cd1e9cb59c22f8784aabe7cbeda7698d0f86f1c7a126f61ab72d7",
+   "loader020": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "draft": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "equivalent": true
+  },
+  "trailing_cr": {
+   "sha256": "e613cc955516e55792cb3a68cc318b98e7880bddf7880e22eb30fcc78de576fd",
+   "loader020": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "draft": [
+    "ok",
+    "{'id': 'Prot-A', 'name': 'xé', 'list': [1, 'two'], 'nested': {'a': 1}, 'block': 'line1\\nline2\\n'}"
+   ],
+   "equivalent": true
+  },
+  "block_scalar_crlf_inside": {
+   "sha256": "36e8a81eac346bf9df90bb0f1304c13d867146b052c2c7235c3b6ebcd20ea40d",
+   "loader020": [
+    "ok",
+    "{'block': 'a\\nb\\n'}"
+   ],
+   "draft": [
+    "ok",
+    "{'block': 'a\\nb\\n'}"
+   ],
+   "equivalent": true
+  },
+  "invalid_utf8": {
+   "sha256": "57f7a484664ef3d9bd3c2fe0c397aa888f6f5edca0055fa1d8609237fb7b6f62",
+   "loader020": [
+    "error",
+    "UnicodeDecodeError"
+   ],
+   "draft": [
+    "error",
+    "UnicodeDecodeError"
+   ],
+   "equivalent": true
+  },
+  "nel_u0085": {
+   "sha256": "4eca44cd99ed7cc2d70954e04e11deb27323fc97976fb8cab4435c5e539cbf5b",
+   "loader020": [
+    "error",
+    "ScannerError"
+   ],
+   "draft": [
+    "error",
+    "ScannerError"
+   ],
+   "equivalent": true
+  },
+  "ls_u2028": {
+   "sha256": "2b4550b2e3dfac8e931ce2ce1356e0c6ac9148008a71924ca3e8d18d6cf2b88e",
+   "loader020": [
+    "error",
+    "ScannerError"
+   ],
+   "draft": [
+    "error",
+    "ScannerError"
+   ],
+   "equivalent": true
+  }
+ },
+ "all_equivalent": true
+}

@@ -1,0 +1,92 @@
+{
+ "inv_5i55.txt": {
+  "categories": 54,
+  "unknown_categories": [],
+  "unknown_tags_in_filtered": {
+   "_cell": [
+    "angle_alpha_esd",
+    "angle_beta_esd",
+    "angle_gamma_esd",
+    "details",
+    "formula_units_z",
+    "length_a_esd",
+    "length_b_esd",
+    "length_c_esd",
+    "volume",
+    "volume_esd",
+    "reciprocal_angle_alpha",
+    "reciprocal_angle_beta",
+    "reciprocal_angle_gamma",
+    "reciprocal_angle_alpha_esd",
+    "reciprocal_angle_beta_esd",
+    "reciprocal_angle_gamma_esd",
+    "reciprocal_length_a",
+    "reciprocal_length_b",
+    "reciprocal_length_c",
+    "reciprocal_length_a_esd",
+    "reciprocal_length_b_esd",
+    "reciprocal_length_c_esd"
+   ],
+   "_symmetry": [
+    "pdbx_full_space_group_name_h-m"
+   ]
+  },
+  "missing_required_tags": {},
+  "operator_tables_present": [],
+  "struct_conn_symmetry": {
+   "covale 1_555 1_555": 1
+  }
+ },
+ "inv_1pfe.txt": {
+  "categories": 72,
+  "unknown_categories": [
+   "_entity_name_com",
+   "_exptl_crystal_grow_comp",
+   "_refine_analyze",
+   "_pdbx_refine",
+   "_struct_biol",
+   "_database_pdb_matrix",
+   "_pdbx_molecule_features",
+   "_pdbx_molecule",
+   "_struct_site_keywords",
+   "_pdbx_struct_assembly_prop",
+   "_pdbx_entry_details",
+   "_ndb_struct_conf_na",
+   "_ndb_struct_na_base_pair",
+   "_ndb_struct_na_base_pair_step"
+  ],
+  "unknown_tags_in_filtered": {
+   "_cell": [
+    "length_a_esd",
+    "length_b_esd",
+    "length_c_esd",
+    "angle_alpha_esd",
+    "angle_beta_esd",
+    "angle_gamma_esd"
+   ],
+   "_symmetry": [
+    "pdbx_full_space_group_name_h-m"
+   ],
+   "_pdbx_unobs_or_zero_occ_atoms": [
+    "label_alt_id"
+   ]
+  },
+  "missing_required_tags": {},
+  "operator_tables_present": [],
+  "struct_conn_symmetry": {
+   "covale 1_555 1_555": 16,
+   "hydrog 1_555 9_555": 18
+  }
+ },
+ "inv_3dg1_final.txt": {
+  "categories": 35,
+  "unknown_categories": [
+   "_pdbx_refine_tls",
+   "_pdbx_refine_tls_group"
+  ],
+  "unknown_tags_in_filtered": {},
+  "missing_required_tags": {},
+  "operator_tables_present": [],
+  "struct_conn_symmetry": {}
+ }
+}

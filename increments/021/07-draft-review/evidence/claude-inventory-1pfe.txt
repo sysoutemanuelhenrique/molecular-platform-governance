@@ -1,0 +1,107 @@
+BLOCK 1PFE
+CAT _entry. rows=1 id
+CAT _audit_conform. rows=1 dict_name dict_version dict_location
+CAT _database_2. rows=4 database_id database_code
+CAT _pdbx_database_related. rows=9 db_name db_id content_type details
+CAT _pdbx_database_status. rows=1 status_code entry_id recvd_initial_deposition_date deposit_site process_site status_code_sf status_code_mr SG_entry status_code_cs methods_development_category pdb_format_compatible
+CAT _audit_author. rows=1 name pdbx_ordinal
+CAT _citation. rows=1 id title journal_abbrev journal_volume page_first page_last year journal_id_ASTM country journal_id_ISSN journal_id_CSD book_publisher pdbx_database_id_PubMed pdbx_database_id_DOI
+CAT _citation_author. rows=2 citation_id name ordinal
+CAT _cell. rows=1 entry_id length_a length_b length_c angle_alpha angle_beta angle_gamma Z_PDB pdbx_unique_axis length_a_esd length_b_esd length_c_esd angle_alpha_esd angle_beta_esd angle_gamma_esd
+CAT _symmetry. rows=1 entry_id space_group_name_H-M pdbx_full_space_group_name_H-M cell_setting Int_Tables_number space_group_name_Hall
+CAT _entity. rows=5 id type src_method pdbx_description formula_weight pdbx_number_of_molecules pdbx_ec pdbx_mutation pdbx_fragment details
+CAT _entity_name_com. rows=1 entity_id name
+CAT _entity_poly. rows=2 entity_id type nstd_linkage nstd_monomer pdbx_seq_one_letter_code pdbx_seq_one_letter_code_can pdbx_strand_id pdbx_target_identifier
+CAT _entity_poly_seq. rows=18 entity_id num mon_id hetero
+CAT _entity_src_nat. rows=1 entity_id pdbx_src_id pdbx_alt_source_flag pdbx_beg_seq_num pdbx_end_seq_num common_name pdbx_organism_scientific pdbx_ncbi_taxonomy_id genus species strain tissue tissue_fraction pdbx_secretion pdbx_fragment pdbx_variant pdbx_cell_line pdbx_atcc pdbx_cellular_location pdbx_organ pdbx_organelle pdbx_cell pdbx_plasmid_name pdbx_plasmid_details details
+CAT _struct_ref. rows=2 id db_name db_code entity_id pdbx_seq_one_letter_code pdbx_align_begin pdbx_db_accession pdbx_db_isoform
+CAT _struct_ref_seq. rows=2 align_id ref_id pdbx_PDB_id_code pdbx_strand_id seq_align_beg pdbx_seq_align_beg_ins_code seq_align_end pdbx_seq_align_end_ins_code pdbx_db_accession db_align_beg pdbx_db_align_beg_ins_code db_align_end pdbx_db_align_end_ins_code pdbx_auth_seq_align_beg pdbx_auth_seq_align_end
+CAT _struct_ref_seq_dif. rows=2 align_id pdbx_pdb_id_code mon_id pdbx_pdb_strand_id seq_num pdbx_pdb_ins_code pdbx_seq_db_name pdbx_seq_db_accession_code db_mon_id pdbx_seq_db_seq_num details pdbx_auth_seq_num pdbx_ordinal
+CAT _chem_comp. rows=12 id type mon_nstd_flag name pdbx_synonyms formula formula_weight
+CAT _exptl. rows=1 entry_id method crystals_number
+CAT _exptl_crystal. rows=1 id density_meas density_Matthews density_percent_sol description F_000 preparation
+CAT _exptl_crystal_grow. rows=1 crystal_id method temp temp_details pH pdbx_pH_range pdbx_details
+CAT _exptl_crystal_grow_comp. rows=7 crystal_id id sol_id name volume conc details
+CAT _diffrn. rows=1 id ambient_temp ambient_temp_details crystal_id
+CAT _diffrn_detector. rows=1 diffrn_id detector type pdbx_collection_date details
+CAT _diffrn_radiation. rows=1 diffrn_id wavelength_id pdbx_monochromatic_or_laue_m_l monochromator pdbx_diffrn_protocol pdbx_scattering_type
+CAT _diffrn_radiation_wavelength. rows=1 id wavelength wt
+CAT _diffrn_source. rows=1 diffrn_id source type pdbx_synchrotron_site pdbx_synchrotron_beamline pdbx_wavelength pdbx_wavelength_list
+CAT _reflns. rows=1 pdbx_diffrn_id pdbx_ordinal entry_id observed_criterion_sigma_I observed_criterion_sigma_F d_resolution_low d_resolution_high number_obs number_all percent_possible_obs pdbx_Rmerge_I_obs pdbx_Rsym_value pdbx_netI_over_sigmaI B_iso_Wilson_estimate pdbx_redundancy R_free_details pdbx_chi_squared pdbx_scaling_rejects
+CAT _reflns_shell. rows=1 pdbx_diffrn_id pdbx_ordinal d_res_high d_res_low percent_possible_all Rmerge_I_obs pdbx_Rsym_value meanI_over_sigI_obs pdbx_redundancy percent_possible_obs number_unique_all number_measured_all number_measured_obs number_unique_obs pdbx_chi_squared
+CAT _refine. rows=1 pdbx_refine_id entry_id pdbx_diffrn_id pdbx_TLS_residual_ADP_flag ls_number_reflns_obs ls_number_reflns_all pdbx_ls_sigma_I pdbx_ls_sigma_F pdbx_data_cutoff_high_absF pdbx_data_cutoff_low_absF pdbx_data_cutoff_high_rms_absF ls_d_res_low ls_d_res_high ls_percent_reflns_obs ls_R_factor_obs ls_R_factor_all ls_R_factor_R_work ls_R_factor_R_free ls_R_factor_R_free_error ls_R_factor_R_free_error_details ls_percent_reflns_R_free ls_number_reflns_R_free ls_number_parameters ls_number_restraints occupancy_min occupancy_max correlation_coeff_Fo_to_Fc correlation_coeff_Fo_to_Fc_free B_iso_mean aniso_B[1][1] aniso_B[2][2] aniso_B[3][3] aniso_B[1][2] aniso_B[1][3] aniso_B[2][3] solvent_model_details solvent_model_param_ksol solvent_model_param_bsol pdbx_solvent_vdw_probe_radii pdbx_solvent_ion_probe_radii pdbx_solvent_shrinkage_radii pdbx_ls_cross_valid_method details pdbx_starting_model pdbx_method_to_determine_struct pdbx_isotropic_thermal_model pdbx_stereochemistry_target_values pdbx_stereochem_target_val_spec_case pdbx_R_Free_selection_details pdbx_overall_ESU_R pdbx_overall_ESU_R_Free overall_SU_ML pdbx_overall_phase_error overall_SU_B overall_SU_R_Cruickshank_DPI pdbx_overall_SU_R_free_Cruickshank_DPI pdbx_overall_SU_R_Blow_DPI pdbx_overall_SU_R_free_Blow_DPI ls_redundancy_reflns_obs overall_SU_R_free ls_wR_factor_R_free ls_wR_factor_R_work overall_FOM_free_R_set overall_FOM_work_R_set
+CAT _refine_analyze. rows=1 pdbx_refine_id entry_id Luzzati_coordinate_error_obs Luzzati_sigma_a_obs Luzzati_d_res_low_obs Luzzati_coordinate_error_free Luzzati_sigma_a_free Luzzati_d_res_low_free number_disordered_residues occupancy_sum_hydrogen occupancy_sum_non_hydrogen
+CAT _refine_hist. rows=1 pdbx_refine_id cycle_id pdbx_number_atoms_protein pdbx_number_atoms_nucleic_acid pdbx_number_atoms_ligand number_atoms_solvent number_atoms_total d_res_high d_res_low
+CAT _refine_ls_restr. rows=10 type dev_ideal dev_ideal_target weight number pdbx_refine_id pdbx_restraint_function
+CAT _refine_ls_shell. rows=1 pdbx_total_number_of_bins_used d_res_high d_res_low number_reflns_R_work R_factor_R_work percent_reflns_obs R_factor_R_free R_factor_R_free_error percent_reflns_R_free number_reflns_R_free redundancy_reflns_obs pdbx_refine_id number_reflns_all number_reflns_obs R_factor_all
+CAT _pdbx_refine. rows=1 pdbx_refine_id entry_id R_factor_all_no_cutoff R_factor_obs_no_cutoff free_R_factor_no_cutoff free_R_error_no_cutoff free_R_val_test_set_size_perc_no_cutoff free_R_val_test_set_ct_no_cutoff R_factor_all_4sig_cutoff R_factor_obs_4sig_cutoff free_R_factor_4sig_cutoff free_R_val_test_set_size_perc_4sig_cutoff free_R_val_test_set_ct_4sig_cutoff number_reflns_obs_4sig_cutoff
+CAT _struct. rows=1 entry_id title pdbx_descriptor pdbx_model_details pdbx_CASP_flag pdbx_model_type_details
+CAT _struct_keywords. rows=1 entry_id pdbx_keywords text
+CAT _struct_asym. rows=7 id pdbx_blank_PDB_chainid_flag pdbx_modified entity_id details
+CAT _struct_biol. rows=1 id details pdbx_parent_biol_id
+CAT _struct_conn. rows=34 id conn_type_id pdbx_leaving_atom_flag pdbx_PDB_id ptnr1_label_asym_id ptnr1_label_comp_id ptnr1_label_seq_id ptnr1_label_atom_id pdbx_ptnr1_label_alt_id pdbx_ptnr1_PDB_ins_code pdbx_ptnr1_standard_comp_id ptnr1_symmetry ptnr2_label_asym_id ptnr2_label_comp_id ptnr2_label_seq_id ptnr2_label_atom_id pdbx_ptnr2_label_alt_id pdbx_ptnr2_PDB_ins_code ptnr1_auth_asym_id ptnr1_auth_comp_id ptnr1_auth_seq_id ptnr2_auth_asym_id ptnr2_auth_comp_id ptnr2_auth_seq_id ptnr2_symmetry pdbx_ptnr3_label_atom_id pdbx_ptnr3_label_seq_id pdbx_ptnr3_label_comp_id pdbx_ptnr3_label_asym_id pdbx_ptnr3_label_alt_id pdbx_ptnr3_PDB_ins_code details pdbx_dist_value pdbx_value_order
+CAT _struct_conn_type. rows=2 id criteria reference
+CAT _struct_site. rows=3 id pdbx_evidence_code pdbx_auth_asym_id pdbx_auth_comp_id pdbx_auth_seq_id pdbx_auth_ins_code pdbx_num_residues details
+CAT _struct_site_gen. rows=17 id site_id pdbx_num_res label_comp_id label_asym_id label_seq_id pdbx_auth_ins_code auth_comp_id auth_asym_id auth_seq_id label_atom_id label_alt_id symmetry details
+CAT _database_PDB_matrix. rows=1 entry_id origx[1][1] origx[1][2] origx[1][3] origx[2][1] origx[2][2] origx[2][3] origx[3][1] origx[3][2] origx[3][3] origx_vector[1] origx_vector[2] origx_vector[3]
+CAT _atom_sites. rows=1 entry_id fract_transf_matrix[1][1] fract_transf_matrix[1][2] fract_transf_matrix[1][3] fract_transf_matrix[2][1] fract_transf_matrix[2][2] fract_transf_matrix[2][3] fract_transf_matrix[3][1] fract_transf_matrix[3][2] fract_transf_matrix[3][3] fract_transf_vector[1] fract_transf_vector[2] fract_transf_vector[3]
+CAT _atom_type. rows=6 symbol
+CAT _atom_site. rows=342 group_PDB id type_symbol label_atom_id label_alt_id label_comp_id label_asym_id label_entity_id label_seq_id pdbx_PDB_ins_code Cartn_x Cartn_y Cartn_z occupancy B_iso_or_equiv pdbx_formal_charge auth_seq_id auth_comp_id auth_asym_id auth_atom_id pdbx_PDB_model_num
+CAT _atom_site_anisotrop. rows=342 id type_symbol pdbx_label_atom_id pdbx_label_alt_id pdbx_label_comp_id pdbx_label_asym_id pdbx_label_seq_id pdbx_PDB_ins_code U[1][1] U[2][2] U[3][3] U[1][2] U[1][3] U[2][3] pdbx_auth_seq_id pdbx_auth_comp_id pdbx_auth_asym_id pdbx_auth_atom_id
+CAT _pdbx_poly_seq_scheme. rows=18 asym_id entity_id seq_id mon_id ndb_seq_num pdb_seq_num auth_seq_num pdb_mon_id auth_mon_id pdb_strand_id pdb_ins_code hetero
+CAT _pdbx_molecule_features. rows=1 prd_id name type class details
+CAT _pdbx_molecule. rows=3 instance_id prd_id asym_id
+CAT _struct_site_keywords. rows=1 site_id text
+CAT _pdbx_struct_assembly. rows=1 id details method_details oligomeric_details oligomeric_count
+CAT _pdbx_struct_assembly_gen. rows=1 assembly_id oper_expression asym_id_list
+CAT _pdbx_struct_assembly_prop. rows=3 biol_id type value details
+CAT _pdbx_struct_oper_list. rows=2 id type name symmetry_operation matrix[1][1] matrix[1][2] matrix[1][3] vector[1] matrix[2][1] matrix[2][2] matrix[2][3] vector[2] matrix[3][1] matrix[3][2] matrix[3][3] vector[3]
+CAT _pdbx_struct_special_symmetry. rows=4 id PDB_model_num auth_asym_id auth_comp_id auth_seq_id PDB_ins_code label_asym_id label_comp_id label_seq_id
+CAT _pdbx_audit_revision_history. rows=5 ordinal data_content_type major_revision minor_revision revision_date
+CAT _pdbx_audit_revision_details. rows=1 ordinal revision_ordinal data_content_type provider type description
+CAT _pdbx_audit_revision_group. rows=8 ordinal revision_ordinal data_content_type group
+CAT _software. rows=4 name classification version citation_id pdbx_ordinal
+CAT _pdbx_entry_details. rows=1 entry_id compound_details source_details nonpolymer_details sequence_details
+CAT _pdbx_validate_rmsd_bond. rows=9 id PDB_model_num auth_atom_id_1 auth_asym_id_1 auth_comp_id_1 auth_seq_id_1 PDB_ins_code_1 label_alt_id_1 auth_atom_id_2 auth_asym_id_2 auth_comp_id_2 auth_seq_id_2 PDB_ins_code_2 label_alt_id_2 bond_value bond_target_value bond_deviation bond_standard_deviation linker_flag
+CAT _pdbx_validate_rmsd_angle. rows=11 id PDB_model_num auth_atom_id_1 auth_asym_id_1 auth_comp_id_1 auth_seq_id_1 PDB_ins_code_1 label_alt_id_1 auth_atom_id_2 auth_asym_id_2 auth_comp_id_2 auth_seq_id_2 PDB_ins_code_2 label_alt_id_2 auth_atom_id_3 auth_asym_id_3 auth_comp_id_3 auth_seq_id_3 PDB_ins_code_3 label_alt_id_3 angle_value angle_target_value angle_deviation angle_standard_deviation linker_flag
+CAT _pdbx_validate_polymer_linkage. rows=1 id PDB_model_num auth_atom_id_1 auth_asym_id_1 auth_comp_id_1 auth_seq_id_1 PDB_ins_code_1 label_alt_id_1 auth_atom_id_2 auth_asym_id_2 auth_comp_id_2 auth_seq_id_2 PDB_ins_code_2 label_alt_id_2 dist
+CAT _pdbx_unobs_or_zero_occ_atoms. rows=2 id PDB_model_num polymer_flag occupancy_flag auth_asym_id auth_comp_id auth_seq_id PDB_ins_code auth_atom_id label_alt_id label_asym_id label_comp_id label_seq_id label_atom_id
+CAT _ndb_struct_conf_na. rows=1 entry_id feature
+CAT _ndb_struct_na_base_pair. rows=8 model_number i_label_asym_id i_label_comp_id i_label_seq_id i_symmetry j_label_asym_id j_label_comp_id j_label_seq_id j_symmetry shear stretch stagger buckle propeller opening pair_number pair_name i_auth_asym_id i_auth_seq_id i_PDB_ins_code j_auth_asym_id j_auth_seq_id j_PDB_ins_code hbond_type_28 hbond_type_12
+CAT _ndb_struct_na_base_pair_step. rows=5 model_number i_label_asym_id_1 i_label_comp_id_1 i_label_seq_id_1 i_symmetry_1 j_label_asym_id_1 j_label_comp_id_1 j_label_seq_id_1 j_symmetry_1 i_label_asym_id_2 i_label_comp_id_2 i_label_seq_id_2 i_symmetry_2 j_label_asym_id_2 j_label_comp_id_2 j_label_seq_id_2 j_symmetry_2 shift slide rise tilt roll twist x_displacement y_displacement helical_rise inclination tip helical_twist step_number step_name i_auth_asym_id_1 i_auth_seq_id_1 i_PDB_ins_code_1 j_auth_asym_id_1 j_auth_seq_id_1 j_PDB_ins_code_1 i_auth_asym_id_2 i_auth_seq_id_2 i_PDB_ins_code_2 j_auth_asym_id_2 j_auth_seq_id_2 j_PDB_ins_code_2
+CAT _pdbx_entity_nonpoly. rows=3 entity_id name comp_id
+CAT _pdbx_nonpoly_scheme. rows=83 asym_id entity_id mon_id ndb_seq_num pdb_seq_num auth_seq_num pdb_mon_id auth_mon_id pdb_strand_id pdb_ins_code
+CONN covale1 covale 1_555 1_555
+CONN covale2 covale 1_555 1_555
+CONN covale3 covale 1_555 1_555
+CONN covale4 covale 1_555 1_555
+CONN covale5 covale 1_555 1_555
+CONN covale6 covale 1_555 1_555
+CONN covale7 covale 1_555 1_555
+CONN covale8 covale 1_555 1_555
+CONN covale9 covale 1_555 1_555
+CONN covale10 covale 1_555 1_555
+CONN covale11 covale 1_555 1_555
+CONN covale12 covale 1_555 1_555
+CONN covale13 covale 1_555 1_555
+CONN covale14 covale 1_555 1_555
+CONN covale15 covale 1_555 1_555
+CONN covale16 covale 1_555 1_555
+CONN hydrog1 hydrog 1_555 9_555
+CONN hydrog2 hydrog 1_555 9_555
+CONN hydrog3 hydrog 1_555 9_555
+CONN hydrog4 hydrog 1_555 9_555
+CONN hydrog5 hydrog 1_555 9_555
+CONN hydrog6 hydrog 1_555 9_555
+CONN hydrog7 hydrog 1_555 9_555
+CONN hydrog8 hydrog 1_555 9_555
+CONN hydrog9 hydrog 1_555 9_555
+CONN hydrog10 hydrog 1_555 9_555
+CONN hydrog11 hydrog 1_555 9_555
+CONN hydrog12 hydrog 1_555 9_555
+CONN hydrog13 hydrog 1_555 9_555
+CONN hydrog14 hydrog 1_555 9_555
+CONN hydrog15 hydrog 1_555 9_555
+CONN hydrog16 hydrog 1_555 9_555
+CONN hydrog17 hydrog 1_555 9_555
+CONN hydrog18 hydrog 1_555 9_555

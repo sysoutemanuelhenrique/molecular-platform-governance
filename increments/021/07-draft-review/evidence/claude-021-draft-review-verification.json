@@ -1,0 +1,81 @@
+{
+  "task_id": "021-DRAFT-REVIEW",
+  "role": "claude-independent-reviewer-separate-from-implementer",
+  "date": "2026-11-23",
+  "timezone": "America/Sao_Paulo",
+  "dispatch": "Direct owner message naming snapshot b948f60245b71da71fa4535e8ef7ffa3957b35b4; task file not edited",
+  "gates": {
+    "coordination_branch": "docs/020-a-candidate1-review-20261020",
+    "dispatched_snapshot": "b948f60245b71da71fa4535e8ef7ffa3957b35b4",
+    "remote_head_observed_before_work": "b948f60245b71da71fa4535e8ef7ffa3957b35b4",
+    "governance_input_parent_in_history": "3f0f13427ff347acc53e56951f077cf0b29e4925",
+    "code_main_expected": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "code_main_remote_observed": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "all_gates_match": true
+  },
+  "manifests": {
+    "current_draft_manifest": {"path": "increments/021/06-draft-specification/evidence/FILE_IDENTITIES.json", "checked_at": "b948f60", "entries": 10, "all_match": true},
+    "preparation_manifest": {"path": "increments/021/05-draft-preparation/FILE_IDENTITIES.json", "checked_at": "3f0f134", "entries": 6, "all_match": true},
+    "source_and_input_identities": {"path": "increments/021/06-draft-specification/evidence/SOURCE_AND_INPUT_IDENTITIES.json", "governance_entries_match": 7, "code_entries_match_at_08b797e": 12}
+  },
+  "draft_materials_verified": {
+    "INCREMENT_021_DRAFT_SPECIFICATION.md": [344, 50807, "f914d56eab971ac4c8bb889038490b02c2ff01a21c2d2f141dc33cc8ad17acef"],
+    "evidence/SCHEMAS_021.md": [102, 15093, "6ae0bcc0e3c0f80fccf558e767d85e4ecf887bd5630dc688b2f0ca6a30060fa8"],
+    "evidence/CATALOG_021.json": [1713, 41866, "d35f12c3c90b9c55a7204b8d5003030b5ec84148e5e149b1050eb1cd952110f7"],
+    "evidence/SCENARIOS_021.csv": [141, 17712, "fb907fbe223b2b5cc4337c4482f611dec189a1e4096cfaa3147d967cf351b4a5"],
+    "evidence/OWNER_DRAFT_AUTHORIZATION.md": [22, 1592, "0091f4d87c4178ac7906606a176d4346411bc2e0193cca2fdfaa1dacb90e33b6"],
+    "owner_scope_approval_at_771d1aa": [47, 3446, "8b5cc01109be88586d6b32b165dfca72e6d3141e66c59106e16ca6f257c777b4"],
+    "prior_focal_review_at_8778b83": [121, 11638, "231cbbf892a990f2ca4617719e7c468b2ac5d1ce3d97d47cbaae2b90a2f2d463"]
+  },
+  "internal_consistency_checks": {
+    "catalogue_categories": 77,
+    "catalogue_actions": {"filter": 24, "generate": 1, "omit": 52},
+    "scenario_rows": 140,
+    "scenario_ids_unique": true,
+    "scenarios_per_checkpoint": {"CP1": 40, "CP2": 50, "CP3": 30, "CP4": 20},
+    "catalogue_scenario_refs_missing": 0,
+    "catalogue_preserve_omit_overlap": 0,
+    "catalogue_row_rules_absent_from_body": 0,
+    "omit_tags_type_in_omitted_categories": "string 'all' (52 categories), not a list"
+  },
+  "gemmi_primary_sources_consulted": {
+    "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+    "include/gemmi/numb.hpp": {"blob": "54f09d5b08acd09b79f0bc1b7a66121dddb13d73", "lines": [19, 41], "fact": "as_number parses full float incl. exponent, then optional (su)"},
+    "include/gemmi/symmetry.hpp": {"blob": "203324fdded420fb0dacef81c8c5e1251d8cd89d", "lines": [492, 494], "fact": "identity always kept as sym_ops[0]"},
+    "src/mmcif.cpp": {"blob": "1da0854ced3deaa2f72b45ed3817639efaea7f28", "lines": [[206, 220], [769, 787], [1029, 1029]], "fact": "struct_conn Same ASU by equal codes; NCS code!=given kept as not-expanded; space group from H-M name"},
+    "include/gemmi/model.hpp": {"blob": "58ed6103c26c445f12c0f0321379c27aed123b98", "lines": [1005, 1012], "fact": "ncs_not_expanded() true when any NCS op is not given"},
+    "src/to_mmcif.cpp": {"blob": "e97fe3ed79f235852a9ab98367ece37b157a03d7", "lines": [364, 395], "fact": "writer emits ptnr1_symmetry 1_555; no operator table written"},
+    "tests/5i55.cif": {"blob": "c75212eaf020ae1aaba4bb9806e392b4e27bd43a", "sha256": "cae937745acc22d1c3bdd21cc6fa3c36a3d9f271494c22e3e3a3ce512c72fb1d"},
+    "tests/1pfe.cif.gz": {"blob": "ad28464ae20d80f847442652a7a2af2f8e002dc9", "sha256_gz": "396503146c8b202f3fe2ca5c528f2f64cb310a0a05b3336bfdbe6867734c3300", "sha256_decompressed": "6dd126acebfde1f4ec0bd738897705a5692b208bef5d3410aa4729a5f7fb0728"},
+    "tests/3dg1_final.cif": {"blob": "f8c27d9d6d59cf9a7c9f1d23c6834e8ef9d3b392", "sha256": "ee80b13f9ef281a1ad9fe1a1ed5e52e122636c6dacad90574e10f5412324e256"}
+  },
+  "own_execution": {
+    "cif_inventory_probe": {
+      "source": "evidence/claude-cif-inventory-probe.cpp",
+      "build": "g++ 13.3.0 -std=c++17 against header-only Gemmi 0.7.5 include tree, external scratch, Linux",
+      "inputs": ["tests/5i55.cif", "tests/1pfe.cif.gz (decompressed in scratch)", "tests/3dg1_final.cif"],
+      "outputs": ["evidence/claude-inventory-5i55.txt", "evidence/claude-inventory-1pfe.txt", "evidence/claude-inventory-3dg1_final.txt"]
+    },
+    "catalog_coverage": {
+      "script": "evidence/claude-catalog-coverage.py (python3 -I, stdlib only)",
+      "output": "evidence/claude-catalog-coverage.output.json",
+      "result": "all three real mmCIF samples would be rejected by CATALOG_021 (unknown tags and/or categories); none carries _symmetry_equiv or _space_group_symop"
+    },
+    "notef1_equivalence": {
+      "script": "evidence/claude-notef1-equivalence.py (python3 -I, PyYAML 6.0.3 in reviewer sandbox; project pins PyYAML>=6.0)",
+      "output": "evidence/claude-notef1-equivalence.output.json",
+      "result": "11/11 synthetic cases equivalent between 020 read_text+safe_load and draft bytes->strict UTF-8->CRLF/CR->LF->safe_load"
+    },
+    "pytest_executed": false,
+    "gemmi_python_imported_or_executed": false,
+    "materialization_performed": false,
+    "windows_tests": false,
+    "concurrency_tests": false,
+    "web_access": false,
+    "packages_installed": false
+  },
+  "limitations": "Coverage evidence is three real files shipped with Gemmi, not a population estimate; wwPDB dictionary pages were not consulted by the reviewer; catalogue tag names were checked against real files and Gemmi source, not against the full DDL.",
+  "code_repository_modified": false,
+  "architect_documents_modified": false,
+  "increment_020_a": "STAND-BY, untouched"
+}
