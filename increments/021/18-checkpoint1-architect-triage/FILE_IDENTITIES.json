@@ -1,0 +1,56 @@
+{
+  "coordination_input_commit": "3cda329b0e19a972d9858e26b58052873655ac07",
+  "code_commit": "711f3070765efe67a5799f939f1a18306ed8afdd",
+  "report_commit": "51752b4ce7603d1f14677b0b030edc176b9df13f",
+  "note": "Current triage/task publication excluding self; original implementer files remain on their exact snapshot. Conditional probes are not native production tests.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 37,
+      "size_bytes": 2851,
+      "sha256": "9233e91536076b54e8084748f72360da6970b4808ea7af21a50f2ff5e41a6a65"
+    },
+    {
+      "path": "increments/021/18-checkpoint1-architect-triage/CODEX_INCREMENT_021_CHECKPOINT1_TRIAGE.md",
+      "lines": 67,
+      "size_bytes": 8807,
+      "sha256": "540d6aed1bc490006228734064567b87e86fecc7297d9fdf29568bc25fda22fe"
+    },
+    {
+      "path": "increments/021/18-checkpoint1-architect-triage/evidence/ARCHITECT_DOMAIN_PROBES.output.json",
+      "lines": 120,
+      "size_bytes": 3668,
+      "sha256": "dc42e264c5ee4748acf65cdffabe5de6d8557f8bf18981cb8fafd153130cc851"
+    },
+    {
+      "path": "increments/021/18-checkpoint1-architect-triage/evidence/ARCHITECT_DOMAIN_PROBES.py",
+      "lines": 76,
+      "size_bytes": 6032,
+      "sha256": "c1b9a0e7a1f0ef604101a1638c98a8d876070d1f98ed9b9236a51b8e8d96c4d7"
+    },
+    {
+      "path": "increments/021/18-checkpoint1-architect-triage/evidence/ARCHITECT_VERIFICATION.json",
+      "lines": 51,
+      "size_bytes": 1394,
+      "sha256": "c3ee7f2e5385663c8c4b416b992c73edd98fcec3197c37ba2e2cf5b3def10178"
+    },
+    {
+      "path": "increments/021/18-checkpoint1-architect-triage/evidence/INPUT_IDENTITIES.json",
+      "lines": 85,
+      "size_bytes": 3453,
+      "sha256": "206d66489e1928bcd1139a46375abf289f42b0363ee8818a0fce16f66cff00c2"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-ADVERSARIAL-REVIEW.json",
+      "lines": 224,
+      "size_bytes": 10164,
+      "sha256": "e977c27911633e1788bdd5eb3a3e2a59d41d00c6f4a811b8bc81982222b61c69"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-IMPLEMENTATION.json",
+      "lines": 197,
+      "size_bytes": 9299,
+      "sha256": "a922aeaf82f7a3ef49d3481136d2fecf4752d1e7ed7aab5b569cba55ff6e38c6"
+    }
+  ]
+}

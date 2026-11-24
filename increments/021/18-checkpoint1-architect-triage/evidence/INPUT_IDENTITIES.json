@@ -1,0 +1,85 @@
+{
+  "coordination_input_commit": "3cda329b0e19a972d9858e26b58052873655ac07",
+  "code_commit": "711f3070765efe67a5799f939f1a18306ed8afdd",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "report_head": "51752b4ce7603d1f14677b0b030edc176b9df13f",
+  "code_files": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 1418,
+      "size_bytes": 60988,
+      "sha256": "b4a596965f80b5a2a8e5e6ceabff55db72f649f7a23241e816e4be04b51b0357"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 791,
+      "size_bytes": 38057,
+      "sha256": "ae8af3f9f6120a258ad7bd569d32a707337d3e6e69cc87f566760bbfd2bf86fb"
+    }
+  ],
+  "report_files": [
+    {
+      "path": "increments/021/17-checkpoint1-implementation/CLAUDE_INCREMENT_021_CHECKPOINT1_IMPLEMENTATION_REPORT.md",
+      "commit": "f725307737b05491699360c5af1a17fe6c7da67c",
+      "lines": 160,
+      "size_bytes": 15963,
+      "sha256": "135a44606d76515e25b2bde042bb41e87f4698ce61b9780040c5dd8262fff934"
+    },
+    {
+      "path": "increments/021/17-checkpoint1-implementation/evidence/claude-baseline-pytest-collect.txt",
+      "commit": "363478df43755ca67abe9561c904213b04f62d6c",
+      "lines": 1483,
+      "size_bytes": 128792,
+      "sha256": "fb522f255a0724a7c94d43d15105a871ec863ada6aedd68e971fd7b76ab7bba2"
+    },
+    {
+      "path": "increments/021/17-checkpoint1-implementation/evidence/claude-environment.txt",
+      "commit": "363478df43755ca67abe9561c904213b04f62d6c",
+      "lines": 11,
+      "size_bytes": 257,
+      "sha256": "6ac58e80b6c37aec1568a381dd698624fec3431c5e67f7fdae463c63b2d078f8"
+    },
+    {
+      "path": "increments/021/17-checkpoint1-implementation/evidence/claude-full-suite-after.txt",
+      "commit": "363478df43755ca67abe9561c904213b04f62d6c",
+      "lines": 23,
+      "size_bytes": 1804,
+      "sha256": "d17284ee06e249ba1c3dfb9bd800c7d32e0dde43a93beeb233375b79c9e4434a"
+    },
+    {
+      "path": "increments/021/17-checkpoint1-implementation/evidence/claude-git-log.txt",
+      "commit": "363478df43755ca67abe9561c904213b04f62d6c",
+      "lines": 30,
+      "size_bytes": 1541,
+      "sha256": "b1500d503ca393e160bfc3deb179c677cb78246ffbf40c84107ce50b3379e9c5"
+    },
+    {
+      "path": "increments/021/17-checkpoint1-implementation/evidence/claude-new-tests-verbose.txt",
+      "commit": "363478df43755ca67abe9561c904213b04f62d6c",
+      "lines": 52,
+      "size_bytes": 5261,
+      "sha256": "f41c3b09d33fcc9db6cf1f93bf43212b60c9afbe64cbb4c88c31ab03b8336615"
+    },
+    {
+      "path": "increments/021/17-checkpoint1-implementation/evidence/claude-scenario-matrix.json",
+      "commit": "363478df43755ca67abe9561c904213b04f62d6c",
+      "lines": 48,
+      "size_bytes": 17034,
+      "sha256": "8c245182a212402f44d98848671592d1608487ba68f0e4ea6838340af0f6070c"
+    }
+  ],
+  "report_manifest": {
+    "path": "increments/021/17-checkpoint1-implementation/evidence/claude-report-and-evidence-identities.json",
+    "sha256": "f85e7f1e8f0bb121d1cf59699931e1ad2096c40b9b0b18456e6cea272bb56840"
+  },
+  "all_68_code_blobs_verified": true,
+  "python_ast_validation": true,
+  "governance_delivery_changed_existing_files": false,
+  "governance_delivery_added_files": 8,
+  "governance_report_commit_chain": [
+    "51752b4ce7603d1f14677b0b030edc176b9df13f",
+    "f725307737b05491699360c5af1a17fe6c7da67c",
+    "363478df43755ca67abe9561c904213b04f62d6c",
+    "3cda329b0e19a972d9858e26b58052873655ac07"
+  ]
+}

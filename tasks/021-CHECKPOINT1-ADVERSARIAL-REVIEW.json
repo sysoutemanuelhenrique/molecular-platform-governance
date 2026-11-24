@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-CHECKPOINT1-ADVERSARIAL-REVIEW",
+  "status": "READY_FOR_DISPATCH",
+  "dispatch_status": "NOT_DISPATCHED",
+  "assigned_role": "claude-independent-reviewer-separate-from-implementer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "preparation_input_commit": "3cda329b0e19a972d9858e26b58052873655ac07",
+  "execution_snapshot": "Immutable publication SHA supplied in handoff; stop if remote coordination HEAD differs",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-021-receptor-materialization",
+  "code_head": "711f3070765efe67a5799f939f1a18306ed8afdd",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "expected_direct_parent": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_access": "STRICTLY_READ_ONLY",
+  "code_allowlist": [
+    "src/molecular/receptor_materialization.py",
+    "tests/test_receptor_materialization.py"
+  ],
+  "implementation_report_branch": "claude/021-cp1-implementation-report-20261124",
+  "implementation_report_commit": "51752b4ce7603d1f14677b0b030edc176b9df13f",
+  "implementation_report": {
+    "path": "increments/021/17-checkpoint1-implementation/CLAUDE_INCREMENT_021_CHECKPOINT1_IMPLEMENTATION_REPORT.md",
+    "commit": "f725307737b05491699360c5af1a17fe6c7da67c",
+    "lines": 160,
+    "size_bytes": 15963,
+    "sha256": "135a44606d76515e25b2bde042bb41e87f4698ce61b9780040c5dd8262fff934"
+  },
+  "implementation_manifest": "increments/021/17-checkpoint1-implementation/evidence/claude-report-and-evidence-identities.json",
+  "code_files": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 1418,
+      "size_bytes": 60988,
+      "sha256": "b4a596965f80b5a2a8e5e6ceabff55db72f649f7a23241e816e4be04b51b0357"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 791,
+      "size_bytes": 38057,
+      "sha256": "ae8af3f9f6120a258ad7bd569d32a707337d3e6e69cc87f566760bbfd2bf86fb"
+    }
+  ],
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "normative_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "implementation_authorization_snapshot": "3cda329b0e19a972d9858e26b58052873655ac07",
+  "implementation_authorization_record": {
+    "path": "increments/021/16-checkpoint1-preparation/OWNER_CHECKPOINT1_IMPLEMENTATION_AUTHORIZATION.md",
+    "lines": 55,
+    "size_bytes": 4625,
+    "sha256": "589eb02982413e6461a59d8ec72ab468986b8d677bf3120cf43a88eaea756f18"
+  },
+  "architect_triage": {
+    "path": "increments/021/18-checkpoint1-architect-triage/CODEX_INCREMENT_021_CHECKPOINT1_TRIAGE.md",
+    "lines": 67,
+    "size_bytes": 8807,
+    "sha256": "540d6aed1bc490006228734064567b87e86fecc7297d9fdf29568bc25fda22fe"
+  },
+  "triage_evidence": [
+    {
+      "path": "increments/021/18-checkpoint1-architect-triage/evidence/ARCHITECT_DOMAIN_PROBES.py",
+      "lines": 76,
+      "size_bytes": 6032,
+      "sha256": "c1b9a0e7a1f0ef604101a1638c98a8d876070d1f98ed9b9236a51b8e8d96c4d7"
+    },
+    {
+      "path": "increments/021/18-checkpoint1-architect-triage/evidence/ARCHITECT_DOMAIN_PROBES.output.json",
+      "lines": 120,
+      "size_bytes": 3668,
+      "sha256": "dc42e264c5ee4748acf65cdffabe5de6d8557f8bf18981cb8fafd153130cc851"
+    },
+    {
+      "path": "increments/021/18-checkpoint1-architect-triage/evidence/ARCHITECT_VERIFICATION.json",
+      "lines": 51,
+      "size_bytes": 1394,
+      "sha256": "c3ee7f2e5385663c8c4b416b992c73edd98fcec3197c37ba2e2cf5b3def10178"
+    },
+    {
+      "path": "increments/021/18-checkpoint1-architect-triage/evidence/INPUT_IDENTITIES.json",
+      "lines": 85,
+      "size_bytes": 3453,
+      "sha256": "206d66489e1928bcd1139a46375abf289f42b0363ee8818a0fce16f66cff00c2"
+    }
+  ],
+  "normative_scenarios": [
+    "T021-001",
+    "T021-002",
+    "T021-003",
+    "T021-004",
+    "T021-005",
+    "T021-006",
+    "T021-007",
+    "T021-008",
+    "T021-009",
+    "T021-010",
+    "T021-011",
+    "T021-012",
+    "T021-013",
+    "T021-014",
+    "T021-015",
+    "T021-016",
+    "T021-017",
+    "T021-018",
+    "T021-019",
+    "T021-020",
+    "T021-021",
+    "T021-022",
+    "T021-023",
+    "T021-024",
+    "T021-025",
+    "T021-026",
+    "T021-027",
+    "T021-028",
+    "T021-029",
+    "T021-030",
+    "T021-031",
+    "T021-032",
+    "T021-033",
+    "T021-034",
+    "T021-035",
+    "T021-036",
+    "T021-037",
+    "T021-038",
+    "T021-039",
+    "T021-040",
+    "T021-159",
+    "T021-160",
+    "T021-161"
+  ],
+  "normative_scenario_count": 43,
+  "required_preflight": [
+    "Read instructions/STATUS/task, complete normative inputs and implementation report; verify exact identities",
+    "Confirm code HEAD and direct parent, both main refs, coordination snapshot and report branch expected HEAD; stop if changed",
+    "Verify baseline..HEAD exactly two allowed new files and governance report branch only eight own added files",
+    "Do not rely on the pasted transcript or reported test counts as substitute for real source/available execution"
+  ],
+  "required_scope": [
+    "Read both code/test files completely; inspect all 43 mappings and actual assertions",
+    "Independently reproduce/classify ARCH-01 runtime import boundary, ARCH-02 model projection and ARCH-03 filter+generated-tag restriction; do not accept triage on authority",
+    "Test fresh-process import without optional Gemmi/RDKit; string search/hasattr is insufficient. Use unmodified production source",
+    "Reproduce conditional domain probes without an inert sentinel when actual Gemmi is available; distinguish native-free import failure from conditional logic results",
+    "Resolve the preparation-brief/helper reuse conflict in the report against the frozen pure-domain contract; do not widen code allowlist or edit historical instructions",
+    "Check strict types, DTO invariants, source/version/model consistency and complete canonical envelopes/order/sensitive Unicode cases",
+    "Check S/D/U/X/O, uniformity per asym, keys absent from M, mixed CCDs, nonpolymer and author-id-coincidence without biological ownership guesses",
+    "Check policy acks, same-id existing record integrity/equivalence, plan/domain hash binding, app version isolation and deterministic validation order",
+    "Check CategoryDecision against all catalogued action/tag shapes, not only omit/guard; CP2 algorithms themselves remain outside CP1",
+    "Assess empty connection hash and absent future record types as explicit CP1 scope; no fake scientific success, no demand for native adapter implementation at this gate",
+    "Reconcile 1481 baseline collected +43 new =1524 supplied total, 1519/5 supplied result; separate own execution and changes/functions/parametrizations",
+    "Inspect errors/chaining, no broad interruption swallowing, no duplicated scientific logic, regression and scope",
+    "Do not reopen study decisions or use stylistic preferences as contract failures; provide precise evidence and classify independently"
+  ],
+  "tests_policy": {
+    "execution_optional": true,
+    "global_installation_authorized": false,
+    "code_tree_writes_allowed": false,
+    "external_scratch_only": true,
+    "bytecode_and_pytest_cache_in_source_forbidden": true,
+    "production_windows_gate_not_required_for_pure_cp1_review": true,
+    "report_actual_environment_and_limits": true
+  },
+  "allowed_governance_output_paths": [
+    "increments/021/19-checkpoint1-review/CLAUDE_INCREMENT_021_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+    "increments/021/19-checkpoint1-review/evidence/claude-*"
+  ],
+  "output_branch_policy": "Own claude/ branch based on exact dispatched governance publication; no edits in central coordination branch",
+  "governance_commit_push_authorized_when_dispatched": true,
+  "delivery_instruction": "communications/GOVERNANCE_DELIVERY_INSTRUCTIONS_20261123.md",
+  "required_output": [
+    "Snapshot/identities/materials",
+    "BLOCKERS/MAJORS/MINORS/NOTES with exact source/test evidence",
+    "Individual ARCH-01/02/03 dispositions and independently found issues",
+    "43 scenario reconciliation and actual production-code exercise",
+    "Own tests versus supplied logs; limitations",
+    "Verdict for CP1 approval/readiness for next gate, not CP2 implementation authorization",
+    "Remote branch/full SHA/path/lines/bytes/full SHA-256"
+  ],
+  "permitted_verdicts": [
+    "APPROVE",
+    "APPROVE WITH NON-BLOCKING NOTES",
+    "REQUEST CHANGES"
+  ],
+  "restrictions": [
+    "Do not implement or fix code/tests; no edits to frozen contract, architect documents, STATUS/tasks/history",
+    "No main/PR/merge/tag/release/force/formal GitHub approval/comments/automation",
+    "No CP2; no scientific expansion; 020-A STAND-BY and user items untouched"
+  ],
+  "checkpoint1_approved": false,
+  "cp2_implementation_authorized": false,
+  "final_specification_frozen": true,
+  "automated_dispatch": false
+}

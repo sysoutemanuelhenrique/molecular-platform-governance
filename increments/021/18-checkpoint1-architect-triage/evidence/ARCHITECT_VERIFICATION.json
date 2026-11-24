@@ -1,0 +1,51 @@
+{
+  "report_lines": 160,
+  "report_bytes": 15963,
+  "report_sha256": "135a44606d76515e25b2bde042bb41e87f4698ce61b9780040c5dd8262fff934",
+  "manifest_governance_entries_verified": 7,
+  "baseline_items": 1481,
+  "new_test_functions": 43,
+  "new_parametrize_decorators": 0,
+  "matrix_entries": 43,
+  "matrix_unique_ids": 43,
+  "matrix_entry_keys": [
+    "id",
+    "test",
+    "production_target",
+    "assertion",
+    "limit"
+  ],
+  "pytest_available": false,
+  "clean_import_without_gemmi": {
+    "returncode": 1,
+    "failure": "ModuleNotFoundError: No module named 'gemmi'",
+    "chain": [
+      "receptor_materialization.py:53",
+      "receptor_inspection.py:28",
+      "receptor_parsing.py:33"
+    ],
+    "source_modified": false,
+    "dependency_stub_used": false
+  },
+  "matrix_ids_match_task": true,
+  "matrix_names_match_actual_functions": true,
+  "new_test_names_match_verbose_log": true,
+  "new_files_diff_check": {
+    "src/molecular/receptor_materialization.py": {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    "tests/test_receptor_materialization.py": {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "provided_full_suite_summary": "1519 passed, 5 skipped",
+  "provided_collection_total": 1524,
+  "provided_baseline_collection": 1481,
+  "collection_difference": 43,
+  "own_pytest_executed": false,
+  "code_repo_modified": false
+}

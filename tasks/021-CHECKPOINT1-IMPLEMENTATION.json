@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-IMPLEMENTATION",
-  "status": "AUTHORIZED",
+  "status": "IMPLEMENTATION_RECEIVED_REVIEW_PENDING",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -10,7 +10,7 @@
   "code_repository": "sysoutemanuelhenrique/molecular-platform",
   "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
   "proposed_code_branch": "feature/increment-021-receptor-materialization",
-  "code_branch_created": false,
+  "code_branch_created": true,
   "allowlist": [
     "src/molecular/receptor_materialization.py",
     "tests/test_receptor_materialization.py"
@@ -147,7 +147,7 @@
     "Normal commit and push of the two allowed files to proposed code feature branch",
     "Commit and push own report/evidence to own governance branch; do not edit central coordination files"
   ],
-  "next_gate": "Architect triage, then independent CP1 review in separate session; CP2 remains unauthorized",
+  "next_gate": "Independent review at pinned code/report SHA; no CP2 authorization inferred",
   "restrictions": [
     "No scientific-contract changes; ambiguity returns to architect",
     "No adapter/storage/registry/service/CLI or fixtures-file implementation",
@@ -171,6 +171,27 @@
   "approved_preparation_task_sha256": "65ab09435da8d89b2e3229e60c962a68f4b0cdc68a883e629feb3e3736af3531",
   "cp2_implementation_authorized": false,
   "scope_authorized": "CHECKPOINT1_ONLY",
-  "implementation_started": false,
-  "authorization_limits": "Exactly the approved CP1 task, two code paths, baseline and feature branch; own governance report/evidence branch only. No contract/main/PR/merge/CP2 permission."
+  "implementation_started": true,
+  "authorization_limits": "Exactly the approved CP1 task, two code paths, baseline and feature branch; own governance report/evidence branch only. No contract/main/PR/merge/CP2 permission.",
+  "reported_code_commit": "711f3070765efe67a5799f939f1a18306ed8afdd",
+  "reported_code_parent": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "reported_governance_commit": "51752b4ce7603d1f14677b0b030edc176b9df13f",
+  "reported_governance_branch": "claude/021-cp1-implementation-report-20261124",
+  "received_report": {
+    "path": "increments/021/17-checkpoint1-implementation/CLAUDE_INCREMENT_021_CHECKPOINT1_IMPLEMENTATION_REPORT.md",
+    "commit": "f725307737b05491699360c5af1a17fe6c7da67c",
+    "lines": 160,
+    "size_bytes": 15963,
+    "sha256": "135a44606d76515e25b2bde042bb41e87f4698ce61b9780040c5dd8262fff934"
+  },
+  "receipt_verified": true,
+  "architect_triage": {
+    "path": "increments/021/18-checkpoint1-architect-triage/CODEX_INCREMENT_021_CHECKPOINT1_TRIAGE.md",
+    "lines": 67,
+    "size_bytes": 8807,
+    "sha256": "540d6aed1bc490006228734064567b87e86fecc7297d9fdf29568bc25fda22fe"
+  },
+  "checkpoint1_approved": false,
+  "independent_review_complete": false,
+  "next_task": "tasks/021-CHECKPOINT1-ADVERSARIAL-REVIEW.json"
 }
