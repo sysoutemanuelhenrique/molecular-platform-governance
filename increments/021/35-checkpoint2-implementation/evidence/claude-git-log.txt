@@ -1,0 +1,31 @@
+=== git diff --check ===
+exit=0
+
+=== git diff --name-status ea8dac9cdc203c337d7f3f9947b54042291f7484..HEAD ===
+M	src/molecular/receptor_materialization.py
+M	src/molecular/receptor_parsing.py
+M	tests/test_receptor_materialization.py
+M	tests/test_receptor_parsing.py
+
+=== git diff --name-status 08b797e0985e123ffd4d7ca7e5a5e8f040e63851..HEAD ===
+A	src/molecular/receptor_materialization.py
+M	src/molecular/receptor_parsing.py
+A	tests/test_receptor_materialization.py
+M	tests/test_receptor_parsing.py
+
+=== git show --check HEAD ===
+commit 0d06ebd4c46c90e5446fec6f0eb72b4a8d2855db
+Author: sysoutemanuelhenrique <emanuel2017.henrique@gmail.com>
+Date:   Tue Nov 24 19:53:32 2026 -0300
+
+    feat: implement struct_conn/symmetry resolution and the 94-category catalogue engine (increment 021, checkpoint 2)
+exit=0
+
+=== git log -3 --oneline ===
+0d06ebd feat: implement struct_conn/symmetry resolution and the 94-category catalogue engine (increment 021, checkpoint 2)
+ea8dac9 test: restore atom_ids_key order-preservation regression (R-1, increment 021)
+bbd491e fix: apply three residual CP1 corrections from focal review (increment 021)
+
+=== git ls-remote origin feature/increment-021-receptor-materialization main ===
+0d06ebd4c46c90e5446fec6f0eb72b4a8d2855db	refs/heads/feature/increment-021-receptor-materialization
+08b797e0985e123ffd4d7ca7e5a5e8f040e63851	refs/heads/main

@@ -1,0 +1,199 @@
+{
+  "task": "021-CHECKPOINT2-IMPLEMENTATION",
+  "total_scenarios": 79,
+  "genuinely_covered": 53,
+  "explicitly_pending": 26,
+  "covered": {
+    "T021-044": [
+      "tests/test_receptor_materialization.py::test_third_partner_present_rejects"
+    ],
+    "T021-045": [
+      "tests/test_receptor_materialization.py::test_k2_both_identity_preserves"
+    ],
+    "T021-046": [
+      "tests/test_receptor_materialization.py::test_k2_same_nonidentity_rejects"
+    ],
+    "T021-047": [
+      "tests/test_receptor_materialization.py::test_k2_different_rejects"
+    ],
+    "T021-048": [
+      "tests/test_receptor_materialization.py::test_k2_one_null_rejects"
+    ],
+    "T021-049": [
+      "tests/test_receptor_materialization.py::test_k2_both_null_rejects"
+    ],
+    "T021-050": [
+      "tests/test_receptor_materialization.py::test_k1_both_identity_metalc_omits_whole_partner_removed",
+      "tests/test_receptor_materialization.py::test_k1_both_identity_covalent_type_rejects"
+    ],
+    "T021-051": [
+      "tests/test_receptor_materialization.py::test_k1_non_identity_symmetry_rejects[2_555-2_555-tables0-T021-051]"
+    ],
+    "T021-052": [
+      "tests/test_receptor_materialization.py::test_k1_non_identity_symmetry_rejects[2_555-3_555-tables1-T021-052]"
+    ],
+    "T021-053": [
+      "tests/test_receptor_materialization.py::test_k1_non_identity_symmetry_rejects[None-1_555-None-T021-053]"
+    ],
+    "T021-054": [
+      "tests/test_receptor_materialization.py::test_k1_non_identity_symmetry_rejects[None-None-None-T021-054]"
+    ],
+    "T021-055": [
+      "tests/test_receptor_materialization.py::test_k0_omits_with_audit_for_every_symmetry_class[1_555-1_555-None-both-identity-T021-055]"
+    ],
+    "T021-056": [
+      "tests/test_receptor_materialization.py::test_k0_omits_with_audit_for_every_symmetry_class[2_555-2_555-tables1-same-nonidentity-T021-056]"
+    ],
+    "T021-057": [
+      "tests/test_receptor_materialization.py::test_k0_omits_with_audit_for_every_symmetry_class[2_555-3_555-tables2-different-T021-057]"
+    ],
+    "T021-058": [
+      "tests/test_receptor_materialization.py::test_k0_omits_with_audit_for_every_symmetry_class[None-1_555-None-one-null-T021-058]"
+    ],
+    "T021-059": [
+      "tests/test_receptor_materialization.py::test_k0_omits_with_audit_for_every_symmetry_class[None-None-None-both-null-T021-059]"
+    ],
+    "T021-060": [
+      "tests/test_receptor_materialization.py::test_symmetry_preconditions_malformed_rejects_at_k_positive_but_omits_at_k0"
+    ],
+    "T021-061": [
+      "tests/test_receptor_materialization.py::test_catalogue_atom_mask_filters_by_real_atom_decisions",
+      "tests/test_receptor_parsing.py::test_parse_cif_dom021_extracts_real_categories"
+    ],
+    "T021-062": [
+      "tests/test_receptor_materialization.py::test_catalogue_anisotrop_requires_complete_tensor_and_matching_atom_site_id"
+    ],
+    "T021-063": [
+      "tests/test_receptor_materialization.py::test_catalogue_atom_mask_filters_by_real_atom_decisions"
+    ],
+    "T021-064": [
+      "tests/test_receptor_materialization.py::test_catalogue_atom_mask_filters_by_real_atom_decisions"
+    ],
+    "T021-067": [
+      "tests/test_receptor_materialization.py::test_catalogue_atom_mask_filters_by_real_atom_decisions"
+    ],
+    "T021-075": [
+      "tests/test_receptor_materialization.py::test_catalogue_struct_conn_used_types_and_elements_from_real_connection_decisions"
+    ],
+    "T021-076": [
+      "tests/test_receptor_materialization.py::test_catalogue_struct_conn_used_types_and_elements_from_real_connection_decisions"
+    ],
+    "T021-077": [
+      "tests/test_receptor_materialization.py::test_catalogue_struct_conn_used_types_and_elements_from_real_connection_decisions"
+    ],
+    "T021-078": [
+      "tests/test_receptor_materialization.py::test_catalogue_cell_symmetry_singleton_and_operator_tables_preserved_verbatim"
+    ],
+    "T021-079": [
+      "tests/test_receptor_materialization.py::test_catalogue_cell_symmetry_singleton_and_operator_tables_preserved_verbatim"
+    ],
+    "T021-082": [
+      "tests/test_receptor_materialization.py::test_catalogue_atom_mask_filters_by_real_atom_decisions",
+      "tests/test_receptor_parsing.py::test_materialize_receptor_cif021_real_gemmi_end_to_end"
+    ],
+    "T021-083": [
+      "tests/test_receptor_materialization.py::test_catalogue_omitted_family_and_unknown_category_and_tag"
+    ],
+    "T021-084": [
+      "tests/test_receptor_materialization.py::test_catalogue_omitted_family_and_unknown_category_and_tag"
+    ],
+    "T021-085": [
+      "tests/test_receptor_materialization.py::test_catalogue_omitted_family_and_unknown_category_and_tag"
+    ],
+    "T021-087": [
+      "tests/test_receptor_parsing.py::test_parse_cif_dom021_rejects_duplicate_canonical_tag"
+    ],
+    "T021-090": [
+      "tests/test_receptor_parsing.py::test_materialize_receptor_cif021_real_gemmi_end_to_end",
+      "tests/test_receptor_parsing.py::test_materialize_receptor_cif021_is_deterministic_across_runs"
+    ],
+    "T021-141": [
+      "tests/test_receptor_materialization.py::test_identity_no_table_1_555_convention_without_fabricating_operators"
+    ],
+    "T021-142": [
+      "tests/test_receptor_materialization.py::test_identity_contradiction_with_tables_present_never_falls_back_to_convention"
+    ],
+    "T021-143": [
+      "tests/test_receptor_materialization.py::test_other_operator_without_table_rejects_k_positive_never_uses_1_555_exception"
+    ],
+    "T021-144": [
+      "tests/test_receptor_materialization.py::test_different_image_reason_hydrog_1_555_vs_9_555_rejects_without_claiming_geometric_impossibility"
+    ],
+    "T021-150": [
+      "tests/test_receptor_materialization.py::test_catalogue_ncs_scenarios"
+    ],
+    "T021-151": [
+      "tests/test_receptor_materialization.py::test_catalogue_ncs_scenarios"
+    ],
+    "T021-152": [
+      "tests/test_receptor_materialization.py::test_catalogue_ncs_scenarios"
+    ],
+    "T021-153": [
+      "tests/test_receptor_materialization.py::test_catalogue_ncs_scenarios"
+    ],
+    "T021-154": [
+      "tests/test_receptor_materialization.py::test_catalogue_ncs_scenarios"
+    ],
+    "T021-158": [
+      "tests/test_receptor_materialization.py::test_catalogue_special_position_guard_requires_unambiguous_context"
+    ],
+    "T021-164": [
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[1_555-1_555-tables0-expected_basis0-T021-164]"
+    ],
+    "T021-165": [
+      "tests/test_receptor_materialization.py::test_identity_basis_impossible_pairs_never_construct_an_accepted_connection_decision[identity_basis0-T021-165]"
+    ],
+    "T021-166": [
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[1_555-None-tables1-expected_basis1-T021-166]"
+    ],
+    "T021-167": [
+      "tests/test_receptor_materialization.py::test_identity_basis_impossible_pairs_never_construct_an_accepted_connection_decision[identity_basis1-T021-167]"
+    ],
+    "T021-168": [
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[2_555-2_555-tables2-expected_basis2-T021-168]"
+    ],
+    "T021-169": [
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[2_555-None-tables3-expected_basis3-T021-169]"
+    ],
+    "T021-170": [
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[None-1_555-tables4-expected_basis4-T021-170]"
+    ],
+    "T021-171": [
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[None-2_555-tables5-expected_basis5-T021-171]"
+    ],
+    "T021-172": [
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[None-None-tables6-expected_basis6-T021-172]"
+    ],
+    "T021-173": [
+      "tests/test_receptor_materialization.py::test_identity_basis_precedence_applies_10_1_without_k_shortcuts"
+    ]
+  },
+  "pending": [
+    "T021-041",
+    "T021-042",
+    "T021-043",
+    "T021-065",
+    "T021-066",
+    "T021-068",
+    "T021-069",
+    "T021-070",
+    "T021-071",
+    "T021-072",
+    "T021-073",
+    "T021-074",
+    "T021-080",
+    "T021-081",
+    "T021-086",
+    "T021-088",
+    "T021-089",
+    "T021-145",
+    "T021-146",
+    "T021-147",
+    "T021-148",
+    "T021-149",
+    "T021-155",
+    "T021-156",
+    "T021-157",
+    "T021-162"
+  ]
+}

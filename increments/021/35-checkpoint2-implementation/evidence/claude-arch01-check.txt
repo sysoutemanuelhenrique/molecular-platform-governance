@@ -1,0 +1,2 @@
+$ python -B -c "import sys; sys.modules[\"gemmi\"]=None; sys.modules[\"rdkit\"]=None; import molecular.receptor_materialization as rm; print(\"ARCH-01 OK\")"
+ARCH-01 OK - 196517 bytes read with gemmi/rdkit blocked

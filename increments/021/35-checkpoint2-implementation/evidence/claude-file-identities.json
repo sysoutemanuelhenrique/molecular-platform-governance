@@ -1,0 +1,28 @@
+{
+  "commit": "0d06ebd4c46c90e5446fec6f0eb72b4a8d2855db",
+  "parent": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "branch": "feature/increment-021-receptor-materialization",
+  "method": "git show <commit>:<path> | sha256sum; git show <commit>:<path> | wc -lc  (Git blob bytes, never local-disk bytes - core.autocrlf is in effect in this code repository's working tree)",
+  "files": {
+    "src/molecular/receptor_materialization.py": {
+      "lines": 4060,
+      "bytes": 192457,
+      "sha256": "0c7451e5b4950644c1e428c98a0c92f35f4aa3ae7753db4715cc292f6afa9947"
+    },
+    "src/molecular/receptor_parsing.py": {
+      "lines": 1541,
+      "bytes": 61059,
+      "sha256": "a620a659b172e418d7ed676b35c2736374f59f4a3db48616d608e868214898fa"
+    },
+    "tests/test_receptor_materialization.py": {
+      "lines": 2252,
+      "bytes": 114463,
+      "sha256": "0aca061820c04cd519c3a9f2c862a521af512a0ab80d0e663f98f353be86b971"
+    },
+    "tests/test_receptor_parsing.py": {
+      "lines": 830,
+      "bytes": 27785,
+      "sha256": "84d1d3091045a416beaa7b1d51a5cd3a4ab019b4a3adfd83bcc4043669e55b10"
+    }
+  }
+}
