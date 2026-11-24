@@ -1,0 +1,59 @@
+{
+ "governance_snapshot": "828bf806e2f16ae9fee5896ae6f9719a9e1dc5cf",
+ "code_head": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+ "delivery_head": "b35bb8e9d32e6fb4bc95e903f786fa0c1240e2d2",
+ "r1_verdict": "APPROVE",
+ "ready_for_owner_cp1_decision": true,
+ "checkpoint1_approved": false,
+ "cp2_authorized": false,
+ "files": [
+  {
+   "path": "increments/021/31-checkpoint1-r1-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_R1_FOCAL_REVIEW.md",
+   "lines": 116,
+   "size_bytes": 7227,
+   "sha256": "a1d99b0d56ae73e1a006878483c2f61f7dffa36a447d686178c6bd7cc9420736"
+  },
+  {
+   "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-inert-gemmi-sentinel.py",
+   "lines": 4,
+   "size_bytes": 298,
+   "sha256": "1d08328aa716ee7cec476c7daefb8b650b5ebac98126284221531447f10b0d9d"
+  },
+  {
+   "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-independent-literals.output.json",
+   "lines": 15,
+   "size_bytes": 833,
+   "sha256": "94470d6fcf83b8046157a4bb10c6b62d42c01926711b583bb1c3e445b311e35f"
+  },
+  {
+   "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-independent-literals.py",
+   "lines": 16,
+   "size_bytes": 1583,
+   "sha256": "fb95aca53db7ce99f8394c3a47661fbc6171e577ee7a9c9b52a27a50d5ce68fb"
+  },
+  {
+   "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-mutation-exact-pytest.output.txt",
+   "lines": 5,
+   "size_bytes": 1023,
+   "sha256": "4a2c732f6f0b9df0dab6e11f40c6194fa1e86a46b7e6b7fd01f2892cd152b3d5"
+  },
+  {
+   "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-mutation-exact-pytest.sh",
+   "lines": 20,
+   "size_bytes": 1797,
+   "sha256": "9b1353a2786ebf5cc4b52d92dc0152995922cf6a386ab05418e9249c3d1ba12a"
+  },
+  {
+   "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-test-preservation.output.json",
+   "lines": 26,
+   "size_bytes": 419,
+   "sha256": "5df6631e8dd3c76ec6e8e30e5d8980ebab71e6e38ffca4a8b9ec79e25da79e72"
+  },
+  {
+   "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-test-preservation.py",
+   "lines": 19,
+   "size_bytes": 1659,
+   "sha256": "3364ce4cbce48c160be62b8b7ead2ee0f3ed77866e868af386cba85b916fd321"
+  }
+ ]
+}

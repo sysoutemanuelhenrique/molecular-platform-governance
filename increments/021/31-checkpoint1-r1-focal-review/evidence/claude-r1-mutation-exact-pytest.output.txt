@@ -1,0 +1,5 @@
+mutant=[original] | exact_new_node: 1 passed in 0.29s | whole_file: 92 passed in 1.42s | failed: none
+mutant=[sorted(atoms, key=lambda a: a.ordinal)] | exact_new_node: 1 failed in 0.29s | whole_file: 1 failed, 91 passed in 1.31s | failed: FAILED tests/test_rm.py::test_atom_ids_key_preserves_given_order_against_ordinal_and_id_sorting 
+mutant=[sorted(atoms, key=lambda a: a.atom_id)] | exact_new_node: 1 failed in 0.35s | whole_file: 1 failed, 91 passed in 1.39s | failed: FAILED tests/test_rm.py::test_atom_ids_key_preserves_given_order_against_ordinal_and_id_sorting 
+mutant=[reversed(tuple(atoms))] | exact_new_node: 1 failed in 0.29s | whole_file: 1 failed, 91 passed in 1.42s | failed: FAILED tests/test_rm.py::test_atom_ids_key_preserves_given_order_against_ordinal_and_id_sorting 
+mutant=[sorted(atoms, key=lambda a: -a.ordinal)] | exact_new_node: 1 failed in 0.30s | whole_file: 1 failed, 91 passed in 1.45s | failed: FAILED tests/test_rm.py::test_atom_ids_key_preserves_given_order_against_ordinal_and_id_sorting 
