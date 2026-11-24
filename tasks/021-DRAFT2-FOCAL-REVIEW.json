@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "task_id": "021-DRAFT2-FOCAL-REVIEW",
-  "status": "READY_FOR_DISPATCH",
-  "dispatch_status": "NOT_DISPATCHED",
+  "status": "COMPLETED_REVIEW_RECEIVED",
+  "dispatch_status": "COMPLETED_AS_REPORTED_BY_REVIEWER",
   "assigned_role": "claude-independent-reviewer-separate-from-implementer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -38,10 +38,10 @@
     }
   ],
   "architect_response": {
-    "path": "increments/021/08-draft-reconciliation/CODEX_INCREMENT_021_DRAFT_RECONCILIATION.md",
-    "lines": 84,
-    "size_bytes": 11543,
-    "sha256": "fc4e9423f5292a917e8d4f2c2767011948e201b4a6f0e3fd7bcde49620ff0db8"
+    "path": "increments/021/11-draft2-reconciliation/CODEX_INCREMENT_021_DRAFT2_RECONCILIATION.md",
+    "lines": 65,
+    "size_bytes": 7010,
+    "sha256": "c8389a4722f95df227349bf3ffce2dcdf291b73b8cb9bf151bc7bd04065cbe21"
   },
   "prior_review": {
     "path": "increments/021/07-draft-review/CLAUDE_INCREMENT_021_DRAFT_REVIEW.md",
@@ -97,5 +97,30 @@
   ],
   "implementation_authorized": false,
   "final_specification_frozen": false,
-  "automated_relay_active": false
+  "automated_relay_active": false,
+  "dispatch_evidence": "Reviewer manifest and receipt say direct owner dispatch; no automatic invocation by architect",
+  "result_commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+  "result_branch": "claude/021-draft2-focal-review-20261123",
+  "result": {
+    "path": "increments/021/10-draft2-focal-review/CLAUDE_INCREMENT_021_DRAFT2_FOCAL_REVIEW.md",
+    "commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+    "lines": 98,
+    "size_bytes": 9193,
+    "sha256": "11261d70312b9b32bc05a67e8545d3cbcfb12687ece67b67103e8d52d3ced954",
+    "git_blob_sha": "de3b8685b31a7657ffc4d5f7c0eafaef5f14463d"
+  },
+  "result_verdict": "APPROVE FOR FINAL CANDIDATE PREPARATION",
+  "prior_findings_closed_by_reviewer": {
+    "majors": 3,
+    "minors": 6,
+    "level": "draft"
+  },
+  "new_findings": {
+    "blockers": 0,
+    "majors": 0,
+    "minors": 2,
+    "notes": 2
+  },
+  "new_correction_independent_closure": false,
+  "next_task": "tasks/021-CANDIDATE1-FOCAL-REVIEW.json"
 }

@@ -1,0 +1,174 @@
+id,checkpoint,target,stimulus,expected
+T021-001,CP1,strict-str,bytes ou número em campo str novo,Recusar sem coerção
+T021-002,CP1,strict-int-bool,True ou string em Count/Model,Recusar; bool não é int
+T021-003,CP1,closed-immutable,Campo extra ou mutação de DTO novo,Recusar extra; DTO imutável
+T021-004,CP1,time-utc,Timestamp ingênuo ou data impossível,Recusar; aceitar TimeUTC real canônico
+T021-005,CP1,versions,Schema/profile/catalogue/engine divergente,Recusar com erro de configuração
+T021-006,CP1,source-links,Ids ou hashes cruzados inconsistentes,Recusar sem inspect/resolve fallback
+T021-007,CP1,inspection-id,Payload de inspeção não reproduz inspection_id,Recusar contexto
+T021-008,CP1,truncation,full com parser-limitation em qualquer categoria,Recusar INCOMPLETE_INSPECTION
+T021-009,CP1,selected-model,Modelo escolhido não é o primeiro,Usar M exato
+T021-010,CP1,assembly,resolved_assembly não nulo,Recusar sem aplicar operador
+T021-011,CP1,empty-selection,resolved_chains vazio,Recusar; não selecionar todos
+T021-012,CP1,native-identities,label/auth distintos e case distinto,Usar label; não trocar namespace
+T021-013,CP1,nfc-collision,Dois tokens fonte distintos colidem na correspondência NFC,Recusar ambiguidade
+T021-014,CP1,polymer-complement,Polymer fora de S com D ausente/remove,Planejar exclusão integral sujeita a X
+T021-015,CP1,selection-disposition,Asym em S e D remove; polymer fora S e D keep,Recusar conflito em ambos
+T021-016,CP1,nonpoly-variants,Não polímero com múltiplos CCDs e decisões diferentes,Recusar NONUNIFORM_ASYM
+T021-017,CP1,branched-mixed,NAG remove/BMA keep com e sem struct_conn,Recusar; não partir glicano
+T021-018,CP1,all-altlocs,Mesmo asym com variantes/H/D e decisão uniforme,Manter/remover todos sem normalizar ocupância
+T021-019,CP1,model-projection,Mesma chave de disposição em modelos diferentes,Aplicar somente em M; outros modelos excluídos
+T021-020,CP1,component-unaddressed,S não polímero sem D; fora S sem D nas duas opções U,S inclui; U preserve inclui; U require recusa
+T021-021,CP1,ack-X-required,X não vazio sem acknowledgement,Preview possível; declare/run recusam
+T021-022,CP1,ack-X-stale,Hash X incorreto ou snapshot antigo,Recusar sem preencher hash pelo serviço
+T021-023,CP1,ack-X-empty,X vazio com acknowledgement não null,Recusar reconhecimento incompatível
+T021-024,CP1,nucleic-explicit,Fita polimérica em X reconhecido com hydrog à fita retida,Exclusão inteira vira explícita; omissão candidata segue tipo/simetria
+T021-025,CP1,ack-O-required,O não vazio sem acknowledgement,Recusar; aviso ou log não substitui ato
+T021-026,CP1,ack-O-stale,Hash de O anterior ou incompleto,Recusar ACK_MISMATCH
+T021-027,CP1,ack-O-empty,O vazio com acknowledgement não null,Recusar; preview informa vazio sem consentimento fabricado
+T021-028,CP1,outside-membership,Conjunto O muda mantendo os mesmos nomes visíveis,Hash completo/contexto muda; execução recusa
+T021-029,CP1,actor,Nome vazio/controle/bytes em declared_by,Recusar; preservar Unicode válido sem coerção
+T021-030,CP1,policy-idempotence,Mesma declaração semântica repetida,Mesmo policy_id e record/timestamp original
+T021-031,CP1,hash-domains,Mesmo vetor sob dois kinds de hash,Chaves diferentes; envelope não é omitido
+T021-032,CP1,canonical-json,Ordem de objetos versus ordem de listas,Sort de chaves estável; listas preservam semântica
+T021-033,CP1,hash-no-float,Float/NaN no payload documental,Recusar; não produzir JSON não canônico
+T021-034,CP1,policy-id-fields,Actor ou ack muda; apenas timestamp muda,Payload semântico muda no primeiro caso; timestamp não integra id
+T021-035,CP1,request-id,Policy bytes/profile/catalogue/engine/application_version muda,Nova request key; application_version isolada não muda plan/policy id
+T021-036,CP1,occurrence,Água com label_seq nulo e auth_seq/inserção distintos,Ocorrências distintas ou recusa se insuficientes
+T021-037,CP1,outside-author,Auth id coincide com retido/excluído/vários/nenhum,Classificar coincidência sem atribuir pertencimento
+T021-038,CP1,preview-conditional,Corte metalc candidato depende de X ainda não reconhecido,Preview não alega consentimento; declare exige ack
+T021-039,CP1,unknown-entity,Tipo de entidade/contexto não suportado em M,Recusar; não classificar por HETATM
+T021-040,CP1,domain-boundary,Importar domínio sem Gemmi e inspecionar DTOs,Nenhum objeto/import Gemmi nem I/O científico no domínio
+T021-041,CP2,raw-tokens,? . e valores citados equivalentes em texto,Preservar distinção; não quote_list de token bruto
+T021-042,CP2,coordinates-occupancy,0 parcial null B-factor precisão H/D em atom_site,Preservar tokens/coordenadas sem reparo
+T021-043,CP2,endpoint-insertion,Resíduos 52/52A em struct_conn canônico,Distinguir inserção; não usar colunas antigas
+T021-044,CP2,third-partner,ptnr3 ausente/nulo versus preenchido ou citado ?,Aceitar só ausência/null real; recusar preenchido
+T021-045,CP2,symmetry-matrix,K=2; symmetry=both-identity; endpoints já resolvidos; operadores conhecidos quando não null,Preservar literal
+T021-046,CP2,symmetry-matrix,K=2; symmetry=same-nonidentity; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil
+T021-047,CP2,symmetry-matrix,K=2; symmetry=different; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil
+T021-048,CP2,symmetry-matrix,K=2; symmetry=one-null; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil
+T021-049,CP2,symmetry-matrix,K=2; symmetry=both-null; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil
+T021-050,CP2,symmetry-matrix,K=1; symmetry=both-identity; endpoints já resolvidos; operadores conhecidos quando não null,Omitir só metalc/hydrog com parceiro inteiro reconhecido; covalente recusa
+T021-051,CP2,symmetry-matrix,K=1; symmetry=same-nonidentity; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil
+T021-052,CP2,symmetry-matrix,K=1; symmetry=different; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil
+T021-053,CP2,symmetry-matrix,K=1; symmetry=one-null; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil
+T021-054,CP2,symmetry-matrix,K=1; symmetry=both-null; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil
+T021-055,CP2,symmetry-matrix,K=0; symmetry=both-identity; endpoints já resolvidos; operadores conhecidos quando não null,Omitir com auditoria
+T021-056,CP2,symmetry-matrix,K=0; symmetry=same-nonidentity; endpoints já resolvidos; operadores conhecidos quando não null,Omitir com auditoria
+T021-057,CP2,symmetry-matrix,K=0; symmetry=different; endpoints já resolvidos; operadores conhecidos quando não null,Omitir com auditoria
+T021-058,CP2,symmetry-matrix,K=0; symmetry=one-null; endpoints já resolvidos; operadores conhecidos quando não null,Omitir com auditoria
+T021-059,CP2,symmetry-matrix,K=0; symmetry=both-null; endpoints já resolvidos; operadores conhecidos quando não null,Omitir com auditoria
+T021-060,CP2,symmetry-preconditions,"Operador ausente/contraditório/malformado, exceto 1_555 sem tabelas; namespace assembly distinto",K>0 recusa casos não suportados; 1_555 sem tabelas aceita por convenção; K=0 omite auditado
+T021-061,CP2,atom_site,Fixture representativa da regra atom_site,Máscara preserva ids/tokens e contagens; reparse confere vetores esperados
+T021-062,CP2,atom_site_anisotrop,Fixture representativa da regra atom_site_anisotrop,Filtrar por id real; campos informados concordam; preservar tensor/esd
+T021-063,CP2,struct_asym,Fixture representativa da regra struct_asym,Filtrar asyms e manter entity_id válido
+T021-064,CP2,entity,Fixture representativa da regra entity,Manter entidades referidas e omitir contagens/metadados listados
+T021-065,CP2,entity_poly,Fixture representativa da regra entity_poly,Preservar entidade/tipo/seq; não copiar pdbx_strand_id stale
+T021-066,CP2,entity_poly_seq,Fixture representativa da regra entity_poly_seq,Manter sequência declarada inclusive não observada
+T021-067,CP2,chem_comp,Fixture representativa da regra chem_comp,Fechamento de CCDs de átomos/seq/branch/parent; não baixar CCD
+T021-068,CP2,pdbx_entity_nonpoly,Fixture representativa da regra pdbx_entity_nonpoly,Filtrar entidade/CCD referidos
+T021-069,CP2,pdbx_poly_seq_scheme,Fixture representativa da regra pdbx_poly_seq_scheme,Manter esquema completo do asym sobrevivente
+T021-070,CP2,pdbx_nonpoly_scheme,Fixture representativa da regra pdbx_nonpoly_scheme,Filtrar asym sem cortar ocorrência íntegra
+T021-071,CP2,pdbx_entity_branch,Fixture representativa da regra pdbx_entity_branch,Manter tipos de entidades ramificadas sobreviventes
+T021-072,CP2,pdbx_entity_branch_list,Fixture representativa da regra pdbx_entity_branch_list,Preservar todos os monômeros e microheterogeneidade
+T021-073,CP2,pdbx_entity_branch_link,Fixture representativa da regra pdbx_entity_branch_link,Referências de lista/CCD válidas; leaving atom não é inventado
+T021-074,CP2,pdbx_branch_scheme,Fixture representativa da regra pdbx_branch_scheme,Preservar nomenclatura completa do asym retido
+T021-075,CP2,struct_conn,Fixture representativa da regra struct_conn,Ações/literal/insertions/ptnr3 conforme plano
+T021-076,CP2,struct_conn_type,Fixture representativa da regra struct_conn_type,Reter só tipos de conexão sobreviventes sem fabricar critérios
+T021-077,CP2,atom_type,Fixture representativa da regra atom_type,Reter elementos usados se categoria existir
+T021-078,CP2,cell/symmetry,Fixture representativa da regra cell/symmetry,Contexto fonte sem P1 inventado; entry_id gerado declarado
+T021-079,CP2,source-operator-tables,Fixture representativa da regra source-operator-tables,1_555 sem tabelas usa convenção; tabelas presentes exigem identidade coerente; outros operadores exigem fonte
+T021-080,CP2,pdbx_struct_mod_residue,Fixture representativa da regra pdbx_struct_mod_residue,Resolver contexto em M; parent_comp_id entra no fechamento CCD
+T021-081,CP2,unobs-zero-occ,Fixture representativa da regra unobs-zero-occ,Anotação sem átomo pode sobreviver por contexto de cadeia/seq; sem inferir coordenada
+T021-082,CP2,entry,Fixture representativa da regra entry,Nova entry/block tbmp_plan_key e original só na proveniência
+T021-083,CP2,omitted-categories,Fixture representativa da regra omitted-categories,Categorias omitidas/família validate não aparecem na saída e constam da auditoria
+T021-084,CP2,unknown-category,Fixture representativa da regra unknown-category,Categoria fora do catálogo/prefixo permitido recusa
+T021-085,CP2,unknown-tag,Fixture representativa da regra unknown-tag,Coluna desconhecida em categoria filtrada recusa; omitida sai com categoria
+T021-086,CP2,missing-conditional,Fixture representativa da regra missing-conditional,Recusar; não fabricar categoria
+T021-087,CP2,duplicate-keys,Fixture representativa da regra duplicate-keys,Recusar antes de escrever
+T021-088,CP2,loss-audit,Fixture representativa da regra loss-audit,Auditoria completa e RAW checksum inalterado
+T021-089,CP2,output-verification,Fixture representativa da regra output-verification,Recusar INVALID_OUTPUT antes de commit
+T021-090,CP2,binding-real,Fixture representativa da regra binding-real,Comprovar valores/tokens em integração real; disponibilidade sozinha não conta
+T021-091,CP3,metadata-single-read,Arquivo muda entre aberturas injetadas,Uma captura para hash/validação; sem segundo open da mesma proveniência
+T021-092,CP3,utf8-bom,YAML UTF-8 válido com BOM e UTF-8 inválido,Semântica do loader existente; inválido recusa
+T021-093,CP3,newlines,YAML CRLF/CR versus LF semanticamente equivalente,Mesmo modelo; hashes dos bytes originais distintos
+T021-094,CP3,exact-internal-id,Pedido a carrega id interno A no NTFS,Recusar IDENTITY_MISMATCH
+T021-095,CP3,registry-paths,Quatro registros em paths reais e referências cruzadas,Capturar pelos roots fechados; validar todos os vínculos
+T021-096,CP3,changed-record,Record externamente reformatado depois da declaração,Recusar SOURCE_CHANGED; não atualizar política
+T021-097,CP3,raw-contained,RAW absoluto/traversal/link/reparse/fonte substituída,Recusar; não fazer fallback para open inseguro
+T021-098,CP3,platform,Linux/rede/FAT/ReFS versus Windows11 NTFS local,Falhar fechado fora do perfil; gate Windows real
+T021-099,CP3,policy-publication,Falha antes/depois do rename da policy,Visibilidade integral; preservar preexistente e timestamp de reuse
+T021-100,CP3,bundle-publication,Leitor concorre com escrita de três arquivos,Só bundle final íntegro é resultado; work ignorado
+T021-101,CP3,same-key-processes,Dois processos reais com a mesma chave,Um publica; outro busy ou reused verificado; nenhum overwrite
+T021-102,CP3,different-key-processes,Dois processos reais com chaves distintas,Work independente; nenhuma limpeza cruzada
+T021-103,CP3,reuse-context,Resultado existe mas contexto/ack da política mudou,Recusar antes de reuse; sem recomputar aprovação
+T021-104,CP3,corrupt-result,Hash/tamanho/payload/manifesto divergente ou extra arquivo,Recusar integridade; não reconstruir
+T021-105,CP3,existing-target,Destino preexistente e não equivalente,Preservar bytes; conflito sem compensar destino
+T021-106,CP3,cleanup-ownership,Falha com work próprio e diretórios alheios,Limpar só próprios; nunca RAW/registro/política preexistente
+T021-107,CP3,cleanup-failure,Falha na remoção de recurso próprio,Preservar erro principal e unconfirmed_removals relativos
+T021-108,CP3,orphan-lock,Reserva órfã preexistente sem bundle,BUSY; não expirar/roubar/force-unlock
+T021-109,CP3,uncertain-publish,Rename resulta em estado indeterminado,Reconciliar por identidade; nunca apagar destino por suposição
+T021-110,CP3,activity-after-commit,Log falha após bundle publicado,PostCommitError committed=true; artefato fica; exit1
+T021-111,CP3,activity-with-primary,Erro de operação e erro adicional de activity,Erro primário preservado; secundário anexado
+T021-112,CP3,keyboard-interrupt,KeyboardInterrupt separado nas fases preflight/metadata/raw/parse/plan/serialize/verify/reserve/publish/presentation,Mesma instância propagada; só unwind privado
+T021-113,CP3,system-exit,SystemExit separado nas mesmas dez fases,Mesmo código/instância; sem conversão para erro científico
+T021-114,CP3,process-crash,Processo morre antes do commit,Sem sucesso aparente; work/lock órfãos diagnosticáveis
+T021-115,CP3,windows-rename,Semântica real de rename de diretório para destino existente,Recusar substituição no NTFS; não inferir de POSIX
+T021-116,CP3,casefold-roots,Aliases de root/reserva/id técnico em filesystem,Não criar namespace paralelo nem aceitar reparse
+T021-117,CP3,output-limit,Saída/auditoria excede teto antes de commit,Recusar sem publicar bundle parcial
+T021-118,CP3,ancestor-race,Identidade de ancestral/arquivo muda durante captura/publicação,Recusar; não continuar por caminho menos seguro
+T021-119,CP3,show-integrity,show com fontes externas indisponíveis mas bundle íntegro,Verificar bundle sem rerun de RAW; não alegar revalidação externa
+T021-120,CP3,fixed-files,Nome externo tenta determinar saída ou manifesto introduz path extra,Usar só nomes fixos controlados; recusar extra
+T021-121,CP4,help-optional,Import/help sem Gemmi/RDKit,Help funciona; operação indisponível vira configuração
+T021-122,CP4,plan-once,CLI plan com opções válidas,Uma chamada ao preview; X/O completos e hashes sem consentimento fabricado
+T021-123,CP4,declare-options,CLI declare com acks do usuário,Uma chamada; None apenas quando conjunto vazio; sem auto run
+T021-124,CP4,run-once,CLI run com policy válida e reused,Uma chamada ao service; exit0; ids/relative paths corretos
+T021-125,CP4,show-commands,show-policy e show para ids íntegros,Uma chamada de leitura por comando; sem listagem por latest
+T021-126,CP4,input-banner,Id/enum/ack inválido antes do service,INPUT ERROR; exit1; sem traceback
+T021-127,CP4,config-banner,Record/engine/profile/platform inválido,CONFIGURATION ERROR; exit1
+T021-128,CP4,execution-banner,CIF/contexto/cut/catálogo não suportado,EXECUTION ERROR; exit1; mensagem tipada
+T021-129,CP4,storage-banner,Busy/I/O/unsafe path/integridade,STORAGE ERROR; exit1; sem caminho sensível
+T021-130,CP4,presentation-after-commit,Falha de apresentação após publicação confirmada,Avisar publicado+apresentação falhou; ids; sem retry/cleanup
+T021-131,CP4,cli-boundary,Imports e fluxo CLI novos,Sem Gemmi/RDKit direto; sem ciência/compensação na CLI
+T021-132,CP4,no-inspect-fallback,Referência faltante ou parser divergente,Nenhum inspect/resolve/reload de tentativa para reparar
+T021-133,CP4,no-ack-retry,Ack errado e falha da primeira execução,"Não retry, novo reconhecimento ou compensação científica"
+T021-134,CP4,safe-messages,Erro nativo contém path e texto químico/URL,Templates não expõem erro bruto; comandos antigos inalterados
+T021-135,CP4,activity-single,Sucesso/falha pre-service/falha post-service,Um dono de cada evento; CLI não duplica service
+T021-136,CP4,regression-020,Inspeção/seleção/resolução 020 e golden identities,Contratos/DTOs/layout/comandos preservados
+T021-137,CP4,regression-017,Enumeração de tautômeros e erros/fallbacks,Nenhuma mudança científica ou apresentação antiga
+T021-138,CP4,regression-018-019,Promoção de ligantes/condições e snapshot,"Nenhuma mudança de roots, helpers ou semântica"
+T021-139,CP4,allowlist,Diff cumulativo do incremento e diff check,Somente allowlist; whitespace limpo; 020-A intocado
+T021-140,CP4,cumulative-evidence,Coleta e suíte/ausência de opcionais,Relatar funções/parametrizações/itens/skips reais; sem contagem histórica como atual
+T021-141,CP2,identity-no-table,1_555/1_555 sem tabelas em fixture real,Reconhecer identidade sem fabricar operadores; auditoria explicita convenção
+T021-142,CP2,identity-contradiction,Tabela presente com op 1 não identidade/duplicado/ausente,Recusar; não aplicar fallback de convenção
+T021-143,CP2,other-operator-no-table,"2_555, 1_556 ou 01_555 sem prova fonte",Recusar K>0; não usar exceção de 1_555
+T021-144,CP2,different-image-reason,"1pfe com hydrog 1_555/9_555, mesmo sem corte",Recusar por limite de projeção não identidade; não alegar impossibilidade geométrica
+T021-145,CP2,catalog-cell,Tags cell esd/reciprocal/volume e symmetry full H-M,Preservar tokens de contexto fonte; sem validar nova cela
+T021-146,CP2,catalog-alt-annotation,unobs atoms label_alt_id,Reconhecer e preservar conforme contexto; não tag desconhecida
+T021-147,CP2,catalog-three-real,Inventários 5i55/1pfe/3dg1_final do pin,"Zero recusas de cobertura, sem alegar materialização positiva"
+T021-148,CP2,catalog-additional-metadata,16 categorias observadas adicionais,Omitir categoria completa com hash/contagens/ordinais
+T021-149,CP2,catalog-nmr-em,Metadados pdbx_nmr_ e em_ e pdbx_struct_conn_angle,Omitir com auditoria; preservar M; outras categorias desconhecidas continuam recusadas
+T021-150,CP2,ncs-generate,Transformação não identidade code generate,Recusar UNSUPPORTED_NCS antes de omitir
+T021-151,CP2,ncs-null,Transformação não identidade code null/ausente,Recusar UNSUPPORTED_NCS; não inferir given
+T021-152,CP2,ncs-given,Transformação finita não identidade code given,Omitir com auditoria/aviso; não aplicar transformação
+T021-153,CP2,ncs-identity,Transformação exatamente identidade com code generate/null,Omitir auditado; nenhuma cópia nova
+T021-154,CP2,ncs-invalid,Matriz parcial/NaN ou code desconhecido,Recusar INVALID_CIF; não ignorar como faz fallback Structure
+T021-155,CP2,numeric-su-exponent,1.2e3(4) versus 1.2(4)e3,Aceitar primeiro; recusar segundo; preservar token válido
+T021-156,CP2,altloc-endpoint-set,Endpoint sem altloc tem A/B na mesma ocorrência,Um conjunto por endpoint; K uniforme; uma linha fonte literal
+T021-157,CP2,altloc-occurrence-ambiguous,Mesmo atom name em duas ocorrências candidatas,Recusar; não fundir conjuntos entre ocorrências
+T021-158,CP2,special-position-audit,Anotações especiais retidas/removidas/ambíguas,Contagens/aviso apenas quando apropriado; ambiguidade recusa; ocupância inalterada
+T021-159,CP1,app-version-plan,Somente application_version mudou,Plan/policy permanecem; request/manifest registram versão nova
+T021-160,CP1,semantic-version-plan,Profile/algorithm/catalogue/engine ou decisões mudaram,Plano/policy id mudam; ack anterior não passa
+T021-161,CP1,catalog-omit-array,Categoria omitida com arrays vazios e action omit,Omitir todas tags sem sentinel all; guard usa lista e valida primeiro
+T021-162,CP2,real-fixture-lineage,Fixtures positivos D-01(b) derivados de entrada real,"Origem/hash/alterações e oráculos específicos obrigatórios, sem resultado fictício"
+T021-163,CP3,orphan-procedure,"Reserva sem resultado, dono não confirmado","BUSY sem remoção automática; protocolo manual documentado, idade não basta"
+T021-164,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = pdbx-1_555-convention/pdbx-1_555-convention,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada
+T021-165,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = pdbx-1_555-convention/source-operator,Recusar par impossível antes de hash; nunca produzir ConnectionDecision aceita
+T021-166,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = pdbx-1_555-convention/not-applicable,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada
+T021-167,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = source-operator/pdbx-1_555-convention,Recusar par impossível antes de hash; nunca produzir ConnectionDecision aceita
+T021-168,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = source-operator/source-operator,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada
+T021-169,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = source-operator/not-applicable,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada
+T021-170,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = not-applicable/pdbx-1_555-convention,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada
+T021-171,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = not-applicable/source-operator,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada
+T021-172,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = not-applicable/not-applicable,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada
+T021-173,CP2,identity-basis-precedence,Código null/literal citado/malformado/não localizado; tabela vazia; id duplicado/contraditório; op 1 não identidade; mesmo lookup nos K possíveis,"Aplicar §10.1 sem atalhos por K, sem fallback com tabela; validações anteriores e recusas da matriz preservadas"

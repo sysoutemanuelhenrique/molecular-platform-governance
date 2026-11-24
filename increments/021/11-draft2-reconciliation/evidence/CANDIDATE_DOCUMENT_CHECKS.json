@@ -1,0 +1,98 @@
+{
+  "input_manifest_entries_verified": 16,
+  "peer_blobs_verified": 6,
+  "source_and_peer_identities": [
+    {
+      "path": "increments/021/10-draft2-focal-review/CLAUDE_INCREMENT_021_DRAFT2_FOCAL_REVIEW.md",
+      "commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+      "lines": 98,
+      "size_bytes": 9193,
+      "sha256": "11261d70312b9b32bc05a67e8545d3cbcfb12687ece67b67103e8d52d3ced954",
+      "git_blob_sha": "de3b8685b31a7657ffc4d5f7c0eafaef5f14463d"
+    },
+    {
+      "path": "increments/021/10-draft2-focal-review/evidence/claude-021-draft2-focal-review-verification.json",
+      "commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+      "lines": 38,
+      "size_bytes": 3764,
+      "sha256": "2c9dc6bfa1e820360ffeb6db84deebbe2d7fe7156ab752b52e98a6daf6b7e551",
+      "git_blob_sha": "4c30efaaba6e0d12d7b1da19c93fdf8d3b891a9d"
+    },
+    {
+      "path": "increments/021/10-draft2-focal-review/evidence/claude-catalog-coverage-draft2.output.json",
+      "commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+      "lines": 31,
+      "size_bytes": 693,
+      "sha256": "6ffdaaa6d7afa9ced8821bcb93df0256e10b434524cb952c8e922c449842014e",
+      "git_blob_sha": "fa9d9aefd2ccd8613df828c479145bceecdd49b9"
+    },
+    {
+      "path": "increments/021/10-draft2-focal-review/evidence/claude-gemmi-numb-probe.cpp",
+      "commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+      "lines": 4,
+      "size_bytes": 261,
+      "sha256": "40e8071ac6aa82fd9d638657578152b08efa350c12e790fc4a9739a4dfb9ebd0",
+      "git_blob_sha": "e353e9839aefc4351a00b82e265764c5951543fc"
+    },
+    {
+      "path": "increments/021/10-draft2-focal-review/evidence/claude-numeric-grammar-compare.output.json",
+      "commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+      "lines": 211,
+      "size_bytes": 3355,
+      "sha256": "68dd6d8c68d8d97c54bd0ada6f730499d71612c32a9c4c9bfc98c0a9512101cc",
+      "git_blob_sha": "699820e3d61cbe2245de9fe15ef2cf8b5b95e3e4"
+    },
+    {
+      "path": "increments/021/10-draft2-focal-review/evidence/claude-numeric-grammar-compare.py",
+      "commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+      "lines": 11,
+      "size_bytes": 969,
+      "sha256": "4e123412194fb16f4898489308cd6781df3c6bd27b4ca67f8b0015af140b3c38",
+      "git_blob_sha": "08d99c37dc150839b4e60a522b1e7359813781c2"
+    }
+  ],
+  "catalogue_byte_identical": true,
+  "catalogue_categories": 94,
+  "unchanged_body_sections": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "old_scenario_ids_retained": 163,
+  "changed_old_rows": [
+    "T021-162"
+  ],
+  "additional_scenarios": 10,
+  "total_scenarios": 173,
+  "by_checkpoint": {
+    "CP1": 43,
+    "CP2": 79,
+    "CP3": 31,
+    "CP4": 20
+  },
+  "basis_pair_cases": 9,
+  "reachable_pairs": 7,
+  "forbidden_pairs": 2,
+  "documentary_hashes_recomputed": true,
+  "pytest": false,
+  "gemmi_python": false,
+  "gemmi_cpp": false,
+  "raw_parsing": false,
+  "windows": false,
+  "concurrency": false,
+  "materialization": false,
+  "notes": "Checks over source documents/JSON/canonical projections only; not production validation or new independent closure. Reviewer 39-token C++ comparison remains reviewer evidence."
+}

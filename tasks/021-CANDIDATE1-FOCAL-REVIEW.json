@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-CANDIDATE1-FOCAL-REVIEW",
+  "status": "READY_FOR_DISPATCH",
+  "dispatch_status": "NOT_DISPATCHED",
+  "assigned_role": "claude-independent-reviewer-separate-from-implementer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "governance_input_parent": "7ab557697f78b0b8eb8c1e53997ef6e752f9470e",
+  "review_snapshot": "Exact publication SHA supplied in handoff; stop on unexpected remote coordination HEAD or input identity divergence",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_access": "STRICTLY_READ_ONLY",
+  "candidate": {
+    "path": "increments/021/12-final-candidate/INCREMENT_021_FINAL_SPECIFICATION_CANDIDATE.md",
+    "lines": 373,
+    "size_bytes": 63606,
+    "sha256": "041830ca8bf89207336b5fe5898f502e2f3b6ae51c706652bc716686cfa56669"
+  },
+  "annexes": [
+    {
+      "path": "increments/021/12-final-candidate/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/12-final-candidate/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/12-final-candidate/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/12-final-candidate/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "response": {
+    "path": "increments/021/11-draft2-reconciliation/CODEX_INCREMENT_021_DRAFT2_RECONCILIATION.md",
+    "lines": 65,
+    "size_bytes": 7010,
+    "sha256": "c8389a4722f95df227349bf3ffce2dcdf291b73b8cb9bf151bc7bd04065cbe21"
+  },
+  "prior_review": {
+    "path": "increments/021/10-draft2-focal-review/CLAUDE_INCREMENT_021_DRAFT2_FOCAL_REVIEW.md",
+    "commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+    "lines": 98,
+    "size_bytes": 9193,
+    "sha256": "11261d70312b9b32bc05a67e8545d3cbcfb12687ece67b67103e8d52d3ced954",
+    "git_blob_sha": "de3b8685b31a7657ffc4d5f7c0eafaef5f14463d"
+  },
+  "prior_review_commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+  "input_manifest": "increments/021/12-final-candidate/evidence/FILE_IDENTITIES.json",
+  "required_scope": [
+    "Read AGENTS/workflow/STATUS/task and verify exact input identities",
+    "Read candidate response, §10.1, schema, full scenarios and cases; compare exact diff with draft-2, not only architect summary",
+    "Give separate dispositions for MINOR-N1, MINOR-N2, NOTE-N1 and NOTE-N2",
+    "Check deterministic endpoint precedence for identity, nonidentity, missing/malformed/null including quoted null, missing/empty/operator tables, duplicate/contradictory references and K=0",
+    "Check lookup origin versus identity proof; source-operator may denote nonidentity; previous K>0 refusals and 15-cell matrix must remain effective",
+    "Check seven reachable basis pairs and two impossible mixed source/convention pairs in one RAW; no accepted hash for forbidden DTO",
+    "Check documentary projection hashes separately from required future full production connection/plan hashes; do not treat projections as scientific execution",
+    "Confirm only T021-162 moved CP1 to CP2 with original content; ten added cases and counts 43/79/31/20=173",
+    "Check real NMR multi-model/EM/NCS fixtures now required at future CP2 and no coverage or success claim unsupported by execution",
+    "Check catalogue exact bytes preserved and prior P-1/P-2/P-3/NOTE-F1/9 closed findings not reopened absent concrete regression",
+    "Do not demand Windows or actual materializer before candidate review; those remain implementation gates"
+  ],
+  "allowed_governance_output_paths": [
+    "increments/021/13-candidate1-closure/CLAUDE_INCREMENT_021_CANDIDATE1_CLOSURE_REVIEW.md",
+    "increments/021/13-candidate1-closure/evidence/claude-*"
+  ],
+  "output_branch_policy": "Own claude/ branch from exact dispatched publication; do not edit central coordination branch",
+  "governance_commit_push_authorized_when_dispatched": true,
+  "delivery_instruction": "communications/GOVERNANCE_DELIVERY_INSTRUCTIONS_20261123.md",
+  "required_receipt": [
+    "task/role",
+    "all input identities",
+    "individual dispositions and concrete evidence",
+    "own tests/limits",
+    "verdict",
+    "remote branch/full commit/path/lines/bytes/full SHA-256"
+  ],
+  "permitted_verdicts": [
+    "REQUEST CHANGES",
+    "APPROVE FOR OWNER FREEZE DECISION",
+    "APPROVE WITH NON-BLOCKING NOTES"
+  ],
+  "restrictions": [
+    "No code/tests/spec or architect document edits",
+    "No STATUS/task/history edits; own new review/evidence only",
+    "No freeze/implementation/main/PR/merge/tag/release/formal GitHub approval/force/automation",
+    "020-A remains STAND-BY; preserved local items untouched"
+  ],
+  "implementation_authorized": false,
+  "final_specification_frozen": false,
+  "automated_relay_active": false
+}

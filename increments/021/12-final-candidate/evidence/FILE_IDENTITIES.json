@@ -1,0 +1,80 @@
+{
+  "governance_input_commit": "7ab557697f78b0b8eb8c1e53997ef6e752f9470e",
+  "review_commit": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "note": "Publication files excluding self; candidate-1 is not frozen. Historical manifests remain pinned to their original commits.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 40,
+      "size_bytes": 3117,
+      "sha256": "0b53379b83eb1fcf6ffd7d5efcc31c1f427a27744d38bc04f990c5717b44342c"
+    },
+    {
+      "path": "increments/021/11-draft2-reconciliation/CODEX_INCREMENT_021_DRAFT2_RECONCILIATION.md",
+      "lines": 65,
+      "size_bytes": 7010,
+      "sha256": "c8389a4722f95df227349bf3ffce2dcdf291b73b8cb9bf151bc7bd04065cbe21"
+    },
+    {
+      "path": "increments/021/11-draft2-reconciliation/evidence/CANDIDATE_DOCUMENT_CHECKS.json",
+      "lines": 98,
+      "size_bytes": 3233,
+      "sha256": "e81ff841184d84d88300a18ad0d543ccf90f77f617d7c1b1b2ecb2072b21589d"
+    },
+    {
+      "path": "increments/021/11-draft2-reconciliation/evidence/DRAFT2_TO_CANDIDATE1.patch",
+      "lines": 97,
+      "size_bytes": 22493,
+      "sha256": "d228a8c4d5b6a16115151a7e24fd3ad69f8bd9682932fd7ef60e91b74ede9e99"
+    },
+    {
+      "path": "increments/021/12-final-candidate/INCREMENT_021_FINAL_SPECIFICATION_CANDIDATE.md",
+      "lines": 373,
+      "size_bytes": 63606,
+      "sha256": "041830ca8bf89207336b5fe5898f502e2f3b6ae51c706652bc716686cfa56669"
+    },
+    {
+      "path": "increments/021/12-final-candidate/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/12-final-candidate/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    },
+    {
+      "path": "increments/021/12-final-candidate/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/12-final-candidate/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "tasks/021-CANDIDATE1-FOCAL-REVIEW.json",
+      "lines": 104,
+      "size_bytes": 5366,
+      "sha256": "6dfb7a00f47069ebd57e6f27f11cd796c2683b467473b79bbc0895c5dc344f9c"
+    },
+    {
+      "path": "tasks/021-CANDIDATE1-PREPARATION.json",
+      "lines": 50,
+      "size_bytes": 2003,
+      "sha256": "fb903a92b9b6d07656ad7ed8dcd66c6a1effe859aa4a510b4067455d07e5f1ea"
+    },
+    {
+      "path": "tasks/021-DRAFT2-FOCAL-REVIEW.json",
+      "lines": 126,
+      "size_bytes": 6283,
+      "sha256": "0e4c0b392a1ec729999142a8de46bd7497e1a56c86ed48f76f2e0f8dcbc49cab"
+    }
+  ]
+}

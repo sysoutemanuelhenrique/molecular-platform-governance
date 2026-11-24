@@ -1,0 +1,173 @@
+{
+  "kind": "documentary-cases-not-production-records",
+  "version": "1.0",
+  "scope": "Nine ordered basis pairs for K=0; seven reachable, two forbidden. SHA values cover the explicitly named documentary projection only, never RAW, full ConnectionDecision or production plan. Future CP2 tests must compute complete production hashes from real checked fixture bytes.",
+  "cases": [
+    {
+      "scenario_id": "T021-164",
+      "retained_endpoints": 0,
+      "expected_identity_basis": [
+        "pdbx-1_555-convention",
+        "pdbx-1_555-convention"
+      ],
+      "reachable_in_one_raw": true,
+      "expected": "deterministic accepted basis pair; repeat full production plan hashes using fixed genuine source fixtures",
+      "source_context": "no operator tables; unsupported/null fields supply not-applicable",
+      "documentary_projection": {
+        "kind": "tbmp-021-identity-basis-documentary-projection",
+        "version": "1.0",
+        "identity_basis": [
+          "pdbx-1_555-convention",
+          "pdbx-1_555-convention"
+        ]
+      },
+      "documentary_projection_sha256": "a51100122441a2dba67a2f89884f31afe50fc338f5a37f98dcde888e8c482a28"
+    },
+    {
+      "scenario_id": "T021-165",
+      "retained_endpoints": 0,
+      "expected_identity_basis": [
+        "pdbx-1_555-convention",
+        "source-operator"
+      ],
+      "reachable_in_one_raw": false,
+      "expected": "reject incompatible pair before canonicalization",
+      "source_context": "unreachable: would require operator tables both present and absent in the same RAW",
+      "documentary_projection": null,
+      "documentary_projection_sha256": null
+    },
+    {
+      "scenario_id": "T021-166",
+      "retained_endpoints": 0,
+      "expected_identity_basis": [
+        "pdbx-1_555-convention",
+        "not-applicable"
+      ],
+      "reachable_in_one_raw": true,
+      "expected": "deterministic accepted basis pair; repeat full production plan hashes using fixed genuine source fixtures",
+      "source_context": "no operator tables; unsupported/null fields supply not-applicable",
+      "documentary_projection": {
+        "kind": "tbmp-021-identity-basis-documentary-projection",
+        "version": "1.0",
+        "identity_basis": [
+          "pdbx-1_555-convention",
+          "not-applicable"
+        ]
+      },
+      "documentary_projection_sha256": "3e48ec3e2486dc65ba8e0e56189c78cbb029532e5b59a5a365cbeb4014181118"
+    },
+    {
+      "scenario_id": "T021-167",
+      "retained_endpoints": 0,
+      "expected_identity_basis": [
+        "source-operator",
+        "pdbx-1_555-convention"
+      ],
+      "reachable_in_one_raw": false,
+      "expected": "reject incompatible pair before canonicalization",
+      "source_context": "unreachable: would require operator tables both present and absent in the same RAW",
+      "documentary_projection": null,
+      "documentary_projection_sha256": null
+    },
+    {
+      "scenario_id": "T021-168",
+      "retained_endpoints": 0,
+      "expected_identity_basis": [
+        "source-operator",
+        "source-operator"
+      ],
+      "reachable_in_one_raw": true,
+      "expected": "deterministic accepted basis pair; repeat full production plan hashes using fixed genuine source fixtures",
+      "source_context": "operator tables present with uniquely resolved nonidentity operators where source-operator is requested; null supplies not-applicable",
+      "documentary_projection": {
+        "kind": "tbmp-021-identity-basis-documentary-projection",
+        "version": "1.0",
+        "identity_basis": [
+          "source-operator",
+          "source-operator"
+        ]
+      },
+      "documentary_projection_sha256": "9dcfa474757df27de34f46cc1d2d4931ccc2cc9d197fa3bc074d974495e4150f"
+    },
+    {
+      "scenario_id": "T021-169",
+      "retained_endpoints": 0,
+      "expected_identity_basis": [
+        "source-operator",
+        "not-applicable"
+      ],
+      "reachable_in_one_raw": true,
+      "expected": "deterministic accepted basis pair; repeat full production plan hashes using fixed genuine source fixtures",
+      "source_context": "operator tables present with uniquely resolved nonidentity operators where source-operator is requested; null supplies not-applicable",
+      "documentary_projection": {
+        "kind": "tbmp-021-identity-basis-documentary-projection",
+        "version": "1.0",
+        "identity_basis": [
+          "source-operator",
+          "not-applicable"
+        ]
+      },
+      "documentary_projection_sha256": "c8fc441da9d8d7a7ff40782a2e606e42a02b5cfe45cb140a4b238bf56f37af15"
+    },
+    {
+      "scenario_id": "T021-170",
+      "retained_endpoints": 0,
+      "expected_identity_basis": [
+        "not-applicable",
+        "pdbx-1_555-convention"
+      ],
+      "reachable_in_one_raw": true,
+      "expected": "deterministic accepted basis pair; repeat full production plan hashes using fixed genuine source fixtures",
+      "source_context": "no operator tables; unsupported/null fields supply not-applicable",
+      "documentary_projection": {
+        "kind": "tbmp-021-identity-basis-documentary-projection",
+        "version": "1.0",
+        "identity_basis": [
+          "not-applicable",
+          "pdbx-1_555-convention"
+        ]
+      },
+      "documentary_projection_sha256": "c5be51946627c7072147585d36f1d892f5c268ebf57316f3d5d2b15085529bee"
+    },
+    {
+      "scenario_id": "T021-171",
+      "retained_endpoints": 0,
+      "expected_identity_basis": [
+        "not-applicable",
+        "source-operator"
+      ],
+      "reachable_in_one_raw": true,
+      "expected": "deterministic accepted basis pair; repeat full production plan hashes using fixed genuine source fixtures",
+      "source_context": "operator tables present with uniquely resolved nonidentity operators where source-operator is requested; null supplies not-applicable",
+      "documentary_projection": {
+        "kind": "tbmp-021-identity-basis-documentary-projection",
+        "version": "1.0",
+        "identity_basis": [
+          "not-applicable",
+          "source-operator"
+        ]
+      },
+      "documentary_projection_sha256": "b8ac062169b9a7d2f8f07cc4b473b20fc271b0f841f0e06bf307cd6bd887aa88"
+    },
+    {
+      "scenario_id": "T021-172",
+      "retained_endpoints": 0,
+      "expected_identity_basis": [
+        "not-applicable",
+        "not-applicable"
+      ],
+      "reachable_in_one_raw": true,
+      "expected": "deterministic accepted basis pair; repeat full production plan hashes using fixed genuine source fixtures",
+      "source_context": "null or unsupported endpoint codes without usable lookup",
+      "documentary_projection": {
+        "kind": "tbmp-021-identity-basis-documentary-projection",
+        "version": "1.0",
+        "identity_basis": [
+          "not-applicable",
+          "not-applicable"
+        ]
+      },
+      "documentary_projection_sha256": "ce5ffc0194ba8462426e22853f37210fbab58a47c3bf5ce451645688010783ff"
+    }
+  ]
+}

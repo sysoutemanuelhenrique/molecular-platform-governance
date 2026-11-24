@@ -1,0 +1,2045 @@
+{
+  "kind": "tbmp-receptor-materialization-catalogue",
+  "profile_version": "1.0",
+  "tag_comparison": "ASCII case-insensitive; canonical output tags are lowercase; scientific identifier values remain case-sensitive",
+  "category_order": "alphabetical ASCII by canonical category; source row order retained within each category",
+  "unknown_category_action": "reject",
+  "allowed_omission_prefixes": {
+    "_pdbx_validate_": "omit all tags with category audit; never transfer deposition validation to derived artifact",
+    "_pdbx_nmr_": "source NMR experiment/ensemble metadata omitted in full with audit; no restraint/ensemble claim transferred",
+    "_em_": "source EM experiment/reconstruction metadata omitted in full with audit; no map or reconstruction claim transferred"
+  },
+  "required_categories": [
+    "_atom_site",
+    "_struct_asym",
+    "_entity",
+    "_chem_comp"
+  ],
+  "conditional_categories": {
+    "retained_polymer_entity": [
+      "_entity_poly",
+      "_entity_poly_seq",
+      "_pdbx_poly_seq_scheme"
+    ],
+    "retained_branched_entity": [
+      "_pdbx_entity_branch",
+      "_pdbx_entity_branch_list",
+      "_pdbx_branch_scheme"
+    ],
+    "retained_struct_conn": [
+      "_struct_conn_type"
+    ]
+  },
+  "global_rules": [
+    "No invented absent optional categories except generated _entry",
+    "Required tags must exist; key and relationship columns must be non-null where the corresponding relation is required",
+    "Unknown tags in filtered categories reject rather than silently disappear; explicitly omitted categories may contain arbitrary tags",
+    "Third-partner columns in _struct_conn must contain only true CIF null markers; non-null values reject",
+    "Preserve source tokens for retained fields; audit every dropped category/tag/row; generated entry ids are explicitly identified",
+    "Catalogue keys are profile identity keys, not a claim that they reproduce every DDL primary key",
+    "For retained polymer atoms, (label_entity_id,label_seq_id,label_comp_id) must match a declared entity_poly_seq(entity_id,num,mon_id); branch occurrence references use the full entity/num/comp key, never num alone",
+    "No atom guessing to reconcile a missing-context annotation; refusal when its supported filtering rule cannot determine context",
+    "All omit_tags fields are arrays; action=omit means all source tags/rows omitted, without an all sentinel",
+    "guard_then_omit validates required tags/keys and a semantic precondition before omitting the entire category; unknown tags still reject",
+    "Omission never authorizes NCS expansion, coordinate transformation, occupancy normalization or inference of missing atom coordinates"
+  ],
+  "categories": {
+    "_atom_site": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id",
+        "type_symbol",
+        "label_atom_id",
+        "label_alt_id",
+        "label_comp_id",
+        "label_asym_id",
+        "label_entity_id",
+        "label_seq_id",
+        "auth_asym_id",
+        "auth_seq_id",
+        "pdbx_pdb_ins_code",
+        "pdbx_pdb_model_num",
+        "cartn_x",
+        "cartn_y",
+        "cartn_z",
+        "occupancy",
+        "b_iso_or_equiv"
+      ],
+      "preserve_tags": [
+        "group_pdb",
+        "id",
+        "type_symbol",
+        "label_atom_id",
+        "label_alt_id",
+        "label_comp_id",
+        "label_asym_id",
+        "label_entity_id",
+        "label_seq_id",
+        "auth_atom_id",
+        "auth_comp_id",
+        "auth_asym_id",
+        "auth_seq_id",
+        "pdbx_pdb_ins_code",
+        "pdbx_pdb_model_num",
+        "cartn_x",
+        "cartn_y",
+        "cartn_z",
+        "occupancy",
+        "b_iso_or_equiv",
+        "pdbx_formal_charge"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "ATOM_MASK",
+      "references": {
+        "label_asym_id": "_struct_asym.id",
+        "label_entity_id": "_entity.id",
+        "label_comp_id": "_chem_comp.id",
+        "label_seq_id": "conditional polymer: _entity_poly_seq(entity_id,num,mon_id) using label_entity_id,label_seq_id,label_comp_id; nonpolymer true null accepted"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-061"
+      ]
+    },
+    "_atom_site_anisotrop": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id"
+      ],
+      "preserve_tags": [
+        "id",
+        "type_symbol",
+        "pdbx_pdb_atom_name",
+        "pdbx_pdb_ins_code",
+        "pdbx_pdb_model_num",
+        "pdbx_pdb_residue_name",
+        "pdbx_pdb_residue_no",
+        "pdbx_pdb_strand_id",
+        "pdbx_auth_alt_id",
+        "pdbx_auth_asym_id",
+        "pdbx_auth_atom_id",
+        "pdbx_auth_atom_name",
+        "pdbx_auth_comp_id",
+        "pdbx_auth_seq_id",
+        "pdbx_label_alt_id",
+        "pdbx_label_asym_id",
+        "pdbx_label_atom_id",
+        "pdbx_label_comp_id",
+        "pdbx_label_ins_code",
+        "pdbx_label_seq_id",
+        "pdbx_not_in_asym",
+        "u[1][1]",
+        "u[1][2]",
+        "u[1][3]",
+        "u[2][2]",
+        "u[2][3]",
+        "u[3][3]",
+        "b[1][1]",
+        "b[1][2]",
+        "b[1][3]",
+        "b[2][2]",
+        "b[2][3]",
+        "b[3][3]",
+        "u[1][1]_esd",
+        "u[1][2]_esd",
+        "u[1][3]_esd",
+        "u[2][2]_esd",
+        "u[2][3]_esd",
+        "u[3][3]_esd",
+        "b[1][1]_esd",
+        "b[1][2]_esd",
+        "b[1][3]_esd",
+        "b[2][2]_esd",
+        "b[2][3]_esd",
+        "b[3][3]_esd"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "ANISOTROP_ATOM_ID",
+      "references": {
+        "id": "_atom_site.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-062"
+      ]
+    },
+    "_struct_asym": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id",
+        "entity_id"
+      ],
+      "preserve_tags": [
+        "id",
+        "entity_id",
+        "pdbx_blank_pdb_chainid_flag",
+        "pdbx_modified",
+        "details"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ASYM",
+      "references": {
+        "entity_id": "_entity.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-063"
+      ]
+    },
+    "_entity": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id",
+        "type"
+      ],
+      "preserve_tags": [
+        "id",
+        "type",
+        "src_method",
+        "pdbx_description",
+        "details"
+      ],
+      "omit_tags": [
+        "formula_weight",
+        "pdbx_number_of_molecules",
+        "pdbx_ec",
+        "pdbx_mutation",
+        "pdbx_fragment"
+      ],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ENTITY",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-064"
+      ]
+    },
+    "_entity_poly": {
+      "action": "filter",
+      "key": [
+        "entity_id"
+      ],
+      "required_tags": [
+        "entity_id",
+        "type"
+      ],
+      "preserve_tags": [
+        "entity_id",
+        "type",
+        "nstd_linkage",
+        "nstd_monomer",
+        "pdbx_seq_one_letter_code",
+        "pdbx_seq_one_letter_code_can"
+      ],
+      "omit_tags": [
+        "pdbx_strand_id",
+        "pdbx_target_identifier"
+      ],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ENTITY",
+      "references": {
+        "entity_id": "_entity.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-065"
+      ]
+    },
+    "_entity_poly_seq": {
+      "action": "filter",
+      "key": [
+        "entity_id",
+        "num",
+        "mon_id"
+      ],
+      "required_tags": [
+        "entity_id",
+        "num",
+        "mon_id"
+      ],
+      "preserve_tags": [
+        "entity_id",
+        "num",
+        "mon_id",
+        "hetero"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ENTITY_ALL_SEQUENCE",
+      "references": {
+        "entity_id": "_entity.id",
+        "mon_id": "_chem_comp.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-066"
+      ]
+    },
+    "_chem_comp": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id",
+        "type"
+      ],
+      "preserve_tags": [
+        "id",
+        "type",
+        "mon_nstd_flag",
+        "name",
+        "pdbx_synonyms",
+        "formula",
+        "formula_weight",
+        "pdbx_formal_charge",
+        "one_letter_code",
+        "three_letter_code",
+        "pdbx_type",
+        "pdbx_ambiguous_flag",
+        "pdbx_release_status",
+        "pdbx_modified_date",
+        "pdbx_initial_date",
+        "pdbx_replaced_by",
+        "pdbx_replaces",
+        "pdbx_processing_site"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "REFERENCED_CCD_CLOSURE",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-067"
+      ]
+    },
+    "_pdbx_entity_nonpoly": {
+      "action": "filter",
+      "key": [
+        "entity_id",
+        "comp_id"
+      ],
+      "required_tags": [
+        "entity_id",
+        "comp_id"
+      ],
+      "preserve_tags": [
+        "entity_id",
+        "comp_id",
+        "name"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ENTITY",
+      "references": {
+        "entity_id": "_entity.id",
+        "comp_id": "_chem_comp.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-068"
+      ]
+    },
+    "_pdbx_poly_seq_scheme": {
+      "action": "filter",
+      "key": [
+        "asym_id",
+        "seq_id",
+        "mon_id"
+      ],
+      "required_tags": [
+        "asym_id",
+        "entity_id",
+        "seq_id",
+        "mon_id"
+      ],
+      "preserve_tags": [
+        "asym_id",
+        "entity_id",
+        "seq_id",
+        "mon_id",
+        "ndb_seq_num",
+        "pdb_seq_num",
+        "auth_seq_num",
+        "pdb_mon_id",
+        "auth_mon_id",
+        "pdb_strand_id",
+        "pdb_ins_code",
+        "hetero"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ASYM_ALL_SEQUENCE",
+      "references": {
+        "asym_id": "_struct_asym.id",
+        "entity_id": "_entity.id",
+        "mon_id": "_chem_comp.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-069"
+      ]
+    },
+    "_pdbx_nonpoly_scheme": {
+      "action": "filter",
+      "key": [
+        "asym_id",
+        "ndb_seq_num",
+        "mon_id"
+      ],
+      "required_tags": [
+        "asym_id",
+        "entity_id",
+        "mon_id",
+        "ndb_seq_num"
+      ],
+      "preserve_tags": [
+        "asym_id",
+        "entity_id",
+        "mon_id",
+        "ndb_seq_num",
+        "pdb_seq_num",
+        "auth_seq_num",
+        "pdb_mon_id",
+        "auth_mon_id",
+        "pdb_strand_id",
+        "pdb_ins_code"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ASYM",
+      "references": {
+        "asym_id": "_struct_asym.id",
+        "entity_id": "_entity.id",
+        "mon_id": "_chem_comp.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-070"
+      ]
+    },
+    "_pdbx_entity_branch": {
+      "action": "filter",
+      "key": [
+        "entity_id"
+      ],
+      "required_tags": [
+        "entity_id",
+        "type"
+      ],
+      "preserve_tags": [
+        "entity_id",
+        "type"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ENTITY",
+      "references": {
+        "entity_id": "_entity.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-071"
+      ]
+    },
+    "_pdbx_entity_branch_list": {
+      "action": "filter",
+      "key": [
+        "entity_id",
+        "num",
+        "comp_id"
+      ],
+      "required_tags": [
+        "entity_id",
+        "num",
+        "comp_id"
+      ],
+      "preserve_tags": [
+        "entity_id",
+        "num",
+        "comp_id",
+        "hetero"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ENTITY_ALL_BRANCH",
+      "references": {
+        "entity_id": "_entity.id",
+        "comp_id": "_chem_comp.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-072"
+      ]
+    },
+    "_pdbx_entity_branch_link": {
+      "action": "filter",
+      "key": [
+        "link_id"
+      ],
+      "required_tags": [
+        "link_id",
+        "entity_id",
+        "entity_branch_list_num_1",
+        "comp_id_1",
+        "atom_id_1",
+        "entity_branch_list_num_2",
+        "comp_id_2",
+        "atom_id_2"
+      ],
+      "preserve_tags": [
+        "link_id",
+        "entity_id",
+        "entity_branch_list_num_1",
+        "comp_id_1",
+        "atom_id_1",
+        "leaving_atom_id_1",
+        "atom_stereo_config_1",
+        "entity_branch_list_num_2",
+        "comp_id_2",
+        "atom_id_2",
+        "leaving_atom_id_2",
+        "atom_stereo_config_2",
+        "value_order",
+        "details"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ENTITY_ALL_BRANCH",
+      "references": {
+        "entity_id": "_entity.id",
+        "entity_branch_list_num_1": "_pdbx_entity_branch_list(entity_id,num,comp_id_1)",
+        "entity_branch_list_num_2": "_pdbx_entity_branch_list(entity_id,num,comp_id_2)"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-073"
+      ]
+    },
+    "_pdbx_branch_scheme": {
+      "action": "filter",
+      "key": [
+        "asym_id",
+        "entity_id",
+        "mon_id",
+        "num"
+      ],
+      "required_tags": [
+        "asym_id",
+        "entity_id",
+        "mon_id",
+        "num"
+      ],
+      "preserve_tags": [
+        "asym_id",
+        "entity_id",
+        "mon_id",
+        "num",
+        "auth_asym_id",
+        "auth_mon_id",
+        "auth_seq_num",
+        "hetero",
+        "pdb_asym_id",
+        "pdb_ins_code",
+        "pdb_mon_id",
+        "pdb_seq_num"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "RETAINED_ASYM_ALL_BRANCH",
+      "references": {
+        "asym_id": "_struct_asym.id",
+        "entity_id": "_entity.id",
+        "mon_id": "_chem_comp.id",
+        "num": "_pdbx_entity_branch_list(entity_id,num,mon_id)"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-074"
+      ]
+    },
+    "_struct_conn": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id",
+        "conn_type_id",
+        "ptnr1_label_asym_id",
+        "ptnr1_label_comp_id",
+        "ptnr1_label_atom_id",
+        "ptnr2_label_asym_id",
+        "ptnr2_label_comp_id",
+        "ptnr2_label_atom_id"
+      ],
+      "preserve_tags": [
+        "id",
+        "conn_type_id",
+        "details",
+        "pdbx_dist_value",
+        "pdbx_value_order",
+        "pdbx_role",
+        "pdbx_leaving_atom_flag",
+        "ptnr1_label_asym_id",
+        "ptnr1_label_comp_id",
+        "ptnr1_label_seq_id",
+        "ptnr1_label_atom_id",
+        "ptnr1_auth_asym_id",
+        "ptnr1_auth_comp_id",
+        "ptnr1_auth_seq_id",
+        "ptnr1_auth_atom_id",
+        "ptnr1_symmetry",
+        "ptnr1_role",
+        "ptnr1_label_alt_id",
+        "pdbx_ptnr1_pdb_ins_code",
+        "pdbx_ptnr1_label_alt_id",
+        "pdbx_ptnr1_auth_alt_id",
+        "ptnr2_label_asym_id",
+        "ptnr2_label_comp_id",
+        "ptnr2_label_seq_id",
+        "ptnr2_label_atom_id",
+        "ptnr2_auth_asym_id",
+        "ptnr2_auth_comp_id",
+        "ptnr2_auth_seq_id",
+        "ptnr2_auth_atom_id",
+        "ptnr2_symmetry",
+        "ptnr2_role",
+        "ptnr2_label_alt_id",
+        "pdbx_ptnr2_pdb_ins_code",
+        "pdbx_ptnr2_label_alt_id",
+        "pdbx_ptnr2_auth_alt_id",
+        "pdbx_ptnr3_pdb_ins_code",
+        "pdbx_ptnr3_auth_alt_id",
+        "pdbx_ptnr3_auth_asym_id",
+        "pdbx_ptnr3_auth_atom_id",
+        "pdbx_ptnr3_auth_comp_id",
+        "pdbx_ptnr3_auth_ins_code",
+        "pdbx_ptnr3_auth_seq_id",
+        "pdbx_ptnr3_label_alt_id",
+        "pdbx_ptnr3_label_asym_id",
+        "pdbx_ptnr3_label_atom_id",
+        "pdbx_ptnr3_label_comp_id",
+        "pdbx_ptnr3_label_seq_id"
+      ],
+      "omit_tags": [
+        "pdbx_pdb_id",
+        "pdbx_ptnr1_standard_comp_id",
+        "pdbx_ptnr1_atom_stereo_config",
+        "pdbx_ptnr1_leaving_atom_id",
+        "pdbx_ptnr1_mod_name",
+        "pdbx_ptnr1_replaced_atom",
+        "pdbx_ptnr1_sugar_name",
+        "pdbx_ptnr2_atom_stereo_config",
+        "pdbx_ptnr2_leaving_atom_id"
+      ],
+      "generate_tags": [],
+      "row_rule": "CONNECTION_ACTIONS",
+      "references": {
+        "conn_type_id": "_struct_conn_type.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-075"
+      ]
+    },
+    "_struct_conn_type": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id"
+      ],
+      "preserve_tags": [
+        "id",
+        "criteria",
+        "reference"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "USED_CONNECTION_TYPES",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-076"
+      ]
+    },
+    "_atom_type": {
+      "action": "filter",
+      "key": [
+        "symbol"
+      ],
+      "required_tags": [
+        "symbol"
+      ],
+      "preserve_tags": [
+        "symbol"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "USED_ELEMENTS",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-077"
+      ]
+    },
+    "_cell": {
+      "action": "filter",
+      "key": [
+        "entry_id"
+      ],
+      "required_tags": [],
+      "preserve_tags": [
+        "length_a",
+        "length_b",
+        "length_c",
+        "angle_alpha",
+        "angle_beta",
+        "angle_gamma",
+        "z_pdb",
+        "angle_alpha_esd",
+        "angle_beta_esd",
+        "angle_gamma_esd",
+        "details",
+        "formula_units_z",
+        "length_a_esd",
+        "length_b_esd",
+        "length_c_esd",
+        "volume",
+        "volume_esd",
+        "reciprocal_angle_alpha",
+        "reciprocal_angle_beta",
+        "reciprocal_angle_gamma",
+        "reciprocal_angle_alpha_esd",
+        "reciprocal_angle_beta_esd",
+        "reciprocal_angle_gamma_esd",
+        "reciprocal_length_a",
+        "reciprocal_length_b",
+        "reciprocal_length_c",
+        "reciprocal_length_a_esd",
+        "reciprocal_length_b_esd",
+        "reciprocal_length_c_esd",
+        "pdbx_esd_method"
+      ],
+      "omit_tags": [
+        "pdbx_unique_axis"
+      ],
+      "generate_tags": [
+        "entry_id"
+      ],
+      "row_rule": "SOURCE_FRAME_SINGLETON",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-078"
+      ]
+    },
+    "_symmetry": {
+      "action": "filter",
+      "key": [
+        "entry_id"
+      ],
+      "required_tags": [],
+      "preserve_tags": [
+        "space_group_name_h-m",
+        "int_tables_number",
+        "space_group_name_hall",
+        "cell_setting",
+        "pdbx_full_space_group_name_h-m"
+      ],
+      "omit_tags": [],
+      "generate_tags": [
+        "entry_id"
+      ],
+      "row_rule": "SOURCE_FRAME_SINGLETON",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-078"
+      ]
+    },
+    "_symmetry_equiv": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id",
+        "pos_as_xyz"
+      ],
+      "preserve_tags": [
+        "id",
+        "pos_as_xyz"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "SOURCE_OPERATORS",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-079"
+      ]
+    },
+    "_space_group_symop": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id",
+        "operation_xyz"
+      ],
+      "preserve_tags": [
+        "id",
+        "operation_xyz"
+      ],
+      "omit_tags": [
+        "sg_id"
+      ],
+      "generate_tags": [],
+      "row_rule": "SOURCE_OPERATORS",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-079"
+      ]
+    },
+    "_pdbx_struct_mod_residue": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id"
+      ],
+      "preserve_tags": [
+        "id",
+        "label_asym_id",
+        "label_comp_id",
+        "label_seq_id",
+        "auth_asym_id",
+        "auth_comp_id",
+        "auth_seq_id",
+        "pdb_ins_code",
+        "pdb_model_num",
+        "parent_comp_id",
+        "details"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "MODIFIED_RESIDUE_CONTEXT",
+      "references": {
+        "parent_comp_id": "_chem_comp.id"
+      },
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-080"
+      ]
+    },
+    "_pdbx_unobs_or_zero_occ_residues": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id"
+      ],
+      "preserve_tags": [
+        "id",
+        "polymer_flag",
+        "occupancy_flag",
+        "pdb_model_num",
+        "auth_asym_id",
+        "auth_comp_id",
+        "auth_seq_id",
+        "pdb_ins_code",
+        "label_asym_id",
+        "label_comp_id",
+        "label_seq_id"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "MISSING_RESIDUE_CONTEXT",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-081"
+      ]
+    },
+    "_pdbx_unobs_or_zero_occ_atoms": {
+      "action": "filter",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id"
+      ],
+      "preserve_tags": [
+        "id",
+        "polymer_flag",
+        "occupancy_flag",
+        "pdb_model_num",
+        "auth_asym_id",
+        "auth_comp_id",
+        "auth_seq_id",
+        "pdb_ins_code",
+        "auth_atom_id",
+        "label_asym_id",
+        "label_comp_id",
+        "label_seq_id",
+        "label_atom_id",
+        "label_alt_id"
+      ],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "MISSING_ATOM_CONTEXT",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-081"
+      ]
+    },
+    "_entry": {
+      "action": "generate",
+      "key": [
+        "id"
+      ],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [
+        "id"
+      ],
+      "row_rule": "DERIVED_ENTRY",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-082"
+      ]
+    },
+    "_audit_conform": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_database_2": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_pdbx_database_status": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_audit_author": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_citation": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_citation_author": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_pdbx_entity_src_syn": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_entity_src_gen": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_entity_src_nat": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_ref": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_ref_seq": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_ref_seq_dif": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_chem_comp_atom": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_chem_comp_bond": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_exptl": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_exptl_crystal": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_exptl_crystal_grow": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_diffrn": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_diffrn_detector": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_diffrn_radiation": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_diffrn_radiation_wavelength": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_diffrn_source": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_reflns": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_reflns_shell": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_refine": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_refine_hist": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_refine_ls_restr": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_refine_ls_shell": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_keywords": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_conf": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_conf_type": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_sheet": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_sheet_order": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_sheet_range": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_sheet_hbond": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_mon_prot_cis": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_site": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_site_gen": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_atom_sites": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_pdbx_struct_special_symmetry": {
+      "action": "guard_then_omit",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id"
+      ],
+      "preserve_tags": [],
+      "omit_tags": [
+        "id",
+        "pdb_model_num",
+        "auth_comp_id",
+        "auth_asym_id",
+        "auth_seq_id",
+        "pdb_ins_code",
+        "label_alt_id",
+        "label_asym_id",
+        "label_comp_id",
+        "label_seq_id"
+      ],
+      "generate_tags": [],
+      "row_rule": "SPECIAL_POSITION_GUARD_THEN_OMIT",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-158"
+      ]
+    },
+    "_pdbx_struct_assembly": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_pdbx_struct_assembly_gen": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_pdbx_struct_oper_list": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_struct_ncs_oper": {
+      "action": "guard_then_omit",
+      "key": [
+        "id"
+      ],
+      "required_tags": [
+        "id",
+        "matrix[1][1]",
+        "matrix[1][2]",
+        "matrix[1][3]",
+        "matrix[2][1]",
+        "matrix[2][2]",
+        "matrix[2][3]",
+        "matrix[3][1]",
+        "matrix[3][2]",
+        "matrix[3][3]",
+        "vector[1]",
+        "vector[2]",
+        "vector[3]"
+      ],
+      "preserve_tags": [],
+      "omit_tags": [
+        "id",
+        "code",
+        "matrix[1][1]",
+        "matrix[1][2]",
+        "matrix[1][3]",
+        "matrix[2][1]",
+        "matrix[2][2]",
+        "matrix[2][3]",
+        "matrix[3][1]",
+        "matrix[3][2]",
+        "matrix[3][3]",
+        "vector[1]",
+        "vector[2]",
+        "vector[3]",
+        "details"
+      ],
+      "generate_tags": [],
+      "row_rule": "NCS_GUARD_THEN_OMIT",
+      "references": {},
+      "nonnull_key": true,
+      "unknown_tag_action": "reject",
+      "scenario_ids": [
+        "T021-153"
+      ]
+    },
+    "_pdbx_audit_revision_history": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_pdbx_audit_revision_details": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_pdbx_audit_revision_group": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_software": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_pdbx_audit_support": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_pdbx_database_related": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_pdbx_database_pdb_obs_spr": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-083"
+      ]
+    },
+    "_entity_name_com": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_exptl_crystal_grow_comp": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_refine_analyze": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_pdbx_refine": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_struct_biol": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_database_pdb_matrix": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_pdbx_molecule_features": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_pdbx_molecule": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_struct_site_keywords": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_pdbx_struct_assembly_prop": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_pdbx_entry_details": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_ndb_struct_conf_na": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_ndb_struct_na_base_pair": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_ndb_struct_na_base_pair_step": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_pdbx_refine_tls": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_pdbx_refine_tls_group": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-148"
+      ]
+    },
+    "_pdbx_struct_conn_angle": {
+      "action": "omit",
+      "key": [],
+      "required_tags": [],
+      "preserve_tags": [],
+      "omit_tags": [],
+      "generate_tags": [],
+      "row_rule": "AUDIT_OMITTED_CATEGORY",
+      "references": {},
+      "nonnull_key": false,
+      "unknown_tag_action": "omit_with_category",
+      "scenario_ids": [
+        "T021-149"
+      ]
+    }
+  }
+}
