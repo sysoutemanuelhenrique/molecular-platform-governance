@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CANDIDATE1-FOCAL-REVIEW",
-  "status": "READY_FOR_DISPATCH",
-  "dispatch_status": "NOT_DISPATCHED",
+  "status": "COMPLETED_REVIEW_RECEIVED",
+  "dispatch_status": "COMPLETED_AS_REPORTED_BY_REVIEWER",
   "assigned_role": "claude-independent-reviewer-separate-from-implementer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -100,5 +100,31 @@
   ],
   "implementation_authorized": false,
   "final_specification_frozen": false,
-  "automated_relay_active": false
+  "automated_relay_active": false,
+  "result_commit": "4759abff9f7deeb921cfb944b1e6cd3fc914d4fa",
+  "result_branch": "claude/021-candidate1-focal-review-20261124",
+  "result": {
+    "path": "increments/021/13-candidate1-closure/CLAUDE_INCREMENT_021_CANDIDATE1_CLOSURE_REVIEW.md",
+    "commit": "4759abff9f7deeb921cfb944b1e6cd3fc914d4fa",
+    "lines": 73,
+    "size_bytes": 6564,
+    "sha256": "6550fdb2ea4a50b075efbe163b8f0525357dd671be4759619bcfdaeb0357590b",
+    "git_blob_sha": "42e9aa39b76622fede7c81b19dcc2c05e60210ed"
+  },
+  "result_verdict": "APPROVE WITH NON-BLOCKING NOTES",
+  "findings": {
+    "blockers": 0,
+    "majors": 0,
+    "minors": 0,
+    "nonblocking_notes": 2
+  },
+  "minor_n1_n2_closed_by_independent_reviewer": true,
+  "architect_notes_disposition": {
+    "path": "increments/021/14-final-candidate2/CODEX_CANDIDATE1_NONBLOCKING_NOTES_DISPOSITION.md",
+    "lines": 48,
+    "size_bytes": 5434,
+    "sha256": "5a661a97d42b157f6d8755e64e7f0fe1699635b42ad1758e19bb438f382d9698"
+  },
+  "next_task": "tasks/021-OWNER-FREEZE-DECISION.json",
+  "candidate2_independent_review_claimed": false
 }

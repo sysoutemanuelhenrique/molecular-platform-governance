@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-OWNER-FREEZE-DECISION",
+  "assigned_role": "owner-emanuel-henrique-da-silva",
+  "status": "PREPARED_AWAITING_OWNER_DECISION",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "governance_input_parent": "ec38f578ced987969cd8f58c9c7ee4567e7fdd52",
+  "publication_snapshot": "Use immutable publication SHA supplied with the decision request, not input parent or moving branch name alone",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "candidate": {
+    "path": "increments/021/14-final-candidate2/INCREMENT_021_FINAL_SPECIFICATION_CANDIDATE2.md",
+    "lines": 374,
+    "size_bytes": 64461,
+    "sha256": "377e90a6ff2f92b74dca4678ca60aa202dd5f154d2666f9096d0d5fc9882ad6b"
+  },
+  "annexes": [
+    {
+      "path": "increments/021/14-final-candidate2/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "notes_disposition": {
+    "path": "increments/021/14-final-candidate2/CODEX_CANDIDATE1_NONBLOCKING_NOTES_DISPOSITION.md",
+    "lines": 48,
+    "size_bytes": 5434,
+    "sha256": "5a661a97d42b157f6d8755e64e7f0fe1699635b42ad1758e19bb438f382d9698"
+  },
+  "package_key": "1e44f8f91d3a95218978c6c4866e550399a6c1dd13606954b0aab22045333f3f",
+  "package_key_algorithm": "H({kind:tbmp-021-owner-freeze-decision-package,version:1.0,candidate,annexes,notes_disposition}) using standard 021 canonical JSON; not a chemical or production identity",
+  "input_manifest": "increments/021/14-final-candidate2/evidence/FILE_IDENTITIES.json",
+  "independent_review_basis": {
+    "commit": "4759abff9f7deeb921cfb944b1e6cd3fc914d4fa",
+    "report": {
+      "path": "increments/021/13-candidate1-closure/CLAUDE_INCREMENT_021_CANDIDATE1_CLOSURE_REVIEW.md",
+      "commit": "4759abff9f7deeb921cfb944b1e6cd3fc914d4fa",
+      "lines": 73,
+      "size_bytes": 6564,
+      "sha256": "6550fdb2ea4a50b075efbe163b8f0525357dd671be4759619bcfdaeb0357590b",
+      "git_blob_sha": "42e9aa39b76622fede7c81b19dcc2c05e60210ed"
+    },
+    "reviewed_version": "candidate-1",
+    "verdict": "APPROVE WITH NON-BLOCKING NOTES",
+    "minor_n1_n2_closed": true,
+    "additional_changes": "Candidate-2 contains explicit NB-1/NB-2 clarifications and version/status metadata. Four normative annexes unchanged; candidate-2 not separately independently reviewed.",
+    "reviewer_guidance": "No additional review round beyond diff checking required by the report; owner may request one"
+  },
+  "decision_choices": [
+    "APPROVE_FREEZE_ONLY",
+    "REQUEST_CHANGES",
+    "REQUEST_ADDITIONAL_DELTA_CHECK"
+  ],
+  "requested_scope": "Approve exact identified candidate-2 body, four annexes and NB-1/NB-2 wording for specification freezing only, if owner chooses; no implementation permission",
+  "human_approval_required": true,
+  "owner_approval_recorded": false,
+  "freeze_authorized": false,
+  "implementation_authorized": false,
+  "final_specification_frozen": false,
+  "restrictions": [
+    "Do not infer approval from a reviewer verdict, agent commit or task status",
+    "Do not freeze before direct owner decision identifying the exact package",
+    "No code change/branch/checkpoint/PR/merge/tag/release/main/configuration action authorized by this task",
+    "020-A remains STAND-BY; no automation activated"
+  ]
+}

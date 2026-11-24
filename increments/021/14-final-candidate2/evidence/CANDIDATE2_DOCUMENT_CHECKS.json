@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-24",
+  "timezone": "America/Sao_Paulo",
+  "governance_input_commit": "ec38f578ced987969cd8f58c9c7ee4567e7fdd52",
+  "review_commit": "4759abff9f7deeb921cfb944b1e6cd3fc914d4fa",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "review_files": [
+    {
+      "path": "increments/021/13-candidate1-closure/CLAUDE_INCREMENT_021_CANDIDATE1_CLOSURE_REVIEW.md",
+      "commit": "4759abff9f7deeb921cfb944b1e6cd3fc914d4fa",
+      "lines": 73,
+      "size_bytes": 6564,
+      "sha256": "6550fdb2ea4a50b075efbe163b8f0525357dd671be4759619bcfdaeb0357590b",
+      "git_blob_sha": "42e9aa39b76622fede7c81b19dcc2c05e60210ed"
+    },
+    {
+      "path": "increments/021/13-candidate1-closure/evidence/claude-021-candidate1-focal-review-verification.json",
+      "commit": "4759abff9f7deeb921cfb944b1e6cd3fc914d4fa",
+      "lines": 42,
+      "size_bytes": 2890,
+      "sha256": "3166e2f8fdab73f46879c563aee67807fae8791aea4e1c71c12e3cc86566dedf",
+      "git_blob_sha": "7d9361d001fd3f481b599c1a59d373c8216e3db5"
+    },
+    {
+      "path": "increments/021/13-candidate1-closure/evidence/claude-identity-basis-model.output.json",
+      "commit": "4759abff9f7deeb921cfb944b1e6cd3fc914d4fa",
+      "lines": 82,
+      "size_bytes": 1396,
+      "sha256": "1b67853d35878243475e487bdb29b8a8323c6c6743bf6e967f177e045b309997",
+      "git_blob_sha": "64743a4b1cfc5fac38b517e96c5eaada3eac5905"
+    },
+    {
+      "path": "increments/021/13-candidate1-closure/evidence/claude-identity-basis-model.py",
+      "commit": "4759abff9f7deeb921cfb944b1e6cd3fc914d4fa",
+      "lines": 45,
+      "size_bytes": 2916,
+      "sha256": "dde05af9c9e54344156628e44b4090027cc1d6a4fdd3adfeca2bf53bb32207df",
+      "git_blob_sha": "ac2cc3b2246c4b919abc357902f3e1e041281dd7"
+    }
+  ],
+  "input_manifest_entries_verified": 12,
+  "four_annexes_byte_identical": true,
+  "body_section_10_only_changes": [
+    "NB-1 within-table duplicate clarification",
+    "NB-2 K=0 identity proof and symmetry_class precedence"
+  ],
+  "other_changes": "Version/date/snapshots/review status/owner decision gate only",
+  "scenario_rows": 173,
+  "scenario_checkpoint_counts": {
+    "CP1": 43,
+    "CP2": 79,
+    "CP3": 31,
+    "CP4": 20
+  },
+  "documentary_reviewer_model_rerun_by_architect": true,
+  "model_cases": 512,
+  "model_scope": "identity_basis only, not symmetry_class or production. Rerun output byte-equivalent as parsed JSON to reviewer output.",
+  "documentary_projection_hashes_matched": 7,
+  "independent_candidate2_review_performed": false,
+  "pytest": false,
+  "gemmi": false,
+  "raw_parsing": false,
+  "production_hashes": false,
+  "materialization": false,
+  "windows": false,
+  "concurrency": false,
+  "packages_installed": false
+}

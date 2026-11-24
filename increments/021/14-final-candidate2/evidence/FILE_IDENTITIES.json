@@ -1,0 +1,86 @@
+{
+  "governance_input_commit": "ec38f578ced987969cd8f58c9c7ee4567e7fdd52",
+  "review_commit": "4759abff9f7deeb921cfb944b1e6cd3fc914d4fa",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "note": "Publication files excluding self. Candidate-2 is awaiting owner decision, not frozen; independent review refers to candidate-1 plus explicitly identified NB wording delta.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 41,
+      "size_bytes": 3284,
+      "sha256": "0385427f1c8020a189a0537aa0e4e94b46adc6c0a0271aa7e98cb91079a6e4e8"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/CODEX_CANDIDATE1_NONBLOCKING_NOTES_DISPOSITION.md",
+      "lines": 48,
+      "size_bytes": 5434,
+      "sha256": "5a661a97d42b157f6d8755e64e7f0fe1699635b42ad1758e19bb438f382d9698"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/INCREMENT_021_FINAL_SPECIFICATION_CANDIDATE2.md",
+      "lines": 374,
+      "size_bytes": 64461,
+      "sha256": "377e90a6ff2f92b74dca4678ca60aa202dd5f154d2666f9096d0d5fc9882ad6b"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/evidence/ARCHITECT_BASIS_MODEL_RERUN.json",
+      "lines": 82,
+      "size_bytes": 1581,
+      "sha256": "c808d5ac5ededdf8c065117915ec14c5913e93edf45f857f4ae97da1d1d89880"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/evidence/CANDIDATE1_TO_CANDIDATE2.patch",
+      "lines": 23,
+      "size_bytes": 6749,
+      "sha256": "deb61cb929b999ced06abd42c2b3b3a1fc774967e944dca394e8265916208e3b"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/evidence/CANDIDATE2_DOCUMENT_CHECKS.json",
+      "lines": 68,
+      "size_bytes": 2716,
+      "sha256": "336cc8298f6ce5da81c6b00f40f0a73ab8cff3e25fc2a469fc07ac4d81ea9ddf"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/14-final-candidate2/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "tasks/021-CANDIDATE1-FOCAL-REVIEW.json",
+      "lines": 130,
+      "size_bytes": 6463,
+      "sha256": "7d17001d8626ea09cf35809e52f3807723cdd32451a77a143d8d0c38b8e979f6"
+    },
+    {
+      "path": "tasks/021-CANDIDATE2-PREPARATION.json",
+      "lines": 51,
+      "size_bytes": 2113,
+      "sha256": "d0ab02c7635536074dff1cb9079ef9b87420c91f687c3aedbb348b87aafb7fe6"
+    },
+    {
+      "path": "tasks/021-OWNER-FREEZE-DECISION.json",
+      "lines": 86,
+      "size_bytes": 4187,
+      "sha256": "c60e5fdb72fea06f837636ae5fcd6da355a8e0a97593d2ca65c6659a1b53a563"
+    }
+  ]
+}
