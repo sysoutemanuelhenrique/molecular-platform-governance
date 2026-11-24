@@ -1,0 +1,54 @@
+{
+  "note": "Excludes itself. Historical code/implementer/reviewer/frozen files preserved at pinned refs; only new receipt/evidence and central coordination task state published.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 36,
+      "size_bytes": 2914,
+      "sha256": "3690f91a7a25f84a744d47cd1a5e1bb8c804655c2d2abba01e0b61d816b90838",
+      "git_blob_sha": "b5c4938ace9c287be0d5f5500f4dfd9ca2df6d0b"
+    },
+    {
+      "path": "increments/021/36-checkpoint2-partial-receipt/CODEX_INCREMENT_021_CHECKPOINT2_PARTIAL_RECEIPT_AND_COMPLETION_PLAN.md",
+      "lines": 68,
+      "size_bytes": 12049,
+      "sha256": "830f5481f00af3f09abc7b06541c7e7aa6a84105ec94bfa1503879f598a9f9db",
+      "git_blob_sha": "b938ef6b95f696c0ba51a0648e0a4ff65fb0fd8d"
+    },
+    {
+      "path": "increments/021/36-checkpoint2-partial-receipt/evidence/ARCHITECT_CP2_CONTRACT_PROBES.py",
+      "lines": 63,
+      "size_bytes": 7453,
+      "sha256": "702998b21e17891b982ed0bcaef67343cb42f5ae2063900f7a08b068adbebb71",
+      "git_blob_sha": "aa291e5dd320ae2bf4e4a04042ed3791085c6c73"
+    },
+    {
+      "path": "increments/021/36-checkpoint2-partial-receipt/evidence/ARCHITECT_CP2_PARTIAL_RECEIPT_VERIFICATION.json",
+      "lines": 730,
+      "size_bytes": 22689,
+      "sha256": "844b719faa50793a0fcb2d7b14d185ceff9236fd363b8610d9bcb836636a49e2",
+      "git_blob_sha": "ada22c8fa2edac36b367c374dce09462d751ab30"
+    },
+    {
+      "path": "increments/021/36-checkpoint2-partial-receipt/evidence/CP2_COMPLETION_SCENARIO_SCOPE.csv",
+      "lines": 80,
+      "size_bytes": 13847,
+      "sha256": "9e1387ff214bee91fceabff27311c9f8ae71b0de0909145fd9a59e01d301ae27",
+      "git_blob_sha": "e8151529f9ca6eeed0a5f22a0d4b140af2b9c97f"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-COMPLETION.json",
+      "lines": 488,
+      "size_bytes": 22399,
+      "sha256": "85650767e2568fb09b94f0d4bdd68848b9676a0a5a6f3f97ff0aafce9129cb55",
+      "git_blob_sha": "a17b85fe6c497b4de3ffd527a4199b0a571ce8ed"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-IMPLEMENTATION.json",
+      "lines": 332,
+      "size_bytes": 15855,
+      "sha256": "9c2947038590b835c1032ac1ec0eb1d8596439708de850fe58778363519d5f7c",
+      "git_blob_sha": "357a6ce28aea2b98d18836739cc284d7d2129e97"
+    }
+  ]
+}

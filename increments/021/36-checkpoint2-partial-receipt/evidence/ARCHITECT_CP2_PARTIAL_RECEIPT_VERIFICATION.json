@@ -1,0 +1,730 @@
+{
+  "role": "architect partial receipt/triage, not independent review or complete audit",
+  "code_head": "0d06ebd4c46c90e5446fec6f0eb72b4a8d2855db",
+  "code_parent": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "delivery_commit": "9aa07628f2db61e68fc57b47d6e0e8e3dbeac80c",
+  "verified_files": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 4060,
+      "size_bytes": 192457,
+      "sha256": "0c7451e5b4950644c1e428c98a0c92f35f4aa3ae7753db4715cc292f6afa9947",
+      "git_blob_sha": "a09f9354591eba5b72d94f7104242e2cf6fc1402"
+    },
+    {
+      "path": "src/molecular/receptor_parsing.py",
+      "lines": 1541,
+      "size_bytes": 61059,
+      "sha256": "a620a659b172e418d7ed676b35c2736374f59f4a3db48616d608e868214898fa",
+      "git_blob_sha": "1675c28ccb92754cb23877be23b8b629ab00ad1e"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 2252,
+      "size_bytes": 114463,
+      "sha256": "0aca061820c04cd519c3a9f2c862a521af512a0ab80d0e663f98f353be86b971",
+      "git_blob_sha": "d67ccb092a76ad890ef610b335fc985e57a3357a"
+    },
+    {
+      "path": "tests/test_receptor_parsing.py",
+      "lines": 830,
+      "size_bytes": 27785,
+      "sha256": "84d1d3091045a416beaa7b1d51a5cd3a4ab019b4a3adfd83bcc4043669e55b10",
+      "git_blob_sha": "ec1df1cb8ba07bc587c1f4137c73d2498d1457d4"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/CLAUDE_INCREMENT_021_CHECKPOINT2_IMPLEMENTATION_REPORT.md",
+      "lines": 181,
+      "size_bytes": 23706,
+      "sha256": "5f9e23e632db9dfd7908a61c683f86650aa9eea88dd2eb32dfab9345205fb139",
+      "git_blob_sha": "78afa4c1b503cb20d8d697f88db34bc99f545936"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-arch01-check.txt",
+      "lines": 2,
+      "size_bytes": 214,
+      "sha256": "d90f60e61cf9e0fbd76528ad8475a94c83544c76a48b34f10072e0a9f8e3d0d8",
+      "git_blob_sha": "c6704e2e10a40209497d9e4881242cd6078310b5"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-collect-before-after.txt",
+      "lines": 1628,
+      "size_bytes": 143403,
+      "sha256": "20293df344b6335c5f61dcfe6a60d3ad5ebfb1b04dffaa88a010c02aeac1792c",
+      "git_blob_sha": "f49bdd973e790c2284021e2e4a723c120ee3f6d7"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-environment.txt",
+      "lines": 7,
+      "size_bytes": 139,
+      "sha256": "87ee520bd86b7151e35e967dfb2a245c9cde132ae8774697372b4eec3ee7503f",
+      "git_blob_sha": "0a79d7f154439dbf0d2fe355c1b538edc94ed5f0"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-file-identities.json",
+      "lines": 28,
+      "size_bytes": 1106,
+      "sha256": "58f993b7ad8de8ce95b5b2d4d202b3b879b4c6ac0d5d439ee6e90eadd3098cc9",
+      "git_blob_sha": "6d5e7328796861f954f7a0dc63b18f7345f101b2"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-full-suite-after.txt",
+      "lines": 30,
+      "size_bytes": 3083,
+      "sha256": "4c15637987e9da8917deeda3fbf366c58cb03c7c29d1c1e86e60819d2e46cc9f",
+      "git_blob_sha": "beb17d13369169ab54f56896b708aae0103e423c"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-git-log.txt",
+      "lines": 31,
+      "size_bytes": 1367,
+      "sha256": "2915266eb912f13eff46e18052a694ae5e076e9a09dbc88af62a98dfea4eabd8",
+      "git_blob_sha": "be674f0f8f1d3946688b956af1830ad327637085"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-new-tests-verbose.txt",
+      "lines": 180,
+      "size_bytes": 19816,
+      "sha256": "6588eb53d42d18f1d4498fc4e9a02c137e7850b671e33fd3a11552bd2b2d9007",
+      "git_blob_sha": "a6f7d731b87ab1516a9c2ac00ffbe11810535e19"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-regression-020.txt",
+      "lines": 3,
+      "size_bytes": 181,
+      "sha256": "9a646d582cf3c2bbcedf4184b398ccdb77bd0adb3b957bb447bd6d111d8cd164",
+      "git_blob_sha": "94ccefd6f75954dce965065a86d1ceb8dc7c9038"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-scenario-matrix.json",
+      "lines": 198,
+      "size_bytes": 8335,
+      "sha256": "ea803494585740a0d6c052aa6b0590f94a1f4cf0c471d515603872603f7d5d26",
+      "git_blob_sha": "a92c1651ef8e0a1e805ab65e3797bdaa3671f8b7"
+    }
+  ],
+  "covered_claimed_by_implementer": 53,
+  "pending_declared": [
+    "T021-041",
+    "T021-042",
+    "T021-043",
+    "T021-065",
+    "T021-066",
+    "T021-068",
+    "T021-069",
+    "T021-070",
+    "T021-071",
+    "T021-072",
+    "T021-073",
+    "T021-074",
+    "T021-080",
+    "T021-081",
+    "T021-086",
+    "T021-088",
+    "T021-089",
+    "T021-145",
+    "T021-146",
+    "T021-147",
+    "T021-148",
+    "T021-149",
+    "T021-155",
+    "T021-156",
+    "T021-157",
+    "T021-162"
+  ],
+  "mapped_scenarios_not_independently_closed": true,
+  "collection_logs": {
+    "baseline": 1573,
+    "current": 1622,
+    "added_nodeids": [
+      "tests/test_receptor_materialization.py::test_catalogue_anisotrop_requires_complete_tensor_and_matching_atom_site_id",
+      "tests/test_receptor_materialization.py::test_catalogue_atom_mask_filters_by_real_atom_decisions",
+      "tests/test_receptor_materialization.py::test_catalogue_cell_symmetry_singleton_and_operator_tables_preserved_verbatim",
+      "tests/test_receptor_materialization.py::test_catalogue_ncs_scenarios",
+      "tests/test_receptor_materialization.py::test_catalogue_omitted_family_and_unknown_category_and_tag",
+      "tests/test_receptor_materialization.py::test_catalogue_special_position_guard_requires_unambiguous_context",
+      "tests/test_receptor_materialization.py::test_catalogue_struct_conn_used_types_and_elements_from_real_connection_decisions",
+      "tests/test_receptor_materialization.py::test_different_image_reason_hydrog_1_555_vs_9_555_rejects_without_claiming_geometric_impossibility",
+      "tests/test_receptor_materialization.py::test_identity_basis_impossible_pairs_never_construct_an_accepted_connection_decision[identity_basis0-T021-165]",
+      "tests/test_receptor_materialization.py::test_identity_basis_impossible_pairs_never_construct_an_accepted_connection_decision[identity_basis1-T021-167]",
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[1_555-1_555-tables0-expected_basis0-T021-164]",
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[1_555-None-tables1-expected_basis1-T021-166]",
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[2_555-2_555-tables2-expected_basis2-T021-168]",
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[2_555-None-tables3-expected_basis3-T021-169]",
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[None-1_555-tables4-expected_basis4-T021-170]",
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[None-2_555-tables5-expected_basis5-T021-171]",
+      "tests/test_receptor_materialization.py::test_identity_basis_pairs_k0_reachable_pairs[None-None-tables6-expected_basis6-T021-172]",
+      "tests/test_receptor_materialization.py::test_identity_basis_precedence_applies_10_1_without_k_shortcuts",
+      "tests/test_receptor_materialization.py::test_identity_contradiction_with_tables_present_never_falls_back_to_convention",
+      "tests/test_receptor_materialization.py::test_identity_no_table_1_555_convention_without_fabricating_operators",
+      "tests/test_receptor_materialization.py::test_k0_omits_with_audit_for_every_symmetry_class[1_555-1_555-None-both-identity-T021-055]",
+      "tests/test_receptor_materialization.py::test_k0_omits_with_audit_for_every_symmetry_class[2_555-2_555-tables1-same-nonidentity-T021-056]",
+      "tests/test_receptor_materialization.py::test_k0_omits_with_audit_for_every_symmetry_class[2_555-3_555-tables2-different-T021-057]",
+      "tests/test_receptor_materialization.py::test_k0_omits_with_audit_for_every_symmetry_class[None-1_555-None-one-null-T021-058]",
+      "tests/test_receptor_materialization.py::test_k0_omits_with_audit_for_every_symmetry_class[None-None-None-both-null-T021-059]",
+      "tests/test_receptor_materialization.py::test_k1_both_identity_covalent_type_rejects",
+      "tests/test_receptor_materialization.py::test_k1_both_identity_metalc_omits_whole_partner_removed",
+      "tests/test_receptor_materialization.py::test_k1_non_identity_symmetry_rejects[2_555-2_555-tables0-T021-051]",
+      "tests/test_receptor_materialization.py::test_k1_non_identity_symmetry_rejects[2_555-3_555-tables1-T021-052]",
+      "tests/test_receptor_materialization.py::test_k1_non_identity_symmetry_rejects[None-1_555-None-T021-053]",
+      "tests/test_receptor_materialization.py::test_k1_non_identity_symmetry_rejects[None-None-None-T021-054]",
+      "tests/test_receptor_materialization.py::test_k2_both_identity_preserves",
+      "tests/test_receptor_materialization.py::test_k2_both_null_rejects",
+      "tests/test_receptor_materialization.py::test_k2_different_rejects",
+      "tests/test_receptor_materialization.py::test_k2_one_null_rejects",
+      "tests/test_receptor_materialization.py::test_k2_same_nonidentity_rejects",
+      "tests/test_receptor_materialization.py::test_other_operator_without_table_rejects_k_positive_never_uses_1_555_exception",
+      "tests/test_receptor_materialization.py::test_symmetry_preconditions_malformed_rejects_at_k_positive_but_omits_at_k0",
+      "tests/test_receptor_materialization.py::test_third_partner_present_rejects",
+      "tests/test_receptor_parsing.py::test_materialize_receptor_cif021_is_deterministic_across_runs",
+      "tests/test_receptor_parsing.py::test_materialize_receptor_cif021_real_gemmi_end_to_end",
+      "tests/test_receptor_parsing.py::test_parse_cif_dom021_extracts_real_categories",
+      "tests/test_receptor_parsing.py::test_parse_cif_dom021_rejects_bom",
+      "tests/test_receptor_parsing.py::test_parse_cif_dom021_rejects_duplicate_canonical_tag",
+      "tests/test_receptor_parsing.py::test_parse_cif_dom021_rejects_multiple_blocks",
+      "tests/test_receptor_parsing.py::test_parse_cif_dom021_rejects_save_frames",
+      "tests/test_receptor_parsing.py::test_parse_cif_dom021_rejects_too_many_tags_per_category",
+      "tests/test_receptor_parsing.py::test_real_gemmi_version_pinned",
+      "tests/test_receptor_parsing.py::test_serialize_and_reparse_round_trip_with_real_gemmi"
+    ],
+    "removed_nodeids": [],
+    "source": "Provided logs compared, not own collection"
+  },
+  "catalogue_fields_present_equal": true,
+  "catalogue_fields_not_in_copied_literal": {
+    "_atom_site": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_atom_site_anisotrop": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_asym": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_entity": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_entity_poly": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_entity_poly_seq": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_chem_comp": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_entity_nonpoly": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_poly_seq_scheme": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_nonpoly_scheme": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_entity_branch": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_entity_branch_list": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_entity_branch_link": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_branch_scheme": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_conn": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_conn_type": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_atom_type": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_cell": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_symmetry": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_symmetry_equiv": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_space_group_symop": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_struct_mod_residue": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_unobs_or_zero_occ_residues": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_unobs_or_zero_occ_atoms": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_entry": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_audit_conform": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_database_2": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_database_status": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_audit_author": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_citation": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_citation_author": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_entity_src_syn": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_entity_src_gen": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_entity_src_nat": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_ref": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_ref_seq": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_ref_seq_dif": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_chem_comp_atom": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_chem_comp_bond": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_exptl": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_exptl_crystal": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_exptl_crystal_grow": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_diffrn": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_diffrn_detector": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_diffrn_radiation": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_diffrn_radiation_wavelength": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_diffrn_source": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_reflns": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_reflns_shell": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_refine": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_refine_hist": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_refine_ls_restr": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_refine_ls_shell": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_keywords": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_conf": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_conf_type": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_sheet": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_sheet_order": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_sheet_range": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_sheet_hbond": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_mon_prot_cis": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_site": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_site_gen": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_atom_sites": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_struct_special_symmetry": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_struct_assembly": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_struct_assembly_gen": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_struct_oper_list": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_ncs_oper": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_audit_revision_history": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_audit_revision_details": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_audit_revision_group": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_software": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_audit_support": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_database_related": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_database_pdb_obs_spr": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_entity_name_com": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_exptl_crystal_grow_comp": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_refine_analyze": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_refine": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_biol": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_database_pdb_matrix": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_molecule_features": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_molecule": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_struct_site_keywords": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_struct_assembly_prop": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_entry_details": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_ndb_struct_conf_na": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_ndb_struct_na_base_pair": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_ndb_struct_na_base_pair_step": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_refine_tls": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_refine_tls_group": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ],
+    "_pdbx_struct_conn_angle": [
+      "nonnull_key",
+      "scenario_ids",
+      "unknown_tag_action"
+    ]
+  },
+  "old_cp1_function_bodies_preserved": true,
+  "own_probes": {
+    "ncs_small_nonidentity_generate": {
+      "accepted": true,
+      "contract_expected": "UNSUPPORTED_NCS; exact nonzero translation, not identity"
+    },
+    "numeric_helper": {
+      "1.2e3(4)": false,
+      "1.2(4)e3": false,
+      "1_000": true,
+      "1.0": true,
+      "NaN": false
+    },
+    "source_rows_envelope": {
+      "expected_frozen_envelope": "1d0cf07c06db663f1e94253611ad4dd7206040da8f2656d4a95d4b44032971de",
+      "actual": "8646a77b661a5237eb068254b26c52ec73a3dbd5ce62bbbce588d39e9d0ea125",
+      "matches": false,
+      "documentary_only": true
+    },
+    "output_wrong_tokens": {
+      "accepted": true,
+      "scope": "Shape helper accepts changed atom ID and NaN coordinate; not native CIF materialization"
+    },
+    "raw_marker_?": {
+      "transcribed_value": null,
+      "source_rows_key": "baaeecaa3211604b53072c8a173b9c82e9ccfd6d8acaefe01898a2b0debe2c33"
+    },
+    "raw_marker_.": {
+      "transcribed_value": null,
+      "source_rows_key": "baaeecaa3211604b53072c8a173b9c82e9ccfd6d8acaefe01898a2b0debe2c33"
+    },
+    "save_marker_inside_multiline": {
+      "rejected": true,
+      "class": "CifSaveFrameRejectedError",
+      "native_parser_tested": false
+    },
+    "entry_case_static": {
+      "actual_assignment": "entry_id = f\"TBMP_{plan.plan_key}\"",
+      "required_prefix": "tbmp_",
+      "present_in_source": true
+    },
+    "missing_polymer_conditional_categories": {
+      "accepted": true,
+      "missing": [
+        "_entity_poly",
+        "_entity_poly_seq",
+        "_pdbx_poly_seq_scheme"
+      ],
+      "scope": "Direct catalogue function, documentary DTO fixture; no native parse"
+    }
+  },
+  "execution_limits": {
+    "python": "3.12.14",
+    "pytest": false,
+    "native_gemmi_rdkit": false,
+    "windows": false,
+    "native_stubs_used": false,
+    "source_repository_modified": false,
+    "scripts_from_implementer_executed": false,
+    "adapter_helpers_extracted_AST": true
+  },
+  "checkpoint2_approved": false,
+  "ready_for_independent_final_cp2_review": false,
+  "cp3_authorized": false
+}

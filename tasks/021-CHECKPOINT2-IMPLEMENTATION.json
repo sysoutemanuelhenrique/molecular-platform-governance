@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT2-IMPLEMENTATION",
-  "status": "AUTHORIZED_AWAITING_MANUAL_HANDOFF",
+  "status": "PARTIAL_DELIVERY_RECEIVED_AUTHORIZED_CP2_CONTINUATION_REQUIRED",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -274,7 +274,7 @@
   ],
   "suggested_governance_output_branch": "claude/021-cp2-implementation-report",
   "governance_output_branch_policy": "Own Claude branch from exact authorized dispatch commit; no coordination or main edits",
-  "implementation_started": false,
+  "implementation_started": true,
   "checkpoint2_approved": false,
   "cp3_implementation_authorized": false,
   "cp4_implementation_authorized": false,
@@ -307,5 +307,26 @@
     "increments/021/35-checkpoint2-implementation/evidence/claude-*"
   ],
   "dispatch_status": "AUTHORIZED_AWAITING_MANUAL_HANDOFF",
-  "authorization_limits": "Exactly prepared task at a0b6083, four code files plus defined fixture root, existing feature continuing ea8dac9, own report paths/branch. No contract/main/PR/merge/CP3/CP4 permission."
+  "authorization_limits": "Exactly prepared task at a0b6083, four code files plus defined fixture root, existing feature continuing ea8dac9, own report paths/branch. No contract/main/PR/merge/CP3/CP4 permission.",
+  "reported_code_commit": "0d06ebd4c46c90e5446fec6f0eb72b4a8d2855db",
+  "reported_delivery_commit": "9aa07628f2db61e68fc57b47d6e0e8e3dbeac80c",
+  "received_partial_report": {
+    "path": "increments/021/35-checkpoint2-implementation/CLAUDE_INCREMENT_021_CHECKPOINT2_IMPLEMENTATION_REPORT.md",
+    "lines": 181,
+    "size_bytes": 23706,
+    "sha256": "5f9e23e632db9dfd7908a61c683f86650aa9eea88dd2eb32dfab9345205fb139",
+    "git_blob_sha": "78afa4c1b503cb20d8d697f88db34bc99f545936",
+    "commit": "9aa07628f2db61e68fc57b47d6e0e8e3dbeac80c"
+  },
+  "partial_scenarios_reported_mapped": 53,
+  "partial_scenarios_explicit_pending": 26,
+  "architect_partial_receipt": {
+    "path": "increments/021/36-checkpoint2-partial-receipt/CODEX_INCREMENT_021_CHECKPOINT2_PARTIAL_RECEIPT_AND_COMPLETION_PLAN.md",
+    "lines": 68,
+    "size_bytes": 12049,
+    "sha256": "830f5481f00af3f09abc7b06541c7e7aa6a84105ec94bfa1503879f598a9f9db",
+    "git_blob_sha": "b938ef6b95f696c0ba51a0648e0a4ff65fb0fd8d"
+  },
+  "next_task": "tasks/021-CHECKPOINT2-COMPLETION.json",
+  "ready_for_independent_final_cp2_review": false
 }

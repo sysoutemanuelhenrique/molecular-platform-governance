@@ -1,0 +1,80 @@
+id,checkpoint,target,stimulus,expected,partial_delivery_reported_status
+T021-041,CP2,raw-tokens,? . e valores citados equivalentes em texto,Preservar distinção; não quote_list de token bruto,PENDING
+T021-042,CP2,coordinates-occupancy,0 parcial null B-factor precisão H/D em atom_site,Preservar tokens/coordenadas sem reparo,PENDING
+T021-043,CP2,endpoint-insertion,Resíduos 52/52A em struct_conn canônico,Distinguir inserção; não usar colunas antigas,PENDING
+T021-044,CP2,third-partner,ptnr3 ausente/nulo versus preenchido ou citado ?,Aceitar só ausência/null real; recusar preenchido,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-045,CP2,symmetry-matrix,K=2; symmetry=both-identity; endpoints já resolvidos; operadores conhecidos quando não null,Preservar literal,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-046,CP2,symmetry-matrix,K=2; symmetry=same-nonidentity; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-047,CP2,symmetry-matrix,K=2; symmetry=different; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-048,CP2,symmetry-matrix,K=2; symmetry=one-null; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-049,CP2,symmetry-matrix,K=2; symmetry=both-null; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-050,CP2,symmetry-matrix,K=1; symmetry=both-identity; endpoints já resolvidos; operadores conhecidos quando não null,Omitir só metalc/hydrog com parceiro inteiro reconhecido; covalente recusa,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-051,CP2,symmetry-matrix,K=1; symmetry=same-nonidentity; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-052,CP2,symmetry-matrix,K=1; symmetry=different; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-053,CP2,symmetry-matrix,K=1; symmetry=one-null; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-054,CP2,symmetry-matrix,K=1; symmetry=both-null; endpoints já resolvidos; operadores conhecidos quando não null,Recusar pelo perfil,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-055,CP2,symmetry-matrix,K=0; symmetry=both-identity; endpoints já resolvidos; operadores conhecidos quando não null,Omitir com auditoria,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-056,CP2,symmetry-matrix,K=0; symmetry=same-nonidentity; endpoints já resolvidos; operadores conhecidos quando não null,Omitir com auditoria,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-057,CP2,symmetry-matrix,K=0; symmetry=different; endpoints já resolvidos; operadores conhecidos quando não null,Omitir com auditoria,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-058,CP2,symmetry-matrix,K=0; symmetry=one-null; endpoints já resolvidos; operadores conhecidos quando não null,Omitir com auditoria,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-059,CP2,symmetry-matrix,K=0; symmetry=both-null; endpoints já resolvidos; operadores conhecidos quando não null,Omitir com auditoria,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-060,CP2,symmetry-preconditions,"Operador ausente/contraditório/malformado, exceto 1_555 sem tabelas; namespace assembly distinto",K>0 recusa casos não suportados; 1_555 sem tabelas aceita por convenção; K=0 omite auditado,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-061,CP2,atom_site,Fixture representativa da regra atom_site,Máscara preserva ids/tokens e contagens; reparse confere vetores esperados,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-062,CP2,atom_site_anisotrop,Fixture representativa da regra atom_site_anisotrop,Filtrar por id real; campos informados concordam; preservar tensor/esd,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-063,CP2,struct_asym,Fixture representativa da regra struct_asym,Filtrar asyms e manter entity_id válido,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-064,CP2,entity,Fixture representativa da regra entity,Manter entidades referidas e omitir contagens/metadados listados,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-065,CP2,entity_poly,Fixture representativa da regra entity_poly,Preservar entidade/tipo/seq; não copiar pdbx_strand_id stale,PENDING
+T021-066,CP2,entity_poly_seq,Fixture representativa da regra entity_poly_seq,Manter sequência declarada inclusive não observada,PENDING
+T021-067,CP2,chem_comp,Fixture representativa da regra chem_comp,Fechamento de CCDs de átomos/seq/branch/parent; não baixar CCD,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-068,CP2,pdbx_entity_nonpoly,Fixture representativa da regra pdbx_entity_nonpoly,Filtrar entidade/CCD referidos,PENDING
+T021-069,CP2,pdbx_poly_seq_scheme,Fixture representativa da regra pdbx_poly_seq_scheme,Manter esquema completo do asym sobrevivente,PENDING
+T021-070,CP2,pdbx_nonpoly_scheme,Fixture representativa da regra pdbx_nonpoly_scheme,Filtrar asym sem cortar ocorrência íntegra,PENDING
+T021-071,CP2,pdbx_entity_branch,Fixture representativa da regra pdbx_entity_branch,Manter tipos de entidades ramificadas sobreviventes,PENDING
+T021-072,CP2,pdbx_entity_branch_list,Fixture representativa da regra pdbx_entity_branch_list,Preservar todos os monômeros e microheterogeneidade,PENDING
+T021-073,CP2,pdbx_entity_branch_link,Fixture representativa da regra pdbx_entity_branch_link,Referências de lista/CCD válidas; leaving atom não é inventado,PENDING
+T021-074,CP2,pdbx_branch_scheme,Fixture representativa da regra pdbx_branch_scheme,Preservar nomenclatura completa do asym retido,PENDING
+T021-075,CP2,struct_conn,Fixture representativa da regra struct_conn,Ações/literal/insertions/ptnr3 conforme plano,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-076,CP2,struct_conn_type,Fixture representativa da regra struct_conn_type,Reter só tipos de conexão sobreviventes sem fabricar critérios,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-077,CP2,atom_type,Fixture representativa da regra atom_type,Reter elementos usados se categoria existir,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-078,CP2,cell/symmetry,Fixture representativa da regra cell/symmetry,Contexto fonte sem P1 inventado; entry_id gerado declarado,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-079,CP2,source-operator-tables,Fixture representativa da regra source-operator-tables,1_555 sem tabelas usa convenção; tabelas presentes exigem identidade coerente; outros operadores exigem fonte,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-080,CP2,pdbx_struct_mod_residue,Fixture representativa da regra pdbx_struct_mod_residue,Resolver contexto em M; parent_comp_id entra no fechamento CCD,PENDING
+T021-081,CP2,unobs-zero-occ,Fixture representativa da regra unobs-zero-occ,Anotação sem átomo pode sobreviver por contexto de cadeia/seq; sem inferir coordenada,PENDING
+T021-082,CP2,entry,Fixture representativa da regra entry,Nova entry/block tbmp_plan_key e original só na proveniência,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-083,CP2,omitted-categories,Fixture representativa da regra omitted-categories,Categorias omitidas/família validate não aparecem na saída e constam da auditoria,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-084,CP2,unknown-category,Fixture representativa da regra unknown-category,Categoria fora do catálogo/prefixo permitido recusa,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-085,CP2,unknown-tag,Fixture representativa da regra unknown-tag,Coluna desconhecida em categoria filtrada recusa; omitida sai com categoria,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-086,CP2,missing-conditional,Fixture representativa da regra missing-conditional,Recusar; não fabricar categoria,PENDING
+T021-087,CP2,duplicate-keys,Fixture representativa da regra duplicate-keys,Recusar antes de escrever,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-088,CP2,loss-audit,Fixture representativa da regra loss-audit,Auditoria completa e RAW checksum inalterado,PENDING
+T021-089,CP2,output-verification,Fixture representativa da regra output-verification,Recusar INVALID_OUTPUT antes de commit,PENDING
+T021-090,CP2,binding-real,Fixture representativa da regra binding-real,Comprovar valores/tokens em integração real; disponibilidade sozinha não conta,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-141,CP2,identity-no-table,1_555/1_555 sem tabelas em fixture real,Reconhecer identidade sem fabricar operadores; auditoria explicita convenção,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-142,CP2,identity-contradiction,Tabela presente com op 1 não identidade/duplicado/ausente,Recusar; não aplicar fallback de convenção,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-143,CP2,other-operator-no-table,"2_555, 1_556 ou 01_555 sem prova fonte",Recusar K>0; não usar exceção de 1_555,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-144,CP2,different-image-reason,"1pfe com hydrog 1_555/9_555, mesmo sem corte",Recusar por limite de projeção não identidade; não alegar impossibilidade geométrica,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-145,CP2,catalog-cell,Tags cell esd/reciprocal/volume e symmetry full H-M,Preservar tokens de contexto fonte; sem validar nova cela,PENDING
+T021-146,CP2,catalog-alt-annotation,unobs atoms label_alt_id,Reconhecer e preservar conforme contexto; não tag desconhecida,PENDING
+T021-147,CP2,catalog-three-real,Inventários 5i55/1pfe/3dg1_final do pin,"Zero recusas de cobertura, sem alegar materialização positiva",PENDING
+T021-148,CP2,catalog-additional-metadata,16 categorias observadas adicionais,Omitir categoria completa com hash/contagens/ordinais,PENDING
+T021-149,CP2,catalog-nmr-em,Metadados pdbx_nmr_ e em_ e pdbx_struct_conn_angle,Omitir com auditoria; preservar M; outras categorias desconhecidas continuam recusadas,PENDING
+T021-150,CP2,ncs-generate,Transformação não identidade code generate,Recusar UNSUPPORTED_NCS antes de omitir,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-151,CP2,ncs-null,Transformação não identidade code null/ausente,Recusar UNSUPPORTED_NCS; não inferir given,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-152,CP2,ncs-given,Transformação finita não identidade code given,Omitir com auditoria/aviso; não aplicar transformação,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-153,CP2,ncs-identity,Transformação exatamente identidade com code generate/null,Omitir auditado; nenhuma cópia nova,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-154,CP2,ncs-invalid,Matriz parcial/NaN ou code desconhecido,Recusar INVALID_CIF; não ignorar como faz fallback Structure,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-155,CP2,numeric-su-exponent,1.2e3(4) versus 1.2(4)e3,Aceitar primeiro; recusar segundo; preservar token válido,PENDING
+T021-156,CP2,altloc-endpoint-set,Endpoint sem altloc tem A/B na mesma ocorrência,Um conjunto por endpoint; K uniforme; uma linha fonte literal,PENDING
+T021-157,CP2,altloc-occurrence-ambiguous,Mesmo atom name em duas ocorrências candidatas,Recusar; não fundir conjuntos entre ocorrências,PENDING
+T021-158,CP2,special-position-audit,Anotações especiais retidas/removidas/ambíguas,Contagens/aviso apenas quando apropriado; ambiguidade recusa; ocupância inalterada,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-162,CP2,real-fixture-lineage,Fixtures positivos D-01(b) derivados de entrada real,"Origem/hash/alterações e oráculos específicos obrigatórios, sem resultado fictício",PENDING
+T021-164,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = pdbx-1_555-convention/pdbx-1_555-convention,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-165,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = pdbx-1_555-convention/source-operator,Recusar par impossível antes de hash; nunca produzir ConnectionDecision aceita,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-166,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = pdbx-1_555-convention/not-applicable,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-167,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = source-operator/pdbx-1_555-convention,Recusar par impossível antes de hash; nunca produzir ConnectionDecision aceita,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-168,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = source-operator/source-operator,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-169,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = source-operator/not-applicable,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-170,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = not-applicable/pdbx-1_555-convention,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-171,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = not-applicable/source-operator,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-172,CP2,identity-basis-pair,K=0; bases ptnr1/ptnr2 = not-applicable/not-applicable,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,MAPPED_NOT_INDEPENDENTLY_CLOSED
+T021-173,CP2,identity-basis-precedence,Código null/literal citado/malformado/não localizado; tabela vazia; id duplicado/contraditório; op 1 não identidade; mesmo lookup nos K possíveis,"Aplicar §10.1 sem atalhos por K, sem fallback com tabela; validações anteriores e recusas da matriz preservadas",MAPPED_NOT_INDEPENDENTLY_CLOSED
