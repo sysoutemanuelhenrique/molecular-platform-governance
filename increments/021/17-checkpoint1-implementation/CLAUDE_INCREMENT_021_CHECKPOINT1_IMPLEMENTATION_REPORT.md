@@ -95,16 +95,18 @@ A	tests/test_receptor_materialization.py
 
 | Caminho | Linhas | Bytes | SHA-256 |
 |---|---:|---:|---|
-| `src/molecular/receptor_materialization.py` | 1418 | 60.988 | `b4a596965f80b5a2a8e5e6ceabff55db72f649f7a23241e816e4be04b51b0357`... *(ver nota)* |
-| `tests/test_receptor_materialization.py` | 791 | 38.848 | `5fd9a8bd1cad78ca5d81db3dd9c64d82426fef1ec629280c2b397fcca8bcd618`... *(ver nota)* |
+| `src/molecular/receptor_materialization.py` | 1418 | 60.988 | `b4a596965f80b5a2a8e5e6ceabff55db72f649f7a23241e816e4be04b51b0357` |
+| `tests/test_receptor_materialization.py` | 791 | 38.057 | `ae8af3f9f6120a258ad7bd569d32a707337d3e6e69cc87f566760bbfd2bf86fb` |
 
-**Nota de correção de contagem de bytes:** os valores acima vêm de `wc -lc`/`sha256sum` sobre o arquivo já materializado no disco Windows deste checkout (sem `core.autocrlf` aplicado neste repositório de código — confirmado: `git diff --check` limpo e `git show <commit>:<path> | wc -lc` abaixo reproduz os mesmos bytes do blob Git, portanto não há divergência CRLF/LF neste repositório, ao contrário do que se observou no repositório de governance). Os hashes exatos, recomputados diretamente do blob publicado no commit `711f3070765efe67a5799f939f1a18306ed8afdd`, são:
+Este repositório de código também tem `core.autocrlf=true`: o checkout local em disco do segundo arquivo carrega CRLF (38.848 bytes, hash `5fd9a8bd1cad78ca5d81db3dd9c64d82426fef1ec629280c2b397fcca8bcd618` sobre esses bytes de disco), mas isso **não é a identidade publicada** — a tabela acima já está corrigida para refletir os bytes reais do blob Git armazenado no commit (LF puro), que é a única identidade que importa para quem for buscar/conferir o conteúdo publicado. Os valores corretos vêm de:
 
 ```
+git show 711f3070765efe67a5799f939f1a18306ed8afdd:src/molecular/receptor_materialization.py | wc -lc && \
 git show 711f3070765efe67a5799f939f1a18306ed8afdd:src/molecular/receptor_materialization.py | sha256sum
-  -> b4a596965f80b5a2a8e5e6ceabff55db72f649f7a23241e816e4be04b51b0357
+  -> 1418 60988  /  b4a596965f80b5a2a8e5e6ceabff55db72f649f7a23241e816e4be04b51b0357
+git show 711f3070765efe67a5799f939f1a18306ed8afdd:tests/test_receptor_materialization.py | wc -lc && \
 git show 711f3070765efe67a5799f939f1a18306ed8afdd:tests/test_receptor_materialization.py | sha256sum
-  -> 5fd9a8bd1cad78ca5d81db3dd9c64d82426fef1ec629280c2b397fcca8bcd618
+  -> 791 38057  /  ae8af3f9f6120a258ad7bd569d32a707337d3e6e69cc87f566760bbfd2bf86fb
 ```
 
 ## 8. Commit e publicação remota do código
