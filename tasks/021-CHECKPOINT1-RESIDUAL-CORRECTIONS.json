@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-CHECKPOINT1-RESIDUAL-CORRECTIONS",
+  "status": "READY_FOR_MANUAL_HANDOFF_WITHIN_AUTHORIZED_CP1",
+  "assigned_role": "claude-implementer-separate-from-independent-reviewer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "preparation_input_commit": "155661115851c2a5fb70f5d905425baeb4d23c9f",
+  "execution_snapshot": "Exact publication SHA supplied in handoff; require remote coordination equality before acting",
+  "authorization_basis": "Original direct owner CP1 authorization, same checkpoint/two files/branch. Residual conformity corrections only; no new owner approval inferred.",
+  "owner_authorization_snapshot": "3cda329b0e19a972d9858e26b58052873655ac07",
+  "owner_authorization_record": {
+    "path": "increments/021/16-checkpoint1-preparation/OWNER_CHECKPOINT1_IMPLEMENTATION_AUTHORIZATION.md",
+    "lines": 55,
+    "size_bytes": 4625,
+    "sha256": "589eb02982413e6461a59d8ec72ab468986b8d677bf3120cf43a88eaea756f18"
+  },
+  "owner_message_literal": "Autorizo o Claude implementador a executar somente o\nCheckpoint 1 do Incremento 021, conforme a tarefa\n021-CHECKPOINT1-IMPLEMENTATION publicada no commit\ne617717bd8db707737c9c5cba8f404776ae2d260.\n\nAutorizo implementação, testes, commit e push apenas\ndos dois arquivos permitidos, na branch\nfeature/increment-021-receptor-materialization,\npartindo da baseline\n08b797e0985e123ffd4d7ca7e5a5e8f040e63851.\n\nAutorizo publicar o relatório nos caminhos definidos\nda tarefa, em branch própria do governance.\n\nNão autorizo CP2, alteração do contrato congelado,\nPR, merge ou alteração de main.",
+  "implementation_authorized_within_original_cp1_scope": true,
+  "code_commit_push_authorized_within_original_cp1_scope": true,
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-021-receptor-materialization",
+  "code_head_before_residual_corrections": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e",
+  "expected_direct_parent_before_corrections": "3ba2fa91eaa95cae070d0aea7dba0d1918d9fd33",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_allowlist": [
+    "src/molecular/receptor_materialization.py",
+    "tests/test_receptor_materialization.py"
+  ],
+  "code_files_before_residual_corrections": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 1669,
+      "size_bytes": 75461,
+      "sha256": "ef38b524adbbe7432e83171d63c675856e3b21777322faec001efab530704fb1",
+      "git_blob_sha": "f6e130c1761a71a0e2f7190c395e61033041ae4d",
+      "repository": "sysoutemanuelhenrique/molecular-platform",
+      "commit": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 1421,
+      "size_bytes": 67030,
+      "sha256": "7064aa8d7e36902f9e85a3ae4e075b118f8b5dd391029bf9652a53cbdd883eb8",
+      "git_blob_sha": "55aa9a46437ae335eb36ab4fcd0c5075a7a78b1c",
+      "repository": "sysoutemanuelhenrique/molecular-platform",
+      "commit": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e"
+    }
+  ],
+  "review_branch": "claude/021-cp1-focal-review-20261124",
+  "review_commit": "854ae336621116f7047033b5146c7c4834ebf9c2",
+  "review_report": {
+    "path": "increments/021/23-checkpoint1-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_FOCAL_REVIEW.md",
+    "lines": 251,
+    "size_bytes": 17535,
+    "sha256": "61865d461b72e318e52209f202b5f44288971dc1f8255360b697236e2ea71ed5",
+    "git_blob_sha": "9513a7261166f12780622e7499d0660b4ec972f2",
+    "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+    "commit": "854ae336621116f7047033b5146c7c4834ebf9c2"
+  },
+  "review_evidence_prefix": "increments/021/23-checkpoint1-focal-review/evidence/claude-",
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "normative_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "architect_residual_reconciliation": {
+    "path": "increments/021/24-checkpoint1-residual-reconciliation/CODEX_INCREMENT_021_CHECKPOINT1_RESIDUAL_RECONCILIATION.md",
+    "lines": 77,
+    "size_bytes": 11301,
+    "sha256": "06a7887a1ea8216b529524ef36977d7c71ee07bfb1b10ea02bbf6c3e2b47098f",
+    "git_blob_sha": "4b88398c41e9425bfb8714b7d505e445347f6ee4"
+  },
+  "documentary_golden_vectors": {
+    "path": "increments/021/24-checkpoint1-residual-reconciliation/evidence/DOCUMENTARY_GOLDEN_VECTORS.json",
+    "lines": 498,
+    "size_bytes": 29674,
+    "sha256": "fe2ae0739120cba82f1523d29be3da76b3b266b46ea94b5d768e4cc3c3b6a4c0",
+    "git_blob_sha": "06f1ef6ac62117d5775b29e253fe3c024214fb7e"
+  },
+  "golden_vectors_are_normative": false,
+  "golden_vector_count": 13,
+  "independently_closed_findings_to_preserve": [
+    "ARCH-01",
+    "ARCH-02",
+    "ARCH-03",
+    "MAJOR-B",
+    "MINOR-1",
+    "MINOR-2",
+    "MINOR-4",
+    "MINOR-5",
+    "MINOR-6"
+  ],
+  "only_residual_corrections": [
+    {
+      "id": "MAJOR-A",
+      "historical_severity": "MAJOR",
+      "residual_severity": "MINOR",
+      "status": "ACCEPTED_PARTIAL_INDEPENDENT_REVIEW",
+      "required_change": "Cross-check acquisition/raw_format_declared/detected formats with exact020 strip/lower aliases; reject contradictions and unknowns with INVALID_RECORD. No provenance rewrite or new native import.",
+      "accepted_alias_map": {
+        "cif": "mmcif",
+        "mmcif": "mmcif",
+        "pdb": "pdb",
+        "ent": "pdb"
+      },
+      "accepted_canonical_format_for_021": "mmcif",
+      "declared_vs_detected_mismatch_policy": "REJECT_INVALID_RECORD",
+      "tests": [
+        "pdb/pdb→detected mmcif, with mismatch warning, rejected",
+        "mmcif/pdb and pdb/mmcif rejected",
+        "xyz/xyz and unknown in either source rejected",
+        "cif/mmcif and mmcif/cif accepted",
+        "strip/lower behavior agrees with020, original strings unchanged"
+      ]
+    },
+    {
+      "id": "MINOR-3",
+      "residual_severity": "MINOR",
+      "status": "ACCEPTED_PARTIAL_INDEPENDENT_REVIEW",
+      "required_change": "Unique ordinals within each tuple, retain strict nonnegative/disjoint guards; canonical category names in fixed set or fullmatch approved-family grammar plus omit action. No dedup/sanitize/DOM.",
+      "family_fullmatch_regex": "(?:_pdbx_validate_|_pdbx_nmr_|_em_)[a-z0-9_]+",
+      "tests": [
+        "kept=(0,0) rejected; omitted=(0,0) rejected",
+        "cross-tuple overlap and negative/type controls retained",
+        "LF, bare prefix, spaces, dot/item, uppercase and controls rejected",
+        "positive names in all3 families and valid source_rows/generation/empty-omit controls retained"
+      ]
+    },
+    {
+      "id": "MINOR-7",
+      "residual_severity": "MINOR",
+      "status": "ACCEPTED_PARTIAL_INDEPENDENT_REVIEW",
+      "required_change": "Inline independent canonical bytes and SHA256 literals for all13 documentary vector envelopes; call corresponding production functions. Fix legacy test to call new helper against independent 1c217... literal. No algorithm/schema/dependency/new fixture file changes.",
+      "vector_fixture": {
+        "path": "increments/021/24-checkpoint1-residual-reconciliation/evidence/DOCUMENTARY_GOLDEN_VECTORS.json",
+        "lines": 498,
+        "size_bytes": 29674,
+        "sha256": "fe2ae0739120cba82f1523d29be3da76b3b266b46ea94b5d768e4cc3c3b6a4c0",
+        "git_blob_sha": "06f1ef6ac62117d5775b29e253fe3c024214fb7e"
+      },
+      "legacy_literal": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c",
+      "tests": [
+        "Each corresponding production hash/builder compared against fixed digest, not expected from production",
+        "Existing golden tests upgraded to literal expected SHA256",
+        "Legacy new helper actually called; optional old helper additional only",
+        "No request runtime fixture downloads or native computations"
+      ]
+    }
+  ],
+  "residual_counts": {
+    "blocker": 0,
+    "major": 0,
+    "minor": 3
+  },
+  "historical_label_major_a_does_not_mean_residual_major": true,
+  "notes_to_preserve": [
+    {
+      "id": "NOTE-1",
+      "disposition": "Não persistir/reutilizar como plano final a estrutura parcial CP1; conexões/catálogo físico e materialização reais só CP2+."
+    },
+    {
+      "id": "NOTE-2",
+      "disposition": "Preservar estritez, recusa de surrogate, ordem e chaining, sem exceções amplas."
+    },
+    {
+      "id": "NOTE-3",
+      "disposition": "Não modificar CLI/020 no CP1. Reexaminar import/help sem opcionais no gate próprio CP4."
+    }
+  ],
+  "required_preflight": [
+    "Read AGENTS/workflow/STATUS/task, focal review and reconciliation; verify all immutable inputs/identities",
+    "Confirm coordination at dispatched SHA, feature at42b4804, review at854ae33, code main08b797e, governance maina47183d; stop and report on drift",
+    "Confirm local branch/HEAD/index/tracked work and origin; protect all untracked and020-A; no reset/clean/stash/amend/rebase/force",
+    "Use existing approved environment, no global installation or pin change; collect/test current75/1556 baseline before editing",
+    "Do not reopen nine closed findings, partial-by-design scenarios or architecture; changes limited to three listed residuals"
+  ],
+  "specific_architect_decisions": {
+    "format_comparison": "020 strip().lower() and exact four-entry alias map, then require recognized acquisition and declared labels both equivalent to detected canonical mmcif; mismatch/unknown->INVALID_RECORD",
+    "format_warning": "declared-format-mismatch does not authorize contradicting metadata; do not mutate/repair report",
+    "pure_boundary": "No runtime inspection/resolution/parsing imports; alias projection remains in new pure module",
+    "family_validation": "re.fullmatch with provided regex; no startswith-only, no strip/lower/sanitization/dedup repair",
+    "golden_tests": "Copy canonical data/expected digests inline in allowed test file; never read governance JSON during tests or add fixture file",
+    "hash_algorithms": "Existing production hashes matched all13 vectors; MINOR7 is evidence/test fix, not algorithm replacement",
+    "legacy_test": "Call new _compute_legacy_inspection_id directly with exact documented inputs, compare to independent literal; old-helper equality alone insufficient"
+  },
+  "required_checks": [
+    "Actual before/after collection and targeted pytest, reconcile items/functions/parameterizations against1556/75; preserve old nodeIDs/scenario IDs",
+    "Targeted tests exercise real production for formats, CategoryDecision and every golden envelope; specific invalid and valid controls",
+    "Fresh native-blocked import/pure pipeline in normal and-O, no native stub as proof; closed-error-code and strictness regressions remain",
+    "Actual full suite -q -rs in available approved environment, name every skip; no inherited results as fresh",
+    "git diff --check and git show --check; delta42b4804..newHEAD and baseline08b797e..newHEAD only two allowed files",
+    "Explicit staging and normal additive commit/push on existing feature branch; no rewriting earlier commits",
+    "Verify remote code SHA, main refs, exact committed blob lines/bytes/SHA256, not local CRLF bytes",
+    "Publish own new report/evidence under allowed paths; verify remote governance commit and document identities"
+  ],
+  "previous_supplied_results": {
+    "test_file_passed": 75,
+    "total_collected": 1556,
+    "full_passed": 1551,
+    "skipped": 5,
+    "not_new_results": true
+  },
+  "test_count_target": "No artificial fixed target; measure additions and explain parametrizations.75 are test functions before this round,43 are normative scenario IDs.",
+  "allowed_governance_output_paths": [
+    "increments/021/25-checkpoint1-residual-corrections/CLAUDE_INCREMENT_021_CHECKPOINT1_RESIDUAL_CORRECTIONS_REPORT.md",
+    "increments/021/25-checkpoint1-residual-corrections/evidence/claude-*"
+  ],
+  "governance_output_branch_policy": "Own claude/ implementer branch from exact dispatch publication; do not edit central coordination files",
+  "governance_report_commit_push_within_cp1_workflow": true,
+  "required_report": [
+    "Exact code/inputs/report refs and identities",
+    "Three residual changes with test locations, without claiming independent closure; nine closed dispositions preserved",
+    "Actual targeted/full commands/results or explicit limitations; all skip identities; item/function delta",
+    "Code additive commit chain and both two-file diffs, remote verification and unchanged main",
+    "Own report lines/bytes/SHA256 and remote branch/full SHA; no personal data",
+    "Do not label baseline as latest direct parent; counts must be internally consistent"
+  ],
+  "next_gate": "Architect receives exact corrected code/report, then prepares final short independent focal review of three residues and delta regressions; no automatic CP2",
+  "restrictions": [
+    "No code outside the two paths, no contract/historical report edits or new fixture/dependency files",
+    "No CP2/3/4, native adapter, storage/registry/service/CLI/scientific expansion",
+    "No main/PR/merge/tag/release/formal approval/comment/force/automatic relay",
+    "Keep020-A STAND-BY and protected Claude outputs/, _figura_curcumina/, increment-009-review.txt untouched",
+    "Do not remove or weaken valid tests; replace tautological assertion transparently, preserve scenario IDs; no passing by blanket mocks"
+  ],
+  "checkpoint1_approved": false,
+  "independent_final_focal_review_complete": false,
+  "cp2_implementation_authorized": false,
+  "final_specification_frozen": true,
+  "automated_dispatch": false
+}

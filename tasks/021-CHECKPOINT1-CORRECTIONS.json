@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-CORRECTIONS",
-  "status": "CORRECTION_DELIVERY_RECEIVED_FOCAL_REVIEW_PENDING",
+  "status": "FIRST_CORRECTION_ROUND_REVIEWED_THREE_RESIDUALS_PENDING",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -371,7 +371,7 @@
     "Do not remove old tests or weaken strictness/valid-domain guarantees to get green; revise fixtures transparently when they encode the old defect"
   ],
   "checkpoint1_approved": false,
-  "independent_focal_review_complete": false,
+  "independent_focal_review_complete": true,
   "cp2_implementation_authorized": false,
   "final_specification_frozen": true,
   "automated_dispatch": false,
@@ -395,5 +395,22 @@
     "sha256": "09796cbe2ab46f12e5fc8fd1e2f4a7420a32c4fed025cb8be34394baeba2febd",
     "git_blob_sha": "e71c5ca2b85bf29a708a905fea1dc93051351dbc"
   },
-  "next_task": "tasks/021-CHECKPOINT1-FOCAL-REVIEW.json"
+  "next_task": "tasks/021-CHECKPOINT1-RESIDUAL-CORRECTIONS.json",
+  "independent_focal_review_commit": "854ae336621116f7047033b5146c7c4834ebf9c2",
+  "independently_closed_findings": [
+    "ARCH-01",
+    "ARCH-02",
+    "ARCH-03",
+    "MAJOR-B",
+    "MINOR-1",
+    "MINOR-2",
+    "MINOR-4",
+    "MINOR-5",
+    "MINOR-6"
+  ],
+  "remaining_partial_findings": [
+    "MAJOR-A",
+    "MINOR-3",
+    "MINOR-7"
+  ]
 }

@@ -1,0 +1,498 @@
+{
+  "status": "NON_NORMATIVE_DOCUMENTARY_TEST_VECTORS",
+  "generator": "stdlib hashlib/json only; no production import",
+  "basis": "Frozen specification §13 and SCHEMAS §2/3/4/6; legacy seven-field projection independently read from baseline020",
+  "scientific_execution_claimed": false,
+  "notes": [
+    "No scientific RAW or native parsing. Declared raw and record byte strings are documentary test material, not valid receptor files or historical020 records.",
+    "Plan/Policy DTO fixtures test hashing of valid fields; they are not a claim that a native adapter emitted this plan.",
+    "policy_file_sha256 hashes the explicitly supplied JSON documentary policy bytes with one LF; this is not a production YAML serializer golden.",
+    "Copy vectors as literals into the allowed test file; no runtime download/catalogue/file dependency or new fixture file.",
+    "Source rows are documentary seed metadata only; no CP2 functions are required."
+  ],
+  "documentary_material": {
+    "raw_bytes_utf8": "documentary CP1 hash fixture only; no CIF geometry or parsing",
+    "record_bytes": [
+      {
+        "kind": "protein",
+        "documentary_bytes_utf8": "{\"fixture\":\"cp1-documentary-v1\",\"id\":\"protein-1\",\"kind\":\"protein\"}"
+      },
+      {
+        "kind": "inspection",
+        "documentary_bytes_utf8": "{\"fixture\":\"cp1-documentary-v1\",\"id\":\"2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6\",\"kind\":\"inspection\"}"
+      },
+      {
+        "kind": "selection",
+        "documentary_bytes_utf8": "{\"fixture\":\"cp1-documentary-v1\",\"id\":\"sel-1\",\"kind\":\"selection\"}"
+      },
+      {
+        "kind": "resolution",
+        "documentary_bytes_utf8": "{\"fixture\":\"cp1-documentary-v1\",\"id\":\"sel-1\",\"kind\":\"resolution\"}"
+      }
+    ],
+    "policy_record": {
+      "kind": "receptor-materialization-policy",
+      "schema_version": "1.0",
+      "profile_version": "1.0",
+      "algorithm_version": "1.0",
+      "catalogue_sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03",
+      "engine": {
+        "name": "gemmi",
+        "version": "0.7.5"
+      },
+      "policy_id": "3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02",
+      "sources": {
+        "protein_input_id": "protein-1",
+        "selection_id": "sel-1",
+        "inspection_id": "2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6",
+        "model": 1,
+        "records": [
+          {
+            "kind": "protein",
+            "id": "protein-1",
+            "sha256": "1bffa22ef057ae13d72de8812a363194cd35c0fa1b136bd24faa37b322a843b1",
+            "size_bytes": 66,
+            "schema_version": null
+          },
+          {
+            "kind": "inspection",
+            "id": "2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6",
+            "sha256": "64b982b230587eb5983408d68105abd62c45c879830f53754232694639230d83",
+            "size_bytes": 124,
+            "schema_version": "1.0"
+          },
+          {
+            "kind": "selection",
+            "id": "sel-1",
+            "sha256": "409ea1325548b16b3de5ef6312e43cf70d247a3a30565a5612e01fa2c08a3ba5",
+            "size_bytes": 64,
+            "schema_version": "1.0"
+          },
+          {
+            "kind": "resolution",
+            "id": "sel-1",
+            "sha256": "02fb0364edff743c45709d19f707afd25e242f569109b951992b16abbcbbcf3d",
+            "size_bytes": 65,
+            "schema_version": "1.0"
+          }
+        ],
+        "raw_sha256": "d020364a30da702323fe02b6b5d10f1861dbb7c6817c61b34a2648037b3b5927",
+        "raw_size_bytes": 61,
+        "raw_format": "mmcif",
+        "inspection_schema": "1.0",
+        "inspection_profile": "1.0",
+        "parser": {
+          "name": "gemmi",
+          "version": "0.7.5"
+        }
+      },
+      "source_context_key": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+      "plan_key": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da",
+      "unaddressed_components": "preserve",
+      "exclusions_key": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d",
+      "outside_key": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32",
+      "excluded_polymer_asym_count": 1,
+      "outside_occurrence_count": 1,
+      "acknowledge_plan_key": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da",
+      "acknowledge_exclusions_key": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d",
+      "acknowledge_outside_key": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32",
+      "declared_by": "documentary scientist",
+      "declared_at": "2026-01-01T00:00:00.000000Z"
+    },
+    "policy_bytes_utf8": "{\"acknowledge_exclusions_key\":\"01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d\",\"acknowledge_outside_key\":\"cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32\",\"acknowledge_plan_key\":\"00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da\",\"algorithm_version\":\"1.0\",\"catalogue_sha256\":\"8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03\",\"declared_at\":\"2026-01-01T00:00:00.000000Z\",\"declared_by\":\"documentary scientist\",\"engine\":{\"name\":\"gemmi\",\"version\":\"0.7.5\"},\"excluded_polymer_asym_count\":1,\"exclusions_key\":\"01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d\",\"kind\":\"receptor-materialization-policy\",\"outside_key\":\"cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32\",\"outside_occurrence_count\":1,\"plan_key\":\"00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da\",\"policy_id\":\"3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02\",\"profile_version\":\"1.0\",\"schema_version\":\"1.0\",\"source_context_key\":\"783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df\",\"sources\":{\"inspection_id\":\"2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6\",\"inspection_profile\":\"1.0\",\"inspection_schema\":\"1.0\",\"model\":1,\"parser\":{\"name\":\"gemmi\",\"version\":\"0.7.5\"},\"protein_input_id\":\"protein-1\",\"raw_format\":\"mmcif\",\"raw_sha256\":\"d020364a30da702323fe02b6b5d10f1861dbb7c6817c61b34a2648037b3b5927\",\"raw_size_bytes\":61,\"records\":[{\"id\":\"protein-1\",\"kind\":\"protein\",\"schema_version\":null,\"sha256\":\"1bffa22ef057ae13d72de8812a363194cd35c0fa1b136bd24faa37b322a843b1\",\"size_bytes\":66},{\"id\":\"2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6\",\"kind\":\"inspection\",\"schema_version\":\"1.0\",\"sha256\":\"64b982b230587eb5983408d68105abd62c45c879830f53754232694639230d83\",\"size_bytes\":124},{\"id\":\"sel-1\",\"kind\":\"selection\",\"schema_version\":\"1.0\",\"sha256\":\"409ea1325548b16b3de5ef6312e43cf70d247a3a30565a5612e01fa2c08a3ba5\",\"size_bytes\":64},{\"id\":\"sel-1\",\"kind\":\"resolution\",\"schema_version\":\"1.0\",\"sha256\":\"02fb0364edff743c45709d19f707afd25e242f569109b951992b16abbcbbcf3d\",\"size_bytes\":65}],\"selection_id\":\"sel-1\"},\"unaddressed_components\":\"preserve\"}\n"
+  },
+  "vectors": [
+    {
+      "name": "canonical_json",
+      "production_entry_point": "compute_materialization_hash",
+      "payload": {
+        "version": "1.0",
+        "kind": "k",
+        "s": "éÅ",
+        "l": [
+          2,
+          1
+        ],
+        "n": null,
+        "b": true
+      },
+      "canonical_utf8": "{\"b\":true,\"kind\":\"k\",\"l\":[2,1],\"n\":null,\"s\":\"éÅ\",\"version\":\"1.0\"}",
+      "expected_sha256_literal": "14332640256b6a761e453eb0beba1ba7cb1c005ab6d7c01a8eb51dfbe0cc4994"
+    },
+    {
+      "name": "legacy_inspection_id",
+      "production_entry_point": "_compute_legacy_inspection_id",
+      "payload": {
+        "inspection_schema_version": "1.0",
+        "inspection_profile_version": "1.0",
+        "parser_name": "gemmi",
+        "parser_version": "0.7.5",
+        "protein_input_id": "protein-1",
+        "raw_checksum": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "raw_format": "mmcif"
+      },
+      "canonical_utf8": "{\"inspection_profile_version\":\"1.0\",\"inspection_schema_version\":\"1.0\",\"parser_name\":\"gemmi\",\"parser_version\":\"0.7.5\",\"protein_input_id\":\"protein-1\",\"raw_checksum\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"raw_format\":\"mmcif\"}",
+      "expected_sha256_literal": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c"
+    },
+    {
+      "name": "source_context_key",
+      "production_entry_point": "compute_source_context_key",
+      "payload": {
+        "kind": "receptor-materialization-sources",
+        "version": "1.0",
+        "sources": {
+          "protein_input_id": "protein-1",
+          "selection_id": "sel-1",
+          "inspection_id": "2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6",
+          "model": 1,
+          "records": [
+            {
+              "kind": "protein",
+              "id": "protein-1",
+              "sha256": "1bffa22ef057ae13d72de8812a363194cd35c0fa1b136bd24faa37b322a843b1",
+              "size_bytes": 66,
+              "schema_version": null
+            },
+            {
+              "kind": "inspection",
+              "id": "2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6",
+              "sha256": "64b982b230587eb5983408d68105abd62c45c879830f53754232694639230d83",
+              "size_bytes": 124,
+              "schema_version": "1.0"
+            },
+            {
+              "kind": "selection",
+              "id": "sel-1",
+              "sha256": "409ea1325548b16b3de5ef6312e43cf70d247a3a30565a5612e01fa2c08a3ba5",
+              "size_bytes": 64,
+              "schema_version": "1.0"
+            },
+            {
+              "kind": "resolution",
+              "id": "sel-1",
+              "sha256": "02fb0364edff743c45709d19f707afd25e242f569109b951992b16abbcbbcf3d",
+              "size_bytes": 65,
+              "schema_version": "1.0"
+            }
+          ],
+          "raw_sha256": "d020364a30da702323fe02b6b5d10f1861dbb7c6817c61b34a2648037b3b5927",
+          "raw_size_bytes": 61,
+          "raw_format": "mmcif",
+          "inspection_schema": "1.0",
+          "inspection_profile": "1.0",
+          "parser": {
+            "name": "gemmi",
+            "version": "0.7.5"
+          }
+        }
+      },
+      "canonical_utf8": "{\"kind\":\"receptor-materialization-sources\",\"sources\":{\"inspection_id\":\"2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6\",\"inspection_profile\":\"1.0\",\"inspection_schema\":\"1.0\",\"model\":1,\"parser\":{\"name\":\"gemmi\",\"version\":\"0.7.5\"},\"protein_input_id\":\"protein-1\",\"raw_format\":\"mmcif\",\"raw_sha256\":\"d020364a30da702323fe02b6b5d10f1861dbb7c6817c61b34a2648037b3b5927\",\"raw_size_bytes\":61,\"records\":[{\"id\":\"protein-1\",\"kind\":\"protein\",\"schema_version\":null,\"sha256\":\"1bffa22ef057ae13d72de8812a363194cd35c0fa1b136bd24faa37b322a843b1\",\"size_bytes\":66},{\"id\":\"2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6\",\"kind\":\"inspection\",\"schema_version\":\"1.0\",\"sha256\":\"64b982b230587eb5983408d68105abd62c45c879830f53754232694639230d83\",\"size_bytes\":124},{\"id\":\"sel-1\",\"kind\":\"selection\",\"schema_version\":\"1.0\",\"sha256\":\"409ea1325548b16b3de5ef6312e43cf70d247a3a30565a5612e01fa2c08a3ba5\",\"size_bytes\":64},{\"id\":\"sel-1\",\"kind\":\"resolution\",\"schema_version\":\"1.0\",\"sha256\":\"02fb0364edff743c45709d19f707afd25e242f569109b951992b16abbcbbcf3d\",\"size_bytes\":65}],\"selection_id\":\"sel-1\"},\"version\":\"1.0\"}",
+      "expected_sha256_literal": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df"
+    },
+    {
+      "name": "occurrence_key",
+      "production_entry_point": "compute_occurrence_key",
+      "payload": {
+        "kind": "receptor-materialization-occurrence",
+        "version": "1.0",
+        "identity": {
+          "model": 1,
+          "label_asym_id": "W",
+          "entity_id": "EW",
+          "ccd": "HOH",
+          "label_seq_id": null,
+          "auth_asym_id": "W",
+          "auth_seq_id": "17",
+          "insertion_token": null
+        }
+      },
+      "canonical_utf8": "{\"identity\":{\"auth_asym_id\":\"W\",\"auth_seq_id\":\"17\",\"ccd\":\"HOH\",\"entity_id\":\"EW\",\"insertion_token\":null,\"label_asym_id\":\"W\",\"label_seq_id\":null,\"model\":1},\"kind\":\"receptor-materialization-occurrence\",\"version\":\"1.0\"}",
+      "expected_sha256_literal": "022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e"
+    },
+    {
+      "name": "atom_ids_key",
+      "production_entry_point": "compute_atom_ids_key",
+      "payload": {
+        "kind": "receptor-materialization-atom-ids",
+        "version": "1.0",
+        "atoms": [
+          {
+            "ordinal": 1,
+            "id": "b1"
+          }
+        ]
+      },
+      "canonical_utf8": "{\"atoms\":[{\"id\":\"b1\",\"ordinal\":1}],\"kind\":\"receptor-materialization-atom-ids\",\"version\":\"1.0\"}",
+      "expected_sha256_literal": "1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8"
+    },
+    {
+      "name": "exclusions_key",
+      "production_entry_point": "compute_exclusions_key",
+      "payload": {
+        "kind": "receptor-materialization-exclusions",
+        "version": "1.0",
+        "source_context_key": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+        "model": 1,
+        "entries": [
+          {
+            "model": 1,
+            "label_asym_id": "B",
+            "entity_id": "E2",
+            "atom_count": 1,
+            "atom_ids_key": "1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8"
+          }
+        ]
+      },
+      "canonical_utf8": "{\"entries\":[{\"atom_count\":1,\"atom_ids_key\":\"1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8\",\"entity_id\":\"E2\",\"label_asym_id\":\"B\",\"model\":1}],\"kind\":\"receptor-materialization-exclusions\",\"model\":1,\"source_context_key\":\"783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df\",\"version\":\"1.0\"}",
+      "expected_sha256_literal": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d"
+    },
+    {
+      "name": "outside_key",
+      "production_entry_point": "compute_outside_key",
+      "payload": {
+        "kind": "receptor-materialization-outside",
+        "version": "1.0",
+        "source_context_key": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+        "model": 1,
+        "entries": [
+          {
+            "identity": {
+              "model": 1,
+              "label_asym_id": "W",
+              "entity_id": "EW",
+              "ccd": "HOH",
+              "label_seq_id": null,
+              "auth_asym_id": "W",
+              "auth_seq_id": "17",
+              "insertion_token": null
+            },
+            "occurrence_key": "022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e",
+            "decision_source": "unaddressed-preserve",
+            "atom_count": 1,
+            "atom_ids_key": "8eeed5d55f10287690bf61adfaffbec360b1dd75af6cb380872e1c3c7fd1eb13",
+            "author_id_coincidence": "none"
+          }
+        ]
+      },
+      "canonical_utf8": "{\"entries\":[{\"atom_count\":1,\"atom_ids_key\":\"8eeed5d55f10287690bf61adfaffbec360b1dd75af6cb380872e1c3c7fd1eb13\",\"author_id_coincidence\":\"none\",\"decision_source\":\"unaddressed-preserve\",\"identity\":{\"auth_asym_id\":\"W\",\"auth_seq_id\":\"17\",\"ccd\":\"HOH\",\"entity_id\":\"EW\",\"insertion_token\":null,\"label_asym_id\":\"W\",\"label_seq_id\":null,\"model\":1},\"occurrence_key\":\"022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e\"}],\"kind\":\"receptor-materialization-outside\",\"model\":1,\"source_context_key\":\"783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df\",\"version\":\"1.0\"}",
+      "expected_sha256_literal": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32"
+    },
+    {
+      "name": "atom_decisions_key",
+      "production_entry_point": "compute_atom_decisions_key",
+      "payload": {
+        "kind": "receptor-materialization-atom-decisions",
+        "version": "1.0",
+        "source_context_key": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+        "decisions": [
+          {
+            "ordinal": 0,
+            "atom_id": "a1",
+            "occurrence_key": "c7be110af90a4a6028070621a83de375e8fc75c67f16d67f7df84115e66e147d",
+            "retained": true,
+            "reason": "selected-asym"
+          },
+          {
+            "ordinal": 1,
+            "atom_id": "b1",
+            "occurrence_key": "c130a69653371b5fd775a994dc3fde9e2f892a147478289054f8cc1b5367bd57",
+            "retained": false,
+            "reason": "chain-complement"
+          },
+          {
+            "ordinal": 2,
+            "atom_id": "w1",
+            "occurrence_key": "022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e",
+            "retained": true,
+            "reason": "unaddressed-preserve"
+          }
+        ]
+      },
+      "canonical_utf8": "{\"decisions\":[{\"atom_id\":\"a1\",\"occurrence_key\":\"c7be110af90a4a6028070621a83de375e8fc75c67f16d67f7df84115e66e147d\",\"ordinal\":0,\"reason\":\"selected-asym\",\"retained\":true},{\"atom_id\":\"b1\",\"occurrence_key\":\"c130a69653371b5fd775a994dc3fde9e2f892a147478289054f8cc1b5367bd57\",\"ordinal\":1,\"reason\":\"chain-complement\",\"retained\":false},{\"atom_id\":\"w1\",\"occurrence_key\":\"022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e\",\"ordinal\":2,\"reason\":\"unaddressed-preserve\",\"retained\":true}],\"kind\":\"receptor-materialization-atom-decisions\",\"source_context_key\":\"783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df\",\"version\":\"1.0\"}",
+      "expected_sha256_literal": "cc0fb129f56d061a165e94774d323be510a46fa7f22a1cd816734bb0c5849850"
+    },
+    {
+      "name": "connection_decisions_key",
+      "production_entry_point": "compute_connection_decisions_key",
+      "payload": {
+        "kind": "receptor-materialization-connection-decisions",
+        "version": "1.0",
+        "source_context_key": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+        "decisions": []
+      },
+      "canonical_utf8": "{\"decisions\":[],\"kind\":\"receptor-materialization-connection-decisions\",\"source_context_key\":\"783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df\",\"version\":\"1.0\"}",
+      "expected_sha256_literal": "67c0c45369f339bdebbbf2fbc1ee26e20f699f9fe2b93f2edf88c68e3ed85889"
+    },
+    {
+      "name": "category_decisions_key",
+      "production_entry_point": "compute_category_decisions_key",
+      "payload": {
+        "kind": "receptor-materialization-category-decisions",
+        "version": "1.0",
+        "source_context_key": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+        "decisions": [
+          {
+            "category": "_atom_site",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0,
+              2
+            ],
+            "omitted_row_ordinals": [
+              1
+            ],
+            "preserved_tags": [
+              "id"
+            ],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "69d7a6a8fe0baba92f59dad6a6930ea5e9ad78ce6372833af7cfe1a4a073c2a6"
+          }
+        ]
+      },
+      "canonical_utf8": "{\"decisions\":[{\"action\":\"filter\",\"category\":\"_atom_site\",\"generated_tags\":[],\"kept_row_ordinals\":[0,2],\"omitted_row_ordinals\":[1],\"omitted_tags\":[],\"preserved_tags\":[\"id\"],\"source_rows_key\":\"69d7a6a8fe0baba92f59dad6a6930ea5e9ad78ce6372833af7cfe1a4a073c2a6\"}],\"kind\":\"receptor-materialization-category-decisions\",\"source_context_key\":\"783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df\",\"version\":\"1.0\"}",
+      "expected_sha256_literal": "7fc88d1a1d5deec637359849766c989e04832753ce943bb7a9bdccdfd03661df"
+    },
+    {
+      "name": "plan_key",
+      "production_entry_point": "compute_plan_key",
+      "payload": {
+        "kind": "receptor-materialization-plan",
+        "version": "1.0",
+        "profile": "1.0",
+        "algorithm": "1.0",
+        "catalogue_sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03",
+        "engine": {
+          "name": "gemmi",
+          "version": "0.7.5"
+        },
+        "sources": {
+          "protein_input_id": "protein-1",
+          "selection_id": "sel-1",
+          "inspection_id": "2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6",
+          "model": 1,
+          "records": [
+            {
+              "kind": "protein",
+              "id": "protein-1",
+              "sha256": "1bffa22ef057ae13d72de8812a363194cd35c0fa1b136bd24faa37b322a843b1",
+              "size_bytes": 66,
+              "schema_version": null
+            },
+            {
+              "kind": "inspection",
+              "id": "2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6",
+              "sha256": "64b982b230587eb5983408d68105abd62c45c879830f53754232694639230d83",
+              "size_bytes": 124,
+              "schema_version": "1.0"
+            },
+            {
+              "kind": "selection",
+              "id": "sel-1",
+              "sha256": "409ea1325548b16b3de5ef6312e43cf70d247a3a30565a5612e01fa2c08a3ba5",
+              "size_bytes": 64,
+              "schema_version": "1.0"
+            },
+            {
+              "kind": "resolution",
+              "id": "sel-1",
+              "sha256": "02fb0364edff743c45709d19f707afd25e242f569109b951992b16abbcbbcf3d",
+              "size_bytes": 65,
+              "schema_version": "1.0"
+            }
+          ],
+          "raw_sha256": "d020364a30da702323fe02b6b5d10f1861dbb7c6817c61b34a2648037b3b5927",
+          "raw_size_bytes": 61,
+          "raw_format": "mmcif",
+          "inspection_schema": "1.0",
+          "inspection_profile": "1.0",
+          "parser": {
+            "name": "gemmi",
+            "version": "0.7.5"
+          }
+        },
+        "source_context_key": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+        "selected_asym_ids": [
+          "A"
+        ],
+        "unaddressed_components": "preserve",
+        "exclusions": [
+          {
+            "model": 1,
+            "label_asym_id": "B",
+            "entity_id": "E2",
+            "atom_count": 1,
+            "atom_ids_key": "1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8"
+          }
+        ],
+        "outside": [
+          {
+            "identity": {
+              "model": 1,
+              "label_asym_id": "W",
+              "entity_id": "EW",
+              "ccd": "HOH",
+              "label_seq_id": null,
+              "auth_asym_id": "W",
+              "auth_seq_id": "17",
+              "insertion_token": null
+            },
+            "occurrence_key": "022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e",
+            "decision_source": "unaddressed-preserve",
+            "atom_count": 1,
+            "atom_ids_key": "8eeed5d55f10287690bf61adfaffbec360b1dd75af6cb380872e1c3c7fd1eb13",
+            "author_id_coincidence": "none"
+          }
+        ],
+        "exclusions_key": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d",
+        "outside_key": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32",
+        "atom_decisions_key": "cc0fb129f56d061a165e94774d323be510a46fa7f22a1cd816734bb0c5849850",
+        "connection_decisions_key": "67c0c45369f339bdebbbf2fbc1ee26e20f699f9fe2b93f2edf88c68e3ed85889",
+        "category_decisions_key": "7fc88d1a1d5deec637359849766c989e04832753ce943bb7a9bdccdfd03661df",
+        "unavailable_categories": [],
+        "warnings": [
+          "outside-selected-asym-retained"
+        ]
+      },
+      "canonical_utf8": "{\"algorithm\":\"1.0\",\"atom_decisions_key\":\"cc0fb129f56d061a165e94774d323be510a46fa7f22a1cd816734bb0c5849850\",\"catalogue_sha256\":\"8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03\",\"category_decisions_key\":\"7fc88d1a1d5deec637359849766c989e04832753ce943bb7a9bdccdfd03661df\",\"connection_decisions_key\":\"67c0c45369f339bdebbbf2fbc1ee26e20f699f9fe2b93f2edf88c68e3ed85889\",\"engine\":{\"name\":\"gemmi\",\"version\":\"0.7.5\"},\"exclusions\":[{\"atom_count\":1,\"atom_ids_key\":\"1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8\",\"entity_id\":\"E2\",\"label_asym_id\":\"B\",\"model\":1}],\"exclusions_key\":\"01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d\",\"kind\":\"receptor-materialization-plan\",\"outside\":[{\"atom_count\":1,\"atom_ids_key\":\"8eeed5d55f10287690bf61adfaffbec360b1dd75af6cb380872e1c3c7fd1eb13\",\"author_id_coincidence\":\"none\",\"decision_source\":\"unaddressed-preserve\",\"identity\":{\"auth_asym_id\":\"W\",\"auth_seq_id\":\"17\",\"ccd\":\"HOH\",\"entity_id\":\"EW\",\"insertion_token\":null,\"label_asym_id\":\"W\",\"label_seq_id\":null,\"model\":1},\"occurrence_key\":\"022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e\"}],\"outside_key\":\"cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32\",\"profile\":\"1.0\",\"selected_asym_ids\":[\"A\"],\"source_context_key\":\"783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df\",\"sources\":{\"inspection_id\":\"2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6\",\"inspection_profile\":\"1.0\",\"inspection_schema\":\"1.0\",\"model\":1,\"parser\":{\"name\":\"gemmi\",\"version\":\"0.7.5\"},\"protein_input_id\":\"protein-1\",\"raw_format\":\"mmcif\",\"raw_sha256\":\"d020364a30da702323fe02b6b5d10f1861dbb7c6817c61b34a2648037b3b5927\",\"raw_size_bytes\":61,\"records\":[{\"id\":\"protein-1\",\"kind\":\"protein\",\"schema_version\":null,\"sha256\":\"1bffa22ef057ae13d72de8812a363194cd35c0fa1b136bd24faa37b322a843b1\",\"size_bytes\":66},{\"id\":\"2b367d0134006b35c4f878984e6b0cc613f5a27db5e00bc20b42044381b1b3f6\",\"kind\":\"inspection\",\"schema_version\":\"1.0\",\"sha256\":\"64b982b230587eb5983408d68105abd62c45c879830f53754232694639230d83\",\"size_bytes\":124},{\"id\":\"sel-1\",\"kind\":\"selection\",\"schema_version\":\"1.0\",\"sha256\":\"409ea1325548b16b3de5ef6312e43cf70d247a3a30565a5612e01fa2c08a3ba5\",\"size_bytes\":64},{\"id\":\"sel-1\",\"kind\":\"resolution\",\"schema_version\":\"1.0\",\"sha256\":\"02fb0364edff743c45709d19f707afd25e242f569109b951992b16abbcbbcf3d\",\"size_bytes\":65}],\"selection_id\":\"sel-1\"},\"unaddressed_components\":\"preserve\",\"unavailable_categories\":[],\"version\":\"1.0\",\"warnings\":[\"outside-selected-asym-retained\"]}",
+      "expected_sha256_literal": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da"
+    },
+    {
+      "name": "policy_id",
+      "production_entry_point": "compute_policy_id",
+      "payload": {
+        "kind": "receptor-materialization-policy",
+        "version": "1.0",
+        "plan_key": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da",
+        "acknowledge_plan_key": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da",
+        "acknowledge_exclusions_key": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d",
+        "acknowledge_outside_key": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32",
+        "declared_by": "documentary scientist"
+      },
+      "canonical_utf8": "{\"acknowledge_exclusions_key\":\"01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d\",\"acknowledge_outside_key\":\"cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32\",\"acknowledge_plan_key\":\"00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da\",\"declared_by\":\"documentary scientist\",\"kind\":\"receptor-materialization-policy\",\"plan_key\":\"00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da\",\"version\":\"1.0\"}",
+      "expected_sha256_literal": "3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02"
+    },
+    {
+      "name": "request_key",
+      "production_entry_point": "compute_request_key",
+      "payload": {
+        "kind": "receptor-materialization-request",
+        "version": "1.0",
+        "policy_id": "3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02",
+        "policy_file_sha256": "9111f3e2210af7359155992b55b689f67f77a195e29e6a979c28a55e679a1d63",
+        "source_context_key": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+        "plan_key": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da",
+        "profile": "1.0",
+        "algorithm": "1.0",
+        "catalogue_sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03",
+        "engine": {
+          "name": "gemmi",
+          "version": "0.7.5"
+        },
+        "application_version": "0.0.0-documentary"
+      },
+      "canonical_utf8": "{\"algorithm\":\"1.0\",\"application_version\":\"0.0.0-documentary\",\"catalogue_sha256\":\"8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03\",\"engine\":{\"name\":\"gemmi\",\"version\":\"0.7.5\"},\"kind\":\"receptor-materialization-request\",\"plan_key\":\"00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da\",\"policy_file_sha256\":\"9111f3e2210af7359155992b55b689f67f77a195e29e6a979c28a55e679a1d63\",\"policy_id\":\"3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02\",\"profile\":\"1.0\",\"source_context_key\":\"783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df\",\"version\":\"1.0\"}",
+      "expected_sha256_literal": "5b1de4a13571f147a84520042b4830235e7b4a611ab7b6b1b972c60027510095"
+    }
+  ]
+}

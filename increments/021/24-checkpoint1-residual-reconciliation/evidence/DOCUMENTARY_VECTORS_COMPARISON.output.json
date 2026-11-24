@@ -1,0 +1,86 @@
+{
+  "code_commit": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e",
+  "scope": "architect comparison, not new tests or independent checkpoint closure",
+  "production_source_modified": false,
+  "native_modules_blocked_without_stub": true,
+  "vectors": [
+    {
+      "name": "canonical_json",
+      "production_matches_independent_literal": true,
+      "expected": "14332640256b6a761e453eb0beba1ba7cb1c005ab6d7c01a8eb51dfbe0cc4994",
+      "actual": "14332640256b6a761e453eb0beba1ba7cb1c005ab6d7c01a8eb51dfbe0cc4994"
+    },
+    {
+      "name": "legacy_inspection_id",
+      "production_matches_independent_literal": true,
+      "expected": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c",
+      "actual": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c"
+    },
+    {
+      "name": "source_context_key",
+      "production_matches_independent_literal": true,
+      "expected": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+      "actual": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df"
+    },
+    {
+      "name": "occurrence_key",
+      "production_matches_independent_literal": true,
+      "expected": "022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e",
+      "actual": "022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e"
+    },
+    {
+      "name": "atom_ids_key",
+      "production_matches_independent_literal": true,
+      "expected": "1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8",
+      "actual": "1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8"
+    },
+    {
+      "name": "exclusions_key",
+      "production_matches_independent_literal": true,
+      "expected": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d",
+      "actual": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d"
+    },
+    {
+      "name": "outside_key",
+      "production_matches_independent_literal": true,
+      "expected": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32",
+      "actual": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32"
+    },
+    {
+      "name": "atom_decisions_key",
+      "production_matches_independent_literal": true,
+      "expected": "cc0fb129f56d061a165e94774d323be510a46fa7f22a1cd816734bb0c5849850",
+      "actual": "cc0fb129f56d061a165e94774d323be510a46fa7f22a1cd816734bb0c5849850"
+    },
+    {
+      "name": "connection_decisions_key",
+      "production_matches_independent_literal": true,
+      "expected": "67c0c45369f339bdebbbf2fbc1ee26e20f699f9fe2b93f2edf88c68e3ed85889",
+      "actual": "67c0c45369f339bdebbbf2fbc1ee26e20f699f9fe2b93f2edf88c68e3ed85889"
+    },
+    {
+      "name": "category_decisions_key",
+      "production_matches_independent_literal": true,
+      "expected": "7fc88d1a1d5deec637359849766c989e04832753ce943bb7a9bdccdfd03661df",
+      "actual": "7fc88d1a1d5deec637359849766c989e04832753ce943bb7a9bdccdfd03661df"
+    },
+    {
+      "name": "plan_key",
+      "production_matches_independent_literal": true,
+      "expected": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da",
+      "actual": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da"
+    },
+    {
+      "name": "policy_id",
+      "production_matches_independent_literal": true,
+      "expected": "3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02",
+      "actual": "3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02"
+    },
+    {
+      "name": "request_key",
+      "production_matches_independent_literal": true,
+      "expected": "5b1de4a13571f147a84520042b4830235e7b4a611ab7b6b1b972c60027510095",
+      "actual": "5b1de4a13571f147a84520042b4830235e7b4a611ab7b6b1b972c60027510095"
+    }
+  ]
+}
