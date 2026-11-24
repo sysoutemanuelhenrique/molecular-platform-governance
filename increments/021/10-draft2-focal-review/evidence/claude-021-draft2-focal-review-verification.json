@@ -1,0 +1,38 @@
+{
+  "task_id": "021-DRAFT2-FOCAL-REVIEW",
+  "role": "claude-independent-reviewer-separate-from-implementer",
+  "date": "2026-11-23",
+  "timezone": "America/Sao_Paulo",
+  "dispatch": "Direct owner message naming snapshot 7ab557697f78b0b8eb8c1e53997ef6e752f9470e; task file not edited",
+  "gates": {
+    "coordination_branch_remote_head_before_work": "7ab557697f78b0b8eb8c1e53997ef6e752f9470e",
+    "dispatched_snapshot": "7ab557697f78b0b8eb8c1e53997ef6e752f9470e",
+    "governance_input_parent": "b948f60245b71da71fa4535e8ef7ffa3957b35b4",
+    "code_main_remote": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "prior_review_branch_remote": "680aef4eecc3852fff78a70c75691993d51849b6",
+    "prior_review_blob": "f609e1d7df40229edbc16b67c5ec8580ad353a00",
+    "all_gates_match": true
+  },
+  "identities_verified": {
+    "draft2": [356, 57694, "c1667d26e7b451d87f785a782c6ed5b9633cd53bcba0046603ce3de966e49807"],
+    "schemas": [106, 16181, "51a91b8dd49f653a209497f4e1b2c63ef1789432786e97002e31fab6cc385baa"],
+    "catalog": [2045, 50480, "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"],
+    "scenarios": [164, 21048, "04143367e9a69702f9bfb476fd27649e41a1b381ef1adfad398891f863428f85"],
+    "reconciliation": [84, 11543, "fc4e9423f5292a917e8d4f2c2767011948e201b4a6f0e3fd7bcde49620ff0db8"],
+    "current_manifest_entries_ok": 16,
+    "source_and_review_identities": {"governance_entries_ok_at_680aef4": 10, "gemmi_entries_ok_at_5cc1c23": 5}
+  },
+  "own_checks": {
+    "draft1_vs_draft2_body_diff": "computed independently with diff; unchanged sections 3,4,5,7,8,13,15,18,21 confirmed; supplied patch not relied upon",
+    "catalog_structure": {"categories": 94, "actions": {"filter": 24, "generate": 1, "omit": 67, "guard_then_omit": 2}, "added": 17, "removed": 0, "array_fields_all_lists": true, "tag_overlaps": 0, "required_subset_violations": 0, "omit_with_nonempty_arrays": 0, "omission_prefixes": ["_pdbx_validate_", "_pdbx_nmr_", "_em_"]},
+    "catalog_coverage_draft2": {"script": "07-draft-review evidence claude-catalog-coverage.py (sha256 26fe89fb...)", "inventories": "own 07-draft-review inventories of 5i55/1pfe/3dg1_final", "output": "evidence/claude-catalog-coverage-draft2.output.json", "result": "0 unknown categories/tags/missing required tags in all three", "guard_tags_checked_separately": "1pfe _pdbx_struct_special_symmetry tags all inside guard omit_tags; no _struct_ncs_oper in any sample"},
+    "numeric_grammar": {"probe": "evidence/claude-gemmi-numb-probe.cpp (Gemmi 0.7.5 cif::is_numb, header-only, g++ 13.3)", "script": "evidence/claude-numeric-grammar-compare.py", "output": "evidence/claude-numeric-grammar-compare.output.json", "cases": 39, "disagreements": ["1.2() accepted by Gemmi, rejected by draft-2 regex", "+-1 accepted by Gemmi, rejected by draft-2 regex"], "interpretation": "draft-2 regex stricter only on Gemmi leniencies; su-after-exponent order matches Gemmi"},
+    "scenarios": {"rows": 163, "old_ids_retained": 140, "edited_old_rows": ["T021-035", "T021-060", "T021-079"], "added": 23, "per_checkpoint": {"CP1": 44, "CP2": 68, "CP3": 31, "CP4": 20}},
+    "gemmi_source_rechecked": {"include/gemmi/math.hpp": "Transform::is_identity exact comparison (line 408-409)", "src/mmcif.cpp": "read_ncs_info given only when code=='given'; skips has_nan rows"}
+  },
+  "not_executed": ["pytest", "Gemmi Python import", "raw CIF parsing of new samples", "materialization", "Windows", "concurrency", "web access", "package install"],
+  "limitations": "Coverage evidence is documentary over three inventories; no NMR/EM or NCS real sample was available; guards were not executed on content.",
+  "code_repository_modified": false,
+  "architect_documents_modified": false,
+  "increment_020_a": "STAND-BY, untouched"
+}

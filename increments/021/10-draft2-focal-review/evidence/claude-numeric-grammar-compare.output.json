@@ -1,0 +1,211 @@
+{
+ "cases": [
+  {
+   "token": "1",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "-1",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "+1",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "1.",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": ".5",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "-.5",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "1.25",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "0.000",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "1.2e3",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "1.2E-3",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "1.2e3(4)",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "1.2(4)e3",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "1.20(3)",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "1(2)",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": ".5(1)",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "5.(1)",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "1e5",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "e5",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": ".",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "-",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "+",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "1.2.3",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "1,2",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "1.2(",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "1.2()",
+   "draft2_regex": false,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "1.2(a)",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "nan",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "inf",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "-inf",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "0x10",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "1_000",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": " 1",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "1 ",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "1.2e",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "1.2e+",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "--1",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "+-1",
+   "draft2_regex": false,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "1.2e3(4)5",
+   "draft2_regex": false,
+   "gemmi_is_numb": false
+  },
+  {
+   "token": "9999999999999999999999999999999999999999",
+   "draft2_regex": true,
+   "gemmi_is_numb": true
+  }
+ ],
+ "disagreements": [
+  {
+   "token": "1.2()",
+   "draft2_regex": false,
+   "gemmi_is_numb": true
+  },
+  {
+   "token": "+-1",
+   "draft2_regex": false,
+   "gemmi_is_numb": true
+  }
+ ]
+}
