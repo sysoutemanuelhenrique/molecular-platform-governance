@@ -1,0 +1,71 @@
+{
+ "model_config": {
+  "Engine": [
+   true,
+   true,
+   "forbid"
+  ],
+  "RecordSnapshot": [
+   true,
+   true,
+   "forbid"
+  ],
+  "OccurrenceIdentity": [
+   true,
+   true,
+   "forbid"
+  ],
+  "AtomObservation": [
+   true,
+   true,
+   "forbid"
+  ],
+  "XEntry": [
+   true,
+   true,
+   "forbid"
+  ],
+  "OutsideEntry": [
+   true,
+   true,
+   "forbid"
+  ],
+  "AtomDecision": [
+   true,
+   true,
+   "forbid"
+  ],
+  "CategoryDecision": [
+   true,
+   true,
+   "forbid"
+  ],
+  "PlanBinding": [
+   true,
+   true,
+   "forbid"
+  ],
+  "MaterializationPlan": [
+   true,
+   true,
+   "forbid"
+  ],
+  "PolicyRecord": [
+   true,
+   true,
+   "forbid"
+  ],
+  "SourceContext": [
+   true,
+   true,
+   "forbid"
+  ]
+ },
+ "checks": {
+  "surrogate_native_id": "rejected",
+  "xentry_bool_count": "rejected",
+  "record_float_size": "rejected",
+  "broad_except": false,
+  "assert_validation": false
+ }
+}

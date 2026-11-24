@@ -1,0 +1,36 @@
+{
+ "optimize": 0,
+ "loaded_native_or_020_parser_modules": [],
+ "legacy_hand_sha256": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c",
+ "legacy_helper_equals_hand": true,
+ "pure_pipeline": {
+  "source_context_key": "5ea39c48dd36",
+  "plan_key": "b6c596d7e6c8",
+  "policy_id": "874a82fb01a6"
+ },
+ "MaterializationInputError_unknown": "rejected: ValueError",
+ "MaterializationConfigurationError_unknown": "rejected: ValueError",
+ "valid_code_phase": [
+  "plan",
+  "metadata"
+ ],
+ "after_run_native_or_020_parser_modules": []
+}
+{
+ "optimize": 1,
+ "loaded_native_or_020_parser_modules": [],
+ "legacy_hand_sha256": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c",
+ "legacy_helper_equals_hand": true,
+ "pure_pipeline": {
+  "source_context_key": "5ea39c48dd36",
+  "plan_key": "b6c596d7e6c8",
+  "policy_id": "874a82fb01a6"
+ },
+ "MaterializationInputError_unknown": "rejected: ValueError",
+ "MaterializationConfigurationError_unknown": "rejected: ValueError",
+ "valid_code_phase": [
+  "plan",
+  "metadata"
+ ],
+ "after_run_native_or_020_parser_modules": []
+}

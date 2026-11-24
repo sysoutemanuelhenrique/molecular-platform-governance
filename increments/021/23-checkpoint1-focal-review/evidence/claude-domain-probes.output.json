@@ -1,0 +1,473 @@
+{
+ "python": "3.13.18",
+ "gemmi_module_doc": "INERT REVIEW SENTINEL - not Ge",
+ "probes": {
+  "LEGACY_old_helper_equals_reviewer_literal_1c217d99": {
+   "expected": "true",
+   "observed": {
+    "outcome": "accepted",
+    "detail": true
+   }
+  },
+  "ARCH02_remove_absent_in_M_selected": {
+   "expected": "ALA retained",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "a1": [
+      true,
+      "selected-asym"
+     ],
+     "a2": [
+      false,
+      "model-filter"
+     ]
+    }
+   }
+  },
+  "ARCH02_remove_present_in_M_selected": {
+   "expected": "SELECTION_CONFLICT",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "SELECTION_CONFLICT"
+   }
+  },
+  "ARCH02_keep_absent_in_M_unselected": {
+   "expected": "B excluded chain-complement",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "a1": [
+      true,
+      "selected-asym"
+     ],
+     "b1": [
+      false,
+      "chain-complement"
+     ],
+     "b2": [
+      false,
+      "model-filter"
+     ]
+    }
+   }
+  },
+  "ARCH02_keep_present_in_M_unselected": {
+   "expected": "SELECTION_CONFLICT",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "SELECTION_CONFLICT"
+   }
+  },
+  "ARCH02_model_filter_preserved": {
+   "expected": "a2 model-filter",
+   "observed": {
+    "outcome": "accepted",
+    "detail": [
+     false,
+     "model-filter"
+    ]
+   }
+  },
+  "A_inspection_parser_074": {
+   "expected": "ENGINE_VERSION",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "ENGINE_VERSION"
+   }
+  },
+  "A_resolution_parser_074": {
+   "expected": "ENGINE_VERSION",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "ENGINE_VERSION"
+   }
+  },
+  "A_resolution_format_pdb": {
+   "expected": "INVALID_RECORD",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_inspection_format_pdb_coherent_everywhere": {
+   "expected": "INVALID_RECORD (MINOR-5)",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_acquisition_checksum_diverges": {
+   "expected": "CHECKSUM_MISMATCH",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "CHECKSUM_MISMATCH"
+   }
+  },
+  "A_policy_protein_id_diverges": {
+   "expected": "IDENTITY_MISMATCH",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "IDENTITY_MISMATCH"
+   }
+  },
+  "A_protein_input_id_diverges": {
+   "expected": "IDENTITY_MISMATCH",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "IDENTITY_MISMATCH"
+   }
+  },
+  "A_order_engine_before_identity": {
+   "expected": "ENGINE_VERSION first",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "ENGINE_VERSION"
+   }
+  },
+  "A_acq_cif_alias_declared_cif": {
+   "expected": "accepted (020 alias cif->mmcif)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   }
+  },
+  "A_acq_pdb_declared_pdb_detected_mmcif": {
+   "expected": "contract decision: declared/observed format contradiction",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   }
+  },
+  "A_acq_mmcif_vs_inspection_declared_pdb": {
+   "expected": "refuse: records disagree on the declared format",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   }
+  },
+  "A_acq_xyz_vs_declared_xyz": {
+   "expected": "refuse or explicit rule",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   }
+  },
+  "A_duck_typed_inspection_object": {
+   "expected": "note: no runtime type check",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "str"
+   }
+  },
+  "B_legit_repeat": {
+   "expected": "existing returned, original timestamp",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "same_object": true,
+     "declared_at": "2026-01-01T00:00:00.000000Z"
+    }
+   }
+  },
+  "B_tamper_unaddressed": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "SOURCE_CHANGED"
+   }
+  },
+  "B_tamper_source_context_key": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "SOURCE_CHANGED"
+   }
+  },
+  "B_tamper_outside_count": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, acknowledge_outside_key must equal outside_key when O is non-empty"
+   }
+  },
+  "B_invalid_policy_id_in_dto": {
+   "expected": "ValidationError",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, policy_id does not match H() of its own declared payload"
+   }
+  },
+  "C_cell_filter_generate": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "filter"
+   }
+  },
+  "C_symmetry_filter_generate": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "filter"
+   }
+  },
+  "C_generate_entry_no_source": {
+   "expected": "accepted with null key",
+   "observed": {
+    "outcome": "accepted",
+    "detail": null
+   }
+  },
+  "C_omit_empty_source": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "omit"
+   }
+  },
+  "C_omit_kept_row": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, action='omit' must retain no row (kept_row_ordinals must be empty)"
+   }
+  },
+  "C_duplicate_kept_ordinals": {
+   "expected": "refused (unique)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": [
+     0,
+     0
+    ]
+   }
+  },
+  "C_duplicate_omitted_ordinals": {
+   "expected": "refused (unique)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": [
+     0,
+     0
+    ]
+   }
+  },
+  "C_overlap_kept_omitted": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, kept_row_ordinals and omitted_row_ordinals must not overlap"
+   }
+  },
+  "C_negative_ordinal": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, row ordinals must be non-negative"
+   }
+  },
+  "C_family_ok": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "omit"
+   }
+  },
+  "C_family_with_LF": {
+   "expected": "refused (non-canonical name)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_em_example\n"
+   }
+  },
+  "C_family_bare_prefix": {
+   "expected": "refused (no category after prefix)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_em_"
+   }
+  },
+  "C_family_with_space": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_pdbx_nmr_ x"
+   }
+  },
+  "C_family_with_dot_tag": {
+   "expected": "refused (category, not item)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_em_entity.id"
+   }
+  },
+  "C_family_filter": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_x' matches an approved omission-family prefix, which is only ever valid with action"
+   }
+  },
+  "C_noncatalogue": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_made_up' is neither a canonical catalogue category nor an approved omission-family pre"
+   }
+  },
+  "C_uppercase_catalogue": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_ATOM_SITE' is neither a canonical catalogue category nor an approved omission-family p"
+   }
+  },
+  "C_filter_no_source": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, action='filter' always references real source rows; source_rows_key must not be null, even for an"
+   }
+  },
+  "C_generate_with_rows_no_source": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, row ordinals require a non-null source_rows_key"
+   }
+  },
+  "M1_dup_ordinal": {
+   "expected": "INVALID_ID",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "INVALID_ID"
+   }
+  },
+  "M1_dup_atom_id_across_models": {
+   "expected": "INVALID_ID",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "INVALID_ID"
+   }
+  },
+  "M1_entity_contradiction": {
+   "expected": "INVALID_ID",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "INVALID_ID"
+   }
+  },
+  "M1_S_absent_in_M": {
+   "expected": "INVALID_ID",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "INVALID_ID"
+   }
+  },
+  "M1_S_present_only_other_model": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "INVALID_ID"
+   }
+  },
+  "M1_valid_multimodel_ordinals_kept": {
+   "expected": "accepted, source ordinals",
+   "observed": {
+    "outcome": "accepted",
+    "detail": [
+     3,
+     7
+    ]
+   }
+  },
+  "M1_resolution_entity_vs_atom_entity": {
+   "expected": "note: chain label_entity_id vs atoms",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "a1": [
+      true,
+      "selected-asym"
+     ]
+    }
+   }
+  },
+  "N2_water_nfd_vs_polymer_nfc": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "UNSUPPORTED_REQUEST"
+   }
+  },
+  "N2_ligand_nfd_vs_polymer_nfc": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "UNSUPPORTED_REQUEST"
+   }
+  },
+  "N2_identical_token_multiple": {
+   "expected": "multiple",
+   "observed": {
+    "outcome": "accepted",
+    "detail": [
+     "multiple"
+    ]
+   }
+  },
+  "N2_identical_token_retained_excluded": {
+   "expected": "retained-polymer / excluded-polymer",
+   "observed": {
+    "outcome": "accepted",
+    "detail": [
+     "excluded-polymer",
+     "retained-polymer"
+    ]
+   }
+  },
+  "N2_selected_ligand_nfd_vs_polymer_nfc_no_O": {
+   "expected": "scope question: token not in O",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "UNSUPPORTED_REQUEST"
+   }
+  },
+  "M4_catalogue_planbinding": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Input should be '8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03'"
+   }
+  },
+  "M4_catalogue_policy": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Input should be '8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03'"
+   }
+  },
+  "M4_engine_literal": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Input should be '0.7.5'"
+   }
+  },
+  "M4_plan_key_binds_fields_documentary": {
+   "expected": "all true (documentary dict variations)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "profile": true,
+     "algorithm": true,
+     "catalogue_sha256": true,
+     "engine": true,
+     "atom_decisions_key": true,
+     "plan_key_is_H_of_dump": true
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "governance_snapshot": "155661115851c2a5fb70f5d905425baeb4d23c9f",
+ "code_head": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e",
+ "verdict": "REQUEST CHANGES",
+ "files": [
+  {
+   "path": "increments/021/23-checkpoint1-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_FOCAL_REVIEW.md",
+   "lines": 251,
+   "size_bytes": 17535,
+   "sha256": "61865d461b72e318e52209f202b5f44288971dc1f8255360b697236e2ea71ed5"
+  },
+  {
+   "path": "increments/021/23-checkpoint1-focal-review/evidence/claude-blocked-import-probe.output.txt",
+   "lines": 36,
+   "size_bytes": 1086,
+   "sha256": "5f52f9d988ff494133c2977072acb62422f3352d46adacd621544d9febad19f8"
+  },
+  {
+   "path": "increments/021/23-checkpoint1-focal-review/evidence/claude-blocked-import-probe.py",
+   "lines": 51,
+   "size_bytes": 4763,
+   "sha256": "bb4b1168a9536f1a34989e1d402c927691c6cb2f1e4094e4953443d241de1af7"
+  },
+  {
+   "path": "increments/021/23-checkpoint1-focal-review/evidence/claude-domain-probes.output.json",
+   "lines": 473,
+   "size_bytes": 11007,
+   "sha256": "32d9f363bfffe2205fcdae153ab30e3e30168f4fb90558443d72b0887e9ce2de"
+  },
+  {
+   "path": "increments/021/23-checkpoint1-focal-review/evidence/claude-domain-probes.py",
+   "lines": 146,
+   "size_bytes": 16810,
+   "sha256": "d572eb93834cc6908729b1b996dc7f91e09d657515e2f8fb0a472588d0ec39b5"
+  },
+  {
+   "path": "increments/021/23-checkpoint1-focal-review/evidence/claude-inert-gemmi-sentinel.py",
+   "lines": 4,
+   "size_bytes": 298,
+   "sha256": "1d08328aa716ee7cec476c7daefb8b650b5ebac98126284221531447f10b0d9d"
+  },
+  {
+   "path": "increments/021/23-checkpoint1-focal-review/evidence/claude-note2-strictness.output.json",
+   "lines": 71,
+   "size_bytes": 873,
+   "sha256": "7b2125414bbda1f6e571e95824d047700e120dea48033b238cee5c9c7c481086"
+  },
+  {
+   "path": "increments/021/23-checkpoint1-focal-review/evidence/claude-pytest-75-with-sentinel.txt",
+   "lines": 84,
+   "size_bytes": 9087,
+   "sha256": "624b23bd70bce29956729dc7e14f3b6eb12e8db349a8a23b5c02ead99c443f54"
+  }
+ ]
+}
