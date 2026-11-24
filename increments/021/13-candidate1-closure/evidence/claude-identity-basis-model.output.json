@@ -1,0 +1,82 @@
+{
+ "projection_hash_matches": {
+  "T021-164": true,
+  "T021-166": true,
+  "T021-168": true,
+  "T021-169": true,
+  "T021-170": true,
+  "T021-171": true,
+  "T021-172": true
+ },
+ "grid_size": 512,
+ "reachable_pairs": [
+  [
+   "not-applicable",
+   "not-applicable"
+  ],
+  [
+   "not-applicable",
+   "pdbx-1_555-convention"
+  ],
+  [
+   "not-applicable",
+   "source-operator"
+  ],
+  [
+   "pdbx-1_555-convention",
+   "not-applicable"
+  ],
+  [
+   "pdbx-1_555-convention",
+   "pdbx-1_555-convention"
+  ],
+  [
+   "source-operator",
+   "not-applicable"
+  ],
+  [
+   "source-operator",
+   "source-operator"
+  ]
+ ],
+ "reachable_count": 7,
+ "mixed_pairs_reached": [],
+ "example_per_pair": {
+  "not-applicable/not-applicable": [
+   "none",
+   null,
+   null
+  ],
+  "not-applicable/pdbx-1_555-convention": [
+   "none",
+   null,
+   "1_555"
+  ],
+  "not-applicable/source-operator": [
+   "equiv_only_std",
+   null,
+   "1_555"
+  ],
+  "pdbx-1_555-convention/not-applicable": [
+   "none",
+   "1_555",
+   null
+  ],
+  "pdbx-1_555-convention/pdbx-1_555-convention": [
+   "none",
+   "1_555",
+   "1_555"
+  ],
+  "source-operator/not-applicable": [
+   "equiv_only_std",
+   "1_555",
+   null
+  ],
+  "source-operator/source-operator": [
+   "equiv_only_std",
+   "1_555",
+   "1_555"
+  ]
+ },
+ "interpretation_note": "duplicate = same id twice within one table; same id once in each of two tables with equal expression = concordant"
+}

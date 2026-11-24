@@ -1,0 +1,42 @@
+{
+  "task_id": "021-CANDIDATE1-FOCAL-REVIEW",
+  "role": "claude-independent-reviewer-separate-from-implementer",
+  "date": "2026-11-24",
+  "timezone": "America/Sao_Paulo",
+  "dispatch": "Direct owner message naming snapshot ec38f578ced987969cd8f58c9c7ee4567e7fdd52; task file not edited",
+  "gates": {
+    "coordination_branch_remote_head_before_work": "ec38f578ced987969cd8f58c9c7ee4567e7fdd52",
+    "governance_input_parent": "7ab557697f78b0b8eb8c1e53997ef6e752f9470e",
+    "code_main_remote": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "prior_review_branch_remote": "b3df694b96cc0c425c12c73c9678c2b7dd090112",
+    "prior_review_blob": "de3b8685b31a7657ffc4d5f7c0eafaef5f14463d",
+    "all_gates_match": true
+  },
+  "identities_verified": {
+    "candidate": [373, 63606, "041830ca8bf89207336b5fe5898f502e2f3b6ae51c706652bc716686cfa56669"],
+    "schemas": [106, 16601, "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"],
+    "catalog": [2045, 50480, "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"],
+    "catalog_byte_identical_to_draft2_at_7ab5576": true,
+    "scenarios": [174, 23307, "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"],
+    "identity_basis_cases": [173, 6937, "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"],
+    "response": [65, 7010, "c8389a4722f95df227349bf3ffce2dcdf291b73b8cb9bf151bc7bd04065cbe21"],
+    "manifest_entries_ok_at_ec38f57": 12
+  },
+  "own_checks": {
+    "diff_draft2_to_candidate": "computed independently for body and SCHEMAS; changes confined to identification, §10 one sentence, new §10.1, §19 table, §20 counts, §21-23 status/evidence/gate text; 15-cell matrix lines unchanged",
+    "scenarios": {"draft2_ids_retained": 163, "only_changed_old_row": "T021-162 checkpoint CP1->CP2, other fields identical", "added": "T021-164..173", "totals": {"CP1": 43, "CP2": 79, "CP3": 31, "CP4": 20, "all": 173}},
+    "identity_basis_model": {
+      "script": "evidence/claude-identity-basis-model.py (python3 -I, stdlib; reviewer interpretation of §10.1, not production code)",
+      "output": "evidence/claude-identity-basis-model.output.json",
+      "documentary_projection_hashes_reproduced": "7/7 with canonical JSON sort_keys, compact separators, UTF-8",
+      "grid": "8 table contexts x 8 codes x 8 codes = 512",
+      "reachable_pairs": 7,
+      "mixed_convention_source_pairs_reached": 0,
+      "interpretive_assumption": "'duplicação do id' read as duplicate within one table; same id once in each table with equal expression treated as concordant"
+    }
+  },
+  "not_executed": ["pytest", "Gemmi Python/C++ in this round", "raw CIF parsing", "production hashes", "materialization", "Windows", "concurrency", "web access", "package install"],
+  "code_repository_modified": false,
+  "architect_documents_modified": false,
+  "increment_020_a": "STAND-BY, untouched"
+}
