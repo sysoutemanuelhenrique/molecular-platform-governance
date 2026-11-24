@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-IMPLEMENTATION",
-  "status": "CP1_R1_TEST_CORRECTION_RECEIVED_AWAITING_INDEPENDENT_REVIEW",
+  "status": "CP1_REVIEW_FINDINGS_CLOSED_AWAITING_OWNER_ACCEPTANCE",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -193,7 +193,7 @@
   },
   "checkpoint1_approved": false,
   "independent_review_complete": true,
-  "next_task": "tasks/021-CHECKPOINT1-R1-FOCAL-REVIEW.json",
+  "next_task": "tasks/021-OWNER-CHECKPOINT1-DECISION.json",
   "independent_review_commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801",
   "independent_review_verdict": "REQUEST CHANGES",
   "architect_reconciliation": {
@@ -225,19 +225,20 @@
     "MINOR-6",
     "MAJOR-A",
     "MINOR-3",
-    "MINOR-7"
+    "MINOR-7",
+    "R-1"
   ],
   "residual_findings": [],
   "latest_code_commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
   "latest_report_commit": "b35bb8e9d32e6fb4bc95e903f786fa0c1240e2d2",
   "architect_latest_receipt": {
-    "path": "increments/021/30-checkpoint1-r1-review-handoff/CODEX_INCREMENT_021_CHECKPOINT1_R1_REVIEW_HANDOFF.md",
-    "lines": 54,
-    "size_bytes": 6404,
-    "sha256": "e50b5bcdc2c8c43464ee0f4fd05c52aa4c0008e598fcb9ee03c00deca5df875e",
-    "git_blob_sha": "cc56f4d92e273587bb4e4a8cf5203d4aa0bae0c5"
+    "path": "increments/021/32-checkpoint1-owner-decision/CODEX_INCREMENT_021_CHECKPOINT1_OWNER_DECISION_BRIEF.md",
+    "lines": 50,
+    "size_bytes": 5504,
+    "sha256": "3d90fe86cd0f470779a98888cb038c8d746fffb84ef175e66515a2397398e5ff",
+    "git_blob_sha": "e52c65d2c07a82cd81d98bb31e4ca7455288bc13"
   },
-  "latest_independent_review_commit": "edb8764b4d4ee56e49ff849b65b950e5e430fae0",
+  "latest_independent_review_commit": "a9b146d5a355e4c15ad596b851136efdde208cdb",
   "independently_closed_functional_findings": [
     "ARCH-01",
     "ARCH-02",
@@ -252,7 +253,9 @@
     "MINOR-3",
     "MINOR-7"
   ],
-  "only_open_finding": "R-1",
+  "only_open_finding": null,
   "r1_correction_received": true,
-  "r1_independently_closed": false
+  "r1_independently_closed": true,
+  "latest_independent_review_verdict": "APPROVE_R1_ONLY_READY_FOR_OWNER_CP1_DECISION",
+  "ready_for_owner_cp1_decision": true
 }

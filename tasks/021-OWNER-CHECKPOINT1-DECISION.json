@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-OWNER-CHECKPOINT1-DECISION",
+  "status": "AWAITING_EXPLICIT_OWNER_DECISION",
+  "assigned_role": "emanuel-project-owner",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "preparation_input_commit": "828bf806e2f16ae9fee5896ae6f9719a9e1dc5cf",
+  "decision_snapshot": "Exact publication SHA supplied to owner; reconfirm refs before recording approval",
+  "decision_requested": "Accept CP1 only at the exact reviewed code commit, preserving three NOTES and declared evidence limits",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-021-receptor-materialization",
+  "code_commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_files": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+      "note": "unchanged by this round; identity verified equal to bbd491e",
+      "lines": 1724,
+      "size_bytes": 78807,
+      "sha256": "d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+      "lines": 1676,
+      "size_bytes": 83570,
+      "sha256": "9f72301ece6e55ef11d78d589f20822673887af10eeee1365d209099c3658ada"
+    }
+  ],
+  "expected_governance_main": "a47183dfec8213c765ed43ae482c8c227760a3d5",
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "normative_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "independent_r1_review_branch": "claude/021-cp1-r1-focal-review-20261124",
+  "independent_r1_review_commit": "a9b146d5a355e4c15ad596b851136efdde208cdb",
+  "independent_r1_review_report": {
+    "path": "increments/021/31-checkpoint1-r1-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_R1_FOCAL_REVIEW.md",
+    "lines": 116,
+    "size_bytes": 7227,
+    "sha256": "a1d99b0d56ae73e1a006878483c2f61f7dffa36a447d686178c6bd7cc9420736",
+    "git_blob_sha": "83a6f9544266350635b3897d99a4b912547f7e84",
+    "commit": "a9b146d5a355e4c15ad596b851136efdde208cdb"
+  },
+  "previous_independent_review_commit": "edb8764b4d4ee56e49ff849b65b950e5e430fae0",
+  "independently_closed_functional_findings": [
+    "ARCH-01",
+    "ARCH-02",
+    "ARCH-03",
+    "MAJOR-B",
+    "MINOR-1",
+    "MINOR-2",
+    "MINOR-4",
+    "MINOR-5",
+    "MINOR-6",
+    "MAJOR-A",
+    "MINOR-3",
+    "MINOR-7"
+  ],
+  "r1_independently_closed": true,
+  "open_findings": [],
+  "preserved_notes": [
+    {
+      "id": "NOTE-1",
+      "disposition": "Não persistir/reutilizar como plano final a estrutura parcial CP1; conexões/catálogo físico e materialização reais só CP2+."
+    },
+    {
+      "id": "NOTE-2",
+      "disposition": "Preservar estritez, recusa de surrogate, ordem e chaining, sem exceções amplas."
+    },
+    {
+      "id": "NOTE-3",
+      "disposition": "Não modificar CLI/020 no CP1. Reexaminar import/help sem opcionais no gate próprio CP4."
+    }
+  ],
+  "normative_scenarios": {
+    "count": 43,
+    "proved": 40,
+    "partial_by_design": 3,
+    "gaps": 0,
+    "scope": "CP1 only, not native adapter/materialization proof"
+  },
+  "architect_decision_brief": {
+    "path": "increments/021/32-checkpoint1-owner-decision/CODEX_INCREMENT_021_CHECKPOINT1_OWNER_DECISION_BRIEF.md",
+    "lines": 50,
+    "size_bytes": 5504,
+    "sha256": "3d90fe86cd0f470779a98888cb038c8d746fffb84ef175e66515a2397398e5ff",
+    "git_blob_sha": "e52c65d2c07a82cd81d98bb31e4ca7455288bc13"
+  },
+  "architect_receipt_verification": {
+    "path": "increments/021/32-checkpoint1-owner-decision/evidence/ARCHITECT_R1_CLOSURE_RECEIPT_VERIFICATION.json",
+    "lines": 101,
+    "size_bytes": 4214,
+    "sha256": "0f26af3457adb0734c9f971db6528d59f8fa66067d5bea64f075bdf1e9e85b5f",
+    "git_blob_sha": "0cd12669ee1434fa2f1690c3cdb5113026a95051"
+  },
+  "test_evidence": {
+    "reviewer_linux_module_passed": 92,
+    "reviewer_exact_node_passed": 1,
+    "reviewer_exact_node_mutants_rejected": 4,
+    "reviewer_gemmi_sentinel": true,
+    "native_validation_claimed": false,
+    "implementer_windows_full_suite_passed": 1568,
+    "implementer_windows_full_suite_skipped": 5,
+    "supplied_collection": 1573,
+    "architect_pytest_this_receipt": false
+  },
+  "owner_approval_received": false,
+  "owner_message_literal": null,
+  "checkpoint1_approved": false,
+  "required_before_recording_decision": [
+    "Obtain direct owner message identifying CP1 and exact code commit",
+    "Reconfirm coordination/code/review and both main refs; stop on unexplained drift",
+    "Record exact owner text and context in a new governance document; no inferred consent from commit/account/reviewer approval"
+  ],
+  "proposed_approval_text": "Aprovo o Checkpoint 1 do Incremento 021 no commit ea8dac9cdc203c337d7f3f9947b54042291f7484, com as três NOTES preservadas. Pode preparar a tarefa do Checkpoint 2. Esta decisão não autoriza implementação do CP2, PR, merge ou alteração de main.",
+  "permitted_followup_after_approval": [
+    "Architect records literal CP1 acceptance at exact approved snapshot",
+    "Architect prepares CP2 brief, allowlist, normative scenario mapping, evidence requirements and task under frozen contract; no implementation until separately authorized"
+  ],
+  "next_gate": "After explicit CP1 acceptance, architect prepares concrete CP2 task for separate owner implementation authorization",
+  "restrictions": [
+    "No code/test/contract changes or implementation by this task",
+    "No automatic CP2 or later checkpoint execution",
+    "No PR/merge/tag/release/main/config/visibility/formal GitHub approval/comment",
+    "Preserve all historical documents and other authors reports; 020-A STAND-BY; protected local items untouched"
+  ],
+  "cp2_implementation_authorized": false,
+  "final_specification_frozen": true,
+  "automated_dispatch": false
+}

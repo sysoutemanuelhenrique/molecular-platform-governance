@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-R1-TEST-CORRECTION",
-  "status": "CORRECTION_RECEIVED_AWAITING_R1_ONLY_INDEPENDENT_REVIEW",
+  "status": "COMPLETED_R1_INDEPENDENTLY_CLOSED",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -200,6 +200,7 @@
     "sha256": "e50b5bcdc2c8c43464ee0f4fd05c52aa4c0008e598fcb9ee03c00deca5df875e",
     "git_blob_sha": "cc56f4d92e273587bb4e4a8cf5203d4aa0bae0c5"
   },
-  "next_task": "tasks/021-CHECKPOINT1-R1-FOCAL-REVIEW.json",
-  "r1_independently_closed": false
+  "next_task": "tasks/021-OWNER-CHECKPOINT1-DECISION.json",
+  "r1_independently_closed": true,
+  "independent_closure_commit": "a9b146d5a355e4c15ad596b851136efdde208cdb"
 }

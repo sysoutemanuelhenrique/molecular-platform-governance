@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-R1-FOCAL-REVIEW",
-  "status": "READY_FOR_MANUAL_HANDOFF",
+  "status": "COMPLETED_APPROVE_R1_CLOSED_READY_FOR_OWNER_CP1_DECISION",
   "assigned_role": "claude-independent-reviewer-separate-from-implementer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -120,27 +120,6 @@
     }
   ],
   "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
-  "only_open_finding": {
-    "id": "R-1",
-    "severity": "MINOR",
-    "scope": "test regression of atom_ids_key input-order preservation",
-    "action": "Add exactly one regression test using the unordered two-atom vector, hand-written canonical bytes and fixed SHA256; retain existing13goldens and91tests. No production change.",
-    "proposed_test_name": "test_atom_ids_key_preserves_given_order_against_ordinal_and_id_sorting",
-    "atoms": [
-      {
-        "ordinal": 3,
-        "atom_id": "a"
-      },
-      {
-        "ordinal": 1,
-        "atom_id": "Z"
-      }
-    ],
-    "canonical_utf8": "{\"atoms\":[{\"id\":\"a\",\"ordinal\":3},{\"id\":\"Z\",\"ordinal\":1}],\"kind\":\"receptor-materialization-atom-ids\",\"version\":\"1.0\"}",
-    "expected_sha256_literal": "96fd3eacd89d16753dbdc5ec22bb79db0740e9f355e6322cb0c4641bc0f3106a",
-    "reversed_sha256_literal": "bf820fe14730b4b8ede9d8e007e4c3d32f71def5d8a4747c657d6d76dac562d1",
-    "expected_must_not_be_generated_by_production": true
-  },
   "scope": "R-1 only, test-only delta parent..head, preservation of prior closures; not an integral scientific/native/checkpoint review",
   "independently_closed_findings_to_preserve": [
     "ARCH-01",
@@ -212,5 +191,40 @@
   "checkpoint1_approved": false,
   "cp2_implementation_authorized": false,
   "final_specification_frozen": true,
-  "automated_dispatch": false
+  "automated_dispatch": false,
+  "completed_review_commit": "a9b146d5a355e4c15ad596b851136efdde208cdb",
+  "completed_review_report": {
+    "path": "increments/021/31-checkpoint1-r1-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_R1_FOCAL_REVIEW.md",
+    "lines": 116,
+    "size_bytes": 7227,
+    "sha256": "a1d99b0d56ae73e1a006878483c2f61f7dffa36a447d686178c6bd7cc9420736",
+    "git_blob_sha": "83a6f9544266350635b3897d99a4b912547f7e84",
+    "commit": "a9b146d5a355e4c15ad596b851136efdde208cdb"
+  },
+  "independent_verdict": "APPROVE",
+  "r1_independently_closed": true,
+  "ready_for_owner_cp1_decision": true,
+  "reviewed_finding": {
+    "id": "R-1",
+    "severity": "MINOR",
+    "scope": "test regression of atom_ids_key input-order preservation",
+    "action": "Add exactly one regression test using the unordered two-atom vector, hand-written canonical bytes and fixed SHA256; retain existing13goldens and91tests. No production change.",
+    "proposed_test_name": "test_atom_ids_key_preserves_given_order_against_ordinal_and_id_sorting",
+    "atoms": [
+      {
+        "ordinal": 3,
+        "atom_id": "a"
+      },
+      {
+        "ordinal": 1,
+        "atom_id": "Z"
+      }
+    ],
+    "canonical_utf8": "{\"atoms\":[{\"id\":\"a\",\"ordinal\":3},{\"id\":\"Z\",\"ordinal\":1}],\"kind\":\"receptor-materialization-atom-ids\",\"version\":\"1.0\"}",
+    "expected_sha256_literal": "96fd3eacd89d16753dbdc5ec22bb79db0740e9f355e6322cb0c4641bc0f3106a",
+    "reversed_sha256_literal": "bf820fe14730b4b8ede9d8e007e4c3d32f71def5d8a4747c657d6d76dac562d1",
+    "expected_must_not_be_generated_by_production": true
+  },
+  "only_open_finding": null,
+  "next_task": "tasks/021-OWNER-CHECKPOINT1-DECISION.json"
 }

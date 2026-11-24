@@ -1,0 +1,101 @@
+{
+  "role": "architect receiving independent review, not a fresh independent review",
+  "coordination_input": "828bf806e2f16ae9fee5896ae6f9719a9e1dc5cf",
+  "review_commit": "a9b146d5a355e4c15ad596b851136efdde208cdb",
+  "review_parent": "828bf806e2f16ae9fee5896ae6f9719a9e1dc5cf",
+  "code_head": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "review_files": [
+    {
+      "path": "increments/021/31-checkpoint1-r1-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_R1_FOCAL_REVIEW.md",
+      "lines": 116,
+      "size_bytes": 7227,
+      "sha256": "a1d99b0d56ae73e1a006878483c2f61f7dffa36a447d686178c6bd7cc9420736",
+      "git_blob_sha": "83a6f9544266350635b3897d99a4b912547f7e84"
+    },
+    {
+      "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-evidence-identities.json",
+      "lines": 59,
+      "size_bytes": 2201,
+      "sha256": "8ad94d51efc53c11a58e5665603f34c52c574002b63451bf65a62a433731416c",
+      "git_blob_sha": "d62ca2bf5b690e52316f3896a40417ac9013f089"
+    },
+    {
+      "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-inert-gemmi-sentinel.py",
+      "lines": 4,
+      "size_bytes": 298,
+      "sha256": "1d08328aa716ee7cec476c7daefb8b650b5ebac98126284221531447f10b0d9d",
+      "git_blob_sha": "2d4669132c87a1a85757d10035f0c87efefcb57b"
+    },
+    {
+      "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-independent-literals.output.json",
+      "lines": 15,
+      "size_bytes": 833,
+      "sha256": "94470d6fcf83b8046157a4bb10c6b62d42c01926711b583bb1c3e445b311e35f",
+      "git_blob_sha": "b7bb2cb106db4d2807f4cdbe800c80d050d75def"
+    },
+    {
+      "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-independent-literals.py",
+      "lines": 16,
+      "size_bytes": 1583,
+      "sha256": "fb95aca53db7ce99f8394c3a47661fbc6171e577ee7a9c9b52a27a50d5ce68fb",
+      "git_blob_sha": "7e2c6a23474cb7ceb44faa5fe65b594b6db5de72"
+    },
+    {
+      "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-mutation-exact-pytest.output.txt",
+      "lines": 5,
+      "size_bytes": 1023,
+      "sha256": "4a2c732f6f0b9df0dab6e11f40c6194fa1e86a46b7e6b7fd01f2892cd152b3d5",
+      "git_blob_sha": "e53d6af002e24948bd06ed841522d703d2cadab5"
+    },
+    {
+      "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-mutation-exact-pytest.sh",
+      "lines": 20,
+      "size_bytes": 1797,
+      "sha256": "9b1353a2786ebf5cc4b52d92dc0152995922cf6a386ab05418e9249c3d1ba12a",
+      "git_blob_sha": "e36e571176e1fb70658057e46d43deec9aef87da"
+    },
+    {
+      "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-test-preservation.output.json",
+      "lines": 26,
+      "size_bytes": 419,
+      "sha256": "5df6631e8dd3c76ec6e8e30e5d8980ebab71e6e38ffca4a8b9ec79e25da79e72",
+      "git_blob_sha": "d5287250e7a33ecae34a5c18f9810bb4e6fc0cb8"
+    },
+    {
+      "path": "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-r1-test-preservation.py",
+      "lines": 19,
+      "size_bytes": 1659,
+      "sha256": "3364ce4cbce48c160be62b8b7ead2ee0f3ed77866e868af386cba85b916fd321",
+      "git_blob_sha": "8fe297bf92bedd82baede43612e4cedb7ba2b414"
+    }
+  ],
+  "manifest_entries_verified": 8,
+  "all_nine_git_blobs_verified": true,
+  "review_diff_only_allowed_added_files": true,
+  "reviewer_supplied_results": {
+    "original_node_passed": 1,
+    "original_file_passed": 92,
+    "ordering_mutants_rejected_by_exact_test": 4,
+    "gemmi_sentinel_used_for_020_dtos": true,
+    "native_execution_proven": false,
+    "windows_full_suite_reexecuted_by_reviewer": false
+  },
+  "architect_execution_this_receipt": {
+    "pytest_executed": false,
+    "gemmi_rdkit_windows_executed": false,
+    "dependencies_installed": false,
+    "review_script_executed": false,
+    "checks": "Full report/evidence read; SHA256/bytes/LF/Git blobs; manifest and result consistency; remote refs"
+  },
+  "disposition": {
+    "r1": "INDEPENDENTLY_CLOSED",
+    "prior_functional_findings_closed": 12,
+    "open_blockers": 0,
+    "open_majors": 0,
+    "open_minors": 0,
+    "notes_preserved": 3,
+    "cp1_approved": false,
+    "cp2_authorized": false,
+    "ready_for_owner_cp1_decision": true
+  }
+}

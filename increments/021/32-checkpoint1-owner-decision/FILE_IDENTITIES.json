@@ -1,0 +1,54 @@
+{
+  "note": "Excludes this manifest; independent reports remain preserved on their own pinned branches.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 36,
+      "size_bytes": 2896,
+      "sha256": "5e19b66d7bde3187e72141915b2c0bfce73adea0e37199ccaa7df0fd239f9c35",
+      "git_blob_sha": "990b36b07dea9ffd9945f539d1debbac20a1422d"
+    },
+    {
+      "path": "increments/021/32-checkpoint1-owner-decision/CODEX_INCREMENT_021_CHECKPOINT1_OWNER_DECISION_BRIEF.md",
+      "lines": 50,
+      "size_bytes": 5504,
+      "sha256": "3d90fe86cd0f470779a98888cb038c8d746fffb84ef175e66515a2397398e5ff",
+      "git_blob_sha": "e52c65d2c07a82cd81d98bb31e4ca7455288bc13"
+    },
+    {
+      "path": "increments/021/32-checkpoint1-owner-decision/evidence/ARCHITECT_R1_CLOSURE_RECEIPT_VERIFICATION.json",
+      "lines": 101,
+      "size_bytes": 4214,
+      "sha256": "0f26af3457adb0734c9f971db6528d59f8fa66067d5bea64f075bdf1e9e85b5f",
+      "git_blob_sha": "0cd12669ee1434fa2f1690c3cdb5113026a95051"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-IMPLEMENTATION.json",
+      "lines": 261,
+      "size_bytes": 11616,
+      "sha256": "f148fbce2bd3d5d70c8d0fa6279cf4c686b0d53d085e8d04a6b15baac494ab2b",
+      "git_blob_sha": "0e3bfe9539044080ea291cbad12fcc30fb55ce7b"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-R1-FOCAL-REVIEW.json",
+      "lines": 230,
+      "size_bytes": 12525,
+      "sha256": "4dcea13d017e8bd69b14d6e7f596ddd75c0b959ba01f63de2220484c392aaa10",
+      "git_blob_sha": "73e8c5cbdf46e9011199df3b7d9fe61621bea251"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-R1-TEST-CORRECTION.json",
+      "lines": 206,
+      "size_bytes": 10828,
+      "sha256": "438c1d7fd64a0aefcb46026e039cd2d7c385d031779cda41b212609fbbb73bf8",
+      "git_blob_sha": "8cf8b0b63fa406c72c0703cf4df1b8b89cfddcd4"
+    },
+    {
+      "path": "tasks/021-OWNER-CHECKPOINT1-DECISION.json",
+      "lines": 163,
+      "size_bytes": 7238,
+      "sha256": "ecf9a1a29c32d4b1e87d05e8edb0b7a3a4cb91bcde1285c36d7b1b54eaeb5961",
+      "git_blob_sha": "46d17288601e3087bd8f90c93475a32237253e33"
+    }
+  ]
+}
