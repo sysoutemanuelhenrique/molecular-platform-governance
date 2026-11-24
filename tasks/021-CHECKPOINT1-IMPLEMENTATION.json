@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-IMPLEMENTATION",
-  "status": "PREPARED_AWAITING_OWNER_IMPLEMENTATION_AUTHORIZATION",
+  "status": "AUTHORIZED",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
   "preparation_input_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
-  "execution_snapshot": "Immutable future authorization publication SHA supplied in handoff; this preparation is not authorization. Stop if expected remote coordination ref differs.",
+  "execution_snapshot": "Exact authorization publication SHA supplied in handoff; stop on unexpected remote coordination HEAD or identity changes. Preparation e617717 is historical, not the authorized execution snapshot.",
   "code_repository": "sysoutemanuelhenrique/molecular-platform",
   "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
   "proposed_code_branch": "feature/increment-021-receptor-materialization",
@@ -138,10 +138,10 @@
     "increments/021/17-checkpoint1-implementation/evidence/claude-*"
   ],
   "governance_output_branch": "Own implementer branch from exact authorization snapshot; never central coordination branch",
-  "owner_implementation_authorization_recorded": false,
-  "implementation_authorized": false,
-  "code_commit_push_authorized": false,
-  "governance_report_commit_push_authorized": false,
+  "owner_implementation_authorization_recorded": true,
+  "implementation_authorized": true,
+  "code_commit_push_authorized": true,
+  "governance_report_commit_push_authorized": true,
   "permissions_requested_for_future_owner_decision": [
     "Implement and test CP1 only",
     "Normal commit and push of the two allowed files to proposed code feature branch",
@@ -156,5 +156,21 @@
     "020-A remains STAND-BY; preserved local items untouched"
   ],
   "final_specification_frozen": true,
-  "automated_dispatch": false
+  "automated_dispatch": false,
+  "dispatch_status": "AUTHORIZED_AWAITING_MANUAL_HANDOFF",
+  "authorization_input_commit": "e617717bd8db707737c9c5cba8f404776ae2d260",
+  "authorization_recorded_on": "2026-11-24",
+  "timezone": "America/Sao_Paulo",
+  "owner_authorization_record": {
+    "path": "increments/021/16-checkpoint1-preparation/OWNER_CHECKPOINT1_IMPLEMENTATION_AUTHORIZATION.md",
+    "lines": 55,
+    "size_bytes": 4625,
+    "sha256": "589eb02982413e6461a59d8ec72ab468986b8d677bf3120cf43a88eaea756f18"
+  },
+  "owner_message_literal": "Autorizo o Claude implementador a executar somente o\nCheckpoint 1 do Incremento 021, conforme a tarefa\n021-CHECKPOINT1-IMPLEMENTATION publicada no commit\ne617717bd8db707737c9c5cba8f404776ae2d260.\n\nAutorizo implementação, testes, commit e push apenas\ndos dois arquivos permitidos, na branch\nfeature/increment-021-receptor-materialization,\npartindo da baseline\n08b797e0985e123ffd4d7ca7e5a5e8f040e63851.\n\nAutorizo publicar o relatório nos caminhos definidos\nda tarefa, em branch própria do governance.\n\nNão autorizo CP2, alteração do contrato congelado,\nPR, merge ou alteração de main.",
+  "approved_preparation_task_sha256": "65ab09435da8d89b2e3229e60c962a68f4b0cdc68a883e629feb3e3736af3531",
+  "cp2_implementation_authorized": false,
+  "scope_authorized": "CHECKPOINT1_ONLY",
+  "implementation_started": false,
+  "authorization_limits": "Exactly the approved CP1 task, two code paths, baseline and feature branch; own governance report/evidence branch only. No contract/main/PR/merge/CP2 permission."
 }

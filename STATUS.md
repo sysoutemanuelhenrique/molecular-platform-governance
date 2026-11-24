@@ -1,42 +1,37 @@
-# Coordenação — Incremento 021: CP1 preparado, aguardando autorização
+# Coordenação — Incremento 021: CP1 autorizado, aguardando execução do implementador
 
-Atualizado em 24/11/2026 por Codex arquiteto, após aprovação humana expressa da candidate-2 e dos quatro anexos publicados em 65f60a4c011160c2c86241df802219268b70529b. A aprovação exclui implementação.
+Atualizado em 24/11/2026 por Codex arquiteto, após autorização humana expressa da tarefa 021-CHECKPOINT1-IMPLEMENTATION preparada em e617717bd8db707737c9c5cba8f404776ae2d260. A autorização de congelamento anterior não foi ampliada por inferência: esta é uma nova instrução específica do responsável.
 
 | Campo | Estado |
 |---|---|
 | Branch de coordenação | docs/020-a-candidate1-review-20261020 |
-| Snapshot aprovado / entrada | 65f60a4c011160c2c86241df802219268b70529b |
-| Código main read-only | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851 |
+| Entrada da autorização | e617717bd8db707737c9c5cba8f404776ae2d260 |
+| Código main baseline | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851 |
 | Governance main preservada | a47183dfec8213c765ed43ae482c8c227760a3d5 |
 | 020 / 020-A | 020 integrado; 020-A STAND-BY, sem retomada |
-| Parecer independente | 4759abff9f7deeb921cfb944b1e6cd3fc914d4fa; APPROVE WITH NON-BLOCKING NOTES sobre candidate-1 |
-| Delta da candidate-2 | NB-1/NB-2 explicitadas e aprovadas pelo responsável no pacote exato |
-| Aprovação humana | Registrada literalmente em increments/021/15-final-specification/evidence/OWNER_FREEZE_APPROVAL.md |
-| Especificação final | increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md — versão 1.0 congelada |
-| Pacote normativo | increments/021/15-final-specification/evidence/FROZEN_PACKAGE.json |
-| Anexos congelados | SCHEMAS_021.md, CATALOG_021.json, SCENARIOS_021.csv, IDENTITY_BASIS_CASES.json — mesmos bytes aprovados |
-| Manifesto da publicação | increments/021/15-final-specification/evidence/FILE_IDENTITIES.json |
-| Cenários contratuais | 173: CP1 43 / CP2 79 / CP3 31 / CP4 20; sem execução de produção nesta etapa |
-| Tarefa de decisão | tasks/021-OWNER-FREEZE-DECISION.json — APPROVED_FREEZE_COMPLETED |
-| Tarefa de execução documental | tasks/021-FREEZE.json — COMPLETED_SPECIFICATION_FROZEN |
-| Implementação | NÃO AUTORIZADA; tarefa CP1 apenas preparada, sem execução |
-| Próxima tarefa | tasks/021-CHECKPOINT1-IMPLEMENTATION.json — PREPARED_AWAITING_OWNER_IMPLEMENTATION_AUTHORIZATION |
-| Brief do CP1 | increments/021/16-checkpoint1-preparation/CHECKPOINT1_IMPLEMENTATION_BRIEF.md |
-| Proposta CP1 | 2 arquivos novos; 43 cenários; branch feature/increment-021-receptor-materialization ainda não criada |
-| Próximo gate | Aprovação expressa do responsável para implementar/testar/commitar/enviar apenas CP1 e seu relatório |
-| Relay automático | Não configurado; nenhum agente acionado |
+| Especificação congelada | increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md @ b0e60f6528f6fcb828aa6dd5577824e08c7c9fac |
+| SHA-256 da especificação | 5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8 |
+| Aprovação atual | increments/021/16-checkpoint1-preparation/OWNER_CHECKPOINT1_IMPLEMENTATION_AUTHORIZATION.md |
+| Tarefa ativa | tasks/021-CHECKPOINT1-IMPLEMENTATION.json — AUTHORIZED |
+| Próximo ator | Claude implementador, sessão separada do revisor |
+| Branch de código permitida | feature/increment-021-receptor-materialization, a criar pelo implementador após revalidar gates |
+| Allowlist de código | src/molecular/receptor_materialization.py e tests/test_receptor_materialization.py |
+| Cenários de CP1 | 43: T021-001–040 e T021-159–161 |
+| Permissão de código | Implementar/testar/commitar/enviar apenas CP1 na branch permitida |
+| Permissão de governance | Publicar relatório/evidências nos caminhos da tarefa, em branch própria do implementador |
+| Execução observada | Ainda não iniciada/entregue; nenhum teste ou commit de código alegado |
+| Encaminhamento | AUTHORIZED_AWAITING_MANUAL_HANDOFF; nenhum agente acionado automaticamente |
+| CP2–4 | Não autorizados |
+| Após entrega | Triagem do arquiteto e revisão independente de CP1; não avançar automaticamente |
+| Main/PR/merge/contrato | Alterações não autorizadas |
 
-O arquivo final novo altera somente identificação/autoridade/estado de congelamento. O conteúdo normativo aprovado e os quatro anexos são preservados; os cabeçalhos históricos dos anexos não substituem a autoridade atual do pacote congelado. Cada arquivo original aprovado e todos os pareceres/manifestos históricos permanecem intactos nos seus snapshots. Nenhuma branch do revisor foi mesclada.
+Os documentos congelados, candidatos, pareceres, brief e manifesto de preparação permanecem intactos. O brief original e o manifesto FILE_IDENTITIES.json pertencem ao snapshot e617717; suas declarações históricas de preparação não autorizada são superadas somente por esta autorização explícita e pela tarefa atual. O manifesto desta autorização é CHECKPOINT1_AUTHORIZATION_IDENTITIES.json no diretório 16-checkpoint1-preparation.
 
-Verificações: HEADs remotos; cinco arquivos aprovados relidos do GitHub e conferidos em linhas/bytes/SHA-256/Git; package key aprovado; 13 itens do manifesto de entrada; diff de metadados; quatro anexos byte-idênticos; contagens JSON/CSV/whitespace. Nenhum pytest, Gemmi, parsing RAW, materialização, Windows, concorrência ou instalação executado nesta etapa.
+Conferências desta etapa: refs remotos; branch proposta ausente na consulta; três arquivos do manifesto de preparação e cinco arquivos normativos íntegros; tarefa/allowlist/43 cenários/baseline/brief e restrições preservados; JSON/whitespace. Não houve implementação, pytest, Gemmi, parsing RAW, materialização, Windows ou concorrência executados pelo arquiteto. Repositório de código e ambas as branches main permanecem inalterados.
 
-A tarefa CP1 foi preparada como próximo passo documental em 24/11/2026; o pedido de próximo passo não foi registrado como autorização de implementação. Nenhum código/branch de código foi criado e nenhum agente foi acionado. O contrato congelado não foi alterado.
-
-CHECKPOINT1 TASK PREPARED: YES
-OWNER IMPLEMENTATION AUTHORIZATION RECORDED: NO
-OWNER FREEZE APPROVAL RECORDED: YES
+OWNER CHECKPOINT1 AUTHORIZATION RECORDED: YES
+CHECKPOINT1 IMPLEMENTATION AUTHORIZED: YES
+CHECKPOINT2 IMPLEMENTATION AUTHORIZED: NO
 FINAL SPECIFICATION FROZEN: YES
-IMPLEMENTATION AUTHORIZED: NO
-READY FOR IMPLEMENTATION: NO
-CODE REPOSITORY MODIFIED: NO
-AUTOMATED RELAY ACTIVE: NO
+CODE REPOSITORY MODIFIED BY ARCHITECT: NO
+AUTOMATED DISPATCH: NO

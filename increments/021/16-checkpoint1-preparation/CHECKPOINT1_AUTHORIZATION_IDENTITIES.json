@@ -1,0 +1,27 @@
+{
+  "authorization_input_commit": "e617717bd8db707737c9c5cba8f404776ae2d260",
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "scope": "CHECKPOINT1_ONLY",
+  "note": "Current authorization files excluding self. Preparation FILE_IDENTITIES.json remains unchanged and belongs to e617717. No code implementation is included.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 37,
+      "size_bytes": 3322,
+      "sha256": "98b26299697637c620e9f39709c3b068160f4c1ca162cf4adab02e27b85201c8"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-IMPLEMENTATION.json",
+      "lines": 176,
+      "size_bytes": 8244,
+      "sha256": "32efad47323a465da8b4270251968bdfbc67560c796f859670afd0ccda425f06"
+    },
+    {
+      "path": "increments/021/16-checkpoint1-preparation/OWNER_CHECKPOINT1_IMPLEMENTATION_AUTHORIZATION.md",
+      "lines": 55,
+      "size_bytes": 4625,
+      "sha256": "589eb02982413e6461a59d8ec72ab468986b8d677bf3120cf43a88eaea756f18"
+    }
+  ]
+}
