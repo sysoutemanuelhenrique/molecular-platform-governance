@@ -1,0 +1,6 @@
+original: MATCHES expected given-order literal
+mutant_ordinal: test would FAIL (detected)
+  mutant_ordinal result equals reversed literal: True
+mutant_atomid: test would FAIL (detected)
+  mutant_atomid result equals reversed literal: True
+ALL MUTATION CHECKS CONFIRM THE NEW TEST DISCRIMINATES BOTH MUTANTS

@@ -1,0 +1,59 @@
+=== git log ===
+ea8dac9 test: restore atom_ids_key order-preservation regression (R-1, increment 021)
+bbd491e fix: apply three residual CP1 corrections from focal review (increment 021)
+42b4804 test: strengthen MINOR-4/T021-029 evidence (increment 021 CP1 corrections)
+3ba2fa9 fix: apply CP1 corrections from architect reconciliation (increment 021)
+711f307 feat: add receptor materialization domain/planner (increment 021, checkpoint 1)
+08b797e Merge pull request #8 from sysoutemanuelhenrique/docs/academic-demo-pubchem
+=== commit details (this round) ===
+commit ea8dac9cdc203c337d7f3f9947b54042291f7484
+Author: sysoutemanuelhenrique <emanuel2017.henrique@gmail.com>
+Date:   Tue Nov 24 16:09:00 2026 -0300
+
+    test: restore atom_ids_key order-preservation regression (R-1, increment 021)
+    
+    Addresses the single residual MINOR (R-1) from the final focal review at
+    governance commit edb8764b4d4ee56e49ff849b65b950e5e430fae0 and the
+    architect's response at 771ae24f6289e41a2f8c7e17906bf294925bd375: the
+    residual-corrections round had replaced the original two-atom,
+    out-of-order golden vector for compute_atom_ids_key with a single-atom
+    vector, silently dropping its order-preservation coverage (a sort-by-
+    ordinal mutant that used to fail the old test now passes undetected).
+    
+    Adds exactly one test, test_atom_ids_key_preserves_given_order_against_
+    ordinal_and_id_sorting, using the architect's documentary vector
+    ((ordinal=3,"a") then (ordinal=1,"Z")) whose given order differs from
+    both ordinal-ascending and ASCII-id-ascending sort order, with literal
+    SHA-256 digests (96fd3eac... for the given order, bf820fe1... for the
+    reversed order both wrong sorts collapse to). The existing single-atom
+    golden and all other 12 literal-golden tests are untouched. Verified in
+    an external disposable copy (never committed) that a sort-by-ordinal and
+    a sort-by-atom_id mutation of compute_atom_ids_key both make the new test
+    fail; the real production file is byte-identical to bbd491e
+    (d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d).
+    
+    92 tests (91 before + 1 new), all passing; full suite 1568 passed/5
+    skipped (pre-existing, identified) of 1573 collected (1572 baseline + 1
+    new).
+    
+    Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+
+ tests/test_receptor_materialization.py | 31 +++++++++++++++++++++++++++++++
+ 1 file changed, 31 insertions(+)
+=== git show --check (whitespace) ===
+    
+    Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+
+=== diff --name-status vs previous head bbd491e ===
+M	tests/test_receptor_materialization.py
+=== diff --name-status vs baseline main 08b797e ===
+A	src/molecular/receptor_materialization.py
+A	tests/test_receptor_materialization.py
+=== remote verification ===
+ea8dac9cdc203c337d7f3f9947b54042291f7484	refs/heads/feature/increment-021-receptor-materialization
+08b797e0985e123ffd4d7ca7e5a5e8f040e63851	refs/heads/main
+=== production file SHA256 unchanged ===
+d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d *-
+=== committed test file blob identity (authoritative, LF) ===
+   1676   83570
+9f72301ece6e55ef11d78d589f20822673887af10eeee1365d209099c3658ada *-
