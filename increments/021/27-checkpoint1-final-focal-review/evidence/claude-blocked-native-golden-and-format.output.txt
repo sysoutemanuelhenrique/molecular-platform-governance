@@ -1,0 +1,68 @@
+{
+ "optimize": 0,
+ "loaded_before": [],
+ "production_vs_literal": {
+  "CANONICAL_JSON": true,
+  "LEGACY_INSPECTION_ID": true,
+  "SOURCE_CONTEXT_KEY": true,
+  "OCCURRENCE_KEY": true,
+  "ATOM_IDS_KEY": true,
+  "EXCLUSIONS_KEY": true,
+  "OUTSIDE_KEY": true,
+  "ATOM_DECISIONS_KEY": true,
+  "CONNECTION_DECISIONS_KEY": true,
+  "CATEGORY_DECISIONS_KEY": true,
+  "PLAN_KEY": true,
+  "POLICY_ID": true,
+  "REQUEST_KEY": true
+ },
+ "literal_count": 13,
+ "derived_inputs_match_test_values": {
+  "w_atom_ids_key": true,
+  "occ_a": true,
+  "occ_b": true
+ },
+ "pure_format_check": {
+  "mmcif/mmcif": "mmcif",
+  "cif/mmcif": "mmcif",
+  "mmcif/cif": "mmcif",
+  "pdb/pdb": "INVALID_RECORD",
+  "mmcif/pdb": "INVALID_RECORD",
+  "xyz/xyz": "INVALID_RECORD"
+ },
+ "loaded_after": []
+}
+{
+ "optimize": 1,
+ "loaded_before": [],
+ "production_vs_literal": {
+  "CANONICAL_JSON": true,
+  "LEGACY_INSPECTION_ID": true,
+  "SOURCE_CONTEXT_KEY": true,
+  "OCCURRENCE_KEY": true,
+  "ATOM_IDS_KEY": true,
+  "EXCLUSIONS_KEY": true,
+  "OUTSIDE_KEY": true,
+  "ATOM_DECISIONS_KEY": true,
+  "CONNECTION_DECISIONS_KEY": true,
+  "CATEGORY_DECISIONS_KEY": true,
+  "PLAN_KEY": true,
+  "POLICY_ID": true,
+  "REQUEST_KEY": true
+ },
+ "literal_count": 13,
+ "derived_inputs_match_test_values": {
+  "w_atom_ids_key": true,
+  "occ_a": true,
+  "occ_b": true
+ },
+ "pure_format_check": {
+  "mmcif/mmcif": "mmcif",
+  "cif/mmcif": "mmcif",
+  "mmcif/cif": "mmcif",
+  "pdb/pdb": "INVALID_RECORD",
+  "mmcif/pdb": "INVALID_RECORD",
+  "xyz/xyz": "INVALID_RECORD"
+ },
+ "loaded_after": []
+}

@@ -1,0 +1,101 @@
+{
+ "compared": 59,
+ "changed": {
+  "A_acq_pdb_declared_pdb_detected_mmcif": {
+   "at_42b4804": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   },
+   "at_bbd491e": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_acq_mmcif_vs_inspection_declared_pdb": {
+   "at_42b4804": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   },
+   "at_bbd491e": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_acq_xyz_vs_declared_xyz": {
+   "at_42b4804": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   },
+   "at_bbd491e": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "C_duplicate_kept_ordinals": {
+   "at_42b4804": {
+    "outcome": "accepted",
+    "detail": [
+     0,
+     0
+    ]
+   },
+   "at_bbd491e": {
+    "outcome": "ValidationError",
+    "msg": "Value error, kept_row_ordinals must not contain a duplicate ordinal"
+   }
+  },
+  "C_duplicate_omitted_ordinals": {
+   "at_42b4804": {
+    "outcome": "accepted",
+    "detail": [
+     0,
+     0
+    ]
+   },
+   "at_bbd491e": {
+    "outcome": "ValidationError",
+    "msg": "Value error, omitted_row_ordinals must not contain a duplicate ordinal"
+   }
+  },
+  "C_family_with_LF": {
+   "at_42b4804": {
+    "outcome": "accepted",
+    "detail": "_em_example\n"
+   },
+   "at_bbd491e": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_example\\n' is neither a canonical catalogue category nor an approved omission-famil"
+   }
+  },
+  "C_family_bare_prefix": {
+   "at_42b4804": {
+    "outcome": "accepted",
+    "detail": "_em_"
+   },
+   "at_bbd491e": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_' is neither a canonical catalogue category nor an approved omission-family name (f"
+   }
+  },
+  "C_family_with_space": {
+   "at_42b4804": {
+    "outcome": "accepted",
+    "detail": "_pdbx_nmr_ x"
+   },
+   "at_bbd491e": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_pdbx_nmr_ x' is neither a canonical catalogue category nor an approved omission-family"
+   }
+  },
+  "C_family_with_dot_tag": {
+   "at_42b4804": {
+    "outcome": "accepted",
+    "detail": "_em_entity.id"
+   },
+   "at_bbd491e": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_entity.id' is neither a canonical catalogue category nor an approved omission-famil"
+   }
+  }
+ }
+}

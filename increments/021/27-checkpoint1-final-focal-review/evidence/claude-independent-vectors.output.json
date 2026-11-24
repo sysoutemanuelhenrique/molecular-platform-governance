@@ -1,0 +1,90 @@
+{
+ "literal_count": 13,
+ "all_equal": true,
+ "comparison": {
+  "canonical_json": {
+   "test_literal": "14332640256b6a761e453eb0beba1ba7cb1c005ab6d7c01a8eb51dfbe0cc4994",
+   "reviewer": "14332640256b6a761e453eb0beba1ba7cb1c005ab6d7c01a8eb51dfbe0cc4994",
+   "equal": true
+  },
+  "legacy_inspection_id": {
+   "test_literal": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c",
+   "reviewer": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c",
+   "equal": true
+  },
+  "source_context_key": {
+   "test_literal": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+   "reviewer": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+   "equal": true
+  },
+  "occurrence_key": {
+   "test_literal": "022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e",
+   "reviewer": "022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e",
+   "equal": true
+  },
+  "atom_ids_key": {
+   "test_literal": "1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8",
+   "reviewer": "1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8",
+   "equal": true
+  },
+  "exclusions_key": {
+   "test_literal": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d",
+   "reviewer": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d",
+   "equal": true
+  },
+  "outside_key": {
+   "test_literal": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32",
+   "reviewer": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32",
+   "equal": true
+  },
+  "atom_decisions_key": {
+   "test_literal": "cc0fb129f56d061a165e94774d323be510a46fa7f22a1cd816734bb0c5849850",
+   "reviewer": "cc0fb129f56d061a165e94774d323be510a46fa7f22a1cd816734bb0c5849850",
+   "equal": true
+  },
+  "connection_decisions_key": {
+   "test_literal": "67c0c45369f339bdebbbf2fbc1ee26e20f699f9fe2b93f2edf88c68e3ed85889",
+   "reviewer": "67c0c45369f339bdebbbf2fbc1ee26e20f699f9fe2b93f2edf88c68e3ed85889",
+   "equal": true
+  },
+  "category_decisions_key": {
+   "test_literal": "7fc88d1a1d5deec637359849766c989e04832753ce943bb7a9bdccdfd03661df",
+   "reviewer": "7fc88d1a1d5deec637359849766c989e04832753ce943bb7a9bdccdfd03661df",
+   "equal": true
+  },
+  "plan_key": {
+   "test_literal": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da",
+   "reviewer": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da",
+   "equal": true
+  },
+  "policy_id": {
+   "test_literal": "3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02",
+   "reviewer": "3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02",
+   "equal": true
+  },
+  "request_key": {
+   "test_literal": "5b1de4a13571f147a84520042b4830235e7b4a611ab7b6b1b972c60027510095",
+   "reviewer": "5b1de4a13571f147a84520042b4830235e7b4a611ab7b6b1b972c60027510095",
+   "equal": true
+  }
+ },
+ "documentary_inputs_present_in_test": {
+  "inspection_id": true,
+  "raw_sha256": true,
+  "rows_key": true,
+  "w_atom_ids_key": true,
+  "occ_a": true,
+  "occ_b": true,
+  "record_0": true,
+  "record_1": true,
+  "record_2": true,
+  "record_3": true
+ },
+ "record_sizes": [
+  66,
+  124,
+  64,
+  65
+ ],
+ "raw_size": 61
+}

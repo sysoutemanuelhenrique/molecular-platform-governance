@@ -1,0 +1,4 @@
+mutant=sort_ordinal tests=new : 91 passed in 1.27s
+mutant=sort_ordinal tests=old : 1 failed, 74 passed in 1.22s
+mutant=sort_atom_id tests=new : 91 passed in 1.26s
+mutant=sort_atom_id tests=old : 75 passed in 1.12s

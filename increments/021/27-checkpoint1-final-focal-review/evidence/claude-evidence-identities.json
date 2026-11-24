@@ -1,0 +1,86 @@
+{
+ "governance_snapshot": "fcad8561b53b924ad2d04844c460fabd8489f866",
+ "code_head": "bbd491e1a0b3fcb913c3549b004120693212df62",
+ "delivery_head": "74fb0c39fbf3f56b43936491aa2c0789a53ecf31",
+ "verdict": "REQUEST CHANGES",
+ "files": [
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_FINAL_FOCAL_REVIEW.md",
+   "lines": 175,
+   "size_bytes": 12045,
+   "sha256": "61b3f0b6773e100ede55211ededec585710caff515a672b995dd52a38d2244a7"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-atom-ids-order-mutation.output.txt",
+   "lines": 4,
+   "size_bytes": 214,
+   "sha256": "68429a622142bb9fc5e47d5bd90204e2f5bbb1ca4c304c3b11dbf626c34bf945"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-atom-ids-order-mutation.sh",
+   "lines": 17,
+   "size_bytes": 1296,
+   "sha256": "344bb97a1b483ece55beb16bf658b1024c4dfb3a9050029279b280cca42a5d95"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-blocked-native-golden-and-format.output.txt",
+   "lines": 68,
+   "size_bytes": 1528,
+   "sha256": "cde14ef04871785b214ff000bc462db8fc3f18cba32d22543b4de1e096a156bf"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-blocked-native-golden-and-format.py",
+   "lines": 70,
+   "size_bytes": 8308,
+   "sha256": "941bd4a03a2dbf916b8be73ad2eb6da912f8dfc7621c9f989731d0be89b2755e"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-independent-vectors.output.json",
+   "lines": 90,
+   "size_bytes": 3175,
+   "sha256": "f2ddf3aefd50e1735656a0d83484dbc3fbce0225b79aa0206683f9f6667baf13"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-independent-vectors.py",
+   "lines": 60,
+   "size_bytes": 6883,
+   "sha256": "cab7ac8997b7682488e6722e62c3a975887d4dec4bef5cfc91c267bedcadd4a2"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-inert-gemmi-sentinel.py",
+   "lines": 4,
+   "size_bytes": 298,
+   "sha256": "1d08328aa716ee7cec476c7daefb8b650b5ebac98126284221531447f10b0d9d"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-previous59-probes.py",
+   "lines": 146,
+   "size_bytes": 16810,
+   "sha256": "d572eb93834cc6908729b1b996dc7f91e09d657515e2f8fb0a472588d0ec39b5"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-previous59-regression-diff.json",
+   "lines": 100,
+   "size_bytes": 2425,
+   "sha256": "7f29a8d21b23dd01cf1cc33fd2fc0f322a605a3d487783d67ec9acbad6065700"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-pytest-91-with-sentinel.txt",
+   "lines": 100,
+   "size_bytes": 10853,
+   "sha256": "5d4ce315c7412279fef20ad139cb6adc3e87ef1d027263453ee0e6946c3ba94c"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-residual-probes.output.json",
+   "lines": 365,
+   "size_bytes": 9954,
+   "sha256": "51ea063a08879a66526163cf437f0ebd70d2f941119fc334cc2fce91937fe6be"
+  },
+  {
+   "path": "increments/021/27-checkpoint1-final-focal-review/evidence/claude-residual-probes.py",
+   "lines": 107,
+   "size_bytes": 10545,
+   "sha256": "6439ad1f4cb1f9e56b96b396de3359a16828631d99ab3809f70b141bc7af4522"
+  }
+ ]
+}

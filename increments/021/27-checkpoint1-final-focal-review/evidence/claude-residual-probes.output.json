@@ -1,0 +1,365 @@
+{
+ "python": "3.13.18",
+ "gemmi_module_doc": "INERT REVIEW SENTINEL - not Ge",
+ "probes": {
+  "A_fmt_acq='pdb'_dec='pdb'_with_mismatch_warning": {
+   "expected": "INVALID_RECORD",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_fmt_acq='mmcif'_dec='pdb'": {
+   "expected": "INVALID_RECORD",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_fmt_acq='pdb'_dec='mmcif'": {
+   "expected": "INVALID_RECORD",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_fmt_acq='xyz'_dec='xyz'": {
+   "expected": "INVALID_RECORD",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_fmt_acq='xyz'_dec='mmcif'": {
+   "expected": "INVALID_RECORD",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_fmt_acq='mmcif'_dec='xyz'": {
+   "expected": "INVALID_RECORD",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_fmt_acq='ent'_dec='pdb'": {
+   "expected": "INVALID_RECORD",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_fmt_acq='cif'_dec='mmcif'": {
+   "expected": "accepted mmcif",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   }
+  },
+  "A_fmt_acq='mmcif'_dec='cif'": {
+   "expected": "accepted mmcif",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   }
+  },
+  "A_fmt_acq='cif'_dec='cif'": {
+   "expected": "accepted mmcif",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   }
+  },
+  "A_fmt_acq='mmcif'_dec='mmcif'": {
+   "expected": "accepted mmcif",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   }
+  },
+  "A_fmt_acq=' MMCIF '_dec='Cif\\t'": {
+   "expected": "accepted mmcif (020 strip/lower)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   }
+  },
+  "A_fmt_acq='mm cif'_dec='mmcif'": {
+   "expected": "INVALID_RECORD",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_fmt_acq='   '_dec='mmcif'": {
+   "expected": "INVALID_RECORD",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_source_strings_unchanged": {
+   "expected": "' MMCIF ' and 'Cif\\t' unchanged",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "acq_after": " MMCIF ",
+     "declared_after": "Cif\t"
+    }
+   }
+  },
+  "A_order_engine_still_first": {
+   "expected": "ENGINE_VERSION",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "ENGINE_VERSION"
+   }
+  },
+  "A_order_identity_vs_format": {
+   "expected": "report which wins (order note)",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_order_checksum_vs_format": {
+   "expected": "report which wins (order note)",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "A_order_format_vs_capability": {
+   "expected": "INVALID_RECORD before INCOMPLETE_INSPECTION",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "INVALID_RECORD"
+   }
+  },
+  "C_kept_dup": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, kept_row_ordinals must not contain a duplicate ordinal"
+   }
+  },
+  "C_omitted_dup": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, omitted_row_ordinals must not contain a duplicate ordinal"
+   }
+  },
+  "C_kept_dup_nonadjacent": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, kept_row_ordinals must not contain a duplicate ordinal"
+   }
+  },
+  "C_overlap_kept_omitted": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, kept_row_ordinals and omitted_row_ordinals must not overlap"
+   }
+  },
+  "C_negative": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, row ordinals must be non-negative"
+   }
+  },
+  "C_bool_ordinal": {
+   "expected": "refused (strict)",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Input should be a valid integer"
+   }
+  },
+  "C_unique_ok": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_atom_site"
+   }
+  },
+  "C_empty_omit": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_struct_conf"
+   }
+  },
+  "C_cell_filter_generate": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_cell"
+   }
+  },
+  "C_generate_null_source": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_entry"
+   }
+  },
+  "C_family_'_em_example\\n'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_example\\n' is neither a canonical catalogue category nor an approved omission-famil"
+   }
+  },
+  "C_family_'_em_'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_' is neither a canonical catalogue category nor an approved omission-family name (f"
+   }
+  },
+  "C_family_'_pdbx_validate_'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_pdbx_validate_' is neither a canonical catalogue category nor an approved omission-fam"
+   }
+  },
+  "C_family_'_pdbx_nmr_'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_pdbx_nmr_' is neither a canonical catalogue category nor an approved omission-family n"
+   }
+  },
+  "C_family_'_pdbx_nmr_ x'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_pdbx_nmr_ x' is neither a canonical catalogue category nor an approved omission-family"
+   }
+  },
+  "C_family_'_em_entity.id'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_entity.id' is neither a canonical catalogue category nor an approved omission-famil"
+   }
+  },
+  "C_family_'_EM_x'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_EM_x' is neither a canonical catalogue category nor an approved omission-family name ("
+   }
+  },
+  "C_family_'_em_X'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_X' is neither a canonical catalogue category nor an approved omission-family name ("
+   }
+  },
+  "C_family_'_em_x\\x00'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_x\\x00' is neither a canonical catalogue category nor an approved omission-family na"
+   }
+  },
+  "C_family_'_em_x\\t'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_x\\t' is neither a canonical catalogue category nor an approved omission-family name"
+   }
+  },
+  "C_family_'\\n_em_x'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '\\n_em_x' is neither a canonical catalogue category nor an approved omission-family name"
+   }
+  },
+  "C_family_'_em_\u00e9'": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_\u00e9' is neither a canonical catalogue category nor an approved omission-family name ("
+   }
+  },
+  "C_family_'_em_3d_fitting'": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_em_3d_fitting"
+   }
+  },
+  "C_family_'_pdbx_validate_close_contact'": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_pdbx_validate_close_contact"
+   }
+  },
+  "C_family_'_pdbx_nmr_spectrometer'": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_pdbx_nmr_spectrometer"
+   }
+  },
+  "C_family_'_em_x_'": {
+   "expected": "accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "_em_x_"
+   }
+  },
+  "C_family_filter_still_refused": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_em_x' matches an approved omission-family name, which is only ever valid with action='"
+   }
+  },
+  "C_noncatalogue_still_refused": {
+   "expected": "refused",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, category '_made_up' is neither a canonical catalogue category nor an approved omission-family nam"
+   }
+  },
+  "C_all_94_catalogue_names_preserved": {
+   "expected": "94 accepted",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "count": 94,
+     "accepted_as_omit": 94,
+     "catalogue_names_matching_family_regex": []
+    }
+   }
+  },
+  "C_catalogue_set_vs_annex": {
+   "expected": "code set == annex set",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "annex_categories": 94,
+     "code_minus_annex": [],
+     "annex_minus_code": [],
+     "annex_allowed_omission_prefixes": {
+      "_pdbx_validate_": "omit all tags with category audit; never transfer deposition validation to derived artifact",
+      "_pdbx_nmr_": "source NMR experiment/ensemble metadata omitted in full with audit; no restraint/ensemble claim transferred",
+      "_em_": "source EM experiment/reconstruction metadata omitted in full with audit; no map or reconstruction claim transferred"
+     }
+    }
+   }
+  }
+ }
+}
