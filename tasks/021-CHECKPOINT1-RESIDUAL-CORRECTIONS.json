@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-RESIDUAL-CORRECTIONS",
-  "status": "READY_FOR_MANUAL_HANDOFF_WITHIN_AUTHORIZED_CP1",
+  "status": "RESIDUAL_DELIVERY_RECEIVED_FINAL_FOCAL_REVIEW_PENDING",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -257,5 +257,25 @@
   "independent_final_focal_review_complete": false,
   "cp2_implementation_authorized": false,
   "final_specification_frozen": true,
-  "automated_dispatch": false
+  "automated_dispatch": false,
+  "reported_code_head_after_residual_corrections": "bbd491e1a0b3fcb913c3549b004120693212df62",
+  "reported_delivery_head": "74fb0c39fbf3f56b43936491aa2c0789a53ecf31",
+  "reported_delivery_branch": "claude/021-cp1-residual-corrections-20261124",
+  "received_report": {
+    "path": "increments/021/25-checkpoint1-residual-corrections/CLAUDE_INCREMENT_021_CHECKPOINT1_RESIDUAL_CORRECTIONS_REPORT.md",
+    "lines": 136,
+    "size_bytes": 14088,
+    "sha256": "6d3b254bd6854076180600d2e5114a7838e5ca44f3bdaea00568c7b181941e7d",
+    "git_blob_sha": "d63b154727614382ee9a8b3af15e2c4ade22e190",
+    "commit": "74fb0c39fbf3f56b43936491aa2c0789a53ecf31"
+  },
+  "receipt_verified": true,
+  "architect_receipt": {
+    "path": "increments/021/26-checkpoint1-final-review-handoff/CODEX_INCREMENT_021_CHECKPOINT1_FINAL_REVIEW_HANDOFF.md",
+    "lines": 48,
+    "size_bytes": 6084,
+    "sha256": "428b1b6492cc993da2fc3ab6d9c2b9566771a562a1c2dd9922889e3600dad835",
+    "git_blob_sha": "bec4108ec0941257b2673c3c7e04d87c369bdbad"
+  },
+  "next_task": "tasks/021-CHECKPOINT1-FINAL-FOCAL-REVIEW.json"
 }

@@ -1,35 +1,32 @@
-# Coordenação — Incremento 021: três correções residuais do CP1
+# Coordenação — Incremento 021: entrega residual recebida, revisão final curta pendente
 
-Atualizado em 24/11/2026 por Codex arquiteto. Parecer focal recebido e reconciliado; nove achados fechados preservados, três MINORs impedem aprovação. Sem novo estudo ou avanço para CP2.
+Atualizado em24/11/2026 por Codex arquiteto. Recebimento de três correções, sem fechamento independente ou aprovação doCP1.
 
 | Campo | Estado |
 |---|---|
 | Branch de coordenação | docs/020-a-candidate1-review-20261020 |
-| Snapshot de entrada | 155661115851c2a5fb70f5d905425baeb4d23c9f |
-| Código | feature/increment-021-receptor-materialization @ 42b4804b5f4ea01ddf320c45473d8b4f980ea67e |
-| Main código / baseline | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851, preservada |
+| Snapshot de entrada | 1bf4d4d1eefad1aa0ce3c693bf8738ab32344f54 |
+| Código | feature/increment-021-receptor-materialization @ bbd491e1a0b3fcb913c3549b004120693212df62 |
+| Pai direto | 42b4804b5f4ea01ddf320c45473d8b4f980ea67e |
+| Main código/baseline | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851, preservada |
 | Main governance | a47183dfec8213c765ed43ae482c8c227760a3d5, preservada |
-| Parecer focal | claude/021-cp1-focal-review-20261124 @ 854ae336621116f7047033b5146c7c4834ebf9c2 |
-| Veredito / resíduos | REQUEST CHANGES; 0 BLOCKER/0 MAJOR/3 MINOR; MAJOR-A é rótulo histórico com resíduo MINOR |
-| Fechados independentemente | ARCH-01/02/03, MAJOR-B, MINOR-1/2/4/5/6 |
-| Corrigir agora | MAJOR-A formato, MINOR-3 ordinais/nomes, MINOR-7 golden literais/teste novo legado |
-| Reconciliação | increments/021/24-checkpoint1-residual-reconciliation/CODEX_INCREMENT_021_CHECKPOINT1_RESIDUAL_RECONCILIATION.md |
-| Tarefa ativa | tasks/021-CHECKPOINT1-RESIDUAL-CORRECTIONS.json — READY_FOR_MANUAL_HANDOFF_WITHIN_AUTHORIZED_CP1 |
-| Regra de formato | Aliases020 preservados; contraditório/desconhecido recusa INVALID_RECORD; sem reescrever proveniência |
-| Apoio ao teste | 13 vetores documentais independentes com bytes/digests literais, conferidos separadamente contra produção |
-| Resultados observados | Parecer/manifesto/blobs conferem; sonda pura repetida;13/13 vetores coincidem, sem Gemmi/RDKit |
-| Limitações | Sem pytest, Windows, parsing nativo ou suíte completa pelo arquiteto |
-| Cenários | Fechamento independente40 provados/3 parciais por desenho/0 lacunas,43 IDs preservados |
-| Próximo ator | Claude implementador separado do revisor, correção focal dentro do CP1 já autorizado |
-| Próximo gate | Receber código/relatório e preparar revisão final curta dos três resíduos |
-| CP1 aprovado / CP2 autorizado | Não / Não |
-| Contrato / 020-A | Congelado preservado / STAND-BY |
+| Relatório recebido | claude/021-cp1-residual-corrections-20261124 @ 74fb0c39fbf3f56b43936491aa2c0789a53ecf31 |
+| Recibo | increments/021/26-checkpoint1-final-review-handoff/CODEX_INCREMENT_021_CHECKPOINT1_FINAL_REVIEW_HANDOFF.md |
+| Identidades/escopo | Quatorze entradas do manifesto conferem;68blobs da cópia;dois arquivos código/treze próprios da entrega |
+| Contagem observada | 1556→1572,+16líquidos;75→91funções;17nodeIDs novos/1renomeado;0parametrizações |
+| Resultados fornecidos | 91passed direcionados;1567passed/5skipped total, não pytest do arquiteto |
+| Triagem própria | Normal/-O bloqueando nativos sem stub; recusas residuais e13goldens coincidem |
+| Fechamentos anteriores | Nove preservados;três resíduos ainda aguardam parecer independente |
+| Tarefa ativa | tasks/021-CHECKPOINT1-FINAL-FOCAL-REVIEW.json — READY_FOR_DISPATCH, NOT_DISPATCHED |
+| Próximo ator | Claude revisor independente separado dos implementadores |
+| CP1 aprovado/CP2 autorizado | Não/Não |
+| Contrato/020-A | Congelado preservado/STAND-BY |
 | Relay automático | Não configurado, nenhum agente acionado |
 
-As nove disposições fechadas não serão reabertas por preferência; somente regressão concreta no novo delta justifica reexame. Pareceres e históricos ficam preservados em seus snapshots, sem merge de branches de agentes. O arquiteto não alterou o repositório de código nem executou pytest. Os três resíduos só se encerram com prova e parecer independente, não com esta instrução.
+Nenhum código alterado pelo arquiteto, nenhuma branch de relatório mesclada. Sem pytest, Windows, RAW ou Gemmi nativo próprios. A revisão final se limita aos três resíduos e regressões concretas do delta, preservando os nove fechamentos e as NOTES anteriores. Sua conclusão não autoriza automaticamente checkpoint posterior.
 
-FOCAL REVIEW RECEIVED: YES
-RESIDUAL CORRECTION TASK PREPARED: YES
+RESIDUAL DELIVERY VERIFIED: YES
+READY FOR SHORT INDEPENDENT FINAL FOCAL REVIEW: YES
 CHECKPOINT1 APPROVED: NO
 CHECKPOINT2 IMPLEMENTATION AUTHORIZED: NO
 FINAL SPECIFICATION FROZEN: YES

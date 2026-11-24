@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-CHECKPOINT1-FINAL-FOCAL-REVIEW",
+  "status": "READY_FOR_DISPATCH",
+  "dispatch_status": "NOT_DISPATCHED",
+  "assigned_role": "claude-independent-reviewer-separate-from-all-implementer-sessions",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "preparation_input_commit": "1bf4d4d1eefad1aa0ce3c693bf8738ab32344f54",
+  "execution_snapshot": "Exact immutable handoff publication SHA; require remote coordination equality before work",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_access": "STRICTLY_READ_ONLY",
+  "code_branch": "feature/increment-021-receptor-materialization",
+  "code_head": "bbd491e1a0b3fcb913c3549b004120693212df62",
+  "expected_direct_parent": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_allowlist": [
+    "src/molecular/receptor_materialization.py",
+    "tests/test_receptor_materialization.py"
+  ],
+  "code_files": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "commit": "bbd491e1a0b3fcb913c3549b004120693212df62",
+      "lines": 1724,
+      "size_bytes": 78807,
+      "sha256": "d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "commit": "bbd491e1a0b3fcb913c3549b004120693212df62",
+      "lines": 1645,
+      "size_bytes": 81362,
+      "sha256": "e67539e76be9d174e7ef2c93cf971faa6bfba3316ef996f5e4a55c9345a90d69"
+    }
+  ],
+  "delivery_branch": "claude/021-cp1-residual-corrections-20261124",
+  "delivery_head": "74fb0c39fbf3f56b43936491aa2c0789a53ecf31",
+  "delivery_first_commit": "b9d9592dc6b08bc05e9c848c44057f33d229df7f",
+  "delivery_first_parent": "1bf4d4d1eefad1aa0ce3c693bf8738ab32344f54",
+  "delivery_report": {
+    "path": "increments/021/25-checkpoint1-residual-corrections/CLAUDE_INCREMENT_021_CHECKPOINT1_RESIDUAL_CORRECTIONS_REPORT.md",
+    "lines": 136,
+    "size_bytes": 14088,
+    "sha256": "6d3b254bd6854076180600d2e5114a7838e5ca44f3bdaea00568c7b181941e7d",
+    "git_blob_sha": "d63b154727614382ee9a8b3af15e2c4ade22e190",
+    "commit": "74fb0c39fbf3f56b43936491aa2c0789a53ecf31"
+  },
+  "delivery_manifest": {
+    "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-report-and-evidence-identities.json",
+    "lines": 118,
+    "size_bytes": 5566,
+    "sha256": "c2fc0ba69e686ed240801d0b6f2d15d2e986bf681c5603a8443f3ce62e67e7a1",
+    "git_blob_sha": "41889421ccb3b2913ceef33a52f3ba5c7f6df1f0",
+    "commit": "74fb0c39fbf3f56b43936491aa2c0789a53ecf31"
+  },
+  "previous_independent_focal_review": {
+    "path": "increments/021/23-checkpoint1-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_FOCAL_REVIEW.md",
+    "lines": 251,
+    "size_bytes": 17535,
+    "sha256": "61865d461b72e318e52209f202b5f44288971dc1f8255360b697236e2ea71ed5",
+    "git_blob_sha": "9513a7261166f12780622e7499d0660b4ec972f2",
+    "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+    "commit": "854ae336621116f7047033b5146c7c4834ebf9c2"
+  },
+  "previous_independent_focal_review_branch": "claude/021-cp1-focal-review-20261124",
+  "previous_independent_focal_review_commit": "854ae336621116f7047033b5146c7c4834ebf9c2",
+  "architect_residual_reconciliation": {
+    "path": "increments/021/24-checkpoint1-residual-reconciliation/CODEX_INCREMENT_021_CHECKPOINT1_RESIDUAL_RECONCILIATION.md",
+    "lines": 77,
+    "size_bytes": 11301,
+    "sha256": "06a7887a1ea8216b529524ef36977d7c71ee07bfb1b10ea02bbf6c3e2b47098f",
+    "git_blob_sha": "4b88398c41e9425bfb8714b7d505e445347f6ee4",
+    "commit": "1bf4d4d1eefad1aa0ce3c693bf8738ab32344f54"
+  },
+  "residual_implementation_task": "tasks/021-CHECKPOINT1-RESIDUAL-CORRECTIONS.json",
+  "residual_task_snapshot": "1bf4d4d1eefad1aa0ce3c693bf8738ab32344f54",
+  "architect_receipt": {
+    "path": "increments/021/26-checkpoint1-final-review-handoff/CODEX_INCREMENT_021_CHECKPOINT1_FINAL_REVIEW_HANDOFF.md",
+    "lines": 48,
+    "size_bytes": 6084,
+    "sha256": "428b1b6492cc993da2fc3ab6d9c2b9566771a562a1c2dd9922889e3600dad835",
+    "git_blob_sha": "bec4108ec0941257b2673c3c7e04d87c369bdbad"
+  },
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "normative_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "documentary_golden_vectors": {
+    "path": "increments/021/24-checkpoint1-residual-reconciliation/evidence/DOCUMENTARY_GOLDEN_VECTORS.json",
+    "lines": 498,
+    "size_bytes": 29674,
+    "sha256": "fe2ae0739120cba82f1523d29be3da76b3b266b46ea94b5d768e4cc3c3b6a4c0",
+    "git_blob_sha": "06f1ef6ac62117d5775b29e253fe3c024214fb7e",
+    "commit": "1bf4d4d1eefad1aa0ce3c693bf8738ab32344f54"
+  },
+  "only_three_residuals": [
+    {
+      "id": "MAJOR-A",
+      "historical_severity": "MAJOR",
+      "residual_severity": "MINOR",
+      "status": "ACCEPTED_PARTIAL_INDEPENDENT_REVIEW",
+      "required_change": "Cross-check acquisition/raw_format_declared/detected formats with exact020 strip/lower aliases; reject contradictions and unknowns with INVALID_RECORD. No provenance rewrite or new native import.",
+      "accepted_alias_map": {
+        "cif": "mmcif",
+        "mmcif": "mmcif",
+        "pdb": "pdb",
+        "ent": "pdb"
+      },
+      "accepted_canonical_format_for_021": "mmcif",
+      "declared_vs_detected_mismatch_policy": "REJECT_INVALID_RECORD",
+      "tests": [
+        "pdb/pdb→detected mmcif, with mismatch warning, rejected",
+        "mmcif/pdb and pdb/mmcif rejected",
+        "xyz/xyz and unknown in either source rejected",
+        "cif/mmcif and mmcif/cif accepted",
+        "strip/lower behavior agrees with020, original strings unchanged"
+      ]
+    },
+    {
+      "id": "MINOR-3",
+      "residual_severity": "MINOR",
+      "status": "ACCEPTED_PARTIAL_INDEPENDENT_REVIEW",
+      "required_change": "Unique ordinals within each tuple, retain strict nonnegative/disjoint guards; canonical category names in fixed set or fullmatch approved-family grammar plus omit action. No dedup/sanitize/DOM.",
+      "family_fullmatch_regex": "(?:_pdbx_validate_|_pdbx_nmr_|_em_)[a-z0-9_]+",
+      "tests": [
+        "kept=(0,0) rejected; omitted=(0,0) rejected",
+        "cross-tuple overlap and negative/type controls retained",
+        "LF, bare prefix, spaces, dot/item, uppercase and controls rejected",
+        "positive names in all3 families and valid source_rows/generation/empty-omit controls retained"
+      ]
+    },
+    {
+      "id": "MINOR-7",
+      "residual_severity": "MINOR",
+      "status": "ACCEPTED_PARTIAL_INDEPENDENT_REVIEW",
+      "required_change": "Inline independent canonical bytes and SHA256 literals for all13 documentary vector envelopes; call corresponding production functions. Fix legacy test to call new helper against independent 1c217... literal. No algorithm/schema/dependency/new fixture file changes.",
+      "vector_fixture": {
+        "path": "increments/021/24-checkpoint1-residual-reconciliation/evidence/DOCUMENTARY_GOLDEN_VECTORS.json",
+        "lines": 498,
+        "size_bytes": 29674,
+        "sha256": "fe2ae0739120cba82f1523d29be3da76b3b266b46ea94b5d768e4cc3c3b6a4c0",
+        "git_blob_sha": "06f1ef6ac62117d5775b29e253fe3c024214fb7e"
+      },
+      "legacy_literal": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c",
+      "tests": [
+        "Each corresponding production hash/builder compared against fixed digest, not expected from production",
+        "Existing golden tests upgraded to literal expected SHA256",
+        "Legacy new helper actually called; optional old helper additional only",
+        "No request runtime fixture downloads or native computations"
+      ]
+    }
+  ],
+  "independently_closed_findings_to_preserve": [
+    "ARCH-01",
+    "ARCH-02",
+    "ARCH-03",
+    "MAJOR-B",
+    "MINOR-1",
+    "MINOR-2",
+    "MINOR-4",
+    "MINOR-5",
+    "MINOR-6"
+  ],
+  "notes_to_preserve": [
+    {
+      "id": "NOTE-1",
+      "disposition": "Não persistir/reutilizar como plano final a estrutura parcial CP1; conexões/catálogo físico e materialização reais só CP2+."
+    },
+    {
+      "id": "NOTE-2",
+      "disposition": "Preservar estritez, recusa de surrogate, ordem e chaining, sem exceções amplas."
+    },
+    {
+      "id": "NOTE-3",
+      "disposition": "Não modificar CLI/020 no CP1. Reexaminar import/help sem opcionais no gate próprio CP4."
+    }
+  ],
+  "required_preflight": [
+    "Read AGENTS/workflow/STATUS/task, previous focal review, residual reconciliation/task and actual source/report; verify identities",
+    "Confirm coordination at dispatched commit, code bbd491e with parent42b4804, code main08b797e, governance maina47183d, report branch74fb0c3 and previous review854ae33; stop on drift",
+    "Verify complete delta and cumulative allowlist two code files, delivery branch thirteen own added files and two-commit parent chain",
+    "Use exact blob bytes for logs; CP1252 text can be recoded by connector, so do not hash a normalized text view as original"
+  ],
+  "required_review_scope": [
+    "Keep review short and focused on42b4804..bbd491e and necessary integration, no new architecture study",
+    "MAJOR-A residual:020 strip/lower and four aliases, acquisition/declaration/detection cross-check; unknown and contradictory labels give INVALID_RECORD, mismatch warning not authorization, source records unchanged",
+    "MINOR-3: uniqueness within each tuple plus previous strict/nonnegative/disjoint guards; fullmatch grammar for allowed families rejects LF/bare-prefix/space/dot/uppercase/control, valid three families and explicit94 catalogue names preserved",
+    "MINOR-7: all13 independent expected SHA256 literals/envelopes, actual corresponding production functions, helper new called directly against1c217d99 literal; no circular expected hash or runtime governance/fixture dependency; no algorithm changes",
+    "Compare byte/envelope values independently rather than relying on architect vectors by authority; these are documentary fixtures, not native/scientific RAW evidence",
+    "Review91 tests nominally versus sufficiency; reconcile1556→1572 and75→91. Raw node IDs17 added/1 removed reflect legacy-test rename; confirm no normative scenario removed or assertion weakened",
+    "Preserve nine prior independent closures and three NOTES; reopen only if delta shows concrete regression. T018/024/038 remain partial-by-design atCP1, do not requireCP2",
+    "Fresh native-blocked import/pure checks normal/-O without native stub if feasible; distinguish typed020-fixture sentinel diagnostic from native behavior",
+    "Separate supplied91/full1567+5 Windows evidence from actual reviewer execution. No pytest/native/Windows claims without running",
+    "Do not introduce new hardening, formats, files, refactors, generic sanitizers or future checkpoint requirements"
+  ],
+  "verified_collection": {
+    "before": 1556,
+    "after": 1572,
+    "added_node_ids": 17,
+    "removed_node_ids": 1,
+    "net_new_items": 16,
+    "renamed_test": {
+      "before": "test_minor7_golden_legacy_inspection_id_matches_the_020_production_helper",
+      "after": "test_minor7_golden_legacy_inspection_id_calls_the_new_helper_against_independent_literal"
+    },
+    "test_functions_before": 75,
+    "test_functions_after": 91,
+    "parametrizations": 0
+  },
+  "supplied_results": {
+    "test_file_passed": 91,
+    "full_passed": 1567,
+    "full_skipped": 5,
+    "total_collected": 1572,
+    "not_architect_pytest": true
+  },
+  "tests_policy": {
+    "execution_optional": true,
+    "no_global_installation": true,
+    "external_scratch_only": true,
+    "code_tree_writes_forbidden": true,
+    "no_bytecode_or_pytest_cache_in_source": true,
+    "no_stub_as_native_free_import_proof": true,
+    "report_native_vs_documentary_limits": true,
+    "pure_cp1_windows_production_gate_not_required": true
+  },
+  "allowed_governance_output_paths": [
+    "increments/021/27-checkpoint1-final-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_FINAL_FOCAL_REVIEW.md",
+    "increments/021/27-checkpoint1-final-focal-review/evidence/claude-*"
+  ],
+  "output_branch_policy": "Own claude/ reviewer branch based on exact handoff publication; no edits to central coordination",
+  "governance_commit_push_authorized_when_manually_dispatched": true,
+  "required_output": [
+    "Snapshot/identity gates and scope",
+    "Individual closure/partial/open for three residuals, concrete regressions only, preserved nine closures/threeNOTES",
+    "Actual tests/evidence versus supplied logs, count/rename reconciliation and limitations",
+    "Verdict forCP1, not authorization forCP2",
+    "Report lines/bytes/SHA256 and remote branch/fullcommit verified"
+  ],
+  "permitted_verdicts": [
+    "APPROVE",
+    "APPROVE WITH NON-BLOCKING NOTES",
+    "REQUEST CHANGES"
+  ],
+  "restrictions": [
+    "No code/test fixes or edits, no contract/historical reports/STATUS/tasks changes",
+    "No main/PR/merge/tag/release/force/formal approval/comments/automation",
+    "NoCP2/3/4;020-A STAND-BY and protected user items untouched"
+  ],
+  "checkpoint1_approved": false,
+  "cp2_implementation_authorized": false,
+  "final_specification_frozen": true,
+  "automated_dispatch": false
+}

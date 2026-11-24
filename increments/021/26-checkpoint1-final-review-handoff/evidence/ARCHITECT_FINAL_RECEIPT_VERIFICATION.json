@@ -1,0 +1,467 @@
+{
+  "scope": "architect receipt, not independent residual closure",
+  "code_head": "bbd491e1a0b3fcb913c3549b004120693212df62",
+  "report_head": "74fb0c39fbf3f56b43936491aa2c0789a53ecf31",
+  "verified_manifest_entries": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 1724,
+      "size_bytes": 78807,
+      "sha256": "d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d",
+      "git_blob_sha": "c362303304bfd825e0e07d528c3a96d9f804af47"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 1645,
+      "size_bytes": 81362,
+      "sha256": "e67539e76be9d174e7ef2c93cf971faa6bfba3316ef996f5e4a55c9345a90d69",
+      "git_blob_sha": "bc827e2be2b5da53edfef8e095124028f43bb551"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/CLAUDE_INCREMENT_021_CHECKPOINT1_RESIDUAL_CORRECTIONS_REPORT.md",
+      "lines": 136,
+      "size_bytes": 14088,
+      "sha256": "6d3b254bd6854076180600d2e5114a7838e5ca44f3bdaea00568c7b181941e7d",
+      "git_blob_sha": "d63b154727614382ee9a8b3af15e2c4ade22e190"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-arch01-fresh-subprocess-check.txt",
+      "lines": 3,
+      "size_bytes": 81,
+      "sha256": "3c6672a986dd8705e9ffd521903f37636f7f0062770df99f132a3da6cbcdb9de",
+      "git_blob_sha": "d63f0f24e710833cb221375a60781840e007211e"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-collect-after-residual-corrections.txt",
+      "lines": 1574,
+      "size_bytes": 137991,
+      "sha256": "2e5f7e2671e42eded791247c198cc2fb589d1b2f48692a5695a6e97deffded27",
+      "git_blob_sha": "077a2d5c8c01907fcc32bafbd9f94e58423e5c8b"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-collect-before-residual-corrections.txt",
+      "lines": 1558,
+      "size_bytes": 136449,
+      "sha256": "e9b551d8c0946ee1a7f85e458847b368c8fc72d300fbe1aaa58983dc232479cf",
+      "git_blob_sha": "18a4a404b097adf94a8b18dfda3797c2a1c0d32d"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-environment.txt",
+      "lines": 11,
+      "size_bytes": 305,
+      "sha256": "b06bfffc5941909b1bbad9911318fc4ace483b74ca0f2a2ac17f783cd8be0d54",
+      "git_blob_sha": "748304b63eff116b458b235ac6a970cb7c16c2de"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-full-suite-after-residual-corrections.txt",
+      "lines": 29,
+      "size_bytes": 3003,
+      "sha256": "400a6979b3b297b9523b9c959aeac1057c83ca177202191149f8b5634471cb2a",
+      "git_blob_sha": "d8b45ed54e33cdd8a58a5c314ccea68be6c90837"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-git-log.txt",
+      "lines": 72,
+      "size_bytes": 3986,
+      "sha256": "c191815af71658f6393fb6bd99cb132898ea1230a65173a2c7140bcb874587e4",
+      "git_blob_sha": "56e53e034abb1513749499b22b9f8a7aa79cabf6"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-golden-vectors-verification.output.txt",
+      "lines": 14,
+      "size_bytes": 269,
+      "sha256": "a3457601402f7a7a0be84f699d28b9818661310637a64f07916083922cbac30b",
+      "git_blob_sha": "d901ba3eae8ae0ab4e69822a3c080344dc926746"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-golden-vectors-verification.py",
+      "lines": 121,
+      "size_bytes": 7727,
+      "sha256": "25b0c1f45ffe04ffd44b0de62026accde19af03cb8e5453303e3ffceff69facd",
+      "git_blob_sha": "9ce5180d3c083db8baff97535f3fb7f14e2cc017"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-minor6-python-O-check.txt",
+      "lines": 12,
+      "size_bytes": 546,
+      "sha256": "418b11b8170526ca3b2a93f3f32f4ad5734b9f41dca5344640b8ccbd55365c84",
+      "git_blob_sha": "015975c32a0e800da8e37eddec39598067314fc6"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-new-tests-verbose.txt",
+      "lines": 100,
+      "size_bytes": 10887,
+      "sha256": "d086e12e6c83dcf3496baa110e2f3691ed4e28a77bc942b64d7cb2dd6e0f6565",
+      "git_blob_sha": "48ce93becec3af2c5a2c80a3d76fa6ea4818ad4d"
+    },
+    {
+      "path": "increments/021/25-checkpoint1-residual-corrections/evidence/claude-residual-findings-dispositions.json",
+      "lines": 61,
+      "size_bytes": 5979,
+      "sha256": "01e7574bdb031e0b8f569b5ea38763949d080f32e2f876db38b435311d4adcd2",
+      "git_blob_sha": "b736d54001a460cd3cdb9eac2e521afa2b2fd53a"
+    }
+  ],
+  "all_source_blobs_verified": 68,
+  "collection": {
+    "before": 1556,
+    "after": 1572,
+    "added_node_ids": 17,
+    "removed_node_ids": 1,
+    "net_new_items": 16,
+    "renamed_test": {
+      "before": "test_minor7_golden_legacy_inspection_id_matches_the_020_production_helper",
+      "after": "test_minor7_golden_legacy_inspection_id_calls_the_new_helper_against_independent_literal"
+    },
+    "test_functions_before": 75,
+    "test_functions_after": 91,
+    "parametrizations": 0
+  },
+  "own_native_blocked_probes_without_stub": {
+    "normal": {
+      "python": "3.12.14",
+      "pydantic": "2.13.4",
+      "optional_modules_blocked_without_stub": true,
+      "legacy_source_records": "ProteinInput/policy real DTOs; inspection/resolution documentary namespaces for pure-boundary diagnostics, not native parsing or 020 validation",
+      "probes": {
+        "filter_generate__cell": {
+          "status": "accepted",
+          "value": {
+            "category": "_cell",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0
+            ],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [
+              "entry_id"
+            ],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "filter_generate__symmetry": {
+          "status": "accepted",
+          "value": {
+            "category": "_symmetry",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0
+            ],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [
+              "entry_id"
+            ],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "repeated_category_kept_row_ordinals": {
+          "status": "rejected",
+          "type": "ValidationError",
+          "code": null,
+          "detail": "1 validation error for CategoryDecision"
+        },
+        "repeated_category_omitted_row_ordinals": {
+          "status": "rejected",
+          "type": "ValidationError",
+          "code": null,
+          "detail": "1 validation error for CategoryDecision"
+        },
+        "canonical_family_control": {
+          "status": "accepted",
+          "value": {
+            "category": "_em_example",
+            "action": "omit",
+            "kept_row_ordinals": [],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "family_name_with_control": {
+          "status": "rejected",
+          "type": "ValidationError",
+          "code": null,
+          "detail": "1 validation error for CategoryDecision"
+        },
+        "disposition_remove_GLY": {
+          "status": "accepted",
+          "value": [
+            [
+              "a1",
+              true,
+              "selected-asym"
+            ],
+            [
+              "a2",
+              false,
+              "model-filter"
+            ]
+          ]
+        },
+        "disposition_remove_ALA": {
+          "status": "rejected",
+          "type": "MaterializationInputError",
+          "code": "SELECTION_CONFLICT",
+          "detail": "polymer label_asym_id 'A' is explicitly selected but also carries a remove disposition; this is always refused, even for a terminal removal"
+        },
+        "source_context_valid": {
+          "status": "accepted",
+          "value": "mmcif"
+        },
+        "acquisition_format_pdb_inspection_mmcif": {
+          "status": "rejected",
+          "type": "MaterializationConfigurationError",
+          "code": "INVALID_RECORD",
+          "detail": "acquisition format 'pdb' and declared format 'mmcif' must both be recognized aliases of the detected canonical 'mmcif', and must agree with each other"
+        },
+        "declared_format_pdb_observed_mmcif": {
+          "status": "rejected",
+          "type": "MaterializationConfigurationError",
+          "code": "INVALID_RECORD",
+          "detail": "acquisition format 'mmcif' and declared format 'pdb' must both be recognized aliases of the detected canonical 'mmcif', and must agree with each other"
+        },
+        "legacy_hash_pure_backend": {
+          "hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1",
+          "independent_documentary_hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1"
+        },
+        "MaterializationInputError_invalid_code": {
+          "status": "rejected",
+          "type": "ValueError",
+          "code": null,
+          "detail": "unknown MaterializationInputError code 'NOT_A_CODE'"
+        },
+        "MaterializationConfigurationError_invalid_code": {
+          "status": "rejected",
+          "type": "ValueError",
+          "code": null,
+          "detail": "unknown MaterializationConfigurationError code 'NOT_A_CODE'"
+        }
+      }
+    },
+    "optimized": {
+      "python": "3.12.14",
+      "pydantic": "2.13.4",
+      "optional_modules_blocked_without_stub": true,
+      "legacy_source_records": "ProteinInput/policy real DTOs; inspection/resolution documentary namespaces for pure-boundary diagnostics, not native parsing or 020 validation",
+      "probes": {
+        "filter_generate__cell": {
+          "status": "accepted",
+          "value": {
+            "category": "_cell",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0
+            ],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [
+              "entry_id"
+            ],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "filter_generate__symmetry": {
+          "status": "accepted",
+          "value": {
+            "category": "_symmetry",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0
+            ],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [
+              "entry_id"
+            ],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "repeated_category_kept_row_ordinals": {
+          "status": "rejected",
+          "type": "ValidationError",
+          "code": null,
+          "detail": "1 validation error for CategoryDecision"
+        },
+        "repeated_category_omitted_row_ordinals": {
+          "status": "rejected",
+          "type": "ValidationError",
+          "code": null,
+          "detail": "1 validation error for CategoryDecision"
+        },
+        "canonical_family_control": {
+          "status": "accepted",
+          "value": {
+            "category": "_em_example",
+            "action": "omit",
+            "kept_row_ordinals": [],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "family_name_with_control": {
+          "status": "rejected",
+          "type": "ValidationError",
+          "code": null,
+          "detail": "1 validation error for CategoryDecision"
+        },
+        "disposition_remove_GLY": {
+          "status": "accepted",
+          "value": [
+            [
+              "a1",
+              true,
+              "selected-asym"
+            ],
+            [
+              "a2",
+              false,
+              "model-filter"
+            ]
+          ]
+        },
+        "disposition_remove_ALA": {
+          "status": "rejected",
+          "type": "MaterializationInputError",
+          "code": "SELECTION_CONFLICT",
+          "detail": "polymer label_asym_id 'A' is explicitly selected but also carries a remove disposition; this is always refused, even for a terminal removal"
+        },
+        "source_context_valid": {
+          "status": "accepted",
+          "value": "mmcif"
+        },
+        "acquisition_format_pdb_inspection_mmcif": {
+          "status": "rejected",
+          "type": "MaterializationConfigurationError",
+          "code": "INVALID_RECORD",
+          "detail": "acquisition format 'pdb' and declared format 'mmcif' must both be recognized aliases of the detected canonical 'mmcif', and must agree with each other"
+        },
+        "declared_format_pdb_observed_mmcif": {
+          "status": "rejected",
+          "type": "MaterializationConfigurationError",
+          "code": "INVALID_RECORD",
+          "detail": "acquisition format 'mmcif' and declared format 'pdb' must both be recognized aliases of the detected canonical 'mmcif', and must agree with each other"
+        },
+        "legacy_hash_pure_backend": {
+          "hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1",
+          "independent_documentary_hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1"
+        },
+        "MaterializationInputError_invalid_code": {
+          "status": "rejected",
+          "type": "ValueError",
+          "code": null,
+          "detail": "unknown MaterializationInputError code 'NOT_A_CODE'"
+        },
+        "MaterializationConfigurationError_invalid_code": {
+          "status": "rejected",
+          "type": "ValueError",
+          "code": null,
+          "detail": "unknown MaterializationConfigurationError code 'NOT_A_CODE'"
+        }
+      }
+    }
+  },
+  "own_golden_comparison": {
+    "code_commit": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e",
+    "scope": "architect comparison, not new tests or independent checkpoint closure",
+    "production_source_modified": false,
+    "native_modules_blocked_without_stub": true,
+    "vectors": [
+      {
+        "name": "canonical_json",
+        "production_matches_independent_literal": true,
+        "expected": "14332640256b6a761e453eb0beba1ba7cb1c005ab6d7c01a8eb51dfbe0cc4994",
+        "actual": "14332640256b6a761e453eb0beba1ba7cb1c005ab6d7c01a8eb51dfbe0cc4994"
+      },
+      {
+        "name": "legacy_inspection_id",
+        "production_matches_independent_literal": true,
+        "expected": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c",
+        "actual": "1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c"
+      },
+      {
+        "name": "source_context_key",
+        "production_matches_independent_literal": true,
+        "expected": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df",
+        "actual": "783c1d30f99898be83fef40c069294d9219c25db45218474c1fabad7a14520df"
+      },
+      {
+        "name": "occurrence_key",
+        "production_matches_independent_literal": true,
+        "expected": "022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e",
+        "actual": "022d3a1316ffa9b93217161e5e004eef03c3bf500184d06042134bd016269a4e"
+      },
+      {
+        "name": "atom_ids_key",
+        "production_matches_independent_literal": true,
+        "expected": "1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8",
+        "actual": "1696038f38afba311d8944dc19e698f2bcbeb2453bd3fb0c5a32b4ccd29445a8"
+      },
+      {
+        "name": "exclusions_key",
+        "production_matches_independent_literal": true,
+        "expected": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d",
+        "actual": "01c461514e8a9915d3fd9feadd2565d11ced78dafb04bc61ba9151d9aa2fe06d"
+      },
+      {
+        "name": "outside_key",
+        "production_matches_independent_literal": true,
+        "expected": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32",
+        "actual": "cafba614ae1dbc9c41f7e727926198d995d9ae3611e09664d7957b407c739e32"
+      },
+      {
+        "name": "atom_decisions_key",
+        "production_matches_independent_literal": true,
+        "expected": "cc0fb129f56d061a165e94774d323be510a46fa7f22a1cd816734bb0c5849850",
+        "actual": "cc0fb129f56d061a165e94774d323be510a46fa7f22a1cd816734bb0c5849850"
+      },
+      {
+        "name": "connection_decisions_key",
+        "production_matches_independent_literal": true,
+        "expected": "67c0c45369f339bdebbbf2fbc1ee26e20f699f9fe2b93f2edf88c68e3ed85889",
+        "actual": "67c0c45369f339bdebbbf2fbc1ee26e20f699f9fe2b93f2edf88c68e3ed85889"
+      },
+      {
+        "name": "category_decisions_key",
+        "production_matches_independent_literal": true,
+        "expected": "7fc88d1a1d5deec637359849766c989e04832753ce943bb7a9bdccdfd03661df",
+        "actual": "7fc88d1a1d5deec637359849766c989e04832753ce943bb7a9bdccdfd03661df"
+      },
+      {
+        "name": "plan_key",
+        "production_matches_independent_literal": true,
+        "expected": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da",
+        "actual": "00b8734e5e21f85208f9578ef62ffb6e8cf077dc26b771443186bb049805e2da"
+      },
+      {
+        "name": "policy_id",
+        "production_matches_independent_literal": true,
+        "expected": "3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02",
+        "actual": "3bd864722608e2a83ecf71627cd0400380d0ad0828016bb8705c2cd62aae8d02"
+      },
+      {
+        "name": "request_key",
+        "production_matches_independent_literal": true,
+        "expected": "5b1de4a13571f147a84520042b4830235e7b4a611ab7b6b1b972c60027510095",
+        "actual": "5b1de4a13571f147a84520042b4830235e7b4a611ab7b6b1b972c60027510095"
+      }
+    ]
+  },
+  "whitespace_checked": [
+    "src/molecular/receptor_materialization.py",
+    "tests/test_receptor_materialization.py"
+  ],
+  "pytest_executed_by_architect": false,
+  "native_gemmi_or_windows_executed_by_architect": false,
+  "original_log_encoding": "CP1252 bytes reconstructed from UTF8 transport only after both SHA256 and remote Git SHA matched"
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-24",
+  "timezone": "America/Sao_Paulo",
+  "coordination_input": "1bf4d4d1eefad1aa0ce3c693bf8738ab32344f54",
+  "excludes_self": true,
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 34,
+      "size_bytes": 2411,
+      "sha256": "ceae28586b53d86809a24404828839a39b81d01dc0ba43268b7fedc6d6fd32af",
+      "git_blob_sha": "f8e5fb6b3e31feabd5fba09f78e7b5f9610cebd4"
+    },
+    {
+      "path": "increments/021/26-checkpoint1-final-review-handoff/CODEX_INCREMENT_021_CHECKPOINT1_FINAL_REVIEW_HANDOFF.md",
+      "lines": 48,
+      "size_bytes": 6084,
+      "sha256": "428b1b6492cc993da2fc3ab6d9c2b9566771a562a1c2dd9922889e3600dad835",
+      "git_blob_sha": "bec4108ec0941257b2673c3c7e04d87c369bdbad"
+    },
+    {
+      "path": "increments/021/26-checkpoint1-final-review-handoff/evidence/ARCHITECT_FINAL_RECEIPT_VERIFICATION.json",
+      "lines": 467,
+      "size_bytes": 18769,
+      "sha256": "bd4375eaf9d649ac8c1e075251393477084e879f7926586184f13fa366c4b401",
+      "git_blob_sha": "d54243a718ba6f1b2485d546a671eadfc9900339"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-FINAL-FOCAL-REVIEW.json",
+      "lines": 285,
+      "size_bytes": 14460,
+      "sha256": "d95695f9198cc268027f9c26346521ef69340bcf2021b5324a0e68b03d2d4bee",
+      "git_blob_sha": "b4722aa9248aa9744dda86e1527cb2d528f0196d"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-IMPLEMENTATION.json",
+      "lines": 241,
+      "size_bytes": 11076,
+      "sha256": "ad209489a580d25593a6500a9ada3d6f7192134396e1bfa633a77805b7e73d13",
+      "git_blob_sha": "d1849b311348333d7d689414ede2194013bfa59d"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-RESIDUAL-CORRECTIONS.json",
+      "lines": 281,
+      "size_bytes": 15939,
+      "sha256": "393e417809c7ffb0345e728152f4ecc134281b6da6e42bc6d050997885aad06d",
+      "git_blob_sha": "f2e02c31c1e59b633f75bff4cf5a47975a505e33"
+    }
+  ]
+}
