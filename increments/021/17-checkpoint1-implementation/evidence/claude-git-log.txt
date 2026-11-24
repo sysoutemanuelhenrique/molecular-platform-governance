@@ -1,0 +1,30 @@
+711f307 feat: add receptor materialization domain/planner (increment 021, checkpoint 1)
+08b797e Merge pull request #8 from sysoutemanuelhenrique/docs/academic-demo-pubchem
+314ca54 docs: add academic overview and PubChem caffeine tutorial
+commit 711f3070765efe67a5799f939f1a18306ed8afdd
+Author: sysoutemanuelhenrique <emanuel2017.henrique@gmail.com>
+Date:   Tue Nov 24 09:34:36 2026 -0300
+
+    feat: add receptor materialization domain/planner (increment 021, checkpoint 1)
+    
+    Implements the domain-only slice of Increment 021 (Receptor
+    Materialization) authorized for Checkpoint 1: frozen DTOs, canonical
+    H(payload) hashing, and a pure planner deriving S/D/U/X/O decisions and
+    acknowledgement-checked PolicyRecord construction, per the frozen
+    specification at governance commit b0e60f6528f6fcb828aa6dd5577824e08c7c9fac.
+    
+    Covers all 43 CP1 scenarios (T021-001-040, T021-159-161). No Gemmi/RDKit
+    import, no RAW/YAML I/O, no storage/registry/service/CLI - those remain
+    Checkpoint 2-4.
+    
+    Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+
+ src/molecular/receptor_materialization.py | 1418 +++++++++++++++++++++++++++++
+ tests/test_receptor_materialization.py    |  791 ++++++++++++++++
+ 2 files changed, 2209 insertions(+)
+---
+A	src/molecular/receptor_materialization.py
+A	tests/test_receptor_materialization.py
+---remote verification---
+711f3070765efe67a5799f939f1a18306ed8afdd	refs/heads/feature/increment-021-receptor-materialization
+08b797e0985e123ffd4d7ca7e5a5e8f040e63851	refs/heads/main
