@@ -1,0 +1,39 @@
+{
+  "catalogue_categories": 94,
+  "catalogue_actions": {
+    "filter": 24,
+    "generate": 1,
+    "omit": 67,
+    "guard_then_omit": 2
+  },
+  "previous_scenario_ids_preserved": 140,
+  "total_scenarios": 163,
+  "additional_scenarios": 23,
+  "by_checkpoint": {
+    "CP1": 44,
+    "CP2": 68,
+    "CP3": 31,
+    "CP4": 20
+  },
+  "changed_existing_scenario_rows": [
+    "T021-035",
+    "T021-060",
+    "T021-079"
+  ],
+  "preserved_body_sections": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    15,
+    18,
+    21
+  ],
+  "numeric_grammar_cases": 10,
+  "catalogue_recheck_against_reviewer_inventories": true,
+  "inventory_source": "Reviewer-produced Gemmi C++ outputs, not parsed anew by architect",
+  "scientific_scenarios_executed": 0,
+  "pytest_executed": false,
+  "independent_closure": false
+}

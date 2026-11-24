@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-DRAFT2-FOCAL-REVIEW",
+  "status": "READY_FOR_DISPATCH",
+  "dispatch_status": "NOT_DISPATCHED",
+  "assigned_role": "claude-independent-reviewer-separate-from-implementer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "governance_input_parent": "b948f60245b71da71fa4535e8ef7ffa3957b35b4",
+  "review_snapshot": "Exact publication SHA in handoff; stop if remote coordination HEAD differs",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "code_access": "STRICTLY_READ_ONLY",
+  "draft": {
+    "path": "increments/021/09-revised-draft/INCREMENT_021_DRAFT_SPECIFICATION_V2.md",
+    "lines": 356,
+    "size_bytes": 57694,
+    "sha256": "c1667d26e7b451d87f785a782c6ed5b9633cd53bcba0046603ce3de966e49807"
+  },
+  "annexes": [
+    {
+      "path": "increments/021/09-revised-draft/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16181,
+      "sha256": "51a91b8dd49f653a209497f4e1b2c63ef1789432786e97002e31fab6cc385baa"
+    },
+    {
+      "path": "increments/021/09-revised-draft/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/09-revised-draft/evidence/SCENARIOS_021.csv",
+      "lines": 164,
+      "size_bytes": 21048,
+      "sha256": "04143367e9a69702f9bfb476fd27649e41a1b381ef1adfad398891f863428f85"
+    }
+  ],
+  "architect_response": {
+    "path": "increments/021/08-draft-reconciliation/CODEX_INCREMENT_021_DRAFT_RECONCILIATION.md",
+    "lines": 84,
+    "size_bytes": 11543,
+    "sha256": "fc4e9423f5292a917e8d4f2c2767011948e201b4a6f0e3fd7bcde49620ff0db8"
+  },
+  "prior_review": {
+    "path": "increments/021/07-draft-review/CLAUDE_INCREMENT_021_DRAFT_REVIEW.md",
+    "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+    "lines": 155,
+    "size_bytes": 14751,
+    "sha256": "ede42c4f7455973a0947deed8948dabb03618d338e341ae87bb0e5135f76a59c",
+    "git_blob_sha": "f609e1d7df40229edbc16b67c5ec8580ad353a00"
+  },
+  "prior_review_commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+  "input_manifest": "increments/021/09-revised-draft/evidence/FILE_IDENTITIES.json",
+  "required_scope": [
+    "Read AGENTS/workflow/STATUS/task and verify immutable input identities before review",
+    "Read response, revised full draft and annexes; compare with draft-1 at b948f60245b71da71fa4535e8ef7ffa3957b35b4",
+    "Give separate dispositions for all 3 MAJORs and 6 MINORs; do not count architect acceptance as independent closure",
+    "Assess 1_555 convention, contradictory/missing table, other codes, identity_basis and unchanged 15-cell matrix",
+    "Assess explicit nonidentity refusal rationale including 1pfe; no claim of population coverage or full support",
+    "Check all 94 catalogue categories, homogeneous arrays, 2 semantic guards and 3 omission families, especially NMR/EM",
+    "Validate NCS generate/null/given/identity/unknown/malformed; no silent native-reader skip",
+    "Check altloc endpoint sets, occurrence ambiguity, uniform K, literal source-line preservation",
+    "Check special-position matching, counts, warning and preserved occupancy",
+    "Check application_version exclusion from plan/policy but inclusion in request/manifest; semantic-version obligations",
+    "Check numeric grammar, manual orphan procedure and fixed CLI wording",
+    "Check 140 retained scenario ids, 3 edited rows, 23 added cases and true totals 44/68/31/20",
+    "Separate inventory-based documentary checks from raw CIF parsing/production execution; require real fixture lineage at implementation gate",
+    "Do not reopen P-1/P-2/P-3/NOTE-F1 without concrete regression; inspect affected hash/DTO/catalogue relations",
+    "No implementation/freeze; Windows validation remains future checkpoint evidence, not prerequisite to review draft"
+  ],
+  "allowed_governance_output_paths": [
+    "increments/021/10-draft2-focal-review/CLAUDE_INCREMENT_021_DRAFT2_FOCAL_REVIEW.md",
+    "increments/021/10-draft2-focal-review/evidence/claude-*"
+  ],
+  "output_branch_policy": "Own claude/ branch from exact dispatched release; preserve architect coordination branch and all historical materials",
+  "governance_commit_push_authorized_when_dispatched": true,
+  "delivery_instruction": "communications/GOVERNANCE_DELIVERY_INSTRUCTIONS_20261123.md",
+  "required_receipt": [
+    "task/role",
+    "full input/review SHA and file identities",
+    "individual finding dispositions",
+    "own execution versus supplied evidence",
+    "verdict/limits",
+    "remote branch/full commit/path/lines/bytes/full SHA-256"
+  ],
+  "permitted_verdicts": [
+    "REQUEST CHANGES",
+    "APPROVE FOR FINAL CANDIDATE PREPARATION",
+    "APPROVE WITH NON-BLOCKING NOTES"
+  ],
+  "restrictions": [
+    "Do not alter code/tests/drafts/annexes/STATUS/tasks/historical reports",
+    "No main/PR/merge/tag/release/force push/formal approval/automation",
+    "020-A remains STAND-BY; preserved local items untouched"
+  ],
+  "implementation_authorized": false,
+  "final_specification_frozen": false,
+  "automated_relay_active": false
+}

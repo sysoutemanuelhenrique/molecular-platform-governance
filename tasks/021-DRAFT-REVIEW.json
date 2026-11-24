@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "task_id": "021-DRAFT-REVIEW",
-  "status": "READY_FOR_DISPATCH",
-  "dispatch_status": "NOT_DISPATCHED",
+  "status": "COMPLETED_REVIEW_RECEIVED",
+  "dispatch_status": "COMPLETED_AS_REPORTED_BY_REVIEWER",
   "assigned_role": "claude-independent-reviewer-separate-from-implementer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -119,5 +119,30 @@
   ],
   "implementation_authorized": false,
   "final_specification_frozen": false,
-  "automated_relay_active": false
+  "automated_relay_active": false,
+  "dispatch_evidence": "Reviewer receipt and own manifest say direct owner dispatch; architect did not observe or automate agent invocation",
+  "result_commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+  "result_branch": "claude/021-draft-review-20261123",
+  "result": {
+    "path": "increments/021/07-draft-review/CLAUDE_INCREMENT_021_DRAFT_REVIEW.md",
+    "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+    "lines": 155,
+    "size_bytes": 14751,
+    "sha256": "ede42c4f7455973a0947deed8948dabb03618d338e341ae87bb0e5135f76a59c",
+    "git_blob_sha": "f609e1d7df40229edbc16b67c5ec8580ad353a00"
+  },
+  "result_verdict": "APPROVE FOR REVISED DRAFT PREPARATION",
+  "findings": {
+    "blockers": 0,
+    "majors": 3,
+    "minors": 6
+  },
+  "architect_response": {
+    "path": "increments/021/08-draft-reconciliation/CODEX_INCREMENT_021_DRAFT_RECONCILIATION.md",
+    "lines": 84,
+    "size_bytes": 11543,
+    "sha256": "fc4e9423f5292a917e8d4f2c2767011948e201b4a6f0e3fd7bcde49620ff0db8"
+  },
+  "independent_correction_closure": false,
+  "next_task": "tasks/021-DRAFT2-FOCAL-REVIEW.json"
 }

@@ -1,0 +1,31 @@
+{
+ "claude-inventory-5i55.txt": {
+  "categories": 54,
+  "unknown_categories": [],
+  "unknown_tags_in_filtered": {},
+  "missing_required_tags": {},
+  "operator_tables_present": [],
+  "struct_conn_symmetry": {
+   "covale 1_555 1_555": 1
+  }
+ },
+ "claude-inventory-1pfe.txt": {
+  "categories": 72,
+  "unknown_categories": [],
+  "unknown_tags_in_filtered": {},
+  "missing_required_tags": {},
+  "operator_tables_present": [],
+  "struct_conn_symmetry": {
+   "covale 1_555 1_555": 16,
+   "hydrog 1_555 9_555": 18
+  }
+ },
+ "claude-inventory-3dg1_final.txt": {
+  "categories": 35,
+  "unknown_categories": [],
+  "unknown_tags_in_filtered": {},
+  "missing_required_tags": {},
+  "operator_tables_present": [],
+  "struct_conn_symmetry": {}
+ }
+}

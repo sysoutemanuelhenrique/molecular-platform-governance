@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-DRAFT-REVISION",
+  "assigned_role": "codex-architect",
+  "status": "COMPLETED_DRAFT2_PUBLISHED_FOR_REVIEW",
+  "input_governance_commit": "b948f60245b71da71fa4535e8ef7ffa3957b35b4",
+  "review_commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+  "authorization_basis": "Continuation of owner-authorized draft writing/publication, after reviewer receipt; no additional human approval inferred",
+  "output": {
+    "path": "increments/021/09-revised-draft/INCREMENT_021_DRAFT_SPECIFICATION_V2.md",
+    "lines": 356,
+    "size_bytes": 57694,
+    "sha256": "c1667d26e7b451d87f785a782c6ed5b9633cd53bcba0046603ce3de966e49807"
+  },
+  "annexes": [
+    {
+      "path": "increments/021/09-revised-draft/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16181,
+      "sha256": "51a91b8dd49f653a209497f4e1b2c63ef1789432786e97002e31fab6cc385baa"
+    },
+    {
+      "path": "increments/021/09-revised-draft/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/09-revised-draft/evidence/SCENARIOS_021.csv",
+      "lines": 164,
+      "size_bytes": 21048,
+      "sha256": "04143367e9a69702f9bfb476fd27649e41a1b381ef1adfad398891f863428f85"
+    }
+  ],
+  "response": {
+    "path": "increments/021/08-draft-reconciliation/CODEX_INCREMENT_021_DRAFT_RECONCILIATION.md",
+    "lines": 84,
+    "size_bytes": 11543,
+    "sha256": "fc4e9423f5292a917e8d4f2c2767011948e201b4a6f0e3fd7bcde49620ff0db8"
+  },
+  "next_task": "tasks/021-DRAFT2-FOCAL-REVIEW.json",
+  "implementation_authorized": false,
+  "final_specification_frozen": false
+}

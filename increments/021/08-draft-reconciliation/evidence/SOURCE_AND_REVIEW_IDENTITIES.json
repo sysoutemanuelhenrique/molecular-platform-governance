@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-23",
+  "timezone": "America/Sao_Paulo",
+  "governance_input": "b948f60245b71da71fa4535e8ef7ffa3957b35b4",
+  "review_commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "review_files": [
+    {
+      "path": "increments/021/07-draft-review/CLAUDE_INCREMENT_021_DRAFT_REVIEW.md",
+      "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+      "lines": 155,
+      "size_bytes": 14751,
+      "sha256": "ede42c4f7455973a0947deed8948dabb03618d338e341ae87bb0e5135f76a59c",
+      "git_blob_sha": "f609e1d7df40229edbc16b67c5ec8580ad353a00"
+    },
+    {
+      "path": "increments/021/07-draft-review/evidence/claude-021-draft-review-verification.json",
+      "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+      "lines": 81,
+      "size_bytes": 6070,
+      "sha256": "3857efffae392bc167b8ee8169f65b0d82fb9e363dc11581d18269c3e99258e8",
+      "git_blob_sha": "68269afce49e598874c738751377131d02c21573"
+    },
+    {
+      "path": "increments/021/07-draft-review/evidence/claude-catalog-coverage.output.json",
+      "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+      "lines": 92,
+      "size_bytes": 2038,
+      "sha256": "c25b667888c54d4034589de19ed113d688a60250de3c6e4645eb154c6731e84f",
+      "git_blob_sha": "2528034606533f0600f88871c17fcbd355d15365"
+    },
+    {
+      "path": "increments/021/07-draft-review/evidence/claude-catalog-coverage.py",
+      "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+      "lines": 31,
+      "size_bytes": 1739,
+      "sha256": "26fe89fbdf2f4c40b46d53d90241de5b2238a2a5963457e5b81adbd94870138c",
+      "git_blob_sha": "a2c7b577f4b82e1c13afd73ba25ecfc9e7576038"
+    },
+    {
+      "path": "increments/021/07-draft-review/evidence/claude-cif-inventory-probe.cpp",
+      "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+      "lines": 18,
+      "size_bytes": 909,
+      "sha256": "fc96331e83189ac5041895540cd69b2e55f1e07d2a3b9b0593bcdf278d943936",
+      "git_blob_sha": "f4beb265dbc8b1fd03658bdf2ef05162c769f0b6"
+    },
+    {
+      "path": "increments/021/07-draft-review/evidence/claude-inventory-1pfe.txt",
+      "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+      "lines": 107,
+      "size_bytes": 14223,
+      "sha256": "3e058ff3a6a9db2b1314005c0d86406e0e287231838a5140db0a77dad6ad3167",
+      "git_blob_sha": "9292ed1aa7c362ce2da61f325f7a8d1cc11c2e27"
+    },
+    {
+      "path": "increments/021/07-draft-review/evidence/claude-inventory-3dg1_final.txt",
+      "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+      "lines": 36,
+      "size_bytes": 4433,
+      "sha256": "adfa053ac7759ed72154111525e02d702faf1fa2fbdca471c3163351b9537786",
+      "git_blob_sha": "759e4d3a020799eaf2b361910b24dee2a36fd8c8"
+    },
+    {
+      "path": "increments/021/07-draft-review/evidence/claude-inventory-5i55.txt",
+      "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+      "lines": 56,
+      "size_bytes": 13461,
+      "sha256": "f6c8aa7e669b9976e830e9412cc2429a44eeace6a9279834149063ca65e476fe",
+      "git_blob_sha": "28abe1384846217e49f3bb4a1d68d2aa510184c7"
+    },
+    {
+      "path": "increments/021/07-draft-review/evidence/claude-notef1-equivalence.output.json",
+      "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+      "lines": 138,
+      "size_bytes": 3832,
+      "sha256": "cfa83e82ad703be9c4bd45f4a91e3fa9b8e2b1c0b3c8bc4a2d4d2f57732adcc5",
+      "git_blob_sha": "fe578ee68354100fb965109c334f10f39559d23c"
+    },
+    {
+      "path": "increments/021/07-draft-review/evidence/claude-notef1-equivalence.py",
+      "commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+      "lines": 43,
+      "size_bytes": 1969,
+      "sha256": "0d438ea357061d4716577ef1df717ab3180a1cd183d217ebfdc60d6ec322e923",
+      "git_blob_sha": "95169ae97fdb44bec4f66ed9c7dafcf2ce9fd28b"
+    }
+  ],
+  "gemmi_sources": [
+    {
+      "path": "include/gemmi/numb.hpp",
+      "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+      "size_bytes": 1481,
+      "sha256": "4d378c2c66640a92794f7cabc61d6746ac529822f74b08f53c4e2b9f55637682"
+    },
+    {
+      "path": "include/gemmi/symmetry.hpp",
+      "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+      "size_bytes": 36758,
+      "sha256": "380b2f2d9107ff5f798b0b0881ae28883d33be58074923e24a7c4830dea89ed1"
+    },
+    {
+      "path": "include/gemmi/model.hpp",
+      "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+      "size_bytes": 38132,
+      "sha256": "37a7b8436f839717299164e8a2e55213d690867ba7bd80d0461c758e47548096"
+    },
+    {
+      "path": "src/to_mmcif.cpp",
+      "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+      "size_bytes": 60287,
+      "sha256": "d747726769c5941a026575e929ca690aaa9049187b534c6681a5bc5fa969aade"
+    },
+    {
+      "path": "src/mmcif.cpp",
+      "commit": "5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e",
+      "size_bytes": 49051,
+      "sha256": "676d3b6fbed822bbe6084cfa255aba828f1ad8b54e4a8019cd9b67c24dc30a5a"
+    }
+  ],
+  "official_sources": [
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_struct_conn.ptnr1_symmetry.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_struct_ncs_oper.code.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_struct_special_symmetry.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/cell.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_nmr_ensemble.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_3d_reconstruction.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_molecule.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/database_PDB_matrix.html",
+    "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_struct_conn_angle.html",
+    "https://www.iucr.org/what-we-do/digital-standards/cif/cif1/file-syntax"
+  ],
+  "code_execution": false,
+  "gemmi_python": false,
+  "gemmi_cpp": false,
+  "pytest": false,
+  "windows": false,
+  "concurrency": false,
+  "scientific_materialization": false
+}

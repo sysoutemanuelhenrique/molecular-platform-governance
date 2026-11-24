@@ -1,0 +1,104 @@
+{
+  "governance_input_commit": "b948f60245b71da71fa4535e8ef7ffa3957b35b4",
+  "review_commit": "680aef4eecc3852fff78a70c75691993d51849b6",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "note": "Current publication files excluding self; historical manifests remain pinned to their original commits",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 39,
+      "size_bytes": 2873,
+      "sha256": "b9431c19108af5e5c84e5b38928748ec8cdeb48c06226e20106b7196ef7aa229"
+    },
+    {
+      "path": "increments/021/08-draft-reconciliation/CODEX_INCREMENT_021_DRAFT_RECONCILIATION.md",
+      "lines": 84,
+      "size_bytes": 11543,
+      "sha256": "fc4e9423f5292a917e8d4f2c2767011948e201b4a6f0e3fd7bcde49620ff0db8"
+    },
+    {
+      "path": "increments/021/08-draft-reconciliation/evidence/CODEX_CATALOG_COVERAGE_RECHECK.json",
+      "lines": 31,
+      "size_bytes": 732,
+      "sha256": "82dd2d6c5da14d8161fb309957b82ece6ab0fd80fc5f3510a0b3dbbc833807eb"
+    },
+    {
+      "path": "increments/021/08-draft-reconciliation/evidence/CODEX_GUARDED_CATEGORY_COLUMN_RECHECK.json",
+      "lines": 19,
+      "size_bytes": 451,
+      "sha256": "6513843191b2bd5bc3f434d881690c0291d6076871ab61c8b2f22619ee57cd29"
+    },
+    {
+      "path": "increments/021/08-draft-reconciliation/evidence/CODEX_NUMERIC_GRAMMAR_CHECK.json",
+      "lines": 19,
+      "size_bytes": 380,
+      "sha256": "4ab6c1914a7f555756dbf986020477798f29a255b0db4541268c2b74945a66fe"
+    },
+    {
+      "path": "increments/021/08-draft-reconciliation/evidence/DRAFT1_TO_DRAFT2.patch",
+      "lines": 715,
+      "size_bytes": 51842,
+      "sha256": "9e05be398e2e8ab824a87abf3debb6b06395676767eed9f58cf55d52dd53eef4"
+    },
+    {
+      "path": "increments/021/08-draft-reconciliation/evidence/DRAFT2_CHANGE_INDEX.json",
+      "lines": 101,
+      "size_bytes": 2208,
+      "sha256": "21da56cf51db60fdaf9015d3458dc2dec870292c47a3643c19950e6133b39ba0"
+    },
+    {
+      "path": "increments/021/08-draft-reconciliation/evidence/SOURCE_AND_REVIEW_IDENTITIES.json",
+      "lines": 140,
+      "size_bytes": 6130,
+      "sha256": "fe7879a5196aecb6432574b62662803443bb8d135946beadb8ae80488d2534e7"
+    },
+    {
+      "path": "increments/021/09-revised-draft/INCREMENT_021_DRAFT_SPECIFICATION_V2.md",
+      "lines": 356,
+      "size_bytes": 57694,
+      "sha256": "c1667d26e7b451d87f785a782c6ed5b9633cd53bcba0046603ce3de966e49807"
+    },
+    {
+      "path": "increments/021/09-revised-draft/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/09-revised-draft/evidence/DRAFT2_DOCUMENT_VERIFICATION.json",
+      "lines": 39,
+      "size_bytes": 786,
+      "sha256": "02d77fc77ad3657f183e478e8c8a4e8120e4d4bea0b278d18ff5cf60ab9b9bbe"
+    },
+    {
+      "path": "increments/021/09-revised-draft/evidence/SCENARIOS_021.csv",
+      "lines": 164,
+      "size_bytes": 21048,
+      "sha256": "04143367e9a69702f9bfb476fd27649e41a1b381ef1adfad398891f863428f85"
+    },
+    {
+      "path": "increments/021/09-revised-draft/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16181,
+      "sha256": "51a91b8dd49f653a209497f4e1b2c63ef1789432786e97002e31fab6cc385baa"
+    },
+    {
+      "path": "tasks/021-DRAFT-REVIEW.json",
+      "lines": 148,
+      "size_bytes": 7946,
+      "sha256": "7b17dd0c62b95d423ca346ebb0f228ea752b1f3ad1c8a46df1fcdf46a950f626"
+    },
+    {
+      "path": "tasks/021-DRAFT-REVISION.json",
+      "lines": 44,
+      "size_bytes": 1717,
+      "sha256": "5c924c693218d83407e6cba58fd1a243f80d5fda3028c4a54d883e03eff9a4ee"
+    },
+    {
+      "path": "tasks/021-DRAFT2-FOCAL-REVIEW.json",
+      "lines": 101,
+      "size_bytes": 5290,
+      "sha256": "ca614633885b38500f6efbfebb35bcc4571bde6e180f8b395d070b02bb9afd2e"
+    }
+  ]
+}

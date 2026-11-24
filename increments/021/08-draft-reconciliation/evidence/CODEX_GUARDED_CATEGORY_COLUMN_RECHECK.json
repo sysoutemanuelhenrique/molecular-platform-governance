@@ -1,0 +1,19 @@
+{
+  "claude-inventory-5i55.txt": {
+    "problems": [],
+    "guard_categories_observed": [],
+    "semantic_guards_executed": false
+  },
+  "claude-inventory-3dg1_final.txt": {
+    "problems": [],
+    "guard_categories_observed": [],
+    "semantic_guards_executed": false
+  },
+  "claude-inventory-1pfe.txt": {
+    "problems": [],
+    "guard_categories_observed": [
+      "_pdbx_struct_special_symmetry"
+    ],
+    "semantic_guards_executed": false
+  }
+}
