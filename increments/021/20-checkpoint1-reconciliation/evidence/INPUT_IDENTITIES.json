@@ -1,0 +1,162 @@
+{
+  "coordination_input": "d577b0dfddd3c71f9287b4c9cdcc783ea0865654",
+  "review_commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801",
+  "code_commit": "711f3070765efe67a5799f939f1a18306ed8afdd",
+  "normative_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "all_source_snapshot_git_blobs_verified": 68,
+  "files": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 1418,
+      "size_bytes": 60988,
+      "sha256": "b4a596965f80b5a2a8e5e6ceabff55db72f649f7a23241e816e4be04b51b0357",
+      "git_blob_sha": "f9c3d438aeb84a2974121b5bd002af331ccb3e36",
+      "repository": "sysoutemanuelhenrique/molecular-platform",
+      "commit": "711f3070765efe67a5799f939f1a18306ed8afdd"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 791,
+      "size_bytes": 38057,
+      "sha256": "ae8af3f9f6120a258ad7bd569d32a707337d3e6e69cc87f566760bbfd2bf86fb",
+      "git_blob_sha": "822d32b3fd6567668fbc236cb0a2c4d04134ca0b",
+      "repository": "sysoutemanuelhenrique/molecular-platform",
+      "commit": "711f3070765efe67a5799f939f1a18306ed8afdd"
+    },
+    {
+      "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+      "lines": 377,
+      "size_bytes": 64746,
+      "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8",
+      "git_blob_sha": "971d4dbaa8b651845f1601b3253496474589598c",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1",
+      "git_blob_sha": "a0db7a2eb8ef89f13b0feb1603242dc155095fc2",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03",
+      "git_blob_sha": "eed05f36f13ad8d9221f895cf8c9e814e860d9f0",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b",
+      "git_blob_sha": "5d41d129a7adb1d273e74b648f714609e5ba49f6",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb",
+      "git_blob_sha": "615198785d380a428ffd7c38555620e22373e2bf",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac"
+    },
+    {
+      "path": "increments/021/19-checkpoint1-review/evidence/claude-canonical-and-strict.output.json",
+      "lines": 92,
+      "size_bytes": 2218,
+      "sha256": "f700ce69530c21b78f1d8172e74657382793c71fb651efeae42685e03f3fb2e8",
+      "git_blob_sha": "9db3b0d1d7aed7b270a4682ffb7af257cb7077fd",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+    },
+    {
+      "path": "increments/021/19-checkpoint1-review/evidence/claude-canonical-and-strict.py",
+      "lines": 47,
+      "size_bytes": 4381,
+      "sha256": "3295c9044ca44de518e19254ad9d0b008a04a16f4fde2a93ae85d83c95566f8d",
+      "git_blob_sha": "364194e8143d4708e133e3cc1e4116fe5d71eec6",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+    },
+    {
+      "path": "increments/021/19-checkpoint1-review/evidence/claude-cp1-review-verification.json",
+      "lines": 59,
+      "size_bytes": 4595,
+      "sha256": "82836de0325790af665c7dcaa85a7fd91be751eff3c759be13896b8ad6f4c626",
+      "git_blob_sha": "a88f9a3dee1a232fc3cb1c896ffd4b6b9ac0a2a0",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+    },
+    {
+      "path": "increments/021/19-checkpoint1-review/evidence/claude-domain-probes.output.json",
+      "lines": 229,
+      "size_bytes": 5039,
+      "sha256": "c93e299b32a81908cc1d943701ee4a2a20e3fc736d6a329394add72ded631680",
+      "git_blob_sha": "9a02b637b4492bdfd1ce6010bd63665080bdd903",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+    },
+    {
+      "path": "increments/021/19-checkpoint1-review/evidence/claude-domain-probes.py",
+      "lines": 118,
+      "size_bytes": 11986,
+      "sha256": "fb32ce09769480d280f48a27848334b152bd018bb1a5d28ab9e0de2ebb41750c",
+      "git_blob_sha": "17cd9717b737686d093e24a1b95fd5d78dc9a1e7",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+    },
+    {
+      "path": "increments/021/19-checkpoint1-review/evidence/claude-import-probe.output.json",
+      "lines": 51,
+      "size_bytes": 1968,
+      "sha256": "7b76b88a6b0cd6050553574b74f12fa80252e5bbe93fdc41c6b8b704dde5c179",
+      "git_blob_sha": "773f70d05c9cd109808786b99b076a7308bec399",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+    },
+    {
+      "path": "increments/021/19-checkpoint1-review/evidence/claude-import-probe.py",
+      "lines": 20,
+      "size_bytes": 1449,
+      "sha256": "b8bc8b5288eb3f22bfd69dae94e5c8a5b19dce393f420a8b49d951fb9cb74138",
+      "git_blob_sha": "ad01734a0c6d91241ef6ae5a582cd59f4cb90010",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+    },
+    {
+      "path": "increments/021/19-checkpoint1-review/evidence/claude-inert-gemmi-sentinel.py",
+      "lines": 4,
+      "size_bytes": 298,
+      "sha256": "1d08328aa716ee7cec476c7daefb8b650b5ebac98126284221531447f10b0d9d",
+      "git_blob_sha": "2d4669132c87a1a85757d10035f0c87efefcb57b",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+    },
+    {
+      "path": "increments/021/19-checkpoint1-review/evidence/claude-pytest-new-tests-with-sentinel.txt",
+      "lines": 52,
+      "size_bytes": 5227,
+      "sha256": "e14bc82ee0c5c2f5144453d66ede1038094a7162960475e1e8348c5c5f14c015",
+      "git_blob_sha": "d5b98a51ae3fca301e1c1fc3256a98b5f7679220",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+    },
+    {
+      "path": "increments/021/19-checkpoint1-review/CLAUDE_INCREMENT_021_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+      "lines": 176,
+      "size_bytes": 15726,
+      "sha256": "2af4f1880e6c1e086204ae12b298419eaf61809de8bf5e2a7f29f30ad7d4fdc4",
+      "git_blob_sha": "22e87007af713f8544cb236ce3782ffb737c17b9",
+      "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+      "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+    }
+  ]
+}

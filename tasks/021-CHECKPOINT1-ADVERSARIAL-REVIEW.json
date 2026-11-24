@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-ADVERSARIAL-REVIEW",
-  "status": "READY_FOR_DISPATCH",
-  "dispatch_status": "NOT_DISPATCHED",
+  "status": "COMPLETED_REQUEST_CHANGES_RECEIVED",
+  "dispatch_status": "MANUAL_REVIEW_DELIVERED_BY_OWNER",
   "assigned_role": "claude-independent-reviewer-separate-from-implementer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -220,5 +220,25 @@
   "checkpoint1_approved": false,
   "cp2_implementation_authorized": false,
   "final_specification_frozen": true,
-  "automated_dispatch": false
+  "automated_dispatch": false,
+  "delivered_review_commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801",
+  "delivered_review_report": {
+    "path": "increments/021/19-checkpoint1-review/CLAUDE_INCREMENT_021_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+    "lines": 176,
+    "size_bytes": 15726,
+    "sha256": "2af4f1880e6c1e086204ae12b298419eaf61809de8bf5e2a7f29f30ad7d4fdc4",
+    "git_blob_sha": "22e87007af713f8544cb236ce3782ffb737c17b9",
+    "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+    "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+  },
+  "review_verdict": "REQUEST CHANGES",
+  "cumulative_findings": {
+    "blockers": 0,
+    "majors": 4,
+    "minors": 8,
+    "notes": 3
+  },
+  "independent_review_complete": true,
+  "findings_independently_closed_after_correction": false,
+  "next_task": "tasks/021-CHECKPOINT1-CORRECTIONS.json"
 }

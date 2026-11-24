@@ -1,0 +1,183 @@
+{
+  "status": "ARCHITECT_RESPONSE_NOT_INDEPENDENT_CLOSURE",
+  "findings": [
+    {
+      "id": "ARCH-01",
+      "severity": "MAJOR",
+      "disposition": "ACEITO",
+      "requirement": "§3/§19; T021-040",
+      "evidence": "Import limpo falha sem Gemmi; fonte importa inspection/resolution transitivamente.",
+      "correction": "Tipos antigos sob TYPE_CHECKING; nenhuma importação nativa transitiva no caminho puro. Recalcular o payload antigo de sete campos usando backend puro compatível, com golden vectors. Import tardio do módulo inspection dentro de build_source_context, sozinho, não basta para manter a função pura.",
+      "tests": [
+        "Processo limpo bloqueia Gemmi e RDKit, sem stub, e importa domínio/instancia DTOs/calcula hash/plano puro",
+        "Compatibilidade com identidade 020 sobre payload de sete campos; código 020 inalterado"
+      ]
+    },
+    {
+      "id": "ARCH-02",
+      "severity": "MAJOR",
+      "disposition": "ACEITO",
+      "requirement": "§7; T021-019",
+      "evidence": "Sondas remove/keep de CCD só fora de M causam SELECTION_CONFLICT.",
+      "correction": "Construir chaves D aplicáveis a M antes de agregá-las por asym para conflito polimérico; preservar recusa das chaves presentes e máscara model-filter.",
+      "tests": [
+        "remove fora de M com S e keep fora de M sem S não têm efeito",
+        "mesmos pares presentes em M continuam recusados"
+      ]
+    },
+    {
+      "id": "ARCH-03",
+      "severity": "MINOR",
+      "disposition": "ACEITO",
+      "requirement": "§11/SCHEMAS §4; CATALOG _cell/_symmetry",
+      "evidence": "filter+generated_tags entry_id recusado nas duas categorias.",
+      "correction": "Permitir combinação filter+generate prevista, com tags disjuntas; não implementar serializer CP2.",
+      "tests": [
+        "_cell e _symmetry aceitam entry_id gerado",
+        "invariantes omit/generate/guard e sobreposição continuam recusando"
+      ]
+    },
+    {
+      "id": "MAJOR-A",
+      "severity": "MAJOR",
+      "disposition": "ACEITO",
+      "requirement": "§5; T021-005/006/007",
+      "evidence": "Parser inspection 0.7.4 é aceito como Engine 0.7.5; resolution pdb/inspection mmcif aceita; assinatura não recebe acquisition checksum nem policy protein_input_id.",
+      "correction": "Receber ProteinInput e ReceptorSelectionPolicy tipados já carregados, além de inspection/resolution, ou todos os escalares faltantes obrigatórios. Conferir IDs exatos, hashes acquisition/raw_checksum_observed/raw_checksum, formatos e ambos parsers; não reclassificar proveniência. Recalcular inspection_id compatível. Não ler YAML/RAW ou repetir inspeção.",
+      "tests": [
+        "um controle negativo por vínculo/parser/schema/profile/formato/checksum",
+        "campos ausentes não podem ser inferidos dos próprios registros a conferir",
+        "cause e ordem engine→fontes→seleção preservadas"
+      ]
+    },
+    {
+      "id": "MAJOR-B",
+      "severity": "MAJOR",
+      "disposition": "ACEITO",
+      "requirement": "§13/SCHEMAS §6; T021-030",
+      "evidence": "existing adulterado com mesmo ID é aceito; PolicyRecord aceita policy_id arbitrário.",
+      "correction": "Autovalidar policy_id pelo payload exato, validar o existente e comparar todos os campos semânticos/derivados com candidato, exceto timestamp. Retornar existente íntegro/equivalente com timestamp original; divergência é erro tipado, sem sobrescrita.",
+      "tests": [
+        "ID inválido recusado no DTO",
+        "mesmo ID com U/fontes/chaves/contagens adulteradas recusa",
+        "repetição legítima retorna record/timestamp original"
+      ]
+    },
+    {
+      "id": "MINOR-1",
+      "severity": "MINOR",
+      "disposition": "ACEITO",
+      "requirement": "§6/SCHEMAS §4",
+      "evidence": "Ordinais/IDs duplicados, entity contraditória e S ausente em M são aceitos.",
+      "correction": "Guarda do planner sobre vetor recebido: unicidade global atom_id/ordinal, cobertura uma vez, vínculo asym/entity e resolução de cada asym de S em M; não inferir/remapear/reparar.",
+      "tests": [
+        "quatro classes negativas e controles válidos multi-modelo",
+        "decisões mantêm ordinais fonte; sem renumeração"
+      ]
+    },
+    {
+      "id": "MINOR-2",
+      "severity": "MINOR",
+      "disposition": "ACEITO",
+      "requirement": "§6; T021-013/037",
+      "evidence": "auth token NFD de água coincide por NFC com polímero e é fundido na classificação.",
+      "correction": "Injetividade sobre todos os auth tokens envolvidos na correspondência em M, incluindo água/ligante e polímeros. Tokens idênticos em múltiplos asyms continuam permitidos; não comparar namespaces distintos nem normalizar hashes.",
+      "tests": [
+        "água e ligante NFD/NFC colidem e recusam",
+        "mesmo token literal em asyms distintos conserva multiple/retained/excluded corretos"
+      ]
+    },
+    {
+      "id": "MINOR-3",
+      "severity": "MINOR",
+      "disposition": "ACEITO_COM_DELIMITACAO_CP1",
+      "requirement": "SCHEMAS §4; §11",
+      "evidence": "omit/guard aceitam linhas mantidas; ordinais negativos, categoria não canônica/desconhecida e linhas sem source_rows_key aceitos.",
+      "correction": "Invariantes locais: omit/guard não retêm linhas/tags; ordinais reais não negativos, únicos e disjuntos; categoria canônica do catálogo ou famílias explicitamente omitidas; source_rows_key exigido quando há fonte, inclusive fonte vazia. Sem inventar linha de categoria opcional ausente nem campo novo. Cobertura total/consistência com DOM e cálculo físico do hash ficam CP2.",
+      "tests": [
+        "omissão vazia válida com hash de fonte correto",
+        "filter+generate válido com fonte; geração sem fonte pode null",
+        "nomes inválidos/fora do catálogo recusam, famílias aprovadas continuam aceitas como omissão",
+        "linhas/tags conflitantes e fonte ausente incoerente recusam"
+      ]
+    },
+    {
+      "id": "MINOR-4",
+      "severity": "MINOR",
+      "disposition": "ACEITO",
+      "requirement": "§11/§13; T021-005/035/160",
+      "evidence": "PlanBinding aceita catalogue_sha256 divergente; Profile/algorithm/catalogue/engine não têm todos estímulos nos testes.",
+      "correction": "Fixar catálogo aprovado em DTOs produzidos/carregados no perfil vigente. Provar vinculação dos campos em payloads de identidade com vetores de teste claramente documentais; não abrir perfil/engine novos nem apresentar engine inválido como execução válida.",
+      "tests": [
+        "catálogo divergente rejeitado em PlanBinding e PolicyRecord",
+        "sensibilidade dos envelopes a profile/algorithm/catalogue/engine/decisões",
+        "application_version continua isolada de plan/policy"
+      ]
+    },
+    {
+      "id": "MINOR-5",
+      "severity": "MINOR",
+      "disposition": "ACEITO",
+      "requirement": "§4/§5/§16",
+      "evidence": "Formato pdb retorna UNSUPPORTED_PLATFORM, reservado a host/perfil.",
+      "correction": "Usar código de configuração existente apropriado (INVALID_RECORD; INCOMPLETE_INSPECTION se a causa for inspeção incompleta), mantendo a ordem de validação e sem criar código novo.",
+      "tests": [
+        "pdb coerente em todas as fontes falha como configuração, sem UNSUPPORTED_PLATFORM"
+      ]
+    },
+    {
+      "id": "MINOR-6",
+      "severity": "MINOR",
+      "disposition": "ACEITO",
+      "requirement": "§16; conjunto fechado de códigos",
+      "evidence": "python -O aceita NOT_A_CODE nos dois tipos de erro.",
+      "correction": "Substituir assert de validação por exceção explícita também sob -O; não capturar BaseException.",
+      "tests": [
+        "subprocessos normal e -O rejeitam código desconhecido nos dois tipos",
+        "códigos válidos conservam code/phase"
+      ]
+    },
+    {
+      "id": "MINOR-7",
+      "severity": "MINOR",
+      "disposition": "ACEITO",
+      "requirement": "Brief CP1; §13/SCHEMAS envelopes",
+      "evidence": "Valores calculados a mão batem, mas testes existentes não fixam hashes independentes.",
+      "correction": "Adicionar bytes e SHA-256 literais independentes para canonicalização e envelopes. Esperado não chama função de produção para se produzir; sem inventar hash de RAW real.",
+      "tests": [
+        "JSON UTF-8/Unicode sem LF, ordem de listas, kind/version",
+        "occurrence, atom_ids, contexto/X/O e decisões/policy/request representativos",
+        "golden do inspection_id antigo sem mudança de algoritmo"
+      ]
+    },
+    {
+      "id": "NOTE-1",
+      "severity": "NOTE",
+      "disposition": "INCORPORADO_COMO_LIMITE_DE_FASE",
+      "requirement": "§19 CP1/CP2",
+      "evidence": "Conexões vazias e ausência de records futuros são recorte declarado.",
+      "correction": "Não persistir/reutilizar como plano final a estrutura parcial CP1; conexões/catálogo físico e materialização reais só CP2+.",
+      "tests": []
+    },
+    {
+      "id": "NOTE-2",
+      "severity": "NOTE",
+      "disposition": "INCORPORADO_COMO_REGRESSAO",
+      "requirement": "Estritez/ordem/encadeamento",
+      "evidence": "12 configs strict/frozen/forbid e controles de coerção conferidos; canonicalização confere.",
+      "correction": "Preservar estritez, recusa de surrogate, ordem e chaining, sem exceções amplas.",
+      "tests": [
+        "controles estritos e KeyboardInterrupt/SystemExit não capturados"
+      ]
+    },
+    {
+      "id": "NOTE-3",
+      "severity": "NOTE",
+      "disposition": "REGISTRADO_PARA_GATE_CP4",
+      "requirement": "§3/§20 CP4",
+      "evidence": "cli baseline já importa receptor_parsing com Gemmi.",
+      "correction": "Não modificar CLI/020 no CP1. Reexaminar import/help sem opcionais no gate próprio CP4.",
+      "tests": []
+    }
+  ]
+}
