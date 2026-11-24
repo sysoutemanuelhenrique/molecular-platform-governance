@@ -1,0 +1,422 @@
+{
+  "snapshot": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e",
+  "report_snapshot": "010ee93aedf31bdcdfee513164b84aa40f3fbde4",
+  "scope": "architect receipt triage, not independent closure",
+  "verified_identities": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 1669,
+      "size_bytes": 75461,
+      "sha256": "ef38b524adbbe7432e83171d63c675856e3b21777322faec001efab530704fb1",
+      "git_blob_sha": "f6e130c1761a71a0e2f7190c395e61033041ae4d"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 1421,
+      "size_bytes": 67030,
+      "sha256": "7064aa8d7e36902f9e85a3ae4e075b118f8b5dd391029bf9652a53cbdd883eb8",
+      "git_blob_sha": "55aa9a46437ae335eb36ab4fcd0c5075a7a78b1c"
+    },
+    {
+      "path": "increments/021/21-checkpoint1-corrections/CLAUDE_INCREMENT_021_CHECKPOINT1_CORRECTIONS_REPORT.md",
+      "lines": 154,
+      "size_bytes": 14940,
+      "sha256": "5e03d83a35154c52330a6a5f420d17a2e426947ef5d0041cf2fb9ee29fc96875",
+      "git_blob_sha": "1651b4f94144c57f17283b0445bc2057f28b0b6d"
+    },
+    {
+      "path": "increments/021/21-checkpoint1-corrections/evidence/claude-arch01-fresh-subprocess-check.txt",
+      "lines": 3,
+      "size_bytes": 81,
+      "sha256": "3c6672a986dd8705e9ffd521903f37636f7f0062770df99f132a3da6cbcdb9de",
+      "git_blob_sha": "d63f0f24e710833cb221375a60781840e007211e"
+    },
+    {
+      "path": "increments/021/21-checkpoint1-corrections/evidence/claude-baseline-collect-before-corrections.txt",
+      "lines": 1526,
+      "size_bytes": 133037,
+      "sha256": "9888910006e444a560e57b187e0e49c41ed4a74c20a86b105bf56d82a98c73e4",
+      "git_blob_sha": "cbedbe99d0649b1f6a6f0d93594436695786d077"
+    },
+    {
+      "path": "increments/021/21-checkpoint1-corrections/evidence/claude-collect-after-corrections.txt",
+      "lines": 1558,
+      "size_bytes": 136449,
+      "sha256": "e9b551d8c0946ee1a7f85e458847b368c8fc72d300fbe1aaa58983dc232479cf",
+      "git_blob_sha": "18a4a404b097adf94a8b18dfda3797c2a1c0d32d"
+    },
+    {
+      "path": "increments/021/21-checkpoint1-corrections/evidence/claude-environment.txt",
+      "lines": 11,
+      "size_bytes": 308,
+      "sha256": "7c80e04eeddc23d1f1257a241cb83d33851f480cfde3c81f5c91bed612af0c16",
+      "git_blob_sha": "8f180b8e3ea7a643ebc4ee1b78bb5e1da7536ed3"
+    },
+    {
+      "path": "increments/021/21-checkpoint1-corrections/evidence/claude-findings-dispositions.json",
+      "lines": 89,
+      "size_bytes": 12497,
+      "sha256": "f8e6f0b5ea64478484dcd965edfac2023d62839f6c40db0745d7fb638d802cc9",
+      "git_blob_sha": "20efbf0248abb759a3d212caa76ad6caa2029cda"
+    },
+    {
+      "path": "increments/021/21-checkpoint1-corrections/evidence/claude-full-suite-after-corrections.txt",
+      "lines": 29,
+      "size_bytes": 3003,
+      "sha256": "15c40b9336b5e007557c9ba28fe6c52b7b5ae99663fb67455a854ba9f1d2b611",
+      "git_blob_sha": "67f5d86a1fb48d0d44e6afd95fdb2af5a06c61aa"
+    },
+    {
+      "path": "increments/021/21-checkpoint1-corrections/evidence/claude-git-log.txt",
+      "lines": 85,
+      "size_bytes": 4633,
+      "sha256": "391930ffd9a454d93cb7f9ce993e7d1f04944c2a6d068e4a26c4dfe42e950e70",
+      "git_blob_sha": "e21e7bbcc671420a736233d187e9605e2a44327e"
+    },
+    {
+      "path": "increments/021/21-checkpoint1-corrections/evidence/claude-minor6-python-O-check.txt",
+      "lines": 12,
+      "size_bytes": 546,
+      "sha256": "418b11b8170526ca3b2a93f3f32f4ad5734b9f41dca5344640b8ccbd55365c84",
+      "git_blob_sha": "015975c32a0e800da8e37eddec39598067314fc6"
+    },
+    {
+      "path": "increments/021/21-checkpoint1-corrections/evidence/claude-new-tests-verbose.txt",
+      "lines": 84,
+      "size_bytes": 9121,
+      "sha256": "4dc5b9c1d4349b74b510ec9e09a7e1302c5945bf8ef2b3e7f273e7b1ec5e474d",
+      "git_blob_sha": "f2e74ccbfbaeade453c616383b5aa05bd035dd9b"
+    }
+  ],
+  "all_code_git_blobs_verified": 68,
+  "collection": {
+    "before": 1524,
+    "after": 1556,
+    "new": 32,
+    "removed": 0,
+    "test_functions_before": 43,
+    "test_functions_after": 75,
+    "parametrization_decorators": 0
+  },
+  "pytest_executed_by_architect": false,
+  "native_gemmi_executed": false,
+  "windows_executed_by_architect": false,
+  "own_pure_processes": {
+    "normal": {
+      "returncode": 0,
+      "stderr": "",
+      "output": {
+        "python": "3.12.14",
+        "pydantic": "2.13.4",
+        "optional_modules_blocked_without_stub": true,
+        "legacy_source_records": "ProteinInput/policy real DTOs; inspection/resolution documentary namespaces for pure-boundary diagnostics, not native parsing or 020 validation",
+        "probes": {
+          "filter_generate__cell": {
+            "status": "accepted",
+            "value": {
+              "category": "_cell",
+              "action": "filter",
+              "kept_row_ordinals": [
+                0
+              ],
+              "omitted_row_ordinals": [],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [
+                "entry_id"
+              ],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "filter_generate__symmetry": {
+            "status": "accepted",
+            "value": {
+              "category": "_symmetry",
+              "action": "filter",
+              "kept_row_ordinals": [
+                0
+              ],
+              "omitted_row_ordinals": [],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [
+                "entry_id"
+              ],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "repeated_category_kept_row_ordinals": {
+            "status": "accepted",
+            "value": {
+              "category": "_atom_site",
+              "action": "filter",
+              "kept_row_ordinals": [
+                0,
+                0
+              ],
+              "omitted_row_ordinals": [],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "repeated_category_omitted_row_ordinals": {
+            "status": "accepted",
+            "value": {
+              "category": "_atom_site",
+              "action": "filter",
+              "kept_row_ordinals": [],
+              "omitted_row_ordinals": [
+                0,
+                0
+              ],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "canonical_family_control": {
+            "status": "accepted",
+            "value": {
+              "category": "_em_example",
+              "action": "omit",
+              "kept_row_ordinals": [],
+              "omitted_row_ordinals": [],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "family_name_with_control": {
+            "status": "accepted",
+            "value": {
+              "category": "_em_example\n",
+              "action": "omit",
+              "kept_row_ordinals": [],
+              "omitted_row_ordinals": [],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "disposition_remove_GLY": {
+            "status": "accepted",
+            "value": [
+              [
+                "a1",
+                true,
+                "selected-asym"
+              ],
+              [
+                "a2",
+                false,
+                "model-filter"
+              ]
+            ]
+          },
+          "disposition_remove_ALA": {
+            "status": "rejected",
+            "type": "MaterializationInputError",
+            "code": "SELECTION_CONFLICT",
+            "detail": "polymer label_asym_id 'A' is explicitly selected but also carries a remove disposition; this is always refused, even for a terminal removal"
+          },
+          "source_context_valid": {
+            "status": "accepted",
+            "value": "mmcif"
+          },
+          "acquisition_format_pdb_inspection_mmcif": {
+            "status": "accepted",
+            "value": "mmcif"
+          },
+          "declared_format_pdb_observed_mmcif": {
+            "status": "accepted",
+            "value": "mmcif"
+          },
+          "legacy_hash_pure_backend": {
+            "hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1",
+            "independent_documentary_hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1"
+          },
+          "MaterializationInputError_invalid_code": {
+            "status": "rejected",
+            "type": "ValueError",
+            "code": null,
+            "detail": "unknown MaterializationInputError code 'NOT_A_CODE'"
+          },
+          "MaterializationConfigurationError_invalid_code": {
+            "status": "rejected",
+            "type": "ValueError",
+            "code": null,
+            "detail": "unknown MaterializationConfigurationError code 'NOT_A_CODE'"
+          }
+        }
+      }
+    },
+    "optimized": {
+      "returncode": 0,
+      "stderr": "",
+      "output": {
+        "python": "3.12.14",
+        "pydantic": "2.13.4",
+        "optional_modules_blocked_without_stub": true,
+        "legacy_source_records": "ProteinInput/policy real DTOs; inspection/resolution documentary namespaces for pure-boundary diagnostics, not native parsing or 020 validation",
+        "probes": {
+          "filter_generate__cell": {
+            "status": "accepted",
+            "value": {
+              "category": "_cell",
+              "action": "filter",
+              "kept_row_ordinals": [
+                0
+              ],
+              "omitted_row_ordinals": [],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [
+                "entry_id"
+              ],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "filter_generate__symmetry": {
+            "status": "accepted",
+            "value": {
+              "category": "_symmetry",
+              "action": "filter",
+              "kept_row_ordinals": [
+                0
+              ],
+              "omitted_row_ordinals": [],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [
+                "entry_id"
+              ],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "repeated_category_kept_row_ordinals": {
+            "status": "accepted",
+            "value": {
+              "category": "_atom_site",
+              "action": "filter",
+              "kept_row_ordinals": [
+                0,
+                0
+              ],
+              "omitted_row_ordinals": [],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "repeated_category_omitted_row_ordinals": {
+            "status": "accepted",
+            "value": {
+              "category": "_atom_site",
+              "action": "filter",
+              "kept_row_ordinals": [],
+              "omitted_row_ordinals": [
+                0,
+                0
+              ],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "canonical_family_control": {
+            "status": "accepted",
+            "value": {
+              "category": "_em_example",
+              "action": "omit",
+              "kept_row_ordinals": [],
+              "omitted_row_ordinals": [],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "family_name_with_control": {
+            "status": "accepted",
+            "value": {
+              "category": "_em_example\n",
+              "action": "omit",
+              "kept_row_ordinals": [],
+              "omitted_row_ordinals": [],
+              "preserved_tags": [],
+              "omitted_tags": [],
+              "generated_tags": [],
+              "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            }
+          },
+          "disposition_remove_GLY": {
+            "status": "accepted",
+            "value": [
+              [
+                "a1",
+                true,
+                "selected-asym"
+              ],
+              [
+                "a2",
+                false,
+                "model-filter"
+              ]
+            ]
+          },
+          "disposition_remove_ALA": {
+            "status": "rejected",
+            "type": "MaterializationInputError",
+            "code": "SELECTION_CONFLICT",
+            "detail": "polymer label_asym_id 'A' is explicitly selected but also carries a remove disposition; this is always refused, even for a terminal removal"
+          },
+          "source_context_valid": {
+            "status": "accepted",
+            "value": "mmcif"
+          },
+          "acquisition_format_pdb_inspection_mmcif": {
+            "status": "accepted",
+            "value": "mmcif"
+          },
+          "declared_format_pdb_observed_mmcif": {
+            "status": "accepted",
+            "value": "mmcif"
+          },
+          "legacy_hash_pure_backend": {
+            "hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1",
+            "independent_documentary_hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1"
+          },
+          "MaterializationInputError_invalid_code": {
+            "status": "rejected",
+            "type": "ValueError",
+            "code": null,
+            "detail": "unknown MaterializationInputError code 'NOT_A_CODE'"
+          },
+          "MaterializationConfigurationError_invalid_code": {
+            "status": "rejected",
+            "type": "ValueError",
+            "code": null,
+            "detail": "unknown MaterializationConfigurationError code 'NOT_A_CODE'"
+          }
+        }
+      }
+    }
+  },
+  "whitespace_checks": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "diff_check_output_empty": true
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "diff_check_output_empty": true
+    }
+  ]
+}

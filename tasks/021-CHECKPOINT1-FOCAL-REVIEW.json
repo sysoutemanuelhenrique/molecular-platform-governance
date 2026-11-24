@@ -1,0 +1,342 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-CHECKPOINT1-FOCAL-REVIEW",
+  "status": "READY_FOR_DISPATCH",
+  "dispatch_status": "NOT_DISPATCHED",
+  "assigned_role": "claude-independent-reviewer-separate-from-both-implementer-sessions",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "preparation_input_commit": "521500c18272a379dc4fa2557754d9fa30d60cb7",
+  "execution_snapshot": "Exact handoff publication commit; require remote coordination HEAD equality before review",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_access": "STRICTLY_READ_ONLY",
+  "code_branch": "feature/increment-021-receptor-materialization",
+  "code_head": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e",
+  "code_direct_parent": "3ba2fa91eaa95cae070d0aea7dba0d1918d9fd33",
+  "original_cp1_head": "711f3070765efe67a5799f939f1a18306ed8afdd",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "expected_code_chain": [
+    "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "711f3070765efe67a5799f939f1a18306ed8afdd",
+    "3ba2fa91eaa95cae070d0aea7dba0d1918d9fd33",
+    "42b4804b5f4ea01ddf320c45473d8b4f980ea67e"
+  ],
+  "code_allowlist": [
+    "src/molecular/receptor_materialization.py",
+    "tests/test_receptor_materialization.py"
+  ],
+  "code_files": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 1669,
+      "size_bytes": 75461,
+      "sha256": "ef38b524adbbe7432e83171d63c675856e3b21777322faec001efab530704fb1",
+      "git_blob_sha": "f6e130c1761a71a0e2f7190c395e61033041ae4d",
+      "repository": "sysoutemanuelhenrique/molecular-platform",
+      "commit": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 1421,
+      "size_bytes": 67030,
+      "sha256": "7064aa8d7e36902f9e85a3ae4e075b118f8b5dd391029bf9652a53cbdd883eb8",
+      "git_blob_sha": "55aa9a46437ae335eb36ab4fcd0c5075a7a78b1c",
+      "repository": "sysoutemanuelhenrique/molecular-platform",
+      "commit": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e"
+    }
+  ],
+  "correction_report_branch": "claude/021-cp1-corrections-20261124",
+  "correction_report_head": "010ee93aedf31bdcdfee513164b84aa40f3fbde4",
+  "correction_report_first_commit": "452f12e8aede26038ba85726f16def94a1acd08c",
+  "correction_report_first_parent": "521500c18272a379dc4fa2557754d9fa30d60cb7",
+  "correction_report": {
+    "path": "increments/021/21-checkpoint1-corrections/CLAUDE_INCREMENT_021_CHECKPOINT1_CORRECTIONS_REPORT.md",
+    "lines": 154,
+    "size_bytes": 14940,
+    "sha256": "5e03d83a35154c52330a6a5f420d17a2e426947ef5d0041cf2fb9ee29fc96875",
+    "git_blob_sha": "1651b4f94144c57f17283b0445bc2057f28b0b6d",
+    "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+    "commit": "010ee93aedf31bdcdfee513164b84aa40f3fbde4"
+  },
+  "correction_evidence_manifest": {
+    "path": "increments/021/21-checkpoint1-corrections/evidence/claude-report-and-evidence-identities.json",
+    "lines": 108,
+    "size_bytes": 4903,
+    "sha256": "70e516ded614cdff5feccf9639d2a7c4b9e363f4b7b08c0275f0e501610e263c",
+    "git_blob_sha": "ef5b8ae4b0ae81dc934a91805702660cdf2c5651",
+    "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+    "commit": "010ee93aedf31bdcdfee513164b84aa40f3fbde4"
+  },
+  "correction_report_prefix": "increments/021/21-checkpoint1-corrections/",
+  "previous_independent_review_branch": "claude/021-cp1-adversarial-review-20261124",
+  "previous_independent_review_commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801",
+  "previous_independent_review": {
+    "path": "increments/021/19-checkpoint1-review/CLAUDE_INCREMENT_021_CHECKPOINT1_ADVERSARIAL_REVIEW.md",
+    "lines": 176,
+    "size_bytes": 15726,
+    "sha256": "2af4f1880e6c1e086204ae12b298419eaf61809de8bf5e2a7f29f30ad7d4fdc4",
+    "git_blob_sha": "22e87007af713f8544cb236ce3782ffb737c17b9",
+    "repository": "sysoutemanuelhenrique/molecular-platform-governance",
+    "commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801"
+  },
+  "architect_reconciliation": {
+    "path": "increments/021/20-checkpoint1-reconciliation/CODEX_INCREMENT_021_CHECKPOINT1_RECONCILIATION.md",
+    "lines": 90,
+    "size_bytes": 16130,
+    "sha256": "8b1c19f81f093b19baebcc8b54c7032010089419635f5cac3df0fabfc7d80fac",
+    "git_blob_sha": "a55ad2b5fd0d2fe72e12e0a236520ef0a52eda1f",
+    "commit": "521500c18272a379dc4fa2557754d9fa30d60cb7"
+  },
+  "correction_task_snapshot": "521500c18272a379dc4fa2557754d9fa30d60cb7",
+  "correction_task_path": "tasks/021-CHECKPOINT1-CORRECTIONS.json",
+  "architect_receipt": {
+    "path": "increments/021/22-checkpoint1-corrections-receipt/CODEX_INCREMENT_021_CHECKPOINT1_CORRECTIONS_RECEIPT.md",
+    "lines": 73,
+    "size_bytes": 10422,
+    "sha256": "09796cbe2ab46f12e5fc8fd1e2f4a7420a32c4fed025cb8be34394baeba2febd",
+    "git_blob_sha": "e71c5ca2b85bf29a708a905fea1dc93051351dbc"
+  },
+  "architect_receipt_manifest": "increments/021/22-checkpoint1-corrections-receipt/FILE_IDENTITIES.json",
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "normative_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "findings_to_dispose_individually": [
+    {
+      "id": "ARCH-01",
+      "severity": "MAJOR",
+      "acceptance_criteria": [
+        "Processo limpo bloqueia Gemmi e RDKit, sem stub, e importa domínio/instancia DTOs/calcula hash/plano puro",
+        "Compatibilidade com identidade 020 sobre payload de sete campos; código 020 inalterado"
+      ],
+      "correction_requirement": "Tipos antigos sob TYPE_CHECKING; nenhuma importação nativa transitiva no caminho puro. Recalcular o payload antigo de sete campos usando backend puro compatível, com golden vectors. Import tardio do módulo inspection dentro de build_source_context, sozinho, não basta para manter a função pura."
+    },
+    {
+      "id": "ARCH-02",
+      "severity": "MAJOR",
+      "acceptance_criteria": [
+        "remove fora de M com S e keep fora de M sem S não têm efeito",
+        "mesmos pares presentes em M continuam recusados"
+      ],
+      "correction_requirement": "Construir chaves D aplicáveis a M antes de agregá-las por asym para conflito polimérico; preservar recusa das chaves presentes e máscara model-filter."
+    },
+    {
+      "id": "ARCH-03",
+      "severity": "MINOR",
+      "acceptance_criteria": [
+        "_cell e _symmetry aceitam entry_id gerado",
+        "invariantes omit/generate/guard e sobreposição continuam recusando"
+      ],
+      "correction_requirement": "Permitir combinação filter+generate prevista, com tags disjuntas; não implementar serializer CP2."
+    },
+    {
+      "id": "MAJOR-A",
+      "severity": "MAJOR",
+      "acceptance_criteria": [
+        "um controle negativo por vínculo/parser/schema/profile/formato/checksum",
+        "campos ausentes não podem ser inferidos dos próprios registros a conferir",
+        "cause e ordem engine→fontes→seleção preservadas"
+      ],
+      "correction_requirement": "Receber ProteinInput e ReceptorSelectionPolicy tipados já carregados, além de inspection/resolution, ou todos os escalares faltantes obrigatórios. Conferir IDs exatos, hashes acquisition/raw_checksum_observed/raw_checksum, formatos e ambos parsers; não reclassificar proveniência. Recalcular inspection_id compatível. Não ler YAML/RAW ou repetir inspeção."
+    },
+    {
+      "id": "MAJOR-B",
+      "severity": "MAJOR",
+      "acceptance_criteria": [
+        "ID inválido recusado no DTO",
+        "mesmo ID com U/fontes/chaves/contagens adulteradas recusa",
+        "repetição legítima retorna record/timestamp original"
+      ],
+      "correction_requirement": "Autovalidar policy_id pelo payload exato, validar o existente e comparar todos os campos semânticos/derivados com candidato, exceto timestamp. Retornar existente íntegro/equivalente com timestamp original; divergência é erro tipado, sem sobrescrita."
+    },
+    {
+      "id": "MINOR-1",
+      "severity": "MINOR",
+      "acceptance_criteria": [
+        "quatro classes negativas e controles válidos multi-modelo",
+        "decisões mantêm ordinais fonte; sem renumeração"
+      ],
+      "correction_requirement": "Guarda do planner sobre vetor recebido: unicidade global atom_id/ordinal, cobertura uma vez, vínculo asym/entity e resolução de cada asym de S em M; não inferir/remapear/reparar."
+    },
+    {
+      "id": "MINOR-2",
+      "severity": "MINOR",
+      "acceptance_criteria": [
+        "água e ligante NFD/NFC colidem e recusam",
+        "mesmo token literal em asyms distintos conserva multiple/retained/excluded corretos"
+      ],
+      "correction_requirement": "Injetividade sobre todos os auth tokens envolvidos na correspondência em M, incluindo água/ligante e polímeros. Tokens idênticos em múltiplos asyms continuam permitidos; não comparar namespaces distintos nem normalizar hashes."
+    },
+    {
+      "id": "MINOR-3",
+      "severity": "MINOR",
+      "acceptance_criteria": [
+        "omissão vazia válida com hash de fonte correto",
+        "filter+generate válido com fonte; geração sem fonte pode null",
+        "nomes inválidos/fora do catálogo recusam, famílias aprovadas continuam aceitas como omissão",
+        "linhas/tags conflitantes e fonte ausente incoerente recusam"
+      ],
+      "correction_requirement": "Invariantes locais: omit/guard não retêm linhas/tags; ordinais reais não negativos, únicos e disjuntos; categoria canônica do catálogo ou famílias explicitamente omitidas; source_rows_key exigido quando há fonte, inclusive fonte vazia. Sem inventar linha de categoria opcional ausente nem campo novo. Cobertura total/consistência com DOM e cálculo físico do hash ficam CP2."
+    },
+    {
+      "id": "MINOR-4",
+      "severity": "MINOR",
+      "acceptance_criteria": [
+        "catálogo divergente rejeitado em PlanBinding e PolicyRecord",
+        "sensibilidade dos envelopes a profile/algorithm/catalogue/engine/decisões",
+        "application_version continua isolada de plan/policy"
+      ],
+      "correction_requirement": "Fixar catálogo aprovado em DTOs produzidos/carregados no perfil vigente. Provar vinculação dos campos em payloads de identidade com vetores de teste claramente documentais; não abrir perfil/engine novos nem apresentar engine inválido como execução válida."
+    },
+    {
+      "id": "MINOR-5",
+      "severity": "MINOR",
+      "acceptance_criteria": [
+        "pdb coerente em todas as fontes falha como configuração, sem UNSUPPORTED_PLATFORM"
+      ],
+      "correction_requirement": "Usar código de configuração existente apropriado (INVALID_RECORD; INCOMPLETE_INSPECTION se a causa for inspeção incompleta), mantendo a ordem de validação e sem criar código novo."
+    },
+    {
+      "id": "MINOR-6",
+      "severity": "MINOR",
+      "acceptance_criteria": [
+        "subprocessos normal e -O rejeitam código desconhecido nos dois tipos",
+        "códigos válidos conservam code/phase"
+      ],
+      "correction_requirement": "Substituir assert de validação por exceção explícita também sob -O; não capturar BaseException."
+    },
+    {
+      "id": "MINOR-7",
+      "severity": "MINOR",
+      "acceptance_criteria": [
+        "JSON UTF-8/Unicode sem LF, ordem de listas, kind/version",
+        "occurrence, atom_ids, contexto/X/O e decisões/policy/request representativos",
+        "golden do inspection_id antigo sem mudança de algoritmo"
+      ],
+      "correction_requirement": "Adicionar bytes e SHA-256 literais independentes para canonicalização e envelopes. Esperado não chama função de produção para se produzir; sem inventar hash de RAW real."
+    }
+  ],
+  "notes_to_preserve": [
+    {
+      "id": "NOTE-1",
+      "disposition": "Não persistir/reutilizar como plano final a estrutura parcial CP1; conexões/catálogo físico e materialização reais só CP2+."
+    },
+    {
+      "id": "NOTE-2",
+      "disposition": "Preservar estritez, recusa de surrogate, ordem e chaining, sem exceções amplas."
+    },
+    {
+      "id": "NOTE-3",
+      "disposition": "Não modificar CLI/020 no CP1. Reexaminar import/help sem opcionais no gate próprio CP4."
+    }
+  ],
+  "required_preflight": [
+    "Read AGENTS/workflow/STATUS/task; require separate reviewer session, not self-review by either implementer",
+    "Confirm remote coordination at dispatched commit, feature HEAD42b4804, code main08b797e, governance maina47183d, correction report010ee93 and prior review2e36222; stop on drift",
+    "Verify identity of frozen spec/four annexes, original review/reconciliation/correction task, actual correction source/tests/report/manifest/evidence; read full previous review and all relevant evidence, not transcript summaries",
+    "Confirm two additive correction commits and complete two-file allowlist cumulatively; correction governance branch adds only eleven own files and has correct two-commit chain",
+    "Use authoritative blob bytes for the non-UTF8 full-suite log. GitHub text/base64 wrapper may recode it. See LOG_ENCODING_RECONSTRUCTION.json: exact bytes are verified by both Git SHA and SHA-256, not by presumed UTF8 text equality"
+  ],
+  "required_scope": [
+    "Focus on 711f307..42b4804 and relevant current integration, not a new architecture review; classify each of twelve functional findings and three NOTES separately",
+    "ARCH-01: fresh process, no stub, Gemmi/RDKit blocked; test runtime import and actual pure helper/DTO/builder/planner. TYPE_CHECKING only; exact legacy seven-field projection/backend with independent vectors; no native import in builder",
+    "ARCH-02: two directions of absent-in-M dispositions and present-in-M conflict controls, model filtering, no retention/removal changes outside contracted table",
+    "MAJOR-A: all IDs/checksums/parsers/schema/profile/formats across four loaded records, including acquisition and declared-versus-observed formats under §5; aliases need primary-code support. No source replacement/inspect/resolve fallback",
+    "MAJOR-B: self-consistent policy_id, integrity/equivalence of existing record and unchanged timestamp; do not confuse constructing validated DTO with file-byte integrity CP3 or unsupported bypass objects",
+    "ARCH-03/MINOR-3: real catalogue filter+generated entry_id, omission guards, nonnegative unique disjoint ordinals, canonical categories and allowed families, source_rows_key semantics; no DOM adapter demanded",
+    "MINOR-1/2: global source ordinal/ID uniqueness, asym/entity linkage and selected-asym-in-M, NFC collision water/ligand vs polymer without treating identical tokens as collision or inferring biological ownership",
+    "MINOR-4/7: fixed current Literals, actual plan/policy/request field binding and independent golden envelopes. Examine dedicated legacy test that currently calls only old helper and compares to old-helper-derived constant; distinguish indirect context coverage from dedicated proof",
+    "MINOR-5/6: correct configuration code for unsupported format; closed error sets enforced in normal and -O processes, interruption/chaining/strictness preserved",
+    "Check architect receipt candidates independently: duplicated CategoryDecision ordinals accepted, malformed omission-family name accepted, acquisition/raw_format_declared contradictions accepted, hash regression proof completeness. Do not accept architect diagnosis on authority",
+    "Reconcile before1524 after1556 +32 actual functions/items, all43 normative IDs preserved, no exclusions/weakening. Classify 40/3/0 claim independently, respecting CP1-only parts of T018/T024/T038",
+    "Treat Windows full-suite1551/5 as supplied unless reexecuted. Current skips named, historical same-five claim not independently established by old -q log",
+    "Record presentational corrections without editing implementer report:12 functional changes not11;15 JSON records not13; baseline08b797e not direct parent of latest42b4804",
+    "No CP2-native parser/materialization/storage/registry/CLI tests required in CP1; preserve all approved scientific scope decisions and unchanged020/017/018/019 modules"
+  ],
+  "collection_evidence": {
+    "before": 1524,
+    "after": 1556,
+    "new": 32,
+    "removed": 0,
+    "test_functions_before": 43,
+    "test_functions_after": 75,
+    "parametrization_decorators": 0
+  },
+  "supplied_test_results": {
+    "targeted_passed": 75,
+    "full_passed": 1551,
+    "full_skipped": 5,
+    "total_collected": 1556,
+    "not_architect_pytest": true
+  },
+  "tests_policy": {
+    "execution_optional": true,
+    "no_global_install": true,
+    "source_writes_forbidden": true,
+    "external_scratch_only": true,
+    "no_bytecode_or_pytest_cache_in_source": true,
+    "report_actual_environment": true,
+    "no_native_sentinel_as_import_success_proof": true,
+    "in_memory_documentary_controls_must_be_labelled": true,
+    "pure_cp1_windows_production_gate_not_required": true
+  },
+  "allowed_governance_output_paths": [
+    "increments/021/23-checkpoint1-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_FOCAL_REVIEW.md",
+    "increments/021/23-checkpoint1-focal-review/evidence/claude-*"
+  ],
+  "output_branch_policy": "Own claude/ reviewer branch from exact handoff publication; no central coordination edits",
+  "governance_commit_push_authorized_when_manually_dispatched": true,
+  "required_output": [
+    "Pinned snapshots and input identities",
+    "Individual closure/partial/not-closed for all12 changes; 3 NOTES disposition and actual residual severity",
+    "Actual code/test evidence; distinguish nominal75 tests from sufficiency;43 scenario reconciliation",
+    "Own commands/results/limits versus supplied logs; no invented Windows or native success",
+    "Scope/regression and CP1 readiness verdict; no CP2 authorization",
+    "Remote branch/full commit/path/lines/bytes/SHA-256 verified after publication"
+  ],
+  "permitted_verdicts": [
+    "APPROVE",
+    "APPROVE WITH NON-BLOCKING NOTES",
+    "REQUEST CHANGES"
+  ],
+  "restrictions": [
+    "No code/test corrections or contract changes; do not alter source even to make probes work",
+    "Do not edit historical reports, STATUS or central tasks",
+    "No main/PR/merge/tag/release/force/formal GitHub approval/comment/automation",
+    "020-A STAND-BY; protect user untracked; no CP2/3/4 implementation or new features"
+  ],
+  "checkpoint1_approved": false,
+  "cp2_implementation_authorized": false,
+  "final_specification_frozen": true,
+  "automated_dispatch": false
+}

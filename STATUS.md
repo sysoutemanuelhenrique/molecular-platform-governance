@@ -1,35 +1,33 @@
-# Coordenação — Incremento 021: CP1 requer correções
+# Coordenação — Incremento 021: correções CP1 recebidas, revisão focal pendente
 
-Atualizado em 24/11/2026 por Codex arquiteto. Parecer independente recebido e reconciliado. CP1 não aprovado; nenhum avanço para CP2.
+Atualizado em 24/11/2026 por Codex arquiteto. Nenhum achado encerrado independentemente nesta recepção; CP1 não aprovado.
 
 | Campo | Estado |
 |---|---|
 | Branch de coordenação | docs/020-a-candidate1-review-20261020 |
-| Snapshot de entrada desta reconciliação | d577b0dfddd3c71f9287b4c9cdcc783ea0865654 |
-| Código / branch | feature/increment-021-receptor-materialization @ 711f3070765efe67a5799f939f1a18306ed8afdd |
-| Baseline / main código | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851, inalterada |
+| Snapshot de entrada | 521500c18272a379dc4fa2557754d9fa30d60cb7 |
+| Código | feature/increment-021-receptor-materialization @ 42b4804b5f4ea01ddf320c45473d8b4f980ea67e |
+| Cadeia de correção | 711f307 → 3ba2fa9 → 42b4804, aditiva |
+| Main código / baseline | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851, inalterada |
 | Main governance | a47183dfec8213c765ed43ae482c8c227760a3d5, inalterada |
-| Relatório original | 51752b4ce7603d1f14677b0b030edc176b9df13f, preservado |
-| Parecer independente | 2e36222b087134f9ba725bc2ad96c3ba39fb8801 na branch claude/021-cp1-adversarial-review-20261124 |
-| Veredito recebido | REQUEST CHANGES |
-| Contagem cumulativa | 0 BLOCKER / 4 MAJOR / 8 MINOR / 3 NOTE; ARCH e achados independentes sem dupla contagem |
-| Reconciliação | increments/021/20-checkpoint1-reconciliation/CODEX_INCREMENT_021_CHECKPOINT1_RECONCILIATION.md |
-| Tarefa ativa | tasks/021-CHECKPOINT1-CORRECTIONS.json — READY_FOR_MANUAL_HANDOFF_WITHIN_AUTHORIZED_CP1 |
-| Autorização aplicável | CP1 já autorizado pelo responsável; mesma branch/dois arquivos, sem nova aprovação alegada |
-| Correções | Domínio sem nativo; projeção D em M; cruzamentos de fonte; integridade de policy; invariantes DTO/hash/testes |
-| Ressalva arquitetural | Import tardio de inspection no builder sozinho não satisfaz caminho puro; preservar hash 020 via backend puro compatível |
-| Provas próprias | Import limpo falha; 23 sondas condicionais e golden do revisor reproduzidos; códigos inválidos aceitos sob -O |
-| Limitações próprias | Sem pytest/Gemmi reais/Windows/concorrência; sentinela só em lógica pura, não na prova de import |
-| Próximo ator | Claude implementador em sessão separada do revisor |
-| Próximo gate | Receber correção/relatório reais e preparar revisão focal independente |
+| Relatório recebido | claude/021-cp1-corrections-20261124 @ 010ee93aedf31bdcdfee513164b84aa40f3fbde4 |
+| Escopo observado | Dois arquivos de código permitidos; onze arquivos próprios do relatório |
+| Recibo | increments/021/22-checkpoint1-corrections-receipt/CODEX_INCREMENT_021_CHECKPOINT1_CORRECTIONS_RECEIPT.md |
+| Identidades | Manifesto, blobs de código e normativos conferem; log CP1252 recuperado e verificado por Git SHA/SHA-256 |
+| Resultados fornecidos | 75 passed direcionados; 1551 passed/5 skipped; não pytest do arquiteto |
+| Reconciliação própria | 1524→1556, +32 funções/itens, 0 remoções, 0 parametrizações, 43 cenários preservados |
+| Provas próprias | Subprocessos sem opcionais/stubs: import/DTO/hash/planner/contexto; normal/-O; inspeção do delta e identidades |
+| Resíduos a examinar | MINOR-3 ordinais/nomes; MAJOR-A formatos; MINOR-7 teste legado e cobertura de hashes |
+| Tarefa ativa | tasks/021-CHECKPOINT1-FOCAL-REVIEW.json — READY_FOR_DISPATCH, NOT_DISPATCHED |
+| Próximo ator | Claude revisor independente, separado de ambos implementadores |
 | CP1 aprovado / CP2 autorizado | Não / Não |
-| Especificação / 020-A | Congelada preservada / STAND-BY |
+| Contrato / 020-A | Congelado preservado / STAND-BY |
 | Relay automático | Não configurado, nenhum agente acionado |
 
-O parecer e seus arquivos permanecem na branch própria, lidos por commit; nenhuma branch de relatório/revisão foi mesclada. As correções cabem nos dois arquivos já autorizados; nenhuma modificação de código foi feita pelo arquiteto. Nenhum achado está fechado independentemente só porque aceito nesta resposta. Cinco skips do implementador precisam ser identificados no próximo relatório; resultados históricos não viram execução nova.
+O relatório do implementador e os anteriores permanecem em suas branches/snapshots; não foram mesclados nem editados. A classificação 40 provados/3 parciais/0 lacunas é proposta do implementador, pendente de parecer. As contagens cumulativas históricas de 4 MAJOR/8 MINOR/3 NOTE não se tornam zero por esta recepção. Não houve pytest/Gemmi real/Windows/concorrência executado pelo arquiteto nem alteração do repositório de código.
 
-ARCHITECT RECONCILIATION COMPLETE: YES
-INDEPENDENT CHECKPOINT1 REVIEW COMPLETE: YES
+CORRECTION DELIVERY IDENTITIES VERIFIED: YES
+READY FOR INDEPENDENT FOCAL REVIEW: YES
 CHECKPOINT1 APPROVED: NO
 CHECKPOINT2 IMPLEMENTATION AUTHORIZED: NO
 FINAL SPECIFICATION FROZEN: YES

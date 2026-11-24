@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-24",
+  "timezone": "America/Sao_Paulo",
+  "coordination_input": "521500c18272a379dc4fa2557754d9fa30d60cb7",
+  "excludes_self": true,
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 35,
+      "size_bytes": 2672,
+      "sha256": "7e5698456fe4b2dc9e3b6619745e8a36e5f342c28d36a62c2829d4d4cd15154a",
+      "git_blob_sha": "9bb13997689f0fa369f2c167c679c23c6657bd94"
+    },
+    {
+      "path": "increments/021/22-checkpoint1-corrections-receipt/CODEX_INCREMENT_021_CHECKPOINT1_CORRECTIONS_RECEIPT.md",
+      "lines": 73,
+      "size_bytes": 10422,
+      "sha256": "09796cbe2ab46f12e5fc8fd1e2f4a7420a32c4fed025cb8be34394baeba2febd",
+      "git_blob_sha": "e71c5ca2b85bf29a708a905fea1dc93051351dbc"
+    },
+    {
+      "path": "increments/021/22-checkpoint1-corrections-receipt/evidence/INPUT_IDENTITIES.json",
+      "lines": 178,
+      "size_bytes": 8501,
+      "sha256": "172cf1333f1ad04ac4372aa1418cb64931a08caa6b0ee59e3fef022a5ca929b0",
+      "git_blob_sha": "44a6ec1422f67601277aa58974429f572b01f215"
+    },
+    {
+      "path": "increments/021/22-checkpoint1-corrections-receipt/evidence/LOG_ENCODING_RECONSTRUCTION.json",
+      "lines": 10,
+      "size_bytes": 571,
+      "sha256": "4906717f1c56a940fe91bb6213c86cdc0bf69226d09d9616ef9aae6283f24308",
+      "git_blob_sha": "8a30d62a242d1368bee25931d3f02c8441a39749"
+    },
+    {
+      "path": "increments/021/22-checkpoint1-corrections-receipt/evidence/PURE_DOMAIN_PROBE.output.json",
+      "lines": 310,
+      "size_bytes": 10300,
+      "sha256": "c01200434ac00e5fd2a3954e97bc00ba5ce64f7324c4285cd669ebc8b70be578",
+      "git_blob_sha": "8896327a045a6e8e680f5dc2933e839463be3b35"
+    },
+    {
+      "path": "increments/021/22-checkpoint1-corrections-receipt/evidence/PURE_DOMAIN_PROBE.py",
+      "lines": 52,
+      "size_bytes": 5157,
+      "sha256": "b98c6547b7987dbd27a4eedeef835e88316e2a955d68c67e6713cfe758a3d183",
+      "git_blob_sha": "71545f9c2bd74613c8f90ac31eadd4092bd45897"
+    },
+    {
+      "path": "increments/021/22-checkpoint1-corrections-receipt/evidence/RECEIPT_VERIFICATION.json",
+      "lines": 422,
+      "size_bytes": 15262,
+      "sha256": "08f3ba315e06b7db49198ac474213908704e9a4539641e4f14b60f023db19339",
+      "git_blob_sha": "70c2b59784c5d078c29e02571720e51bbd7b4a86"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-CORRECTIONS.json",
+      "lines": 399,
+      "size_bytes": 20416,
+      "sha256": "b82bf2980d93488aae46eba06acdc1732c1d86e19cef6c10a74d9b30b88b262d",
+      "git_blob_sha": "462759d85406bf32d80767fc89d4477c213183c2"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-FOCAL-REVIEW.json",
+      "lines": 342,
+      "size_bytes": 19762,
+      "sha256": "6ae13dce0f6bc29247fa4d9f5402b94247d94ca4aa1083b34d892b84af864c67",
+      "git_blob_sha": "e9e852dd161e73c420bbd0db9ea54fe1c03e1069"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-IMPLEMENTATION.json",
+      "lines": 215,
+      "size_bytes": 10260,
+      "sha256": "40e33796ab8ee2c979c0b7c51fd6433faab35f29b564bce786305f9b3d88d04e",
+      "git_blob_sha": "c1496faba2cc06593bacaf97101bad0b233396d6"
+    }
+  ]
+}

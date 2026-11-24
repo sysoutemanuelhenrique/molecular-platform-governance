@@ -1,0 +1,310 @@
+{
+  "code_commit": "42b4804b5f4ea01ddf320c45473d8b4f980ea67e",
+  "scope": "architect triage, not independent closure; no native stubs",
+  "normal": {
+    "returncode": 0,
+    "stderr": "",
+    "output": {
+      "python": "3.12.14",
+      "pydantic": "2.13.4",
+      "optional_modules_blocked_without_stub": true,
+      "legacy_source_records": "ProteinInput/policy real DTOs; inspection/resolution documentary namespaces for pure-boundary diagnostics, not native parsing or 020 validation",
+      "probes": {
+        "filter_generate__cell": {
+          "status": "accepted",
+          "value": {
+            "category": "_cell",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0
+            ],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [
+              "entry_id"
+            ],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "filter_generate__symmetry": {
+          "status": "accepted",
+          "value": {
+            "category": "_symmetry",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0
+            ],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [
+              "entry_id"
+            ],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "repeated_category_kept_row_ordinals": {
+          "status": "accepted",
+          "value": {
+            "category": "_atom_site",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0,
+              0
+            ],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "repeated_category_omitted_row_ordinals": {
+          "status": "accepted",
+          "value": {
+            "category": "_atom_site",
+            "action": "filter",
+            "kept_row_ordinals": [],
+            "omitted_row_ordinals": [
+              0,
+              0
+            ],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "canonical_family_control": {
+          "status": "accepted",
+          "value": {
+            "category": "_em_example",
+            "action": "omit",
+            "kept_row_ordinals": [],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "family_name_with_control": {
+          "status": "accepted",
+          "value": {
+            "category": "_em_example\n",
+            "action": "omit",
+            "kept_row_ordinals": [],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "disposition_remove_GLY": {
+          "status": "accepted",
+          "value": [
+            [
+              "a1",
+              true,
+              "selected-asym"
+            ],
+            [
+              "a2",
+              false,
+              "model-filter"
+            ]
+          ]
+        },
+        "disposition_remove_ALA": {
+          "status": "rejected",
+          "type": "MaterializationInputError",
+          "code": "SELECTION_CONFLICT",
+          "detail": "polymer label_asym_id 'A' is explicitly selected but also carries a remove disposition; this is always refused, even for a terminal removal"
+        },
+        "source_context_valid": {
+          "status": "accepted",
+          "value": "mmcif"
+        },
+        "acquisition_format_pdb_inspection_mmcif": {
+          "status": "accepted",
+          "value": "mmcif"
+        },
+        "declared_format_pdb_observed_mmcif": {
+          "status": "accepted",
+          "value": "mmcif"
+        },
+        "legacy_hash_pure_backend": {
+          "hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1",
+          "independent_documentary_hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1"
+        },
+        "MaterializationInputError_invalid_code": {
+          "status": "rejected",
+          "type": "ValueError",
+          "code": null,
+          "detail": "unknown MaterializationInputError code 'NOT_A_CODE'"
+        },
+        "MaterializationConfigurationError_invalid_code": {
+          "status": "rejected",
+          "type": "ValueError",
+          "code": null,
+          "detail": "unknown MaterializationConfigurationError code 'NOT_A_CODE'"
+        }
+      }
+    }
+  },
+  "optimized": {
+    "returncode": 0,
+    "stderr": "",
+    "output": {
+      "python": "3.12.14",
+      "pydantic": "2.13.4",
+      "optional_modules_blocked_without_stub": true,
+      "legacy_source_records": "ProteinInput/policy real DTOs; inspection/resolution documentary namespaces for pure-boundary diagnostics, not native parsing or 020 validation",
+      "probes": {
+        "filter_generate__cell": {
+          "status": "accepted",
+          "value": {
+            "category": "_cell",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0
+            ],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [
+              "entry_id"
+            ],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "filter_generate__symmetry": {
+          "status": "accepted",
+          "value": {
+            "category": "_symmetry",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0
+            ],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [
+              "entry_id"
+            ],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "repeated_category_kept_row_ordinals": {
+          "status": "accepted",
+          "value": {
+            "category": "_atom_site",
+            "action": "filter",
+            "kept_row_ordinals": [
+              0,
+              0
+            ],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "repeated_category_omitted_row_ordinals": {
+          "status": "accepted",
+          "value": {
+            "category": "_atom_site",
+            "action": "filter",
+            "kept_row_ordinals": [],
+            "omitted_row_ordinals": [
+              0,
+              0
+            ],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "canonical_family_control": {
+          "status": "accepted",
+          "value": {
+            "category": "_em_example",
+            "action": "omit",
+            "kept_row_ordinals": [],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "family_name_with_control": {
+          "status": "accepted",
+          "value": {
+            "category": "_em_example\n",
+            "action": "omit",
+            "kept_row_ordinals": [],
+            "omitted_row_ordinals": [],
+            "preserved_tags": [],
+            "omitted_tags": [],
+            "generated_tags": [],
+            "source_rows_key": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "disposition_remove_GLY": {
+          "status": "accepted",
+          "value": [
+            [
+              "a1",
+              true,
+              "selected-asym"
+            ],
+            [
+              "a2",
+              false,
+              "model-filter"
+            ]
+          ]
+        },
+        "disposition_remove_ALA": {
+          "status": "rejected",
+          "type": "MaterializationInputError",
+          "code": "SELECTION_CONFLICT",
+          "detail": "polymer label_asym_id 'A' is explicitly selected but also carries a remove disposition; this is always refused, even for a terminal removal"
+        },
+        "source_context_valid": {
+          "status": "accepted",
+          "value": "mmcif"
+        },
+        "acquisition_format_pdb_inspection_mmcif": {
+          "status": "accepted",
+          "value": "mmcif"
+        },
+        "declared_format_pdb_observed_mmcif": {
+          "status": "accepted",
+          "value": "mmcif"
+        },
+        "legacy_hash_pure_backend": {
+          "hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1",
+          "independent_documentary_hash": "8862eb0ae5f75aae9ff59c2e0ce7cfc8785017a4496f80d8b53c3ff79baee3a1"
+        },
+        "MaterializationInputError_invalid_code": {
+          "status": "rejected",
+          "type": "ValueError",
+          "code": null,
+          "detail": "unknown MaterializationInputError code 'NOT_A_CODE'"
+        },
+        "MaterializationConfigurationError_invalid_code": {
+          "status": "rejected",
+          "type": "ValueError",
+          "code": null,
+          "detail": "unknown MaterializationConfigurationError code 'NOT_A_CODE'"
+        }
+      }
+    }
+  }
+}

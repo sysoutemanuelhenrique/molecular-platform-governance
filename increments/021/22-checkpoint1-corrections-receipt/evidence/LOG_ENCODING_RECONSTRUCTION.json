@@ -1,0 +1,10 @@
+{
+  "transport_view_utf8_bytes": 3006,
+  "transport_view_sha256": "d241537b7df9a896de0a0f5cc153f32bff9ee3e671e2fa7711e1985e272c2e63",
+  "exact_blob_reconstructed_by": "UTF8 transport text encoded CP1252, accepted only after matching remote Git SHA and provided SHA-256",
+  "exact_blob_bytes": 3003,
+  "exact_blob_sha256": "15c40b9336b5e007557c9ba28fe6c52b7b5ae99663fb67455a854ba9f1d2b611",
+  "exact_blob_git_sha": "67f5d86a1fb48d0d44e6afd95fdb2af5a06c61aa",
+  "direct_fetch_blob_error": "UnicodeDecodeError at offset 2443, byte 0xe3",
+  "not_a_manifest_mismatch": true
+}
