@@ -1,0 +1,26 @@
+{
+  "preparation_input_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "note": "Preparation only; no implementation authorization. Existing frozen files remain byte-identical in their pinned snapshot.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 42,
+      "size_bytes": 3674,
+      "sha256": "6d31ac27699eedae469e1b5f927e133eee81d3e06c8303486aedc3fbb5af23a1"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-IMPLEMENTATION.json",
+      "lines": 160,
+      "size_bytes": 6715,
+      "sha256": "65ab09435da8d89b2e3229e60c962a68f4b0cdc68a883e629feb3e3736af3531"
+    },
+    {
+      "path": "increments/021/16-checkpoint1-preparation/CHECKPOINT1_IMPLEMENTATION_BRIEF.md",
+      "lines": 64,
+      "size_bytes": 8731,
+      "sha256": "c1c33e8eb206302399658f6bd5011655ee68a9f628aa49aff6d1108895c8bd64"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-CHECKPOINT1-IMPLEMENTATION",
+  "status": "PREPARED_AWAITING_OWNER_IMPLEMENTATION_AUTHORIZATION",
+  "assigned_role": "claude-implementer-separate-from-independent-reviewer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "preparation_input_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "execution_snapshot": "Immutable future authorization publication SHA supplied in handoff; this preparation is not authorization. Stop if expected remote coordination ref differs.",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "proposed_code_branch": "feature/increment-021-receptor-materialization",
+  "code_branch_created": false,
+  "allowlist": [
+    "src/molecular/receptor_materialization.py",
+    "tests/test_receptor_materialization.py"
+  ],
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "normative_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "frozen_package_path": "increments/021/15-final-specification/evidence/FROZEN_PACKAGE.json",
+  "brief": {
+    "path": "increments/021/16-checkpoint1-preparation/CHECKPOINT1_IMPLEMENTATION_BRIEF.md",
+    "lines": 64,
+    "size_bytes": 8731,
+    "sha256": "c1c33e8eb206302399658f6bd5011655ee68a9f628aa49aff6d1108895c8bd64"
+  },
+  "normative_scenarios": [
+    "T021-001",
+    "T021-002",
+    "T021-003",
+    "T021-004",
+    "T021-005",
+    "T021-006",
+    "T021-007",
+    "T021-008",
+    "T021-009",
+    "T021-010",
+    "T021-011",
+    "T021-012",
+    "T021-013",
+    "T021-014",
+    "T021-015",
+    "T021-016",
+    "T021-017",
+    "T021-018",
+    "T021-019",
+    "T021-020",
+    "T021-021",
+    "T021-022",
+    "T021-023",
+    "T021-024",
+    "T021-025",
+    "T021-026",
+    "T021-027",
+    "T021-028",
+    "T021-029",
+    "T021-030",
+    "T021-031",
+    "T021-032",
+    "T021-033",
+    "T021-034",
+    "T021-035",
+    "T021-036",
+    "T021-037",
+    "T021-038",
+    "T021-039",
+    "T021-040",
+    "T021-159",
+    "T021-160",
+    "T021-161"
+  ],
+  "normative_scenario_count": 43,
+  "checkpoint_scope": "Domain/DTOs/pure planner/canonicalization/S-D-U-X-O/acknowledgements only, as frozen §19; all native parsing, physical I/O, storage, registry, service and CLI stay in CP2-4",
+  "required_preflight": [
+    "Read AGENTS/workflow/STATUS, this task, brief, complete frozen spec and annexes; verify all identities",
+    "Require direct owner authorization covering this task and code commit/push before acting",
+    "Confirm remote code main at baseline, local origin/HEAD/branch/index/tracked changes and proposed branch absence; stop on discrepancies",
+    "Preserve user untracked and 020-A; no reset/clean/stash/amend/rebase/force/global install",
+    "Collect baseline pytest items and record exact environment before changes"
+  ],
+  "existing_code_references": {
+    "inspection_id_helper": "src/molecular/receptor_inspection.py::compute_inspection_id",
+    "inspection_models": "src/molecular/receptor_inspection.py",
+    "selection_models": "src/molecular/receptor_selection.py",
+    "resolved_models": "src/molecular/receptor_resolution.py",
+    "all_at_commit": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851"
+  },
+  "verification_commands": [
+    "python -m pytest --collect-only -q (baseline before edits)",
+    "python -m pytest tests/test_receptor_materialization.py -q",
+    "python -m pytest -q",
+    "git diff --check",
+    "git diff --name-status"
+  ],
+  "required_evidence": [
+    "43 scenario-to-production-test/assertion mapping with exact limits",
+    "Actual commands/environment/results; no inherited test counts",
+    "Functions versus collected items/parametrizations/skips reconciled to baseline",
+    "No direct Gemmi/RDKit/import I/O in domain; existing modules unchanged",
+    "Full diff restricted to two allowed new files",
+    "Code branch/full SHA/parent/base and verified remote push, if authorized/successful",
+    "Governance report/full remote commit/path/lines/bytes/full SHA-256"
+  ],
+  "allowed_governance_output_paths": [
+    "increments/021/17-checkpoint1-implementation/CLAUDE_INCREMENT_021_CHECKPOINT1_IMPLEMENTATION_REPORT.md",
+    "increments/021/17-checkpoint1-implementation/evidence/claude-*"
+  ],
+  "governance_output_branch": "Own implementer branch from exact authorization snapshot; never central coordination branch",
+  "owner_implementation_authorization_recorded": false,
+  "implementation_authorized": false,
+  "code_commit_push_authorized": false,
+  "governance_report_commit_push_authorized": false,
+  "permissions_requested_for_future_owner_decision": [
+    "Implement and test CP1 only",
+    "Normal commit and push of the two allowed files to proposed code feature branch",
+    "Commit and push own report/evidence to own governance branch; do not edit central coordination files"
+  ],
+  "next_gate": "Architect triage, then independent CP1 review in separate session; CP2 remains unauthorized",
+  "restrictions": [
+    "No scientific-contract changes; ambiguity returns to architect",
+    "No adapter/storage/registry/service/CLI or fixtures-file implementation",
+    "No pyproject/dependency-pin changes",
+    "No code main changes/PR/merge/tag/release/formal approval/force/automation",
+    "020-A remains STAND-BY; preserved local items untouched"
+  ],
+  "final_specification_frozen": true,
+  "automated_dispatch": false
+}
