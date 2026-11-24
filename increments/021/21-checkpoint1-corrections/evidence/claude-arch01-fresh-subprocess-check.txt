@@ -1,0 +1,3 @@
+=== fresh -I -B subprocess, gemmi+rdkit blocked, no sentinel ===
+OK
+exit code: 0

@@ -1,0 +1,12 @@
+=== normal ===
+rejected: MaterializationInputError -> unknown MaterializationInputError code 'NOT_A_CODE'
+rejected: MaterializationConfigurationError -> unknown MaterializationConfigurationError code 'NOT_A_CODE'
+codes still valid for known values:
+INVALID_ID
+ENGINE_VERSION
+=== -O ===
+rejected: MaterializationInputError -> unknown MaterializationInputError code 'NOT_A_CODE'
+rejected: MaterializationConfigurationError -> unknown MaterializationConfigurationError code 'NOT_A_CODE'
+codes still valid for known values:
+INVALID_ID
+ENGINE_VERSION

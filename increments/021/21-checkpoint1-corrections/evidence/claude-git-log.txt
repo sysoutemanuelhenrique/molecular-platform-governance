@@ -1,0 +1,85 @@
+=== git log ===
+42b4804 test: strengthen MINOR-4/T021-029 evidence (increment 021 CP1 corrections)
+3ba2fa9 fix: apply CP1 corrections from architect reconciliation (increment 021)
+711f307 feat: add receptor materialization domain/planner (increment 021, checkpoint 1)
+08b797e Merge pull request #8 from sysoutemanuelhenrique/docs/academic-demo-pubchem
+314ca54 docs: add academic overview and PubChem caffeine tutorial
+d25974d Merge pull request #7 from sysoutemanuelhenrique/feature/increment-020-receptor-preparation-foundation
+=== commit details (final) ===
+commit 42b4804b5f4ea01ddf320c45473d8b4f980ea67e
+Author: sysoutemanuelhenrique <emanuel2017.henrique@gmail.com>
+Date:   Tue Nov 24 13:46:55 2026 -0300
+
+    test: strengthen MINOR-4/T021-029 evidence (increment 021 CP1 corrections)
+    
+    Additive refinement on top of 3ba2fa9: an explicit compute_request_key
+    sensitivity test over profile/algorithm/catalogue_sha256/engine (MINOR-4's
+    full acceptance test), and an explicit declared_by bytes-rejection check
+    for T021-029 (documents that build_policy_record's own compute_policy_id
+    hashes declared_by before PolicyRecord's strict str field ever runs, so a
+    bytes value there raises TypeError, not ValidationError).
+    
+    Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+
+ tests/test_receptor_materialization.py | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+=== commit details (previous additive) ===
+commit 3ba2fa91eaa95cae070d0aea7dba0d1918d9fd33
+Author: sysoutemanuelhenrique <emanuel2017.henrique@gmail.com>
+Date:   Tue Nov 24 13:38:33 2026 -0300
+
+    fix: apply CP1 corrections from architect reconciliation (increment 021)
+    
+    Addresses the 4 MAJOR and 8 MINOR findings reconciled at governance commit
+    521500c18272a379dc4fa2557754d9fa30d60cb7 (tasks/021-CHECKPOINT1-CORRECTIONS.json),
+    within the same two allowed files:
+    
+    - ARCH-01 (MAJOR): receptor_inspection/receptor_resolution moved under
+      TYPE_CHECKING - no transitive Gemmi import in the pure domain module.
+      compute_inspection_id reimplemented locally via promotion.compute_semantic_key
+      (same backend/payload, byte-identical) to avoid the native dependency.
+    - ARCH-02 (MAJOR): a (label_asym_id, CCD) disposition key absent from M no
+      longer affects M's polymer conflict check.
+    - ARCH-03 (MINOR): CategoryDecision.action="filter" may generate tags
+      (catalogue's _cell/_symmetry entry_id).
+    - MAJOR-A: build_source_context now takes typed ProteinInput/
+      ReceptorSelectionPolicy and cross-checks the inspection's own parser,
+      resolution-vs-inspection structure_format, and the acquisition checksum.
+    - MAJOR-B: PolicyRecord self-validates policy_id against its own payload;
+      build_policy_record verifies full field equivalence of an `existing`
+      record (except declared_at) before reusing it.
+    - MINOR-1-7: duplicate ordinal/atom_id/entity_id guards, selected-asym-in-M
+      guard, NFC injectivity broadened to all auth tokens in M, CategoryDecision
+      row/category invariants, catalogue_sha256 pinned via Literal, UNSUPPORTED_PLATFORM
+      replaced by INVALID_RECORD, assert replaced by explicit raise (python -O safe),
+      and independent golden-byte tests for the hash envelopes.
+    
+    74 tests (43 original + 31 new), all passing; full suite 1550 passed/5 skipped
+    (pre-existing, identified) of 1555 collected (1524 baseline + 31 new).
+    
+    Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+
+ src/molecular/receptor_materialization.py | 357 ++++++++++++++---
+ tests/test_receptor_materialization.py    | 635 +++++++++++++++++++++++++++++-
+ 2 files changed, 925 insertions(+), 67 deletions(-)
+=== git show --check (whitespace), both commits ===
+    
+    Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+
+    
+    Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+
+=== diff --name-status vs previous CP1 head 711f307 (both correction commits combined) ===
+M	src/molecular/receptor_materialization.py
+M	tests/test_receptor_materialization.py
+=== diff --name-status vs baseline main 08b797e ===
+A	src/molecular/receptor_materialization.py
+A	tests/test_receptor_materialization.py
+=== remote verification ===
+42b4804b5f4ea01ddf320c45473d8b4f980ea67e	refs/heads/feature/increment-021-receptor-materialization
+08b797e0985e123ffd4d7ca7e5a5e8f040e63851	refs/heads/main
+=== committed blob identities (authoritative, LF) - final commit ===
+   1669   75461
+ef38b524adbbe7432e83171d63c675856e3b21777322faec001efab530704fb1 *-
+   1421   67030
+7064aa8d7e36902f9e85a3ae4e075b118f8b5dd391029bf9652a53cbdd883eb8 *-

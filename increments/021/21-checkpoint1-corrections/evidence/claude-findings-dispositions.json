@@ -1,0 +1,89 @@
+{
+  "note": "Per-finding disposition for tasks/021-CHECKPOINT1-CORRECTIONS.json's required_changes, reconciled at governance commit 521500c18272a379dc4fa2557754d9fa30d60cb7. Every entry below is 'implemented, not independently closed' - only the independent focal review (separate session) can close a finding. No finding is declared closed by this report.",
+  "findings": [
+    {
+      "id": "ARCH-01", "severity": "MAJOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py: imports moved under `if TYPE_CHECKING:` (ReceptorInspectionReport, ResolvedReceptorSelection); new `_compute_legacy_inspection_id` reusing `molecular.promotion.compute_semantic_key`; `build_source_context` no longer calls `receptor_inspection.compute_inspection_id`.",
+      "tests": ["test_domain_module_imports_no_gemmi_and_performs_no_file_io (T021-040)", "test_arch01_domain_module_is_importable_and_pure_functional_with_gemmi_and_rdkit_blocked", "test_minor7_golden_legacy_inspection_id_matches_the_020_production_helper"],
+      "independent_evidence": "Fresh -I -B subprocess with sys.modules['gemmi']=None and sys.modules['rdkit']=None (no stub): module import, AtomObservation construction, compute_materialization_hash, SourceContext construction and a full build_materialization_plan call all succeed. See evidence/claude-arch01-fresh-subprocess-check.txt."
+    },
+    {
+      "id": "ARCH-02", "severity": "MAJOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py, build_materialization_plan: `present_asym_ccd_pairs` computed from `atoms_in_model` before `disposition_keep_asyms`/`disposition_remove_asyms` are populated; a disposition key absent from that set is skipped.",
+      "tests": ["test_disposition_key_in_another_model_never_affects_m (T021-019, rewritten to cover both directions plus in-M controls)"],
+      "independent_evidence": "Reproduces the reviewer's exact six probes (remove/keep absent-from-M vs present-in-M, on selected and unselected polymer) inline before committing; all six matched expectation."
+    },
+    {
+      "id": "ARCH-03", "severity": "MINOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py, CategoryDecision._validate_action_invariants: the `elif self.action == \"filter\": if self.generated_tags: raise` branch was removed entirely.",
+      "tests": ["test_arch03_filter_action_may_generate_tags_like_catalogue_cell_and_symmetry"],
+      "independent_evidence": "Constructed CategoryDecision for both _cell and _symmetry with their real CATALOG_021.json preserve_tags/generate_tags=['entry_id'] shape; both now accepted; overlap between preserve/generate still rejected."
+    },
+    {
+      "id": "MAJOR-A", "severity": "MAJOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py, build_source_context: signature changed to take `protein_input: ProteinInput` and `policy: ReceptorSelectionPolicy` (both real, gemmi-free 020 types) instead of three bare scalars; added inspection-parser check, resolved_selection.structure_format vs inspection_report.structure_format check, protein_input.acquisition.raw_artifact.checksum vs raw_checksum cross-check, and policy.protein_input_id in the 4-way protein_input_id equality.",
+      "tests": ["test_major_a_inspection_parser_divergent_from_resolution_rejected", "test_major_a_resolution_format_divergent_from_inspection_rejected", "test_major_a_acquisition_checksum_divergent_from_observed_rejected", "test_major_a_policy_protein_input_id_divergent_rejected"],
+      "independent_evidence": "Each of the four cross-checks has its own dedicated negative test; all four reproduce the reviewer's exact failing probes (inspection gemmi/0.7.4, resolution structure_format='pdb', tampered acquisition checksum, divergent policy.protein_input_id) and now raise MaterializationConfigurationError with the expected code."
+    },
+    {
+      "id": "MAJOR-B", "severity": "MAJOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py: PolicyRecord gained `_validate_policy_id_matches_payload` (model_validator recomputing H() from its own fields); build_policy_record now builds a `candidate` PolicyRecord unconditionally, and when `existing.policy_id == candidate.policy_id`, compares every field of both (via model_dump) except declared_at before returning `existing`, raising MaterializationConfigurationError('SOURCE_CHANGED') on any other mismatch.",
+      "tests": ["test_major_b_policy_record_rejects_arbitrary_self_declared_policy_id", "test_major_b_tampered_existing_with_same_policy_id_is_rejected_not_silently_reused"],
+      "independent_evidence": "Reproduced the reviewer's exact probe (existing with unaddressed_components flipped, same policy_id) - now raises SOURCE_CHANGED instead of being silently accepted; PolicyRecord(policy_id='e'*64) now raises ValidationError; a legitimate repeat (no tampering) still returns the original record/declared_at."
+    },
+    {
+      "id": "MINOR-1", "severity": "MINOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py, build_materialization_plan: new global ordinal/atom_id uniqueness guard over the full `atoms` vector; `asym_entity_id` now raises on a contradictory entity_id instead of `setdefault`; new `missing_selected = selected_set - set(asym_entity_type)` guard.",
+      "tests": ["test_minor1_duplicate_ordinal_rejected", "test_minor1_duplicate_atom_id_rejected", "test_minor1_contradictory_entity_id_within_same_asym_rejected", "test_minor1_selected_asym_absent_from_m_rejected", "test_minor1_valid_multimodel_vector_with_unique_ordinals_and_ids_is_accepted"],
+      "independent_evidence": "All four of the reviewer's exact negative probes now raise MaterializationInputError(code='INVALID_ID'); a valid multi-model control with distinct ordinals/ids is unaffected."
+    },
+    {
+      "id": "MINOR-2", "severity": "MINOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py, build_materialization_plan: the NFC-injective check now runs once over `all_auth_tokens_in_m` (every entity type), before the polymer-only `polymer_auth_index` is built - replacing the previous polymer-only token collection.",
+      "tests": ["test_minor2_water_nfd_auth_id_colliding_with_polymer_nfc_auth_id_is_rejected", "test_minor2_same_literal_auth_token_across_distinct_asyms_remains_legitimate"],
+      "independent_evidence": "The reviewer's exact cross-category collision probe (water NFD auth id vs polymer NFC auth id) now raises MaterializationInputError(code='UNSUPPORTED_REQUEST') instead of silently classifying as 'retained-polymer'; the legitimate same-literal-token-on-multiple-asyms case (T021-037's 'multiple') is unaffected."
+    },
+    {
+      "id": "MINOR-3", "severity": "MINOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py, CategoryDecision._validate_action_invariants: added category-canonical-or-approved-prefix check against new `_CATALOGUE_CATEGORY_NAMES`/`_CATALOGUE_OMISSION_PREFIXES`; non-negative-ordinal check; omit/guard_then_omit-must-not-retain-rows check; source_rows_key-required-for-filter/omit/guard_then_omit check; row-ordinals-require-non-null-source_rows_key check.",
+      "tests": ["test_minor3_omit_and_guard_then_omit_never_retain_a_row", "test_minor3_negative_row_ordinals_rejected", "test_minor3_noncanonical_category_name_rejected", "test_minor3_omission_family_prefix_only_valid_with_omit_action", "test_minor3_source_rows_key_required_for_filter_omit_and_guard_then_omit", "test_minor3_row_ordinals_without_source_rows_key_rejected", "test_category_omit_with_empty_arrays_is_valid_without_a_sentinel (T021-161, updated with source_rows_key)"],
+      "independent_evidence": "All of the reviewer's exact probes (kept_row_ordinals on omit/guard_then_omit, negative ordinal, '_ATOM_SITE'/non-catalogue category) now raise ValidationError; the original T021-161 'omit with empty arrays' case remains valid once given a real source_rows_key."
+    },
+    {
+      "id": "MINOR-4", "severity": "MINOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py: PlanBinding.catalogue_sha256 and PolicyRecord.catalogue_sha256 changed from a generic hex64 str Field to `Literal[CATALOGUE_SHA256] = CATALOGUE_SHA256`.",
+      "tests": ["test_minor4_divergent_catalogue_rejected_in_planbinding_and_policyrecord", "test_minor4_engine_and_profile_divergence_rejected_by_closed_literals"],
+      "independent_evidence": "The reviewer's exact probe (catalogue_sha256='f'*64 accepted by PlanBinding) now raises ValidationError on both PlanBinding and PolicyRecord; profile/algorithm/engine divergence (already Literal) reconfirmed closed."
+    },
+    {
+      "id": "MINOR-5", "severity": "MINOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py, build_source_context: the `structure_format != 'mmcif'` branch's code changed from 'UNSUPPORTED_PLATFORM' to 'INVALID_RECORD'.",
+      "tests": ["test_minor5_non_mmcif_format_uses_invalid_record_not_unsupported_platform"],
+      "independent_evidence": "A coherent-but-pdb inspection/resolution/policy triple now raises MaterializationConfigurationError(code='INVALID_RECORD'), never 'UNSUPPORTED_PLATFORM' - matching the class's own docstring, which already claimed that code is never raised from this module."
+    },
+    {
+      "id": "MINOR-6", "severity": "MINOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py: both error classes' `__init__` changed from `assert code in self._CODES, ...` to an explicit `if code not in self._CODES: raise ValueError(...)`.",
+      "tests": ["test_minor6_unknown_error_code_rejected_even_under_python_dash_o", "test_minor6_valid_codes_still_preserve_code_and_phase"],
+      "independent_evidence": "Fresh subprocesses run both with and without `-O`; `MaterializationInputError('NOT_A_CODE', ...)` and `MaterializationConfigurationError('NOT_A_CODE', ...)` are rejected in both modes. See evidence/claude-minor6-python-O-check.txt."
+    },
+    {
+      "id": "MINOR-7", "severity": "MINOR", "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "tests/test_receptor_materialization.py only (no production change): added hand-written canonical-JSON byte literals compared against compute_materialization_hash/compute_atom_ids_key/compute_occurrence_key/compute_connection_decisions_key, plus a cross-check of the new legacy inspection_id helper against receptor_inspection.compute_inspection_id.",
+      "tests": ["test_minor7_golden_canonical_json_bytes_independent_of_production", "test_minor7_golden_atom_ids_key_preserves_given_order_independent_of_production", "test_minor7_golden_occurrence_key_envelope_independent_of_production", "test_minor7_golden_empty_connection_decisions_key_envelope_independent_of_production", "test_minor7_golden_legacy_inspection_id_matches_the_020_production_helper"],
+      "independent_evidence": "Hand-computed canonical bytes (sorted keys, compact separators, UTF-8, list order preserved) hashed independently with hashlib and compared to production output; all five golden checks pass."
+    },
+    {
+      "id": "NOTE-1", "severity": "NOTE", "status": "PRESERVED_AS_PHASE_LIMIT",
+      "disposition": "connection_decisions_key remains the hash of an always-empty vector; no ConnectionDecision/Summary/ManifestRecord/AuditRecord was added. Unchanged by this correction round."
+    },
+    {
+      "id": "NOTE-2", "severity": "NOTE", "status": "PRESERVED_AS_REGRESSION_GUARD",
+      "disposition": "strict/frozen/extra=forbid preserved on every DTO (12 classes, reconfirmed); no broad except; TimeUTC chaining via `from` preserved; KeyboardInterrupt/SystemExit still never caught anywhere in the module."
+    },
+    {
+      "id": "NOTE-3", "severity": "NOTE", "status": "DEFERRED_TO_CP4_GATE",
+      "disposition": "cli.py's existing baseline import of receptor_parsing (and therefore Gemmi) was not touched - out of the two-file allowlist and explicitly out of CP1 scope per the task."
+    }
+  ]
+}

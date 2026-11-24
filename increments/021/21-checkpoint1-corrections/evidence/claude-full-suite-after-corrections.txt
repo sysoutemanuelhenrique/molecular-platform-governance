@@ -1,0 +1,29 @@
+...................................................................s.s.. [  4%]
+........................................................................ [  9%]
+............s........................................................... [ 13%]
+........................................................................ [ 18%]
+........................................................................ [ 23%]
+.........s...s.......................................................... [ 27%]
+........................................................................ [ 32%]
+........................................................................ [ 37%]
+........................................................................ [ 41%]
+........................................................................ [ 46%]
+........................................................................ [ 50%]
+........................................................................ [ 55%]
+........................................................................ [ 60%]
+........................................................................ [ 64%]
+........................................................................ [ 69%]
+........................................................................ [ 74%]
+........................................................................ [ 78%]
+........................................................................ [ 83%]
+........................................................................ [ 87%]
+........................................................................ [ 92%]
+........................................................................ [ 97%]
+............................................                             [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_application.py:1809: only meaningful in a base install without the rdkit extra
+SKIPPED [1] tests\test_application.py:1847: only meaningful in a base install without the rdkit extra - when rdkit is genuinely installed, molecular.cli's existing import of molecular.application legitimately (and correctly) pulls rdkit into sys.modules on a real import, which is not the same thing as this codebase's own modules writing `import rdkit` outside rdkit_tautomer.py
+SKIPPED [1] tests\test_atomic.py:1046: symlink creation is not permitted in this environment: [WinError 1314] O cliente não tem o privilégio necessário: 'C:\\Users\\Pichau\\AppData\\Local\\Temp\\pytest-of-Pichau\\pytest-507\\test_snapshot_path_symlink_to_0\\project\\inputs\\ligands\\curcumin-pubchem\\raw.sdf' -> 'C:\\Users\\Pichau\\AppData\\Local\\Temp\\pytest-of-Pichau\\pytest-507\\test_snapshot_path_symlink_to_0\\project\\scientific\\promotion_snapshots\\test-attempt\\snapshot.sdf'
+SKIPPED [1] tests\test_cli.py:4250: requires an environment without RDKit
+SKIPPED [1] tests\test_cli.py:4303: requires an environment without RDKit
+1551 passed, 5 skipped in 157.27s (0:02:37)
