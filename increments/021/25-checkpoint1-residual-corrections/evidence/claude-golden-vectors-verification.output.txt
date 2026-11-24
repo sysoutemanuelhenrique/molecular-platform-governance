@@ -1,0 +1,14 @@
+canonical_json OK
+legacy_inspection_id OK
+source_context_key OK
+occurrence_key OK
+atom_ids_key OK
+exclusions_key OK
+outside_key OK
+atom_decisions_key OK
+connection_decisions_key OK
+category_decisions_key OK
+plan_key OK
+policy_id OK
+request_key OK
+ALL 13/13 MATCH: True

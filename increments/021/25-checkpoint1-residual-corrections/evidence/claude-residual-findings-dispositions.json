@@ -1,0 +1,61 @@
+{
+  "note": "Per-residual disposition for tasks/021-CHECKPOINT1-RESIDUAL-CORRECTIONS.json's only_residual_corrections, reconciled at governance commit 155661115851c2a5fb70f5d905425baeb4d23c9f. Every entry is 'implemented, not independently closed' - only the next short independent focal review (separate session) can close these. The nine previously closed findings (ARCH-01, ARCH-02, ARCH-03, MAJOR-B, MINOR-1, MINOR-2, MINOR-4, MINOR-5, MINOR-6) are NOT reopened and are untouched by this round.",
+  "preserved_closed_findings": ["ARCH-01", "ARCH-02", "ARCH-03", "MAJOR-B", "MINOR-1", "MINOR-2", "MINOR-4", "MINOR-5", "MINOR-6"],
+  "residuals": [
+    {
+      "id": "MAJOR-A",
+      "historical_severity": "MAJOR",
+      "residual_severity": "MINOR",
+      "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py: new module-level `_DECLARED_FORMAT_ALIASES` (the same four-entry map as receptor_inspection.py's, projected locally - not imported, per ARCH-01); new check in build_source_context comparing protein_input.acquisition.raw_artifact.format and inspection_report.raw_format_declared, both normalized via strip().lower() + the alias map, requiring both recognized, equal to each other, and equal to the detected canonical 'mmcif'.",
+      "tests": [
+        "test_major_a_residual_pdb_acquisition_and_declared_with_mmcif_detected_rejected",
+        "test_major_a_residual_acquisition_and_declared_format_disagree_rejected",
+        "test_major_a_residual_unknown_format_label_rejected_on_either_side",
+        "test_major_a_residual_020_aliases_accepted_both_directions",
+        "test_major_a_residual_coherent_mmcif_control_accepted"
+      ],
+      "independent_evidence": "Reproduced all 9 cases from the focal review's exact probe set (pdb/pdb vs detected mmcif with declared-format-mismatch warning present; mmcif vs pdb disagreement both directions; xyz/xyz; unknown on one side; cif/mmcif aliases both directions including whitespace/uppercase normalization; coherent mmcif control) via an ad-hoc script before writing any permanent test; all matched the required disposition (reject for the first 5, accept for the alias/control cases)."
+    },
+    {
+      "id": "MINOR-3",
+      "residual_severity": "MINOR",
+      "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "src/molecular/receptor_materialization.py, CategoryDecision._validate_action_invariants: added per-tuple duplicate checks (`len(set(x)) != len(x)`) for both kept_row_ordinals and omitted_row_ordinals, ahead of the pre-existing cross-tuple overlap check; replaced the `startswith(prefix)` family check with `_CATALOGUE_OMISSION_FAMILY_PATTERN.fullmatch(category)` using `re.compile(r'(?:_pdbx_validate_|_pdbx_nmr_|_em_)[a-z0-9_]+')`.",
+      "tests": [
+        "test_minor3_residual_duplicate_ordinal_within_the_same_tuple_rejected",
+        "test_minor3_residual_malformed_omission_family_names_rejected",
+        "test_minor3_residual_valid_omission_family_names_in_all_three_families_accepted"
+      ],
+      "independent_evidence": "Reproduced the focal review's exact malformed-name probes (trailing LF, bare prefix, embedded space, item name with '.', uppercase, and an added control character case) - all now rejected; (0,0) in each tuple independently rejected; positive names in all three families and the omit/filter+generate/generate-without-source controls remain valid."
+    },
+    {
+      "id": "MINOR-7",
+      "residual_severity": "MINOR",
+      "status": "IMPLEMENTED_NOT_INDEPENDENTLY_CLOSED",
+      "fix_location": "tests/test_receptor_materialization.py only (no production change): all four pre-existing golden tests now assert against a literal module-level SHA-256 constant (never hashlib-computed from the same hand-written bytes at test runtime); nine new tests added for the previously-uncovered envelopes (source_context_key, exclusions_key, outside_key, atom_decisions_key, category_decisions_key, plan_key, policy_id, request_key); the legacy inspection_id test rewritten to call `_compute_legacy_inspection_id` (the new helper) directly against the independent literal `1c217d99e7b2b09d9c31a0c8f9daf056c48aa916bdf957cae83df449ad68e80c`, with the old 020 helper kept only as an additional control - the superseded version never called the new helper at all.",
+      "tests": [
+        "test_minor7_golden_canonical_json_bytes_independent_of_production",
+        "test_minor7_golden_legacy_inspection_id_calls_the_new_helper_against_independent_literal",
+        "test_minor7_golden_source_context_key_envelope",
+        "test_minor7_golden_occurrence_key_envelope_independent_of_production",
+        "test_minor7_golden_atom_ids_key_preserves_given_order_independent_of_production",
+        "test_minor7_golden_exclusions_key_envelope",
+        "test_minor7_golden_outside_key_envelope",
+        "test_minor7_golden_atom_decisions_key_envelope",
+        "test_minor7_golden_empty_connection_decisions_key_envelope_independent_of_production",
+        "test_minor7_golden_category_decisions_key_envelope",
+        "test_minor7_golden_plan_key_envelope",
+        "test_minor7_golden_policy_id_envelope",
+        "test_minor7_golden_request_key_envelope"
+      ],
+      "independent_evidence": "All 13 documentary vectors from increments/021/24-checkpoint1-residual-reconciliation/evidence/DOCUMENTARY_GOLDEN_VECTORS.json were verified against the real, unmodified production functions in an ad-hoc script before writing any permanent test (13/13 match); the literals copied into the permanent tests are exactly those vectors' expected_sha256_literal values, not values computed by this session."
+    }
+  ],
+  "golden_vectors_source": {
+    "path": "increments/021/24-checkpoint1-residual-reconciliation/evidence/DOCUMENTARY_GOLDEN_VECTORS.json",
+    "sha256": "fe2ae0739120cba82f1523d29be3da76b3b266b46ea94b5d768e4cc3c3b6a4c0",
+    "vectors_verified": 13,
+    "vectors_matched": 13
+  }
+}

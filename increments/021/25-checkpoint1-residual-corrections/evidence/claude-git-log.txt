@@ -1,0 +1,72 @@
+=== git log ===
+bbd491e fix: apply three residual CP1 corrections from focal review (increment 021)
+42b4804 test: strengthen MINOR-4/T021-029 evidence (increment 021 CP1 corrections)
+3ba2fa9 fix: apply CP1 corrections from architect reconciliation (increment 021)
+711f307 feat: add receptor materialization domain/planner (increment 021, checkpoint 1)
+08b797e Merge pull request #8 from sysoutemanuelhenrique/docs/academic-demo-pubchem
+314ca54 docs: add academic overview and PubChem caffeine tutorial
+=== commit details (this round) ===
+commit bbd491e1a0b3fcb913c3549b004120693212df62
+Author: sysoutemanuelhenrique <emanuel2017.henrique@gmail.com>
+Date:   Tue Nov 24 14:57:52 2026 -0300
+
+    fix: apply three residual CP1 corrections from focal review (increment 021)
+    
+    Addresses the 3 residual MINORs from the focal review reconciliation at
+    governance commit 155661115851c2a5fb70f5d905425baeb4d23c9f
+    (tasks/021-CHECKPOINT1-RESIDUAL-CORRECTIONS.json), within the same two
+    allowed files. The nine independently closed findings (ARCH-01/02/03,
+    MAJOR-B, MINOR-1/2/4/5/6) are not reopened or touched.
+    
+    - MAJOR-A residual: build_source_context now cross-checks
+      acquisition.raw_artifact.format and inspection.raw_format_declared via
+      the 020's own alias map (cif/mmcif/pdb/ent, strip().lower()); either
+      label unrecognized, or the two disagreeing with each other or with the
+      detected canonical mmcif, raises INVALID_RECORD. The 020's own
+      declared-format-mismatch warning is never read as authorization to
+      materialize with contradictory provenance.
+    - MINOR-3 residual: CategoryDecision now rejects a duplicate ordinal
+      *within* kept_row_ordinals or omitted_row_ordinals (previously only
+      cross-tuple overlap was checked), and validates an omission-family
+      category name with a delimited re.fullmatch grammar
+      ((?:_pdbx_validate_|_pdbx_nmr_|_em_)[a-z0-9_]+) instead of a bare
+      startswith - rejecting a trailing LF, a bare prefix, embedded
+      whitespace, an item name, and uppercase.
+    - MINOR-7 residual: all hash-envelope golden tests now assert against
+      independent literal SHA-256 digests (never hashlib computed at test
+      runtime from the same hand-written bytes used as the "independent"
+      check), with 13 documentary vectors covering every envelope named in
+      the residual reconciliation (previously only 4 were covered). The
+      legacy inspection_id test was tautological (compared the old helper to
+      a module constant also produced by that same old helper, never calling
+      the new `_compute_legacy_inspection_id`); it now calls the new helper
+      directly against an independent literal, with the old helper as an
+      additional control.
+    
+    91 tests (75 before this round + 16 new), all passing; full suite 1567
+    passed/5 skipped (pre-existing, identified) of 1572 collected (1556
+    baseline + 16 new).
+    
+    Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+
+ src/molecular/receptor_materialization.py |  65 ++++++-
+ tests/test_receptor_materialization.py    | 306 ++++++++++++++++++++++++++----
+ 2 files changed, 325 insertions(+), 46 deletions(-)
+=== git show --check (whitespace) ===
+    
+    Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+
+=== diff --name-status vs previous head 42b4804 ===
+M	src/molecular/receptor_materialization.py
+M	tests/test_receptor_materialization.py
+=== diff --name-status vs baseline main 08b797e ===
+A	src/molecular/receptor_materialization.py
+A	tests/test_receptor_materialization.py
+=== remote verification ===
+bbd491e1a0b3fcb913c3549b004120693212df62	refs/heads/feature/increment-021-receptor-materialization
+08b797e0985e123ffd4d7ca7e5a5e8f040e63851	refs/heads/main
+=== committed blob identities (authoritative, LF) ===
+   1724   78807
+d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d *-
+   1645   81362
+e67539e76be9d174e7ef2c93cf971faa6bfba3316ef996f5e4a55c9345a90d69 *-
