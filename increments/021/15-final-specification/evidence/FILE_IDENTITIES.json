@@ -1,0 +1,79 @@
+{
+  "governance_input_commit": "65f60a4c011160c2c86241df802219268b70529b",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "note": "Publication files excluding self. Normative files are separately identified by immutable FROZEN_PACKAGE.json; mutable coordination files are historical to this publication.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 35,
+      "size_bytes": 2973,
+      "sha256": "f637c6288328dd2705aeda4d8284fe203bbc1f855199ceea86d8f3c66a8f74bb"
+    },
+    {
+      "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+      "lines": 377,
+      "size_bytes": 64746,
+      "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CANDIDATE2_TO_FROZEN_METADATA.patch",
+      "lines": 39,
+      "size_bytes": 6512,
+      "sha256": "50f119e2ecbfa3b7751d5bc5df20bd18e48993422e71fdec196879bb520af33f"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/FREEZE_VERIFICATION.json",
+      "lines": 70,
+      "size_bytes": 2596,
+      "sha256": "16b8c34031489a512e60dd103ad716f47c957898a99715fb408442ad0ae80a06"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/FROZEN_PACKAGE.json",
+      "lines": 55,
+      "size_bytes": 2539,
+      "sha256": "23cfe0aa48480eadaac047b6259fc2ed88c686ce5bead6e47997e2306bc7233c"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/OWNER_FREEZE_APPROVAL.md",
+      "lines": 40,
+      "size_bytes": 3500,
+      "sha256": "4a08054d76d6dbf4045120ecd519cfd5be49d87de77c8bb3703010b82035e325"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "tasks/021-FREEZE.json",
+      "lines": 57,
+      "size_bytes": 2231,
+      "sha256": "21e9a881867e7e79bbc924a621d88fc97d046f0dd569a2b47d90477e7b050477"
+    },
+    {
+      "path": "tasks/021-OWNER-FREEZE-DECISION.json",
+      "lines": 138,
+      "size_bytes": 6597,
+      "sha256": "866308802cffc75a952f8c0ce751cf39ba587795a71982f5bcd3bc014bbfbc9a"
+    }
+  ]
+}

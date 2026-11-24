@@ -1,0 +1,39 @@
+--- approved-candidate2/INCREMENT_021_FINAL_SPECIFICATION_CANDIDATE2.md
++++ frozen/INCREMENT_021_FINAL_SPECIFICATION.md
+@@ -1 +1 @@
+-# Incremento 021 — Candidata final de especificação
++# Incremento 021 — Especificação final congelada
+@@ -4 +4 @@
+-Versão: candidate-2 (candidata final, não congelada). Data: 24/11/2026. Autor: Codex arquiteto. Estado: candidata para decisão do responsável, baseada no parecer da candidate-1 e nas precisões NB-1/NB-2; **não congelada e não autorizadora de implementação**. O emprego de deve/proibido define a proposta a confrontar, não altera a autorização da etapa atual.
++Versão final: 1.0. Congelada em 24/11/2026 por aprovação expressa de Emanuel Henrique da Silva. Arquitetura: Codex. Origem: candidate-2 aprovada no commit 65f60a4c011160c2c86241df802219268b70529b. O emprego de deve/proibido estabelece o contrato normativo congelado; não autoriza implementação.
+@@ -8 +8 @@
+-Redação autorizada diretamente por Emanuel Henrique da Silva: incorporar P-1 a P-5 e NOTE-F1, publicar no governance e preparar revisão independente, sem implementação nem congelamento. O registro literal permanece em increments/021/06-draft-specification/evidence/OWNER_DRAFT_AUTHORIZATION.md, no snapshot original identificado; a candidata não cria uma nova autorização.
++O responsável aprovou expressamente o congelamento da candidate-2 e dos quatro anexos identificados em tasks/021-OWNER-FREEZE-DECISION.json no commit 65f60a4c011160c2c86241df802219268b70529b. Registro literal e alcance: evidence/OWNER_FREEZE_APPROVAL.md. A aprovação exclui implementação; nenhuma autorização de checkpoint de código decorre deste congelamento. A candidata e os pareceres históricos são preservados.
+@@ -13 +13 @@
+-| Governance de entrada desta candidata, docs/020-a-candidate1-review-20261020 | ec38f578ced987969cd8f58c9c7ee4567e7fdd52 |
++| Governance de entrada do congelamento, docs/020-a-candidate1-review-20261020 | 65f60a4c011160c2c86241df802219268b70529b |
+@@ -25,3 +25,6 @@
+-Integram esta candidata: **evidence/CATALOG_021.json**, **evidence/SCHEMAS_021.md**, **evidence/SCENARIOS_021.csv** e **evidence/IDENTITY_BASIS_CASES.json**. O catálogo é dado documental de contrato, não configuração editável pelo cientista nem código implementado. A matriz CSV contém cenários propostos individualmente, não resultados pytest. evidence/FILE_IDENTITIES.json identifica os bytes da entrega, excluindo a si próprio. Manifestos históricos só devem ser verificados em seus commits históricos.
+-
+-Precedência proposta: corpo deste documento para algoritmo/ordem/erros; SCHEMAS para os campos fechados; CATALOG para tags e ações; SCENARIOS para comprovação. Inconsistência entre anexos é achado de revisão a resolver antes de congelamento, nunca licença de escolha do implementador. O 020-A continua em stand-by.
++Integram esta especificação congelada: **evidence/CATALOG_021.json**, **evidence/SCHEMAS_021.md**, **evidence/SCENARIOS_021.csv** e **evidence/IDENTITY_BASIS_CASES.json**. O catálogo é dado documental de contrato, não configuração editável pelo cientista nem código implementado. A matriz CSV contém cenários propostos individualmente, não resultados pytest. evidence/FILE_IDENTITIES.json identifica os bytes da entrega, excluindo a si próprio. Manifestos históricos só devem ser verificados em seus commits históricos.
++
++Precedência normativa: corpo deste documento para algoritmo/ordem/erros; SCHEMAS para os campos fechados; CATALOG para tags e ações; SCENARIOS para comprovação. Inconsistência entre anexos é achado de revisão a resolver antes de congelamento, nunca licença de escolha do implementador. O 020-A continua em stand-by.
++
++
++Os quatro anexos são os mesmos bytes aprovados: cabeçalhos históricos de rascunho/candidate-1, inclusive descrições antigas de não congelamento, permanecem como metadados de origem. Sua força normativa atual decorre deste documento, de evidence/FROZEN_PACKAGE.json e da aprovação registrada; não são uma opção de implementação. As expressões de fase de redação no corpo não autorizam alterar requisitos. Novas mudanças contratuais exigem versão e decisão próprias.
+@@ -350 +353 @@
+-Os pareceres independentes anteriores fecharam os achados do estudo e do draft-1 no nível de proposta. Nesta candidata, MINOR-N1/N2 ainda aguardam fechamento focal; os critérios de aceitação da implementação continuam pendentes de prova nos checkpoints.
++O parecer independente da candidate-1 fechou MINOR-N1/N2 sem regressão; NB-1/NB-2 foram explicitadas na candidate-2, que o responsável aprovou para congelamento. Os critérios de aceitação da implementação continuam pendentes de prova nos checkpoints; este registro de aprovação não equivale à execução dos cenários.
+@@ -358 +361 @@
+-Próximo gate: decisão do responsável sobre esta candidate-2 e seus quatro anexos identificados. O parecer da candidate-1 fecha MINOR-N1/N2, não encontra regressão e aprova com duas notas não bloqueantes; esta versão incorpora as duas precisões sugeridas, conforme o diff e a disposição NB-1/NB-2 acompanhantes. O revisor declarou que essas precisões não exigem nova rodada além da conferência do diff. O parecer independente continua referente à candidate-1: não atribuir a ele revisão integral ou aprovação desta candidate-2. O responsável pode aprovar o congelamento desta versão exata, solicitar ajustes ou pedir conferência adicional restrita ao delta. Nada fica congelado por esta publicação; implementação e checkpoints continuam dependentes de autorização própria. Não há relay automático.
++Congelamento aprovado pelo responsável em 24/11/2026, restrito ao conteúdo normativo e aos quatro anexos da candidate-2 identificada. O parecer independente é o da candidate-1 mais o delta explícito NB-1/NB-2 e sua conferência documental; não é alegada revisão integral independente da candidate-2. Próximo gate: autorização própria de implementação que identifique esta especificação congelada, baseline de código, branch e checkpoint. Essa autorização ainda não existe. Nenhum agente ou implementador foi acionado, nem há relay automático.
+@@ -369 +372 @@
+-FINAL CANDIDATE PREPARED: YES
++SPECIFICATION APPROVED BY OWNER: YES
+@@ -371 +374,2 @@
+-READY FOR OWNER FREEZE DECISION: YES
++FINAL SPECIFICATION FROZEN: YES
++IMPLEMENTATION AUTHORIZED: NO
+@@ -373 +376,0 @@
+-FINAL SPECIFICATION FROZEN: NO

@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "task_id": "021-OWNER-FREEZE-DECISION",
   "assigned_role": "owner-emanuel-henrique-da-silva",
-  "status": "PREPARED_AWAITING_OWNER_DECISION",
+  "status": "APPROVED_FREEZE_COMPLETED",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
   "governance_input_parent": "ec38f578ced987969cd8f58c9c7ee4567e7fdd52",
@@ -73,14 +73,66 @@
   ],
   "requested_scope": "Approve exact identified candidate-2 body, four annexes and NB-1/NB-2 wording for specification freezing only, if owner chooses; no implementation permission",
   "human_approval_required": true,
-  "owner_approval_recorded": false,
-  "freeze_authorized": false,
+  "owner_approval_recorded": true,
+  "freeze_authorized": true,
   "implementation_authorized": false,
-  "final_specification_frozen": false,
+  "final_specification_frozen": true,
   "restrictions": [
     "Do not infer approval from a reviewer verdict, agent commit or task status",
     "Do not freeze before direct owner decision identifying the exact package",
     "No code change/branch/checkpoint/PR/merge/tag/release/main/configuration action authorized by this task",
     "020-A remains STAND-BY; no automation activated"
-  ]
+  ],
+  "decision_choice": "APPROVE_FREEZE_ONLY",
+  "decision_recorded_on": "2026-11-24",
+  "timezone": "America/Sao_Paulo",
+  "owner_message_literal": "Aprovo o congelamento da candidata 2 do Incremento 021\ne dos quatro anexos identificados na tarefa\n021-OWNER-FREEZE-DECISION, publicados no commit\n65f60a4c011160c2c86241df802219268b70529b.\n\nEsta aprovação não autoriza implementação.",
+  "approved_input_commit": "65f60a4c011160c2c86241df802219268b70529b",
+  "approved_input_package_key": "1e44f8f91d3a95218978c6c4866e550399a6c1dd13606954b0aab22045333f3f",
+  "owner_approval_record": {
+    "path": "increments/021/15-final-specification/evidence/OWNER_FREEZE_APPROVAL.md",
+    "lines": 40,
+    "size_bytes": 3500,
+    "sha256": "4a08054d76d6dbf4045120ecd519cfd5be49d87de77c8bb3703010b82035e325"
+  },
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "frozen_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "frozen_package": {
+    "path": "increments/021/15-final-specification/evidence/FROZEN_PACKAGE.json",
+    "lines": 55,
+    "size_bytes": 2539,
+    "sha256": "23cfe0aa48480eadaac047b6259fc2ed88c686ce5bead6e47997e2306bc7233c"
+  },
+  "frozen_manifest": "increments/021/15-final-specification/evidence/FILE_IDENTITIES.json",
+  "next_gate": "Separate owner instruction/authorization is required before implementation; no code task issued"
 }

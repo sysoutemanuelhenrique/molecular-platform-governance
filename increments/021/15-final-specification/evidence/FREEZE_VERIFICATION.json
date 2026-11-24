@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-24",
+  "timezone": "America/Sao_Paulo",
+  "approved_commit": "65f60a4c011160c2c86241df802219268b70529b",
+  "approved_owner_decision_package_key": "1e44f8f91d3a95218978c6c4866e550399a6c1dd13606954b0aab22045333f3f",
+  "approved_input_manifest_entries_verified": 13,
+  "approved_files_freshly_read_and_verified": 5,
+  "approved_candidate": {
+    "path": "increments/021/14-final-candidate2/INCREMENT_021_FINAL_SPECIFICATION_CANDIDATE2.md",
+    "lines": 374,
+    "size_bytes": 64461,
+    "sha256": "377e90a6ff2f92b74dca4678ca60aa202dd5f154d2666f9096d0d5fc9882ad6b"
+  },
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "frozen_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "main_scientific_sections_2_to_20_byte_identical": true,
+  "section_21_only_review_status_updated": true,
+  "section_22_only_gate_status_updated": true,
+  "section_23_fixtures_and_requirements_unchanged": true,
+  "all_four_annexes_byte_identical": true,
+  "main_changes": "Freeze metadata/authority/status only; all original files preserved",
+  "scenario_count": 173,
+  "checkpoint_counts": {
+    "CP1": 43,
+    "CP2": 79,
+    "CP3": 31,
+    "CP4": 20
+  },
+  "pytest": false,
+  "gemmi": false,
+  "raw_parsing": false,
+  "materialization": false,
+  "windows": false,
+  "concurrency": false,
+  "packages_installed": false,
+  "code_repository_modified": false,
+  "implementation_authorized": false,
+  "final_specification_frozen": true
+}
