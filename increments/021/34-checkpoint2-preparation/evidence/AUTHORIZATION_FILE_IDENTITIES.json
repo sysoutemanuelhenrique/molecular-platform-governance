@@ -1,0 +1,27 @@
+{
+  "note": "Authorization-state files only; excludes this manifest. Original preparation brief/manifest and all frozen/history files preserved; verify preparation identities at a0b6083dfcaa456bcebb288120d198e3de2bf5be.",
+  "authorization_input_commit": "a0b6083dfcaa456bcebb288120d198e3de2bf5be",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 36,
+      "size_bytes": 2978,
+      "sha256": "2f055db9c70a399e503d3dd204e79f64d29085ec462a58c11fad13cfd98b4084",
+      "git_blob_sha": "09e3cc7c5196a9e3c52bd35d945228825a592d33"
+    },
+    {
+      "path": "increments/021/34-checkpoint2-preparation/OWNER_CHECKPOINT2_IMPLEMENTATION_AUTHORIZATION.md",
+      "lines": 64,
+      "size_bytes": 5146,
+      "sha256": "24fd79e8c59ff34b2e4d321617f295014a9ebac2656ad10ef405a4b42d8d0e66",
+      "git_blob_sha": "1f0987e4c50caad26b585c5c96e5f419183034a7"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-IMPLEMENTATION.json",
+      "lines": 311,
+      "size_bytes": 14733,
+      "sha256": "8c7aff581206141628161187c316e5fa2077779ee2ca4cc14a286d0eb4e6eb03",
+      "git_blob_sha": "54597c1af52985f0456c4869063ce0b61ba3d4d3"
+    }
+  ]
+}

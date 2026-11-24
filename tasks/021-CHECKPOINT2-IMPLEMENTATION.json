@@ -1,17 +1,17 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT2-IMPLEMENTATION",
-  "status": "AWAITING_EXPLICIT_OWNER_IMPLEMENTATION_AUTHORIZATION",
+  "status": "AUTHORIZED_AWAITING_MANUAL_HANDOFF",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
   "preparation_input_commit": "fceadfe20ba7d3d63081e4d4a0682bffcd197374",
-  "execution_snapshot": null,
-  "authorization_gate": "Do not execute implementation, new code tests, code commit/push or own implementation report publication until explicit CP2 owner authorization is recorded and a pinned authorized dispatch is supplied",
-  "owner_implementation_authorization_recorded": false,
-  "implementation_authorized": false,
-  "code_commit_push_authorized": false,
-  "governance_implementation_report_commit_push_authorized": false,
+  "execution_snapshot": "Exact authorization publication SHA supplied in handoff; confirm remote coordination ref equals it. Preparation a0b6083dfcaa456bcebb288120d198e3de2bf5be is historical and is not the authorized dispatch snapshot.",
+  "authorization_gate": "Satisfied by direct owner CP2 authorization recorded below. Execute only exact authorized task/allowlist/feature after preflight; no CP3 or main changes.",
+  "owner_implementation_authorization_recorded": true,
+  "implementation_authorized": true,
+  "code_commit_push_authorized": true,
+  "governance_implementation_report_commit_push_authorized": true,
   "checkpoint1_approved": true,
   "approved_checkpoint1_code_commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
   "checkpoint1_approval_record": {
@@ -34,7 +34,7 @@
   ],
   "new_fixture_root_allowlist": "tests/fixtures/receptor_materialization/",
   "fixture_root_contents": "Only genuine public/synthetic scientific inputs, provenance manifests and expected-data oracles; no executable code or personal documents",
-  "code_allowlist_status": "Proposed scope awaiting exact owner authorization; not permission to write now",
+  "code_allowlist_status": "AUTHORIZED_BY_OWNER_FOR_CP2_ONLY_AT_PREPARED_SCOPE",
   "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
   "frozen_specification": {
     "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
@@ -278,7 +278,7 @@
   "checkpoint2_approved": false,
   "cp3_implementation_authorized": false,
   "cp4_implementation_authorized": false,
-  "next_gate": "Explicit owner authorization of exact prepared CP2 task; then implementation; architect receipt; independent CP2 review in separate session",
+  "next_gate": "Manual dispatch to separate Claude implementer; exact CP2 implementation/report; architect receipt; independent CP2 review. No automatic CP3 authorization.",
   "restrictions": [
     "No CP2 code/report execution before authorization",
     "No contract/schema/020 retrofit; no scientific preparation/protonation/charges/H repair/minimization/docking",
@@ -288,5 +288,24 @@
     "020-A STAND-BY and protected local items untouched"
   ],
   "final_specification_frozen": true,
-  "automated_dispatch": false
+  "automated_dispatch": false,
+  "authorization_input_commit": "a0b6083dfcaa456bcebb288120d198e3de2bf5be",
+  "approved_preparation_task_sha256": "0cef77b76039071cb0d24ac20cd7ae9aa27e4db4767424074996442eaf303f1e",
+  "owner_authorization_record": {
+    "path": "increments/021/34-checkpoint2-preparation/OWNER_CHECKPOINT2_IMPLEMENTATION_AUTHORIZATION.md",
+    "lines": 64,
+    "size_bytes": 5146,
+    "sha256": "24fd79e8c59ff34b2e4d321617f295014a9ebac2656ad10ef405a4b42d8d0e66",
+    "git_blob_sha": "1f0987e4c50caad26b585c5c96e5f419183034a7"
+  },
+  "owner_message_literal": "Autorizo somente o Checkpoint 2 do Incremento 021,\nconforme tasks/021-CHECKPOINT2-IMPLEMENTATION.json\npublicada no commit\na0b6083dfcaa456bcebb288120d198e3de2bf5be.\n\nAutorizo implementação, testes, commit e push apenas\nna allowlist da tarefa, na branch\nfeature/increment-021-receptor-materialization,\npartindo de ea8dac9cdc203c337d7f3f9947b54042291f7484.\n\nAutorizo o relatório nos caminhos definidos,\nem branch própria do governance.\n\nNão autorizo CP3, alteração do contrato congelado,\nPR, merge ou alteração de main.",
+  "authorization_recorded_on": "2026-11-24",
+  "timezone": "America/Sao_Paulo",
+  "scope_authorized": "CHECKPOINT2_ONLY",
+  "allowed_governance_output_paths": [
+    "increments/021/35-checkpoint2-implementation/CLAUDE_INCREMENT_021_CHECKPOINT2_IMPLEMENTATION_REPORT.md",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-*"
+  ],
+  "dispatch_status": "AUTHORIZED_AWAITING_MANUAL_HANDOFF",
+  "authorization_limits": "Exactly prepared task at a0b6083, four code files plus defined fixture root, existing feature continuing ea8dac9, own report paths/branch. No contract/main/PR/merge/CP3/CP4 permission."
 }
