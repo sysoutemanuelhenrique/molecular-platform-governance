@@ -1,0 +1,59 @@
+{
+  "task_id": "021-CHECKPOINT1-ADVERSARIAL-REVIEW",
+  "role": "claude-independent-reviewer-separate-from-implementer",
+  "date": "2026-11-24",
+  "timezone": "America/Sao_Paulo",
+  "dispatch": "Direct owner message naming governance HEAD d577b0dfddd3c71f9287b4c9cdcc783ea0865654; task file not edited",
+  "gates": {
+    "governance_coordination_remote_head": "d577b0dfddd3c71f9287b4c9cdcc783ea0865654",
+    "governance_main_remote": "a47183dfec8213c765ed43ae482c8c227760a3d5",
+    "implementation_report_branch_remote_head": "51752b4ce7603d1f14677b0b030edc176b9df13f",
+    "implementation_report_branch_base": "3cda329b0e19a972d9858e26b58052873655ac07",
+    "implementation_report_branch_added_files": 8,
+    "code_feature_branch_remote_head": "711f3070765efe67a5799f939f1a18306ed8afdd",
+    "code_head_parents": ["08b797e0985e123ffd4d7ca7e5a5e8f040e63851"],
+    "code_main_remote": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "baseline_to_head_name_status": ["A src/molecular/receptor_materialization.py", "A tests/test_receptor_materialization.py"],
+    "all_gates_match": true
+  },
+  "identities_verified": {
+    "src/molecular/receptor_materialization.py": [1418, 60988, "b4a596965f80b5a2a8e5e6ceabff55db72f649f7a23241e816e4be04b51b0357"],
+    "tests/test_receptor_materialization.py": [791, 38057, "ae8af3f9f6120a258ad7bd569d32a707337d3e6e69cc87f566760bbfd2bf86fb"],
+    "frozen_specification": [377, 64746, "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"],
+    "SCHEMAS_021.md": [106, 16601, "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"],
+    "CATALOG_021.json": [2045, 50480, "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"],
+    "SCENARIOS_021.csv": [174, 23307, "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"],
+    "IDENTITY_BASIS_CASES.json": [173, 6937, "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"],
+    "owner_cp1_authorization": [55, 4625, "589eb02982413e6461a59d8ec72ab468986b8d677bf3120cf43a88eaea756f18"],
+    "implementation_report_at_f725307_and_51752b4": [160, 15963, "135a44606d76515e25b2bde042bb41e87f4698ce61b9780040c5dd8262fff934"],
+    "architect_triage": [67, 8807, "540d6aed1bc490006228734064567b87e86fecc7297d9fdf29568bc25fda22fe"],
+    "triage_evidence_4_files": "all match task identities"
+  },
+  "environment": {
+    "os": "Linux (reviewer sandbox), not Windows",
+    "python": "3.13.18",
+    "pydantic": "2.13.5",
+    "pytest": "9.1.1",
+    "pyyaml": "6.0.3",
+    "gemmi_python": "absent",
+    "rdkit": "absent",
+    "packages_installed": false,
+    "code_copy": "git archive of 711f307 extracted to external scratch; production source unmodified",
+    "bytecode_or_pytest_cache_written_in_copy": 0
+  },
+  "own_execution": {
+    "fresh_import_without_gemmi_no_stub": {"script": "evidence/claude-import-probe.py", "output": "evidence/claude-import-probe.output.json", "result": "receptor_materialization fails: ModuleNotFoundError gemmi via receptor_materialization.py:53 -> receptor_inspection.py:28 -> receptor_parsing.py:33; inputs/receptor_selection import cleanly"},
+    "inert_sentinel": {"file": "evidence/claude-inert-gemmi-sentinel.py", "scope": "module-level __getattr__ raises; placed outside source tree on PYTHONPATH; proves nothing about native behaviour or gemmi-free import"},
+    "implementer_tests_with_sentinel": {"command": "python3 -B -m pytest -p no:cacheprovider -v tests/test_receptor_materialization.py", "output": "evidence/claude-pytest-new-tests-with-sentinel.txt", "result": "43 passed; 43 collected; 0 parametrized"},
+    "domain_probes": {"script": "evidence/claude-domain-probes.py", "output": "evidence/claude-domain-probes.output.json"},
+    "canonical_and_strict": {"script": "evidence/claude-canonical-and-strict.py", "output": "evidence/claude-canonical-and-strict.output.json", "result": "hand-written canonical bytes match production hashes; all 12 new models strict/frozen/forbid"},
+    "optimize_flag_probe": "python -O: MaterializationInputError('NOT_A_CODE') accepted (assert-based closed set)",
+    "full_suite": "not executed (requires real gemmi/rdkit); supplied 1481 baseline / 1524 after / 1519 passed + 5 skipped reconciled arithmetically only"
+  },
+  "scenario_reconciliation": {"proved": 31, "partial": 10, "gap": 2, "total": 43},
+  "not_executed": ["full suite", "real Gemmi", "Windows", "concurrency", "storage/registry/service/CLI (out of CP1)", "web"],
+  "code_repository_modified": false,
+  "architect_documents_modified": false,
+  "cp2_authorized": false,
+  "increment_020_a": "STAND-BY, untouched"
+}

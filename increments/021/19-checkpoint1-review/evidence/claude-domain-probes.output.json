@@ -1,0 +1,229 @@
+{
+ "python": "3.13.18",
+ "gemmi_module": "INERT REVIEW SENTINEL - not Gemmi. Any a",
+ "probes": {
+  "ARCH02_control_no_disposition": {
+   "expected": "retain ALA in M=1",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "a1": [
+      true,
+      "selected-asym"
+     ],
+     "a2": [
+      false,
+      "model-filter"
+     ]
+    }
+   }
+  },
+  "ARCH02_remove_key_absent_from_M_on_selected_polymer": {
+   "expected": "no effect: retain ALA in M=1",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "SELECTION_CONFLICT"
+   }
+  },
+  "ARCH02_remove_key_present_in_M_on_selected_polymer": {
+   "expected": "SELECTION_CONFLICT",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "SELECTION_CONFLICT"
+   }
+  },
+  "ARCH02_keep_key_absent_from_M_on_unselected_polymer": {
+   "expected": "no effect: B excluded by chain-complement",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "SELECTION_CONFLICT"
+   }
+  },
+  "ARCH02_keep_key_present_in_M_on_unselected_polymer": {
+   "expected": "SELECTION_CONFLICT",
+   "observed": {
+    "outcome": "MaterializationInputError",
+    "code": "SELECTION_CONFLICT"
+   }
+  },
+  "ARCH02_keep_key_on_asym_absent_from_M": {
+   "expected": "no effect",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "a1": [
+      true,
+      "selected-asym"
+     ]
+    }
+   }
+  },
+  "ARCH03_filter_with_generated_entry_id__cell": {
+   "expected": "accepted (catalogue: filter + generate_tags=['entry_id'])",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, filter must not generate tags"
+   }
+  },
+  "ARCH03_filter_with_generated_entry_id__symmetry": {
+   "expected": "accepted (catalogue: filter + generate_tags=['entry_id'])",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Value error, filter must not generate tags"
+   }
+  },
+  "ARCH03_generate_entry": {
+   "expected": "accepted (_entry generate id)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "generate"
+   }
+  },
+  "IND_omit_with_kept_rows": {
+   "expected": "rejected: 'nenhuma tag/linha sobrevive'",
+   "observed": {
+    "outcome": "accepted",
+    "detail": [
+     0
+    ]
+   }
+  },
+  "IND_guard_then_omit_with_kept_rows": {
+   "expected": "rejected",
+   "observed": {
+    "outcome": "accepted",
+    "detail": [
+     0
+    ]
+   }
+  },
+  "IND_inspection_parser_0.7.4_resolution_0.7.5": {
+   "expected": "MaterializationConfigurationError ENGINE_VERSION",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "name": "gemmi",
+     "version": "0.7.5"
+    }
+   }
+  },
+  "IND_resolution_format_pdb_inspection_mmcif": {
+   "expected": "rejected (format cross-check)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "mmcif"
+   }
+  },
+  "IND_nfc_outside_vs_polymer_distinct_tokens": {
+   "expected": "refuse collision (never merge)",
+   "observed": {
+    "outcome": "accepted",
+    "detail": [
+     "retained-polymer"
+    ]
+   }
+  },
+  "IND_duplicate_ordinal": {
+   "expected": "rejected",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "a1": [
+      true,
+      "selected-asym"
+     ],
+     "a2": [
+      true,
+      "selected-asym"
+     ]
+    }
+   }
+  },
+  "IND_duplicate_atom_id": {
+   "expected": "rejected",
+   "observed": {
+    "outcome": "accepted",
+    "detail": [
+     [
+      0,
+      "a1",
+      true
+     ],
+     [
+      1,
+      "a1",
+      true
+     ]
+    ]
+   }
+  },
+  "IND_duplicate_ordinal_decision_count": {
+   "expected": "rejected",
+   "observed": {
+    "outcome": "accepted",
+    "detail": 2
+   }
+  },
+  "IND_contradictory_entity_id_same_asym": {
+   "expected": "rejected",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "a1": [
+      true,
+      "selected-asym"
+     ],
+     "a2": [
+      true,
+      "selected-asym"
+     ]
+    }
+   }
+  },
+  "IND_selected_asym_absent_from_M": {
+   "expected": "rejected or flagged",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "a1": [
+      true,
+      "selected-asym"
+     ]
+    }
+   }
+  },
+  "IND_planbinding_divergent_catalogue": {
+   "expected": "rejected with configuration error",
+   "observed": {
+    "outcome": "accepted",
+    "detail": "ffffffff"
+   }
+  },
+  "IND_existing_policy_tampered_same_policy_id": {
+   "expected": "integrity/equivalence verified; mismatch refused",
+   "observed": {
+    "outcome": "accepted",
+    "detail": {
+     "tampered_existing_accepted": true,
+     "returned_declared_at": "2026-01-01T00:00:00.000000Z",
+     "returned_unaddressed": "preserve",
+     "policy_id_not_selfchecked_value": "eeeeeeee"
+    }
+   }
+  },
+  "IND_lone_surrogate_native_id": {
+   "expected": "typed rejection at DTO",
+   "observed": {
+    "outcome": "ValidationError",
+    "msg": "Input should be a valid string, unable to parse raw data as a unicode string"
+   }
+  },
+  "IND_format_pdb_code": {
+   "expected": "configuration error (not host platform)",
+   "observed": {
+    "outcome": "MaterializationConfigurationError",
+    "code": "UNSUPPORTED_PLATFORM"
+   }
+  }
+ }
+}

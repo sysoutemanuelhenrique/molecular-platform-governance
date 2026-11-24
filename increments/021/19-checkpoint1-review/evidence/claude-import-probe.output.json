@@ -1,0 +1,51 @@
+{
+ "python": "3.13.18",
+ "src": "/home/claude/cp1/src",
+ "gemmi_importable": false,
+ "results": {
+  "molecular.inputs": {
+   "returncode": 0,
+   "last_stderr_line": null,
+   "gemmi_in_sys_modules": "False"
+  },
+  "molecular.receptor_selection": {
+   "returncode": 0,
+   "last_stderr_line": null,
+   "gemmi_in_sys_modules": "False"
+  },
+  "molecular.receptor_resolution": {
+   "returncode": 1,
+   "last_stderr_line": "ModuleNotFoundError: No module named 'gemmi'",
+   "gemmi_in_sys_modules": null
+  },
+  "molecular.receptor_inspection": {
+   "returncode": 1,
+   "last_stderr_line": "ModuleNotFoundError: No module named 'gemmi'",
+   "gemmi_in_sys_modules": null
+  },
+  "molecular.receptor_parsing": {
+   "returncode": 1,
+   "last_stderr_line": "ModuleNotFoundError: No module named 'gemmi'",
+   "gemmi_in_sys_modules": null
+  },
+  "molecular.receptor_materialization": {
+   "returncode": 1,
+   "last_stderr_line": "ModuleNotFoundError: No module named 'gemmi'",
+   "gemmi_in_sys_modules": null
+  }
+ },
+ "importtime_tail_molecular_lines": [
+  "import time:     11628 |      20243 |   molecular.inputs",
+  "import time:      3634 |       3634 |       molecular.scientific",
+  "import time:     11444 |      15077 |     molecular.promotion",
+  "import time:      4847 |       4970 |     molecular.receptor_parsing",
+  "import time:      7022 |      27069 |   molecular.receptor_inspection",
+  "import time:     12640 |     149245 | molecular.receptor_materialization",
+  "    import molecular.receptor_materialization",
+  "  File \"/home/claude/cp1/src/molecular/receptor_materialization.py\", line 53, in <module>",
+  "    from molecular.receptor_inspection import ReceptorInspectionReport, compute_inspection_id",
+  "  File \"/home/claude/cp1/src/molecular/receptor_inspection.py\", line 28, in <module>",
+  "    from molecular.receptor_parsing import ParsedReceptorDocument",
+  "  File \"/home/claude/cp1/src/molecular/receptor_parsing.py\", line 33, in <module>"
+ ]
+}

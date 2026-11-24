@@ -1,0 +1,92 @@
+{
+ "golden": {
+  "case0": {
+   "hand_sha256": "e0feec2dfd54b37307855b8158db9f98ef7fdad36dfacbdb88279f231bde0ccc",
+   "production": "e0feec2dfd54b37307855b8158db9f98ef7fdad36dfacbdb88279f231bde0ccc",
+   "equal": true
+  },
+  "case1": {
+   "hand_sha256": "20005860c2b42017f4014acbbc3597f0079ce964380e0ccf569cd8cb03e04393",
+   "production": "20005860c2b42017f4014acbbc3597f0079ce964380e0ccf569cd8cb03e04393",
+   "equal": true
+  },
+  "atom_ids_key_preserves_given_order": true,
+  "occurrence_key_envelope": true,
+  "empty_connection_key_envelope": true
+ },
+ "model_config": {
+  "Engine": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "RecordSnapshot": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "OccurrenceIdentity": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "AtomObservation": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "XEntry": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "OutsideEntry": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "AtomDecision": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "CategoryDecision": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "PlanBinding": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "MaterializationPlan": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "PolicyRecord": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  },
+  "SourceContext": {
+   "strict": true,
+   "frozen": true,
+   "extra": "forbid"
+  }
+ },
+ "coercion_attempts": {
+  "XEntry.atom_count=True": "rejected",
+  "XEntry.model='1'": "rejected",
+  "RecordSnapshot.size_bytes=1.0": "rejected",
+  "CategoryDecision.kept_row_ordinals=[0]": "rejected",
+  "CategoryDecision.kept_row_ordinals=(True,)": "rejected",
+  "CategoryDecision.kept_row_ordinals=(-1,)": "accepted",
+  "CategoryDecision.preserved_tags=(b'x',)": "rejected",
+  "CategoryDecision.category='_X' (non-canonical)": "accepted",
+  "CategoryDecision.category='not-in-catalogue'": "accepted",
+  "AtomObservation.insertion_token=b'A'": "rejected",
+  "RecordSnapshot.id 'protein-1' vs 'Protein-1' distinct": "n/a"
+ }
+}
