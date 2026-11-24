@@ -1,0 +1,669 @@
+{
+  "role": "architect documentary preparation, no implementation",
+  "remote_heads_confirmed": {
+    "coordination": "fceadfe20ba7d3d63081e4d4a0682bffcd197374",
+    "code_feature": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+    "code_main": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "governance_main": "a47183dfec8213c765ed43ae482c8c227760a3d5",
+    "independent_r1_review": "a9b146d5a355e4c15ad596b851136efdde208cdb"
+  },
+  "verified_files": [
+    {
+      "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+      "lines": 377,
+      "size_bytes": 64746,
+      "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8",
+      "git_blob_sha": "971d4dbaa8b651845f1601b3253496474589598c"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03",
+      "git_blob_sha": "eed05f36f13ad8d9221f895cf8c9e814e860d9f0"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/FROZEN_PACKAGE.json",
+      "lines": 55,
+      "size_bytes": 2539,
+      "sha256": "23cfe0aa48480eadaac047b6259fc2ed88c686ce5bead6e47997e2306bc7233c",
+      "git_blob_sha": "020a2bd150e3d0591180952921d463a460d02eb1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb",
+      "git_blob_sha": "615198785d380a428ffd7c38555620e22373e2bf"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b",
+      "git_blob_sha": "5d41d129a7adb1d273e74b648f714609e5ba49f6"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1",
+      "git_blob_sha": "a0db7a2eb8ef89f13b0feb1603242dc155095fc2"
+    },
+    {
+      "path": "pyproject.toml",
+      "lines": 30,
+      "size_bytes": 559,
+      "sha256": "879ba13abe5c4b6dd75022e9cd0779606efba5a3eb9cad670751b8c04a7cf77a",
+      "git_blob_sha": "b8317bdfa6cd3e09b3eeb3e55356fe46c235ab78"
+    },
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 1724,
+      "size_bytes": 78807,
+      "sha256": "d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d",
+      "git_blob_sha": "c362303304bfd825e0e07d528c3a96d9f804af47"
+    },
+    {
+      "path": "src/molecular/receptor_parsing.py",
+      "lines": 952,
+      "size_bytes": 34622,
+      "sha256": "160a0a8f1932fbb9f65564cf68cbabb387b2cc400893b842a396efec221d295a",
+      "git_blob_sha": "4898e46c87a43a5aa7266f332262f5996ad42c45"
+    },
+    {
+      "path": "tests/test_receptor_parsing.py",
+      "lines": 536,
+      "size_bytes": 16399,
+      "sha256": "625747de75774353894f6068e70430bac9480a57260b65d506bcec85a9bc21b3",
+      "git_blob_sha": "0c7ac35fa42d664d660b2c08b882118ba2c168dc"
+    }
+  ],
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "cp_counts": {
+    "CP1": 43,
+    "CP2": 79,
+    "CP3": 31,
+    "CP4": 20
+  },
+  "cp2_scenarios": [
+    {
+      "id": "T021-041",
+      "checkpoint": "CP2",
+      "target": "raw-tokens",
+      "stimulus": "? . e valores citados equivalentes em texto",
+      "expected": "Preservar distinção; não quote_list de token bruto"
+    },
+    {
+      "id": "T021-042",
+      "checkpoint": "CP2",
+      "target": "coordinates-occupancy",
+      "stimulus": "0 parcial null B-factor precisão H/D em atom_site",
+      "expected": "Preservar tokens/coordenadas sem reparo"
+    },
+    {
+      "id": "T021-043",
+      "checkpoint": "CP2",
+      "target": "endpoint-insertion",
+      "stimulus": "Resíduos 52/52A em struct_conn canônico",
+      "expected": "Distinguir inserção; não usar colunas antigas"
+    },
+    {
+      "id": "T021-044",
+      "checkpoint": "CP2",
+      "target": "third-partner",
+      "stimulus": "ptnr3 ausente/nulo versus preenchido ou citado ?",
+      "expected": "Aceitar só ausência/null real; recusar preenchido"
+    },
+    {
+      "id": "T021-045",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=2; symmetry=both-identity; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Preservar literal"
+    },
+    {
+      "id": "T021-046",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=2; symmetry=same-nonidentity; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Recusar pelo perfil"
+    },
+    {
+      "id": "T021-047",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=2; symmetry=different; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Recusar pelo perfil"
+    },
+    {
+      "id": "T021-048",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=2; symmetry=one-null; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Recusar pelo perfil"
+    },
+    {
+      "id": "T021-049",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=2; symmetry=both-null; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Recusar pelo perfil"
+    },
+    {
+      "id": "T021-050",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=1; symmetry=both-identity; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Omitir só metalc/hydrog com parceiro inteiro reconhecido; covalente recusa"
+    },
+    {
+      "id": "T021-051",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=1; symmetry=same-nonidentity; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Recusar pelo perfil"
+    },
+    {
+      "id": "T021-052",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=1; symmetry=different; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Recusar pelo perfil"
+    },
+    {
+      "id": "T021-053",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=1; symmetry=one-null; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Recusar pelo perfil"
+    },
+    {
+      "id": "T021-054",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=1; symmetry=both-null; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Recusar pelo perfil"
+    },
+    {
+      "id": "T021-055",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=0; symmetry=both-identity; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Omitir com auditoria"
+    },
+    {
+      "id": "T021-056",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=0; symmetry=same-nonidentity; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Omitir com auditoria"
+    },
+    {
+      "id": "T021-057",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=0; symmetry=different; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Omitir com auditoria"
+    },
+    {
+      "id": "T021-058",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=0; symmetry=one-null; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Omitir com auditoria"
+    },
+    {
+      "id": "T021-059",
+      "checkpoint": "CP2",
+      "target": "symmetry-matrix",
+      "stimulus": "K=0; symmetry=both-null; endpoints já resolvidos; operadores conhecidos quando não null",
+      "expected": "Omitir com auditoria"
+    },
+    {
+      "id": "T021-060",
+      "checkpoint": "CP2",
+      "target": "symmetry-preconditions",
+      "stimulus": "Operador ausente/contraditório/malformado, exceto 1_555 sem tabelas; namespace assembly distinto",
+      "expected": "K>0 recusa casos não suportados; 1_555 sem tabelas aceita por convenção; K=0 omite auditado"
+    },
+    {
+      "id": "T021-061",
+      "checkpoint": "CP2",
+      "target": "atom_site",
+      "stimulus": "Fixture representativa da regra atom_site",
+      "expected": "Máscara preserva ids/tokens e contagens; reparse confere vetores esperados"
+    },
+    {
+      "id": "T021-062",
+      "checkpoint": "CP2",
+      "target": "atom_site_anisotrop",
+      "stimulus": "Fixture representativa da regra atom_site_anisotrop",
+      "expected": "Filtrar por id real; campos informados concordam; preservar tensor/esd"
+    },
+    {
+      "id": "T021-063",
+      "checkpoint": "CP2",
+      "target": "struct_asym",
+      "stimulus": "Fixture representativa da regra struct_asym",
+      "expected": "Filtrar asyms e manter entity_id válido"
+    },
+    {
+      "id": "T021-064",
+      "checkpoint": "CP2",
+      "target": "entity",
+      "stimulus": "Fixture representativa da regra entity",
+      "expected": "Manter entidades referidas e omitir contagens/metadados listados"
+    },
+    {
+      "id": "T021-065",
+      "checkpoint": "CP2",
+      "target": "entity_poly",
+      "stimulus": "Fixture representativa da regra entity_poly",
+      "expected": "Preservar entidade/tipo/seq; não copiar pdbx_strand_id stale"
+    },
+    {
+      "id": "T021-066",
+      "checkpoint": "CP2",
+      "target": "entity_poly_seq",
+      "stimulus": "Fixture representativa da regra entity_poly_seq",
+      "expected": "Manter sequência declarada inclusive não observada"
+    },
+    {
+      "id": "T021-067",
+      "checkpoint": "CP2",
+      "target": "chem_comp",
+      "stimulus": "Fixture representativa da regra chem_comp",
+      "expected": "Fechamento de CCDs de átomos/seq/branch/parent; não baixar CCD"
+    },
+    {
+      "id": "T021-068",
+      "checkpoint": "CP2",
+      "target": "pdbx_entity_nonpoly",
+      "stimulus": "Fixture representativa da regra pdbx_entity_nonpoly",
+      "expected": "Filtrar entidade/CCD referidos"
+    },
+    {
+      "id": "T021-069",
+      "checkpoint": "CP2",
+      "target": "pdbx_poly_seq_scheme",
+      "stimulus": "Fixture representativa da regra pdbx_poly_seq_scheme",
+      "expected": "Manter esquema completo do asym sobrevivente"
+    },
+    {
+      "id": "T021-070",
+      "checkpoint": "CP2",
+      "target": "pdbx_nonpoly_scheme",
+      "stimulus": "Fixture representativa da regra pdbx_nonpoly_scheme",
+      "expected": "Filtrar asym sem cortar ocorrência íntegra"
+    },
+    {
+      "id": "T021-071",
+      "checkpoint": "CP2",
+      "target": "pdbx_entity_branch",
+      "stimulus": "Fixture representativa da regra pdbx_entity_branch",
+      "expected": "Manter tipos de entidades ramificadas sobreviventes"
+    },
+    {
+      "id": "T021-072",
+      "checkpoint": "CP2",
+      "target": "pdbx_entity_branch_list",
+      "stimulus": "Fixture representativa da regra pdbx_entity_branch_list",
+      "expected": "Preservar todos os monômeros e microheterogeneidade"
+    },
+    {
+      "id": "T021-073",
+      "checkpoint": "CP2",
+      "target": "pdbx_entity_branch_link",
+      "stimulus": "Fixture representativa da regra pdbx_entity_branch_link",
+      "expected": "Referências de lista/CCD válidas; leaving atom não é inventado"
+    },
+    {
+      "id": "T021-074",
+      "checkpoint": "CP2",
+      "target": "pdbx_branch_scheme",
+      "stimulus": "Fixture representativa da regra pdbx_branch_scheme",
+      "expected": "Preservar nomenclatura completa do asym retido"
+    },
+    {
+      "id": "T021-075",
+      "checkpoint": "CP2",
+      "target": "struct_conn",
+      "stimulus": "Fixture representativa da regra struct_conn",
+      "expected": "Ações/literal/insertions/ptnr3 conforme plano"
+    },
+    {
+      "id": "T021-076",
+      "checkpoint": "CP2",
+      "target": "struct_conn_type",
+      "stimulus": "Fixture representativa da regra struct_conn_type",
+      "expected": "Reter só tipos de conexão sobreviventes sem fabricar critérios"
+    },
+    {
+      "id": "T021-077",
+      "checkpoint": "CP2",
+      "target": "atom_type",
+      "stimulus": "Fixture representativa da regra atom_type",
+      "expected": "Reter elementos usados se categoria existir"
+    },
+    {
+      "id": "T021-078",
+      "checkpoint": "CP2",
+      "target": "cell/symmetry",
+      "stimulus": "Fixture representativa da regra cell/symmetry",
+      "expected": "Contexto fonte sem P1 inventado; entry_id gerado declarado"
+    },
+    {
+      "id": "T021-079",
+      "checkpoint": "CP2",
+      "target": "source-operator-tables",
+      "stimulus": "Fixture representativa da regra source-operator-tables",
+      "expected": "1_555 sem tabelas usa convenção; tabelas presentes exigem identidade coerente; outros operadores exigem fonte"
+    },
+    {
+      "id": "T021-080",
+      "checkpoint": "CP2",
+      "target": "pdbx_struct_mod_residue",
+      "stimulus": "Fixture representativa da regra pdbx_struct_mod_residue",
+      "expected": "Resolver contexto em M; parent_comp_id entra no fechamento CCD"
+    },
+    {
+      "id": "T021-081",
+      "checkpoint": "CP2",
+      "target": "unobs-zero-occ",
+      "stimulus": "Fixture representativa da regra unobs-zero-occ",
+      "expected": "Anotação sem átomo pode sobreviver por contexto de cadeia/seq; sem inferir coordenada"
+    },
+    {
+      "id": "T021-082",
+      "checkpoint": "CP2",
+      "target": "entry",
+      "stimulus": "Fixture representativa da regra entry",
+      "expected": "Nova entry/block tbmp_plan_key e original só na proveniência"
+    },
+    {
+      "id": "T021-083",
+      "checkpoint": "CP2",
+      "target": "omitted-categories",
+      "stimulus": "Fixture representativa da regra omitted-categories",
+      "expected": "Categorias omitidas/família validate não aparecem na saída e constam da auditoria"
+    },
+    {
+      "id": "T021-084",
+      "checkpoint": "CP2",
+      "target": "unknown-category",
+      "stimulus": "Fixture representativa da regra unknown-category",
+      "expected": "Categoria fora do catálogo/prefixo permitido recusa"
+    },
+    {
+      "id": "T021-085",
+      "checkpoint": "CP2",
+      "target": "unknown-tag",
+      "stimulus": "Fixture representativa da regra unknown-tag",
+      "expected": "Coluna desconhecida em categoria filtrada recusa; omitida sai com categoria"
+    },
+    {
+      "id": "T021-086",
+      "checkpoint": "CP2",
+      "target": "missing-conditional",
+      "stimulus": "Fixture representativa da regra missing-conditional",
+      "expected": "Recusar; não fabricar categoria"
+    },
+    {
+      "id": "T021-087",
+      "checkpoint": "CP2",
+      "target": "duplicate-keys",
+      "stimulus": "Fixture representativa da regra duplicate-keys",
+      "expected": "Recusar antes de escrever"
+    },
+    {
+      "id": "T021-088",
+      "checkpoint": "CP2",
+      "target": "loss-audit",
+      "stimulus": "Fixture representativa da regra loss-audit",
+      "expected": "Auditoria completa e RAW checksum inalterado"
+    },
+    {
+      "id": "T021-089",
+      "checkpoint": "CP2",
+      "target": "output-verification",
+      "stimulus": "Fixture representativa da regra output-verification",
+      "expected": "Recusar INVALID_OUTPUT antes de commit"
+    },
+    {
+      "id": "T021-090",
+      "checkpoint": "CP2",
+      "target": "binding-real",
+      "stimulus": "Fixture representativa da regra binding-real",
+      "expected": "Comprovar valores/tokens em integração real; disponibilidade sozinha não conta"
+    },
+    {
+      "id": "T021-141",
+      "checkpoint": "CP2",
+      "target": "identity-no-table",
+      "stimulus": "1_555/1_555 sem tabelas em fixture real",
+      "expected": "Reconhecer identidade sem fabricar operadores; auditoria explicita convenção"
+    },
+    {
+      "id": "T021-142",
+      "checkpoint": "CP2",
+      "target": "identity-contradiction",
+      "stimulus": "Tabela presente com op 1 não identidade/duplicado/ausente",
+      "expected": "Recusar; não aplicar fallback de convenção"
+    },
+    {
+      "id": "T021-143",
+      "checkpoint": "CP2",
+      "target": "other-operator-no-table",
+      "stimulus": "2_555, 1_556 ou 01_555 sem prova fonte",
+      "expected": "Recusar K>0; não usar exceção de 1_555"
+    },
+    {
+      "id": "T021-144",
+      "checkpoint": "CP2",
+      "target": "different-image-reason",
+      "stimulus": "1pfe com hydrog 1_555/9_555, mesmo sem corte",
+      "expected": "Recusar por limite de projeção não identidade; não alegar impossibilidade geométrica"
+    },
+    {
+      "id": "T021-145",
+      "checkpoint": "CP2",
+      "target": "catalog-cell",
+      "stimulus": "Tags cell esd/reciprocal/volume e symmetry full H-M",
+      "expected": "Preservar tokens de contexto fonte; sem validar nova cela"
+    },
+    {
+      "id": "T021-146",
+      "checkpoint": "CP2",
+      "target": "catalog-alt-annotation",
+      "stimulus": "unobs atoms label_alt_id",
+      "expected": "Reconhecer e preservar conforme contexto; não tag desconhecida"
+    },
+    {
+      "id": "T021-147",
+      "checkpoint": "CP2",
+      "target": "catalog-three-real",
+      "stimulus": "Inventários 5i55/1pfe/3dg1_final do pin",
+      "expected": "Zero recusas de cobertura, sem alegar materialização positiva"
+    },
+    {
+      "id": "T021-148",
+      "checkpoint": "CP2",
+      "target": "catalog-additional-metadata",
+      "stimulus": "16 categorias observadas adicionais",
+      "expected": "Omitir categoria completa com hash/contagens/ordinais"
+    },
+    {
+      "id": "T021-149",
+      "checkpoint": "CP2",
+      "target": "catalog-nmr-em",
+      "stimulus": "Metadados pdbx_nmr_ e em_ e pdbx_struct_conn_angle",
+      "expected": "Omitir com auditoria; preservar M; outras categorias desconhecidas continuam recusadas"
+    },
+    {
+      "id": "T021-150",
+      "checkpoint": "CP2",
+      "target": "ncs-generate",
+      "stimulus": "Transformação não identidade code generate",
+      "expected": "Recusar UNSUPPORTED_NCS antes de omitir"
+    },
+    {
+      "id": "T021-151",
+      "checkpoint": "CP2",
+      "target": "ncs-null",
+      "stimulus": "Transformação não identidade code null/ausente",
+      "expected": "Recusar UNSUPPORTED_NCS; não inferir given"
+    },
+    {
+      "id": "T021-152",
+      "checkpoint": "CP2",
+      "target": "ncs-given",
+      "stimulus": "Transformação finita não identidade code given",
+      "expected": "Omitir com auditoria/aviso; não aplicar transformação"
+    },
+    {
+      "id": "T021-153",
+      "checkpoint": "CP2",
+      "target": "ncs-identity",
+      "stimulus": "Transformação exatamente identidade com code generate/null",
+      "expected": "Omitir auditado; nenhuma cópia nova"
+    },
+    {
+      "id": "T021-154",
+      "checkpoint": "CP2",
+      "target": "ncs-invalid",
+      "stimulus": "Matriz parcial/NaN ou code desconhecido",
+      "expected": "Recusar INVALID_CIF; não ignorar como faz fallback Structure"
+    },
+    {
+      "id": "T021-155",
+      "checkpoint": "CP2",
+      "target": "numeric-su-exponent",
+      "stimulus": "1.2e3(4) versus 1.2(4)e3",
+      "expected": "Aceitar primeiro; recusar segundo; preservar token válido"
+    },
+    {
+      "id": "T021-156",
+      "checkpoint": "CP2",
+      "target": "altloc-endpoint-set",
+      "stimulus": "Endpoint sem altloc tem A/B na mesma ocorrência",
+      "expected": "Um conjunto por endpoint; K uniforme; uma linha fonte literal"
+    },
+    {
+      "id": "T021-157",
+      "checkpoint": "CP2",
+      "target": "altloc-occurrence-ambiguous",
+      "stimulus": "Mesmo atom name em duas ocorrências candidatas",
+      "expected": "Recusar; não fundir conjuntos entre ocorrências"
+    },
+    {
+      "id": "T021-158",
+      "checkpoint": "CP2",
+      "target": "special-position-audit",
+      "stimulus": "Anotações especiais retidas/removidas/ambíguas",
+      "expected": "Contagens/aviso apenas quando apropriado; ambiguidade recusa; ocupância inalterada"
+    },
+    {
+      "id": "T021-162",
+      "checkpoint": "CP2",
+      "target": "real-fixture-lineage",
+      "stimulus": "Fixtures positivos D-01(b) derivados de entrada real",
+      "expected": "Origem/hash/alterações e oráculos específicos obrigatórios, sem resultado fictício"
+    },
+    {
+      "id": "T021-164",
+      "checkpoint": "CP2",
+      "target": "identity-basis-pair",
+      "stimulus": "K=0; bases ptnr1/ptnr2 = pdbx-1_555-convention/pdbx-1_555-convention",
+      "expected": "Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada"
+    },
+    {
+      "id": "T021-165",
+      "checkpoint": "CP2",
+      "target": "identity-basis-pair",
+      "stimulus": "K=0; bases ptnr1/ptnr2 = pdbx-1_555-convention/source-operator",
+      "expected": "Recusar par impossível antes de hash; nunca produzir ConnectionDecision aceita"
+    },
+    {
+      "id": "T021-166",
+      "checkpoint": "CP2",
+      "target": "identity-basis-pair",
+      "stimulus": "K=0; bases ptnr1/ptnr2 = pdbx-1_555-convention/not-applicable",
+      "expected": "Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada"
+    },
+    {
+      "id": "T021-167",
+      "checkpoint": "CP2",
+      "target": "identity-basis-pair",
+      "stimulus": "K=0; bases ptnr1/ptnr2 = source-operator/pdbx-1_555-convention",
+      "expected": "Recusar par impossível antes de hash; nunca produzir ConnectionDecision aceita"
+    },
+    {
+      "id": "T021-168",
+      "checkpoint": "CP2",
+      "target": "identity-basis-pair",
+      "stimulus": "K=0; bases ptnr1/ptnr2 = source-operator/source-operator",
+      "expected": "Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada"
+    },
+    {
+      "id": "T021-169",
+      "checkpoint": "CP2",
+      "target": "identity-basis-pair",
+      "stimulus": "K=0; bases ptnr1/ptnr2 = source-operator/not-applicable",
+      "expected": "Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada"
+    },
+    {
+      "id": "T021-170",
+      "checkpoint": "CP2",
+      "target": "identity-basis-pair",
+      "stimulus": "K=0; bases ptnr1/ptnr2 = not-applicable/pdbx-1_555-convention",
+      "expected": "Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada"
+    },
+    {
+      "id": "T021-171",
+      "checkpoint": "CP2",
+      "target": "identity-basis-pair",
+      "stimulus": "K=0; bases ptnr1/ptnr2 = not-applicable/source-operator",
+      "expected": "Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada"
+    },
+    {
+      "id": "T021-172",
+      "checkpoint": "CP2",
+      "target": "identity-basis-pair",
+      "stimulus": "K=0; bases ptnr1/ptnr2 = not-applicable/not-applicable",
+      "expected": "Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada"
+    },
+    {
+      "id": "T021-173",
+      "checkpoint": "CP2",
+      "target": "identity-basis-precedence",
+      "stimulus": "Código null/literal citado/malformado/não localizado; tabela vazia; id duplicado/contraditório; op 1 não identidade; mesmo lookup nos K possíveis",
+      "expected": "Aplicar §10.1 sem atalhos por K, sem fallback com tabela; validações anteriores e recusas da matriz preservadas"
+    }
+  ],
+  "catalogue_categories": 94,
+  "catalogue_actions": {
+    "filter": 24,
+    "generate": 1,
+    "omit": 67,
+    "guard_then_omit": 2
+  },
+  "code_observations": [
+    "Connection hash currently empty vector; needs real CP2 decisions while preserving empty hash",
+    "MaterializationPlan lacks connection_decisions vector in CP1",
+    "Native import currently at top of existing parser; new path must meet frozen lazy boundary without changing legacy results",
+    "Legacy parser is Path-based, rereads and has historical insertion spelling; not a materialization reader",
+    "No fixture tree in code snapshot; originals/lineage must be acquired or located after authorization"
+  ],
+  "owner_message_received": true,
+  "owner_message_literal": "Aprovo o Checkpoint 1 do Incremento 021 no commit\nea8dac9cdc203c337d7f3f9947b54042291f7484,\ncom as três NOTES preservadas.\n\nPode preparar a tarefa do Checkpoint 2.\nEsta decisão não autoriza implementação do CP2,\nPR, merge ou alteração de main.",
+  "cp1_approved": true,
+  "cp2_task_preparation_authorized": true,
+  "cp2_implementation_authorized": false,
+  "pytest_executed": false,
+  "native_gemmi_executed": false,
+  "windows_executed": false,
+  "code_repository_modified": false,
+  "scope_csv_is_lossless_79_row_extraction": true,
+  "sources_read": "Frozen main and four annexes in full; parser/domain selected code paths and AST API inventory; existing parser test fixture setup; pyproject pin; coordination instructions/tasks"
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-IMPLEMENTATION",
-  "status": "CP1_REVIEW_FINDINGS_CLOSED_AWAITING_OWNER_ACCEPTANCE",
+  "status": "COMPLETED_OWNER_ACCEPTED_CP1",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -191,9 +191,9 @@
     "size_bytes": 8807,
     "sha256": "540d6aed1bc490006228734064567b87e86fecc7297d9fdf29568bc25fda22fe"
   },
-  "checkpoint1_approved": false,
+  "checkpoint1_approved": true,
   "independent_review_complete": true,
-  "next_task": "tasks/021-OWNER-CHECKPOINT1-DECISION.json",
+  "next_task": "tasks/021-CHECKPOINT2-IMPLEMENTATION.json",
   "independent_review_commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801",
   "independent_review_verdict": "REQUEST CHANGES",
   "architect_reconciliation": {
@@ -257,5 +257,13 @@
   "r1_correction_received": true,
   "r1_independently_closed": true,
   "latest_independent_review_verdict": "APPROVE_R1_ONLY_READY_FOR_OWNER_CP1_DECISION",
-  "ready_for_owner_cp1_decision": true
+  "ready_for_owner_cp1_decision": true,
+  "approved_code_commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "owner_checkpoint1_approval_record": {
+    "path": "increments/021/33-checkpoint1-acceptance/OWNER_CHECKPOINT1_ACCEPTANCE.md",
+    "lines": 36,
+    "size_bytes": 2310,
+    "sha256": "e5f95d541e1c1a8d56c92358ae41025b4ffe6a80d3d3d3a0af5a3286d9265975",
+    "git_blob_sha": "150b46b0bf38d41bc9588e39104b2bf330fa8439"
+  }
 }

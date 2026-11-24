@@ -1,36 +1,34 @@
-# Coordenação — Incremento 021: CP1 pronto para decisão do responsável
+# Coordenação — Incremento 021: CP1 aprovado; CP2 preparado, não autorizado
 
-Atualizado em 24/11/2026 por Codex arquiteto. R-1 fechado independentemente; doze achados funcionais anteriores preservados. Não restam BLOCKERs, MAJORs ou MINORs abertos no CP1. Três NOTES preservadas. Aprovação humana do CP1 pendente; CP2 não autorizado.
+Atualizado em 24/11/2026 por Codex arquiteto, após mensagem expressa de Emanuel. O CP1 no commit ea8dac9cdc203c337d7f3f9947b54042291f7484 está aprovado, com as três NOTES preservadas. A aprovação autoriza apenas preparar a tarefa do CP2; não implementar.
 
 | Campo | Estado |
 |---|---|
 | Branch de coordenação | docs/020-a-candidate1-review-20261020 |
-| Snapshot de entrada deste recebimento | 828bf806e2f16ae9fee5896ae6f9719a9e1dc5cf |
-| Código CP1 examinado | feature/increment-021-receptor-materialization @ ea8dac9cdc203c337d7f3f9947b54042291f7484 |
+| Snapshot de entrada | fceadfe20ba7d3d63081e4d4a0682bffcd197374 |
+| Código CP1 aprovado | feature/increment-021-receptor-materialization @ ea8dac9cdc203c337d7f3f9947b54042291f7484 |
+| Registro literal do responsável | increments/021/33-checkpoint1-acceptance/OWNER_CHECKPOINT1_ACCEPTANCE.md |
+| Parecer independente R-1 | a9b146d5a355e4c15ad596b851136efdde208cdb, APPROVE; doze achados anteriores e R-1 fechados |
+| Achados CP1 abertos / NOTES | 0 BLOCKER / 0 MAJOR / 0 MINOR; 3 NOTES preservadas |
+| CP1 aprovado | YES, pelo responsável no commit exato |
+| Tarefa ativa | tasks/021-CHECKPOINT2-IMPLEMENTATION.json — AWAITING_EXPLICIT_OWNER_IMPLEMENTATION_AUTHORIZATION |
+| Brief CP2 | increments/021/34-checkpoint2-preparation/CHECKPOINT2_IMPLEMENTATION_BRIEF.md |
+| Escopo CP2 | Adapter DOM/token/endpoints/simetria/catálogo/saída e validação com Gemmi0.7.5 real; 79 cenários |
+| Allowlist CP2 proposta | receptor_parsing.py, receptor_materialization.py, seus dois testes e tests/fixtures/receptor_materialization/ |
+| CP2 implementação / commit-push / relatório | NO / NO / NO; aguardando autorização própria |
+| Próximo ator | Emanuel: decidir autorização da tarefa CP2 concreta |
 | Main código | 08b797e0985e123ffd4d7ca7e5a5e8f040e63851, preservada |
 | Main governance | a47183dfec8213c765ed43ae482c8c227760a3d5, preservada |
-| Parecer focal R-1 | claude/021-cp1-r1-focal-review-20261124 @ a9b146d5a355e4c15ad596b851136efdde208cdb |
-| Veredito independente | APPROVE para R-1; READY FOR OWNER CP1 DECISION: YES |
-| Relatório do implementador | claude/021-cp1-r1-test-correction-20261124 @ b35bb8e9d32e6fb4bc95e903f786fa0c1240e2d2 |
-| Recebimento do fechamento | increments/021/32-checkpoint1-owner-decision/CODEX_INCREMENT_021_CHECKPOINT1_OWNER_DECISION_BRIEF.md |
-| Tarefa ativa | tasks/021-OWNER-CHECKPOINT1-DECISION.json — AWAITING_EXPLICIT_OWNER_DECISION |
-| Próximo ator | Emanuel, responsável: decidir aceitação do CP1 exato |
-| Evidência independente | Nó novo e 92 testes em Linux com sentinela de Gemmi para DTOs legados; quatro mutações rejeitadas pelo teste exato; não prova parsing nativo |
-| Evidência fornecida Windows | 1568 passed, 5 skipped, 1573 coletados; não reexecutada pelo revisor/arquitetura |
-| Execução própria neste recebimento | Leitura integral/identidades SHA256/bytes/linhas/blobs/diff/refs; sem pytest, motores ou instalações |
-| Cenários CP1 | 43: 40 provados, 3 parciais por desenho, zero lacunas; preservados |
-| Achados abertos | 0 BLOCKER / 0 MAJOR / 0 MINOR; 3 NOTES preservadas |
-| CP1 aprovado pelo responsável | Não; aguardando mensagem explícita |
-| CP2 implementação autorizada | Não; tarefa de implementação ainda não preparada/autorizada |
 | Contrato / 020-A | Congelado preservado / STAND-BY |
-| Relay | Não configurado; nenhum agente acionado |
+| Verificação da preparação | Especificação e quatro anexos lidos/identificados; pacote e 79 IDs reconciliados; código/parser e limites CP1 confrontados; sem pytest/nativos/Windows |
+| Execução automática | Nenhuma; nenhum agente acionado |
 
-O parecer independente fecha R-1, mas não substitui a aprovação de Emanuel. A decisão pendente é apenas aceitação do CP1 no commit exato e eventual preparação documental do CP2. Essa preparação não autoriza execução. Nenhuma nova revisão integral foi solicitada e nenhum código, teste, contrato congelado ou documento histórico foi alterado pelo arquiteto.
+CP2 não inclui publicação concorrente, leitores Windows/storage/registry/service ou CLI. Essas etapas continuam nos CP3/CP4. Não usar o plano parcial CP1 como artefato final. Preparação documental não é autorização de implementação; não editar código nem produzir relatório de implementação nesta etapa. A futura execução deve receber novo despacho autorizado com SHA imutável, em vez de reutilizar o snapshot de preparação como se autorizasse escrita.
 
-R1 INDEPENDENTLY CLOSED: YES
-READY FOR OWNER CP1 DECISION: YES
-CHECKPOINT1 APPROVED BY OWNER: NO
+CHECKPOINT1 APPROVED BY OWNER: YES
+CHECKPOINT2 TASK PREPARED: YES
 CHECKPOINT2 IMPLEMENTATION AUTHORIZED: NO
+CHECKPOINT3 IMPLEMENTATION AUTHORIZED: NO
 FINAL SPECIFICATION FROZEN: YES
 CODE REPOSITORY MODIFIED BY ARCHITECT: NO
 AUTOMATED DISPATCH: NO

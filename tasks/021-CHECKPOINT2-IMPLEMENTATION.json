@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-CHECKPOINT2-IMPLEMENTATION",
+  "status": "AWAITING_EXPLICIT_OWNER_IMPLEMENTATION_AUTHORIZATION",
+  "assigned_role": "claude-implementer-separate-from-independent-reviewer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "preparation_input_commit": "fceadfe20ba7d3d63081e4d4a0682bffcd197374",
+  "execution_snapshot": null,
+  "authorization_gate": "Do not execute implementation, new code tests, code commit/push or own implementation report publication until explicit CP2 owner authorization is recorded and a pinned authorized dispatch is supplied",
+  "owner_implementation_authorization_recorded": false,
+  "implementation_authorized": false,
+  "code_commit_push_authorized": false,
+  "governance_implementation_report_commit_push_authorized": false,
+  "checkpoint1_approved": true,
+  "approved_checkpoint1_code_commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "checkpoint1_approval_record": {
+    "path": "increments/021/33-checkpoint1-acceptance/OWNER_CHECKPOINT1_ACCEPTANCE.md",
+    "lines": 36,
+    "size_bytes": 2310,
+    "sha256": "e5f95d541e1c1a8d56c92358ae41025b4ffe6a80d3d3d3a0af5a3286d9265975",
+    "git_blob_sha": "150b46b0bf38d41bc9588e39104b2bf330fa8439"
+  },
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-021-receptor-materialization",
+  "code_head_before_cp2": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "expected_governance_main": "a47183dfec8213c765ed43ae482c8c227760a3d5",
+  "code_allowlist": [
+    "src/molecular/receptor_parsing.py",
+    "src/molecular/receptor_materialization.py",
+    "tests/test_receptor_parsing.py",
+    "tests/test_receptor_materialization.py"
+  ],
+  "new_fixture_root_allowlist": "tests/fixtures/receptor_materialization/",
+  "fixture_root_contents": "Only genuine public/synthetic scientific inputs, provenance manifests and expected-data oracles; no executable code or personal documents",
+  "code_allowlist_status": "Proposed scope awaiting exact owner authorization; not permission to write now",
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "normative_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "implementation_brief": {
+    "path": "increments/021/34-checkpoint2-preparation/CHECKPOINT2_IMPLEMENTATION_BRIEF.md",
+    "lines": 109,
+    "size_bytes": 20421,
+    "sha256": "9bab402c9bb103ab5da0d127bf2c966a0382bae944c8d8178c09efc82dffe4b3",
+    "git_blob_sha": "866d8cf4257c9b40f9b12a7f3083022eefa4a675"
+  },
+  "scope_matrix": {
+    "path": "increments/021/34-checkpoint2-preparation/evidence/CP2_SCENARIO_SCOPE.csv",
+    "lines": 80,
+    "size_bytes": 11910,
+    "sha256": "241dd81db81e262fe7cf9d8a40899cd56d68db9ce6cbc4cbcbdd958b67046d44",
+    "git_blob_sha": "9f09d53e1f7495892836fbc068139d6624df0d65"
+  },
+  "preparation_verification": {
+    "path": "increments/021/34-checkpoint2-preparation/evidence/CP2_PREPARATION_VERIFICATION.json",
+    "lines": 669,
+    "size_bytes": 25563,
+    "sha256": "06245925b60ee67e9b15ec58912e584e038bacaf420567c1336579bcd1c778b5",
+    "git_blob_sha": "d0b943f9d4db34beee3312761a913c21accbb05a"
+  },
+  "normative_scenarios": [
+    "T021-041",
+    "T021-042",
+    "T021-043",
+    "T021-044",
+    "T021-045",
+    "T021-046",
+    "T021-047",
+    "T021-048",
+    "T021-049",
+    "T021-050",
+    "T021-051",
+    "T021-052",
+    "T021-053",
+    "T021-054",
+    "T021-055",
+    "T021-056",
+    "T021-057",
+    "T021-058",
+    "T021-059",
+    "T021-060",
+    "T021-061",
+    "T021-062",
+    "T021-063",
+    "T021-064",
+    "T021-065",
+    "T021-066",
+    "T021-067",
+    "T021-068",
+    "T021-069",
+    "T021-070",
+    "T021-071",
+    "T021-072",
+    "T021-073",
+    "T021-074",
+    "T021-075",
+    "T021-076",
+    "T021-077",
+    "T021-078",
+    "T021-079",
+    "T021-080",
+    "T021-081",
+    "T021-082",
+    "T021-083",
+    "T021-084",
+    "T021-085",
+    "T021-086",
+    "T021-087",
+    "T021-088",
+    "T021-089",
+    "T021-090",
+    "T021-141",
+    "T021-142",
+    "T021-143",
+    "T021-144",
+    "T021-145",
+    "T021-146",
+    "T021-147",
+    "T021-148",
+    "T021-149",
+    "T021-150",
+    "T021-151",
+    "T021-152",
+    "T021-153",
+    "T021-154",
+    "T021-155",
+    "T021-156",
+    "T021-157",
+    "T021-158",
+    "T021-162",
+    "T021-164",
+    "T021-165",
+    "T021-166",
+    "T021-167",
+    "T021-168",
+    "T021-169",
+    "T021-170",
+    "T021-171",
+    "T021-172",
+    "T021-173"
+  ],
+  "normative_scenario_count": 79,
+  "scope": "Frozen §19 CP2: native Gemmi DOM/token adapter, endpoints/symmetry, catalogue/serialization/output validation and required pure DTO integrations; no physical publication/service/CLI",
+  "preserve_cp1_findings": [
+    "ARCH-01",
+    "ARCH-02",
+    "ARCH-03",
+    "MAJOR-B",
+    "MINOR-1",
+    "MINOR-2",
+    "MINOR-4",
+    "MINOR-5",
+    "MINOR-6",
+    "MAJOR-A",
+    "MINOR-3",
+    "MINOR-7",
+    "R-1"
+  ],
+  "preserve_cp1_notes": [
+    {
+      "id": "NOTE-1",
+      "disposition": "Não persistir/reutilizar como plano final a estrutura parcial CP1; conexões/catálogo físico e materialização reais só CP2+."
+    },
+    {
+      "id": "NOTE-2",
+      "disposition": "Preservar estritez, recusa de surrogate, ordem e chaining, sem exceções amplas."
+    },
+    {
+      "id": "NOTE-3",
+      "disposition": "Não modificar CLI/020 no CP1. Reexaminar import/help sem opcionais no gate próprio CP4."
+    }
+  ],
+  "existing_code_reference_identities": [
+    {
+      "path": "pyproject.toml",
+      "lines": 30,
+      "size_bytes": 559,
+      "sha256": "879ba13abe5c4b6dd75022e9cd0779606efba5a3eb9cad670751b8c04a7cf77a",
+      "git_blob_sha": "b8317bdfa6cd3e09b3eeb3e55356fe46c235ab78"
+    },
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 1724,
+      "size_bytes": 78807,
+      "sha256": "d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d",
+      "git_blob_sha": "c362303304bfd825e0e07d528c3a96d9f804af47"
+    },
+    {
+      "path": "src/molecular/receptor_parsing.py",
+      "lines": 952,
+      "size_bytes": 34622,
+      "sha256": "160a0a8f1932fbb9f65564cf68cbabb387b2cc400893b842a396efec221d295a",
+      "git_blob_sha": "4898e46c87a43a5aa7266f332262f5996ad42c45"
+    },
+    {
+      "path": "tests/test_receptor_parsing.py",
+      "lines": 536,
+      "size_bytes": 16399,
+      "sha256": "625747de75774353894f6068e70430bac9480a57260b65d506bcec85a9bc21b3",
+      "git_blob_sha": "0c7ac35fa42d664d660b2c08b882118ba2c168dc"
+    }
+  ],
+  "required_preflight_after_authorization": [
+    "Read AGENTS/protocol/STATUS, exact authorized task/brief, frozen specification and all four annexes; verify SHA256/bytes/lines/Git identities",
+    "Require literal owner authorization for CP2 implementation/tests/allowlist/code commit-push and own governance report; current CP1 acceptance is not that authorization",
+    "Confirm authorized governance dispatch, code feature ea8dac9 and both main refs; stop on drift; same feature only, no main checkout edits",
+    "Confirm local directory/origin/HEAD/index/tracked work; preserve all untracked, 020-A worktree and governance personal roadmap; no reset/clean/stash/rebase/amend/force",
+    "Observe environment/pins; Gemmi 0.7.5 real mandatory; do not global-install, silently substitute engines or modify pyproject; capture baseline collection"
+  ],
+  "required_implementation_evidence": [
+    "79 scenario-to-production-test/assertion mapping, actual execution/limits and genuine checksum fixtures; scenarios are not promised pytest count",
+    "Real Gemmi pin, late boundary, native DOM parse/token preservation and no native object crossing; old020 parser/result/schema regression preserved",
+    "All15 symmetry cells, endpoint ambiguity/altloc/ptnr3/insertion,7 reachable identity-basis pairs with full production hashes,2 impossible pairs rejection and §10.1 edge cases",
+    "All catalogue actions/rules, referential closure, NCS/special-position guards,unknown category/tag refusals and actual output reparse independently checked against plan",
+    "Lineage/original bytes/hash and per-fixture edits/oracles for D01(b) positives;5i55/1pfe/3dg1_final category coverage;real NMR multi-model,EM,NCS fixtures with required accept/refuse behavior",
+    "Complete deterministic vectors/warnings/audit data; no empty CP1 connections masquerading as full plan or automatic acknowledgements; no RAW reread via legacy parser",
+    "Strict DTOs, limits/error taxonomies/chaining and separate KeyboardInterrupt/SystemExit parse/plan/serialize/verify tests; no generic raises(Exception)",
+    "Baseline and final collection/function/parametrize/item/skip reconciliation; focused tests, receptor020 regressions and full suite once; record environment/commands and limitations",
+    "Delta exactly four permitted files/fixture subtree; cumulative only original two CP1 plus permitted CP2 paths; main/other modules unchanged; git diff --check/git show --check",
+    "After separately authorized normal commit/push, confirm complete SHA/parents/remote refs; own report/file identities and no central STATUS/task writes"
+  ],
+  "verification_commands_after_authorization": [
+    "python -B -m pytest --collect-only -q",
+    "python -B -m pytest -p no:cacheprovider tests/test_receptor_parsing.py tests/test_receptor_materialization.py -q -rs",
+    "python -B -m pytest -p no:cacheprovider tests/test_receptor_inspection.py tests/test_receptor_selection.py tests/test_receptor_resolution.py tests/test_receptor_registry.py tests/test_receptor_service.py -q -rs",
+    "python -B -m pytest -p no:cacheprovider -q -rs",
+    "git diff --check",
+    "git diff --name-status ea8dac9cdc203c337d7f3f9947b54042291f7484..HEAD",
+    "git diff --name-status 08b797e0985e123ffd4d7ca7e5a5e8f040e63851..HEAD",
+    "git show --check"
+  ],
+  "native_validation_gate": "Real Gemmi0.7.5 mandatory; Linux adapter tests allowed; Windows11/NTFS production reader/publication and two-process concurrency remain CP3 and cannot be claimed validated here",
+  "incoming_test_counts_reference_only": {
+    "collected": 1573,
+    "passed": 1568,
+    "skipped": 5,
+    "source": "CP1 implementer Windows report; measure actual incoming baseline, no inherited execution claims"
+  },
+  "allowed_governance_output_paths_after_authorization": [
+    "increments/021/35-checkpoint2-implementation/CLAUDE_INCREMENT_021_CHECKPOINT2_IMPLEMENTATION_REPORT.md",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-*"
+  ],
+  "suggested_governance_output_branch": "claude/021-cp2-implementation-report",
+  "governance_output_branch_policy": "Own Claude branch from exact authorized dispatch commit; no coordination or main edits",
+  "implementation_started": false,
+  "checkpoint2_approved": false,
+  "cp3_implementation_authorized": false,
+  "cp4_implementation_authorized": false,
+  "next_gate": "Explicit owner authorization of exact prepared CP2 task; then implementation; architect receipt; independent CP2 review in separate session",
+  "restrictions": [
+    "No CP2 code/report execution before authorization",
+    "No contract/schema/020 retrofit; no scientific preparation/protonation/charges/H repair/minimization/docking",
+    "No CP3 storage/reader/lock/registry/service/activity nor CP4 CLI",
+    "No dependency/global installation/pyproject edits/new entrypoints",
+    "No PR/merge/main/tag/release/force/formal GitHub approval/comment/automation",
+    "020-A STAND-BY and protected local items untouched"
+  ],
+  "final_specification_frozen": true,
+  "automated_dispatch": false
+}

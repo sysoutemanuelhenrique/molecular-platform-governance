@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-OWNER-CHECKPOINT1-DECISION",
-  "status": "AWAITING_EXPLICIT_OWNER_DECISION",
+  "status": "COMPLETED_OWNER_APPROVED_CP1_PREPARE_CP2_ONLY",
   "assigned_role": "emanuel-project-owner",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -137,9 +137,9 @@
     "supplied_collection": 1573,
     "architect_pytest_this_receipt": false
   },
-  "owner_approval_received": false,
-  "owner_message_literal": null,
-  "checkpoint1_approved": false,
+  "owner_approval_received": true,
+  "owner_message_literal": "Aprovo o Checkpoint 1 do Incremento 021 no commit\nea8dac9cdc203c337d7f3f9947b54042291f7484,\ncom as três NOTES preservadas.\n\nPode preparar a tarefa do Checkpoint 2.\nEsta decisão não autoriza implementação do CP2,\nPR, merge ou alteração de main.",
+  "checkpoint1_approved": true,
   "required_before_recording_decision": [
     "Obtain direct owner message identifying CP1 and exact code commit",
     "Reconfirm coordination/code/review and both main refs; stop on unexplained drift",
@@ -159,5 +159,14 @@
   ],
   "cp2_implementation_authorized": false,
   "final_specification_frozen": true,
-  "automated_dispatch": false
+  "automated_dispatch": false,
+  "owner_approval_record": {
+    "path": "increments/021/33-checkpoint1-acceptance/OWNER_CHECKPOINT1_ACCEPTANCE.md",
+    "lines": 36,
+    "size_bytes": 2310,
+    "sha256": "e5f95d541e1c1a8d56c92358ae41025b4ffe6a80d3d3d3a0af5a3286d9265975",
+    "git_blob_sha": "150b46b0bf38d41bc9588e39104b2bf330fa8439"
+  },
+  "owner_approval_recorded_on": "2026-11-24",
+  "next_task": "tasks/021-CHECKPOINT2-IMPLEMENTATION.json"
 }

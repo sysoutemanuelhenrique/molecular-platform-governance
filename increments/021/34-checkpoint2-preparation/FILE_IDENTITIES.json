@@ -1,0 +1,61 @@
+{
+  "note": "Excludes itself. All existing normative/history/reviewer/implementer documents are preserved; extraction CSV is a derived scope aid only.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 34,
+      "size_bytes": 2823,
+      "sha256": "053d1771ed75950c2dada3b866c485bef15d236c5229dbb1e32abccb83a31ca1",
+      "git_blob_sha": "c6cfc2b2e3c27e6c94171fbb33bce1892bc692e4"
+    },
+    {
+      "path": "increments/021/33-checkpoint1-acceptance/OWNER_CHECKPOINT1_ACCEPTANCE.md",
+      "lines": 36,
+      "size_bytes": 2310,
+      "sha256": "e5f95d541e1c1a8d56c92358ae41025b4ffe6a80d3d3d3a0af5a3286d9265975",
+      "git_blob_sha": "150b46b0bf38d41bc9588e39104b2bf330fa8439"
+    },
+    {
+      "path": "increments/021/34-checkpoint2-preparation/CHECKPOINT2_IMPLEMENTATION_BRIEF.md",
+      "lines": 109,
+      "size_bytes": 20421,
+      "sha256": "9bab402c9bb103ab5da0d127bf2c966a0382bae944c8d8178c09efc82dffe4b3",
+      "git_blob_sha": "866d8cf4257c9b40f9b12a7f3083022eefa4a675"
+    },
+    {
+      "path": "increments/021/34-checkpoint2-preparation/evidence/CP2_PREPARATION_VERIFICATION.json",
+      "lines": 669,
+      "size_bytes": 25563,
+      "sha256": "06245925b60ee67e9b15ec58912e584e038bacaf420567c1336579bcd1c778b5",
+      "git_blob_sha": "d0b943f9d4db34beee3312761a913c21accbb05a"
+    },
+    {
+      "path": "increments/021/34-checkpoint2-preparation/evidence/CP2_SCENARIO_SCOPE.csv",
+      "lines": 80,
+      "size_bytes": 11910,
+      "sha256": "241dd81db81e262fe7cf9d8a40899cd56d68db9ce6cbc4cbcbdd958b67046d44",
+      "git_blob_sha": "9f09d53e1f7495892836fbc068139d6624df0d65"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-IMPLEMENTATION.json",
+      "lines": 269,
+      "size_bytes": 11981,
+      "sha256": "5e5d8732a465c329033bff9d0b10457a4059e21bbc711ad266eeaf9771742386",
+      "git_blob_sha": "0f0a2e90ea94f1e48a4990101ddd5dbd1a2709ed"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-IMPLEMENTATION.json",
+      "lines": 292,
+      "size_bytes": 12903,
+      "sha256": "0cef77b76039071cb0d24ac20cd7ae9aa27e4db4767424074996442eaf303f1e",
+      "git_blob_sha": "231606f5caa6c7043ee9d4a0f3a630ba1cf845be"
+    },
+    {
+      "path": "tasks/021-OWNER-CHECKPOINT1-DECISION.json",
+      "lines": 172,
+      "size_bytes": 7917,
+      "sha256": "6d1390e1d79fe434d68348a35fe8c5fa1a56c70b16b85445c3db9cf994878e16",
+      "git_blob_sha": "c34fdd50b15f0a70cfb0a9a45a7e21cd4ea0d66e"
+    }
+  ]
+}
