@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-CHECKPOINT1-R1-FOCAL-REVIEW",
+  "status": "READY_FOR_MANUAL_HANDOFF",
+  "assigned_role": "claude-independent-reviewer-separate-from-implementer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "preparation_input_commit": "771ae24f6289e41a2f8c7e17906bf294925bd375",
+  "execution_snapshot": "Exact publication SHA supplied in handoff; require equality of remote coordination ref before acting",
+  "authorization_basis": "Independent CP1 correction review within established authorized workflow; no code writing/new checkpoint authorization",
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-021-receptor-materialization",
+  "code_head": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "code_parent": "bbd491e1a0b3fcb913c3549b004120693212df62",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "expected_governance_main": "a47183dfec8213c765ed43ae482c8c227760a3d5",
+  "delivery_branch": "claude/021-cp1-r1-test-correction-20261124",
+  "delivery_commit": "b35bb8e9d32e6fb4bc95e903f786fa0c1240e2d2",
+  "delivery_report": {
+    "path": "increments/021/29-checkpoint1-r1-test-correction/CLAUDE_INCREMENT_021_CHECKPOINT1_R1_TEST_CORRECTION_REPORT.md",
+    "commit": "066af3325c0c866183495c3f08f1e8bd9f3a0d07",
+    "lines": 133,
+    "size_bytes": 10445,
+    "sha256": "a275e1634808c4c0386d52ff90f8bf733e39894d140ccd7c262bf3bdca7c17e6"
+  },
+  "delivery_manifest": {
+    "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-report-and-evidence-identities.json",
+    "commit": "b35bb8e9d32e6fb4bc95e903f786fa0c1240e2d2",
+    "lines": 98,
+    "size_bytes": 4613,
+    "sha256": "fb2e1960efebddcbea8ee499bdf638726148202d17f5783ba62cc2830d11a87d",
+    "git_blob_sha": "3ed1a9e7322c162b59dfa378e92cb7c091598d0e"
+  },
+  "code_files": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+      "note": "unchanged by this round; identity verified equal to bbd491e",
+      "lines": 1724,
+      "size_bytes": 78807,
+      "sha256": "d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+      "lines": 1676,
+      "size_bytes": 83570,
+      "sha256": "9f72301ece6e55ef11d78d589f20822673887af10eeee1365d209099c3658ada"
+    }
+  ],
+  "previous_independent_review_branch": "claude/021-cp1-final-focal-review-20261124",
+  "previous_independent_review_commit": "edb8764b4d4ee56e49ff849b65b950e5e430fae0",
+  "previous_independent_review_report": {
+    "path": "increments/021/27-checkpoint1-final-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_FINAL_FOCAL_REVIEW.md",
+    "lines": 175,
+    "size_bytes": 12045,
+    "sha256": "61b3f0b6773e100ede55211ededec585710caff515a672b995dd52a38d2244a7",
+    "git_blob_sha": "bbd7c5ec1384958a9249c1956408f901d0aa84cd",
+    "commit": "edb8764b4d4ee56e49ff849b65b950e5e430fae0"
+  },
+  "architect_receipt": {
+    "path": "increments/021/30-checkpoint1-r1-review-handoff/CODEX_INCREMENT_021_CHECKPOINT1_R1_REVIEW_HANDOFF.md",
+    "lines": 54,
+    "size_bytes": 6404,
+    "sha256": "e50b5bcdc2c8c43464ee0f4fd05c52aa4c0008e598fcb9ee03c00deca5df875e",
+    "git_blob_sha": "cc56f4d92e273587bb4e4a8cf5203d4aa0bae0c5"
+  },
+  "architect_verification": {
+    "path": "increments/021/30-checkpoint1-r1-review-handoff/evidence/ARCHITECT_R1_RECEIPT_VERIFICATION.json",
+    "lines": 138,
+    "size_bytes": 5258,
+    "sha256": "3a60eeb985d894adeefd20418ac30b6a1d3029837b82deec7d8f07cbf165f552",
+    "git_blob_sha": "21d69095d0accae8e593b81d2a341a672193aa6e"
+  },
+  "architect_r1_response": {
+    "path": "increments/021/28-checkpoint1-r1-test-correction/CODEX_INCREMENT_021_CHECKPOINT1_R1_TEST_CORRECTION.md",
+    "lines": 54,
+    "size_bytes": 6033,
+    "sha256": "c079d09a506cbca7cea1bb674f1d8725d1a8f736ebf5c8b11b380f4e1b28608b",
+    "git_blob_sha": "cc34f1842a05a1da2b6178d0d42f1a246fe33b9b"
+  },
+  "independent_order_vector": {
+    "path": "increments/021/28-checkpoint1-r1-test-correction/evidence/R1_ORDER_GOLDEN_VECTOR.json",
+    "lines": 24,
+    "size_bytes": 1141,
+    "sha256": "19f14197dd6cec0a989a9a2e3c4169c79050e13ad0db686b52fd59c2a8ca6774",
+    "git_blob_sha": "03875e795081156ef02595663ccc5e85c88f1325"
+  },
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "normative_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "only_open_finding": {
+    "id": "R-1",
+    "severity": "MINOR",
+    "scope": "test regression of atom_ids_key input-order preservation",
+    "action": "Add exactly one regression test using the unordered two-atom vector, hand-written canonical bytes and fixed SHA256; retain existing13goldens and91tests. No production change.",
+    "proposed_test_name": "test_atom_ids_key_preserves_given_order_against_ordinal_and_id_sorting",
+    "atoms": [
+      {
+        "ordinal": 3,
+        "atom_id": "a"
+      },
+      {
+        "ordinal": 1,
+        "atom_id": "Z"
+      }
+    ],
+    "canonical_utf8": "{\"atoms\":[{\"id\":\"a\",\"ordinal\":3},{\"id\":\"Z\",\"ordinal\":1}],\"kind\":\"receptor-materialization-atom-ids\",\"version\":\"1.0\"}",
+    "expected_sha256_literal": "96fd3eacd89d16753dbdc5ec22bb79db0740e9f355e6322cb0c4641bc0f3106a",
+    "reversed_sha256_literal": "bf820fe14730b4b8ede9d8e007e4c3d32f71def5d8a4747c657d6d76dac562d1",
+    "expected_must_not_be_generated_by_production": true
+  },
+  "scope": "R-1 only, test-only delta parent..head, preservation of prior closures; not an integral scientific/native/checkpoint review",
+  "independently_closed_findings_to_preserve": [
+    "ARCH-01",
+    "ARCH-02",
+    "ARCH-03",
+    "MAJOR-B",
+    "MINOR-1",
+    "MINOR-2",
+    "MINOR-4",
+    "MINOR-5",
+    "MINOR-6",
+    "MAJOR-A",
+    "MINOR-3",
+    "MINOR-7"
+  ],
+  "notes_to_preserve": [
+    {
+      "id": "NOTE-1",
+      "disposition": "Não persistir/reutilizar como plano final a estrutura parcial CP1; conexões/catálogo físico e materialização reais só CP2+."
+    },
+    {
+      "id": "NOTE-2",
+      "disposition": "Preservar estritez, recusa de surrogate, ordem e chaining, sem exceções amplas."
+    },
+    {
+      "id": "NOTE-3",
+      "disposition": "Não modificar CLI/020 no CP1. Reexaminar import/help sem opcionais no gate próprio CP4."
+    }
+  ],
+  "required_preflight": [
+    "Read AGENTS/protocol/STATUS/this task and pinned R1 review/architect response/receipt; verify all necessary input identities",
+    "Confirm exact dispatch coordination HEAD, feature at ea8dac9, delivery at b35bb8e, prior review at edb8764 and both main refs unchanged; stop on unexpected drift",
+    "Confirm own role is independent of implementing session; any local tracked/untracked work must be preserved; no reset/clean/stash/rebase/amend/force",
+    "Access code at exact snapshots read-only; external scratch copies for execution only; never edit code repository"
+  ],
+  "required_checks": [
+    "Confirm direct parent bbd491e and delta only test file, +31/-0; production exact SHA256 d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d",
+    "Read real new test and helpers/function it calls; manually recompute both literal envelopes with stdlib, independent of production expected-generation",
+    "Confirm given vector differs from ordinal sort and ASCII-ID sort; execute exact new test on original and two ordering mutations in disposable copy if feasible",
+    "If pytest/native dependencies unavailable, exact AST extraction of new function/helpers with actual production plus clearly described controlled mutations/wrappers is permitted for this pure test-only gate; never equate to full-module pytest or native validation",
+    "Verify no previous test/assertion/import/helper/golden weakened or removed; 91 -> 92 functions, no new parametrization; 1572 -> 1573 collection logs exactly +1 nodeID",
+    "Review supplied mutation script/log limits: function-comparison script not directly pytest; do not report it as execution of exact new pytest; independently demonstrate assertion detects sorting",
+    "Reconcile supplied 1568 pass/5 skip full results and named skip reasons; execute focused pytest only if environment permits without installs or repository writes; full suite need not be repeated for this one-test delta",
+    "Cumulative baseline diff only original two CP1 paths; preserve 12 independently closed findings/3 NOTES/43 scenario classification; reopen only evidenced regression, no architectural preferences"
+  ],
+  "allowed_governance_output_paths": [
+    "increments/021/31-checkpoint1-r1-focal-review/CLAUDE_INCREMENT_021_CHECKPOINT1_R1_FOCAL_REVIEW.md",
+    "increments/021/31-checkpoint1-r1-focal-review/evidence/claude-*"
+  ],
+  "suggested_output_branch": "claude/021-cp1-r1-focal-review-20261124",
+  "output_branch_policy": "Own claude/ branch from exact dispatch snapshot; do not edit main or coordination or central tasks/STATUS",
+  "required_report": [
+    "task_id/role and pinned input identities; exact scope and preserved closures",
+    "R1 disposition with direct evidence: closed/partial/open; concrete regression only if found",
+    "Own commands/results and limits separately from implementer/architect evidence; no fabricated native or Windows execution",
+    "New report and evidence identities with paths/lines/bytes/SHA256; own branch/commit confirmed on remote",
+    "Final R1 verdict APPROVE / APPROVE WITH NON-BLOCKING NOTES / REQUEST CHANGES; READY FOR OWNER CP1 DECISION YES/NO; CHECKPOINT1 APPROVED NO; CP2 AUTHORIZED NO"
+  ],
+  "completion_criteria": "Evidence-backed independent disposition of R1 and preservation of prior tests, report/identities published under allowlist; no self-granted CP1/CP2 gate",
+  "next_gate": "Architect receives independent R1 verdict; if favorable, prepares owner CP1 acceptance/next checkpoint decision, without automatic implementation",
+  "restrictions": [
+    "Read-only code, no production/test implementation or contract changes",
+    "No integral rereview, future feature, global install or dependency change",
+    "No protected local items or020A worktree/history changes",
+    "No main/PR/merge/tag/release/formal GitHub approval/comment/automation",
+    "No central STATUS/tasks editing by reviewer"
+  ],
+  "increment020a": "STAND-BY",
+  "checkpoint1_approved": false,
+  "cp2_implementation_authorized": false,
+  "final_specification_frozen": true,
+  "automated_dispatch": false
+}

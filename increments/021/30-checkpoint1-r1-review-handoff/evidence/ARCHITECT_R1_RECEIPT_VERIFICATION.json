@@ -1,0 +1,138 @@
+{
+  "role": "Codex architect receipt/triage, not independent closure",
+  "code_head": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "parent": "bbd491e1a0b3fcb913c3549b004120693212df62",
+  "verified_manifest_entries": [
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/CLAUDE_INCREMENT_021_CHECKPOINT1_R1_TEST_CORRECTION_REPORT.md",
+      "lines": 133,
+      "size_bytes": 10445,
+      "sha256": "a275e1634808c4c0386d52ff90f8bf733e39894d140ccd7c262bf3bdca7c17e6",
+      "git_blob_sha": "aa2b338c184505be21afeb8286c4d08d124970b3"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-collect-after-r1-correction.txt",
+      "lines": 1575,
+      "size_bytes": 138102,
+      "sha256": "fd516ed893b30702684a5f563dec847f26c9efd133c02446c59470b3bd2940ff",
+      "git_blob_sha": "82e939750e72134fad7f544e7e520fa73927faaa"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-collect-before-r1-correction.txt",
+      "lines": 1574,
+      "size_bytes": 137991,
+      "sha256": "2e5f7e2671e42eded791247c198cc2fb589d1b2f48692a5695a6e97deffded27",
+      "git_blob_sha": "077a2d5c8c01907fcc32bafbd9f94e58423e5c8b"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-environment.txt",
+      "lines": 11,
+      "size_bytes": 305,
+      "sha256": "b06bfffc5941909b1bbad9911318fc4ace483b74ca0f2a2ac17f783cd8be0d54",
+      "git_blob_sha": "748304b63eff116b458b235ac6a970cb7c16c2de"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-full-suite-after-r1-correction.txt",
+      "lines": 29,
+      "size_bytes": 3003,
+      "sha256": "d7f62c147cbde457b5a08e51698d8dd53e5b8e537dfe6fa5e4f9904739510cb1",
+      "git_blob_sha": "0afc49e6b0169c1b43eb9916832011cc7f6469d1"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-git-log.txt",
+      "lines": 59,
+      "size_bytes": 3236,
+      "sha256": "eddef2b7c0bc480c4726c4f760584cb76802acdb4a8532ef9d99bf95444755cc",
+      "git_blob_sha": "2f246c6fc18659111eef1c8c6a60e637249aab53"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-new-tests-verbose.txt",
+      "lines": 101,
+      "size_bytes": 11012,
+      "sha256": "fba9889ac6d7d4e3fee2619b364f9ee9cf4b1213de579e971b1c35bac21ebcd5",
+      "git_blob_sha": "2bf8a4264cc9742e98ab460bb612303065af73b3"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-r1-mutation-check.output.txt",
+      "lines": 6,
+      "size_bytes": 307,
+      "sha256": "03942ad714af3186f8e202fc795d3030ccb0c4ee625683db9091ab597338a753",
+      "git_blob_sha": "4867c35b2b28e945282f8a7da0ded784917fec0d"
+    },
+    {
+      "path": "increments/021/29-checkpoint1-r1-test-correction/evidence/claude-r1-mutation-check.py",
+      "lines": 43,
+      "size_bytes": 2638,
+      "sha256": "11d3c5c7a94ec53954a5fddb98d1d01dd9acbb741d941a7509d4ad564ec00ad8",
+      "git_blob_sha": "64f57c2dd34114e5decf1d84f3d5dade0cdce381"
+    },
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 1724,
+      "size_bytes": 78807,
+      "sha256": "d8fc55db900f761f0debe4cea29f05cade1502ea1299937f123c6c883e30431d",
+      "git_blob_sha": "c362303304bfd825e0e07d528c3a96d9f804af47"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 1676,
+      "size_bytes": 83570,
+      "sha256": "9f72301ece6e55ef11d78d589f20822673887af10eeee1365d209099c3658ada",
+      "git_blob_sha": "cfcc93d8645cbe22aef0f6f47f367fe0574a10b6"
+    }
+  ],
+  "manifest_identity": {
+    "lines": 98,
+    "size_bytes": 4613,
+    "sha256": "fb2e1960efebddcbea8ee499bdf638726148202d17f5783ba62cc2830d11a87d",
+    "git_blob_sha": "3ed1a9e7322c162b59dfa378e92cb7c091598d0e"
+  },
+  "production_byte_identical": true,
+  "test_delta": {
+    "new_functions": [
+      "test_atom_ids_key_preserves_given_order_against_ordinal_and_id_sorting"
+    ],
+    "changed_or_deleted_previous_functions": [],
+    "added_lines": 31,
+    "deleted_lines": 0,
+    "test_functions_before": 91,
+    "test_functions_after": 92
+  },
+  "collection_logs": {
+    "before": 1572,
+    "after": 1573,
+    "added": [
+      "tests/test_receptor_materialization.py::test_atom_ids_key_preserves_given_order_against_ordinal_and_id_sorting"
+    ],
+    "removed": [],
+    "source": "Implementer-provided logs independently compared; not own pytest collection"
+  },
+  "own_execution": {
+    "python": "3.12.14",
+    "pytest_executed": false,
+    "new_test_AST_function_on_exact_production": "passed",
+    "sort_wrappers": [
+      {
+        "sort_key": "ordinal",
+        "new_test_assertion_rejects_sorted_wrapper": true
+      },
+      {
+        "sort_key": "atom_id",
+        "new_test_assertion_rejects_sorted_wrapper": true
+      }
+    ],
+    "native_engines_blocked_without_stub": true,
+    "production_source_mutated": false,
+    "full_mutant_module_pytest_executed": false
+  },
+  "supplied_windows_results": {
+    "module_passed": 92,
+    "suite_passed": 1568,
+    "suite_skipped": 5,
+    "collected": 1573,
+    "independently_reexecuted": false
+  },
+  "r1_independently_closed": false,
+  "cp1_approved": false,
+  "cp2_authorized": false
+}

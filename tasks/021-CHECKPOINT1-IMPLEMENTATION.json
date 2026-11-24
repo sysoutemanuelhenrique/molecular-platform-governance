@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT1-IMPLEMENTATION",
-  "status": "CP1_SINGLE_TEST_REGRESSION_R1_PENDING",
+  "status": "CP1_R1_TEST_CORRECTION_RECEIVED_AWAITING_INDEPENDENT_REVIEW",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -193,7 +193,7 @@
   },
   "checkpoint1_approved": false,
   "independent_review_complete": true,
-  "next_task": "tasks/021-CHECKPOINT1-R1-TEST-CORRECTION.json",
+  "next_task": "tasks/021-CHECKPOINT1-R1-FOCAL-REVIEW.json",
   "independent_review_commit": "2e36222b087134f9ba725bc2ad96c3ba39fb8801",
   "independent_review_verdict": "REQUEST CHANGES",
   "architect_reconciliation": {
@@ -222,21 +222,20 @@
     "MINOR-2",
     "MINOR-4",
     "MINOR-5",
-    "MINOR-6"
-  ],
-  "residual_findings": [
+    "MINOR-6",
     "MAJOR-A",
     "MINOR-3",
     "MINOR-7"
   ],
-  "latest_code_commit": "bbd491e1a0b3fcb913c3549b004120693212df62",
-  "latest_report_commit": "74fb0c39fbf3f56b43936491aa2c0789a53ecf31",
+  "residual_findings": [],
+  "latest_code_commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "latest_report_commit": "b35bb8e9d32e6fb4bc95e903f786fa0c1240e2d2",
   "architect_latest_receipt": {
-    "path": "increments/021/26-checkpoint1-final-review-handoff/CODEX_INCREMENT_021_CHECKPOINT1_FINAL_REVIEW_HANDOFF.md",
-    "lines": 48,
-    "size_bytes": 6084,
-    "sha256": "428b1b6492cc993da2fc3ab6d9c2b9566771a562a1c2dd9922889e3600dad835",
-    "git_blob_sha": "bec4108ec0941257b2673c3c7e04d87c369bdbad"
+    "path": "increments/021/30-checkpoint1-r1-review-handoff/CODEX_INCREMENT_021_CHECKPOINT1_R1_REVIEW_HANDOFF.md",
+    "lines": 54,
+    "size_bytes": 6404,
+    "sha256": "e50b5bcdc2c8c43464ee0f4fd05c52aa4c0008e598fcb9ee03c00deca5df875e",
+    "git_blob_sha": "cc56f4d92e273587bb4e4a8cf5203d4aa0bae0c5"
   },
   "latest_independent_review_commit": "edb8764b4d4ee56e49ff849b65b950e5e430fae0",
   "independently_closed_functional_findings": [
@@ -253,5 +252,7 @@
     "MINOR-3",
     "MINOR-7"
   ],
-  "only_open_finding": "R-1"
+  "only_open_finding": "R-1",
+  "r1_correction_received": true,
+  "r1_independently_closed": false
 }

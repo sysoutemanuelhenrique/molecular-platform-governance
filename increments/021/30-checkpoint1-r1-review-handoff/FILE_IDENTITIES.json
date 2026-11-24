@@ -1,0 +1,47 @@
+{
+  "note": "Manifest excludes itself. Existing historical and implementation/reviewer evidence preserved at pinned branches; no personal/raw logs copied.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 36,
+      "size_bytes": 2619,
+      "sha256": "2b4c4622c734d8a216c6ea8e695838aeb5d37dc17b660d5c61b78d03ccfe021f",
+      "git_blob_sha": "2c0299be8455949c89833d88fd43941511c7e477"
+    },
+    {
+      "path": "increments/021/30-checkpoint1-r1-review-handoff/CODEX_INCREMENT_021_CHECKPOINT1_R1_REVIEW_HANDOFF.md",
+      "lines": 54,
+      "size_bytes": 6404,
+      "sha256": "e50b5bcdc2c8c43464ee0f4fd05c52aa4c0008e598fcb9ee03c00deca5df875e",
+      "git_blob_sha": "cc56f4d92e273587bb4e4a8cf5203d4aa0bae0c5"
+    },
+    {
+      "path": "increments/021/30-checkpoint1-r1-review-handoff/evidence/ARCHITECT_R1_RECEIPT_VERIFICATION.json",
+      "lines": 138,
+      "size_bytes": 5258,
+      "sha256": "3a60eeb985d894adeefd20418ac30b6a1d3029837b82deec7d8f07cbf165f552",
+      "git_blob_sha": "21d69095d0accae8e593b81d2a341a672193aa6e"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-IMPLEMENTATION.json",
+      "lines": 258,
+      "size_bytes": 11488,
+      "sha256": "f43ac04c075bd492e215a5b2378d9da5e31dc8a564100eba51b1320d8f9ab5bc",
+      "git_blob_sha": "c32c9377833df4ead1df6cfd15cfd3befb5746dc"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-R1-FOCAL-REVIEW.json",
+      "lines": 216,
+      "size_bytes": 11827,
+      "sha256": "234fee9c3845a98d1cbb78ed84c3fc45802859642ba70625f38e7647c0b513a1",
+      "git_blob_sha": "f208f47154e7c3c30ac4beb17f02a896d1b6eeb4"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT1-R1-TEST-CORRECTION.json",
+      "lines": 205,
+      "size_bytes": 10776,
+      "sha256": "faa7ac43aba2fdaf45f87cbb2e6435d5cddaf634c5dc964c2ba8d8461ec8cf57",
+      "git_blob_sha": "4f835af2da728096190cd45ad809e1540c3535ae"
+    }
+  ]
+}
