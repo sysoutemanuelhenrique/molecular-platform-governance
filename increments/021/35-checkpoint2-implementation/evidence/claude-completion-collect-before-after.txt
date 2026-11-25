@@ -1,0 +1,9 @@
+=== python -B -m pytest --collect-only -q (before this continuation, HEAD 0d06ebd) ===
+1622 tests collected (from the previous partial-delivery report's own evidence)
+
+=== python -B -m pytest --collect-only -q (after this continuation, HEAD 60f9e0d) ===
+tests/test_transformation_registry.py::test_remove_state_transformation_best_effort_removes_metadata_file
+tests/test_transformation_registry.py::test_remove_state_transformation_best_effort_is_idempotent_when_already_absent
+tests/test_transformation_registry.py::test_remove_state_transformation_best_effort_never_touches_states
+
+1655 tests collected in 0.85s

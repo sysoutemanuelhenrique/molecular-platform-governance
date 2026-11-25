@@ -1,0 +1,44 @@
+{
+  "commit": "60f9e0da5c67c3820747242a033db2f5d49b1817",
+  "parent": "b096af7ca8d47fd72cb739e0f5d90771ea07a112",
+  "grandparent_original_completion_start": "0d06ebd4c46c90e5446fec6f0eb72b4a8d2855db",
+  "branch": "feature/increment-021-receptor-materialization",
+  "method": "git show <commit>:<path> | sha256sum; git show <commit>:<path> | wc -lc  (Git blob bytes, never local-disk bytes)",
+  "code_files": {
+    "src/molecular/receptor_materialization.py": {
+      "lines": 4381,
+      "bytes": 209266,
+      "sha256": "3ec96abf14c05ce29e285d389e386a189b6b69f9244e307756003260ca8f9ba3"
+    },
+    "src/molecular/receptor_parsing.py": {
+      "lines": 1703,
+      "bytes": 69418,
+      "sha256": "51346d777c51866f51a17cd14689840b053969cec61bf72fb0e7a585f95a4ddd"
+    },
+    "tests/test_receptor_materialization.py": {
+      "lines": 2787,
+      "bytes": 146902,
+      "sha256": "67104670202d4887bb2f76287448604c8d4a81fc7c3913ec80c3ef3e1c47a286"
+    },
+    "tests/test_receptor_parsing.py": {
+      "lines": 1258,
+      "bytes": 50965,
+      "sha256": "25a11310ce08ed59ed857b0883d3ea8ba04a8aeaafbcf8ac189d54fa9523f49e"
+    }
+  },
+  "fixture_files": {
+    "tests/fixtures/receptor_materialization/5i55/5I55.cif": {"bytes": 77527, "sha256": "07b3b7d82c8f8fb1cef0fafe88c25b9e3025194a32f085a14015e22bfac3d127"},
+    "tests/fixtures/receptor_materialization/5i55/5I55_trimmed.cif": {"bytes": 74947, "sha256": "eba9584da11b29537c0ec30f23fa01fd27ad5ccc96ce8649450eb457530b9567"},
+    "tests/fixtures/receptor_materialization/5i55/PROVENANCE.json": {"bytes": 3512, "sha256": "69c599618f36bbb6c8f65bd16dbf4791c4cafbe5ef187708f27c400d785e2ca0"},
+    "tests/fixtures/receptor_materialization/1pfe/1PFE.cif": {"bytes": 127057, "sha256": "1a548463a4ef08bf33be030b5ad8a0a6179d2623f41c9ac0a711cd2a02429315"},
+    "tests/fixtures/receptor_materialization/1pfe/1PFE_trimmed.cif": {"bytes": 124615, "sha256": "e0653ce8e25e4ef8cc5e37b08d6a4f6cab19eb6928e18e462a3a91f83139dc73"},
+    "tests/fixtures/receptor_materialization/3dg1/3DG1.cif": {"bytes": 33774, "sha256": "a624586501d72b6ff82976f8e2f882e3c39a6d4ca58eebe632cd358ffd90c6c9"},
+    "tests/fixtures/receptor_materialization/3dg1/3DG1_trimmed.cif": {"bytes": 31732, "sha256": "49926dfc5f524634bcc8e5c7b23aba352ce0ac32431f3621b02e022b267ebf58"},
+    "tests/fixtures/receptor_materialization/nmr_2jof/2JOF.cif": {"bytes": 702738, "sha256": "9148fe7cc4eddc849a35e2069e01e2e74350b5c80c4e316c8c4fd4b04e9a3d7d"},
+    "tests/fixtures/receptor_materialization/nmr_2jof/2JOF_trimmed.cif": {"bytes": 701226, "sha256": "837023fd1b0fc1bf5676a24fcc56f97c50346e6d5871ea65f1c6d76d98144c9b"},
+    "tests/fixtures/receptor_materialization/em_7dwu/7DWU.cif": {"bytes": 263873, "sha256": "85961fa6dda237fb93f9e134a9c07b6f1ec4bf37f482f5b5f669d5a56755c390"},
+    "tests/fixtures/receptor_materialization/em_7dwu/7DWU_trimmed.cif": {"bytes": 260777, "sha256": "3da1fed528cee1e0c4db53b47f0155aceaf012bd9a334d0f8219929eefa22e8e"},
+    "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P.cif": {"bytes": 618844, "sha256": "50b78c9c7e95c699e81610db9b140855762bbfb70a7dd821a0acef179d9e54d7"},
+    "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P_trimmed.cif": {"bytes": 614058, "sha256": "7a6f3d3e0f958d6be34a4b28fe869d024b3cdadf409d821b70dcde6a68b53431"}
+  }
+}

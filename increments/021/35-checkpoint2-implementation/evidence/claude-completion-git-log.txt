@@ -1,0 +1,70 @@
+=== git diff --check ===
+exit=0
+
+=== git diff --name-status ea8dac9cdc203c337d7f3f9947b54042291f7484..HEAD ===
+M	src/molecular/receptor_materialization.py
+M	src/molecular/receptor_parsing.py
+A	tests/fixtures/receptor_materialization/1pfe/1PFE.cif
+A	tests/fixtures/receptor_materialization/1pfe/1PFE_trimmed.cif
+A	tests/fixtures/receptor_materialization/1pfe/PROVENANCE.json
+A	tests/fixtures/receptor_materialization/3dg1/3DG1.cif
+A	tests/fixtures/receptor_materialization/3dg1/3DG1_trimmed.cif
+A	tests/fixtures/receptor_materialization/3dg1/PROVENANCE.json
+A	tests/fixtures/receptor_materialization/5i55/5I55.cif
+A	tests/fixtures/receptor_materialization/5i55/5I55_trimmed.cif
+A	tests/fixtures/receptor_materialization/5i55/PROVENANCE.json
+A	tests/fixtures/receptor_materialization/em_7dwu/7DWU.cif
+A	tests/fixtures/receptor_materialization/em_7dwu/7DWU_trimmed.cif
+A	tests/fixtures/receptor_materialization/em_7dwu/PROVENANCE.json
+A	tests/fixtures/receptor_materialization/ncs_1a2p/1A2P.cif
+A	tests/fixtures/receptor_materialization/ncs_1a2p/1A2P_trimmed.cif
+A	tests/fixtures/receptor_materialization/ncs_1a2p/PROVENANCE.json
+A	tests/fixtures/receptor_materialization/nmr_2jof/2JOF.cif
+A	tests/fixtures/receptor_materialization/nmr_2jof/2JOF_trimmed.cif
+A	tests/fixtures/receptor_materialization/nmr_2jof/PROVENANCE.json
+M	tests/test_receptor_materialization.py
+M	tests/test_receptor_parsing.py
+
+=== git diff --name-status 08b797e0985e123ffd4d7ca7e5a5e8f040e63851..HEAD ===
+A	src/molecular/receptor_materialization.py
+M	src/molecular/receptor_parsing.py
+A	tests/fixtures/receptor_materialization/1pfe/1PFE.cif
+A	tests/fixtures/receptor_materialization/1pfe/1PFE_trimmed.cif
+A	tests/fixtures/receptor_materialization/1pfe/PROVENANCE.json
+A	tests/fixtures/receptor_materialization/3dg1/3DG1.cif
+A	tests/fixtures/receptor_materialization/3dg1/3DG1_trimmed.cif
+A	tests/fixtures/receptor_materialization/3dg1/PROVENANCE.json
+A	tests/fixtures/receptor_materialization/5i55/5I55.cif
+A	tests/fixtures/receptor_materialization/5i55/5I55_trimmed.cif
+A	tests/fixtures/receptor_materialization/5i55/PROVENANCE.json
+A	tests/fixtures/receptor_materialization/em_7dwu/7DWU.cif
+A	tests/fixtures/receptor_materialization/em_7dwu/7DWU_trimmed.cif
+A	tests/fixtures/receptor_materialization/em_7dwu/PROVENANCE.json
+A	tests/fixtures/receptor_materialization/ncs_1a2p/1A2P.cif
+A	tests/fixtures/receptor_materialization/ncs_1a2p/1A2P_trimmed.cif
+A	tests/fixtures/receptor_materialization/ncs_1a2p/PROVENANCE.json
+A	tests/fixtures/receptor_materialization/nmr_2jof/2JOF.cif
+A	tests/fixtures/receptor_materialization/nmr_2jof/2JOF_trimmed.cif
+A	tests/fixtures/receptor_materialization/nmr_2jof/PROVENANCE.json
+A	tests/test_receptor_materialization.py
+M	tests/test_receptor_parsing.py
+
+=== git show --check HEAD ===
+commit 60f9e0da5c67c3820747242a033db2f5d49b1817
+Author: sysoutemanuelhenrique <emanuel2017.henrique@gmail.com>
+Date:   Wed Nov 25 00:34:07 2026 -0300
+
+    fix: apply governance guardrail addendum corrections to CP2 completion
+exit=0
+
+=== git log -6 --oneline ===
+60f9e0d fix: apply governance guardrail addendum corrections to CP2 completion
+b096af7 fix: close CP2 contract gaps (C-01 to C-06) and complete the 79-scenario proof
+0d06ebd feat: implement struct_conn/symmetry resolution and the 94-category catalogue engine (increment 021, checkpoint 2)
+ea8dac9 test: restore atom_ids_key order-preservation regression (R-1, increment 021)
+bbd491e fix: apply three residual CP1 corrections from focal review (increment 021)
+42b4804 test: strengthen MINOR-4/T021-029 evidence (increment 021 CP1 corrections)
+
+=== git ls-remote origin feature/increment-021-receptor-materialization main ===
+60f9e0da5c67c3820747242a033db2f5d49b1817	refs/heads/feature/increment-021-receptor-materialization
+08b797e0985e123ffd4d7ca7e5a5e8f040e63851	refs/heads/main

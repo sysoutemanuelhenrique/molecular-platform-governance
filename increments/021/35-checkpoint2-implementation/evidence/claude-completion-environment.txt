@@ -1,0 +1,7 @@
+Python 3.14.7
+pytest 9.1.1
+pydantic 2.13.5 / pydantic_core 2.46.5
+PyYAML 6.0.3
+gemmi 0.7.5
+typer 0.27.2
+Platform Windows-11-10.0.26300-SP0
