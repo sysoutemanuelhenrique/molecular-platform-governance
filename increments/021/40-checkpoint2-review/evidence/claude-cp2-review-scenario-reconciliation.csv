@@ -1,0 +1,80 @@
+id,target,expected_frozen,independent_classification,independent_evidence,finding
+T021-041,raw-tokens,Preservar distinção; não quote_list de token bruto,PARTIAL,"proprio-nativo: '?', '.', '\'?\'' e texto multilinha sobrevivem literalmente na saida; teste-executado",MAJOR-3: '?'/'.' citados em ptnr*_symmetry voltam a null no dominio
+T021-042,coordinates-occupancy,Preservar tokens/coordenadas sem reparo,COVERED,"proprio-nativo: 0, null, ., su, expoente, D preservados como tokens; teste-executado",
+T021-043,endpoint-insertion,Distinguir inserção; não usar colunas antigas,COVERED,proprio-nativo: agua label_seq nulo 52 vs 52A resolve atomos distintos,
+T021-044,third-partner,Aceitar só ausência/null real; recusar preenchido,COVERED,proprio-nativo: ausente/?/. aceitos; '?' citado e preenchido recusam UNSUPPORTED_PARTNER,
+T021-045,symmetry-matrix,Preservar literal,COVERED,proprio-nativo: K=2 both-identity -> preserve; teste-executado (DTO),
+T021-046,symmetry-matrix,Recusar pelo perfil,COVERED,proprio-nativo: K=2 same-nonidentity -> UNSUPPORTED_SYMMETRY; teste-executado (DTO),
+T021-047,symmetry-matrix,Recusar pelo perfil,COVERED,proprio-nativo: K=2 different -> UNSUPPORTED_SYMMETRY; teste-executado (DTO),
+T021-048,symmetry-matrix,Recusar pelo perfil,COVERED,proprio-nativo: K=2 one-null -> UNSUPPORTED_SYMMETRY; teste-executado (DTO),
+T021-049,symmetry-matrix,Recusar pelo perfil,COVERED,proprio-nativo: K=2 both-null -> UNSUPPORTED_SYMMETRY; teste-executado (DTO),
+T021-050,symmetry-matrix,Omitir só metalc/hydrog com parceiro inteiro reconhecido; covalente recusa,COVERED,proprio-nativo: K=1 identidade metalc omite whole-partner-removed-metalc; disulf recusa COVALENT_CUT,
+T021-051,symmetry-matrix,Recusar pelo perfil,COVERED,proprio-nativo: K=1 same-nonidentity -> UNSUPPORTED_SYMMETRY,
+T021-052,symmetry-matrix,Recusar pelo perfil,COVERED,proprio-nativo: K=1 different -> UNSUPPORTED_SYMMETRY,
+T021-053,symmetry-matrix,Recusar pelo perfil,COVERED,proprio-nativo: K=1 one-null -> UNSUPPORTED_SYMMETRY,
+T021-054,symmetry-matrix,Recusar pelo perfil,COVERED,proprio-nativo: K=1 both-null -> UNSUPPORTED_SYMMETRY,
+T021-055,symmetry-matrix,Omitir com auditoria,COVERED,"proprio-nativo: K=0 both-identity -> omit both-removed, classe both-identity",
+T021-056,symmetry-matrix,Omitir com auditoria,COVERED,"proprio-nativo: K=0 same-nonidentity -> omit both-removed, classe same-nonidentity",
+T021-057,symmetry-matrix,Omitir com auditoria,COVERED,"proprio-nativo: K=0 different -> omit both-removed, classe different",
+T021-058,symmetry-matrix,Omitir com auditoria,COVERED,"proprio-nativo: K=0 one-null -> omit both-removed, classe one-null",
+T021-059,symmetry-matrix,Omitir com auditoria,COVERED,"proprio-nativo: K=0 both-null -> omit both-removed, classe both-null",
+T021-060,symmetry-preconditions,K>0 recusa casos não suportados; 1_555 sem tabelas aceita por convenção; K=0 omite auditado,COVERED,proprio-nativo: malformado/nao localizado/contradicao recusam K>0 e omitem K=0; 1_555 sem tabelas por convencao; oper_list de assembly nao conta como tabela,
+T021-061,atom_site,Máscara preserva ids/tokens e contagens; reparse confere vetores esperados,COVERED,proprio-nativo: mascara+ids/tokens; mutacoes de saida recusadas; teste-executado,
+T021-062,atom_site_anisotrop,Filtrar por id real; campos informados concordam; preservar tensor/esd,PARTIAL,"proprio-nativo: tensor parcial, U parcial+B completo, type/seq contraditorios e id inexistente recusam",MAJOR-2: componente de tensor citado aceito
+T021-063,struct_asym,Filtrar asyms e manter entity_id válido,COVERED,teste-executado: funcao de producao compute_category_decisions; caminho nativo exercitado no end-to-end (struct_asym),
+T021-064,entity,Manter entidades referidas e omitir contagens/metadados listados,COVERED,teste-executado: funcao de producao compute_category_decisions; caminho nativo exercitado no end-to-end (entity),
+T021-065,entity_poly,Preservar entidade/tipo/seq; não copiar pdbx_strand_id stale,COVERED,proprio-nativo: pdbx_strand_id stale omitido; teste-executado,
+T021-066,entity_poly_seq,Manter sequência declarada inclusive não observada,COVERED,proprio-nativo: triplo entity/num/mon divergente recusa; sequencia inteira mantida; teste-executado,
+T021-067,chem_comp,Fechamento de CCDs de átomos/seq/branch/parent; não baixar CCD,PARTIAL,proprio-nativo: fechamento CCD/parent ausente recusa,MAJOR-4: _chem_comp.id duplicado aceito e escrito em duplicata; id nulo filtrado sem recusa
+T021-068,pdbx_entity_nonpoly,Filtrar entidade/CCD referidos,COVERED,teste-executado: funcao de producao compute_category_decisions; caminho nativo exercitado no end-to-end (pdbx_entity_nonpoly),
+T021-069,pdbx_poly_seq_scheme,Manter esquema completo do asym sobrevivente,COVERED,teste-executado: funcao de producao compute_category_decisions; caminho nativo exercitado no end-to-end (pdbx_poly_seq_scheme),
+T021-070,pdbx_nonpoly_scheme,Filtrar asym sem cortar ocorrência íntegra,COVERED,teste-executado: funcao de producao compute_category_decisions; caminho nativo exercitado no end-to-end (pdbx_nonpoly_scheme),
+T021-071,pdbx_entity_branch,Manter tipos de entidades ramificadas sobreviventes,COVERED,"proprio-nativo: branched retido por U=preserve, entidade mantida",
+T021-072,pdbx_entity_branch_list,Preservar todos os monômeros e microheterogeneidade,PARTIAL,proprio-nativo: lista inteira mantida (inclusive MAN nao observado),"MAJOR-5: atomos x branch_list(entity,num,comp) nao conferidos"
+T021-073,pdbx_entity_branch_link,Referências de lista/CCD válidas; leaving atom não é inventado,PARTIAL,proprio-nativo: links mantidos,MAJOR-5: link com entity_branch_list_num inexistente aceito
+T021-074,pdbx_branch_scheme,Preservar nomenclatura completa do asym retido,PARTIAL,proprio-nativo: esquema completo mantido; categoria ausente recusa,MAJOR-5: branch_scheme.num -> branch_list composto nao validado
+T021-075,struct_conn,Ações/literal/insertions/ptnr3 conforme plano,COVERED,proprio-nativo: acoes/literal/insercao/ptnr3 conforme plano; mutacao de token recusada,
+T021-076,struct_conn_type,Reter só tipos de conexão sobreviventes sem fabricar critérios,COVERED,proprio-nativo: so tipos preservados sobrevivem,
+T021-077,atom_type,Reter elementos usados se categoria existir,COVERED,proprio-nativo: elementos usados por atomos retidos,
+T021-078,cell/symmetry,Contexto fonte sem P1 inventado; entry_id gerado declarado,COVERED,"proprio-nativo: cell/symmetry fonte, entry_id gerado, sem P1",
+T021-079,source-operator-tables,1_555 sem tabelas usa convenção; tabelas presentes exigem identidade coerente; outros operadores exigem fonte,COVERED,proprio-nativo: 1_555 sem tabelas por convencao; tabelas exigem identidade coerente,
+T021-080,pdbx_struct_mod_residue,Resolver contexto em M; parent_comp_id entra no fechamento CCD,COVERED,teste-executado: funcao de producao compute_category_decisions; caminho nativo exercitado no end-to-end (pdbx_struct_mod_residue),
+T021-081,unobs-zero-occ,Anotação sem átomo pode sobreviver por contexto de cadeia/seq; sem inferir coordenada,COVERED,teste-executado: funcao de producao compute_category_decisions; caminho nativo exercitado no end-to-end (unobs-zero-occ),
+T021-082,entry,Nova entry/block tbmp_plan_key e original só na proveniência,PARTIAL,proprio-nativo: _entry.id e bloco tbmp_<plan_key> minusculos,MAJOR-4: linha _entry fonte sem source_rows_key/cobertura; tag desconhecida e linhas duplicadas aceitas
+T021-083,omitted-categories,Categorias omitidas/família validate não aparecem na saída e constam da auditoria,COVERED,proprio-nativo: categorias omitidas/familia validate ausentes da saida e auditadas,
+T021-084,unknown-category,Categoria fora do catálogo/prefixo permitido recusa,PARTIAL,proprio-nativo: categoria desconhecida e quase-prefixo recusam,MAJOR-1: conteudo em save frame indentado/maiusculo escapa da enumeracao e some sem recusa
+T021-085,unknown-tag,Coluna desconhecida em categoria filtrada recusa; omitida sai com categoria,PARTIAL,proprio-nativo: tag desconhecida em filtrada recusa; em omitida sai com a categoria,MAJOR-4: _entry (unknown_tag_action=reject) aceita tag desconhecida
+T021-086,missing-conditional,Recusar; não fabricar categoria,COVERED,"proprio-nativo: entity_poly_seq, struct_conn_type, chem_comp e branch_scheme ausentes recusam",
+T021-087,duplicate-keys,Recusar antes de escrever,PARTIAL,proprio-nativo: atom_site/entity/ncs duplicados recusam,MAJOR-4: _chem_comp e _entry duplicados aceitos
+T021-088,loss-audit,Auditoria completa e RAW checksum inalterado,PARTIAL,teste-executado: RAW inalterado e omissoes com hash,MAJOR-4/MAJOR-1: linha _entry fonte e conteudo de save frame sem auditoria
+T021-089,output-verification,Recusar INVALID_OUTPUT antes de commit,COVERED,proprio-nativo: 9 mutacoes que preservam forma -> INVALID_OUTPUT phase=verify,
+T021-090,binding-real,Comprovar valores/tokens em integração real; disponibilidade sozinha não conta,COVERED,proprio-nativo+teste-executado: integracao real Gemmi 0.7.5 com tokens/hashes reais,
+T021-141,identity-no-table,Reconhecer identidade sem fabricar operadores; auditoria explicita convenção,COVERED,"proprio-nativo: 1_555/1_555 sem tabelas em K=0/1/2, base de convencao; teste-executado 5I55 real",
+T021-142,identity-contradiction,Recusar; não aplicar fallback de convenção,COVERED,"proprio-nativo: op1 nao identidade, contradicao entre tabelas, op1 so em uma tabela recusam K>0; sem fallback",
+T021-143,other-operator-no-table,Recusar K>0; não usar exceção de 1_555,COVERED,proprio-nativo: 2_555/1_556/01_555 sem prova recusam K>0,
+T021-144,different-image-reason,Recusar por limite de projeção não identidade; não alegar impossibilidade geométrica,COVERED,teste-executado: 1PFE trimmed real recusa UNSUPPORTED_SYMMETRY 1_555/9_555,
+T021-145,catalog-cell,Preservar tokens de contexto fonte; sem validar nova cela,COVERED,teste-executado: funcao de producao compute_category_decisions; caminho nativo exercitado no end-to-end (catalog-cell),
+T021-146,catalog-alt-annotation,Reconhecer e preservar conforme contexto; não tag desconhecida,COVERED,teste-executado: funcao de producao compute_category_decisions; caminho nativo exercitado no end-to-end (catalog-alt-annotation),
+T021-147,catalog-three-real,"Zero recusas de cobertura, sem alegar materialização positiva",COVERED,teste-executado+proprio-nativo: 5I55/1PFE/3DG1 trimmed passam cobertura; linhagem conferida token a token,NOTE-2: arquivos atuais diferem dos inventarios pinados
+T021-148,catalog-additional-metadata,Omitir categoria completa com hash/contagens/ordinais,COVERED,teste-executado: funcao de producao compute_category_decisions; caminho nativo exercitado no end-to-end (catalog-additional-metadata),
+T021-149,catalog-nmr-em,Omitir com auditoria; preservar M; outras categorias desconhecidas continuam recusadas,COVERED,teste-executado: 2JOF modelo 3 de 28 com other-models-excluded; 7DWU EM; familias nmr/em omitidas,
+T021-150,ncs-generate,Recusar UNSUPPORTED_NCS antes de omitir,COVERED,proprio-nativo: nao identidade generate -> UNSUPPORTED_NCS,MINOR-6: entrada real so no guard isolado
+T021-151,ncs-null,Recusar UNSUPPORTED_NCS; não inferir given,COVERED,proprio-nativo: code null e coluna ausente -> UNSUPPORTED_NCS,
+T021-152,ncs-given,Omitir com auditoria/aviso; não aplicar transformação,COVERED,proprio-nativo: given nao identidade omitido com aviso source-ncs-annotations-omitted,
+T021-153,ncs-identity,Omitir auditado; nenhuma cópia nova,COVERED,proprio-nativo: identidade exata generate/null omitida; 1e-7 recusa,
+T021-154,ncs-invalid,Recusar INVALID_CIF; não ignorar como faz fallback Structure,PARTIAL,proprio-nativo: matriz parcial e code desconhecido -> INVALID_CIF,MAJOR-2: componente citado '1' aceito
+T021-155,numeric-su-exponent,Aceitar primeiro; recusar segundo; preservar token válido,COVERED,proprio-nativo: 1.2(4)e3 e 1_000 recusam; 3.000(4)/-2.000e0 preservados,MAJOR-2 trata a lacuna de tokens citados separadamente
+T021-156,altloc-endpoint-set,Um conjunto por endpoint; K uniforme; uma linha fonte literal,COVERED,"proprio-nativo: endpoint sem altloc -> conjunto A/B, K uniforme, uma linha literal",
+T021-157,altloc-occurrence-ambiguous,Recusar; não fundir conjuntos entre ocorrências,PARTIAL,teste-executado: altloc declarado ausente recusa,MAJOR-6: duas ocorrencias indistinguiveis fundidas em um conjunto de endpoint
+T021-158,special-position-audit,Contagens/aviso apenas quando apropriado; ambiguidade recusa; ocupância inalterada,PARTIAL,"proprio-nativo: contagens 1/1/3, 1/0/0, 2/2/3, outro modelo, componente contraditorio e asym desconhecido corretos",MINOR-5: model_num '01' e altloc inexistente viram intersecao zero silenciosa
+T021-162,real-fixture-lineage,"Origem/hash/alterações e oráculos específicos obrigatórios, sem resultado fictício",COVERED,proprio-nativo: 18 hashes/tamanhos dos manifestos e remocoes declaradas conferidos; categorias restantes identicas ao original,
+T021-164,identity-basis-pair,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,COVERED,"proprio-nativo: RAW real, bases exatas, plan_key/connection_decisions_key identicos em 3 PYTHONHASHSEED",MINOR-4: prova do repositorio e DTO sintetico sem RAW/ordem de visita
+T021-165,identity-basis-pair,Recusar par impossível antes de hash; nunca produzir ConnectionDecision aceita,COVERED,teste-executado: validador do DTO recusa; inalcancavel pelo resolver (mesmo contexto de tabelas),
+T021-166,identity-basis-pair,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,COVERED,"proprio-nativo: RAW real, bases exatas, plan_key/connection_decisions_key identicos em 3 PYTHONHASHSEED",MINOR-4: prova do repositorio e DTO sintetico sem RAW/ordem de visita
+T021-167,identity-basis-pair,Recusar par impossível antes de hash; nunca produzir ConnectionDecision aceita,COVERED,teste-executado: idem T021-165,
+T021-168,identity-basis-pair,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,COVERED,"proprio-nativo: RAW real, bases exatas, plan_key/connection_decisions_key identicos em 3 PYTHONHASHSEED",MINOR-4: prova do repositorio e DTO sintetico sem RAW/ordem de visita
+T021-169,identity-basis-pair,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,COVERED,"proprio-nativo: RAW real, bases exatas, plan_key/connection_decisions_key identicos em 3 PYTHONHASHSEED",MINOR-4: prova do repositorio e DTO sintetico sem RAW/ordem de visita
+T021-170,identity-basis-pair,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,COVERED,"proprio-nativo: RAW real, bases exatas, plan_key/connection_decisions_key identicos em 3 PYTHONHASHSEED",MINOR-4: prova do repositorio e DTO sintetico sem RAW/ordem de visita
+T021-171,identity-basis-pair,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,COVERED,"proprio-nativo: RAW real, bases exatas, plan_key/connection_decisions_key identicos em 3 PYTHONHASHSEED",MINOR-4: prova do repositorio e DTO sintetico sem RAW/ordem de visita
+T021-172,identity-basis-pair,Bases exatas; connection_decisions_key/plan_key de produção determinísticos sob os mesmos bytes/DTOs; ordem dos parceiros preservada,COVERED,"proprio-nativo: RAW real, bases exatas, plan_key/connection_decisions_key identicos em 3 PYTHONHASHSEED",MINOR-4: prova do repositorio e DTO sintetico sem RAW/ordem de visita
+T021-173,identity-basis-precedence,"Aplicar §10.1 sem atalhos por K, sem fallback com tabela; validações anteriores e recusas da matriz preservadas",PARTIAL,proprio-nativo: malformado/nao localizado/contradicao/op1 nao identidade/op1 em uma tabela/x+0 corretos,MAJOR-3: '?'/'.' citados classificados one-null em vez de unsupported-discarded

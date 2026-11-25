@@ -1,0 +1,30 @@
+# Reviewer own test execution - increment 021 CP2 @ a807b03f44089eb3cbacc14f871b63689a21aec9 (external git-archive copy)
+# Linux 6.18.44-fc-v880 x86_64; Python 3.13.18; pytest 9.1.1; pydantic 2.13.5; PyYAML 6.0.3
+# gemmi 0.7.5 built from pin 5cc1c23 (isolated); typer 0.16.0/click 8.1.8/rich 14.0.0/shellingham 1.5.4/markdown-it-py 3.0.0/mdurl 0.1.2/pygments 2.19.1 from GitHub tags on PYTHONPATH (isolated, test collection only); RDKit absent
+## collect-only (full)
+1569 tests collected in 2.15s
+## focus
+214 passed in 5.28s
+## focus under -O
+214 passed, 1 warning in 4.84s
+## 020 regression
+121 passed in 0.74s
+## full suite @ 08b797e
+67 failed, 1314 passed, 7 skipped in 13.66s
+## full suite @ ea8dac9
+67 failed, 1406 passed, 7 skipped in 14.80s
+## full suite @ a807b03
+67 failed, 1497 passed, 7 skipped in 19.37s
+## per-test outcome comparison (same environment)
+baseline 08b797e -> HEAD: common=1388 changed_outcome=0 removed=0 added=183
+CP1 ea8dac9 -> HEAD: common=1480 changed_outcome=0 removed=0 added=91
+added since CP1 by file: {'tests.test_receptor_materialization': 56, 'tests.test_receptor_parsing': 35} outcomes: {'passed': 91}
+HEAD failures by file (all also failing at baseline and CP1): {'tests.test_atomic': 65, 'tests.test_cli': 2}
+every HEAD failure also fails at baseline: True
+## AST comparison of test modules (reviewer script)
+tests/test_receptor_materialization.py: CP1 92 test functions, HEAD 134; removed 0; changed 0; helpers/goldens unchanged (only import list extended)
+tests/test_receptor_parsing.py: CP1 31 test functions, HEAD 66; removed 0; changed 0; identical to baseline for pre-existing functions
+## collection reconciliation vs supplied Windows evidence
+supplied (implementer, Windows-11, Python 3.14.7, RDKit present): 1664 collected = 1659 passed + 5 skipped; focus 214; 020 regression 121
+reviewer (Linux, Python 3.13.18, RDKit absent): 1569 collected items = 1497 passed + 67 failed + 5 item skips (test_application.py:1881, test_cli.py:4261/4329/4603/6698, all 'requires RDKit'); 2 further module-level skips (test_promotion_service.py, test_rdkit_tautomer.py importorskip rdkit) hide their 95 items (33+62 test functions by AST, none parametrized), giving 1664-95=1569
+focus 214 = 214 and 020 regression 121 = 121 match exactly; 67 failures are environmental (Windows-only no-follow/cmd, RDKit) and identical at baseline and CP1

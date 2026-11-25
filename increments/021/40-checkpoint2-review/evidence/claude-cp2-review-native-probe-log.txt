@@ -1,0 +1,386 @@
+# Independent reviewer native probe log - increment 021 CP2 @ a807b03
+# python 3.13.18; gemmi built from project-gemmi/gemmi@5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e (v0.7.5) + nanobind v2.9.2, isolated PYTHONPATH, no global install
+# gemmi_ext sha256 b2ead32c13bcab9a048ed03cba0115a5870ed5f25677ae59b48d25c601551856
+Linux 6.18.44-fc-v880 x86_64
+=== catalog_check
+CATALOGUE_SHA256 const == annex bytes: True
+categories 94 embedded 94 extra set()
+mismatches 0
+required eq True
+conditional eq True
+omission family pattern (?:_pdbx_validate_|_pdbx_nmr_|_em_)[a-z0-9_]+
+extra fields in annex categories ['nonnull_key', 'scenario_ids', 'unknown_tag_action']
+=== purity
+--- mode=block flags=
+after domain import gemmi loaded: False
+after adapter import gemmi loaded: False False
+config error ENGINE_UNAVAILABLE
+--- mode=real flags=
+after domain import gemmi loaded: False
+after adapter import gemmi loaded: False False
+parse ok; gemmi 0.7.5
+--- mode=block flags=-O
+after domain import gemmi loaded: False
+after adapter import gemmi loaded: False False
+config error ENGINE_UNAVAILABLE
+--- mode=real flags=-O
+after domain import gemmi loaded: False
+after adapter import gemmi loaded: False False
+parse ok; gemmi 0.7.5
+=== p_c06_c01
+{"probe": "control_minimal", "expected": "ACCEPTED", "result": "ACCEPTED", "plan_key": "3dbec26be9c983a9653d94911542f153442325aa419ec51c338e01e4b40bafad", "matches_contract": true}
+{"probe": "savefr_indented", "expected": "REFUSED", "result": "ACCEPTED", "plan_key": "1c53035405c877bbb688937811fbc53cb4492fb1a043ea031d018415eb8b1859", "matches_contract": false}
+   frame content in output? False | x in plan categories? False
+{"probe": "savefr_uppercase", "expected": "REFUSED", "result": "ACCEPTED", "plan_key": "7706167e8c12b9dae62a328fc139ce59596c759e4618171c0ef2bcb8ebfa2f8f", "matches_contract": false}
+   frame content in output? False | x in plan categories? False
+{"probe": "savefr_lowercase_col0", "expected": "REFUSED", "result": "REFUSED", "type": "CifSaveFrameRejectedError", "code": null, "phase": null, "cause": null, "matches_contract": true}
+{"probe": "quoted_cartn_x", "expected": "REFUSED", "result": "ACCEPTED", "plan_key": "6d00a5101d2182ef610161f97e57d15b134aab202de6d48654742a7b999f1879", "matches_contract": false}
+{"probe": "quoted_occupancy", "expected": "REFUSED", "result": "ACCEPTED", "plan_key": "8bfd74b235f765215dec734f3c2d00063a4709bfbce2ed474fee820f098d935f", "matches_contract": false}
+{"probe": "quoted_b_iso", "expected": "REFUSED", "result": "ACCEPTED", "plan_key": "7180c926c152704f8e9a830df6f39ecbf21d50f028ae286cf3426644ad62d1d6", "matches_contract": false}
+{"probe": "su_before_exponent_cartn", "expected": "REFUSED", "result": "REFUSED", "type": "MaterializationExecutionError", "code": "INVALID_CIF", "phase": "plan", "cause": null, "matches_contract": true}
+{"probe": "underscore_cartn", "expected": "REFUSED", "result": "REFUSED", "type": "MaterializationExecutionError", "code": "INVALID_CIF", "phase": "plan", "cause": null, "matches_contract": true}
+{"probe": "quoted_model_num", "expected": "REFUSED", "result": "ACCEPTED", "plan_key": "e6eedccd76d94efcb8a128a9e0430bbbf6971ccb70c8a6fa210da694cd283300", "matches_contract": false}
+{"probe": "plus_model_num", "expected": "REFUSED", "result": "ACCEPTED", "plan_key": "971a7197685a35b81c70da9ff29f2ae3174dcbef41b02a3c27cb5563b6151c69", "matches_contract": false}
+{"probe": "unicode_digit_model_num_all_rows", "expected": "REFUSED", "result": "REFUSED", "type": "ReceptorParseFailureError", "code": null, "phase": null, "cause": "ValueError", "matches_contract": true}
+{"probe": "formal_charge_nonnumeric", "expected": "REFUSED", "result": "ACCEPTED", "plan_key": "8155757c45fcad6b5ca08ad7bfb5fe5e0a6081a8afbcd362abbb48404aed55ef", "matches_contract": false}
+{"probe": "formal_charge_decimal", "expected": "REFUSED", "result": "ACCEPTED", "plan_key": "7bb3e7cc809319f0788ffa84a4ffda0435ac432441b1507e84523af59b474d7f", "matches_contract": false}
+{"probe": "formal_charge_quoted", "expected": "REFUSED", "result": "ACCEPTED", "plan_key": "752470768bcb75bbd99482cf9bb9daba4a3c9fc2a8014ae3fb526e43f62cff6d", "matches_contract": false}
+{"probe": "formal_charge_null_control", "expected": "ACCEPTED", "result": "ACCEPTED", "plan_key": "5552042d8b59d2f502244e9f8ca954f4cab922478412046799c48b64d5021c7d", "matches_contract": true}
+{"probe": "formal_charge_int_control", "expected": "ACCEPTED", "result": "ACCEPTED", "plan_key": "929efd13369b77ca10f47ea85aab4fcba8ebe5f66963f9e4ca8ab92e10def7f4", "matches_contract": true}
+SUMMARY matches 7 of 17
+=== p_interrupt_taxonomy_verify
+{"interrupt": "parse(gemmi.cif.read_string)", "class": "KeyboardInterrupt", "propagated": "same-instance"}
+{"interrupt": "parse(gemmi.cif.read_string)", "class": "SystemExit", "propagated": "same-instance"}
+{"interrupt": "plan(rm.build_materialization_plan)", "class": "KeyboardInterrupt", "propagated": "same-instance"}
+{"interrupt": "plan(rm.build_materialization_plan)", "class": "SystemExit", "propagated": "same-instance"}
+{"interrupt": "plan(rm.resolve_connection_decisions)", "class": "KeyboardInterrupt", "propagated": "same-instance"}
+{"interrupt": "plan(rm.resolve_connection_decisions)", "class": "SystemExit", "propagated": "same-instance"}
+{"interrupt": "plan(rm.compute_category_decisions)", "class": "KeyboardInterrupt", "propagated": "same-instance"}
+{"interrupt": "plan(rm.compute_category_decisions)", "class": "SystemExit", "propagated": "same-instance"}
+{"interrupt": "serialize(rp.serialize_cif_document021)", "class": "KeyboardInterrupt", "propagated": "same-instance"}
+{"interrupt": "serialize(rp.serialize_cif_document021)", "class": "SystemExit", "propagated": "same-instance"}
+{"interrupt": "verify(rp.reparse_and_extract_cif_dom021)", "class": "KeyboardInterrupt", "propagated": "same-instance"}
+{"interrupt": "verify(rp.reparse_and_extract_cif_dom021)", "class": "SystemExit", "propagated": "same-instance"}
+{"interrupt": "verify(rp._verify_output_reparse)", "class": "KeyboardInterrupt", "propagated": "same-instance"}
+{"interrupt": "verify(rp._verify_output_reparse)", "class": "SystemExit", "propagated": "same-instance"}
+{"taxonomy": "raw_over_16MiB", "type": "CifStructuralLimitExceededError", "code": null, "phase": null, "is_021_execution_error": false}
+{"taxonomy": "gzip_magic", "type": "CompressedRawContentError", "code": null, "phase": null, "is_021_execution_error": false}
+{"taxonomy": "bom", "type": "InvalidCifEncodingError", "code": null, "phase": null, "is_021_execution_error": false}
+{"taxonomy": "two_blocks", "type": "MultipleDataBlocksError", "code": null, "phase": null, "is_021_execution_error": false}
+{"taxonomy": "syntax_error", "type": "ReceptorParseFailureError", "code": null, "phase": null, "is_021_execution_error": false}
+{"taxonomy": "entity_missing_for_atom", "type": "MaterializationAdapterError", "code": "INVALID_CIF", "phase": null, "is_021_execution_error": false}
+{"taxonomy": "unknown_category", "type": "MaterializationExecutionError", "code": "UNSUPPORTED_CATEGORY", "phase": "plan", "is_021_execution_error": true}
+=== p_verify_mutations
+{"mutation": "coord_changed", "result": "REFUSED", "code": "INVALID_OUTPUT", "phase": "verify", "matches_contract": true}
+{"mutation": "rows_swapped", "result": "REFUSED", "code": "INVALID_OUTPUT", "phase": "verify", "matches_contract": true}
+{"mutation": "row_dropped", "result": "REFUSED", "code": "INVALID_OUTPUT", "phase": "verify", "matches_contract": true}
+{"mutation": "null_marker_swapped", "result": "REFUSED", "code": "INVALID_OUTPUT", "phase": "verify", "matches_contract": true}
+{"mutation": "quoted_lookalike", "result": "REFUSED", "code": "INVALID_OUTPUT", "phase": "verify", "matches_contract": true}
+{"mutation": "extra_category", "result": "REFUSED", "code": "INVALID_OUTPUT", "phase": "verify", "matches_contract": true}
+{"mutation": "block_renamed", "result": "REFUSED", "code": "INVALID_OUTPUT", "phase": "verify", "matches_contract": true}
+{"mutation": "struct_conn_token", "result": "REFUSED", "code": "INVALID_OUTPUT", "phase": "verify", "matches_contract": true}
+{"mutation": "chem_comp_id", "result": "REFUSED", "code": "INVALID_OUTPUT", "phase": "verify", "matches_contract": true}
+=== p_symmetry
+{"scenario": "T021-045", "K": 2, "cell": "both-identity", "tables": "symmetry_equiv", "expected": "preserve", "got": "preserve", "symmetry_class": "both-identity", "basis": ["source-operator", "source-operator"], "reason": "both-retained"}
+{"scenario": "T021-046", "K": 2, "cell": "same-nonidentity", "tables": "symmetry_equiv", "expected": "REFUSE", "got": "REFUSE", "code": "UNSUPPORTED_SYMMETRY"}
+{"scenario": "T021-047", "K": 2, "cell": "different", "tables": "symmetry_equiv", "expected": "REFUSE", "got": "REFUSE", "code": "UNSUPPORTED_SYMMETRY"}
+{"scenario": "T021-048", "K": 2, "cell": "one-null", "tables": "symmetry_equiv", "expected": "REFUSE", "got": "REFUSE", "code": "UNSUPPORTED_SYMMETRY"}
+{"scenario": "T021-049", "K": 2, "cell": "both-null", "tables": "symmetry_equiv", "expected": "REFUSE", "got": "REFUSE", "code": "UNSUPPORTED_SYMMETRY"}
+{"scenario": "T021-050", "K": 1, "cell": "both-identity", "tables": "symmetry_equiv", "expected": "omit", "got": "omit", "symmetry_class": "both-identity", "basis": ["source-operator", "source-operator"], "reason": "whole-partner-removed-metalc"}
+{"scenario": "T021-051", "K": 1, "cell": "same-nonidentity", "tables": "symmetry_equiv", "expected": "REFUSE", "got": "REFUSE", "code": "UNSUPPORTED_SYMMETRY"}
+{"scenario": "T021-052", "K": 1, "cell": "different", "tables": "symmetry_equiv", "expected": "REFUSE", "got": "REFUSE", "code": "UNSUPPORTED_SYMMETRY"}
+{"scenario": "T021-053", "K": 1, "cell": "one-null", "tables": "symmetry_equiv", "expected": "REFUSE", "got": "REFUSE", "code": "UNSUPPORTED_SYMMETRY"}
+{"scenario": "T021-054", "K": 1, "cell": "both-null", "tables": "symmetry_equiv", "expected": "REFUSE", "got": "REFUSE", "code": "UNSUPPORTED_SYMMETRY"}
+{"scenario": "T021-055", "K": 0, "cell": "both-identity", "tables": "symmetry_equiv", "expected": "omit", "got": "omit", "symmetry_class": "both-identity", "basis": ["source-operator", "source-operator"], "reason": "both-removed"}
+{"scenario": "T021-056", "K": 0, "cell": "same-nonidentity", "tables": "symmetry_equiv", "expected": "omit", "got": "omit", "symmetry_class": "same-nonidentity", "basis": ["source-operator", "source-operator"], "reason": "both-removed"}
+{"scenario": "T021-057", "K": 0, "cell": "different", "tables": "symmetry_equiv", "expected": "omit", "got": "omit", "symmetry_class": "different", "basis": ["source-operator", "source-operator"], "reason": "both-removed"}
+{"scenario": "T021-058", "K": 0, "cell": "one-null", "tables": "symmetry_equiv", "expected": "omit", "got": "omit", "symmetry_class": "one-null", "basis": ["not-applicable", "source-operator"], "reason": "both-removed"}
+{"scenario": "T021-059", "K": 0, "cell": "both-null", "tables": "symmetry_equiv", "expected": "omit", "got": "omit", "symmetry_class": "both-null", "basis": ["not-applicable", "not-applicable"], "reason": "both-removed"}
+{"scenario": "T021-050b", "K": 1, "type": "disulf", "expected": "REFUSE COVALENT_CUT", "got": "COVALENT_CUT"}
+{"scenario": "T021-141", "K": 2, "no_tables": true, "got": "preserve", "basis": ["pdbx-1_555-convention", "pdbx-1_555-convention"]}
+{"scenario": "T021-141", "K": 1, "no_tables": true, "got": "omit", "basis": ["pdbx-1_555-convention", "pdbx-1_555-convention"]}
+{"scenario": "T021-141", "K": 0, "no_tables": true, "got": "omit", "basis": ["pdbx-1_555-convention", "pdbx-1_555-convention"]}
+SUMMARY 19 / 19
+=== p_identity_basis
+{"case": "quoted_question_mark", "K0_expected": [["not-applicable", "pdbx-1_555-convention"], "unsupported-discarded"], "K0_got": [["not-applicable", "pdbx-1_555-convention"], "one-null"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": false}
+{"case": "quoted_dot", "K0_expected": [["not-applicable", "pdbx-1_555-convention"], "unsupported-discarded"], "K0_got": [["not-applicable", "pdbx-1_555-convention"], "one-null"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": false}
+{"case": "leading_zero_01_555", "K0_expected": [["not-applicable", "pdbx-1_555-convention"], "unsupported-discarded"], "K0_got": [["not-applicable", "pdbx-1_555-convention"], "unsupported-discarded"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": true}
+{"case": "2_555_no_tables", "K0_expected": [["not-applicable", "not-applicable"], "unsupported-discarded"], "K0_got": [["not-applicable", "not-applicable"], "unsupported-discarded"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": true}
+{"case": "1_556_no_tables", "K0_expected": [["not-applicable", "pdbx-1_555-convention"], "unsupported-discarded"], "K0_got": [["not-applicable", "pdbx-1_555-convention"], "unsupported-discarded"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": true}
+{"case": "not_located_4_555", "K0_expected": [["not-applicable", "source-operator"], "unsupported-discarded"], "K0_got": [["not-applicable", "source-operator"], "unsupported-discarded"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": true}
+{"case": "dup_id_same_table", "K0_expected": [["not-applicable", "not-applicable"], "unsupported-discarded"], "K0_got": ["REFUSED", "INVALID_CIF"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": false}
+{"case": "contradiction_between_tables", "K0_expected": [["not-applicable", "not-applicable"], "unsupported-discarded"], "K0_got": [["not-applicable", "not-applicable"], "unsupported-discarded"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": true}
+{"case": "op1_nonidentity", "K0_expected": [["source-operator", "source-operator"], "unsupported-discarded"], "K0_got": [["source-operator", "source-operator"], "unsupported-discarded"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": true}
+{"case": "op1_only_in_one_of_two_tables", "K0_expected": [["source-operator", "source-operator"], "unsupported-discarded"], "K0_got": [["source-operator", "source-operator"], "unsupported-discarded"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": true}
+{"case": "op1_in_both_tables_concordant", "K0_expected": [["source-operator", "source-operator"], "both-identity"], "K0_got": [["not-applicable", "not-applicable"], "unsupported-discarded"], "K2_expected": "preserve", "K2_got": "preserve", "matches_contract": false}
+{"case": "x_plus_0_identity_outside_grammar", "K0_expected": [["source-operator", "source-operator"], "unsupported-discarded"], "K0_got": [["source-operator", "source-operator"], "unsupported-discarded"], "K2_expected": "REFUSE", "K2_got": "REFUSE:UNSUPPORTED_SYMMETRY", "matches_contract": true}
+{"case": "assembly_oper_list_not_a_symmetry_table", "K0_expected": [["pdbx-1_555-convention", "pdbx-1_555-convention"], "both-identity"], "K0_got": [["pdbx-1_555-convention", "pdbx-1_555-convention"], "both-identity"], "K2_expected": null, "K2_got": null, "matches_contract": true}
+SUMMARY 9 / 13
+=== p_ib2
+{"case": "op1_in_both_tables_concordant_K0_fixed", "basis": ["source-operator", "source-operator"], "class": "both-identity", "matches_contract": true}
+domain treats decoded quoted-? as null: True
+{"quoted_vs_bare_same_class": true, "quoted": "one-null", "bare": "one-null", "row_keys_differ": true}
+=== p_catalog
+{"probe": "T021-150 ncs nonidentity generate", "expected": "REFUSED:UNSUPPORTED_NCS", "got": "REFUSED:UNSUPPORTED_NCS", "matches_contract": true}
+{"probe": "T021-151 ncs nonidentity null code", "expected": "REFUSED:UNSUPPORTED_NCS", "got": "REFUSED:UNSUPPORTED_NCS", "matches_contract": true}
+{"probe": "T021-151b ncs nonidentity code column absent", "expected": "REFUSED:UNSUPPORTED_NCS", "got": "REFUSED:UNSUPPORTED_NCS", "matches_contract": true}
+{"probe": "T021-152 ncs nonidentity given", "expected": "ACCEPTED", "got": "ACCEPTED", "matches_contract": true, "warnings": ["coordination-connections-omitted", "source-annotations-omitted", "source-ncs-annotations-omitted", "source-symmetry-context-only"]}
+{"probe": "T021-153 ncs identity generate", "expected": "ACCEPTED", "got": "ACCEPTED", "matches_contract": true, "warnings": ["coordination-connections-omitted", "source-annotations-omitted", "source-ncs-annotations-omitted", "source-symmetry-context-only"]}
+{"probe": "T021-153b ncs identity null", "expected": "ACCEPTED", "got": "ACCEPTED", "matches_contract": true, "warnings": ["coordination-connections-omitted", "source-annotations-omitted", "source-ncs-annotations-omitted", "source-symmetry-context-only"]}
+{"probe": "T021-153c ncs near-identity 1e-7 generate", "expected": "REFUSED:UNSUPPORTED_NCS", "got": "REFUSED:UNSUPPORTED_NCS", "matches_contract": true}
+{"probe": "T021-154 ncs partial matrix", "expected": "REFUSED:INVALID_CIF", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-154b ncs code unknown", "expected": "REFUSED:INVALID_CIF", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-154c ncs quoted numeric", "expected": "REFUSED:INVALID_CIF", "got": "ACCEPTED", "matches_contract": false}
+{"probe": "ncs duplicate id", "expected": "REFUSED", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-062 aniso complete U ok", "expected": "ACCEPTED", "got": "ACCEPTED", "matches_contract": true}
+{"probe": "T021-062 aniso complete B with esd ok", "expected": "ACCEPTED", "got": "ACCEPTED", "matches_contract": true}
+{"probe": "T021-062 aniso partial U", "expected": "REFUSED:INVALID_CIF", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-062 aniso partial U + full B", "expected": "REFUSED:INVALID_CIF", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-062 aniso type contradiction", "expected": "REFUSED:INVALID_CIF", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-062 aniso label_seq contradiction", "expected": "REFUSED:INVALID_CIF", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-062 aniso id not in atom_site", "expected": "REFUSED", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-062 aniso quoted tensor value", "expected": "REFUSED:INVALID_CIF", "got": "ACCEPTED", "matches_contract": false}
+{"probe": "T021-062 aniso removed atom row dropped", "expected": "ACCEPTED", "got": "ACCEPTED", "matches_contract": true, "aniso_kept": []}
+{"probe": "T021-084 unknown category", "expected": "REFUSED:UNSUPPORTED_CATEGORY", "got": "REFUSED:UNSUPPORTED_CATEGORY", "matches_contract": true}
+{"probe": "T021-084b validate family omitted", "expected": "ACCEPTED", "got": "ACCEPTED", "matches_contract": true}
+{"probe": "T021-084c family prefix near-miss", "expected": "REFUSED:UNSUPPORTED_CATEGORY", "got": "REFUSED:UNSUPPORTED_CATEGORY", "matches_contract": true}
+{"probe": "T021-085 unknown tag in filtered", "expected": "REFUSED:UNSUPPORTED_TAG", "got": "REFUSED:UNSUPPORTED_TAG", "matches_contract": true}
+{"probe": "T021-085b unknown tag in omitted", "expected": "ACCEPTED", "got": "ACCEPTED", "matches_contract": true}
+{"probe": "T021-086 missing entity_poly_seq for retained polymer", "expected": "REFUSED", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-086b missing struct_conn_type with preserved conn", "expected": "REFUSED", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-086c missing required chem_comp row for retained CCD", "expected": "REFUSED", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-087 duplicate atom_site.id", "expected": "REFUSED", "got": "REFUSED:INVALID_ID", "matches_contract": true}
+{"probe": "T021-087b duplicate entity.id", "expected": "REFUSED", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-087c duplicate chem_comp.id", "expected": "REFUSED", "got": "ACCEPTED", "matches_contract": false}
+{"probe": "entity_poly_seq mismatch label_comp for retained atom", "expected": "REFUSED", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "entity.type unknown on retained", "expected": "REFUSED", "got": "REFUSED:UNSUPPORTED_REQUEST", "matches_contract": true}
+{"T021-082": {"entry_action": "generate", "generated": ["id"], "source_rows_key_present": false, "entry_id_out": "tbmp_3dbec26be9c983a9653d94911542f153442325aa419ec51c338e01e4b40bafad", "block": "tbmp_3dbec26be9c983a9653d94911542f153442325aa419ec51c338e01e4b40bafad", "cell_entry_id_generated": true, "symmetry_out": {"space_group_name_h-m": ["'P 1'"], "entry_id": ["tbmp_3dbec26be9c983a9653d94911542f153442325aa419ec51c338e01e4b40bafad"]}}}
+SUMMARY 30 / 33
+=== p_entry_chemcomp
+{"probe": "chem_comp duplicate id (T021-087)", "expected": "REFUSED", "got": "ACCEPTED", "matches_contract": false, "chem_comp_out_rows": 3, "chem_comp_out_ids": ["ALA", "CYS", "ALA"]}
+{"probe": "chem_comp null id row", "expected": "REFUSED", "got": "ACCEPTED", "matches_contract": false, "chem_comp_out_rows": 2, "chem_comp_out_ids": ["ALA", "CYS"]}
+{"probe": "entry unknown source tag (unknown_tag_action=reject)", "expected": "REFUSED", "got": "ACCEPTED", "matches_contract": false, "entry_decision": {"category": "_entry", "action": "generate", "kept_row_ordinals": [], "omitted_row_ordinals": [], "preserved_tags": [], "omitted_tags": [], "generated_tags": ["id"], "source_rows_key": null}}
+{"probe": "entry duplicate id rows", "expected": "REFUSED", "got": "ACCEPTED", "matches_contract": false, "entry_decision": {"category": "_entry", "action": "generate", "kept_row_ordinals": [], "omitted_row_ordinals": [], "preserved_tags": [], "omitted_tags": [], "generated_tags": ["id"], "source_rows_key": null}}
+{"entry_with_source_row": {"source_rows_key": null, "kept": [], "omitted": [], "schemas_requires_nonnull_key_and_row_coverage": true, "matches_contract": false}}
+SUMMARY 0 / 4
+=== p_real
+{
+ "1pfe": {
+  "hashes_match_manifest": true,
+  "orig_categories": 76,
+  "trim_categories": 73,
+  "removed_exactly_declared": true,
+  "surviving_categories_token_identical": true,
+  "orig_vs_trim_block": [
+   "1PFE",
+   "1PFE"
+  ],
+  "original_unedited_full_run": "REFUSED:COVALENT_CUT"
+ },
+ "3dg1": {
+  "hashes_match_manifest": true,
+  "orig_categories": 55,
+  "trim_categories": 50,
+  "removed_exactly_declared": true,
+  "surviving_categories_token_identical": true,
+  "orig_vs_trim_block": [
+   "3DG1",
+   "3DG1"
+  ],
+  "original_unedited_full_run": "REFUSED:UNSUPPORTED_CATEGORY"
+ },
+ "5i55": {
+  "hashes_match_manifest": true,
+  "orig_categories": 60,
+  "trim_categories": 57,
+  "removed_exactly_declared": true,
+  "surviving_categories_token_identical": true,
+  "orig_vs_trim_block": [
+   "5I55",
+   "5I55"
+  ],
+  "original_unedited_full_run": "REFUSED:UNSUPPORTED_CATEGORY"
+ },
+ "em_7dwu": {
+  "hashes_match_manifest": true,
+  "orig_categories": 56,
+  "trim_categories": 50,
+  "removed_exactly_declared": true,
+  "surviving_categories_token_identical": true,
+  "orig_vs_trim_block": [
+   "7DWU",
+   "7DWU"
+  ],
+  "original_unedited_full_run": "REFUSED:UNSUPPORTED_CATEGORY"
+ },
+ "ncs_1a2p": {
+  "hashes_match_manifest": true,
+  "orig_categories": 72,
+  "trim_categories": 69,
+  "removed_exactly_declared": true,
+  "surviving_categories_token_identical": true,
+  "orig_vs_trim_block": [
+   "1A2P",
+   "1A2P"
+  ],
+  "original_unedited_full_run": "n/a (no chain selection in manifest: {\"id\": \"T021-150-154 (ncs-*) - real _struct_ncs_oper rows, extracted and run directly through the pure NCS guard\", \"note_honest_limitation\": \"Full end-to-end ma)"
+ },
+ "nmr_2jof": {
+  "hashes_match_manifest": true,
+  "orig_categories": 53,
+  "trim_categories": 51,
+  "removed_exactly_declared": true,
+  "surviving_categories_token_identical": true,
+  "orig_vs_trim_block": [
+   "2JOF",
+   "2JOF"
+  ],
+  "original_unedited_full_run": "REFUSED:UNSUPPORTED_CATEGORY"
+ }
+}
+=== p_tokens_context
+{"probe": "T021-041/042 literal tokens (quoted ?, bare ?, ., su, exponent, 0, null B, D atom)", "matches_contract": true, "row0": {"pdbx_pdb_ins_code": "'?'", "cartn_x": "1.0000001", "cartn_y": "-2.000e0", "cartn_z": "3.000(4)", "occupancy": "0", "b_iso_or_equiv": "?"}, "row3": {"type_symbol": "D", "pdbx_pdb_ins_code": ".", "occupancy": "0.33", "b_iso_or_equiv": "."}}
+{"probe": "T021-041 multiline text token survives literally", "matches_contract": true, "multiline": ";\nline one\n  'quoted' ; inside\n;"}
+{"probe": "T021-158 retained hit", "matches_contract": true, "counts": [1, 1, 3], "warning": true}
+{"probe": "T021-158 removed only (chain B complement)", "matches_contract": true, "counts": [1, 0, 0], "warning": false}
+{"probe": "T021-158 overlap two rows same residue", "matches_contract": true, "counts": [2, 2, 3], "warning": true}
+{"probe": "T021-158 other model", "matches_contract": true, "counts": [1, 0, 0], "warning": false}
+{"probe": "T021-158 component contradiction", "matches_contract": true, "got": "INVALID_CIF"}
+{"probe": "T021-158 unknown asym", "matches_contract": true, "got": "INVALID_CIF"}
+{"probe": "T021-158 malformed model token '01'", "matches_contract": false, "counts": [1, 0, 0], "warning": false}
+{"probe": "T021-158 altloc absent from residue", "matches_contract": false, "counts": [1, 0, 0], "warning": false}
+SUMMARY 8 / 10
+=== p_branch
+{"probe": "T021-071..074 branched retained by U=preserve, whole branch incl. unobserved MAN kept", "expected": "ACCEPTED", "got": "ACCEPTED", "matches_contract": true, "_pdbx_entity_branch_list": [0, 1, 2], "_pdbx_entity_branch_link": [0, 1], "_pdbx_branch_scheme": [0, 1, 2], "_chem_comp": [0, 1, 3, 4, 5]}
+{"probe": "T021-086 branched retained but branch_scheme missing", "expected": "REFUSED", "got": "REFUSED:INVALID_CIF", "matches_contract": true}
+{"probe": "T021-073 link references unknown list num", "expected": "REFUSED", "got": "ACCEPTED", "matches_contract": false, "_pdbx_entity_branch_list": [0, 1, 2], "_pdbx_entity_branch_link": [0, 1], "_pdbx_branch_scheme": [0, 1, 2], "_chem_comp": [0, 1, 3, 4, 5]}
+{"probe": "T021-072 list comp/num mismatch vs atoms (NAG at 2)", "expected": "REFUSED", "got": "ACCEPTED", "matches_contract": false, "_pdbx_entity_branch_list": [0, 1, 2], "_pdbx_entity_branch_link": [0, 1], "_pdbx_branch_scheme": [0, 1, 2], "_chem_comp": [0, 1, 3, 4, 5]}
+{"probe": "P-3 NAG remove/BMA keep nonuniform", "expected": "REFUSED", "got": "REFUSED:NONUNIFORM_ASYM", "matches_contract": true}
+SUMMARY 3 / 5
+=== pairs determinism across PYTHONHASHSEED 0/1/12345
+identical_across_seeds True
+{
+ "T021-043:ins_A": {
+  "action": "preserve",
+  "endpoint2": [
+   "7"
+  ],
+  "ok": true
+ },
+ "T021-043:ins_none": {
+  "action": "preserve",
+  "endpoint2": [
+   "6"
+  ],
+  "ok": true
+ },
+ "T021-044:ptnr3_bare_null": {
+  "code": null,
+  "ok": true,
+  "result": "ACCEPTED"
+ },
+ "T021-044:ptnr3_dot": {
+  "code": null,
+  "ok": true,
+  "result": "ACCEPTED"
+ },
+ "T021-044:ptnr3_filled": {
+  "code": "UNSUPPORTED_PARTNER",
+  "ok": true,
+  "result": "REFUSED"
+ },
+ "T021-044:ptnr3_quoted_q": {
+  "code": "UNSUPPORTED_PARTNER",
+  "ok": true,
+  "result": "REFUSED"
+ },
+ "T021-156": {
+  "K": 1,
+  "endpoint1_set": [
+   "2",
+   "8"
+  ],
+  "ok": true
+ },
+ "T021-156:literal_rows": {
+  "conn_rows_total": 2,
+  "struct_conn_kept": [
+   0
+  ]
+ },
+ "T021-157": {
+  "code": null,
+  "ok": false,
+  "result": "ACCEPTED"
+ },
+ "T021-164": {
+  "basis": [
+   "pdbx-1_555-convention",
+   "pdbx-1_555-convention"
+  ],
+  "basis_ok": true,
+  "connection_decisions_key": "e82deed8c4ec741784106eb281e12e683e762223db158ab071b7fa1eefc12c9d",
+  "plan_key": "3e63e5164575fb59866afe76c4d3075999fbd78efc534b189bb1bb766f996af4",
+  "raw_sha256": "4c499af8d3ab203af73427a56565478de8f2db0016c16ab215e833467f749e23"
+ },
+ "T021-166": {
+  "basis": [
+   "pdbx-1_555-convention",
+   "not-applicable"
+  ],
+  "basis_ok": true,
+  "connection_decisions_key": "728f778e85472755f13ddb19e5223762641e9b05242a558c3c8b26806cb53522",
+  "plan_key": "ecd2c07af1485db4a82c2f4cb09ef6310f3ef0081cb0333db408cef70f2b054c",
+  "raw_sha256": "66ad4f77fa9d270680dc888b0841ab40d666746f7d1d9ab9a0e4d4777e70cb8f"
+ },
+ "T021-168": {
+  "basis": [
+   "source-operator",
+   "source-operator"
+  ],
+  "basis_ok": true,
+  "connection_decisions_key": "ae7eda24e84af566011a2e61cbadd5f7a546f9c4d0e0423c2569c0c43ff99e43",
+  "plan_key": "1758cffc809eaf312b8e85b0b6846f75951ac09a2fb8ae86b154565aafc496de",
+  "raw_sha256": "3cfa970880b17bc0e2b3e2e7b024c2595c78dfbb09e95cc754571e460699769a"
+ },
+ "T021-169": {
+  "basis": [
+   "source-operator",
+   "not-applicable"
+  ],
+  "basis_ok": true,
+  "connection_decisions_key": "0c5d9c67f18fffba21955ba4038d0ce6b29040289bab65079e363308979a8872",
+  "plan_key": "6ac73bd3ed68907c84362c3eeb8905ca5adfa1cce8f0f65a1a7043ec76e5ae95",
+  "raw_sha256": "40e9b8387df589839f983cdcb3a76873a0650e13a40c54f4b4cdc4e9d305ca84"
+ },
+ "T021-170": {
+  "basis": [
+   "not-applicable",
+   "pdbx-1_555-convention"
+  ],
+  "basis_ok": true,
+  "connection_decisions_key": "e9990c8b78ea19e738e9015264612efe29b29722546686f53b739874941d6ef6",
+  "plan_key": "6da5cf1ad7fb31cdb8d06e74f2867069f667fd5685e81cce16276674b8d4535a",
+  "raw_sha256": "2ecd67743bd9246862ec37a9e344b089f487928d671fa8e20cb56cb7edd960e6"
+ },
+ "T021-171": {
+  "basis": [
+   "not-applicable",
+   "source-operator"
+  ],
+  "basis_ok": true,
+  "connection_decisions_key": "4200eaaa44f8a57e7f558150910ab17db2c3e9f9245bb73b41a20d18cd6892b8",
+  "plan_key": "8ab4d0ec3ab3028d50f76ce3155fdcf50ca3042518556d71cf0eade3a10ad532",
+  "raw_sha256": "2c594888b3dd13a86af756f94ba7c22a1a9d2a3222dded331533d7bb303e8a3d"
+ },
+ "T021-172": {
+  "basis": [
+   "not-applicable",
+   "not-applicable"
+  ],
+  "basis_ok": true,
+  "connection_decisions_key": "d153f9b160d7016a870d7f144c50e8b9377106c9a733b2f0b2f0db1dba08aa5d",
+  "plan_key": "025d41b4b812865ef2a0540494e050014a99984630dbcdaa0a7190464514ca44",
+  "raw_sha256": "da76b80c21446f701c20d7af12751c4225e2ce7cc3b490583b4f424cafe223ea"
+ }
+}
