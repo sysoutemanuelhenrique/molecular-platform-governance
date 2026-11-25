@@ -62,18 +62,18 @@
    "size_bytes": 3032
   },
   {
-   "git_blob_sha": "4bd58b53bd5e851b3d37f755775c6ddc3b8de7ed",
+   "git_blob_sha": "dd6c1ebd8a5899300b3fbd51a64241e0e7cc25bc",
    "lines_lf": 48,
    "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_c06_c01.py",
-   "sha256": "c67e7c38d940335ff9caf843997453107dc1f28ace6d466f171a4f6af0e55c95",
-   "size_bytes": 2747
+   "sha256": "a46620b0611a4a6f7e8b7deef097a9eb4c36d24d34a2829bdd3f714c7681f328",
+   "size_bytes": 2746
   },
   {
-   "git_blob_sha": "11c58bec498beb2209425e2a5acb304fed89dd45",
+   "git_blob_sha": "1712f029a56dd8c22bbc467ae5e15ae4646c3cd2",
    "lines_lf": 66,
    "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_catalog.py",
-   "sha256": "d530236c6a21cb514a6d2102ca8b7dc098bce4f4907300df43e3e55e39b6e19a",
-   "size_bytes": 5857
+   "sha256": "a757561ab07e00b23efe4a24c81235fb2d0f74066801f7107c31b07403924b0e",
+   "size_bytes": 5856
   },
   {
    "git_blob_sha": "0e0adae4ef27a06f5bb7f1c5828f00aba56c97bd",

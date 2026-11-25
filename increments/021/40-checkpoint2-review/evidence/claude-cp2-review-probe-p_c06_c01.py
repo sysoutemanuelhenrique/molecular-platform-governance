@@ -12,7 +12,7 @@ for label, frag in [("savefr_indented", "\n  save_fr\n_x.y 1\nsave_\n"), ("savef
         print("   frame content in output?", b"_x.y" in o["obj"].output_bytes, "| x in plan categories?",
               any(d.category == "_x" for d in o["obj"].plan.category_decisions))
 # C-01 numeric lexical grammar: quoted numerics / integer grammar
-def sub(old, new, s=B): 
+def sub(old, new, s=B):
     assert old in s, old; return s.replace(old, new, 1)
 line1 = "ATOM 1 C CA . ALA A E1 1 A 1 ? 1 1.000 2.000 3.000 1.00 10.00"
 probes = {

@@ -29,7 +29,7 @@ chk("T021-154b ncs code unknown", ncs([["1","weird",*I]]), "REFUSED", "INVALID_C
 chk("T021-154c ncs quoted numeric", ncs([["1","given","'1'",*I[1:]]]), "REFUSED", "INVALID_CIF")
 chk("ncs duplicate id", ncs([["1","given",*R],["1","given",*R]]), "REFUSED")
 # anisotrop
-def an(cols, vals): 
+def an(cols, vals):
     return B + "#\nloop_\n" + "".join(f"_atom_site_anisotrop.{c}\n" for c in cols) + " ".join(vals) + "\n"
 U = [f"U[{i}][{j}]" for i,j in ((1,1),(1,2),(1,3),(2,2),(2,3),(3,3))]
 BB = [f"B[{i}][{j}]" for i,j in ((1,1),(1,2),(1,3),(2,2),(2,3),(3,3))]
