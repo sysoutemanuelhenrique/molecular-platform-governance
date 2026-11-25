@@ -1,0 +1,70 @@
+{
+  "coordination_input": "1c7906d748a544b26b007faad4d08062008d7fcd",
+  "pending_parent_commit": "377534786c3ad390d08641c137d0d54681911fb8",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 33,
+      "size_bytes": 2495,
+      "sha256": "5322af84ea4907c17b0dd222884ffba3e46db32a2086d8b074c81cb7a382da08",
+      "git_blob_sha": "45e7bb9c86451dd7e117262298008b9e7f5169c9"
+    },
+    {
+      "path": "increments/021/39-checkpoint2-review-preparation/CODEX_INCREMENT_021_CHECKPOINT2_FINAL_RECEIPT_AND_REVIEW_HANDOFF.md",
+      "lines": 60,
+      "size_bytes": 7132,
+      "sha256": "c804ea991ed0f169a2675051462b9116cca92937e67ab655490ba248e52c6f4d",
+      "git_blob_sha": "ac423509e387ea2b40eaf03f67d410e7223cc0f7"
+    },
+    {
+      "path": "increments/021/39-checkpoint2-review-preparation/evidence/ARCHITECT_CP2_FINAL_COUNTEREXAMPLE_RECHECK.py",
+      "lines": 68,
+      "size_bytes": 4954,
+      "sha256": "8825a16b2c37500fa0f6b0bc6130ec42f6bb24fa0ad65219bd69da88212fe7e5",
+      "git_blob_sha": "1bce1f72e4c7bf4678ae6ba20ac015e334ec3d42"
+    },
+    {
+      "path": "increments/021/39-checkpoint2-review-preparation/evidence/ARCHITECT_FINAL_CP2_PROBES_NORMAL.json",
+      "lines": 68,
+      "size_bytes": 1653,
+      "sha256": "c3f62be42990b411e9a8f7d7ca911a760ae5786f139e2882047d5118c550d5d0",
+      "git_blob_sha": "4b03f89500744796fd73bb23ea5b68e5b457400b"
+    },
+    {
+      "path": "increments/021/39-checkpoint2-review-preparation/evidence/ARCHITECT_FINAL_CP2_PROBES_OPTIMIZED.json",
+      "lines": 68,
+      "size_bytes": 1652,
+      "sha256": "76c72f97814cb61f4d80b05215fc9ede25f6a6c4c30a83baef79e023a6011da9",
+      "git_blob_sha": "12227f030c45fcecb05c42cf93c0a0ab9e429196"
+    },
+    {
+      "path": "increments/021/39-checkpoint2-review-preparation/evidence/ARCHITECT_FINAL_CP2_RECEIPT_VERIFICATION.json",
+      "lines": 885,
+      "size_bytes": 34428,
+      "sha256": "302cb01f60b0840448e1c6ed8707676db1d2000872fb1c2b566cee49db44ef2f",
+      "git_blob_sha": "985bdb468ecb705fb7001ff2f14a0a8142fb007e"
+    },
+    {
+      "path": "increments/021/39-checkpoint2-review-preparation/evidence/INDEPENDENT_CP2_REVIEW_INPUT_IDENTITIES.json",
+      "lines": 418,
+      "size_bytes": 19553,
+      "sha256": "a477aff8cb5eb84b9232e83e71733bc031012851dea4b222f78e4624640342ee",
+      "git_blob_sha": "ab11b2cdc0e67bfc69f166ceacbf85c8245ed84b"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-ADVERSARIAL-REVIEW.json",
+      "lines": 317,
+      "size_bytes": 16083,
+      "sha256": "d142d454bab8c1086bbdb01a4878b2db7e0780c7dc972aba4edb0ab0845a539c",
+      "git_blob_sha": "ef6da42a189820ab3416ea6d1c7d443c7ba67540"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-COMPLETION.json",
+      "lines": 653,
+      "size_bytes": 34534,
+      "sha256": "d47ae37343ba939ff271c54051281cf0d015e78557f3f5e2ace431a6b877fb5a",
+      "git_blob_sha": "8e424bc6bfe38f84b68a3fec1b367b5c7c34bfd3"
+    }
+  ],
+  "self_identity": "Git blob/commit identifies this non-self-hashed manifest"
+}

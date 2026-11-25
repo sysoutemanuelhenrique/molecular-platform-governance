@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT2-COMPLETION",
-  "status": "AUTHORIZED_FINAL_COMPLETION_OF_PARTIAL_R01_R03_AND_GIT_EVIDENCE",
+  "status": "DELIVERY_RECEIVED_FOR_INDEPENDENT_CP2_REVIEW_NOT_APPROVED",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -467,7 +467,7 @@
     "Completion claim only if full contract proved; otherwise precise blocker and READY FOR INDEPENDENT FINAL CP2 REVIEW NO; never CP2 self-approval or CP3 authorization"
   ],
   "completion_criteria": "Complete frozen CP2 production and79 scenario proof, real fixtures/lineage, corrected triage groups, regressions/allowlist/identities and published own report. Architect receipt then independent review, no automatic acceptance.",
-  "next_gate": "Architect receipt of completed R01/R03and consistent Git evidence; then independent finalCP2review. Not ready now; no owner acceptance orCP3authorization inferred.",
+  "next_gate": "tasks/021-CHECKPOINT2-ADVERSARIAL-REVIEW.json in separate reviewer session; then reconciliation/ownerCP2decision",
   "restrictions": [
     "No contract/schema/020 retrofit; no scientific preparation/protonation/charges/H repair/minimization/docking",
     "No CP3 storage/reader/lock/registry/service/activity nor CP4 CLI",
@@ -504,10 +504,10 @@
     "Original/trimmed fixture lineage and supported-original tests mandatory; scanner changes/native proof and all C01–C07 remain pending until demonstrated"
   ],
   "latest_delivery_received": true,
-  "latest_code_delivery_commit": "a8d46675e1d1bab83c9f7824225699afae57bd4a",
-  "latest_report_delivery_branch": "claude/021-cp2-residual-correction-report-20261125",
-  "latest_report_delivery_commit": "2c50be1ec30fa49b85cc3d269b7af2fe365b5e8f",
-  "continuation_input_code_head": "a8d46675e1d1bab83c9f7824225699afae57bd4a",
+  "latest_code_delivery_commit": "a807b03f44089eb3cbacc14f871b63689a21aec9",
+  "latest_report_delivery_branch": "claude/021-cp2-final-residual-report-20261125",
+  "latest_report_delivery_commit": "81a650379d2374081176f9df0b37263e56e2b578",
+  "continuation_input_code_head": "a807b03f44089eb3cbacc14f871b63689a21aec9",
   "architect_completion_receipt": {
     "path": "increments/021/37-checkpoint2-completion-receipt/CODEX_INCREMENT_021_CHECKPOINT2_COMPLETION_RECEIPT.md",
     "lines": 88,
@@ -530,37 +530,9 @@
     "sha256": "a730ba6fe96bf78d5883d0607c570b55f20b249c83bde4837e692dda1d00f33e",
     "git_blob_sha": "1688452f8f9525235b848dfaeb8336f2e43ab2a3"
   },
-  "residual_corrections_required": [
-    {
-      "id": "R-CP2-01",
-      "severity": "MAJOR",
-      "disposition": "PARTIALLY_ADDRESSED",
-      "target": "Special-position scientific context still ignores informed component identity",
-      "contract": "Frozen §11 context resolution; SCHEMAS§8; T021-158; previous receipt R-CP2-01",
-      "observed": "A source atom A/seq1/ALA was counted as affected by an annotation A/seq1/GLY; label_comp_id is never read. The resolver also ignores contradictory auth identity/insertion when label_seq_id is present. No finding against correct zero-overlap cases is inferred.",
-      "acceptance": "Use all informed supported context fields (label/auth comp, sequence/asym, insertion and model/altloc) consistently. Refuse contradictory or genuinely ambiguous context instead of matching only chain+sequence or blindly uniting distinct occurrences. Keep valid positive, overlap, removed-only and other-model behavior, with native and pure regression controls. Do not require absent optional information when the supported context is already unambiguous."
-    },
-    {
-      "id": "R-CP2-03",
-      "severity": "MAJOR",
-      "disposition": "PARTIALLY_ADDRESSED",
-      "target": "Extra _entry fields and generated block identity remain unchecked",
-      "contract": "Frozen §18 and original R-CP2-03 explicit category/tag/block/entry acceptance",
-      "observed": "Actual verifier rejects extra categories with verify phase, but accepts _entry.unplanned alongside correct id. ParsedCifDom021 carries no block name and the generated block is never compared during verify.",
-      "acceptance": "Apply exact expected field closure to _entry as well as other categories; verify generated block name and id against tbmp_<final plan_key> after native reparse. Reject wrong block, missing/wrong id and extra _entry tags with INVALID_OUTPUT/phase=verify. Preserve the newly added extra-category/mutated-token controls. Internal transport design is left to implementer; do not change frozen public schemas."
-    },
-    {
-      "id": "R-CP2-04",
-      "severity": "MINOR",
-      "disposition": "CAUSE_VERIFIED_DOCUMENTARY_CORRECTION_PENDING",
-      "target": "Final Git-byte manifest and evidence reconciliation",
-      "contract": "Original task final blob manifest and new additive report, no historical edits",
-      "observed": "All four reported SHA256/sizes exactly match reconstructed CRLF working-tree files, while committed Git blobs are LF. This is a verified representation difference, not an unexplained corruption. The report calls these blob identities; publish correct Git-byte identities. Four new test functions/no removals match1658→1662 and1653→1657(+5skips); pytest not reexecuted here.",
-      "acceptance": "Run the supplied read-only GENERATE_GIT_BLOB_IDENTITIES.py against the exact final commit; save its JSON only under the authorized own governance evidence glob. Add an honest final scenario disposition/mapping and actual test logs. Explain LF/CRLF instead of copying disk hashes as committed-byte hashes. Preserve previous reports and all fixtures."
-    }
-  ],
-  "completion_claim_disposition": "New delivery received; originalR02counterexamples now refused. R01/R03partial andR04Git-byte evidence remain. No final independent review readiness or checkpoint approval.",
-  "ready_for_independent_final_cp2_review": false,
+  "residual_corrections_required": [],
+  "completion_claim_disposition": "Final known architectcounterexamples and all22fileidentities checked. Received for independent79scenario review, notapproved. No furtherimplementationdispatch before reviewer findings.",
+  "ready_for_independent_final_cp2_review": true,
   "local_progress_status": "Prior local progress now delivered as remote commits; no access to current user working tree",
   "required_new_report_paths": [
     "increments/021/35-checkpoint2-implementation/evidence/claude-completion-final-residual-report-20261125.md",
@@ -611,5 +583,71 @@
     "R-CP2-02": "Original three counterexamples now rejected by actual pure production helpers, normal/-O. Tensor mapping/tensor-completeness correction received; no independent full/native closure is asserted. No further implementation demand is added for this group in this receipt.",
     "R-CP2-03": "Partial: extra category rejects with verify phase; _entry extra fields and block identity requirements from previous receipt remain.",
     "R-CP2-04": "Partial: actual token-based lineage assertion added; LF/CRLF discrepancy explained; correct final committed-byte manifest/scenario evidence still needed."
-  }
+  },
+  "architect_final_receipt": {
+    "path": "increments/021/39-checkpoint2-review-preparation/CODEX_INCREMENT_021_CHECKPOINT2_FINAL_RECEIPT_AND_REVIEW_HANDOFF.md",
+    "lines": 60,
+    "size_bytes": 7132,
+    "sha256": "c804ea991ed0f169a2675051462b9116cca92937e67ab655490ba248e52c6f4d",
+    "git_blob_sha": "ac423509e387ea2b40eaf03f67d410e7223cc0f7"
+  },
+  "architect_final_receipt_verification": {
+    "path": "increments/021/39-checkpoint2-review-preparation/evidence/ARCHITECT_FINAL_CP2_RECEIPT_VERIFICATION.json",
+    "lines": 885,
+    "size_bytes": 34428,
+    "sha256": "302cb01f60b0840448e1c6ed8707676db1d2000872fb1c2b566cee49db44ef2f",
+    "git_blob_sha": "985bdb468ecb705fb7001ff2f14a0a8142fb007e"
+  },
+  "residual_dispositions_architect_only": {
+    "R-CP2-01": {
+      "architect_disposition": "Known counterexamples now refused; valid control/counts preserved in actual pure calls",
+      "independent_closure": false,
+      "remaining_review": "Complete context semantics, ambiguity, model/altloc/insertion/auth-label consistency and native integration against frozen§11/T021-158"
+    },
+    "R-CP2-02": {
+      "architect_disposition": "Prior counterexamples remain refused; no additional implementation change requested",
+      "independent_closure": false,
+      "remaining_review": "Full informed-field interpretation, partial tensor families, retained/removed/source and native oracles underT021-062"
+    },
+    "R-CP2-03": {
+      "architect_disposition": "Extra category/_entry tag and wrong generatedblock now refused INVALID_OUTPUT/verify; positive control passes",
+      "independent_closure": false,
+      "remaining_review": "Complete native output/source-plan vectors, tokens, block/entry, references, mutations and phase behavior"
+    },
+    "R-CP2-04": {
+      "architect_disposition": "Final22-entry Git-byte manifest recalculated and matched, resolving LF/CRLF identity confusion; count+2 coherent",
+      "independent_closure": false,
+      "remaining_review": "Actual scenario proofs rather than map counts, all supplied logs/environment/skips and original/trimmed lineage"
+    }
+  },
+  "previous_architect_residual_corrections": [
+    {
+      "id": "R-CP2-01",
+      "severity": "MAJOR",
+      "disposition": "PARTIALLY_ADDRESSED",
+      "target": "Special-position scientific context still ignores informed component identity",
+      "contract": "Frozen §11 context resolution; SCHEMAS§8; T021-158; previous receipt R-CP2-01",
+      "observed": "A source atom A/seq1/ALA was counted as affected by an annotation A/seq1/GLY; label_comp_id is never read. The resolver also ignores contradictory auth identity/insertion when label_seq_id is present. No finding against correct zero-overlap cases is inferred.",
+      "acceptance": "Use all informed supported context fields (label/auth comp, sequence/asym, insertion and model/altloc) consistently. Refuse contradictory or genuinely ambiguous context instead of matching only chain+sequence or blindly uniting distinct occurrences. Keep valid positive, overlap, removed-only and other-model behavior, with native and pure regression controls. Do not require absent optional information when the supported context is already unambiguous."
+    },
+    {
+      "id": "R-CP2-03",
+      "severity": "MAJOR",
+      "disposition": "PARTIALLY_ADDRESSED",
+      "target": "Extra _entry fields and generated block identity remain unchecked",
+      "contract": "Frozen §18 and original R-CP2-03 explicit category/tag/block/entry acceptance",
+      "observed": "Actual verifier rejects extra categories with verify phase, but accepts _entry.unplanned alongside correct id. ParsedCifDom021 carries no block name and the generated block is never compared during verify.",
+      "acceptance": "Apply exact expected field closure to _entry as well as other categories; verify generated block name and id against tbmp_<final plan_key> after native reparse. Reject wrong block, missing/wrong id and extra _entry tags with INVALID_OUTPUT/phase=verify. Preserve the newly added extra-category/mutated-token controls. Internal transport design is left to implementer; do not change frozen public schemas."
+    },
+    {
+      "id": "R-CP2-04",
+      "severity": "MINOR",
+      "disposition": "CAUSE_VERIFIED_DOCUMENTARY_CORRECTION_PENDING",
+      "target": "Final Git-byte manifest and evidence reconciliation",
+      "contract": "Original task final blob manifest and new additive report, no historical edits",
+      "observed": "All four reported SHA256/sizes exactly match reconstructed CRLF working-tree files, while committed Git blobs are LF. This is a verified representation difference, not an unexplained corruption. The report calls these blob identities; publish correct Git-byte identities. Four new test functions/no removals match1658→1662 and1653→1657(+5skips); pytest not reexecuted here.",
+      "acceptance": "Run the supplied read-only GENERATE_GIT_BLOB_IDENTITIES.py against the exact final commit; save its JSON only under the authorized own governance evidence glob. Add an honest final scenario disposition/mapping and actual test logs. Explain LF/CRLF instead of copying disk hashes as committed-byte hashes. Preserve previous reports and all fixtures."
+    }
+  ],
+  "implementation_execution_state": "DELIVERED_WAIT_FOR_SEPARATE_REVIEW_FINDINGS; no new implementation action dispatched by this receipt"
 }
