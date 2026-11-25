@@ -1,0 +1,84 @@
+{
+  "coordination_input": "c9e02f0290cd522c8b94b0ade3998ca59976b048",
+  "review_input": "85c605e04ae61b2dad39f7d65d4531db860f71d4",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 33,
+      "size_bytes": 2483,
+      "sha256": "f426233b495b22aeba28309375694612453fd64639db8838c3018ce16c93e4f5",
+      "git_blob_sha": "114e2a594356a7fb9ccc219cb9aadbaefc91c74e"
+    },
+    {
+      "path": "increments/021/41-checkpoint2-review-reconciliation/CODEX_INCREMENT_021_CHECKPOINT2_REVIEW_RECONCILIATION.md",
+      "lines": 221,
+      "size_bytes": 22112,
+      "sha256": "a0793d918ef773801c4cbeda0877e65c684169237f3d339a7ba9cd5fbbdf57ab",
+      "git_blob_sha": "36c74849f8ca432ed7cc7dcdc25a148ea428398f"
+    },
+    {
+      "path": "increments/021/41-checkpoint2-review-reconciliation/evidence/ARCHITECT_CP2_RECONCILIATION_VERIFICATION.json",
+      "lines": 377,
+      "size_bytes": 22225,
+      "sha256": "cdf03a070db167a6bb371fb45fce9a2a167388f83f35a1cf7d10a6dcd826fc31",
+      "git_blob_sha": "a46d754627d9bdfc1fcc0d8e085496085124d6b4"
+    },
+    {
+      "path": "increments/021/41-checkpoint2-review-reconciliation/evidence/ARCHITECT_RECONCILIATION_PROBES_NORMAL.json",
+      "lines": 118,
+      "size_bytes": 3142,
+      "sha256": "8dda84ca59ef83fcc253cf7cfb5fbd9fbb1b4f197da3b83a3e4b533a808a6f7c",
+      "git_blob_sha": "e26a31c530292eb4c16d8e6badc9695a0d340d0f"
+    },
+    {
+      "path": "increments/021/41-checkpoint2-review-reconciliation/evidence/ARCHITECT_RECONCILIATION_PROBES_OPTIMIZED.json",
+      "lines": 118,
+      "size_bytes": 3141,
+      "sha256": "b5e5d3c586f007956934166fab8a7bb5c24e1df734235c2b3309dee38910909d",
+      "git_blob_sha": "0789c5a57ecc6e97060e67a728fcaf9c6b654dd2"
+    },
+    {
+      "path": "increments/021/41-checkpoint2-review-reconciliation/evidence/ARCHITECT_RECONCILIATION_PURE_PROBES.py",
+      "lines": 42,
+      "size_bytes": 5226,
+      "sha256": "2d538fc3cc43fb60c4fd5ecb62f93924f1b94beb69982de395458e2db3df2cc2",
+      "git_blob_sha": "3d6e7a7456081f8672ade6756b4197896cdb0b2c"
+    },
+    {
+      "path": "increments/021/41-checkpoint2-review-reconciliation/evidence/PRIMARY_SOURCE_CHECKS.json",
+      "lines": 47,
+      "size_bytes": 1959,
+      "sha256": "739e1fdc81c26751ab2bfea346c51b2339bb50f4c6b6a0c4d45aee05220c3e03",
+      "git_blob_sha": "3aba9dd4841d52882360f1ec36b57d394634fd7c"
+    },
+    {
+      "path": "increments/021/41-checkpoint2-review-reconciliation/evidence/REVIEW_INPUT_IDENTITIES.json",
+      "lines": 154,
+      "size_bytes": 6689,
+      "sha256": "b594db9ddc423314909d373b0e3d1e902d01e8e75aa3dcfa6139225c73203cc5",
+      "git_blob_sha": "75dc199642f8f413e4f73cfc4be2408a75f5f29f"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-ADVERSARIAL-REVIEW.json",
+      "lines": 342,
+      "size_bytes": 16991,
+      "sha256": "5234cb7e4d9ebc8f20d682f7d5772ace0e1fbbb572a7054cb2696d78a5398c91",
+      "git_blob_sha": "fd9b74ff0ba5437af4f71b195155bb2d07911ff3"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-COMPLETION.json",
+      "lines": 654,
+      "size_bytes": 34579,
+      "sha256": "406d3b782029ec0185e9daca519fd0b62c0cc92017d0ec6c95866b5f3b462c56",
+      "git_blob_sha": "ea746e03ee170cd6eef172e47d760e100c319ca1"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-REVIEW-CORRECTIONS.json",
+      "lines": 500,
+      "size_bytes": 29599,
+      "sha256": "8b243549a8701bf7f71bfbfabb05a89c94b8a1353d72bdb6bb20a20b1c6fcf9e",
+      "git_blob_sha": "d2fbb42fa957cb6a75279e37ece3b09bfdb28826"
+    }
+  ],
+  "self_identity": "Gitblob/commit;notself-hashed"
+}

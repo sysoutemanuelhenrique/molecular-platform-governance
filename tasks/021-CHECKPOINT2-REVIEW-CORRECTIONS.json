@@ -1,0 +1,500 @@
+{
+  "schema_version": "1.0",
+  "task_id": "021-CHECKPOINT2-REVIEW-CORRECTIONS",
+  "status": "AUTHORIZED_CORRECTIONS_WITHIN_EXISTING_CP2_SCOPE",
+  "assigned_role": "claude-implementer-separate-from-independent-reviewer",
+  "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
+  "coordination_branch": "docs/020-a-candidate1-review-20261020",
+  "preparation_input_commit": "c9e02f0290cd522c8b94b0ade3998ca59976b048",
+  "execution_snapshot": "Exact publication commit from architecthandoff; require remote dispatchbranch equality before work",
+  "owner_authorization_record": {
+    "path": "increments/021/34-checkpoint2-preparation/OWNER_CHECKPOINT2_IMPLEMENTATION_AUTHORIZATION.md",
+    "lines": 64,
+    "size_bytes": 5146,
+    "sha256": "24fd79e8c59ff34b2e4d321617f295014a9ebac2656ad10ef405a4b42d8d0e66",
+    "git_blob_sha": "1f0987e4c50caad26b585c5c96e5f419183034a7"
+  },
+  "owner_message_literal": "Autorizo somente o Checkpoint 2 do Incremento 021,\nconforme tasks/021-CHECKPOINT2-IMPLEMENTATION.json\npublicada no commit\na0b6083dfcaa456bcebb288120d198e3de2bf5be.\n\nAutorizo implementação, testes, commit e push apenas\nna allowlist da tarefa, na branch\nfeature/increment-021-receptor-materialization,\npartindo de ea8dac9cdc203c337d7f3f9947b54042291f7484.\n\nAutorizo o relatório nos caminhos definidos,\nem branch própria do governance.\n\nNão autorizo CP3, alteração do contrato congelado,\nPR, merge ou alteração de main.",
+  "authorization_input_commit": "a0b6083dfcaa456bcebb288120d198e3de2bf5be",
+  "authorization_basis": "Existing ownerauthorization ofCP2includes necessary within-scope correction/test/commit/push; noCP3orcontractchange authorization inferred",
+  "implementation_authorized": true,
+  "code_commit_push_authorized": true,
+  "governance_own_report_commit_push_authorized": true,
+  "code_repository": "sysoutemanuelhenrique/molecular-platform",
+  "code_branch": "feature/increment-021-receptor-materialization",
+  "code_head_before_corrections": "a807b03f44089eb3cbacc14f871b63689a21aec9",
+  "approved_cp1_commit": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
+  "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "expected_code_main": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+  "expected_governance_main": "a47183dfec8213c765ed43ae482c8c227760a3d5",
+  "independent_review_branch": "claude/021-cp2-adversarial-review-20261125",
+  "independent_review_commit": "85c605e04ae61b2dad39f7d65d4531db860f71d4",
+  "independent_review_report": {
+    "path": "increments/021/40-checkpoint2-review/CLAUDE_INCREMENT_021_CHECKPOINT2_ADVERSARIAL_REVIEW.md",
+    "size_bytes": 21004,
+    "lines": 214,
+    "sha256": "0cd1c9c4d0f5a5d6a54d865a236762168a2bf0955fda47d08308b2d291f310d0",
+    "git_blob_sha": "f00ec3fc6f8fe08d6303abc9f32c09153b91d595"
+  },
+  "independent_scenario_table": {
+    "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-scenario-reconciliation.csv",
+    "size_bytes": 16122,
+    "lines": 80,
+    "sha256": "3a22e4c1fab0f854a1329739a4185612ba261a8363d9b633b3dc884bc89e199b",
+    "git_blob_sha": "c01d48c4dab392e9ecea640003dd42331ee53859"
+  },
+  "independent_review_manifest": {
+    "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-output-identities.json",
+    "size_bytes": 6803,
+    "lines": 159,
+    "sha256": "07ed095d1949ff31163c91c4df77d8cedf3f70f6c152f87f7a7c134ff13f25ef",
+    "git_blob_sha": "362879a8d1ca94a3185944c96efd95248d0af1ab"
+  },
+  "reconciliation": {
+    "path": "increments/021/41-checkpoint2-review-reconciliation/CODEX_INCREMENT_021_CHECKPOINT2_REVIEW_RECONCILIATION.md",
+    "lines": 221,
+    "size_bytes": 22112,
+    "sha256": "a0793d918ef773801c4cbeda0877e65c684169237f3d339a7ba9cd5fbbdf57ab",
+    "git_blob_sha": "36c74849f8ca432ed7cc7dcdc25a148ea428398f"
+  },
+  "architect_verification": {
+    "path": "increments/021/41-checkpoint2-review-reconciliation/evidence/ARCHITECT_CP2_RECONCILIATION_VERIFICATION.json",
+    "lines": 377,
+    "size_bytes": 22225,
+    "sha256": "cdf03a070db167a6bb371fb45fce9a2a167388f83f35a1cf7d10a6dcd826fc31",
+    "git_blob_sha": "a46d754627d9bdfc1fcc0d8e085496085124d6b4"
+  },
+  "architect_pure_probe_script": {
+    "path": "increments/021/41-checkpoint2-review-reconciliation/evidence/ARCHITECT_RECONCILIATION_PURE_PROBES.py",
+    "lines": 42,
+    "size_bytes": 5226,
+    "sha256": "2d538fc3cc43fb60c4fd5ecb62f93924f1b94beb69982de395458e2db3df2cc2",
+    "git_blob_sha": "3d6e7a7456081f8672ade6756b4197896cdb0b2c"
+  },
+  "primary_source_checks": {
+    "path": "increments/021/41-checkpoint2-review-reconciliation/evidence/PRIMARY_SOURCE_CHECKS.json",
+    "lines": 47,
+    "size_bytes": 1959,
+    "sha256": "739e1fdc81c26751ab2bfea346c51b2339bb50f4c6b6a0c4d45aee05220c3e03",
+    "git_blob_sha": "3aba9dd4841d52882360f1ec36b57d394634fd7c"
+  },
+  "implementation_brief": {
+    "path": "increments/021/34-checkpoint2-preparation/CHECKPOINT2_IMPLEMENTATION_BRIEF.md",
+    "lines": 109,
+    "size_bytes": 20421,
+    "sha256": "9bab402c9bb103ab5da0d127bf2c966a0382bae944c8d8178c09efc82dffe4b3",
+    "git_blob_sha": "866d8cf4257c9b40f9b12a7f3083022eefa4a675"
+  },
+  "specification_freeze_commit": "b0e60f6528f6fcb828aa6dd5577824e08c7c9fac",
+  "frozen_specification": {
+    "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+    "lines": 377,
+    "size_bytes": 64746,
+    "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8"
+  },
+  "normative_annexes": [
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb"
+    }
+  ],
+  "normative_package_key": "d1726d1ae0ae5929e6f8a97f9bb0916e3e205af6d841246b7fba58972570f69b",
+  "code_allowlist": [
+    "src/molecular/receptor_parsing.py",
+    "src/molecular/receptor_materialization.py",
+    "tests/test_receptor_parsing.py",
+    "tests/test_receptor_materialization.py"
+  ],
+  "new_fixture_root_allowlist": "tests/fixtures/receptor_materialization/",
+  "fixture_content": "Scientificinputs/manifests/oracles only; no executablecode/personaldata in fixture subtree; originalsimmutable",
+  "findings": [
+    {
+      "id": "MAJOR-1",
+      "severity": "MAJOR",
+      "disposition": "ACCEPTED",
+      "scope": "Save-frame detection",
+      "basis": "Frozen§6/11; actual regex is case/column-sensitive; peer native probes accept frames omitted by category enumeration. Pinned Gemmi grammar is case-insensitive and Python Item.frame exists.",
+      "solution": "Inspect real Gemmi block items for frame content before category extraction (or equivalent supported native DOM operation). Refuse any frame, including indentation/case variants; no handmade CIF parser. Keep quoted/multiline save_ literals valid.",
+      "acceptance": "Native end-to-end lower/uppercase/indented frames refuse with021typedparseerror andcause; genuine literal controls retain tokens. Do not merely broaden the regex and claim complete grammar coverage."
+    },
+    {
+      "id": "MAJOR-2",
+      "severity": "MAJOR",
+      "disposition": "PARTIALLY_ACCEPTED",
+      "scope": "Raw numeric grammar and integer fields",
+      "basis": "Quoted coordinates/occupancy/B/NCS/tensors and absent formal_charge validation violate§6. The isolated expectation that unquoted+1is invalid is not supported by frozenbody and contradicts officialint lexicaltype [+-]?[0-9]+.",
+      "solution": "Validate true raw tokens before Gemmi dequoting: numeric regex+finiteDecimal; model_num unquotedASCIIdecimalinteger and >0; formal_charge null-real or signedASCIIdecimalinteger. Do not calculatecharges or impose dictionarycharge ranges not frozen. Preserve all written tokens.",
+      "acceptance": "Refuse quoted/multiline numericstrings, malformeddecimal/su/exponent/underscores/non-ASCIIint/floatcharge; preserve validnull,zerooccupancy,signedfinitevalues. Keep+1and01as validunquotedinteger spellings for numericmodel context; no broader identifier normalization."
+    },
+    {
+      "id": "MAJOR-3",
+      "severity": "MAJOR",
+      "disposition": "ACCEPTED",
+      "scope": "Quoted-null symmetry identity",
+      "basis": "§10.1/T021-173 explicitly distinguish realnull from quoted?/.; actualresolver collapses already-decoded literals again.",
+      "solution": "Maintain Optional semantics once at raw boundary or explicitraw/literaltype throughresolver. OnlyNone denotes realnull after decoding; literal?/. must remain malformed strings. Keep source rowrawtokens/hash distinct.",
+      "acceptance": "Native K0quoted?/.→not-applicable/unsupported-discarded, realnull retainsone/both-null semantics; K>0refusals correct. Verify decision/payload/oracles without claiming crossRAWplanhash equality or ignoring unchangedRAWchecksum binding."
+    },
+    {
+      "id": "MAJOR-4",
+      "severity": "MAJOR",
+      "disposition": "ACCEPTED",
+      "scope": "chem_comp and source entry guards/audit",
+      "basis": "§11,SCHEMAS§4; sourcecode skips bothspecialcases before genericguards. Purecorroboration confirms duplicatechem_comp retained and sourceentryunknown tags/audit lost.",
+      "solution": "Run correspondingcatalogue key/nonnull/unknown-tag/singleton checks before deferred/generatehandling. For source_entry, hash originalrow and cover it as replaced/omitted; transport originalentryid forprovenance. Generateddecision can carrysource_rows_key andomittedsourceordinal whilegenerated_tags=[id]; no invented source forabsententry.",
+      "acceptance": "Refuse duplicate/nullchem_compkeys, malformed/unknown/duplicatedsourceentry. Presententry hasnon-nullsource_rows_key andsource-rowcoverage; absententrymayhaveNone. Originalentryprovenance andnewtbmpid/block remain distinct; outputverificationclosure remains intact."
+    },
+    {
+      "id": "MAJOR-5",
+      "severity": "MAJOR",
+      "disposition": "ACCEPTED",
+      "scope": "Branched compound references",
+      "basis": "§11 explicitly requires fullentity/num/comp keys; specificpolymerlogic exists but analogous branch logic ismissing. Reviewer native corruptlinks/list-schemeaccepted.",
+      "solution": "Validate branchlist/entity/CCD, bothlinkendpoints and schemes withfullcompoundkeys; establish unambiguousretainedatom-occurrence mapping using supportedsourcecolumns. Do not invent branchnum fromauthseq,fillnull label_seq, choosefirstmatch or use numalone.",
+      "acceptance": "Native wrongentity/num/comp andswappedlist-vs-scheme refuseINVALID_CIF; validwholebranch inclunobservedmonomers and declaredleavingatomwithoutcoordinates stays valid. UniformityP3 preserved; no graphrepair, chemistryinference or obligatoryabsentlinkfabrication."
+    },
+    {
+      "id": "MAJOR-6",
+      "severity": "MAJOR",
+      "disposition": "ACCEPTED",
+      "scope": "Indistinguishable occurrences/endpoints",
+      "basis": "§6/9/T021-157; pureproductionresolver returnsIDs6and7for duplicatewaterO withsameoccurrence+altloc; nativepeer reproduces acceptance.",
+      "solution": "At newCP2source/resolver boundary reject repeated physicalidentity (model,occurrence,label_atom_id,altloc) and ambiguousoccurrences before buildingendpointsets. DistinctA/Baltlocs withinoneoccurrence remain valid; othermodels/insertions/CCDs remain distinct.",
+      "acceptance": "Nativeduplicate-null-altloc andduplicatesame-altloc refuseINVALID_CIF/AMBIGUOUS_ENDPOINT as appropriate; endpoints never merge twoindistinguishable physicalatoms. Preserve T021-043/156, CP1tests and genuinevariations; no silentdeduplication/firstmatch."
+    },
+    {
+      "id": "MAJOR-7",
+      "severity": "MAJOR",
+      "disposition": "ACCEPTED",
+      "scope": "021 error taxonomy/cause at public adapter boundary",
+      "basis": "§16/SCHEMASerrorfields/brief§5; peer actualproduction raises legacy/rawValueErrors withoutcode/phase. Reader020mustremainunchanged.",
+      "solution": "Translate enumeratedraw/nativeparse/helper errors at the021public boundary into existingtyped021errors with correctphase and fromcause. Keep existing021typederrors andKI/SystemExit untouched; narrow catches only. Installedwrongversion→ENGINE_VERSION; sourceparsermetadata mismatch→IDENTITY_MISMATCH/ENGINE_VERSION as documented, never absentenginewhenpresent.",
+      "acceptance": "Rawsize→ExecutionLIMIT_EXCEEDED/raw; compression/BOM/encoding→ExecutionINVALID_CIF/raw; malformedCIF/multipleblocks/frames/duplicate tags→ExecutionINVALID_CIF/parse; invalidatom/entitymapping→ExecutionINVALID_CIF/plan; outputerrorsremainINVALID_OUTPUT/verify. Causes preserved, no newcodes/CLIhandlers, no changeparse_receptor_raw020exceptions."
+    },
+    {
+      "id": "MINOR-1",
+      "severity": "MINOR",
+      "disposition": "ACCEPTED",
+      "scope": "Canonical output tag ordering",
+      "basis": "§11andbriefrequirealphabeticalcategories ANDtags; currentwriterusescatalogue/sourcecolumnorder.",
+      "solution": "Sort canonical tagkeys at serialization/outputconstruction withoutreordering survivingrows orrewritingtokens.",
+      "acceptance": "Nativeoutputcategory/tagorder assertions anddeterministicbytes; scientificroworder/goldens/canonicalhashenvelopes preserved."
+    },
+    {
+      "id": "MINOR-2",
+      "severity": "MINOR",
+      "disposition": "ACCEPTED",
+      "scope": "Real four-document snapshot identities in integrations",
+      "basis": "Brief§8/C04 explicitly require realdocumenthashes/sizes; currentnativefixturecontext uses1..4repeatedhex/size1.",
+      "solution": "Build valid concrete020document bytefixtures/models in testsetup; hashactualUTF8/YAMLbytes and sizes, match IDs/RAW/parser relations. Theadapter receives capturedSourceContext, not newCP3readers; no actualproductionfilesystemcapture claimed.",
+      "acceptance": "Integratedtests bind allfour actualdocuments+RAW; changedbyte/size alters/refuses expectedcontext. Unit-onlyDTOdocumentarygoldens may remainfixedliterals if clearly labelled; no fakecapture or runtimecalls to futureCP3service."
+    },
+    {
+      "id": "MINOR-3",
+      "severity": "MINOR",
+      "disposition": "ACCEPTED",
+      "scope": "Permanent separate interruption tests",
+      "basis": "§20/brief§9; peer demonstratedcorrectbehavior in14class×boundaryprobes but repositoryproof absent.",
+      "solution": "Add pytest cases for KI andSystemExit separately on seven realparse/planning/serialize/verifyboundaries; monkeypatch owningnamespace onlytoinjectfailure,nevertofabricatesuccess.",
+      "acceptance": "Everycombination asserts sameexceptioninstance/SystemExitcode, no retry/reparse/persistence. Preserve correctbehavior; no broadBaseExceptionhandler added."
+    },
+    {
+      "id": "MINOR-4",
+      "severity": "MINOR",
+      "disposition": "ACCEPTED",
+      "scope": "Permanent native IdentityBasis/hash oracles",
+      "basis": "§10.1/annex; nativepeerproved7pairs/hashseeds, repositoryusesfixedDTOcontext/repeatedsameconstruction.",
+      "solution": "Add productionnativecases for7reachablepairs with genuinefixedRAWandfourdocumentidentities, literalindependentexpectedhashes anddifferentin-memorycategoryvisitorders/hashseeds. Keep2impossiblepairsrefused.",
+      "acceptance": "Compare sameRAWbytes/context acrossvisits; do notchangeRAWrow/filebytes thenexpectsameplan_key (RAWchecksumisbound). Do notuseannexdocumentaryprojectionhashesasproductionplanhashes or deriveexpectedusingfunctionundertest."
+    },
+    {
+      "id": "MINOR-5",
+      "severity": "MINOR",
+      "disposition": "PARTIALLY_ACCEPTED",
+      "scope": "Special-position invalid context vs zero overlap",
+      "basis": "Unknownaltloc/context mustnotbe silentlyzero; however01isnot malformedmerelybyspelling underfrozenintegersemantics/officialtype. Currentstr(model)comparison misclassifies anumericallymatchingmodel.",
+      "solution": "Validate rawintegermodel token andcompareits numericvalue tosource/resolvedmodel whilepreservingtoken. Refuse genuinelyinvalid/unresolvablecontext/altloc; keep legitimateknownothermodel/removedcontexts withzero overlap. Do notadd canonical1-onlyinteger rule.",
+      "acceptance": "01/+1model1context matches asinteger; quoted/noninteger/nonpositive modelsrefuse. Nonexistentaltloc refuses; validothermodel/removedandcurrentoverlap/1-1-3controls preserved. Explain source-modelavailabilityratherthan assumingzerooverlapimpliesinvalidity."
+    },
+    {
+      "id": "MINOR-6",
+      "severity": "MINOR",
+      "disposition": "ACCEPTED",
+      "scope": "Real-source NCS full-pipeline evidence",
+      "basis": "§23requiresNCSoutcome fromreal-sourceentry; 1A2Pfullpipeline fails earlieronsymmetry, so isolatedguardproof alone insufficient.",
+      "solution": "Prefer a qualifiedrealdeposition whoseNCS reachesfull021entry. Alternatively useanexplicitNCS-isolationderivative ofpinned1A2P under§23lineageallowance: retain original/operatorbytes, enumerate everyremovedblockingconnection/category, testoriginalexpectednegative and labelderivativehonestly. No productionruleexemption orfabricatedoperators.",
+      "acceptance": "RealNCSoperatorbytes reachfullmaterialize pipeline andproduce expectedNCSrefusal or auditablegiven/identityomission. Keep original1A2Pnegative/isolatedguardreference. Ifqualificationcannotbeproved, report preciseblocker; never labelaneditedfileintact or downgrade the case toanapprovedskip."
+    },
+    {
+      "id": "NOTE-1",
+      "severity": "NOTE",
+      "disposition": "ACCEPTED_CARRIED",
+      "scope": "Deposited whitespace",
+      "basis": "Peerwhitespacewarnings exclusively12CIF originals/derivatives; originalscientificbytesmustremainpinned.",
+      "solution": "Preserve alloriginalbytes; report source/testdiffchecks separately fromdepositiontrailingwhitespace.",
+      "acceptance": "No RAWwhitespace rewrite forgreencheck; newsource/testpatches clean."
+    },
+    {
+      "id": "NOTE-2",
+      "severity": "NOTE",
+      "disposition": "ACCEPTED_WITH_FACTUAL_CLARIFICATION",
+      "scope": "Versioned fixture inventory/lineage",
+      "basis": "Lineage/tokenidentity checkedbyreviewer. NOTE2prose calls57/73/50currentdownloads; nativep_reallog gives original60/76/55andtrimmed57/73/50for5I55/1PFE/3DG1 respectively.",
+      "solution": "Keep exactfixtures/checksums and distinguish original,trimmedandhistoricalGemmiinventory. Do notchangefrozencataloguetoacceptnewdepositionmetadata.",
+      "acceptance": "Newreport usesexplicitversion/filelabels,not conflatedcounts; legitimateUNSUPPORTED_CATEGORYand1PFEnegativepreserved."
+    },
+    {
+      "id": "NOTE-3",
+      "severity": "NOTE",
+      "disposition": "ACCEPTED_CARRIED_TO_CP3_GATE",
+      "scope": "Preflight/connection/catalogue error precedence",
+      "basis": "Peerobserves1PFEoriginal COVALENT_CUTbeforecatalogue, no explicitCP2violation; §16statesvalidationstageorder.",
+      "solution": "Preserve existingCP2orderunlessrequiredbyafix; carrydetailedserviceprecedence checktoCP3planning/review, withoutimplementingCP3now.",
+      "acceptance": "Do notassertalloriginals failbyunknowncategory; reportactualfirsterror. FutureCP3requiresseparateauthorization."
+    },
+    {
+      "id": "NOTE-4",
+      "severity": "NOTE",
+      "disposition": "ACCEPTED_PRESERVE",
+      "scope": "Nonconventional identity operator conservatism",
+      "basis": "2_555operator2identityexpressionstillnonidentityunderthefrozenprofile, consistentwithmatrix.",
+      "solution": "Preserve rule; do notgeneralizegeometricidentity equivalence orrelaxretained-image profile.",
+      "acceptance": "Matrix15cellsandbasiscontrolsremainunchanged exceptspecificquotednullfix."
+    }
+  ],
+  "normative_scenarios": [
+    "T021-041",
+    "T021-042",
+    "T021-043",
+    "T021-044",
+    "T021-045",
+    "T021-046",
+    "T021-047",
+    "T021-048",
+    "T021-049",
+    "T021-050",
+    "T021-051",
+    "T021-052",
+    "T021-053",
+    "T021-054",
+    "T021-055",
+    "T021-056",
+    "T021-057",
+    "T021-058",
+    "T021-059",
+    "T021-060",
+    "T021-061",
+    "T021-062",
+    "T021-063",
+    "T021-064",
+    "T021-065",
+    "T021-066",
+    "T021-067",
+    "T021-068",
+    "T021-069",
+    "T021-070",
+    "T021-071",
+    "T021-072",
+    "T021-073",
+    "T021-074",
+    "T021-075",
+    "T021-076",
+    "T021-077",
+    "T021-078",
+    "T021-079",
+    "T021-080",
+    "T021-081",
+    "T021-082",
+    "T021-083",
+    "T021-084",
+    "T021-085",
+    "T021-086",
+    "T021-087",
+    "T021-088",
+    "T021-089",
+    "T021-090",
+    "T021-141",
+    "T021-142",
+    "T021-143",
+    "T021-144",
+    "T021-145",
+    "T021-146",
+    "T021-147",
+    "T021-148",
+    "T021-149",
+    "T021-150",
+    "T021-151",
+    "T021-152",
+    "T021-153",
+    "T021-154",
+    "T021-155",
+    "T021-156",
+    "T021-157",
+    "T021-158",
+    "T021-162",
+    "T021-164",
+    "T021-165",
+    "T021-166",
+    "T021-167",
+    "T021-168",
+    "T021-169",
+    "T021-170",
+    "T021-171",
+    "T021-172",
+    "T021-173"
+  ],
+  "normative_scenario_count": 79,
+  "review_partial_scenarios": [
+    "T021-041",
+    "T021-062",
+    "T021-067",
+    "T021-072",
+    "T021-073",
+    "T021-074",
+    "T021-082",
+    "T021-084",
+    "T021-085",
+    "T021-087",
+    "T021-088",
+    "T021-154",
+    "T021-157",
+    "T021-158",
+    "T021-173"
+  ],
+  "review_coverage_reference": {
+    "covered": 64,
+    "partial": 15,
+    "gap": 0
+  },
+  "integer_interpretation": "Raw ASCII [+-]?[0-9]+, modelvalue>0 and formalchargeinteger/null; quotednumericvaluesinvalid. +1/01are not invalid merelybyspelling; compare numericmodelvalue butpreserverawtoken. Not applicable tooperator/chemical/nativeidentifiers whose equality remains exact.",
+  "typed_error_translation_matrix": [
+    {
+      "errors": "RAW>16MiB or other declaredlimits",
+      "target": "MaterializationExecutionError",
+      "code": "LIMIT_EXCEEDED",
+      "phase": "raw or parse according to detecting boundary"
+    },
+    {
+      "errors": "compressionmagic/BOM/encodinginvalid",
+      "target": "MaterializationExecutionError",
+      "code": "INVALID_CIF",
+      "phase": "raw"
+    },
+    {
+      "errors": "syntax/multipleblocks/saveframe/duplicatecanonictags",
+      "target": "MaterializationExecutionError",
+      "code": "INVALID_CIF",
+      "phase": "parse"
+    },
+    {
+      "errors": "atom/entity/occurrencemapping invalid",
+      "target": "MaterializationExecutionError",
+      "code": "INVALID_CIF or AMBIGUOUS_ENDPOINT as frozenrule",
+      "phase": "plan"
+    },
+    {
+      "errors": "outputmutations",
+      "target": "MaterializationExecutionError",
+      "code": "INVALID_OUTPUT",
+      "phase": "verify"
+    },
+    {
+      "errors": "installedwrongGemmi",
+      "target": "MaterializationConfigurationError",
+      "code": "ENGINE_VERSION",
+      "phase": "preflight/metadata"
+    },
+    {
+      "errors": "sourceparsermetadata mismatchespinnedidentity",
+      "target": "MaterializationConfigurationError",
+      "code": "IDENTITY_MISMATCH/ENGINE_VERSION documented",
+      "phase": "metadata"
+    }
+  ],
+  "required_preflight": [
+    "Read AGENTS/workflow/STATUS/thistask, fullreconciliation, independentreview/CSV/log/scriptsandoriginalfrozennormatives/brief; verify hashes before acting",
+    "Confirm dispatchcoordination equals exactnewhandoffSHA; codefeatureata807b03, independentreviewbranchat85c605e, bothmainrefsunchanged; stoponunexpecteddrift",
+    "Inspect localdirectory/origin/branch/HEAD/index/diffs, preserve recognizedauthorizedwork/protecteduntrackeditems. Do notreset/clean/stash/rebase/amend/force",
+    "Use samefeature additively; neverreturntobaselineorredo historicalcorrections. RealinstalledGemmi0.7.5required; no new/globaldependency/pin/pyprojectchange",
+    "Preserve independentclosedC03/R03/R04/CP1behaviors; correctonlyscopeofthisreview anddeclaredregression,notfuturefeatures"
+  ],
+  "required_work": [
+    "Implement7MAJOR/6MINORgroups per accepted/qualifieddispositions; preserve4NOTES. +1/01subexamples arepositiveintegercontrols, notpermissionforquoted/laxnumbers",
+    "Treat numeric/raw-null/category-key/branch/endpoint/errorboundaries as a coupled correction; do notonlypatchtheexactexample while leaving samefrozeninvariant unvalidated",
+    "Keep021typedexceptions andKI/SystemExitoriginalinstances; permanent14interruptioncases at7realboundaries. NoexceptBaseExceptionexceptnecessaryunwindwithunconditionalreraising; no genericraises(Exception)",
+    "Useactualfourmetadata-documentbytes/hashes in nativeintegrations, withoutimplementingCP3capture/readers. Permanentnative7IdentityBasis cases usefixedRAWhashes, independentliteralpayload/hashoracles anddifferentinmemoryvisits/seeds; do notexpectequalplanhashfordifferentRAWbytes",
+    "Qualifyreal-sourceNCSfullpipelinecase underfrozen§23. Prefer intactqualifieddeposition; ifpinned1A2Pisolationderivative isused, listalledits, keep genuineNCSbytes/originalhashandnegativeoutcome, labelderivativehonestly. No artificialsuccess byproductionruleexemption",
+    "Maintain92CP1tests/13goldens/R1/strictness/chaining andallthreeNOTES. CorrectwrongCP2oracles withindependentexpectedpayloads; donotweakenpreviousvalidscientifictests",
+    "Reconcileall79scenarioswithproductionassertions/results,especially15partials andcontrolsfrom64covered. Keepenvironmentfailuresdistinctfromregressions; donotautomaticallytreatallpeerfalseexpectationsasdefects",
+    "Runfocusasneeded, then020regression/fullsuiteonceaftermeaningfulfixes; recordactualcommands/environment/skips/collection. No copying1659+5asnewexecution",
+    "Normaladditivecommit/push onlyauthorizedcodepaths/fixtures; verify deltaandcumulativescope/remoteSHAs/mains. RecordCIFtrailingwhitespaceseparately; neverrewriteoriginals for diffcheck",
+    "Publish ownnewreport/evidence/79matrix/fullGitblobmanifestwithgenerator38 inoriginal35/evidence/claude-*glob, ownbranchfromnewdispatch. No STATUS/task/reviewer/historicaledits"
+  ],
+  "verification_commands": [
+    "python -B -m pytest --collect-only -q",
+    "python -B -m pytest -p no:cacheprovider tests/test_receptor_parsing.py tests/test_receptor_materialization.py -q -rs",
+    "python -B -m pytest -p no:cacheprovider tests/test_receptor_inspection.py tests/test_receptor_selection.py tests/test_receptor_resolution.py tests/test_receptor_registry.py tests/test_receptor_service.py -q -rs",
+    "python -B -m pytest -p no:cacheprovider -q -rs",
+    "git diff --check",
+    "git diff --name-status ea8dac9cdc203c337d7f3f9947b54042291f7484..HEAD",
+    "git diff --name-status 08b797e0985e123ffd4d7ca7e5a5e8f040e63851..HEAD",
+    "git show --check"
+  ],
+  "prior_evidence_reference_only": {
+    "implementerWindows": "1664collected=1659passed+5skipped,214focus,121regression020",
+    "independentReviewerLinux": "1569items=1497passed+67environmentfailures+5itemskips;2moduleskippedhide95RDKititems; baseline/CP1failuresidentical",
+    "architect_native_execution": false
+  },
+  "suggested_governance_output_branch": "claude/021-cp2-review-corrections-20261125",
+  "governance_output_branch_policy": "Ownbranchfromnewdispatch; sessionenforcedclaude/prefixmaybedocumented. Neverchangecoordination/main/status/tasks.",
+  "allowed_governance_output_paths": [
+    "increments/021/35-checkpoint2-implementation/evidence/claude-cp2-review-corrections-report-20261125.md",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-review-corrections-*"
+  ],
+  "required_report": [
+    "Exacttask/authorization/spec/review/inputcommitidentities",
+    "Each7MAJOR6MINOR4NOTEdisposition withactualproductiontests/outcomes/limits",
+    "79case matrixincluding15previouspartials andregressioncontrols",
+    "Raw/frame/charge/null/entry/branch/duplicate-endpoint/taxonomy probes andpositivecontrols;14interruptioncases;realmetadata/nativebasis/NCSlineage proof",
+    "Actualcollect/focus/full/020resultsandallskipexplanations; noimpliedWindowsvalidationfromLinux",
+    "Final4code+allfixtureGit-byteidentitymanifestandremoteSHAs/parent/scope/mains; preserve oldreports",
+    "Anyremainingcontractgap clearlypending; no independentclosure, CP2approvalorCP3authorization"
+  ],
+  "next_gate": "Architectreceivesconcretecorrections, then prepares independentfocalreviewofthe13findinggroups/qualifiedintegersemantics/regressions, notnewimplementationcheckpoint",
+  "owner_decision_required_now": false,
+  "independent_focal_review_required": true,
+  "checkpoint2_approved": false,
+  "cp3_implementation_authorized": false,
+  "cp4_implementation_authorized": false,
+  "final_specification_frozen": true,
+  "increment020a": "STAND-BY",
+  "automated_dispatch": false,
+  "restrictions": [
+    "No frozencontract/schema/cataloguechecksum edits ornewsourceengine/scientificscope",
+    "No020legacyretrofit/CP3storage-registry-service/CP4CLI",
+    "No generalchemicalvalidation/range/protonation/pKa/Haddition/repair/docking",
+    "No PR/merge/tag/release/formalGitHubapproval/comment/main/force",
+    "Protectedlocalitems/020Auntouched",
+    "Architectacceptanceisnotindependentclosure; no automaticClaudeactivation"
+  ]
+}

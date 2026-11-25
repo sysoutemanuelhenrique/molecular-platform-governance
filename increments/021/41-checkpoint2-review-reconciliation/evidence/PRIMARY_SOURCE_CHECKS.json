@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-11-25",
+  "pinned_gemmi_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/project-gemmi/gemmi/5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e/include/gemmi/cif.hpp",
+      "local": "Gemmi_cif.hpp",
+      "upstream": "include/gemmi/cif.hpp",
+      "observation": "NativegrammarusesTAOCPP_PEGTL_ISTRING forsave_ keyword.",
+      "identity": {
+        "path": "include/gemmi/cif.hpp",
+        "lines": 385,
+        "size_bytes": 14620,
+        "sha256": "3f6a50b65e29b7e7c03f7d8189d8203212cba56e66f77d86aaf10568075fd455",
+        "git_blob_sha": "8ac46fc87e60cc8c7caa9137b437596a8479fb86"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/project-gemmi/gemmi/5cc1c23c6007e0e6cbd69289c6f7c0bff50e943e/python/cif.cpp",
+      "local": "Gemmi_python_cif.cpp",
+      "upstream": "python/cif.cpp",
+      "observation": "PythonItem.frameexposesFrame-typeitem orNone; nativeDOMguardfeasible.",
+      "identity": {
+        "path": "python/cif.cpp",
+        "lines": 484,
+        "size_bytes": 20539,
+        "sha256": "3e8e3bbd1a132b0c58bc15cdd329a165e548389212fab26f294451a3fe7f0611",
+        "git_blob_sha": "57e75472ddf9526aa65b047f41adee4d1e6c455c"
+      }
+    }
+  ],
+  "official_integer_pages": [
+    {
+      "url": "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_atom_site.pdbx_PDB_model_num.html",
+      "item": "model_num",
+      "observed_type": "int",
+      "observed_regex": "[+-]?[0-9]+"
+    },
+    {
+      "url": "https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_atom_site.pdbx_formal_charge.html",
+      "item": "formal_charge",
+      "observed_type": "int",
+      "observed_regex": "[+-]?[0-9]+"
+    }
+  ],
+  "authority": "Frozen021contractremainsnormative; externaldictcorroboratesintegergrammar,notnewchemicalranges",
+  "ncs_external_downloads": "RCSB1CAG/1HHO/4HHBdownloadURLs were not readable throughwebtool; no claimedcandidatequalification ornewscientificresult."
+}

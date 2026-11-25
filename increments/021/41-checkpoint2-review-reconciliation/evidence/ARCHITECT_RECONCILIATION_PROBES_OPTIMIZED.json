@@ -1,0 +1,118 @@
+{
+  "code_sha": "a807b03f44089eb3cbacc14f871b63689a21aec9",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "optimized": true,
+  "native_executed": false,
+  "pytest_executed": false,
+  "observed": {
+    "decoded_numeric_helper_ignores_quoted_raw_and_invalid_charge": {
+      "accepted": true,
+      "result": null
+    },
+    "decoded_literal_question_mark_symmetry": {
+      "is_null": true,
+      "identity_basis": "not-applicable",
+      "insufficient_proof": false,
+      "code": null,
+      "proven_identity": false
+    },
+    "integer_lexical_interpretation_+1": {
+      "decimal_int": 1,
+      "positive": true,
+      "scope": "Interpretation of unquoted signed ASCII decimal integer, not an independent native run"
+    },
+    "integer_lexical_interpretation_01": {
+      "decimal_int": 1,
+      "positive": true,
+      "scope": "Interpretation of unquoted signed ASCII decimal integer, not an independent native run"
+    },
+    "preparse_guard_indented": {
+      "accepted": true,
+      "result": null
+    },
+    "preparse_guard_uppercase": {
+      "accepted": true,
+      "result": null
+    },
+    "duplicate_chem_comp": {
+      "accepted": true,
+      "result": [
+        {
+          "category": "_chem_comp",
+          "action": "filter",
+          "kept_row_ordinals": [
+            0,
+            1
+          ],
+          "omitted_row_ordinals": [],
+          "preserved_tags": [
+            "id",
+            "type"
+          ],
+          "omitted_tags": [],
+          "generated_tags": [],
+          "source_rows_key": "f025fb7fe4034708751ae077e12c7925800a3e884bb12c4155cbd4a8330f5000"
+        },
+        {
+          "category": "_entry",
+          "action": "generate",
+          "kept_row_ordinals": [],
+          "omitted_row_ordinals": [],
+          "preserved_tags": [],
+          "omitted_tags": [],
+          "generated_tags": [
+            "id"
+          ],
+          "source_rows_key": null
+        }
+      ]
+    },
+    "unvalidated_entry_source_and_missing_audit": {
+      "accepted": true,
+      "result": [
+        {
+          "category": "_chem_comp",
+          "action": "filter",
+          "kept_row_ordinals": [
+            0
+          ],
+          "omitted_row_ordinals": [],
+          "preserved_tags": [
+            "id",
+            "type"
+          ],
+          "omitted_tags": [],
+          "generated_tags": [],
+          "source_rows_key": "fc6bf62108807ebec2782664e7a960e3048b013cdfc3add35c7568be808d3784"
+        },
+        {
+          "category": "_entry",
+          "action": "generate",
+          "kept_row_ordinals": [],
+          "omitted_row_ordinals": [],
+          "preserved_tags": [],
+          "omitted_tags": [],
+          "generated_tags": [
+            "id"
+          ],
+          "source_rows_key": null
+        }
+      ]
+    },
+    "indistinguishable_endpoint": {
+      "accepted": true,
+      "result": [
+        "6",
+        "7"
+      ]
+    },
+    "nonexistent_special_altloc": {
+      "accepted": true,
+      "result": {
+        "source_annotation_count": 1,
+        "retained_annotation_count": 0,
+        "retained_unique_atom_count": 0
+      }
+    }
+  }
+}

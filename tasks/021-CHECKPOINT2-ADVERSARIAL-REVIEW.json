@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT2-ADVERSARIAL-REVIEW",
-  "status": "AUTHORIZED_INDEPENDENT_REVIEW_AWAITING_MANUAL_DISPATCH",
+  "status": "REVIEW_RECEIVED_REQUEST_CHANGES_RECONCILIATION_PUBLISHED",
   "assigned_role": "claude-independent-reviewer-separate-from-implementer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -310,8 +310,33 @@
     "CODEREPOSITORYMODIFIED:NO"
   ],
   "completion_criteria": "Publish independentreview and exactevidence/identitymanifest covering79scenario outcomes and real finalcode, with transparentlimits. A favorable review only enables ownerCP2decision; no automaticnextcheckpoint.",
-  "next_gate": "Architect reconciles reviewer findings or presents exact CP2acceptance toowner; CP3requires separate owner decision/authorization",
+  "next_gate": "tasks/021-CHECKPOINT2-REVIEW-CORRECTIONS.json; subsequentindependentfocalclosure",
   "increment020a": "STAND-BY",
   "final_specification_frozen": true,
-  "automated_dispatch": false
+  "automated_dispatch": false,
+  "received_review": {
+    "branch": "claude/021-cp2-adversarial-review-20261125",
+    "commit": "85c605e04ae61b2dad39f7d65d4531db860f71d4",
+    "report": {
+      "path": "increments/021/40-checkpoint2-review/CLAUDE_INCREMENT_021_CHECKPOINT2_ADVERSARIAL_REVIEW.md",
+      "size_bytes": 21004,
+      "lines": 214,
+      "sha256": "0cd1c9c4d0f5a5d6a54d865a236762168a2bf0955fda47d08308b2d291f310d0",
+      "git_blob_sha": "f00ec3fc6f8fe08d6303abc9f32c09153b91d595"
+    },
+    "counts": {
+      "blockers": 0,
+      "majors": 7,
+      "minors": 6,
+      "notes": 4
+    },
+    "verdict": "REQUEST CHANGES"
+  },
+  "architect_reconciliation": {
+    "path": "increments/021/41-checkpoint2-review-reconciliation/CODEX_INCREMENT_021_CHECKPOINT2_REVIEW_RECONCILIATION.md",
+    "lines": 221,
+    "size_bytes": 22112,
+    "sha256": "a0793d918ef773801c4cbeda0877e65c684169237f3d339a7ba9cd5fbbdf57ab",
+    "git_blob_sha": "36c74849f8ca432ed7cc7dcdc25a148ea428398f"
+  }
 }

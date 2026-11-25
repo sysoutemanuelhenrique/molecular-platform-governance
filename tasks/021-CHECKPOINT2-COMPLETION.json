@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT2-COMPLETION",
-  "status": "DELIVERY_RECEIVED_FOR_INDEPENDENT_CP2_REVIEW_NOT_APPROVED",
+  "status": "INDEPENDENT_REVIEW_REQUEST_CHANGES_CONTINUATION_TASK_PREPARED",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -467,7 +467,7 @@
     "Completion claim only if full contract proved; otherwise precise blocker and READY FOR INDEPENDENT FINAL CP2 REVIEW NO; never CP2 self-approval or CP3 authorization"
   ],
   "completion_criteria": "Complete frozen CP2 production and79 scenario proof, real fixtures/lineage, corrected triage groups, regressions/allowlist/identities and published own report. Architect receipt then independent review, no automatic acceptance.",
-  "next_gate": "tasks/021-CHECKPOINT2-ADVERSARIAL-REVIEW.json in separate reviewer session; then reconciliation/ownerCP2decision",
+  "next_gate": "tasks/021-CHECKPOINT2-REVIEW-CORRECTIONS.json; withinoriginalCP2authorization",
   "restrictions": [
     "No contract/schema/020 retrofit; no scientific preparation/protonation/charges/H repair/minimization/docking",
     "No CP3 storage/reader/lock/registry/service/activity nor CP4 CLI",
@@ -532,7 +532,7 @@
   },
   "residual_corrections_required": [],
   "completion_claim_disposition": "Final known architectcounterexamples and all22fileidentities checked. Received for independent79scenario review, notapproved. No furtherimplementationdispatch before reviewer findings.",
-  "ready_for_independent_final_cp2_review": true,
+  "ready_for_independent_final_cp2_review": false,
   "local_progress_status": "Prior local progress now delivered as remote commits; no access to current user working tree",
   "required_new_report_paths": [
     "increments/021/35-checkpoint2-implementation/evidence/claude-completion-final-residual-report-20261125.md",
@@ -649,5 +649,6 @@
       "acceptance": "Run the supplied read-only GENERATE_GIT_BLOB_IDENTITIES.py against the exact final commit; save its JSON only under the authorized own governance evidence glob. Add an honest final scenario disposition/mapping and actual test logs. Explain LF/CRLF instead of copying disk hashes as committed-byte hashes. Preserve previous reports and all fixtures."
     }
   ],
-  "implementation_execution_state": "DELIVERED_WAIT_FOR_SEPARATE_REVIEW_FINDINGS; no new implementation action dispatched by this receipt"
+  "implementation_execution_state": "DELIVERED_WAIT_FOR_SEPARATE_REVIEW_FINDINGS; no new implementation action dispatched by this receipt",
+  "independent_review_commit": "85c605e04ae61b2dad39f7d65d4531db860f71d4"
 }

@@ -1,0 +1,154 @@
+{
+  "review_commit": "85c605e04ae61b2dad39f7d65d4531db860f71d4",
+  "inputs": [
+    {
+      "path": "increments/021/40-checkpoint2-review/CLAUDE_INCREMENT_021_CHECKPOINT2_ADVERSARIAL_REVIEW.md",
+      "size_bytes": 21004,
+      "lines": 214,
+      "sha256": "0cd1c9c4d0f5a5d6a54d865a236762168a2bf0955fda47d08308b2d291f310d0",
+      "git_blob_sha": "f00ec3fc6f8fe08d6303abc9f32c09153b91d595"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-native-probe-log.txt",
+      "size_bytes": 30030,
+      "lines": 386,
+      "sha256": "21c6ae5bfa357bd28bb877b91cf94318db6b33842eef148a17c1ef1dccaac812",
+      "git_blob_sha": "fc456f9460c49ba2fa25faef80e6dd6c40ef5d2f"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-output-identities.json",
+      "size_bytes": 6803,
+      "lines": 159,
+      "sha256": "07ed095d1949ff31163c91c4df77d8cedf3f70f6c152f87f7a7c134ff13f25ef",
+      "git_blob_sha": "362879a8d1ca94a3185944c96efd95248d0af1ab"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-own-test-execution.txt",
+      "size_bytes": 2374,
+      "lines": 30,
+      "sha256": "a81ff97eeddf878589c2fc736fb65640a95669b6162de31ed7262ccc3723db35",
+      "git_blob_sha": "6438ef8690b467dc71e5cb60228edc8aee2d2598"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-catalog_check.py",
+      "size_bytes": 1340,
+      "lines": 25,
+      "sha256": "d5f16961cb21e11c144aca6a244c9d7ae946d60178067932136d30524cb7008a",
+      "git_blob_sha": "db09e6de05d85c9edcbf786dee068158c199d1b6"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-cifgen.py",
+      "size_bytes": 1795,
+      "lines": 28,
+      "sha256": "a0a6043e8ade731d9a5d9ed7684cce5d6a0a4e077737c96cdb073983101d6e9d",
+      "git_blob_sha": "5dfa2fc5b4ba4db9190739a19317564bbe55caa7"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-harness.py",
+      "size_bytes": 1890,
+      "lines": 36,
+      "sha256": "c99832cbb587e50fc096d9b366dce9e8b013099f31dcba0186441808247bbb17",
+      "git_blob_sha": "6aa954f7c3fdc1adf8cad0fdc3ec4d2602262aee"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_branch.py",
+      "size_bytes": 3032,
+      "lines": 30,
+      "sha256": "88c8e35d9942be86dc54e2f014041cc2d760ca53b87670372bd151a049d67f94",
+      "git_blob_sha": "17d64f0c49c959f373442b523238cce5e255a0db"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_c06_c01.py",
+      "size_bytes": 2746,
+      "lines": 48,
+      "sha256": "a46620b0611a4a6f7e8b7deef097a9eb4c36d24d34a2829bdd3f714c7681f328",
+      "git_blob_sha": "dd6c1ebd8a5899300b3fbd51a64241e0e7cc25bc"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_catalog.py",
+      "size_bytes": 5856,
+      "lines": 66,
+      "sha256": "a757561ab07e00b23efe4a24c81235fb2d0f74066801f7107c31b07403924b0e",
+      "git_blob_sha": "1712f029a56dd8c22bbc467ae5e15ae4646c3cd2"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_entry_chemcomp.py",
+      "size_bytes": 1799,
+      "lines": 19,
+      "sha256": "0e67ed0e337d69a8be5ea3f95b39f960e724adb26ee5fd2ef5259635053d9d51",
+      "git_blob_sha": "0e0adae4ef27a06f5bb7f1c5828f00aba56c97bd"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_ib2.py",
+      "size_bytes": 1243,
+      "lines": 15,
+      "sha256": "c08f55474174b5588e6696bf6b699e048cbcb7c7ac3292bfc8f043fbbada80d1",
+      "git_blob_sha": "bcd9cfddcf210238408e96cbbb3cd3164611e75d"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_identity_basis.py",
+      "size_bytes": 3504,
+      "lines": 37,
+      "sha256": "cdaddbcd5530d18377bc88bb2deef853a78c42b349277f30dc193ab659805c03",
+      "git_blob_sha": "29084cb2b00f65291f2b51d101d1d1d70e6de15a"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_interrupt_taxonomy_verify.py",
+      "size_bytes": 2161,
+      "lines": 44,
+      "sha256": "c7468366d5764670b9b361a0e6ecc8f9b37203cf1207f45003689be5d43499eb",
+      "git_blob_sha": "6c15f678e3e2a506673e72b7a337fd9aab4eb616"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_pairs_endpoints.py",
+      "size_bytes": 4367,
+      "lines": 52,
+      "sha256": "51083cad6de71d94a97602bc30f4bb5dfffdf439926465e2c198056c8037152b",
+      "git_blob_sha": "5edf2e64dd51d199a146392d4293f39230ae3f89"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_real.py",
+      "size_bytes": 2145,
+      "lines": 30,
+      "sha256": "ef9ce4d53d65444bf4f297be4180b3f51489257b17029c9bee3aa6244596c063",
+      "git_blob_sha": "98671de42f9f9682840f818cf6e33983404b4a87"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_symmetry.py",
+      "size_bytes": 2329,
+      "lines": 33,
+      "sha256": "e8a9bd58d585379b278594467727e879c5ea5d51e6eb43dea21267e9d932df9e",
+      "git_blob_sha": "c7fa1948ad3badbc8ea568a6512ddece943321b2"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_tokens_context.py",
+      "size_bytes": 3887,
+      "lines": 45,
+      "sha256": "c700657372839f7b39f6dce953b90436d70499ec634daa36e91d14ab901ae1b1",
+      "git_blob_sha": "2bfda4d92b270dc338f73ea4465e46b5656223b5"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-p_verify_mutations.py",
+      "size_bytes": 1935,
+      "lines": 34,
+      "sha256": "da44424e730ed6e8583cf87f59e988bfe7fcb5a0d4ea7a45488eb21d5e103c43",
+      "git_blob_sha": "8453aa345da173f8df23c0b50997265088071652"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-probe-purity.py",
+      "size_bytes": 755,
+      "lines": 16,
+      "sha256": "d195fe475a22b1a9f70d661a6b3e1e50c3c59631bfa5e08c3985fa148eb66a40",
+      "git_blob_sha": "2a7690d20a0396ef8f41e88dcd2009da3a968e56"
+    },
+    {
+      "path": "increments/021/40-checkpoint2-review/evidence/claude-cp2-review-scenario-reconciliation.csv",
+      "size_bytes": 16122,
+      "lines": 80,
+      "sha256": "3a22e4c1fab0f854a1329739a4185612ba261a8363d9b633b3dc884bc89e199b",
+      "git_blob_sha": "c01d48c4dab392e9ecea640003dd42331ee53859"
+    }
+  ],
+  "files_including_self_manifest": 21,
+  "manifest_outputs_excluding_self": 20
+}
