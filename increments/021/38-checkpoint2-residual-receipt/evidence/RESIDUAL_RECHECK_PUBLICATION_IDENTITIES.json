@@ -1,0 +1,62 @@
+{
+  "input_commit": "1c7906d748a544b26b007faad4d08062008d7fcd",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 34,
+      "size_bytes": 2581,
+      "sha256": "a9919c0df0b7b570864a97c698fb29f65a82ee4e06f17d618155f4b778ec6986",
+      "git_blob_sha": "7e1fa67451d1563a5ad67b62ae4b38c327321d0f"
+    },
+    {
+      "path": "increments/021/38-checkpoint2-residual-receipt/CODEX_INCREMENT_021_CHECKPOINT2_RESIDUAL_RECHECK.md",
+      "lines": 69,
+      "size_bytes": 8850,
+      "sha256": "d896d28bb07cd4acd37f7d2eae4e6f3ac78489104518baec42f76921530dda24",
+      "git_blob_sha": "045d8e8d6b74c0c50f5687e0fdbf76620aa12be0"
+    },
+    {
+      "path": "increments/021/38-checkpoint2-residual-receipt/evidence/ARCHITECT_CP2_RESIDUAL_RECHECK.py",
+      "lines": 66,
+      "size_bytes": 4499,
+      "sha256": "34db8e6e808c88c7434261b7e8379ad1baef283e4fdc3f658ce957da476ee497",
+      "git_blob_sha": "181f89f4b66fdacfee1b8acf88fb7e58b585db12"
+    },
+    {
+      "path": "increments/021/38-checkpoint2-residual-receipt/evidence/ARCHITECT_CP2_RESIDUAL_RECHECK_NORMAL.json",
+      "lines": 65,
+      "size_bytes": 1594,
+      "sha256": "d682e035e528fc952c77c383ba072fe8f05d6010ba040a859a000ea03cb96aa1",
+      "git_blob_sha": "be24eef01074bc99d2c07eb3038ea6a4f689dc60"
+    },
+    {
+      "path": "increments/021/38-checkpoint2-residual-receipt/evidence/ARCHITECT_CP2_RESIDUAL_RECHECK_OPTIMIZED.json",
+      "lines": 65,
+      "size_bytes": 1593,
+      "sha256": "4e6a86c1b875ca54fa5b68c90ae81bf8ed3c05655c90642ca5e159fe01ef301e",
+      "git_blob_sha": "47b9a6de5187a9b27dcfbe4607ed4e3ca46063b3"
+    },
+    {
+      "path": "increments/021/38-checkpoint2-residual-receipt/evidence/ARCHITECT_CP2_RESIDUAL_RECHECK_VERIFICATION.json",
+      "lines": 215,
+      "size_bytes": 11430,
+      "sha256": "af3200145616c42ecd04fc93015f7418e3e60125a8b2401f48a8ce167371876a",
+      "git_blob_sha": "0b41ba9a2d0f9e0655de67a774e8c861912c8cc0"
+    },
+    {
+      "path": "increments/021/38-checkpoint2-residual-receipt/evidence/GENERATE_GIT_BLOB_IDENTITIES.py",
+      "lines": 37,
+      "size_bytes": 1981,
+      "sha256": "2ef84594f55b7182f6508eb65308ffead47f086df0b74260dfeb1e542da406d7",
+      "git_blob_sha": "9d67b00a315365ac21ab6f6c48cea85134b92270"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-COMPLETION.json",
+      "lines": 615,
+      "size_bytes": 32279,
+      "sha256": "96f7ca7632f49d1c148338c3b1d82a4136c42e01172cfc79059e0294a2605e10",
+      "git_blob_sha": "14542e689e3d2041427344348f822cd5c66e0fcf"
+    }
+  ],
+  "self_identity": "Git blob/commit; not self-hashed"
+}

@@ -1,0 +1,215 @@
+{
+  "task_id": "021-CHECKPOINT2-COMPLETION",
+  "role": "codex-architect-focal-receipt-not-independent-review",
+  "date": "2026-11-25",
+  "timezone": "America/Sao_Paulo",
+  "snapshots": {
+    "coordination_input": "1c7906d748a544b26b007faad4d08062008d7fcd",
+    "code": "a8d46675e1d1bab83c9f7824225699afae57bd4a",
+    "code_parent": "5be1e443200cedddac0f97707963500a2edc6da6",
+    "report": "2c50be1ec30fa49b85cc3d269b7af2fe365b5e8f",
+    "report_parent": "1c7906d748a544b26b007faad4d08062008d7fcd",
+    "report_branch": "claude/021-cp2-residual-correction-report-20261125",
+    "code_main": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "governance_main": "a47183dfec8213c765ed43ae482c8c227760a3d5"
+  },
+  "verified_input_identities": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 4547,
+      "size_bytes": 217908,
+      "sha256": "5f25769da6f0798d2c0d1c84e0b64016ce7e2c471fc454cd035b66703d8a4e8c",
+      "git_blob_sha": "c5e249d4f76e50fa6fb6c79eab4348c976bd98b5"
+    },
+    {
+      "path": "src/molecular/receptor_parsing.py",
+      "lines": 1759,
+      "size_bytes": 72234,
+      "sha256": "158950130610d71061e59c180da578ce52452836523074e7690077a060a7570c",
+      "git_blob_sha": "9253e8dc911252f04337f159f95c6abd2f4fe84c"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 2970,
+      "size_bytes": 157371,
+      "sha256": "4d8e9812d56e0094ca49a9cfc411d3d851e3ff2c3ef2fdaa428ee3f9c295f6fb",
+      "git_blob_sha": "18e81f1c1789adb3694d9a7c0c37636bc9e9bac2"
+    },
+    {
+      "path": "tests/test_receptor_parsing.py",
+      "lines": 1486,
+      "size_bytes": 63537,
+      "sha256": "335aafdd88351d5b3fe5ca1e706e82984a625a07f52d1fc3bfb0e196378f20ee",
+      "git_blob_sha": "fea71107a01180ebd259c2c0bcc8c42b94dae926"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-residual-correction-report-20261125.md",
+      "lines": 271,
+      "size_bytes": 17736,
+      "sha256": "fe65d4b06b6f85c62f92949ba7dfad01ef81e4f9595f97f858ab39aa6d70f181",
+      "git_blob_sha": "0fda6f80df76d797210dfe80e8f7bdca91fca8e5"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-residual-full-suite-20261125.txt",
+      "lines": 31,
+      "size_bytes": 3163,
+      "sha256": "a59978b933b2ad33af2fa0a63cdf851324f1301e22bc8f106ec761e98d1f0e46",
+      "git_blob_sha": "e3a34b75c98a4f69573a071f2124311be4969df7"
+    }
+  ],
+  "code_tree_delta_paths": [
+    "src/molecular/receptor_materialization.py",
+    "src/molecular/receptor_parsing.py",
+    "tests/test_receptor_materialization.py",
+    "tests/test_receptor_parsing.py"
+  ],
+  "fixture_blobs_unchanged": true,
+  "cumulative_allowlist_method": "Current tree differs from previously verified5be1e44 only in four already-authorized files; cumulative22-file scope inherited, no new external paths",
+  "new_test_functions": [
+    "tests/test_receptor_materialization.py::test_catalogue_anisotrop_rejects_informed_field_disagreement_and_undeclared_partial_tensor",
+    "tests/test_receptor_materialization.py::test_compute_special_position_summary_counts_overlap_removed_and_other_model",
+    "tests/test_receptor_parsing.py::test_output_verification_rejects_entirely_unplanned_extra_category",
+    "tests/test_receptor_parsing.py::test_real_fixture_1pfe_anisotrop_field_agreement_against_real_gemmi_tokens"
+  ],
+  "test_functions_removed": [],
+  "reported_counts": {
+    "previous_collected": 1658,
+    "current_collected": 1662,
+    "previous_passed": 1653,
+    "current_passed": 1657,
+    "skipped": 5,
+    "focus_passed": 212,
+    "regression020_passed": 121,
+    "independently_executed": false
+  },
+  "verified_crlf_explanation": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "git_blob_lf": {
+        "path": "src/molecular/receptor_materialization.py",
+        "lines": 4547,
+        "size_bytes": 217908,
+        "sha256": "5f25769da6f0798d2c0d1c84e0b64016ce7e2c471fc454cd035b66703d8a4e8c",
+        "git_blob_sha": "c5e249d4f76e50fa6fb6c79eab4348c976bd98b5"
+      },
+      "reconstructed_working_tree_crlf": {
+        "path": "src/molecular/receptor_materialization.py",
+        "lines": 4547,
+        "size_bytes": 222455,
+        "sha256": "f3fcdf4068614b626c74921d50daef13d0ca008b465be529b61f41c2d3db0421",
+        "git_blob_sha": "5e1a00b7550a24882d48b67a037aa294a90cd38f"
+      },
+      "report_sha_matches_crlf": true
+    },
+    {
+      "path": "src/molecular/receptor_parsing.py",
+      "git_blob_lf": {
+        "path": "src/molecular/receptor_parsing.py",
+        "lines": 1759,
+        "size_bytes": 72234,
+        "sha256": "158950130610d71061e59c180da578ce52452836523074e7690077a060a7570c",
+        "git_blob_sha": "9253e8dc911252f04337f159f95c6abd2f4fe84c"
+      },
+      "reconstructed_working_tree_crlf": {
+        "path": "src/molecular/receptor_parsing.py",
+        "lines": 1759,
+        "size_bytes": 73993,
+        "sha256": "e526119706814e6c0b599337e75f7adccd47d368887b343fd6dbaa25cc3b5855",
+        "git_blob_sha": "1279cf54d637a04a8d9c1a63449a32e39d7e866a"
+      },
+      "report_sha_matches_crlf": true
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "git_blob_lf": {
+        "path": "tests/test_receptor_materialization.py",
+        "lines": 2970,
+        "size_bytes": 157371,
+        "sha256": "4d8e9812d56e0094ca49a9cfc411d3d851e3ff2c3ef2fdaa428ee3f9c295f6fb",
+        "git_blob_sha": "18e81f1c1789adb3694d9a7c0c37636bc9e9bac2"
+      },
+      "reconstructed_working_tree_crlf": {
+        "path": "tests/test_receptor_materialization.py",
+        "lines": 2970,
+        "size_bytes": 160341,
+        "sha256": "fbeadc3dd895862e36168dc515fc6348b193afd2e16c45c4ffb3aff447ba4e1a",
+        "git_blob_sha": "75e7421d80183a31b8a80194f51930f88d5b8f78"
+      },
+      "report_sha_matches_crlf": true
+    },
+    {
+      "path": "tests/test_receptor_parsing.py",
+      "git_blob_lf": {
+        "path": "tests/test_receptor_parsing.py",
+        "lines": 1486,
+        "size_bytes": 63537,
+        "sha256": "335aafdd88351d5b3fe5ca1e706e82984a625a07f52d1fc3bfb0e196378f20ee",
+        "git_blob_sha": "fea71107a01180ebd259c2c0bcc8c42b94dae926"
+      },
+      "reconstructed_working_tree_crlf": {
+        "path": "tests/test_receptor_parsing.py",
+        "lines": 1486,
+        "size_bytes": 65023,
+        "sha256": "eeb0e1ab089fa9ff1535f8bb89ef5abd63b87014522dcb4c6d537ef2dabfd2a5",
+        "git_blob_sha": "2e07a557401a819363a66aa8857a355e27a748da"
+      },
+      "report_sha_matches_crlf": true
+    }
+  ],
+  "dispositions": {
+    "R-CP2-01": "Partial: invalid-asym rejection, counts and warning improved; informed residue-component context remains unproved and a concrete contradiction is accepted.",
+    "R-CP2-02": "Original three counterexamples now rejected by actual pure production helpers, normal/-O. Tensor mapping/tensor-completeness correction received; no independent full/native closure is asserted. No further implementation demand is added for this group in this receipt.",
+    "R-CP2-03": "Partial: extra category rejects with verify phase; _entry extra fields and block identity requirements from previous receipt remain.",
+    "R-CP2-04": "Partial: actual token-based lineage assertion added; LF/CRLF discrepancy explained; correct final committed-byte manifest/scenario evidence still needed."
+  },
+  "remaining_required_corrections": [
+    {
+      "id": "R-CP2-01",
+      "severity": "MAJOR",
+      "disposition": "PARTIALLY_ADDRESSED",
+      "target": "Special-position scientific context still ignores informed component identity",
+      "contract": "Frozen §11 context resolution; SCHEMAS§8; T021-158; previous receipt R-CP2-01",
+      "observed": "A source atom A/seq1/ALA was counted as affected by an annotation A/seq1/GLY; label_comp_id is never read. The resolver also ignores contradictory auth identity/insertion when label_seq_id is present. No finding against correct zero-overlap cases is inferred.",
+      "acceptance": "Use all informed supported context fields (label/auth comp, sequence/asym, insertion and model/altloc) consistently. Refuse contradictory or genuinely ambiguous context instead of matching only chain+sequence or blindly uniting distinct occurrences. Keep valid positive, overlap, removed-only and other-model behavior, with native and pure regression controls. Do not require absent optional information when the supported context is already unambiguous."
+    },
+    {
+      "id": "R-CP2-03",
+      "severity": "MAJOR",
+      "disposition": "PARTIALLY_ADDRESSED",
+      "target": "Extra _entry fields and generated block identity remain unchecked",
+      "contract": "Frozen §18 and original R-CP2-03 explicit category/tag/block/entry acceptance",
+      "observed": "Actual verifier rejects extra categories with verify phase, but accepts _entry.unplanned alongside correct id. ParsedCifDom021 carries no block name and the generated block is never compared during verify.",
+      "acceptance": "Apply exact expected field closure to _entry as well as other categories; verify generated block name and id against tbmp_<final plan_key> after native reparse. Reject wrong block, missing/wrong id and extra _entry tags with INVALID_OUTPUT/phase=verify. Preserve the newly added extra-category/mutated-token controls. Internal transport design is left to implementer; do not change frozen public schemas."
+    },
+    {
+      "id": "R-CP2-04",
+      "severity": "MINOR",
+      "disposition": "CAUSE_VERIFIED_DOCUMENTARY_CORRECTION_PENDING",
+      "target": "Final Git-byte manifest and evidence reconciliation",
+      "contract": "Original task final blob manifest and new additive report, no historical edits",
+      "observed": "All four reported SHA256/sizes exactly match reconstructed CRLF working-tree files, while committed Git blobs are LF. This is a verified representation difference, not an unexplained corruption. The report calls these blob identities; publish correct Git-byte identities. Four new test functions/no removals match1658→1662 and1653→1657(+5skips); pytest not reexecuted here.",
+      "acceptance": "Run the supplied read-only GENERATE_GIT_BLOB_IDENTITIES.py against the exact final commit; save its JSON only under the authorized own governance evidence glob. Add an honest final scenario disposition/mapping and actual test logs. Explain LF/CRLF instead of copying disk hashes as committed-byte hashes. Preserve previous reports and all fixtures."
+    }
+  ],
+  "execution": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "pydantic": "2.13.4",
+    "normal_and_optimized_equal": true,
+    "pytest_executed": false,
+    "native_execution": false,
+    "windows_execution": false,
+    "installation": false,
+    "git_diff_check_in_code_checkout_executed": false
+  },
+  "limitations": [
+    "The transcript ends mid-implementation; actual final delivery located and checked through immutable remote refs",
+    "No native CIF parsing or complete new173scenario audit",
+    "No user local working-tree access",
+    "Gemmi/RDKit/pytest absent; probes use actual pure functions and plain DTOs, never a native stub",
+    "Observed good correction does not constitute independent checkpoint acceptance"
+  ],
+  "ready_for_independent_final_cp2_review": false,
+  "checkpoint2_approved": false,
+  "cp3_authorized": false,
+  "code_repository_modified": false
+}

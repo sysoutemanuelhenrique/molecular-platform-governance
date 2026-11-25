@@ -1,0 +1,65 @@
+{
+  "code_commit": "a8d46675e1d1bab83c9f7824225699afae57bd4a",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "optimized": true,
+  "pytest_executed": false,
+  "native_execution": false,
+  "observed": {
+    "native_attempts_at_import": [],
+    "entry_engine_absent": {
+      "accepted": false,
+      "code": "ENGINE_UNAVAILABLE",
+      "phase": "metadata"
+    },
+    "special_unknown_asym": {
+      "accepted": false,
+      "code": "INVALID_CIF",
+      "phase": "plan"
+    },
+    "special_valid_residue": {
+      "accepted": true,
+      "result": {
+        "source_annotation_count": 1,
+        "retained_annotation_count": 1,
+        "retained_unique_atom_count": 1
+      }
+    },
+    "special_wrong_component": {
+      "accepted": true,
+      "result": {
+        "source_annotation_count": 1,
+        "retained_annotation_count": 1,
+        "retained_unique_atom_count": 1
+      }
+    },
+    "anisotrop_pdbx_label_seq_id": {
+      "accepted": false,
+      "code": "INVALID_CIF",
+      "phase": "plan"
+    },
+    "anisotrop_type_symbol": {
+      "accepted": false,
+      "code": "INVALID_CIF",
+      "phase": "plan"
+    },
+    "partial_u_complete_b": {
+      "accepted": false,
+      "code": "INVALID_CIF",
+      "phase": "plan"
+    },
+    "output_control": {
+      "accepted": true,
+      "result": null
+    },
+    "output_extra_category": {
+      "accepted": false,
+      "code": "INVALID_OUTPUT",
+      "phase": "verify"
+    },
+    "output_extra_entry_column": {
+      "accepted": true,
+      "result": null
+    },
+    "reparsed_dom_has_block_identity": false
+  }
+}
