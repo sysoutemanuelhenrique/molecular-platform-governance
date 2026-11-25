@@ -1,0 +1,56 @@
+{
+  "input_commit": "625e538a01335829ee3f29ebf0e04758aa8f5fab",
+  "author_role": "codex-architect",
+  "self_identity": "Not self-hashed; Git blob/commit identifies this manifest",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 35,
+      "size_bytes": 2603,
+      "sha256": "c52e4de6bbd327b58c5f55096803137f478e9d24bd63e591ac28bc287ed0fc35",
+      "git_blob_sha": "d1a7cdd03745b7acf0cb1c3bb90d69181066241e"
+    },
+    {
+      "path": "increments/021/37-checkpoint2-completion-receipt/CODEX_INCREMENT_021_CHECKPOINT2_COMPLETION_RECEIPT.md",
+      "lines": 88,
+      "size_bytes": 11342,
+      "sha256": "2db0a96ecf01304c5720323b233139e308690bf6589b306f67684dfa8b413860",
+      "git_blob_sha": "65d24fb74d286d1531aa23102b4b452b8a33b317"
+    },
+    {
+      "path": "increments/021/37-checkpoint2-completion-receipt/evidence/ARCHITECT_CP2_COMPLETION_PROBES.py",
+      "lines": 100,
+      "size_bytes": 7342,
+      "sha256": "a730ba6fe96bf78d5883d0607c570b55f20b249c83bde4837e692dda1d00f33e",
+      "git_blob_sha": "1688452f8f9525235b848dfaeb8336f2e43ab2a3"
+    },
+    {
+      "path": "increments/021/37-checkpoint2-completion-receipt/evidence/ARCHITECT_CP2_COMPLETION_PROBES_NORMAL.json",
+      "lines": 62,
+      "size_bytes": 1625,
+      "sha256": "9300f62f097c88b09f9953d115918576622ebb99650632f8266ddd27405068fd",
+      "git_blob_sha": "0edfb3b8dcd7c3bcf87a8cd887c2728d80c3e850"
+    },
+    {
+      "path": "increments/021/37-checkpoint2-completion-receipt/evidence/ARCHITECT_CP2_COMPLETION_PROBES_OPTIMIZED.json",
+      "lines": 62,
+      "size_bytes": 1624,
+      "sha256": "2e3b91b04accaf65734434641e764713ff182c0cba5bc8ba7f17d1530345dbc6",
+      "git_blob_sha": "be5fd35130cc6ee6c448dececc519c42e13d577f"
+    },
+    {
+      "path": "increments/021/37-checkpoint2-completion-receipt/evidence/ARCHITECT_CP2_COMPLETION_RECEIPT_VERIFICATION.json",
+      "lines": 495,
+      "size_bytes": 24565,
+      "sha256": "602dad94afce1114a5762344434646a89c773c08916b82790edb041e929866f5",
+      "git_blob_sha": "63b587cfa2ad7be8c5da0577682934bdf59416b5"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-COMPLETION.json",
+      "lines": 601,
+      "size_bytes": 31215,
+      "sha256": "a1b9a963a161926a75ef4bcaf268f73b97f5ee194da401251a3b44fd08afba24",
+      "git_blob_sha": "ae63d6597cbd8725018ca00cc74964a67f1dea71"
+    }
+  ]
+}

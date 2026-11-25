@@ -1,0 +1,62 @@
+{
+  "code_commit": "5be1e443200cedddac0f97707963500a2edc6da6",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "optimized": false,
+  "pytest_executed": false,
+  "native_execution": false,
+  "probes": {
+    "module_import_native_attempts": [],
+    "first_entry_native_attempt": {
+      "attempts": [
+        "gemmi"
+      ],
+      "code": "ENGINE_UNAVAILABLE"
+    },
+    "anisotrop_pdbx_label_seq_id": {
+      "accepted": true,
+      "expected": "INVALID_CIF for contradiction with referenced source atom"
+    },
+    "anisotrop_type_symbol": {
+      "accepted": true,
+      "expected": "INVALID_CIF for contradiction with referenced source atom"
+    },
+    "special_nonexistent_label_context": {
+      "accepted": true,
+      "scope": "Actual guard returns immediately for any non-null label_asym_id"
+    },
+    "anisotrop_partial_u_complete_b": {
+      "accepted": true,
+      "expected": "INVALID_CIF for a populated but incomplete U family even if B is complete"
+    },
+    "catalogue_special_nonexistent_label": {
+      "accepted": true,
+      "action": "guard_then_omit",
+      "kept": [],
+      "omitted": [
+        0
+      ]
+    },
+    "catalogue_anisotrop_wrong_seq": {
+      "accepted": true,
+      "action": "filter",
+      "kept": [
+        0
+      ],
+      "omitted": []
+    },
+    "output_changed_atom_id": {
+      "accepted": false,
+      "code": "INVALID_OUTPUT",
+      "phase": "plan"
+    },
+    "output_extra_unplanned_category": {
+      "accepted": true
+    },
+    "pure_numeric": {
+      "1.2e3(4)": true,
+      "1.2(4)e3": false,
+      "1_000": false,
+      "NaN": false
+    }
+  }
+}

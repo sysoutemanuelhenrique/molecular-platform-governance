@@ -1,0 +1,495 @@
+{
+  "task_id": "021-CHECKPOINT2-COMPLETION",
+  "role": "codex-architect-receipt-not-independent-approval",
+  "date": "2026-11-25",
+  "timezone": "America/Sao_Paulo",
+  "snapshots": {
+    "coordination": "625e538a01335829ee3f29ebf0e04758aa8f5fab",
+    "code": "5be1e443200cedddac0f97707963500a2edc6da6",
+    "code_parent": "60f9e0da5c67c3820747242a033db2f5d49b1817",
+    "report": "17e594d28e13f7b0214fbb25de21a8d410b3ba2d",
+    "report_parent": "70f7a14d1aa1516561f4fef3970ab7b6b38ca418",
+    "code_main": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
+    "governance_main": "a47183dfec8213c765ed43ae482c8c227760a3d5"
+  },
+  "observed_blob_identities": [
+    {
+      "repository_role": "coord",
+      "path": "AGENTS.md",
+      "lines": 32,
+      "size_bytes": 3168,
+      "sha256": "4029ee7b4d897d5ba4cd9800f009ef47039068a0cc874ac90cede99f0294e815",
+      "git_blob_sha": "b2f5c2da64b14d2311e03b13855ccdacd7b979c8"
+    },
+    {
+      "repository_role": "coord",
+      "path": "CLAUDE.md",
+      "lines": 11,
+      "size_bytes": 1296,
+      "sha256": "0e859792425432c9f5f47c65a0e974c249f2203e13e5f373d3ed92b4e3e3b6ab",
+      "git_blob_sha": "16f6a0ba38de37d6a06da8704c632e609d3d4685"
+    },
+    {
+      "repository_role": "coord",
+      "path": "STATUS.md",
+      "lines": 35,
+      "size_bytes": 2729,
+      "sha256": "90c2659e0f8c4ab9f40ac66de1a207702c9833084e4478a6cf599a0019cc9d1b",
+      "git_blob_sha": "cde5893eb35d42f168a032c6ed17834e0cbab370"
+    },
+    {
+      "repository_role": "coord",
+      "path": "protocol/AGENT_WORKFLOW.md",
+      "lines": 55,
+      "size_bytes": 5518,
+      "sha256": "ded0ac5da52263ccf348832a0d61cf4018b022eb6aedf96389167e46c1d78186",
+      "git_blob_sha": "360e4bc3a292044254d0ad1cbb75bf0e6fd8501c"
+    },
+    {
+      "repository_role": "coord",
+      "path": "tasks/021-CHECKPOINT2-COMPLETION.json",
+      "lines": 507,
+      "size_bytes": 23948,
+      "sha256": "1474f6b501c0ce0c47a57b524607cbe6c049b3cddc558116cb174a08fce4f536",
+      "git_blob_sha": "3db5d091c3380be2f31e5c22781934af53996e2c"
+    },
+    {
+      "repository_role": "code",
+      "path": "src/molecular/receptor_materialization.py",
+      "lines": 4381,
+      "size_bytes": 209266,
+      "sha256": "3ec96abf14c05ce29e285d389e386a189b6b69f9244e307756003260ca8f9ba3",
+      "git_blob_sha": "4b8c3a529a7db97c7788a6dfa2bd46d72e9b3ed7"
+    },
+    {
+      "repository_role": "code",
+      "path": "src/molecular/receptor_parsing.py",
+      "lines": 1729,
+      "size_bytes": 70684,
+      "sha256": "54abf400cb500dd18fc825d616c8faf22e637db7d1cdcec396329d06244471f7",
+      "git_blob_sha": "84d65c1ab88ba88c23022f978a237a5697e574ae"
+    },
+    {
+      "repository_role": "code",
+      "path": "tests/fixtures/receptor_materialization/1pfe/PROVENANCE.json",
+      "lines": 33,
+      "size_bytes": 2486,
+      "sha256": "43062faa228d7aa58e78fbd836142a72a61ed9075338cbde8808233eaacae39a",
+      "git_blob_sha": "2b67c5ffe905a114c10d426ed1970e51e1893a6a"
+    },
+    {
+      "repository_role": "code",
+      "path": "tests/fixtures/receptor_materialization/3dg1/PROVENANCE.json",
+      "lines": 32,
+      "size_bytes": 1690,
+      "sha256": "a1ae8ec3859d8d5802d201b0533f548c2bd84d696e68590eb5e6e9b03ce54238",
+      "git_blob_sha": "cdd06f0e9f6b37535add9e64f908b21f4cfe21f4"
+    },
+    {
+      "repository_role": "code",
+      "path": "tests/fixtures/receptor_materialization/5i55/PROVENANCE.json",
+      "lines": 30,
+      "size_bytes": 3512,
+      "sha256": "69c599618f36bbb6c8f65bd16dbf4791c4cafbe5ef187708f27c400d785e2ca0",
+      "git_blob_sha": "a66dd45d74ce8b4235b792dcb9c942e1d0269041"
+    },
+    {
+      "repository_role": "code",
+      "path": "tests/fixtures/receptor_materialization/em_7dwu/PROVENANCE.json",
+      "lines": 36,
+      "size_bytes": 2023,
+      "sha256": "2d0e52d4f7025d506abc9427fb5aba5f68f7851c31fb6bc730067ca7962c0aa0",
+      "git_blob_sha": "6a338985f58f5453b6c5d373a9a26e7f75f6ec35"
+    },
+    {
+      "repository_role": "code",
+      "path": "tests/fixtures/receptor_materialization/ncs_1a2p/PROVENANCE.json",
+      "lines": 27,
+      "size_bytes": 2569,
+      "sha256": "3c39c10f9777fda9f4ba8d23eedd13613b045565e856a46de6803502902e97a9",
+      "git_blob_sha": "b909c91f36415c9b9289eab2ee1e03e694f7baaf"
+    },
+    {
+      "repository_role": "code",
+      "path": "tests/fixtures/receptor_materialization/nmr_2jof/PROVENANCE.json",
+      "lines": 30,
+      "size_bytes": 1685,
+      "sha256": "aea2598c151f0cbfc8f25731f971264fa141431c3ed76aa59d51ed90c32281fc",
+      "git_blob_sha": "74d205f2c64c6967d2607359a7d7e13d7f1f1b53"
+    },
+    {
+      "repository_role": "code",
+      "path": "tests/test_receptor_materialization.py",
+      "lines": 2787,
+      "size_bytes": 146902,
+      "sha256": "67104670202d4887bb2f76287448604c8d4a81fc7c3913ec80c3ef3e1c47a286",
+      "git_blob_sha": "6294e74d3050a1d33acb62c50832385a0b1770cc"
+    },
+    {
+      "repository_role": "code",
+      "path": "tests/test_receptor_parsing.py",
+      "lines": 1383,
+      "size_bytes": 57644,
+      "sha256": "625ac29a5bf395cdc91d360d990cf5212d79cc9e8ecd6dc0f2d3f4862ffd4ff5",
+      "git_blob_sha": "7f3745f773b69183e1b026733108b06328f86fd2"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-addendum-correction-20261125.md",
+      "lines": 152,
+      "size_bytes": 9556,
+      "sha256": "23bf60bb0829f1c2cc62084023f9a028ea3e2cfb7ca4b861580ada07ed5f4816",
+      "git_blob_sha": "4bb7c247b9f5c2b3cd561b2f7aac5685667cb68b"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-arch01-check.txt",
+      "lines": 1,
+      "size_bytes": 56,
+      "sha256": "17d7c85e3f3567bd9529507f6e7f63deaf7971e5f299179f5b47d1bf886b0080",
+      "git_blob_sha": "7f1e50fffa958eef719b18be02930ac7083cef9f"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-collect-before-after.txt",
+      "lines": 9,
+      "size_bytes": 614,
+      "sha256": "0cd63fd26b33392f18dd50ad700f880a5ba4568d4aa25432febb5125c72e2838",
+      "git_blob_sha": "a64f54c184b58d46b1b54186d0f99e230cd0f90d"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-environment.txt",
+      "lines": 7,
+      "size_bytes": 139,
+      "sha256": "87ee520bd86b7151e35e967dfb2a245c9cde132ae8774697372b4eec3ee7503f",
+      "git_blob_sha": "0a79d7f154439dbf0d2fe355c1b538edc94ed5f0"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-file-identities.json",
+      "lines": 44,
+      "size_bytes": 3281,
+      "sha256": "5c7dcccba19b8be25c60e788dcc111b5a8a36ffc0da75f96de7ebcc6c5e5b93b",
+      "git_blob_sha": "bee6b725d4fe6a0d2d016a9f8c14c8f32ef33978"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-focus-verbose.txt",
+      "lines": 213,
+      "size_bytes": 23528,
+      "sha256": "3376fe101fafab7ffd38d28bf235c41b8a81ba59f8e35738eaba0feef2dcff2e",
+      "git_blob_sha": "0c2f93f33aad52235d48f24a44a3288807a01db2"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-full-suite-20261125.txt",
+      "lines": 31,
+      "size_bytes": 3163,
+      "sha256": "f33a314eef2c5f9283541fd6d41764c8827a91b15239f20fa68fa81f7f58c2a8",
+      "git_blob_sha": "7ff3402ddec75068721dfcad6a07419310d266c3"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-full-suite.txt",
+      "lines": 30,
+      "size_bytes": 3083,
+      "sha256": "b641621ce4688b41e20bee3faf142527a2e9cf8ff93a9c7bc35ac0a4c7651124",
+      "git_blob_sha": "a41246a2d2978d0444880f12a37d47b99d1e475d"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-git-log.txt",
+      "lines": 70,
+      "size_bytes": 3834,
+      "sha256": "da89801a31474bae687a20db7428c16d396a86c0ed6828d9b3e70f4cb2dbe11e",
+      "git_blob_sha": "16af7719587578e445d8e01324395e8ea1cf92c9"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-regression-020.txt",
+      "lines": 3,
+      "size_bytes": 180,
+      "sha256": "37440af1b70c00a6067243504b4b2e94d3f038efac2cb77227e8bc584331a12d",
+      "git_blob_sha": "21ddc7c80fefe7708e404a7cd462c6efd3786f5c"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-scenario-matrix.json",
+      "lines": 331,
+      "size_bytes": 22244,
+      "sha256": "7520f7b74d145ac49374ae37d8cee76a4d6a0156f56e9d055d32d74c1ffc797b",
+      "git_blob_sha": "3a96067a2617faf677dc084b831bfe1b180aa9cb"
+    },
+    {
+      "repository_role": "delivery",
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-cp2-completion-report.md",
+      "lines": 167,
+      "size_bytes": 25796,
+      "sha256": "ee367096f3d587d4c2a8406596dc739f15a001e4b0a3e3db7697061280a53dc4",
+      "git_blob_sha": "b54f03a55689f8f25d17df2679424ba8b86a2237"
+    }
+  ],
+  "frozen_normative_identities": [
+    {
+      "path": "increments/021/15-final-specification/INCREMENT_021_FINAL_SPECIFICATION.md",
+      "lines": 377,
+      "size_bytes": 64746,
+      "sha256": "5de705d609eaf158b0b29a99a0d02e24be4ed0b19d8e127c7e8d70c93aca1bd8",
+      "git_blob_sha": "971d4dbaa8b651845f1601b3253496474589598c"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCHEMAS_021.md",
+      "lines": 106,
+      "size_bytes": 16601,
+      "sha256": "649b43346278c7bee2da0671bad658702c09a0e65184d9c1d661e3ec4d0120b1",
+      "git_blob_sha": "a0db7a2eb8ef89f13b0feb1603242dc155095fc2"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/CATALOG_021.json",
+      "lines": 2045,
+      "size_bytes": 50480,
+      "sha256": "8561039fd15137811b60316336dff04539df3732710dca6ec4009f23150d6d03",
+      "git_blob_sha": "eed05f36f13ad8d9221f895cf8c9e814e860d9f0"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/SCENARIOS_021.csv",
+      "lines": 174,
+      "size_bytes": 23307,
+      "sha256": "ca5c88302c5a3b1bdaa4180ff511dc36177b2cdd0c74b6a67413d13c55f9b75b",
+      "git_blob_sha": "5d41d129a7adb1d273e74b648f714609e5ba49f6"
+    },
+    {
+      "path": "increments/021/15-final-specification/evidence/IDENTITY_BASIS_CASES.json",
+      "lines": 173,
+      "size_bytes": 6937,
+      "sha256": "1463699223f03ed86d56e100f28f9deea51fc4d44fac8ba2aa576f51c3c5fbeb",
+      "git_blob_sha": "615198785d380a428ffd7c38555620e22373e2bf"
+    }
+  ],
+  "allowlist_checks": {
+    "cp2diff": {
+      "files": 22,
+      "paths": [
+        "src/molecular/receptor_materialization.py",
+        "src/molecular/receptor_parsing.py",
+        "tests/fixtures/receptor_materialization/1pfe/1PFE.cif",
+        "tests/fixtures/receptor_materialization/1pfe/1PFE_trimmed.cif",
+        "tests/fixtures/receptor_materialization/1pfe/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/3dg1/3DG1.cif",
+        "tests/fixtures/receptor_materialization/3dg1/3DG1_trimmed.cif",
+        "tests/fixtures/receptor_materialization/3dg1/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/5i55/5I55.cif",
+        "tests/fixtures/receptor_materialization/5i55/5I55_trimmed.cif",
+        "tests/fixtures/receptor_materialization/5i55/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/em_7dwu/7DWU.cif",
+        "tests/fixtures/receptor_materialization/em_7dwu/7DWU_trimmed.cif",
+        "tests/fixtures/receptor_materialization/em_7dwu/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P.cif",
+        "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P_trimmed.cif",
+        "tests/fixtures/receptor_materialization/ncs_1a2p/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/nmr_2jof/2JOF.cif",
+        "tests/fixtures/receptor_materialization/nmr_2jof/2JOF_trimmed.cif",
+        "tests/fixtures/receptor_materialization/nmr_2jof/PROVENANCE.json",
+        "tests/test_receptor_materialization.py",
+        "tests/test_receptor_parsing.py"
+      ],
+      "verified": true
+    },
+    "completiondiff": {
+      "files": 22,
+      "paths": [
+        "src/molecular/receptor_materialization.py",
+        "src/molecular/receptor_parsing.py",
+        "tests/fixtures/receptor_materialization/1pfe/1PFE.cif",
+        "tests/fixtures/receptor_materialization/1pfe/1PFE_trimmed.cif",
+        "tests/fixtures/receptor_materialization/1pfe/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/3dg1/3DG1.cif",
+        "tests/fixtures/receptor_materialization/3dg1/3DG1_trimmed.cif",
+        "tests/fixtures/receptor_materialization/3dg1/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/5i55/5I55.cif",
+        "tests/fixtures/receptor_materialization/5i55/5I55_trimmed.cif",
+        "tests/fixtures/receptor_materialization/5i55/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/em_7dwu/7DWU.cif",
+        "tests/fixtures/receptor_materialization/em_7dwu/7DWU_trimmed.cif",
+        "tests/fixtures/receptor_materialization/em_7dwu/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P.cif",
+        "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P_trimmed.cif",
+        "tests/fixtures/receptor_materialization/ncs_1a2p/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/nmr_2jof/2JOF.cif",
+        "tests/fixtures/receptor_materialization/nmr_2jof/2JOF_trimmed.cif",
+        "tests/fixtures/receptor_materialization/nmr_2jof/PROVENANCE.json",
+        "tests/test_receptor_materialization.py",
+        "tests/test_receptor_parsing.py"
+      ],
+      "verified": true
+    },
+    "all021diff": {
+      "files": 22,
+      "paths": [
+        "src/molecular/receptor_materialization.py",
+        "src/molecular/receptor_parsing.py",
+        "tests/fixtures/receptor_materialization/1pfe/1PFE.cif",
+        "tests/fixtures/receptor_materialization/1pfe/1PFE_trimmed.cif",
+        "tests/fixtures/receptor_materialization/1pfe/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/3dg1/3DG1.cif",
+        "tests/fixtures/receptor_materialization/3dg1/3DG1_trimmed.cif",
+        "tests/fixtures/receptor_materialization/3dg1/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/5i55/5I55.cif",
+        "tests/fixtures/receptor_materialization/5i55/5I55_trimmed.cif",
+        "tests/fixtures/receptor_materialization/5i55/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/em_7dwu/7DWU.cif",
+        "tests/fixtures/receptor_materialization/em_7dwu/7DWU_trimmed.cif",
+        "tests/fixtures/receptor_materialization/em_7dwu/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P.cif",
+        "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P_trimmed.cif",
+        "tests/fixtures/receptor_materialization/ncs_1a2p/PROVENANCE.json",
+        "tests/fixtures/receptor_materialization/nmr_2jof/2JOF.cif",
+        "tests/fixtures/receptor_materialization/nmr_2jof/2JOF_trimmed.cif",
+        "tests/fixtures/receptor_materialization/nmr_2jof/PROVENANCE.json",
+        "tests/test_receptor_materialization.py",
+        "tests/test_receptor_parsing.py"
+      ],
+      "verified": true
+    }
+  },
+  "completion_code_commits": [
+    "b096af7ca8d47fd72cb739e0f5d90771ea07a112",
+    "60f9e0da5c67c3820747242a033db2f5d49b1817",
+    "5be1e443200cedddac0f97707963500a2edc6da6"
+  ],
+  "report_branch_additions": [
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-addendum-correction-20261125.md",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-arch01-check.txt",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-collect-before-after.txt",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-environment.txt",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-file-identities.json",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-focus-verbose.txt",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-full-suite-20261125.txt",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-full-suite.txt",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-git-log.txt",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-regression-020.txt",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-scenario-matrix.json",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-cp2-completion-report.md"
+  ],
+  "provider_log_decode_reconstruction": [
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-full-suite-20261125.txt",
+      "method": "Provider Unicode text -> CP1252 reconstruction; size and exact Git blob SHA independently match",
+      "git_sha": "7ff3402ddec75068721dfcad6a07419310d266c3"
+    },
+    {
+      "path": "increments/021/35-checkpoint2-implementation/evidence/claude-completion-full-suite.txt",
+      "method": "Provider Unicode text -> CP1252 reconstruction; size and exact Git blob SHA independently match",
+      "git_sha": "a41246a2d2978d0444880f12a37d47b99d1e475d"
+    }
+  ],
+  "scenario_matrix_check": {
+    "normative_ids": 79,
+    "mapped_keys": 79,
+    "all_functions_exist": true,
+    "collected_parametrized_node_ids_independently_verified": false,
+    "full_contract_coverage_independently_verified": false
+  },
+  "final_delta_test_functions_added": [
+    "test_decoded_view_cooks_quoted_identifiers_and_multiline_operator_expressions",
+    "test_real_fixture_originals_carry_removed_categories_outside_the_catalogue",
+    "test_receptor_parsing_module_import_itself_never_touches_gemmi"
+  ],
+  "final_delta_test_functions_removed": [],
+  "supplied_test_evidence": {
+    "latest_full_passed": 1653,
+    "latest_skipped": 5,
+    "implied_latest_collected": 1658,
+    "latest_focus_claim": 208,
+    "previous_log_focus_passed": 205,
+    "previous_log_full_passed": 1650,
+    "previous_log_skipped": 5,
+    "previous_collected_claim": 1655,
+    "receptor020_regression_reported": 121,
+    "independently_reexecuted": false
+  },
+  "execution": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "pydantic": "2.13.4",
+    "pytest_available": false,
+    "gemmi_available": false,
+    "rdkit_available": false,
+    "native_execution": false,
+    "pytest_executed": false,
+    "windows_executed": false,
+    "repository_git_diff_check_executed": false,
+    "commands": [
+      "python -B ARCHITECT_CP2_COMPLETION_PROBES.py /disposable/exact-code/src",
+      "python -B -O ARCHITECT_CP2_COMPLETION_PROBES.py /disposable/exact-code/src"
+    ],
+    "probe_result_normal_equals_optimized": true
+  },
+  "residuals": [
+    {
+      "id": "R-CP2-01",
+      "severity": "MAJOR",
+      "original_group": "C-05/C-07",
+      "target": "Special-position context, counts and warning",
+      "contract": "Final specification §11 SPECIAL_POSITION_GUARD_THEN_OMIT; SCHEMAS§8 SpecialPositionSummary; T021-158",
+      "evidence": [
+        "receptor_materialization.py:3821-3844 returns for any non-null label_asym_id",
+        "receptor_materialization.py:4304-4317 only guards/omits; no annotation/retained-intersection/unique-atom count",
+        "receptor_materialization.py:1453-1454 emits warning on category presence, irrespective of retained intersection",
+        "Real production catalogue probe accepts NO_SUCH_ASYM/seq999"
+      ],
+      "acceptance": "Resolve every annotation in the selected model with supported label/auth/insertion/altloc semantics; refuse ambiguous/invalid context. Compute all three frozen counts without double-counting atoms. Produce the warning only for retained intersection; zero/removed-only categories do not require it. Carry immutable CP2 results sufficient for later AuditRecord, without implementing CP3 persistence. Add synthetic multi-row/overlap/other-model/removed/invalid and genuine3DG1 assertions."
+    },
+    {
+      "id": "R-CP2-02",
+      "severity": "MAJOR",
+      "original_group": "C-05/C-07",
+      "target": "Anisotropic identity agreement and partial tensor family",
+      "contract": "Final specification §11 ANISOTROP_ATOM_ID; T021-062",
+      "evidence": [
+        "receptor_materialization.py:3656-3660 checks only three label columns",
+        "Public catalogue retains id=a1 with pdbx_label_seq_id=99 while the referenced source atom has label_seq_id=1",
+        "Direct production helper accepts type_symbol=O for source C",
+        "_tensor_family_state at3684 returns absent if any column is absent, accepting populated incomplete U when complete B exists"
+      ],
+      "acceptance": "Check all supported, informed mirrored identity fields against the referenced source atom, with explicit mapping and true-null semantics, without inventing missing source fields. Reject a populated partial U or B family even when the other family is complete. Preserve tokens/esd and valid B-only/U-only cases; no physical tensor validation, normalization or U/B conversion. Include native integration and focused adversarial tests."
+    },
+    {
+      "id": "R-CP2-03",
+      "severity": "MAJOR",
+      "original_group": "C-03",
+      "target": "Closed-world output verification and actual error phase",
+      "contract": "Final specification §18; SCHEMAS§10 MaterializationErrorDetails; original C-03 acceptance; T021-089",
+      "evidence": [
+        "receptor_parsing.py:1545-1595 iterates expected category decisions without checking unexpected output categories",
+        "Actual _verify_output_reparse accepts an added unplanned category with unchanged expected atom table",
+        "Changed atom id is now rejected INVALID_OUTPUT, but phase remains plan"
+      ],
+      "acceptance": "Compare the full expected category/tag/block/entry universe as well as existing per-cell vectors and relationships before accepting serialized bytes. Reject unexpected categories, extra entry columns, wrong block/entry and other relevant output mutations. Raise INVALID_OUTPUT with phase=verify. Keep current changed-token checks and independent source/plan oracles, no writer/reader-only self-validation."
+    },
+    {
+      "id": "R-CP2-04",
+      "severity": "MINOR",
+      "original_group": "C-07/evidence",
+      "target": "Final-snapshot identities, count reconciliation and honest scenario matrix",
+      "contract": "Task required_report/required_evidence; final specification §20",
+      "evidence": [
+        "Addendum§3 declares wrong bytes/SHA256 for two5be1e44 files (actual identities independently matched Git blobs)",
+        "The old report manifest explicitly identifies60f9e0d; it is historical, not a final5be1e44 manifest",
+        "Final delta adds three unparametrized tests;205+3=208 and1655+3=1658; earlier prose206/1651 is inconsistent with supplied logs205/1650",
+        "Matrix79keys and mapped function existence verified, but genuine_covered79 conflicts with concrete C-05/C-03 residuals"
+      ],
+      "acceptance": "Publish a new additive report, complete final file/fixture manifest and scenario matrix tied to the exact final commit. Reconcile per-run collection/focus/full/skips against actual logs; preserve old reports. Treat mapped cases as unclosed until production assertions cover required behavior. Fixture count-only lineage proof does not establish unchanged content; use content/token comparison for unaffected categories if claiming only listed edits. Preserve original/trimmed files and proper out-of-profile refusals."
+    }
+  ],
+  "limitations": [
+    "No native CIF parsing, complete fixture-file download/content audit, Windows/NTFS or concurrency execution",
+    "No access to the user local working tree",
+    "No full173scenario review or independent checkpoint closure",
+    "Existing fixture manifests matched their Git blobs; origin claims not independently redownloaded from RCSB"
+  ],
+  "ready_for_independent_final_cp2_review": false,
+  "checkpoint2_approved": false,
+  "cp3_authorized": false,
+  "code_repository_modified": false
+}

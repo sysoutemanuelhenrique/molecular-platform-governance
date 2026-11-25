@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT2-COMPLETION",
-  "status": "AUTHORIZED_CONTINUATION_LOCAL_PROGRESS_REPORTED_AWAITING_MANUAL_RESUME",
+  "status": "AUTHORIZED_RESIDUAL_CORRECTION_AFTER_COMPLETION_RECEIPT",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -28,7 +28,7 @@
   "code_baseline": "08b797e0985e123ffd4d7ca7e5a5e8f040e63851",
   "expected_governance_main": "a47183dfec8213c765ed43ae482c8c227760a3d5",
   "original_cp2_entry_is_historical": "ea8dac9cdc203c337d7f3f9947b54042291f7484",
-  "continuation_head_rule": "Use 0d06ebd as current input; ea8dac9 remains approved CP1/original CP2 start, not a request to reset or recreate branch",
+  "continuation_head_rule": "Continue additively from5be1e44/current authorized local diff; original0d06ebd is historical, never reset to it. Preserve all preexisting work; stop only on unexpected drift/unrecognized changes.",
   "code_allowlist": [
     "src/molecular/receptor_parsing.py",
     "src/molecular/receptor_materialization.py",
@@ -407,21 +407,20 @@
     }
   ],
   "required_preflight": [
-    "Read AGENTS/workflow/STATUS/this task, exact architect receipt and original brief/spec/annexes; verify all necessary identities and owner authorization",
-    "Confirm coordination at dispatch SHA, code feature at0d06ebd, partial report branch at9aa0762 and both main refs unchanged; stop on unexpected drift",
-    "Inspect local origin/directory/branch/HEAD/index/tracked changes; preserve all untracked/protected items and020A; do not reset/clean/stash/rebase/amend/force",
-    "Use same feature; continue additively from partial code, not main or destructive return to CP1; capture actual incoming environment/collection before editing",
-    "Gemmi0.7.5 real mandatory for CP2 proof; no installs/pin/dependency/file-scope changes without separate resolution; native absence is a blocker, not permission for sentinels as final evidence"
+    "Read current AGENTS/workflow/STATUS/this task, the new37receipt/probe evidence, original brief/frozen spec/annexes and owner authorization; validate document identities",
+    "Confirm coordination equals new handoff SHA; code feature equals5be1e443200cedddac0f97707963500a2edc6da6; completion-report branch equals17e594d28e13f7b0214fbb25de21a8d410b3ba2d; both main refs unchanged. These are intentional received advances, not drift to reset. Stop on any unexpected further advance",
+    "Inspect local directory/origin/branch/HEAD/index/diff. Preserve authorized recognized local work and protected untracked items; do not reset/clean/stash/rebase/amend/force. Use same feature, not main",
+    "Gemmi0.7.5 real required for final evidence; no new dependencies/installation/pyproject edits under this task. No stub as native proof",
+    "Preserve completed fixes such as genuine late import/16MiB/RAW provenance/raw-decoded separation/CCD closure; correct only within originalCP2 scope"
   ],
   "required_work": [
-    "Complete production and tests, not merely append26 tests: address C01–C07 under unchanged frozen contract",
-    "Preserve partial report/branch and original author documents; do not claim53 independent closures; remap every one of79 to exact production assertions/fixtures/actual outcomes",
-    "Real fixtures5i55/1pfe/3dg1_final coverage plus NMR multi-model/EM/NCS and D01(b) lineage remain mandatory; preserve original and list any edits; test original when supported; no fabricated deposition identity or scientific hash",
-    "No fake raw/metadata hashes in integrated tests; derive from actual bytes, preserve literal independent golden payloads in pure tests; do not retrofit domain-only old tests to invent filesystem activity",
-    "Build only adapter/domain/audit-data needs of CP2; no storage/registry/service/CLI/host-lock/publication implementation",
-    "Maintain92 CP1 tests/R1/13goldens/legacy020 semantics; correct incorrect CP2-specific oracles with rationale, never weaken contract to retain green tests",
-    "Run actual focus/regressions/full suite once and record skips/new item counts; old1622/1617+5 are supplied historical reference for this continuation, not a new execution",
-    "Normal additive commit/push same feature limited four paths/fixture subtree; cumulative diff restricted to original021 allowance; verify remote and both main refs unchanged"
+    "Complete residualsR-CP2-01..04; these instantiate originalC-05/C-03/C-07, not new contract or CP3. No optional deferral of required special-position counts or anisotropic coherence",
+    "Execute original79scenario expectations, not only mapped function names. Add native regression tests and independent expected data for each correction; maintain originalCP1goldens/R1/notes and020 behavior",
+    "No requirement to implement final persistedAuditRecord inCP2; compute/transport its required structural facts without storage/registry/service/CLI",
+    "Preserve historical reports/manifests; write new additive report/scenario matrix/final blob manifest in original allowed35/evidence/claude-* glob, on own new report branch from new dispatch",
+    "Reconcile actual collection/test runs and five skip reasons. The1653+5 result is supplied history, not the next execution; use final exact codeSHA in new evidence",
+    "Run focus/regression020/full once after meaningful fixes, diff/show checks, exact allowlist, commit/push normally same code feature, verify bothmain refs and all outputs remotely",
+    "If any required originalC01-C07 behavior is still unproved, state pending honestly; no independent approval orCP3 authorization"
   ],
   "original_required_evidence_still_applies": [
     "79 scenario-to-production-test/assertion mapping, actual execution/limits and genuine checksum fixtures; scenarios are not promised pytest count",
@@ -458,7 +457,7 @@
     "increments/021/35-checkpoint2-implementation/evidence/claude-completion-*"
   ],
   "report_output_authorization_note": "All continuation outputs stay inside original authorized35/evidence/claude-* glob; original main partial report and branch stay immutable",
-  "suggested_governance_output_branch": "claude/021-cp2-completion-report",
+  "suggested_governance_output_branch": "claude/021-cp2-residual-correction-report-20261125",
   "governance_output_branch_policy": "Own branch from exact new dispatch; no STATUS/tasks/coordination/main edits; no copying historical reports as new results",
   "required_report": [
     "All inputs/identities/actual code and governance full SHAs/parent/diff and remote proof",
@@ -468,7 +467,7 @@
     "Completion claim only if full contract proved; otherwise precise blocker and READY FOR INDEPENDENT FINAL CP2 REVIEW NO; never CP2 self-approval or CP3 authorization"
   ],
   "completion_criteria": "Complete frozen CP2 production and79 scenario proof, real fixtures/lineage, corrected triage groups, regressions/allowlist/identities and published own report. Architect receipt then independent review, no automatic acceptance.",
-  "next_gate": "Architect receives completed CP2; only then prepare independent final CP2 review in separate session",
+  "next_gate": "Architect receipt after all originalCP2requirements/residuals have concrete proof; then separate independent finalCP2review. Not ready now.",
   "restrictions": [
     "No contract/schema/020 retrofit; no scientific preparation/protonation/charges/H repair/minimization/docking",
     "No CP3 storage/reader/lock/registry/service/activity nor CP4 CLI",
@@ -488,7 +487,7 @@
   "latest_local_progress_input_coordination": "7cd8ab3c5c2ec53e4630a41a6e7362e30fbe5edd",
   "local_progress_reported": true,
   "local_progress_independently_verified": false,
-  "new_code_delivery_received": false,
+  "new_code_delivery_received": true,
   "resume_guardrails": {
     "path": "increments/021/36-checkpoint2-partial-receipt/CODEX_CP2_LOCAL_PROGRESS_RESUME_GUARDRAILS.md",
     "lines": 58,
@@ -503,5 +502,100 @@
     "Actual late native import plus ENGINE_UNAVAILABLE/ENGINE_VERSION; domain-only ARCH01 test is insufficient for this requirement",
     "Gemmi-decoded scientific values distinct from raw tokens; quoted null-looking strings remain strings; preserve raw hashes",
     "Original/trimmed fixture lineage and supported-original tests mandatory; scanner changes/native proof and all C01–C07 remain pending until demonstrated"
-  ]
+  ],
+  "latest_delivery_received": true,
+  "latest_code_delivery_commit": "5be1e443200cedddac0f97707963500a2edc6da6",
+  "latest_report_delivery_branch": "claude/021-cp2-completion-report",
+  "latest_report_delivery_commit": "17e594d28e13f7b0214fbb25de21a8d410b3ba2d",
+  "continuation_input_code_head": "5be1e443200cedddac0f97707963500a2edc6da6",
+  "architect_completion_receipt": {
+    "path": "increments/021/37-checkpoint2-completion-receipt/CODEX_INCREMENT_021_CHECKPOINT2_COMPLETION_RECEIPT.md",
+    "lines": 88,
+    "size_bytes": 11342,
+    "sha256": "2db0a96ecf01304c5720323b233139e308690bf6589b306f67684dfa8b413860",
+    "git_blob_sha": "65d24fb74d286d1531aa23102b4b452b8a33b317",
+    "input_coordination_commit": "625e538a01335829ee3f29ebf0e04758aa8f5fab"
+  },
+  "architect_completion_verification": {
+    "path": "increments/021/37-checkpoint2-completion-receipt/evidence/ARCHITECT_CP2_COMPLETION_RECEIPT_VERIFICATION.json",
+    "lines": 495,
+    "size_bytes": 24565,
+    "sha256": "602dad94afce1114a5762344434646a89c773c08916b82790edb041e929866f5",
+    "git_blob_sha": "63b587cfa2ad7be8c5da0577682934bdf59416b5"
+  },
+  "architect_completion_probe_script": {
+    "path": "increments/021/37-checkpoint2-completion-receipt/evidence/ARCHITECT_CP2_COMPLETION_PROBES.py",
+    "lines": 100,
+    "size_bytes": 7342,
+    "sha256": "a730ba6fe96bf78d5883d0607c570b55f20b249c83bde4837e692dda1d00f33e",
+    "git_blob_sha": "1688452f8f9525235b848dfaeb8336f2e43ab2a3"
+  },
+  "residual_corrections_required": [
+    {
+      "id": "R-CP2-01",
+      "severity": "MAJOR",
+      "original_group": "C-05/C-07",
+      "target": "Special-position context, counts and warning",
+      "contract": "Final specification §11 SPECIAL_POSITION_GUARD_THEN_OMIT; SCHEMAS§8 SpecialPositionSummary; T021-158",
+      "evidence": [
+        "receptor_materialization.py:3821-3844 returns for any non-null label_asym_id",
+        "receptor_materialization.py:4304-4317 only guards/omits; no annotation/retained-intersection/unique-atom count",
+        "receptor_materialization.py:1453-1454 emits warning on category presence, irrespective of retained intersection",
+        "Real production catalogue probe accepts NO_SUCH_ASYM/seq999"
+      ],
+      "acceptance": "Resolve every annotation in the selected model with supported label/auth/insertion/altloc semantics; refuse ambiguous/invalid context. Compute all three frozen counts without double-counting atoms. Produce the warning only for retained intersection; zero/removed-only categories do not require it. Carry immutable CP2 results sufficient for later AuditRecord, without implementing CP3 persistence. Add synthetic multi-row/overlap/other-model/removed/invalid and genuine3DG1 assertions."
+    },
+    {
+      "id": "R-CP2-02",
+      "severity": "MAJOR",
+      "original_group": "C-05/C-07",
+      "target": "Anisotropic identity agreement and partial tensor family",
+      "contract": "Final specification §11 ANISOTROP_ATOM_ID; T021-062",
+      "evidence": [
+        "receptor_materialization.py:3656-3660 checks only three label columns",
+        "Public catalogue retains id=a1 with pdbx_label_seq_id=99 while the referenced source atom has label_seq_id=1",
+        "Direct production helper accepts type_symbol=O for source C",
+        "_tensor_family_state at3684 returns absent if any column is absent, accepting populated incomplete U when complete B exists"
+      ],
+      "acceptance": "Check all supported, informed mirrored identity fields against the referenced source atom, with explicit mapping and true-null semantics, without inventing missing source fields. Reject a populated partial U or B family even when the other family is complete. Preserve tokens/esd and valid B-only/U-only cases; no physical tensor validation, normalization or U/B conversion. Include native integration and focused adversarial tests."
+    },
+    {
+      "id": "R-CP2-03",
+      "severity": "MAJOR",
+      "original_group": "C-03",
+      "target": "Closed-world output verification and actual error phase",
+      "contract": "Final specification §18; SCHEMAS§10 MaterializationErrorDetails; original C-03 acceptance; T021-089",
+      "evidence": [
+        "receptor_parsing.py:1545-1595 iterates expected category decisions without checking unexpected output categories",
+        "Actual _verify_output_reparse accepts an added unplanned category with unchanged expected atom table",
+        "Changed atom id is now rejected INVALID_OUTPUT, but phase remains plan"
+      ],
+      "acceptance": "Compare the full expected category/tag/block/entry universe as well as existing per-cell vectors and relationships before accepting serialized bytes. Reject unexpected categories, extra entry columns, wrong block/entry and other relevant output mutations. Raise INVALID_OUTPUT with phase=verify. Keep current changed-token checks and independent source/plan oracles, no writer/reader-only self-validation."
+    },
+    {
+      "id": "R-CP2-04",
+      "severity": "MINOR",
+      "original_group": "C-07/evidence",
+      "target": "Final-snapshot identities, count reconciliation and honest scenario matrix",
+      "contract": "Task required_report/required_evidence; final specification §20",
+      "evidence": [
+        "Addendum§3 declares wrong bytes/SHA256 for two5be1e44 files (actual identities independently matched Git blobs)",
+        "The old report manifest explicitly identifies60f9e0d; it is historical, not a final5be1e44 manifest",
+        "Final delta adds three unparametrized tests;205+3=208 and1655+3=1658; earlier prose206/1651 is inconsistent with supplied logs205/1650",
+        "Matrix79keys and mapped function existence verified, but genuine_covered79 conflicts with concrete C-05/C-03 residuals"
+      ],
+      "acceptance": "Publish a new additive report, complete final file/fixture manifest and scenario matrix tied to the exact final commit. Reconcile per-run collection/focus/full/skips against actual logs; preserve old reports. Treat mapped cases as unclosed until production assertions cover required behavior. Fixture count-only lineage proof does not establish unchanged content; use content/token comparison for unaffected categories if claiming only listed edits. Preserve original/trimmed files and proper out-of-profile refusals."
+    }
+  ],
+  "completion_claim_disposition": "Received but incomplete. Mapping79/79 is not contractual proof;3MAJOR+1MINOR architect residuals remain. No independent closure inferred.",
+  "ready_for_independent_final_cp2_review": false,
+  "local_progress_status": "Prior local progress now delivered as remote commits; no access to current user working tree",
+  "required_new_report_paths": [
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-residual-correction-report-20261125.md",
+    "increments/021/35-checkpoint2-implementation/evidence/claude-completion-residual-*"
+  ],
+  "future_study_planning_owner_instruction": {
+    "literal": "somente no incremento 22",
+    "scope": "Broader integrated-study organization applies only starting022; no change to frozen021, no resumed020A and no022implementation authorization"
+  }
 }
