@@ -1,0 +1,33 @@
+{
+  "note": "Excludes itself. New operational note/state only; historical receipts/spec/reports unchanged. No uploaded transcript or local personal files copied.",
+  "files": [
+    {
+      "path": "STATUS.md",
+      "lines": 35,
+      "size_bytes": 2729,
+      "sha256": "90c2659e0f8c4ab9f40ac66de1a207702c9833084e4478a6cf599a0019cc9d1b",
+      "git_blob_sha": "cde5893eb35d42f168a032c6ed17834e0cbab370"
+    },
+    {
+      "path": "increments/021/36-checkpoint2-partial-receipt/CODEX_CP2_LOCAL_PROGRESS_RESUME_GUARDRAILS.md",
+      "lines": 58,
+      "size_bytes": 7636,
+      "sha256": "38b1223d2b5668f07252f0e333243153b3b90baa29a846787d6be691c4398db1",
+      "git_blob_sha": "05ec17941319744e7d4efafe90e0bc61e1d3fd2c"
+    },
+    {
+      "path": "increments/021/36-checkpoint2-partial-receipt/evidence/LOCAL_PROGRESS_GUARDRAIL_IDENTITIES.json",
+      "lines": 26,
+      "size_bytes": 996,
+      "sha256": "5786d5a836165e298724e9e1132f8efaab8da5ae04ce8f26867558a95b37fd27",
+      "git_blob_sha": "c37b33e4796f86a78889f992a862179cbc49aa95"
+    },
+    {
+      "path": "tasks/021-CHECKPOINT2-COMPLETION.json",
+      "lines": 507,
+      "size_bytes": 23948,
+      "sha256": "1474f6b501c0ce0c47a57b524607cbe6c049b3cddc558116cb174a08fce4f536",
+      "git_blob_sha": "3db5d091c3380be2f31e5c22781934af53996e2c"
+    }
+  ]
+}

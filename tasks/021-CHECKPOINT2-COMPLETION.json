@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "task_id": "021-CHECKPOINT2-COMPLETION",
-  "status": "AUTHORIZED_WITHIN_EXISTING_CP2_AWAITING_MANUAL_HANDOFF",
+  "status": "AUTHORIZED_CONTINUATION_LOCAL_PROGRESS_REPORTED_AWAITING_MANUAL_RESUME",
   "assigned_role": "claude-implementer-separate-from-independent-reviewer",
   "governance_repository": "sysoutemanuelhenrique/molecular-platform-governance",
   "coordination_branch": "docs/020-a-candidate1-review-20261020",
@@ -484,5 +484,24 @@
   "cp4_implementation_authorized": false,
   "final_specification_frozen": true,
   "increment020a": "STAND-BY",
-  "automated_dispatch": false
+  "automated_dispatch": false,
+  "latest_local_progress_input_coordination": "7cd8ab3c5c2ec53e4630a41a6e7362e30fbe5edd",
+  "local_progress_reported": true,
+  "local_progress_independently_verified": false,
+  "new_code_delivery_received": false,
+  "resume_guardrails": {
+    "path": "increments/021/36-checkpoint2-partial-receipt/CODEX_CP2_LOCAL_PROGRESS_RESUME_GUARDRAILS.md",
+    "lines": 58,
+    "size_bytes": 7636,
+    "sha256": "38b1223d2b5668f07252f0e333243153b3b90baa29a846787d6be691c4398db1",
+    "git_blob_sha": "05ec17941319744e7d4efafe90e0bc61e1d3fd2c"
+  },
+  "required_worktree_handling": "Preserve recognized authorized local CP2 diff on same feature/0d06ebd; do not discard/restart/stash. New/unrecognized commit/work or unexpected remote drift requires reconciliation. New dispatch coordination SHA is an intentional documentary update.",
+  "mandatory_resume_clarifications": [
+    "Preserved parent_comp_id must have required chem_comp row; no blanket exemption or invented external CCD; original out-of-profile refusal is valid",
+    "Use021-specific16MiB input limit, not legacy0201GiB constant; keep legacy behavior",
+    "Actual late native import plus ENGINE_UNAVAILABLE/ENGINE_VERSION; domain-only ARCH01 test is insufficient for this requirement",
+    "Gemmi-decoded scientific values distinct from raw tokens; quoted null-looking strings remain strings; preserve raw hashes",
+    "Original/trimmed fixture lineage and supported-original tests mandatory; scanner changes/native proof and all C01–C07 remain pending until demonstrated"
+  ]
 }
