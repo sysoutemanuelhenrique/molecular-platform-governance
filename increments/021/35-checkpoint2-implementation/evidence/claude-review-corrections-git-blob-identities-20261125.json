@@ -1,0 +1,167 @@
+{
+  "code_commit": "2410e1220febd79cfc81f348720429bb1ac28cfe",
+  "method": "subprocess git show of immutable commit:path; stdout bytes; never working-tree bytes or newline-normalized text",
+  "files": [
+    {
+      "path": "src/molecular/receptor_materialization.py",
+      "lines_lf": 4816,
+      "size_bytes": 233406,
+      "sha256": "0103f56fee20b8023ff9b24025b95b93dac215439a987852ba181e132383524a",
+      "git_blob_sha": "342dcfd01aeaf7d6ec2496746acd43239ae24470"
+    },
+    {
+      "path": "src/molecular/receptor_parsing.py",
+      "lines_lf": 1853,
+      "size_bytes": 77669,
+      "sha256": "c39d15eef4051d9fcff9cd32971e3ab6c47e838f1e4cbe57dd0224d9e2afbc05",
+      "git_blob_sha": "2db0e75a4949a59f43a3ae5dd8edb20c680f49b0"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/1pfe/1PFE.cif",
+      "lines_lf": 2431,
+      "size_bytes": 127057,
+      "sha256": "1a548463a4ef08bf33be030b5ad8a0a6179d2623f41c9ac0a711cd2a02429315",
+      "git_blob_sha": "63f2451ac850c6afc40a73fc341ca45791c0a66c"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/1pfe/1PFE_trimmed.cif",
+      "lines_lf": 2386,
+      "size_bytes": 124615,
+      "sha256": "e0653ce8e25e4ef8cc5e37b08d6a4f6cab19eb6928e18e462a3a91f83139dc73",
+      "git_blob_sha": "80cb517fca62b02e7019beb7a0f0b4aa5a5d4247"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/1pfe/PROVENANCE.json",
+      "lines_lf": 33,
+      "size_bytes": 2486,
+      "sha256": "43062faa228d7aa58e78fbd836142a72a61ed9075338cbde8808233eaacae39a",
+      "git_blob_sha": "2b67c5ffe905a114c10d426ed1970e51e1893a6a"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/3dg1/3DG1.cif",
+      "lines_lf": 862,
+      "size_bytes": 33774,
+      "sha256": "a624586501d72b6ff82976f8e2f882e3c39a6d4ca58eebe632cd358ffd90c6c9",
+      "git_blob_sha": "b1e8cea6cc3a616b32b370ea874369461ca4367d"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/3dg1/3DG1_trimmed.cif",
+      "lines_lf": 819,
+      "size_bytes": 31732,
+      "sha256": "49926dfc5f524634bcc8e5c7b23aba352ce0ac32431f3621b02e022b267ebf58",
+      "git_blob_sha": "acec964bf121db0763c88eceae8c81f9fd20c32e"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/3dg1/PROVENANCE.json",
+      "lines_lf": 32,
+      "size_bytes": 1690,
+      "sha256": "a1ae8ec3859d8d5802d201b0533f548c2bd84d696e68590eb5e6e9b03ce54238",
+      "git_blob_sha": "cdd06f0e9f6b37535add9e64f908b21f4cfe21f4"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/5i55/5I55.cif",
+      "lines_lf": 1747,
+      "size_bytes": 77527,
+      "sha256": "07b3b7d82c8f8fb1cef0fafe88c25b9e3025194a32f085a14015e22bfac3d127",
+      "git_blob_sha": "3c54c15211bebc5900dfbcc4c6b16be7f3d6c9a2"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/5i55/5I55_trimmed.cif",
+      "lines_lf": 1702,
+      "size_bytes": 74947,
+      "sha256": "eba9584da11b29537c0ec30f23fa01fd27ad5ccc96ce8649450eb457530b9567",
+      "git_blob_sha": "1478892f78fb4acff3736ebe3dc665c9098756e4"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/5i55/PROVENANCE.json",
+      "lines_lf": 30,
+      "size_bytes": 3512,
+      "sha256": "69c599618f36bbb6c8f65bd16dbf4791c4cafbe5ef187708f27c400d785e2ca0",
+      "git_blob_sha": "a66dd45d74ce8b4235b792dcb9c942e1d0269041"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/em_7dwu/7DWU.cif",
+      "lines_lf": 5773,
+      "size_bytes": 263873,
+      "sha256": "85961fa6dda237fb93f9e134a9c07b6f1ec4bf37f482f5b5f669d5a56755c390",
+      "git_blob_sha": "64d8638933c85508f065cb7c95092884d85e26f5"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/em_7dwu/7DWU_trimmed.cif",
+      "lines_lf": 5712,
+      "size_bytes": 260777,
+      "sha256": "3da1fed528cee1e0c4db53b47f0155aceaf012bd9a334d0f8219929eefa22e8e",
+      "git_blob_sha": "2faae69dc8a6e84c69f85cc8d888de39b02d4f74"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/em_7dwu/PROVENANCE.json",
+      "lines_lf": 36,
+      "size_bytes": 2023,
+      "sha256": "2d0e52d4f7025d506abc9427fb5aba5f68f7851c31fb6bc730067ca7962c0aa0",
+      "git_blob_sha": "6a338985f58f5453b6c5d373a9a26e7f75f6ec35"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P.cif",
+      "lines_lf": 8785,
+      "size_bytes": 618844,
+      "sha256": "50b78c9c7e95c699e81610db9b140855762bbfb70a7dd821a0acef179d9e54d7",
+      "git_blob_sha": "28be987e9070412d544d68ed20116f464547a9d1"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P_ncs_isolated.cif",
+      "lines_lf": 8698,
+      "size_bytes": 613947,
+      "sha256": "e470c25f8f002958955f2d97656b41e90609796d5836a8f7340a030b54d5774d",
+      "git_blob_sha": "660c4ecb67f09d547cfdb41b5379ada4f29d4af8"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/ncs_1a2p/1A2P_trimmed.cif",
+      "lines_lf": 8699,
+      "size_bytes": 614058,
+      "sha256": "7a6f3d3e0f958d6be34a4b28fe869d024b3cdadf409d821b70dcde6a68b53431",
+      "git_blob_sha": "69271fe56a1a0b3946d5093527f1ae278b0c87bc"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/ncs_1a2p/PROVENANCE.json",
+      "lines_lf": 37,
+      "size_bytes": 4360,
+      "sha256": "281707ebc8afd872caa99efa8e770812b2a83ed6e2d7918074f41c5aedc814e2",
+      "git_blob_sha": "7a59c8e8e715c67c20702393adab3b3dfe5460ee"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/nmr_2jof/2JOF.cif",
+      "lines_lf": 8995,
+      "size_bytes": 702738,
+      "sha256": "9148fe7cc4eddc849a35e2069e01e2e74350b5c80c4e316c8c4fd4b04e9a3d7d",
+      "git_blob_sha": "cccc35da16fab3f22d77ba77b71314be2079533b"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/nmr_2jof/2JOF_trimmed.cif",
+      "lines_lf": 8964,
+      "size_bytes": 701226,
+      "sha256": "837023fd1b0fc1bf5676a24fcc56f97c50346e6d5871ea65f1c6d76d98144c9b",
+      "git_blob_sha": "df9f885838eae4c65b8c3020ece5e56fa6eff411"
+    },
+    {
+      "path": "tests/fixtures/receptor_materialization/nmr_2jof/PROVENANCE.json",
+      "lines_lf": 30,
+      "size_bytes": 1685,
+      "sha256": "aea2598c151f0cbfc8f25731f971264fa141431c3ed76aa59d51ed90c32281fc",
+      "git_blob_sha": "74d205f2c64c6967d2607359a7d7e13d7f1f1b53"
+    },
+    {
+      "path": "tests/test_receptor_materialization.py",
+      "lines_lf": 3344,
+      "size_bytes": 177923,
+      "sha256": "96e1495b85f01dc21a1dc994deaf7fc7c0e7d5ccec595d38a44369a8f7facf55",
+      "git_blob_sha": "bec8548cb60ab2128c5362869c67e56802e13375"
+    },
+    {
+      "path": "tests/test_receptor_parsing.py",
+      "lines_lf": 1923,
+      "size_bytes": 86602,
+      "sha256": "94309089c76d5b21dada2a01c4f12975b6a6663a9fce74cbfd1f2682dd03e218",
+      "git_blob_sha": "8301fbc23e935dcbc993d6a2efb90b5bf95d8370"
+    }
+  ]
+}
